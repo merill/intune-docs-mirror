@@ -16,10 +16,15 @@ concurrency:
   group: learn-mirror
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   mirror:
-    uses: merill/dailynews-engine/.github/workflows/mirror-learn.yml@learn-mirror
-    with:
-      full: ${{ inputs.full || false }}
-    permissions:
-      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: merill/learn-mirror@v1
+        with:
+          full: ${{ inputs.full || false }}
