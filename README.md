@@ -10,7 +10,7 @@ this repository is the history of the published docs.
 - `.learn-mirror/state.json` records each page's ETag and the publish metadata
   stripped from its front matter (`updated_at`, `git_commit_id`), so a run only
   downloads pages that changed and a republish is not a diff.
-- `.github/workflows/mirror-learn.yml` runs [learn-mirror](https://github.com/merill/learn-mirror) from
+- `.github/workflows/mirror-learn.yml` runs [learn-mirror](https://github.com/merill/learn-mirror)
   four times a day and commits what changed.
 
 Content is © Microsoft, published on Microsoft Learn under
