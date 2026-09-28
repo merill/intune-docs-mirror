@@ -11,8 +11,9 @@
   ],
   "include": "^https://learn\\.microsoft\\.com/en-us/(intune|autopilot)/",
   "trackedPaths": "^(intune|autopilot)/",
-  "concurrency": 6,
+  "concurrency": 4,
   "sourceRepos": [
     "MicrosoftDocs/memdocs-pr"
-  ]
+  ],
+  "priority": "(whats-new|release-notes|what-s-new|new-features|deprecat|retire)"
 }
