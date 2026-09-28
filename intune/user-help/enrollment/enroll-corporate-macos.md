@@ -1,0 +1,101 @@
+---
+layout: Conceptual
+title: Enroll your organization-provided macOS device in management - Microsoft Intune | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-corporate-macos
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: microsoft-intune
+manager: laurawi
+author: lenewsad
+ms.author: lanewsad
+ms.subservice: end-user
+ms.topic: end-user-help
+description: Describes how to enroll an macOS device in Intune that was purchased and provided by your organization.
+ms.date: 2018-08-29T00:00:00.0000000Z
+ms.reviewer: 
+locale: en-us
+document_id: 258f78c0-9fd4-9125-65ca-e02266f5d666
+document_version_independent_id: 258f78c0-9fd4-9125-65ca-e02266f5d666
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/user-help/enrollment/enroll-corporate-macos.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_product_url: ''
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: user-help/enrollment/enroll-corporate-macos
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/user-help/enrollment/enroll-corporate-macos.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
+platformId: 6c86f070-85e8-5e88-668b-2409986247c0
+---
+
+# Enroll your organization-provided macOS device in management - Microsoft Intune | Microsoft Learn
+
+Learn how to get your new macOS device managed in Intune.
+
+Devices that are provided by your work or school are often preconfigured before you receive them. Your organization will send these preconfigured settings to your device after you turn it on and sign in for the first time. After your device completes setup, you'll receive access to your work or school resources.
+
+To begin management setup, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant.
+
+## What is Apple's Automated Device Enrollment?
+
+Your organization might have purchased their devices through an Apple program called *Automated Device Enrollment* (formerly referred to as their device enrollment program or *DEP*). Automated Device Enrollment lets organizations buy large amounts of iOS, iPadOS or macOS devices. Organizations can then configure and manage those devices within their preferred mobile device management provider, such as Intune. If you're an administrator and want more information about Apple ADE, see [Automatically enroll macOS devices with Apple's Automated Device Enrollment with ABM/ASM](../../device-enrollment/apple/setup-automated-macos).
+
+## Get your device managed
+
+Complete the following steps to enroll your macOS device in management. If you're using your own device, rather than an org-provided device, follow the steps for [personal and bring-your-own devices](enroll-company-portal-macos).
+
+1. Power on your macOS device.
+2. Choose your country/region. Then select **Continue**.
+
+    ![Screenshot of macOS device Setup Assistant Welcome screen, showing a list of languages to select from.](media/enroll-corporate-macos/macos-dep-welcome-1808.png)
+3. Choose a keyboard layout. The list shows one or more options based off your selected country/region. To see all layout options, regardless of your selected country/region, select **Show All**. When you're done, select **Continue.**
+
+    ![Screenshot of macOS device Setup Assistant Keyboard Layout screen, showing a list of keyboard languages to select from, an unchecked Show All option, and a Back and Continue button.](media/enroll-corporate-macos/macos-dep-keyboard-1808.png)
+4. Select your Wi-Fi network. You must have an internet connection to continue setup. If you do not see your network, or if you need to connect over a wired network, select **Other Network Options**. When you're done, select **Continue**.
+
+    ![Screenshot of macOS device Setup Assistant Select Your Wi-Fi Network screen, showing a list of available networks to choose from. Also shows an Other Network Options button, Back button, and Continue button.](media/enroll-corporate-macos/macos-dep-wifi-1808.png)
+5. After you're connected to Wi-Fi, the **Remote Management** screen appears. Remote management enables your organization's administrator to remotely configure your device with company-required accounts, settings, apps, and networks. Read through the remote management explanation to help you understand how your device is managed. Then select **Continue**.
+
+    ![Screenshot of macOS device Setup Assistant Remote Management screen, with text explaining remote management and a link to documentation for more information. Also shows a Back button and Continue button.](media/enroll-corporate-macos/macos-dep-remote-management-1-1808.png)
+6. When prompted, sign in with your work or school account. After you're authenticated, your device will install a management profile. The profile configures and enables your access to your organization's resources.
+7. Read about the Apple data & privacy icon so that you can later identify when personal information is being collected. Then select **Continue**.
+
+    ![Screenshot of macOS device Setup Assistant Data &amp; Privacy screen, showing an illustration of two people shaking hands, and describing Apple's use of personal information. Also shows a Back and Continue button.](media/enroll-corporate-macos/macos-dep-apple-data-privacy-1808.png)
+8. After your device is enrolled, you might have additional steps to complete. The steps you see depend on how your organization customized the setup experience. It could require you to:
+
+    - Sign in to an Apple account
+    - Agree to the Terms and conditions
+    - Create a computer account
+    - Walk through an express setup
+    - Set up your Mac
+
+## Get the Company Portal app
+
+Download the Intune Company Portal app for macOS on your device. The app lets you monitor, sync, add, and remove your device from management, and install apps.
+
+1. On your Mac, go to https://portal.manage.microsoft.com/EnrollmentRedirect.aspx.
+2. Sign in to the Company Portal website with your work or school account.
+3. Select **Get the App** to download the Company Portal installer for macOS.
+4. When prompted, open the .pkg file. Follow the on-screen prompts to install the app.
+
+Then register your device with Company Portal.
+
+1. Open the Company Portal app and sign in with your work or school account.
+2. Find your device and select**Register**.
+3. Select **Continue** &gt; **Done**.
+
+After registration, your device appears in the Company Portal app, alongside any other work or school devices you've registered. Required work or school apps automatically install on your device, while optional apps are available in Company Portal.
+
+For help and support, contact your organization's support person. For contact information, check the helpdesk details in the Company Portal app or [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

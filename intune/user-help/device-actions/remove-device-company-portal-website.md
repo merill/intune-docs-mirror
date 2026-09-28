@@ -1,0 +1,59 @@
+---
+layout: Conceptual
+title: Remove device from Company Portal website - Microsoft Intune | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/device-actions/remove-device-company-portal-website
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: microsoft-intune
+manager: laurawi
+author: lenewsad
+ms.author: lanewsad
+ms.subservice: end-user
+ms.topic: end-user-help
+description: Sign in to the Intune Company Portal website to unregister a personal device from work or school.
+ms.date: 2024-11-08T00:00:00.0000000Z
+ms.reviewer: jieyan
+locale: en-us
+document_id: 7898ed59-c0a3-44b0-95b9-0ac85f66c60f
+document_version_independent_id: 7898ed59-c0a3-44b0-95b9-0ac85f66c60f
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/user-help/device-actions/remove-device-company-portal-website.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_product_url: ''
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: user-help/device-actions/remove-device-company-portal-website
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/user-help/device-actions/remove-device-company-portal-website.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
+platformId: 4f4f381b-a8cb-595f-0598-343dd51642b1
+---
+
+# Remove device from Company Portal website - Microsoft Intune | Microsoft Learn
+
+**Applies to**:
+
+- Android
+- iOS/iPadOS
+- macOS
+- Windows
+
+Use the Company Portal website to remotely unenroll and unregister a personal device from work or school. Once you remove a device, your organization no longer manages the device and it is removed from the Company Portal app and website. You might lose access to protected work data, such as files, apps, and email, on the device after you unenroll.
+
+1. Sign in to the [Company Portal website](https://portal.manage.microsoft.com) with your work or school account. You can sign in on any device.
+2. Go to **Devices** and select the device you want to remove.
+3. Choose **Remove**. If the remove option isn't visible at the top of your page, select the **More (…)** menu to see all overflow actions.
+4. A message appears to warn you that you are about to remove your device. Select **Remove** to confirm.
+
+Need additional help? Contact your support person. For contact details, sign in to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) and go to **Helpdesk**.

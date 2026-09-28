@@ -1,0 +1,297 @@
+---
+layout: Conceptual
+title: Monitor results of your device compliance policies in Microsoft Intune - Microsoft Intune | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/compliance/monitor-policy
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: microsoft-intune
+manager: laurawi
+author: lenewsad
+ms.author: lanewsad
+ms.collection:
+- M365-identity-device-management
+- compliance
+- sub-device-compliance
+ms.subservice: protect
+description: Use the device compliance dashboard to understand overall device compliance the per policy and per setting device compliance results.
+ms.date: 2026-07-02T00:00:00.0000000Z
+ms.topic: how-to
+ms.reviewer: ilwu
+ai-usage: ai-assisted
+locale: en-us
+document_id: 57bc8899-b4a1-35b8-cee5-acf40c21782a
+document_version_independent_id: 57bc8899-b4a1-35b8-cee5-acf40c21782a
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/device-security/compliance/monitor-policy.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_product_url: ''
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: device-security/compliance/monitor-policy
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/device-security/compliance/monitor-policy.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
+platformId: 43e33f7c-375d-1e98-9e5d-22c68018b742
+---
+
+# Monitor results of your device compliance policies in Microsoft Intune - Microsoft Intune | Microsoft Learn
+
+Compliance reports help you understand when devices fail to meet your [compliance policies](overview) and can help you identify compliance-related issues in your organization. By using these reports, you can view information on:
+
+- The overall compliance states of devices
+- The compliance status for an individual setting
+- The compliance status for an individual policy
+- Drill down into individual devices to view specific settings and policies that affect the device
+
+This article applies to:
+
+- Android device administrator
+- Android open source platform (AOSP)
+- Android Enterprise
+- iOS/iPadOS
+- Linux - Ubuntu Desktop, version 24.04 LTS or 26.04 LTS
+- macOS
+- Windows
+
+Important
+
+Android device administrator (DA) management is deprecated and no longer available for devices with access to Google Mobile Services (GMS). If you currently use DA management, we recommend switching to another Android management option. Support and help documentation remain available for some Android 15 and earlier devices without GMS. For more information, see [Ending support for Android device administrator on GMS devices](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-ending-support-for-android-device-administrator/ba-p/3915443).
+
+Intune includes the following options for reviewing device compliance details:
+
+- Device compliance status dashboard
+- Policy-based device compliance reports
+- Organizational and operational compliance reports
+
+## Important concepts for device compliance policies and status results
+
+When you view compliance status details and reports, keep in mind the following important details that can affect how a device's compliance status is reported:
+
+- Devices must be enrolled into Intune to receive device compliance policies.
+- The tenant-wide [compliance policy settings](overview#compliance-policy-settings) include the setting **Mark devices with no compliance policy assigned as**. The default configuration marks devices without an assigned compliance policy as *compliant*. We recommend configuring this setting so that these devices are marked as *noncompliant*. Then you can identify the noncompliant devices in the [Devices without compliance policy organization report](../../device-management/reports/overview#devices-without-compliance-policy-organizational).
+- Compliance reports show the compliance status for the last user on the device. For device-targeted policies, *System account* appears as the user principal name in the report if no user is signed in during the device's last compliance check.
+
+## Known reporting behaviors
+
+Microsoft Intune continually evaluates device compliance state as changes occur on the device. This ongoing evaluation process helps ensure that a device’s compliance posture stays up to date.
+
+Changes that affect a device’s compliance state include:
+
+- Device configuration updates
+- Operating system version changes
+- Security posture updates
+- Policy targeting or assignment changes
+- User sign-in activity
+
+While compliance state is evaluated continuously, compliance policy reports in Microsoft Intune are updated when a device checks in with the service. As a result, reporting in the admin center reflects the most recently known compliance state recorded during the device’s last check-in. This reporting model helps ensure that the compliance information shown in reports aligns with the last confirmed device state used for access decisions, such as Conditional Access.
+
+When you review compliance policy reports in Microsoft Intune, be aware of the following reporting behaviors:
+
+- Compliance policy reporting depends on when a device checks in. Reporting data is refreshed during device check-in and policy refresh cycles and might not immediately reflect recent policy assignments or targeting changes if a device hasn't checked in. Windows devices that support [client-driven compliance evaluation](create-policy#client-driven-compliance-evaluation-preview) can trigger a compliance re-evaluation in response to local state changes, which might affect how frequently reporting data is refreshed for those devices.
+- Compliance reports display the compliance state associated with the last user who checked in on the device. On shared or multi-user devices, this behavior can cause reports to reflect a previous user’s compliance state.
+- A device can appear in a pending state if the device hasn’t yet checked in to receive or report compliance policy status. In some scenarios, this state can persist until the next reporting cycle completes.
+- Policy reports might show multiple entries for the same device, such as separate records associated with user and system contexts. This behavior can occur when different users sign in to the same device or when automatic device check-ins occur.
+- Summary report views and detailed device lists don't always update at the same time. Differences in update cadence can temporarily cause aggregated values in summary views to differ from entries shown in detailed reports.
+
+## Device-reported values in compliance reports
+
+Some compliance reports include a **Setting** column that displays values reported directly by the device. This column appears in scenarios such as custom compliance and Android app configuration reporting, and provides additional context about why a device is marked as noncompliant for a given policy setting.
+
+Because setting values are generated by device-side logic, such as an application or admin-supplied script, the service doesn't validate or enforce their content. The value reflects whatever the device or script reports and can vary in format and content. Use setting values for context only, and confirm compliance status through trusted admin workflows before acting on a device.
+
+Important
+
+Setting values are device-reported and not validated by Intune. Don't use them as the sole basis for administrative action. Be aware of the following risks:
+
+- Values might include free-form text, URLs, or file paths. In rare cases, a reported value could attempt to influence admin behavior, such as by directing you to click a link or follow external instructions. Don't interact with content in a setting value unless you've independently verified it.
+- Device-side evaluations might capture user-identifying details or environment-specific information. Avoid copying or sharing setting values unless necessary.
+
+## Device compliance dashboard
+
+You can access the device compliance dashboard in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
+1. Go to **Devices** &gt; **Compliance**, and then select the **Monitor** tab.
+2. Select from the following reporting options for more details about the state of device compliance in your tenant:
+
+- Device compliance status
+- Devices without compliance
+- [Policy compliance](../../device-management/reports/overview#policy-compliance-report-organizational) (Link opens the *Intune reports* article)
+- [Setting compliance](../../device-management/reports/overview#settings-compliance--organizational) (Link opens the *Intune reports* article)
+
+### Device compliance status
+
+The **Device compliance status** tile shows the compliance states for all Intune enrolled devices. If you select this tile, Intune shows the **Noncompliant devices** report. You can also find this report under the **Devices** &gt; **Monitor** node of the admin center.
+
+The tile displays the number of devices for each of the following categories:
+
+- **Compliant**: The device successfully applied one or more device compliance policy settings.
+- **In-grace period**: The device is targeted with one or more device compliance policy settings but isn't yet compliant to all of them. Often, this status is due to users not applying compliant configurations, such as meeting password complexity requirements. Devices with this status are noncompliant, but in the grace period defined by the admin.
+- **Not evaluated**: An initial state for newly enrolled devices. Other possible reasons for this state include:
+
+    - Devices that aren't assigned a compliance policy and don't have a trigger to check for compliance.
+    - Devices that haven't checked in since the compliance policy was last updated.
+    - Devices not associated to a specific user, such as:
+        - iOS/iPadOS devices purchased through Apple's Device Enrollment Program (DEP) that don't have user affinity.
+        - Android Enterprise dedicated devices.
+    - Devices enrolled with a device enrollment manager (DEM) account.
+- **Not compliant**: The device failed to apply one or more device compliance policy settings, or the user didn't comply with the policies.
+
+Tip
+
+To configure what happens when a device is noncompliant, see [Actions for noncompliant devices](configure-noncompliance-actions).
+
+### Devices without compliance
+
+The **Devices without compliance policy** tile shows the number of devices that don't have any compliance policies assigned. The tile name may be truncated in the admin center due to its length.
+
+![Image of the Devices without compliance policy tile.](media/monitor-policy/devices-without-compliance-policy-tile.png)
+
+If you select this tile, Intune shows a *Device status* view that lists each device that doesn't have a compliance policy. This view includes the *Device* name, the *User Principal Name* associated with the device, the device's compliance *Status*, and the *Device model*.
+
+Tip
+
+Intune includes an organizational report that identifies all devices in your tenant that aren't assigned a compliance policy. See [Devices without compliance policy (Organizational)](../../device-management/reports/overview#devices-without-compliance-policy-organizational).
+
+## Policy-based device compliance reports
+
+Each compliance policy you create directly supports compliance reporting. To view the reports for an individual policy, in the admin center go to **Devices** &gt; **Compliance**. Then select the policy for which you want to view its report details.
+
+By default, when you select a policy, Intune opens the Monitor tab for that policy. Intune shows:
+
+- **Device status** - A simple bar chart that shows the basic compliance status for devices that receive this policy.
+- **View report** - A button you can select that opens the device status report where you can view deeper details about device compliance to this policy.
+- **Per-setting status** - A tile you can select that opens the per-setting status report for this policy.
+
+![View of the Intune admin center after selecting a compliance policy. ](media/monitor-policy/select-compliance-policy.png)
+
+Tip
+
+The Properties tab shows essential information about the policy such as name and platform type. It also includes information about the configuration of each setting in that policy. From this tab, you can edit policy details such as settings and assignments.
+
+### Device status
+
+The *Device status* summary is the default view when you select a compliance policy. This summary is a simple chart that shows the device count for each specific compliance status. The horizontal bar is divided into colors that match the available categories, and each color represents the device count in that category. In the preceding screen capture, all devices are compliant. As a result, the bar is entirely green.
+
+Before a device appears in this chart, it must check in with Intune to receive the policy, process it, and successfully report its status. This process can take up to 24 hours when the device is online.
+
+Details in the Device status chart include:
+
+- **Compliant** - The device successfully applied one or more device compliance policy settings.
+- **Noncompliant** - The device configuration failed to meet one or more device compliance policy settings.
+- **Others** - The device is in a state that is neither compliant nor noncompliant with the settings in this policy, such as *Error* or *Not evaluated*.
+- **Total** - The total number of devices that received this policy and reported in.
+
+To view more details, select the **View report** button.
+
+### View report
+
+When you select the *View report* button on the device status view of a policy, Intune shows a more detailed view of the device status for that policy.
+
+![View of the detailed device status report, after selecting the View report button in the Intune admin center.](media/monitor-policy/view-report-for-compliance-policy.png)
+
+By default, the report view displays details for the following, though you can add more columns of detail to the view:
+
+- **Device name** - The name of the device as it appears when viewing Devices and creating groups.
+- **Logged in user**
+- **Policy compliance status** - This status identifies if the device is compliant to this policy, but it doesn't represent a device's compliance for any other compliance policies. Intune can still consider a device noncompliant if it doesn't comply with a different policy.
+- **Device Id** - The device's Intune Device ID.
+- **OS** - The operating system of the device, like *Windows* or *Android*.
+- **Last contacted** - The last day and time that this device made contact with the Intune service.
+
+In this report view:
+
+- You can sort each column alphabetically.
+- You can configure *Filters* and specify a *Search* string to refine the report results. Search looks through all displayed columns.
+
+For example, entering a search string of **st1** returns all devices with *st1* in the *Device name* column, and all devices associated with a user with *st1* in the *Logged in user* column:
+
+![A screen capture that shows filtered search results for the device status report view.](media/monitor-policy/filtered-search-results.png)
+
+### Per-setting status
+
+After selecting a compliance policy, select the *Per-setting status* tile to review the device compliance status for policy settings. This view shows the settings that the policy configures with columns for the various status conditions that can be reported. For each setting, each status column displays the number of devices that report that status.
+
+The following image displays a per-setting view of a policy for Android devices. This policy includes one setting and was deployed to four devices, all of which are compliant to that setting. In this view, you can sort by selecting a column, or use search:
+
+![Screen shot that shows the detailed per-setting status report, after selecting the View report button in the Intune admin center.](media/monitor-policy/view-report-for-per-setting-status.png)
+
+From the per-setting view, select the device count from any status column to open a view with more details for that specific setting and status. The following image displays the results of selecting the number **4** from the **Compliant devices** column.
+
+![Screen shot that displays the results of drilling into a per-setting status result to view details for devices that have reported that status.](media/monitor-policy/per-status-drill-in.png)
+
+In the screenshot, there are four entries for the selected setting, with each entry representing a distinct device. This count matches the number shown in the per-setting status view.
+
+You can also see that one device, which has a name that starts with **st1**, is flagged in the *Device compliance* column as being **Not compliant**. This result is worth examining more closely:
+
+- The details in the Device compliance column represent a device's overall compliance status, and not necessarily a device's compliance with this policy or this setting from this policy.
+- We can be assured that this device is compliant to how this setting is configured in this policy because we're viewing a list of devices that reported as being compliant to the settings for this policy.
+- This result indicates that the device is failing compliance against some other policy.
+
+Because this drill-in view doesn't support a deeper drill through, you must use the other compliance reports that are available to determine which policy and setting the device is reporting as noncompliant.
+
+#### Device behavior with a compliance setting in Error state
+
+When a setting for a compliance policy returns a value of **Error**, the compliance state of the device remains unchanged for up to seven days to allow time for the compliance calculation to complete correctly for that setting. Within those seven days, the device's existing compliance status continues to apply until the compliance policy setting evaluates as **Compliant** or **Not compliant**. If a setting still has a status of **Error** after seven days, the device becomes **Not compliant**, or if a grace period is set for the compliance policy, the device is marked **In grace period**.
+
+**Examples**:
+
+- A device is initially marked **Compliant**, but then a setting in one of the compliance policies targeted to the device reports **Error**. After three days, compliance evaluation completes successfully and the setting now reports **Not compliant**. The user can continue to use the device to access Conditional Access-protected resources within the first three days after the setting states changes to **Error**, but once the setting returns **Not compliant**, the device is marked **Not compliant** and this access is removed until the device becomes **Compliant** again.
+- A device is initially marked **Compliant**, but then a setting in one of the compliance policies targeted to the device reports **Error**. After three days, compliance evaluation completes successfully, the setting returns **Compliant**, and the device's compliance status becomes **Compliant**. The user is able to continue to access Conditional Access protected resources without interruption.
+- A device is initially marked **Compliant**, but then a setting in one of the compliance policies targeted to the device reports **Error**. The user is able to access Conditional Access protected resources for seven days, but after seven days, the compliance setting still returns **Error**. At this point, the device becomes **Not compliant** immediately and the user loses access to the protected resources until the device becomes **Compliant**.
+- A device is initially marked **Compliant**, but then a setting in one of the compliance policies targeted to the device reports **Error**. The compliance policy that includes the setting in *Error* state has a grace period set. The user is able to access Conditional Access protected resources for seven days, but after seven days, the compliance setting still returns **Error**. At this point, the device is marked **In grace period** and the user continues to have access to protected resources. If the setting doesn't become compliant within the admin-specified grace period, the device becomes **Not compliant** and the user loses access to the protected resources until the device becomes **Compliant**.
+- A device is initially marked **Not compliant**, but then a setting in one of the compliance policies targeted to the device reports **Error**. After three days, compliance evaluation completes successfully, the setting returns **Compliant**, and the device's compliance status becomes **Compliant**. The user is prevented from accessing Conditional Access protected resources for the first three days (while the setting returns **Error**). Once the setting returns **Compliant** and the device is marked **Compliant**, the user can begin to access protected resources on the device.
+
+## Organizational and operational compliance reports
+
+In addition to reports that individual compliance policies provide, you can view reports for device compliance that focus on the settings in your compliance policies. These reports list all the devices that are noncompliant and provide insights into compliance trends.
+
+To view these reports, open the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Reports** &gt; **Device compliance**, and select the **Reports** tab.
+
+For more information about these reports, see [Device compliance reports](../../device-management/reports/overview#device-compliance-reports) in the **Intune reports** article.
+
+## Other compliance reports
+
+In addition to reports from the *Compliance status* tab and from the *Reports* node of the admin center, the following older compliance reports are available:
+
+- Noncompliant devices
+- Policy noncompliance
+
+Go to **Devices** &gt; **Monitor** to access these reports. For faster viewing, sort the **Category** column, and then look for reports with the **Compliance** tag.
+
+## How Intune resolves policy conflicts
+
+Policy conflicts can occur when multiple Intune policies are applied to a device. If the policy settings overlap, Intune resolves any conflicts by using the following rules:
+
+- If the conflict is between settings from an Intune configuration policy and a compliance policy, the settings in the compliance policy take precedence over the settings in the configuration policy. This result happens even if the settings in the configuration policy are more secure.
+- If you deploy multiple compliance policies, Intune uses the most secure of these policies.
+
+To learn more about conflict resolution for policies, see [Compliance and device configuration policies that conflict](../../device-configuration/troubleshoot-device-profiles#compliance-and-device-configuration-policies-that-conflict).
+
+## How Intune evaluates the default compliance policy
+
+In Intune, the default compliance policy is evaluated when a calculation is triggered. While not every [device sync](../../device-configuration/troubleshoot-device-profiles#policy-refresh-intervals) results in a compliance calculation, the following cases trigger compliance calculations:
+
+- New enrollments: Evaluation happens frequently to ensure users are aware of blocking reasons. The actual frequency depends on the platform and the type of enrollment.
+- Periodic evaluation: Evaluation happens periodically to enforce device contact requirements, such as requiring a user sign-in after the device has been offline for a few days.
+- New compliance information: Evaluation happens when new compliance information, such as a change in device properties, is found during a device sync.
+- Compliance policy assignment changes: Evaluation happens when a compliance policy assignment is added, after the next device sync. If a compliance policy assignment is removed, such as with exclusion targeting, the compliance calculation triggers with the existing service data.
+- User compliance status checks: Evaluation happens when a user [checks compliance status](../../user-help/compliance/validate-status-company-portal-website) on the Company Portal website or app.
+
+The evaluation process identifies the device as noncompliant if any of the following statements are false:
+
+- The device has a compliance policy assigned: At least one applicable compliance policy must be assigned to the device with an applicable setting.
+- The device is active: The device should remain in contact with Intune. This requirement means the device is turned on with an internet connection. The default grace period is 30 days.
+- The enrolled user exists: The user that is actively using the device exists and has a valid Intune license.

@@ -1,0 +1,410 @@
+---
+layout: Conceptual
+title: Device Query for Multiple Devices - Microsoft Intune | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/advanced-analytics/device-query-multiple-devices
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: microsoft-intune
+manager: laurawi
+author: paolomatarazzo
+ms.author: paoloma
+ms.subservice: suite
+description: Use device query for multiple devices in Microsoft Intune to run KQL queries, analyze inventory trends, and start querying your managed fleet now.
+ms.date: 2026-09-01T00:00:00.0000000Z
+ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1026
+locale: en-us
+document_id: 7ec3f415-0808-5d2a-06b5-bd0c9318027a
+document_version_independent_id: 7ec3f415-0808-5d2a-06b5-bd0c9318027a
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/advanced-analytics/device-query-multiple-devices.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_product_url: ''
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: advanced-analytics/device-query-multiple-devices
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/advanced-analytics/device-query-multiple-devices.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/540ac133-a371-4dbb-8f94-28d6cc77a70b
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/c6f99e62-1cf6-4b71-af9b-649b05f80cce
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/60bfc045-f127-4841-9d00-ea35495a5800
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3f56b378-07a9-4fa1-afe8-9889fdc77628
+platformId: 3c00b531-93c2-a357-92df-6f62871126dd
+---
+
+# Device Query for Multiple Devices - Microsoft Intune | Microsoft Learn
+
+Use Device query for multiple devices in Microsoft Intune to run Kusto Query Language (KQL) queries across device inventory data and identify trends across your managed fleet. This article explains prerequisites, how to create and run queries in the Intune admin center, how to work with results, and which operators, functions, and properties are supported.
+
+## Before you begin
+
+- Confirm that your environment meets all [prerequisites](./#prerequisites).
+
+Additional prerequisites for device query for multiple devices:
+
+![](../media/icons/16/devices.svg)**Device platform requirements**
+
+> 
+> Device query for multiple devices supports:
+> 
+> - Windows
+> - Android
+>     - Android Enterprise corporate owned dedicated devices (COSU)
+>     - Android Enterprise corporate owned fully managed (COBO)
+>     - Android Enterprise corporate owned work profile (COPE)
+> - Apple
+>     - iOS/iPadOS
+>     - macOS
+> 
+
+![](../media/icons/16/configuration.svg)**Device configuration requirements**
+
+> 
+> Device query for multiple devices supports devices that are:
+> 
+> - Managed by Intune and marked as corporate owned.
+> - Windows devices must have a [properties catalog policy](../device-configuration/collect-device-properties) deployed to them to collect inventory data. For iOS/iPadOS, Android, and macOS, data is automatically collected and a separate properties catalog policy doesn't need to be deployed.
+> 
+
+![](../media/icons/16/rbac.svg)**Roles requirements**
+
+> 
+> To use device query for multiple devices, use an account with at least one of these roles:
+> 
+> - [Help Desk Operator](/en-us/intune/fundamentals/role-based-access-control/ref-built-in-roles#help-desk-operator)
+> - [Custom role](/en-us/intune/fundamentals/role-based-access-control/create-custom-role) with permissions to view and access managed devices in Intune (for example, Organization/Read and Managed devices/Read)
+> 
+
+## Use device query for multiple devices
+
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**Device query**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/DeviceQuery).
+2. Enter a query in the query box by using the supported properties and operators.
+3. Select **Run** to execute the query.
+4. View the results in the **Results**tab.
+    - To run part of a query or a single query when multiple queries are present, highlight the query you want to run and select **Run**. Only the highlighted query runs.
+
+You can expand the view on the left side to see all available properties that you can query. Select a property to insert it into your query. You can also resize the left pane and the query window to adjust the layout.
+
+For more information about Kusto Query Language (KQL), see [Learn more about Kusto Query Language](/en-us/azure/data-explorer/kusto/query/).
+
+Tip
+
+Use Copilot in Intune to generate KQL queries for device query by using natural language requests. To learn more, see [Query with Copilot in device query](../copilot/#-use-copilot-to-create-kql-queries-to-get-device-details).
+
+### Query results and actions
+
+After you run a query, results appear in the **Results** tab. You can interact with the results in several ways:
+
+- When a query returns **50 items or fewer**, you can search across all rows in the results and apply filters by using column headers.
+- Create Microsoft Entra security groups directly from a query's results by selecting **Add all items to a group**. This action helps you target specific devices with Microsoft Entra Conditional Access policies or Microsoft Intune policies.
+- Select **Export** to save results to a .csv file. You can export all columns or only selected columns. You can export up to **50,000** results to a file.
+
+## Sample queries
+
+To help you get started, this section provides some sample queries. To access the sample queries, expand the **example queries** section under the **Getting started** page, and select the query you want to add to the query window. The following section shows the list of sample queries.
+
+### Top processors by core count
+
+This query shows the top five CPUs by core count.
+
+```kusto
+Cpu
+| project Device, ProcessorId, Model, Architecture, CpuStatus, ProcessorType, CoreCount, LogicalProcessorCount, Manufacturer, AddressWidth
+| order by CoreCount asc
+| take 5
+```
+
+### Devices with unprotected disks
+
+This query lists devices with unencrypted disks.
+
+```kusto
+EncryptableVolume
+| where ProtectionStatus != "PROTECTED"
+| join LogicalDrive on Device
+```
+
+### ARM64 devices
+
+This query lists all devices with an ARM64 processor.
+
+```kusto
+Cpu
+| where Architecture == "ARM64"
+```
+
+### Device count by processor architecture
+
+This query provides a summary of devices by CPU architecture.
+
+```kusto
+Cpu
+| summarize DeviceCount = count() by Architecture
+```
+
+### Top devices by battery capacity
+
+This query lists the top 10 devices by fully charged battery capacity.
+
+```kusto
+Battery
+| project Device, InstanceName, Manufacturer, Model, SerialNumber, CycleCount,
+          DesignedCapacity,
+          FullChargedCapacity,
+          FullChargedCapacityPercent = (FullChargedCapacity * 100) / DesignedCapacity
+| top 10 by FullChargedCapacityPercent asc
+```
+
+### Devices memory information
+
+This query lists devices with physical and virtual memory in GB.
+
+```kusto
+MemoryInfo
+| project Device,
+          PhysicalMemoryGB = PhysicalMemoryTotalBytes/(1000*1000*1000),
+          VirtualMemoryGB = VirtualMemoryTotalBytes/(1000*1000*1000)
+| order by PhysicalMemoryGB asc
+```
+
+### Device count by OS version
+
+This query provides a summary of devices by OS version.
+
+```kusto
+OsVersion| summarize DevicesCount = count() by OsVersion
+```
+
+### Device BIOS information
+
+This query lists devices based on BIOS manufacturer.
+
+```kusto
+BiosInfo| where Manufacturer contains "Microsoft"
+```
+
+### TPM disabled devices
+
+This query lists devices that have TPM disabled.
+
+```kusto
+Tpm | where Enabled != true
+```
+
+## Supported operators
+
+Device query supports only a subset of the operators supported in the Kusto Query Language (KQL). The following operators are currently supported:
+
+### Table operators
+
+Table operators can be used to filter, summarize, and transform data streams. The following operators are supported:
+
+| Table operator | Description |
+| --- | --- |
+| `count` | Returns a table with a single record containing the number of records. |
+| `distinct` | Produces a table with distinct combinations of the provided columns from the input table. |
+| `join` | Merges rows from two tables to form a new table based on matching values in the specified columns. The following join types are supported:- `innerunique` (default)- `inner`- `leftouter`- `rightouter`- `fullouter`- `leftsemi`- `rightsemi`- `leftanti`- `rightanti`Join statements support an optional `on` clause. In device query scenarios, you typically use `on Device` when joining tables that contain a `Device` entity. Common syntax for `join` is: `LeftTable | join [hints] (RightTable) on Conditions`.**Important:** Joins that use `on Device.DeviceID` are no longer supported. Queries that currently specify `on Device.DeviceId` should switch to using `on Device`, or omit the `on` clause when joining on the `Device` entity.For more information, see [Join operator](/en-us/kusto/query/join-operator). |
+| `order by` | Sorts the rows of the input table by one or more columns. |
+| `project` | Selects columns to include, rename, or drop, and inserts new computed columns. |
+| `take` | Returns up to the specified number of rows. |
+| `top` | Returns the first N records sorted by the specified columns. |
+| `where` | Filters a table to the subset of rows that satisfy a predicate. |
+| `summarize` | Produces a table that aggregates the contents of the input table. |
+
+Note
+
+`Device` is an entity-type and can't be used directly in operators that require scalar values (such as `distinct`, `summarize`, and `order by`). For these operators, use a specific scalar property of the device (for example, `Device.SerialNumber` or `Device.OSVersion`).
+
+### Scalar operators
+
+Scalar operators can be used to perform operations on individual values. The following operators are supported:
+
+| Operators | Description | Example |
+| --- | --- | --- |
+| `==` | Equal | `1 == 1`, `'aBc' == 'AbC'` |
+| `!=` | Not Equal | `1 != 2`, `'abc' != 'abcd'` |
+| `<` | Less | `1 < 2`, `'abc' < 'DEF'` |
+| `>` | Greater | `2 > 1`, `'xyz' > 'XYZ'` |
+| `<=` | Less or Equal | `1 <= 2`, `'abc' <= 'abc'` |
+| `>=` | Greater or Equal | `2 >= 1`, `'abc' >= 'ABC'` |
+| `+` | Add | `2 + 1`, `now() + 1d` |
+| `-` | Subtract | `2 - 1`, `now() - 1h` |
+| `*` | Multiply | `2 * 2` |
+| `/` | Divide | `2 / 1` |
+| `%` | Modulo | `2 % 1` |
+| `like` | LHS contains a match for RHS | `'abc' like '%B%'` |
+| `contains` | RHS occurs as a subsequence of LHS | `'abc' contains 'b'` |
+| `!contains` | RHS doesn't occur in LHS | `'team' !contains 'i'` |
+| `startswith` | RHS is an initial subsequence of LHS | `'team' startswith 'tea'` |
+| `!startswith` | RHS isn't an initial subsequence of LHS | `'abc' !startswith 'bc'` |
+| `endswith` | RHS is a closing subsequence of LHS | `'abc' endswith 'bc'` |
+| `!endswith` | RHS isn't a closing subsequence of LHS | `'abc' !endswith 'a'` |
+| `and` | True if and only if RHS and LHS are true | `(1 == 1) and (2 == 2)` |
+| `or` | True if and only if RHS or LHS is true | `(1 == 1) or (1 == 2)` |
+
+### Aggregation functions
+
+Aggregation functions can be used to summarize data. The following functions are supported:
+
+| Function | Description |
+| --- | --- |
+| `avg()` | Returns the average of the values across the group |
+| `count()` | Returns a count of the records per summarization group |
+| `countif()` | Returns a count of rows for which Predicate evaluates to true |
+| `dcount()` | Returns the number of distinct values in the group |
+| `max()` | Returns the maximum value across the group |
+| `maxif()` | Returns the maximum value across the group for which Predicate evaluates to true |
+| `min()` | Returns the minimum value across the group |
+| `minif()` | Returns the minimum value across the group for which Predicate evaluates to true |
+| `percentile()` | Returns an estimate for the specified nearest-rank percentile of the population defined by Expr |
+| `sum()` | Returns the sum of the values across the group |
+| `sumif()` | Returns a sum of Expr for which Predicate evaluates to true |
+
+### Scalar functions
+
+Scalar functions can be used to perform operations on individual values. The following functions are supported:
+
+| Function | Description |
+| --- | --- |
+| `ago()` | Subtracts the given timespan from the current UTC clock time. |
+| `bin()` | Rounds values down to a number of datetime multiple of a given bin size. |
+| `case()` | Evaluates a list of predicates and returns the first result expression whose predicate is satisfied. |
+| `datetime_add()` | Calculates a new datetime from a specified datepart multiplied by a specified amount, added to a specified datetime. Negative values for the amount parameter aren't supported. |
+| `datetime_diff()` | Calculates the difference between two datetime values. |
+| `iif()` | Evaluates the first argument and returns the value of either the second or third arguments depending on whether the predicate evaluated to true (second) or false (third). |
+| `indexof()` | Reports the zero-based index of the first occurrence of a specified string within the input string. |
+| `isnotnull()` | Evaluates its sole argument and returns a Boolean value indicating if the argument evaluates to a non-null value. |
+| `isnull()` | Evaluates its sole argument and returns a Boolean value indicating if the argument evaluates to a null value. |
+| `now()` | Returns the current UTC clock time. |
+| `strcat()` | Concatenates between 1 and 64 arguments. |
+| `strlen()` | Returns the length, in characters, of the input string. |
+| `substring()` | Extracts a substring from a source string starting from some index to the end of the string. |
+| `tostring()` | Converts input to a string representation. |
+
+## Supported properties
+
+Device query supports the following entities. To learn more about what properties are supported for each entity, see [Intune Data Platform Schema](ref-data-platform-schema).
+
+- `Apple Auto Setup Admin Accounts`
+- `Apple Device States`
+- `Apple Update Settings`
+- `Battery`
+- `Bios Info`
+- `Bluetooth`
+- `Cellular`
+- `CPU`
+- `Device Storage`
+- `Disk Drive`
+- `Encryptable Volume`
+- `Local AI Agent`
+- `Logical Drive`
+- `Memory Info`
+- `Network Adapter`
+- `Os Version`
+- `Shared iPad`
+- `Sim Info`
+- `System Enclosure`
+- `SystemInfo`
+- `Time`
+- `Tpm`
+- `Video Controller`
+- `Windows Qfe`
+
+### Device entity
+
+Device query for multiple devices supports a linked entity. The Device entity can be used with all other supported entities. The device entity supports the following properties:
+
+| Property | Type | Description |
+| --- | --- | --- |
+| `DeviceId` | String | A unique ID generated by Intune as part of device enrollment. |
+| `EntraDeviceId` | String | Unique ID generated by Microsoft Entra as part of Microsoft Entra registration or join. |
+| `ManagementName` | String | An easily recognizable device name used only in the Intune admin center. Changing this name doesn't change the device name or the name in the Company Portal. |
+| `DeviceName` | String | Name of the device |
+| `SerialNumber` | String | Serial number of the device |
+| `Manufacturer` | String | Manufacturer of the device |
+| `Model` | String | Model of the device |
+| `OSDescription` | String | Full description of the operating system edition |
+| `OSVersion` | String | The version of the operating system on the device |
+| `EnrollmentProfileName` | String | Name of the enrollment profile assigned to the device. Default value is an empty string indicating no enrollment profile was assigned to the device. |
+| `EnrolledDateTime` | Datetime | The date and time that the device was enrolled in Intune. |
+| `CertExpirationDateTime` | Datetime | Reports device management certificate expiration date. |
+| `EnrolledByUserId` | String | Unique identifier for the user that enrolled the device |
+| `PrimaryUserId` | String | Unique identifier for the user associated with the device. |
+| `LastLoggedOnUserId` | String | Unique identifier for the user who last logged on to the device. |
+| `InCompliancePeriodUntilDateTime` | Datetime | The DateTime when device compliance grace period expires |
+| `DeviceCategoryId` | String | Device category display name. Default is an empty string. |
+| `LastSeenDateTime` | String | The date and time that the device last connected to Intune. |
+| `Ownership` | String | Ownership of the device. |
+
+The `Device` entity allows you to reference device information associated with each resulting row without needing to explicitly join to a device table.
+
+By default, query results include a `Device` entity column that provides device context for each row. Operators such as `project`, `summarize`, or `distinct` can change which columns are returned.
+
+`Device` represents the device associated with the resulting row and can be referenced directly as an entity-type column. When displayed in query results, the `Device` entity is shown using a friendly identifier, such as the device name, to make it easier to identify devices.
+
+You can reference properties of the `Device` entity in queries using `Device.[Property]`.
+
+The following query returns all `DiskDrive` information for devices with a specific serial number:
+
+```kusto
+DiskDrive
+| where Device.SerialNumber == "123"
+```
+
+The following query projects the `Device` entity and the `Manufacturer` property from the `DiskDrive` entity:
+
+```kusto
+
+DiskDrive
+| project Device, Manufacturer
+
+```
+
+By default, query results include a `Device` entity that represents the device associated with each row. The `Device` entity is an entity-type column and does not implicitly resolve to a specific scalar property. When sorting or filtering results, explicitly reference the device property you want to use. For example, this query orders results by device name:
+
+```kusto
+
+MemoryInfo
+| order by Device.DeviceName
+
+```
+
+Similarly, to filter by device name, reference the `DeviceName` property directly:
+
+```kusto
+
+Cpu
+| where Device.DeviceName == "Desktop123"
+
+```
+
+## Known limitations
+
+- Using entity-type columns such as `Device` in aggregation functions can show a red underline in the editor because aggregation functions require scalar values. To avoid this, reference a specific scalar property of the entity. For example:
+
+    ```kusto
+    Cpu
+    | summarize max(CpuUsage) by Device.Manufacturer
+    ```
+- Queries that use the `join` operator with `$left` and `$right` parameters may show a red underline in the editor. However, the query can still run and return results as expected.
+- A single query can contain a maximum of three `join` operators. Queries with more joins fail.
+- A maximum of ~50,000 records are returned for a query.
+- A maximum of 10 queries can be submitted per minute. Additional queries within the same minute fail.
+- A maximum of 1,000 queries can be submitted per month.
+- Negative values for the `amount` parameter of the `datetime_add()` function aren't supported.
+- Referencing a variable that was generated by an aggregation function without explicitly naming it can cause a query to fail. Explicitly naming the variable allows the query to succeed. For example:
+
+    - The query `Device | summarize dcount(DeviceId) | order by dcount_DeviceId` fails.
+    - The query `Device | summarize DCountDeviceIdRename = dcount(DeviceId) | order by DCountDeviceIdRename` succeeds.
+    - NL2KQL assistance for the "Local AI Agent" entity is currently unsupported.
