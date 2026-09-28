@@ -1,0 +1,8 @@
+{
+  "sitemapIndex": "https://learn.microsoft.com/_sitemaps/sitemapindex.xml",
+  "sitemaps": "/_sitemaps/(intune|autopilot)_en-us_\\d+\\.xml$",
+  "include": "^https://learn\\.microsoft\\.com/en-us/(intune|autopilot)/",
+  "exclude": ["^https://learn\\.microsoft\\.com/en-us/intune/configmgr/"],
+  "trackedPaths": "^(intune|autopilot)/",
+  "concurrency": 6
+}

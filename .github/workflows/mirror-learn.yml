@@ -1,0 +1,54 @@
+name: Mirror Microsoft Learn
+
+permissions:
+  contents: write
+
+on:
+  schedule:
+    # Ahead of the Intune monitor, which runs at :15 past 02, 08, 14 and 20 UTC.
+    - cron: '40 1,7,13,19 * * *'
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Refetch every page, ignoring saved ETags
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: learn-mirror
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+    - name: Checkout the mirror
+      uses: actions/checkout@v4
+
+    - name: Set up the dailynews engine
+      uses: merill/dailynews-engine/.github/actions/setup@learn-mirror
+
+    - name: Mirror Learn pages
+      id: mirror
+      run: dailynews mirror-learn --message-file="$RUNNER_TEMP/commit-message.txt" ${{ inputs.full && '--full' || '' }}
+
+    - name: Commit changes
+      run: |
+        if [ -z "$(git status --porcelain)" ]; then
+          echo "Nothing changed on Learn."
+          exit 0
+        fi
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add -A
+        if [ "${{ steps.mirror.outputs.content_changed }}" = "true" ]; then
+          git commit -q -F "$RUNNER_TEMP/commit-message.txt"
+        else
+          # A page was republished without its content changing: only its ETag
+          # and publish metadata moved.
+          git commit -q -m "Refresh Learn mirror state"
+        fi
+        git push
