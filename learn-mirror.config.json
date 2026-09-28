@@ -11,5 +11,5 @@
   ],
   "include": "^https://learn\\.microsoft\\.com/en-us/(intune|autopilot)/",
   "trackedPaths": "^(intune|autopilot)/",
-  "concurrency": 8
+  "concurrency": 6
 }
