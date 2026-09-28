@@ -1,0 +1,82 @@
+---
+layout: Conceptual
+title: Understand compliance in Configuration Manager - Configuration Manager | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/compliance/understand/fundamentals-of-compliance
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: configuration-manager
+manager: laurawi
+feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
+author: sccmavenger
+ms.author: dannygu
+ms.reviewer:
+- umaikhan
+- brianhun
+- payur
+- hugowu
+- qiani
+ms.topic: concept-article
+ms.collection:
+- tier1
+- essentials-compliance
+description: Learn about compliance certifications, dependencies, and features in Configuration Manager supporting data protection and regulatory requirements.
+ms.date: 2024-12-03T00:00:00.0000000Z
+locale: en-us
+document_id: 0d4b5199-4cdd-ffd1-0d0f-d7f6f93824f0
+document_version_independent_id: 0d4b5199-4cdd-ffd1-0d0f-d7f6f93824f0
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/configmgr/compliance/understand/fundamentals-of-compliance.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: configmgr/compliance/understand/fundamentals-of-compliance
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/configmgr/compliance/understand/fundamentals-of-compliance.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+platformId: 2b856801-2b6a-5de7-3d2e-6848fdd63859
+---
+
+# Understand compliance in Configuration Manager - Configuration Manager | Microsoft Learn
+
+Configuration Manager supports compliance features to help organizations meet national, regional, and industry-specific regulations. Configuration Manager aligns with Microsoft's commitment to data protection, privacy, and compliance, by offering tools to help secure and manage data effectively.
+
+## Shared responsibility model
+
+Microsoft ensures that Configuration Manager complies with various industry standards and regulatory frameworks. However, customers are responsible for implementing their data protection and compliance strategies to align with their specific organizational requirements.
+
+## Compliance dependencies
+
+Configuration Manager leverages other Microsoft services for compliance, including:
+
+- [Microsoft Entra ID](/en-us/entra/fundamentals/whatis): Identity and access management.
+- [Microsoft Intune](/en-us/mem/intune): Enforces device compliance and conditional access policies.
+
+## Microsoft Intune capabilities for compliance
+
+Microsoft Intune helps enforce compliance policies and protect organizational data specifically for Intune:
+
+- **Conditional Access**: Ensures only compliant devices and apps managed by Intune can access sensitive data. See [Conditional Access](../../../device-security/conditional-access-integration/overview).
+- **Device Compliance Enforcement**: Enforces device compliance policies to meet organizational security requirements. See [Device Compliance Policies](../../../device-security/compliance/overview).
+
+For more information about Intune compliance capabilities, visit the [Microsoft Intune documentation](/en-us/mem/intune).
+
+Note
+
+For more information about how to concurrently manage Windows 10 or later devices by using both Configuration Manager and Microsoft Intune, see [What is co-management?](/en-us/mem/configmgr/comanage/overview).
+
+## Data encryption
+
+Use Configuration Manager to manage BitLocker Drive Encryption (BDE) for on-premises Windows clients, which are joined to Active Directory. It provides full BitLocker lifecycle management that can replace the use of Microsoft BitLocker Administration and Monitoring. For more information, see [Plan for BitLocker management](/en-us/mem/configmgr/protect/plan-design/bitlocker-management).
+
+## Compliance features
+
+Configuration Manager includes several compliance features that help organizations manage device compliance. For more information, see [Ensure device compliance with Configuration Manager](/en-us/mem/configmgr/compliance/understand/ensure-device-compliance).

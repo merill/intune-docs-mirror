@@ -1,0 +1,72 @@
+---
+layout: Conceptual
+title: Configuration Manager Action XML - Configuration Manager | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/core/servers/console/configuration-manager-action-xml
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: configuration-manager
+manager: laurawi
+feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
+author: sccmavenger
+ms.author: dannygu
+ms.reviewer:
+- umaikhan
+- brianhun
+- payur
+- hugowu
+- qiani
+description: Article describing the use of ActionDescription XML element in Configuration Manager to display the action, action type, and conditional tests made.
+ms.date: 2016-09-20T00:00:00.0000000Z
+ms.subservice: sdk
+ms.topic: article
+ms.collection: tier3
+locale: en-us
+document_id: 532045df-8f99-2010-e592-9c1d62b781e1
+document_version_independent_id: 5ada8245-7307-22bf-f56a-bbf05eab3513
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/configmgr/develop/core/servers/console/configuration-manager-action-xml.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../../../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: configmgr/develop/core/servers/console/configuration-manager-action-xml
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/configmgr/develop/core/servers/console/configuration-manager-action-xml.md
+cmProducts: []
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+platformId: 450388fd-7921-cf11-e71c-a62346207712
+---
+
+# Configuration Manager Action XML - Configuration Manager | Microsoft Learn
+
+Every Configuration Manager action is defined by an `ActionDescription` XML element that defines the action type and other information that is used by the Configuration Manager console to display the action. An `ActionDescription` element has a variety of child elements that provide information specific to the action type and also conditional tests made before the action is displayed.
+
+The following XML example describes an action that runs a command prompt, creates .txt file and opens that .txt file in notepad. The `ActionDescription` element `Class` attribute denotes an executable action and the `Executable` element provides both the path of the executable and the parameters to pass to that executableThe `ShowOn` element tells the console to make this action available both on the context menu and the default home tab of the ribbon menu.
+
+```
+<ActionDescription Class="Executable" DisplayName="ExecutableActionName" Description="ExecutableActionDescription">  <ShowOn>    <string>DefaultHomeTab</string>    <string>ContextMenu</string>  </ShowOn>  <ResourceAssembly>    <Assembly>UIExtensionsDemo.dll</Assembly>    <Type>UIExtensionsDemo.Resources.resources</Type>  </ResourceAssembly>  <ImagesDescription>    <ResourceAssembly>      <Assembly>UIExtensionsDemo.dll</Assembly>      <Type>UIExtensionsDemo.Resources.resources</Type>    </ResourceAssembly>    <ImageResourceName>ActionIcon</ImageResourceName>  </ImagesDescription>  <Executable>    <FilePath>cmd</FilePath>    <Parameters>/C "echo ##SUB:__RELPATH## > %temp%\relpath.txt & notepad %temp%\relpath.txt"</Parameters>  </Executable></ActionDescription>
+```
+
+The default actions used by the Configuration Manager console are defined in the XML files located in the *%ProgramFiles%*\Microsoft Endpoint Manager\AdminConsole\XmlStorage\ConsoleRoot\ folder. The XML files for custom actions can be placed in the *%ProgramFiles%*\Microsoft Endpoint Manager\AdminConsole\XmlStorage\Extensions\Actions folder under the appropriate Configuration Manager console node. The Configuration Manager console node is identified by a folder named with the GUID of the Configuration Manager console folder.
+
+The following are typical attributes for an `ActionDescription` element:
+
+| Attribute | Description |
+| --- | --- |
+| **ActionVerb** | Indicates whether the action is associated with a standard action. |
+| **Class** | The action type, for example, ShowDialog. |
+| **DisplayName** | The text displayed in the context menu. |
+| **MnemonicDisplayName** | The mnemonic display name. |
+| **Description** | The action description. |
+| **ImageDescription** | Information about the action's icon. |
+| **SelectionMode** | Determines when the action is displayed, as follows: Single (default). Action is shown only when the selection set contains a single item. Multiple. Action is shown when the selection set contains more than one item. Both. Action is shown when one or more items are selected. |
+
+For a complete list of attributes, see [ActionDescription](/en-us/previous-versions/system-center/developer/cc147252%28v=msdn.10%29).
+
+There are a number of child elements for any given action type.

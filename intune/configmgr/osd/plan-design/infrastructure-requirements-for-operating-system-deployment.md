@@ -1,0 +1,258 @@
+---
+layout: Conceptual
+title: OSD infrastructure requirements - Configuration Manager | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/osd/plan-design/infrastructure-requirements-for-operating-system-deployment
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: configuration-manager
+manager: laurawi
+feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
+author: sccmavenger
+ms.author: dannygu
+ms.reviewer:
+- umaikhan
+- brianhun
+- payur
+- hugowu
+- qiani
+description: Learn the external and product dependencies and requirements for OS deployment in Configuration Manager
+ms.date: 2021-09-08T00:00:00.0000000Z
+ms.subservice: osd
+ms.topic: install-set-up-deploy
+ms.collection: tier3
+locale: en-us
+document_id: 6dfe68a2-a99f-0b41-bd9a-9cc916e02076
+document_version_independent_id: b862a3e8-7605-23d6-60b8-5360bd5ba9cf
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/configmgr/osd/plan-design/infrastructure-requirements-for-operating-system-deployment.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: configmgr/osd/plan-design/infrastructure-requirements-for-operating-system-deployment
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/configmgr/osd/plan-design/infrastructure-requirements-for-operating-system-deployment.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
+platformId: 391c2756-d5f1-a4b9-07c8-a07356fa1fc8
+---
+
+# OSD infrastructure requirements - Configuration Manager | Microsoft Learn
+
+*Applies to: Configuration Manager (current branch)*
+
+OS deployment in Configuration Manager has external dependencies as well as dependencies within the product. Use this article to help you prepare the infrastructure for OS deployment.
+
+## Dependencies external to Configuration Manager
+
+This section provides information about external tools, installation kits, and OS versions that are required to deploy operating systems in Configuration Manager.
+
+### Windows ADK
+
+The Windows Assessment and Deployment Kit (ADK) is a set of tools and documentation that support the configuration and deployment of Windows. Configuration Manager uses the Windows ADK to automate actions such as installing Windows, capturing images, and migrating user profiles and data.
+
+For more information, see the following articles:
+
+- [Support for the Windows ADK in Configuration Manager](../../core/plan-design/configs/support-for-windows-adk)
+- [Download the Windows ADK](/en-us/windows-hardware/get-started/adk-install)
+
+    Important
+
+    Make sure to download both the **Windows ADK** and the **Windows PE add-on for the ADK**.
+- [Windows ADK scenarios for IT Pros](/en-us/windows/deployment/windows-adk-scenarios-for-it-pros)
+
+#### Site systems
+
+The Windows ADK is a prerequisite for the following site systems servers:
+
+- The site server of the top-level site in the hierarchy
+- The site server of each primary site in the hierarchy
+- Every instance of the SMS Provider
+
+Note
+
+Manually install the Windows ADK on each site server before you install the Configuration Manager site.
+
+#### Windows ADK features
+
+Install the following features of the Windows ADK:
+
+- User State Migration Tool (USMT)
+
+    Note
+
+    USMT isn't required on the SMS Provider.
+- Windows Deployment Tools
+- Windows Preinstallation Environment (Windows PE)
+
+    Important
+
+    Windows PE is a separate installer. Otherwise there's no functional difference from earlier versions of the Windows ADK.
+
+For a list of the versions of the Windows ADK that you can use with different versions of Configuration Manager, see [Support for the Windows ADK](../../core/plan-design/configs/support-for-windows-adk).
+
+### User State Migration Tool (USMT)
+
+Configuration Manager uses a USMT package that includes the USMT source files to capture and restore the user state as part of your OS deployment. Configuration Manager setup at the top-level site automatically creates the USMT package. USMT captures user state from supported versions of Windows.
+
+For more information, see the following articles:
+
+- [Manage user state with Configuration Manager](../get-started/manage-user-state)
+- [Common migration scenarios for USMT](/en-us/windows/deployment/usmt/usmt-common-migration-scenarios)
+
+### Windows PE
+
+Windows PE is used for boot images to start a computer. It's a Windows version with limited services that's used during the pre-installation and deployment of Windows. For more information about boot images, see [Manage boot images](../get-started/manage-boot-images).
+
+### Windows Server Update Services (WSUS)
+
+WSUS is required for the software update point, which is required to install software updates during OS deployment. For more information, see [Install a configure a software update point](../../sum/get-started/install-a-software-update-point).
+
+### Internet Information Services (IIS) on the site system servers
+
+IIS is required for the distribution point, state migration point, and management point. For more information, see [Site and site system prerequisites](../../core/plan-design/configs/site-and-site-system-prerequisites).
+
+### Windows Deployment Services (WDS)
+
+You can use WDS for PXE deployments, or you can enable PXE on a distribution point without WDS. For more information, see PXE provider options.
+
+### Dynamic Host Configuration Protocol (DHCP)
+
+DHCP is required for PXE deployments. You must have a functioning DHCP server with an active host to deploy operating systems by using PXE. For more information about PXE deployments, see [Use PXE to deploy Windows over the network](../deploy-use/use-pxe-to-deploy-windows-over-the-network).
+
+### Windows device drivers
+
+Windows device drivers can be used when you install the OS on the destination computer. They're also used when you run Windows PE in a boot image. For more information, see [Manage drivers](../get-started/manage-drivers).
+
+## Configuration Manager dependencies
+
+This section provides information about Configuration Manager OS deployment prerequisites.
+
+### OS image
+
+OS images in Configuration Manager are stored in the Windows Imaging (WIM) file format. They represent a compressed collection of reference files and folders. These images are required to successfully install and configure an OS on a computer. For more information, see [Manage OS images](../get-started/manage-operating-system-images).
+
+### Driver catalog
+
+To deploy a device driver, import the device driver, enable it, and make it available on a distribution point that the Configuration Manager client can access. For more information about the driver catalog, see [Manage drivers](../get-started/manage-drivers).
+
+### Management point
+
+Management points transfer information between clients and the Configuration Manager site. The client uses a management point to run the task sequence to complete the OS deployment. For more information about task sequences, see [Planning considerations for automating tasks](planning-considerations-for-automating-tasks).
+
+### Distribution point
+
+Distribution points are used in most deployments to store the data that's used to deploy an OS, such as the image or driver packages. Task sequences typically retrieve data from a distribution point to deploy the OS. For more information about how to install distribution points and manage content, see [Manage content and content infrastructure](../../core/servers/deploy/configure/manage-content-and-content-infrastructure).
+
+### PXE-enabled distribution point
+
+To deploy PXE-initiated deployments, configure a distribution point to accept PXE requests from clients. For more information, see [Configure a distribution point](../../core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
+
+### Multicast-enabled distribution point
+
+To optimize your OS deployments by using multicast, configure a distribution point to support multicast. For more information, see [Configure a distribution point](../../core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-multicast).
+
+### State migration point
+
+When you capture and restore user state data for side-by-side and refresh deployments, configure a state migration point to store the user state data on another computer.
+
+For more about how to configure the state migration point, see [State migration point](../get-started/prepare-site-system-roles-for-operating-system-deployments#state-migration-point).
+
+For more information about how to capture and restore user state, see [Manage user state](../get-started/manage-user-state).
+
+### Reporting services point
+
+To use Configuration Manager reports for OS deployments, install and configure a reporting point. For more information, see [Introduction to reporting](../../core/servers/manage/introduction-to-reporting).
+
+### Security permissions for OS deployments
+
+The **Operating System Deployment Manager** security role is a built-in role that you can't change. However, you can copy the role, make changes, and then save these changes as a new custom security role. Here are some of the permissions that apply directly to OS deployments:
+
+- **Boot Image Package**: Create, Delete, Modify, Modify Folder, Move Object, Read, Set Security Scope
+- **Device Drivers**: Create, Delete, Modify, Modify Folder, Modify Report, Move Object, Read, Run Report
+- **Driver Package**: Create, Delete, Modify, Modify Folder, Move Object, Read, Set Security Scope
+- **Operating System Image**: Create, Delete, Modify, Modify Folder, Move Object, Read, Set Security Scope
+- **Operating System Upgrade Package**: Create, Delete, Modify, Modify Folder, Move Object, Read, Set Security Scope
+- **Task Sequence Package**: Create, Create Task Sequence Media, Delete, Modify, Modify Folder, Modify Report, Move Object, Read, Run Report, Set Security Scope
+
+For more information, see [Create custom security roles](../../core/servers/deploy/configure/configure-role-based-administration#create-custom-security-roles).
+
+### Security scopes for OS deployments
+
+Use security scopes to provide administrative users with access to the securable objects used in OS deployments, such as OS and boot images, driver packages, and task sequence packages. For more information, see [Security scopes](../../core/understand/fundamentals-of-role-based-administration#security-scopes).
+
+## PXE provider options
+
+You can use Windows Deployment Services (WDS) on the same server as the distribution points that you configure to support PXE or multicast. WDS is included in the server OS. With this configuration, WDS is the service that performs the PXE boot. When the distribution point is installed and enabled for PXE, Configuration Manager installs a provider into WDS that uses the WDS PXE boot functions.
+
+You can also enable PXE on a distribution point without WDS. For more information, see the **Enable a PXE responder without Windows Deployment Service** option in [Install and configure distribution points](../../core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
+
+### WDS requirements
+
+- The WDS installation on the server requires that the administrator is a member of the local Administrators group.
+- The WDS server must be either a member of an Active Directory domain or a domain controller for an Active Directory domain. All Windows domain and forest configurations support WDS.
+- If the provider is installed on a remote server, install WDS on the site server and the remote provider.
+
+Note
+
+If the server requires a restart, the installation of WDS might fail.
+
+### Considerations when you have WDS and DHCP on the same server
+
+If you plan to co-host the distribution point on a server running DHCP, consider the following configuration issues:
+
+- You need a functioning DHCP server with an active scope. WDS uses PXE, which requires a DHCP server.
+- A DNS server is required to run WDS.
+- The following UDP ports must be open on the WDS server:
+
+    - Port 67 (DHCP)
+    - Port 69 (TFTP)
+    - Port 4011 (PXE)
+
+        Note
+
+        If DHCP authorization is required on the server, you need DHCP client port 68 to be open on the server.
+- DHCP and WDS both require port number 67. If you co-host WDS and DHCP, you can move DHCP or the distribution point that's configured for PXE to a separate server. Or, you can use the following procedure to configure the WDS server to listen on a different port.
+
+#### How to configure the WDS server to listen on a different port
+
+1. Modify the following registry key:
+
+    `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WDSServer\Providers\WDSPXE`
+2. Set the registry value **UseDHCPPorts** to `0`.
+3. For the new configuration to take effect, run the following command on the server:
+
+    `WDSUTIL /Set-Server /UseDHCPPorts:No /DHCPOption60:Yes`
+
+Note
+
+When you enable a PXE responder on a distribution point without WDS, it can be on the same server as the DHCP service. For more information, see [Configure at least one distribution point to accept PXE requests](../deploy-use/use-pxe-to-deploy-windows-over-the-network#BKMK_Configure).
+
+## Supported operating systems
+
+All Windows operating systems listed as supported clients in [Supported operating systems for clients and devices](../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices) are supported for OS deployment.
+
+## Supported disk configurations
+
+Configuration Manager supports capturing an OS image only from computers that are configured with simple volumes. The following table lists the hard disk configurations that Configuration Manager OS deployment supports on reference and destination computers:
+
+| Reference computer hard disk configuration | Destination computer hard disk configuration |
+| --- | --- |
+| Basic disk | Basic disk |
+| Simple volume on a dynamic disk | Simple volume on a dynamic disk |
+
+Configuration Manager doesn't support the following hard disk configurations:
+
+- Spanned volumes
+- Striped volumes (RAID 0)
+- Mirrored volumes (RAID 1)
+- Parity volumes (RAID 5)
+
+If the reference disk has a basic disk, you can't capture and apply the image to a destination computer with a dynamic disk.

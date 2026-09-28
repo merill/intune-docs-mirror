@@ -1,0 +1,246 @@
+---
+layout: Conceptual
+title: Define the UI Extension Assembly - Configuration Manager | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/apps/how-to-define-the-ui-extension-assembly
+breadcrumb_path: /intune/breadcrumb/toc.json
+uhfHeaderId: MSDocsHeader-Intune
+feedback_system: Standard
+ms.service: configuration-manager
+manager: laurawi
+feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
+author: sccmavenger
+ms.author: dannygu
+ms.reviewer:
+- umaikhan
+- brianhun
+- payur
+- hugowu
+- qiani
+description: From the Configuration Manager, the custom wizard assembly is responsible for collecting data and passing it on to the wizard.
+ms.date: 2016-09-20T00:00:00.0000000Z
+ms.subservice: sdk
+ms.topic: how-to
+ms.collection: tier3
+locale: en-us
+document_id: 8e374505-b430-26af-d75b-9f7684c9c8ab
+document_version_independent_id: e82d24fa-d35a-57bd-0cc4-5a6fb48e7837
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/configmgr/develop/apps/how-to-define-the-ui-extension-assembly.md
+site_name: Docs
+depot_name: MSDN.memdocs
+page_type: conceptual
+toc_rel: ../toc.json
+pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branchName}{pdfName}
+feedback_help_link_type: ''
+feedback_help_link_url: ''
+asset_id: configmgr/develop/apps/how-to-define-the-ui-extension-assembly
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: intune/configmgr/develop/apps/how-to-define-the-ui-extension-assembly.md
+cmProducts: []
+platformId: 4dd4ed0b-c4e4-1ad2-dd9e-d52610441974
+---
+
+# Define the UI Extension Assembly - Configuration Manager | Microsoft Learn
+
+The custom wizard assembly is responsible for collecting any data passed in from the Configuration Manager console, and passing it on to the wizard. The assembly should be named, AdminUI.DeploymentType.&lt; *AssemblySuffix*&gt;.dll.
+
+### To define the UI extension assembly
+
+1. Below is an example of how the UI extension interfaces with the UI. Review the example in the RDP sample project for complete/specific information on defining the UI Extension Assembly.
+
+    ```
+    //
+    // Applies the AppManWrapper around PropertyManager to simplify interaction with the AppMgmt SDK and its corresponding WMI classes.
+    //
+    private void BindSdk()
+    {
+        //
+        // Checks if AppManWrapper has been applied to the PropertyManager yet.
+        //
+        AppManWrapper appManWrapper = this.PropertyManager as AppManWrapper;
+    
+        if (appManWrapper == null)
+        {
+            //
+            // Applies the AppManWrapper around the PropertyManager.
+            //
+            this.PropertyManager = appManWrapper = AppManWrapper.WrapExisting(this.PropertyManager, new ApplicationFactory()) as AppManWrapper;
+        }
+        //
+    
+        // Retrieves references to the Application and DeploymentType objects.
+        //
+        this.application = appManWrapper.InnerAppManObject as Application;
+        this.deploymentType = appManWrapper.AppData.ContainsKey(AppDataDeploymentType) ? appManWrapper.AppData[AppDataDeploymentType] as DeploymentType : null;
+    
+        return;
+    }
+    //
+    // Loads the values into the UI.
+    //
+    private void LoadIntoUI()
+    {
+        //
+        // Checks if the Deployment Type has not been created yet.
+        //
+        if (this.deploymentType == null)
+        {
+            //
+            // Sets defaults for the user.
+            //
+            this.ApplyDefaults();
+            this.ApplyFormState();
+    
+            return;
+        }
+    
+        RdpInstaller rdpInstaller = this.deploymentType.Installer as RdpInstaller;
+    
+        //
+        // Checks if content is associated with the installer, which means the RDP is being distributed through the content server.
+        //
+        bool installerHasContentFile = (rdpInstaller.Contents.Count > 0 && rdpInstaller.Contents[0].Files.Count > 0);
+    
+        //
+        // Adjusts the radio buttons according to content settings.
+        //
+        this.distributeThroughContentServerRadioButton.Checked = (installerHasContentFile == true);
+        this.constructOnClientRadioButton.Checked = (installerHasContentFile == false);
+    
+        //
+        // Loads each value into the UI.
+        //
+        this.deploymentTypeNameTextBox.Text = this.deploymentType.Title;
+        this.clientRdpFileTextBox.Text = Path.Combine(rdpInstaller.InstallFolder, rdpInstaller.Filename);
+        this.serverRdpFileTextBox.Text = installerHasContentFile ? Path.Combine(rdpInstaller.Contents[0].Location, rdpInstaller.Contents[0].Files[0].Name) : string.Empty;
+        this.remoteMachineTextBox.Text = rdpInstaller.FullAddress;
+        this.userNameTextBox.Text = rdpInstaller.Username;
+        this.displayWidthTextBox.Text = string.Format(CultureInfo.InvariantCulture, "{0}", rdpInstaller.DesktopWidth);
+        this.displayHeightTextBox.Text = string.Format(CultureInfo.InvariantCulture, "{0}", rdpInstaller.DesktopHeight);
+        this.fullScreenCheckBox.Checked = rdpInstaller.FullScreen;
+        this.audioComboBox.SelectedIndex = (int)rdpInstaller.AudioMode;
+        this.keyboardComboBox.SelectedIndex = (int)rdpInstaller.KeyboardMode;
+        this.redirectPrinterCheckBox.Checked = rdpInstaller.RedirectPrinters;
+        this.redirectSmartCardsCheckBox.Checked = rdpInstaller.RedirectSmartCards;
+        this.remoteProgramCheckBox.Checked = string.IsNullOrEmpty(rdpInstaller.RemoteApplication) == false;
+        this.remoteProgramFileTextBox.Text = Path.GetFileName(rdpInstaller.RemoteApplication);
+        this.remoteStartUpPathTextBox.Text = Path.GetDirectoryName(rdpInstaller.RemoteApplication);
+    
+        //
+        // Adjusts the form according to state.
+        //
+        this.ApplyFormState();
+    
+        return;
+    }
+    
+    //
+     // Saves the values from the UI.
+    //
+    private void SaveFromUI()
+    {
+        //
+        //  In the case of the wizard, the new Deployment Type instance will be available in UserData once the user has navigated from the creation page.
+        //
+        if (this.deploymentType == null &&        this.UserData.ContainsKey(UserDataDeploymentType) == true)
+        {
+            this.deploymentType = this.UserData[UserDataDeploymentType] as DeploymentType;
+        }
+    
+        RdpInstaller rdpInstaller = this.deploymentType.Installer as RdpInstaller;
+    
+        //
+        // Checks if content should be associated with the installer (which means the RDP is being distributed through the content server).
+        //
+        if (this.distributeThroughContentServerRadioButton.Checked == true)
+        {
+            if (rdpInstaller.Contents.Count <= 0)
+            {
+                rdpInstaller.Contents.Add(new Content());
+            }
+            if (rdpInstaller.Contents[0].Files.Count <= 0)
+            {
+                rdpInstaller.Contents[0].Files.Add(new ContentFile());
+            }
+    
+            rdpInstaller.Contents[0].Location = Path.GetDirectoryName(this.serverRdpFileTextBox.Text);
+            rdpInstaller.Contents[0].Files[0].Name = Path.GetFileName(this.serverRdpFileTextBox.Text);
+        }
+        else
+        {
+            rdpInstaller.Contents.Clear();
+        }
+    
+        //
+        // Collects the desktop dimensions.
+        //
+        int desktopWidth = RdpInstaller.DefaultDesktopWidth, desktopHeight = RdpInstaller.DefaultDesktopHeight;
+        int.TryParse(this.displayWidthTextBox.Text, out desktopWidth);
+        int.TryParse(this.displayHeightTextBox.Text, out desktopHeight);
+    
+        //
+        // Saves each value from UI.
+        //    this.deploymentType.Title = this.deploymentTypeNameTextBox.Text;
+        rdpInstaller.InstallFolder = Path.GetDirectoryName(this.clientRdpFileTextBox.Text);
+        rdpInstaller.Filename = Path.GetFileName(this.clientRdpFileTextBox.Text);
+        rdpInstaller.ConstructRdpOnClient = this.constructOnClientRadioButton.Checked;
+        rdpInstaller.FullAddress = this.remoteMachineTextBox.Text;    rdpInstaller.Username = this.userNameTextBox.Text;
+        rdpInstaller.DesktopWidth = desktopWidth;
+        rdpInstaller.DesktopHeight = desktopHeight;
+        rdpInstaller.FullScreen = this.fullScreenCheckBox.Checked;
+        rdpInstaller.AudioMode = (RdpAudioMode)this.audioComboBox.SelectedIndex;
+        rdpInstaller.KeyboardMode = (RdpKeyboardMode)this.keyboardComboBox.SelectedIndex;
+        rdpInstaller.RedirectPrinters = this.redirectPrinterCheckBox.Checked;
+        rdpInstaller.RedirectSmartCards = this.redirectSmartCardsCheckBox.Checked;
+        rdpInstaller.RemoteApplication = this.remoteProgramCheckBox.Checked ? Path.Combine(this.remoteStartUpPathTextBox.Text, this.remoteProgramFileTextBox.Text) : string.Empty;
+    
+        this.SplitFullAddressIntoServerNameAndPort(rdpInstaller);
+    
+        return;
+    }
+    ```
+
+#### Namespaces
+
+Microsoft.ConfigurationManagement.AdminConsole
+
+Microsoft.ConfigurationManagement.AdminConsole.AppManFoundation
+
+Microsoft.ConfigurationManagement.AdminConsole.CreateDT
+
+Microsoft.ConfigurationManagement.ApplicationManagement
+
+Microsoft.ConfigurationManagement.ApplicationManagement.Application
+
+Microsoft.ConfigurationManagement.ManagementProvider.ConnectionManagerBase
+
+System.Collections.Generic
+
+System.ComponentModel
+
+System.Diagnostics
+
+System.Drawing
+
+System.Globalization
+
+System.IO
+
+System.Linq
+
+System.Windows.Forms
+
+#### Assemblies
+
+Microsoft.ConfigurationManagement.ApplicationManagement
+
+Microsoft.ConfigurationManagement.DialogFramework
+
+Microsoft.ConfigurationManagement
+
+Microsoft.ConfigurationManagement.ManagementProvider
+
+AdminUI.AppManFoundation
+
+AdminUI.CreateDT
