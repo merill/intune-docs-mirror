@@ -56,7 +56,11 @@ You can view Asset Intelligence information on the **Asset Intelligence** home p
 
 ### Asset Intelligence home page
 
-The **Asset Intelligence** home page displays a summary dashboard for Asset Intelligence catalog information. On the home page, you can view information about catalog synchronization and inventoried software status. The **Asset Intelligence** home page is divided into the following sections:
+Starting in version 2609, the **Catalog Synchronization** and **Inventoried Software Status** sections are removed from the Asset Intelligence home page. The page displays deprecation information and links to the [product lifecycle dashboard](product-lifecycle-dashboard) and [Asset Intelligence client WMI classes](../../../../develop/reference/core/clients/client-classes/asset-intelligence-client-wmi-classes).
+
+#### Version 2603 and earlier
+
+In version 2603 and earlier, the **Asset Intelligence** home page displays a summary dashboard for Asset Intelligence catalog information. On the home page, you can view information about catalog synchronization and inventoried software status. The **Asset Intelligence** home page is divided into the following sections:
 
 - **Catalog Synchronization**: Provides information about whether Asset Intelligence is enabled, the current status of the Asset Intelligence synchronization point, the synchronization schedule, whether the customer license statement is imported, when status was last updated and the time for the next scheduled update, and the number of changes that occurred after the Asset Intelligence synchronization point site system was installed.
 
@@ -70,9 +74,13 @@ The **Asset Intelligence** home page displays a summary dashboard for Asset Inte
 ##### To view Asset Intelligence information on the Asset Intelligence home page
 
 1. In the Configuration Manager console, click **Assets and Compliance**.
-2. In the **Asset and Compliance** workspace, click **Asset Intelligence**. The Asset Intelligence reports are displayed.
+2. In the **Assets and Compliance** workspace, click **Asset Intelligence**. The summary dashboard is displayed.
 
 ### Asset Intelligence reports
+
+Important
+
+Starting in version 2609, Asset Intelligence reports are removed. The report descriptions and procedures in this section apply to version 2603 and earlier.
 
 There are over 60 Asset Intelligence reports that display the information collected by Asset Intelligence. Many of these reports link to more specific reports in which you can query for general information and drill down to more detailed information. The Asset Intelligence reports are located in the Configuration Manager console, in the **Monitoring** workspace, under the **Reporting** node. The reports provide information about hardware, license management, and software. For more information about reports in Configuration Manager, see [Introduction to reporting](../../../servers/manage/introduction-to-reporting).
 

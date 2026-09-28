@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: The requirements for installing Configuration Manager client and site system roles in a virtualization environment.
-ms.date: 2021-08-02T00:00:00.0000000Z
+ms.date: 2026-09-21T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -60,9 +60,6 @@ For example, you use Microsoft Hyper-V Server 2016 to host a VM that runs Window
 - Windows Server 2019
 - Windows Server 2016 ^Note 1^
 - Microsoft Hyper-V Server 2016 ^Note 1^
-- Windows Server 2012 R2
-- Microsoft Hyper-V Server 2012
-- Windows Server 2012
 
 Note
 

@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about urgent issues that aren't yet fixed in the product or covered in a Microsoft Support knowledge base article.
-ms.date: 2025-04-24T00:00:00.0000000Z
+ms.date: 2026-09-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: release-notes
 ms.collection: tier3
@@ -60,9 +60,9 @@ This article contains release notes for the current branch of Configuration Mana
 
 For information about the new features introduced with different versions, see the following articles:
 
+- [What's new in version 2609](../../../plan-design/changes/whats-new-version-2609)
 - [What's new in version 2603](../../../plan-design/changes/whats-new-in-version-2603)
 - [What's new in version 2509](../../../plan-design/changes/whats-new-in-version-2509)
-- [What's new in version 2503](../../../plan-design/changes/whats-new-in-version-2503)
 
 Tip
 

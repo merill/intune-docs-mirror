@@ -38,12 +38,12 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/core/clients/manage/asset-intelligence/introduction-to-asset-intelligence.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68cb9039-df60-49b0-8ef8-89ad96497f63
 - https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68cb9039-df60-49b0-8ef8-89ad96497f63
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/691e3042-55ad-4ce1-b5e9-649b1cc47b5c
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/725b6df3-93e8-472d-834e-e7e0d2953d35
 - https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
+- https://authoring-docs-microsoft.poolparty.biz/devrel/725b6df3-93e8-472d-834e-e7e0d2953d35
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b7d11190-096c-4ddb-87db-63764f603aac
 platformId: be6a7777-730d-86bc-3352-af89296ca4cb
 ---
@@ -160,7 +160,13 @@ An asset intelligence synchronization point is required to connect to the Micros
 
 ## Asset intelligence home page
 
-The **Asset Intelligence** node in the **Assets and Compliance** workspace is the home page for asset intelligence in Configuration Manager. This home page displays a summary dashboard view for asset intelligence catalog information.
+The **Asset Intelligence** node in the **Assets and Compliance** workspace is the home page for asset intelligence in Configuration Manager.
+
+Starting in version 2609, the **Catalog Synchronization** and **Inventoried Software Status** sections are removed. The home page displays deprecation information and links to the [product lifecycle dashboard](product-lifecycle-dashboard) and [Asset Intelligence client WMI classes](../../../../develop/reference/core/clients/client-classes/asset-intelligence-client-wmi-classes).
+
+### Version 2603 and earlier
+
+In version 2603 and earlier, the home page displays a summary dashboard view for asset intelligence catalog information.
 
 Note
 
@@ -184,6 +190,10 @@ The **Asset Intelligence** home page includes the following sections:
 - **Inventoried Software Status**: The count and percentage of inventoried software, software categories, and software families that are identified by Microsoft, identified by an administrator, pending online identification, or unidentified and not pending. The information displayed in table format shows the count for each, and the information displayed in the chart shows the percentage for each.
 
 ## Asset intelligence reports
+
+Important
+
+Starting in version 2609, Asset Intelligence reports are removed from the **Monitoring &gt; Reporting &gt; Reports** node. The report descriptions in this section apply to version 2603 and earlier.
 
 The asset intelligence reports are located in the Configuration Manager console, in the **Monitoring** workspace, in the **Asset intelligence** folder under the **Reporting** node. The reports provide information about hardware, license management, and software. For more information about reports in Configuration Manager, see [Introduction to reporting](../../../servers/manage/introduction-to-reporting).
 

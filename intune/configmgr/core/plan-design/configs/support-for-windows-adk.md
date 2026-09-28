@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about the Windows Assessment and Deployment Kit (ADK) versions that are supported for OS deployment with Configuration Manager.
-ms.date: 2024-12-06T00:00:00.0000000Z
+ms.date: 2026-09-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -62,7 +62,7 @@ When you deploy operating systems with Configuration Manager, the Windows Assess
 
 The following table lists the versions of the Windows ADK that you can use with different versions of Configuration Manager.
 
-| Windows ADK version | ConfigMgr 2503 | ConfigMgr 2509 | ConfigMgr 2603 |
+| Windows ADK version | ConfigMgr 2509 | ConfigMgr 2603 | ConfigMgr 2609 |
 | --- | --- | --- | --- |
 | **ADK 10.1.28000.1 (Updated Nov 2025)**(10.1.28000.1) | ❌ | ❌ | ❌ |
 | **ADK 10.1.26100.2454 (Updated Dec 2024)**(10.1.26100.X) | ✅ | ✅ | ✅ |

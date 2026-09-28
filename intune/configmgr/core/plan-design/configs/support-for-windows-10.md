@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about the Windows 10 versions that are supported as clients with Configuration Manager.
-ms.date: 2024-12-04T00:00:00.0000000Z
+ms.date: 2026-09-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -76,7 +76,7 @@ A Configuration Manager version drops from the matrix after [support for that ve
 
 The following table lists the versions of Windows 10 that you can use as a client with different versions of Configuration Manager.
 
-| Windows 10 version | ConfigMgr 2503 | ConfigMgr 2509 | ConfigMgr 2603 |
+| Windows 10 version | ConfigMgr 2509 | ConfigMgr 2603 | ConfigMgr 2609 |
 | --- | --- | --- | --- |
 | **22H2**(10.0.19045) ^[Extended Security Updates](supported-operating-systems-for-clients-and-devices#bkmk_ESU)^ | ✅ | ✅ | ✅ |
 

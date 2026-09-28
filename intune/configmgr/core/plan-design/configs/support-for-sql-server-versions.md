@@ -86,7 +86,7 @@ SQL Server must be located on the site server computer.
 
 Important
 
-Upgrade SQL 2012 or 2014 Express, Standard, Enterprise edition to SQl 2016 or latest version. Visual C++ Redistributable need to be upgraded to latest version on Secondary site: [Download Latest Microsoft Visual C++ Redistributable Version](https://aka.ms/vs/17/release/vc_redist.x64.exe).
+Before installing or updating to Configuration Manager version 2609, upgrade SQL Server Express, Standard, or Enterprise editions earlier than SQL Server 2017 Cumulative Update 2 (CU2) to a supported version. Also upgrade the Visual C++ Redistributable on secondary sites: [Download the latest Microsoft Visual C++ Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
 ### Data warehouse service point
 
@@ -130,7 +130,7 @@ Configuration Manager requires a 64-bit version of SQL Server to host the site d
 | **SQL Server 2022** | RTM | CAS, Primary, Secondary | Support added in **version 2303**. Support for SQL 2022 Compatibility Level (160) added in **version 2603**. CU must be supported by SQL lifecycle. |
 | **SQL Server 2019** | Cumulative Update 5 (CU5) or later | CAS, Primary, Secondary | CU5 is the minimum requirement as it resolves an issue with [scalar UDF inlining](/en-us/sql/relational-databases/user-defined-functions/scalar-udf-inlining). CU must be supported by SQL lifecycle. |
 | **SQL Server 2017** | Cumulative Update 2 (CU2) or later | CAS, Primary, Secondary | CU must be supported by SQL lifecycle. |
-| **SQL Server 2016** | Minimum Service Pack supported by [SQL 2016 lifecycle](/en-us/lifecycle/products/sql-server-2016) | CAS, Primary, Secondary |  |
+| ~~**SQL Server 2016**~~ | Deprecated | CAS, Primary, Secondary | Deprecated in **version 2609**. SQL Server 2016 extended support ended July 2026. |
 | ~~**SQL Server 2014**~~ | Deprecated | CAS, Primary, Secondary | Deprecated in **version 2409**. SQL 2014 support ended July 2024. |
 
 ### Express Editions (Secondary Sites Only)
@@ -141,7 +141,7 @@ Configuration Manager requires a 64-bit version of SQL Server to host the site d
 | **SQL Server 2022 Express** | RTM | Secondary | Shipped with version 2509. Support for SQL 2022 Compatibility Level (160) added in **version 2603**. |
 | **SQL Server 2019 Express** | Cumulative Update 5 (CU5) or later | Secondary | CU5 is the minimum requirement as it resolves an issue with [scalar UDF inlining](/en-us/sql/relational-databases/user-defined-functions/scalar-udf-inlining). CU must be supported by SQL lifecycle. |
 | **SQL Server 2017 Express** | Cumulative Update 2 (CU2) or later | Secondary | CU must be supported by SQL lifecycle. |
-| **SQL Server 2016 Express** | Minimum Service Pack supported by [SQL 2016 lifecycle](/en-us/lifecycle/products/sql-server-2016) | Secondary |  |
+| ~~**SQL Server 2016 Express**~~ | Deprecated | Secondary | Deprecated in **version 2609**. SQL Server 2016 extended support ended July 2026. |
 | ~~**SQL Server 2014 Express**~~ | Deprecated | Secondary | Deprecated in **version 2409**. SQL 2014 support ended July 2024. |
 
 ## Database compatibility level
@@ -158,7 +158,6 @@ The following table identifies the recommended compatibility levels for Configur
 | SQL Server 2022 | 160 (since version 2603), 150, 140, 130, 120, 110 | 150 |
 | SQL Server 2019 | 150, 140, 130, 120, 110 | 150 |
 | SQL Server 2017 | 140, 130, 120, 110 | 140 |
-| SQL Server 2016 | 130, 120, 110 | 130 |
 
 To identify the compatibility level in use for your site database, run the following SQL query on the site database server:
 

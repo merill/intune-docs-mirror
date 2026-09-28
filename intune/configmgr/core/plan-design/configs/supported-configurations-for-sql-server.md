@@ -99,7 +99,7 @@ Do not alter them unless instructed by Microsoft support. The [Support policies 
 | Recursive Triggers Enabled | `RECURSIVE_TRIGGERS` | True (ON) | [Recursive Triggers](/en-us/sql/relational-databases/triggers/create-nested-triggers#recursive-triggers) |
 | Broker Enabled | `ENABLE_BROKER` | True (ON) | [Activate Service Broker in a database](/en-us/sql/database-engine/service-broker/how-to-activate-service-broker-message-delivery-in-databases-transact-sql#activate-service-broker-in-a-database) |
 | Honor Broker Priority | `HONOR_BROKER_PRIORITY` | True (ON) | [Enable conversation priorities](/en-us/sql/database-engine/service-broker/managing-conversation-priorities#enable-conversation-priorities) |
-| Trustworthy | `TRUSTWORTHY` | True (ON) | [TRUSTWORTHY database property](/en-us/sql/relational-databases/security/trustworthy-database-property) |
+| Trustworthy | `TRUSTWORTHY` | Version 2603 and earlier: True (ON). Version 2609 and later: Not required for loading Configuration Manager SQLCLR assemblies. | SQLCLR assembly trust |
 | Allow Snapshot Isolation | `ALLOW_SNAPSHOT_ISOLATION` | True (ON) | [Snapshot Isolation in SQL Server](/en-us/dotnet/framework/data/adonet/sql/snapshot-isolation-in-sql-server) |
 | Is Read Committed Snapshot On | `READ_COMMITTED_SNAPSHOT` | True (ON) | [Set Transaction Isolation Level](/en-us/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) |
 | ANSI Nulls Enabled | `ANSI_NULLS` | True (ON) | [SET ANSI_NULLS](/en-us/sql/t-sql/statements/set-ansi-nulls-transact-sql) |
@@ -109,6 +109,14 @@ Do not alter them unless instructed by Microsoft support. The [Support policies 
 | Concatenate Null Yields Null | `CONCAT_NULL_YIELDS_NULL` | True (ON) | [SET CONCAT_NULL_YIELDS_NULL](/en-us/sql/t-sql/statements/set-concat-null-yields-null-transact-sql) |
 | Quoted Identifiers Enabled | `QUOTED_IDENTIFIER` | True (ON) | [SET QUOTED_IDENTIFIER](/en-us/sql/t-sql/statements/set-quoted-identifier-transact-sql) |
 | Numeric Round-abort | `NUMERIC_ROUNDABORT` | False (OFF) | [SET NUMERIC_ROUNDABORT](/en-us/sql/t-sql/statements/set-numeric-roundabort-transact-sql) |
+
+### SQLCLR assembly trust
+
+Starting in version 2609, you no longer need to enable the **TRUSTWORTHY** database property for Configuration Manager to load its SQL common language runtime (SQLCLR) assemblies. This also applies to site databases that use SQL Server Always On availability groups.
+
+Configuration Manager verifies that its SQLCLR assemblies are Microsoft-signed.
+
+For version 2603 and earlier, **TRUSTWORTHY** must remain enabled. For more information about this property, see [TRUSTWORTHY database property](/en-us/sql/relational-databases/security/trustworthy-database-property).
 
 ## Optional configurations
 

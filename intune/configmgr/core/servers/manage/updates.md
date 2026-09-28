@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about the in-console service method called Updates and Servicing that makes it easy to locate and install recommended updates.
-ms.date: 2024-12-04T00:00:00.0000000Z
+ms.date: 2026-09-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -86,9 +86,9 @@ The following supported versions^`*`^, of Configuration Manager are currently av
 
 | Version | Availability date | [Support end date](current-branch-versions-supported) | Baseline | In-console update |
 | --- | --- | --- | --- | --- |
+| [**2609**](../../plan-design/changes/whats-new-version-2609) (5.00.9152.1000) | September 28, 2026 | March 28, 2028 | Yes | Yes |
 | [**2603**](../../plan-design/changes/whats-new-in-version-2603) (5.00.9146.1000) | May 5, 2026 | November 5, 2027 | No | Yes |
 | [**2509**](../../plan-design/changes/whats-new-in-version-2509) (5.00.9141) | November 12, 2025 | May 12, 2027 | Yes | Yes |
-| [**2503**](../../plan-design/changes/whats-new-in-version-2503) (5.00.9135) | March 31, 2025 | September 30, 2026 | No | Yes |
 
 Note
 
@@ -118,6 +118,7 @@ The following table lists historical versions of Configuration Manager current b
 
 | Version | Availability date | Support end date | Baseline | In-console update |
 | --- | --- | --- | --- | --- |
+| **2503** (5.00.9135) | March 31, 2025 | September 30, 2026 | No | Yes |
 | **2409** (5.00.9132) | December 4, 2024 | June 4, 2026 | No | Yes |
 | **2403** (5.00.9128) | April 22, 2024 | October 22, 2025 | Yes | Yes |
 | **2309** (5.00.9122) | October 9, 2023 | April 9, 2025 | No | Yes |

@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn which OS versions Configuration Manager supports for clients and devices.
-ms.date: 2024-12-19T00:00:00.0000000Z
+ms.date: 2026-09-21T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: reference
 ms.collection: tier3
@@ -39,12 +39,12 @@ item_type: Content
 source_path: intune/configmgr/core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/fc3f72c2-fb6f-4cea-95ee-b444e52254ee
 - https://authoring-docs-microsoft.poolparty.biz/devrel/e0ffb20c-01c6-407b-a9bd-29111652a1dc
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/fc3f72c2-fb6f-4cea-95ee-b444e52254ee
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f12cf087-582d-48ac-a085-0c19adf1e391
 - https://authoring-docs-microsoft.poolparty.biz/devrel/3904bce4-d817-48cf-85fd-b6146fca83b7
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f12cf087-582d-48ac-a085-0c19adf1e391
 platformId: 15955ea2-67dc-4462-cc1e-42a25985297a
 ---
 
@@ -109,10 +109,6 @@ For more information, see the following articles:
     - *Windows Server IoT 2019 for Storage* is not supported
 - **Windows Server 2016**: Standard, Datacenter
 - **Windows Storage Server 2016**: Workgroup, Standard, IoT
-- **Windows Server 2012 R2** (x64): Standard, Datacenter ^Extended Security Updates^
-- **Windows Storage Server 2012 R2** (x64) ^Extended Security Updates^
-- **Windows Server 2012** (x64): Standard, Datacenter ^Extended Security Updates^
-- **Windows Storage Server 2012** (x64) ^Extended Security Updates^
 
 #### Server Core
 
@@ -124,8 +120,6 @@ Windows Server semi-annual channel versions are Server Core installations, such 
 - **Windows Server 2022** (x64) ^Note 1^ (*starting in version 2107*)
 - **Windows Server 2019** (x64) ^Note 1^
 - **Windows Server 2016** (x64) ^Note 1^
-- **Windows Server 2012 R2** (x64) ^Note 1^^Extended Security Updates^
-- **Windows Server 2012** (x64) ^Note 1^^Extended Security Updates^
 
 #### Note 1
 
@@ -163,7 +157,9 @@ This version includes the long-term servicing channel (LTSC). For more informati
 
 The [Extended Security Updates (ESU)](/en-us/lifecycle/faq/extended-security-updates) program is a last resort option for customers who need to run certain legacy Microsoft products past the end of support. For example, Windows 10. It includes Critical and/or Important security updates (as defined by the [Microsoft Security Response Center (MSRC)](https://www.microsoft.com/msrc)) for a maximum of three years after the product's End of Extended Support date.
 
-Products that are beyond their support lifecycle aren't supported for use with Configuration Manager. This includes any products that are covered under the ESU program. Security updates released under the ESU program will be published to Windows Server Update Services (WSUS). These updates will appear in the Configuration Manager console. While ESU-covered products are not supported operating systems in Configuration Manager^1^, any [supported version of Configuration Manager current branch](../../servers/manage/updates#version-details) can be used to deploy and install ESU security updates for **Windows Server 2012, Windows Server 2012 R2**, and **Windows 10**^2^. For details on supported Windows 10 editions under the ESU program, see the [Extended Security Updates FAQ](/en-us/lifecycle/faq/extended-security-updates). No further support is offered for computers running Windows 7 or Windows Server 2008/ 2008 R2, including customers with an additional further year of ESU support as noted in [KB4522133](https://support.microsoft.com/en-us/topic/kb4522133-procedure-to-continue-receiving-security-updates-after-extended-support-ended-on-january-10-2023-48c59204-fe67-3f42-84fc-c3c3145ff28e)
+Products that are beyond their support lifecycle aren't supported for use with Configuration Manager. This includes any products that are covered under the ESU program. Security updates released under the ESU program will be published to Windows Server Update Services (WSUS). These updates will appear in the Configuration Manager console. While ESU-covered products are not supported operating systems in Configuration Manager^1^, a [supported version of Configuration Manager current branch](../../servers/manage/updates#version-details) can be used to deploy and install ESU security updates for supported **Windows 10** editions^2^. For details, see the [Extended Security Updates FAQ](/en-us/lifecycle/faq/extended-security-updates). No further support is offered for computers running Windows 7 or Windows Server 2008/2008 R2, including customers with an additional year of ESU support as noted in [KB4522133](https://support.microsoft.com/en-us/topic/kb4522133-procedure-to-continue-receiving-security-updates-after-extended-support-ended-on-january-10-2023-48c59204-fe67-3f42-84fc-c3c3145ff28e).
+
+Starting in Configuration Manager version 2609, Windows Server 2012, Windows Server 2012 R2, and their Windows Storage Server editions are no longer supported as client operating systems.
 
 Client management features not related to Windows software update management or OS deployment will no longer be tested on the operating systems covered under the ESU program and we don't guarantee that they'll continue to function. It's highly recommended to upgrade or migrate to a current version of the operating systems as soon as possible to receive client management support.
 

@@ -308,15 +308,21 @@ Microsoft .NET Framework 4.0 is installed on the Configuration Manager console c
 
 *Applies to: new site or when updating an existing one*
 
-Configuration Manager requires the installation of the ODBC driver for SQL server as a prerequisite. Starting in version **2309**, this prerequisite is required when you create a new site or update an existing one. From version **2503 onwards**, the minimum required version is **18.4.1.1** or later.
+Configuration Manager requires the installation of the ODBC driver for SQL Server as a prerequisite. Starting in version **2309**, this prerequisite is required when you create a new site or update an existing one.
+
+- **Version 2503 through 2603:** The minimum required ODBC driver version is **18.4.1.1** or later. Earlier versions block the upgrade.
+- **Version 2609 and later:** The minimum required ODBC driver version is **18.6.2.1** or later. Earlier versions block the upgrade.
 
 Note
 
-We recommend installing the latest version of the Microsoft ODBC Driver for SQL Server to benefit from the most recent fixes and security updates. However, Configuration Manager does **not** test every new ODBC driver version as soon as it is released. The version shipped with Configuration Manager 2503 and later is **18.4.1.1**, which is the last validated version. If you encounter issues with a newer ODBC driver, you may be asked to revert to a previously validated version until the issue is resolved by the respective component team. Configuration Manager will update the redistributable ODBC driver in future releases if there are security fixes or deprecations.
+We recommend installing the latest version of the Microsoft ODBC Driver for SQL Server to benefit from the most recent fixes and security updates. However, Configuration Manager doesn't test every new ODBC driver version as soon as it's released. The version shipped with Configuration Manager 2609 is **18.6.2.1**, which is the last validated version. If you encounter issues with a newer ODBC driver, you may be asked to revert to a previously validated version until the issue is resolved by the respective component team. Configuration Manager will update the redistributable ODBC driver in future releases if there are security fixes or deprecations.
 
 Important
 
-Don't install Microsoft ODBC Driver for SQL Server version **18.6.1.1** or **18.7.1.1** in a Configuration Manager environment. Known issues in these versions can block site configuration.
+Don't install the following Microsoft ODBC Driver for SQL Server versions. Known issues in these versions can block site configuration:
+
+- Version **18.6.1.1** in any Configuration Manager environment.
+- Version **18.7.1.1** with Configuration Manager version 2603 or earlier. Configuration Manager version 2609 and later support version 18.7.1.1.
 
 ### Parent database collation
 
@@ -475,7 +481,7 @@ Configuration Manager doesn't support software update points on network (NLB) or
 
 *Applies to: Central administration site, primary site, secondary site*
 
-Configuration Manager requires the installation of the ODBC driver for SQL server as a **prerequisite**. This prerequisite is required when you create a **new site** or **update** an existing one.
+Configuration Manager requires the installation of the ODBC driver for SQL Server as a **prerequisite**. This prerequisite is required when you create a **new site** or **update** an existing one. For minimum required versions per Configuration Manager release, see ODBC driver for SQL Server.
 
 ### SQL Server Always On availability groups
 
@@ -585,6 +591,8 @@ TCP is enabled for the SQL Server instance, and is set to use a static port.
 
 A supported version of SQL Server is installed on the specified site database server.
 
+Starting in version 2609, this check requires SQL Server 2017 Cumulative Update 2 (CU2) or later for central administration sites, primary sites, and secondary sites. This requirement also applies to SQL Server Express at secondary sites. Earlier versions block site installation or update.
+
 For more information, see [Support for SQL Server versions](../../../plan-design/configs/support-for-sql-server-versions).
 
 ### Unsupported OS for Configuration Manager console
@@ -672,6 +680,12 @@ The Windows Preinstallation Environment (PE) component of the Windows ADK is ins
 Starting in version 2403, this error displays if you have site systems running a version of Windows Server that is out of support. The support lifecycle for Windows Server 2012 and Windows Server 2012 R2 ended on October 10, 2023. Plan to upgrade the OS on your site servers. For more information, see the following blog post: [Know your options for SQL Server 2012 and Windows Server 2012 end of support](https://cloudblogs.microsoft.com/sqlserver/2021/07/14/know-your-options-for-sql-server-2012-and-windows-server-2012-end-of-support/). 
 
 ## Warnings
+
+### Insecure client approval method
+
+*Applies to: Central administration site, primary site*
+
+Starting in version 2609, the upgrade prerequisite check warns if the client approval method is set to **Automatically approve all computers (not recommended)**. This warning doesn't block the upgrade. The option is planned for removal in a future release because of security concerns. We strongly recommend that you stop using it as soon as possible. In **Hierarchy Settings**, change the client approval method to manual approval or automatic approval for computers in trusted domains. For more information, see [Prerequisite warning for automatic approval of all clients](../../../plan-design/changes/whats-new-version-2609#prerequisite-warning-for-automatic-approval-of-all-clients).
 
 ### Active Directory domain functional level
 
@@ -953,7 +967,7 @@ SELECT * FROM vLogs WHERE ProcedureName = 'spDiagChangeTracking'
 
 *Applies to: Secondary site*
 
-Starting in version 2103, if you have a secondary site that uses SQL Server Express edition, this check warns if the version is earlier than SQL Server 2016 with service pack 2 (13.0.5026.0). If Configuration Manager didn't install SQL Server Express, then setup skips this check. Setup looks for the presence of the CONFIGMGRSEC instance.
+Starting in version 2103, if you have a secondary site that uses SQL Server Express edition, this check warns if the version is earlier than SQL Server 2016 with service pack 2 (13.0.5026.0). Starting in version 2609, because SQL Server 2016 is no longer supported, this check blocks setup if the SQL Server Express version is earlier than SQL Server 2017 Express Cumulative Update 2 (CU2), which is the current minimum supported version. If Configuration Manager didn't install SQL Server Express, then setup skips this check. Setup looks for the presence of the CONFIGMGRSEC instance.
 
 Microsoft recommends that you keep SQL Server Express up to date. For more information, see [Security for site administration](../../../plan-design/hierarchy/security-and-privacy-for-site-administration#update-sql-server-express-at-secondary-sites).
 

@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn how to configure Endpoint Protection on a standalone client.
-ms.date: 2020-07-22T00:00:00.0000000Z
+ms.date: 2026-09-18T00:00:00.0000000Z
 ms.subservice: protect
 ms.topic: how-to
 ms.collection: tier3
@@ -38,8 +38,10 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/protect/deploy-use/endpoint-protection-configure-standalone-client.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/aa9d0281-4c35-44bb-8c75-a0920bde2014
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/c7449412-70b0-48ea-831f-3b132eafb97e
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: 9634207d-ec74-66b4-64e3-05d90adccb75
 ---
@@ -47,6 +49,10 @@ platformId: 9634207d-ec74-66b4-64e3-05d90adccb75
 # Configure Endpoint Protection on a standalone client - Configuration Manager | Microsoft Learn
 
 *Applies to: Configuration Manager (current branch)*
+
+Important
+
+The legacy System Center Endpoint Protection installer (`scepinstall.exe`) is deprecated. Starting in Configuration Manager version 2609, it is no longer included with Configuration Manager.
 
 Your organization may have a number of standalone clients that you cannot manage or protect with Microsoft Configuration Manager. Without any endpoint protection in place, these standalone clients are vulnerable to potential malware attacks. To protect such standalone clients, you can manually configure them with Endpoint Protection, as described in this topic.
 

@@ -120,9 +120,9 @@ The `SchUseStrongCrypto` setting allows .NET to use TLS 1.1 and TLS 1.2. The `Sy
 
 ## Update SQL Server and client components
 
-Microsoft SQL Server 2016 and later support TLS 1.1 and TLS 1.2. Earlier versions and dependent libraries might require updates. For more information, see [KB 3135244: TLS 1.2 support for Microsoft SQL Server](https://support.microsoft.com/topic/kb3135244-tls-1-2-support-for-microsoft-sql-server-e4472ef8-90a9-13c1-e4d8-44aad198cdbe).
+All SQL Server versions currently supported by Configuration Manager support TLS 1.1 and TLS 1.2. Dependent libraries might still require updates. For more information, see [KB 3135244: TLS 1.2 support for Microsoft SQL Server](https://support.microsoft.com/topic/kb3135244-tls-1-2-support-for-microsoft-sql-server-e4472ef8-90a9-13c1-e4d8-44aad198cdbe).
 
-Secondary site servers need to use at least SQL Server 2016 Express with Service Pack 2 (13.2.50.26) or later.
+Secondary site servers need to use at least SQL Server 2017 Express with Cumulative Update 2 (CU2) or later.
 
 ### SQL Server Native Client
 

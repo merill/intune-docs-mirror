@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn which Windows and networking features Configuration Manager supports.
-ms.date: 2021-07-15T00:00:00.0000000Z
+ms.date: 2026-09-21T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -94,7 +94,7 @@ Although clients in workgroups are supported, all site systems must be members o
 
 ## Data deduplication
 
-Configuration Manager supports the use of data deduplication with distribution points on Windows Server 2012 or later.
+Configuration Manager supports the use of data deduplication with distribution points on supported Windows Server versions.
 
 Important
 

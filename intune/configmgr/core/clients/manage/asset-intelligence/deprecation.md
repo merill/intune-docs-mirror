@@ -39,8 +39,10 @@ item_type: Content
 source_path: intune/configmgr/core/clients/manage/asset-intelligence/deprecation.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/cbe4ca68-43ac-4375-aba5-5945a6394c20
+- https://authoring-docs-microsoft.poolparty.biz/devrel/07bb3e10-d135-43ff-bc8b-360497cb39fa
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/ced846cc-6a3c-4c8f-9dfb-3de0e90e2742
+- https://authoring-docs-microsoft.poolparty.biz/devrel/12e559b9-eaf6-4aee-9af7-62334e15f863
 platformId: 889edcde-52b2-10cf-fea3-b2baf47d7e2e
 ---
 
@@ -49,6 +51,10 @@ platformId: 889edcde-52b2-10cf-fea3-b2baf47d7e2e
 *Applies to: Configuration Manager (current branch)*
 
 Starting in November 2021, the asset intelligence feature of Configuration Manager is [deprecated](../../../plan-design/changes/deprecated/removed-and-deprecated-cmfeatures). This article provides more detail about the specific functional areas of asset intelligence that are deprecated or still supported.
+
+Important
+
+Starting in version 2609, the built-in Asset Intelligence reports are removed from the **Monitoring &gt; Reporting &gt; Reports** node. References to these reports in this article apply to version 2603 and earlier.
 
 ## Deprecated functionality
 

@@ -80,7 +80,7 @@ The following two reports are listed under the **Alerts** category.
 
 ## Asset Intelligence
 
-The following 67 reports are listed under the **Asset Intelligence** category.
+Starting in version 2609, the **Asset Intelligence** report category and its reports are removed. The following 67 reports apply to version 2603 and earlier.
 
 | Report name | Description |
 | --- | --- |
