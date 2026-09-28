@@ -1,8 +1,15 @@
 {
   "sitemapIndex": "https://learn.microsoft.com/_sitemaps/sitemapindex.xml",
   "sitemaps": "/_sitemaps/(intune|autopilot)_en-us_\\d+\\.xml$",
+  "tocs": [
+    "https://learn.microsoft.com/en-us/intune/toc.json",
+    "https://learn.microsoft.com/en-us/autopilot/toc.json"
+  ],
+  "extraUrls": [
+    "https://learn.microsoft.com/en-us/intune/whats-new/archive",
+    "https://learn.microsoft.com/en-us/intune/fundamentals/account-moves"
+  ],
   "include": "^https://learn\\.microsoft\\.com/en-us/(intune|autopilot)/",
-  "exclude": ["^https://learn\\.microsoft\\.com/en-us/intune/configmgr/"],
   "trackedPaths": "^(intune|autopilot)/",
-  "concurrency": 6
+  "concurrency": 8
 }
