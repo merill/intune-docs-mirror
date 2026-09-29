@@ -91,7 +91,7 @@ The following tasks apply to both Android Enterprise and Android device administ
 
 | Task | Detail |
 | --- | --- |
-| [Manage devices with endpoint security features](../device-management/manage-endpoint-security-devices) | Use the **Endpoint security** settings in Intune to effectively manage device security and remediate issues for devices. |
+| [Manage devices with endpoint security features](../device-security/endpoint-security-devices) | Use the **Endpoint security** settings in Intune to effectively manage device security and remediate issues for devices. |
 | [Enable the mobile threat defense (MTD) connector for enrolled devices](../device-security/mobile-threat-defense/enable-connector) | Enable the MTD connection in Intune so that MTD partner apps can work with Intune and your MTD device compliance policies. If you're not using Microsoft Defender for Endpoint, consider enabling the connector so that you can use another mobile threat defense solution. You can also [enable the MTD connector for devices not enrolled in Intune](../device-security/mobile-threat-defense/enable-unenrolled-devices). |
 | [Create MTD app protection policy](../device-security/mobile-threat-defense/create-app-protection-policy) | Create an Intune app protection policy that assesses risks and limits a device's access to work or school apps. |
 | [Create MTD device compliance policy](../device-security/mobile-threat-defense/create-compliance-policy) | Create an Intune app protection policy that assesses risk and limits a device's corporate access based on the threat level. |

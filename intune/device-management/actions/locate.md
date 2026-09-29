@@ -155,8 +155,20 @@ For more information about device restrictions, see [Android template device set
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**All devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/allDevices).
 2. From the devices list, select a device.
-3. At the top of the device overview pane, find the row of action icons. Select **Locate device**.
-4. After the device is located, its location is shown in **Locate device**. You can select the location pin on the map to view a location address and coordinates.
+
+::: zone pivot="windows"
+
+1. At the top of the device overview pane, find the row of action icons. Select **Locate device**.
+
+::: zone-end
+
+::: zone pivot="ios,android"
+
+1. At the top of the device overview pane, find the row of action icons. Select **Locate** &gt; **Locate device**.
+
+::: zone-end
+
+1. After the device is located, its location is shown in **Locate device**. You can select the location pin on the map to view a location address and coordinates.
 
 ::: zone pivot="android"
 

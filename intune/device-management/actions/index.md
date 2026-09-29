@@ -88,7 +88,6 @@ Select one of the following tabs to learn more about the available device action
 | ![pause-config-refresh-icon](icons/pause-config-refresh.svg) | [Pause Config Refresh](pause-config-refresh) | Pauses ConfigRefresh to run remediation on a device for troubleshooting or maintenance or to make changes. |
 | ![quick-scan-icon](icons/quick-scan.svg) | [Quick Scan](quick-scan) | Initiates a quick scan of the device by Microsoft Defender Antivirus. |
 | ![new-remote-assistance-session-icon](icons/new-remote-assistance-session.svg) | [New remote assistance session](remote-assist) | Allows you to remotely control a device by using [Remote Help](../../remote-help/) or [TeamViewer](../tools/teamviewer-legacy). |
-| ![rename-device-icon](icons/rename-device.svg) | [Rename device](rename) | Changes the device name in Intune. |
 | ![restart-icon](icons/restart.svg) | [Restart](restart) | Restarts a device. |
 | ![retire-icon](icons/retire.svg) | [Retire](retire) | Removes company data and settings from a device, and leaves personal data intact. |
 | ![rotate-local-admin-password-icon](icons/rotate-local-admin-password.svg) | [Rotate Local admin password](../../device-security/laps/deploy-policy#manually-rotate-passwords) | Changes the local administrator password for a device and stores the password in Intune. |
@@ -114,7 +113,6 @@ For Intel vPro devices, Intune also integrates with Intel vPro Fleet Services to
 | ![remote-lock-icon](icons/remote-lock.svg) | [Remote lock](remote-lock) | Locks a device and resets its password. | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) |  | ![Supported](../../media/icons/16/check.svg) |
 | ![remove-apps-and-configurations-icon](icons/remove-apps-and-configurations.svg) | [Remove apps and configurations](remove-apps-config) | Temporarily removes applications and configuration from a device. | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) |  |  |
 | ![remove-user-icon](icons/remove-user.svg) | [Remove user](remove-user) | Deletes a user from the cache of a Shared iPad. |  | ![Supported](../../media/icons/16/check.svg) |  |  |
-| ![rename-device-icon](icons/rename-device.svg) | [Rename device](rename) | Changes the device name in Intune. | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) |  |
 | ![remove-passcode-icon](icons/remove-passcode.svg) | [Remove passcode](remove-passcode) | Removes the device passcode. | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) |  | ![Supported](../../media/icons/16/check.svg) |
 | ![restart-icon](icons/restart.svg) | [Restart](restart) | Restarts a device. | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) |  |
 | ![retire-icon](icons/retire.svg) | [Retire](retire) | Removes company data and settings from a device, and leaves personal data intact. | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) | ![Supported](../../media/icons/16/check.svg) |
@@ -131,7 +129,6 @@ For Intel vPro devices, Intune also integrates with Intel vPro Fleet Services to
 | ![disable-activation-lock-icon](icons/disable-activation-lock.svg) | [Disable Activation Lock](disable-activation-lock) | Removes the Activation Lock from a device that's enrolled with a device enrollment manager (DEM) account. |
 | ![new-remote-assistance-session-icon](icons/new-remote-assistance-session.svg) | [New remote assistance session](remote-assist) | Allows you to remotely control a device by using [Remote Help](../../remote-help/) or [TeamViewer](../tools/teamviewer-legacy). |
 | ![remote-lock-icon](icons/remote-lock.svg) | [Remote lock](remote-lock) | Locks a device and resets its password. |
-| ![rename-device-icon](icons/rename-device.svg) | [Rename device](rename) | Changes the device name in Intune. |
 | ![restart-icon](icons/restart.svg) | [Restart](restart) | Restarts a device. |
 | ![retire-icon](icons/retire.svg) | [Retire](retire) | Removes company data and settings from a device, and leaves personal data intact. |
 | ![rotate-filevault-recovery-icon](icons/rotate-filevault-recovery.svg) | [Rotate FileVault recovery key](rotate-filevault-recovery-key) | Rotates the FileVault recovery key. |
@@ -148,7 +145,6 @@ For Intel vPro devices, Intune also integrates with Intel vPro Fleet Services to
 | ![play-lost-mode-sound-icon](icons/play-lost-mode-sound.svg) | [Play lost device sound](play-lost-mode-sound) | Plays a sound on a lost device to help locate it. |
 | ![remote-lock-icon](icons/remote-lock.svg) | [Remote lock](remote-lock) | Locks a device and resets its password. |
 | ![remove-apps-and-configurations-icon](icons/remove-apps-and-configurations.svg) | [Remove apps and configurations](remove-apps-config) | Temporarily removes applications and configuration from a device. |
-| ![rename-device-icon](icons/rename-device.svg) | [Rename device](rename) | Changes the device name in Intune. |
 | ![reset-passcode-icon](icons/reset-passcode.svg) | [Reset passcode](reset-passcode) | Resets the device passcode. |
 | ![restart-icon](icons/restart.svg) | [Restart](restart) | Restarts a device. |
 | ![restore-managed-home-screen-icon](icons/restore-managed-home-screen.svg) | [Restore managed home screen](restore-managed-home-screen) | Restores the managed home screen on a device. |
@@ -224,7 +220,7 @@ Select one of the following tabs to learn more about the available bulk device a
 | [Autopilot reset](autopilot-reset) | Restores a device to its original settings and removes personal files, apps, and settings. |
 | [Collect diagnostics](collect-diagnostics) | Collects diagnostic logs from a device and uploads the logs to Intune. |
 | [Delete](delete) | Removes a device from Intune management, removes any company data, and retires the device. |
-| [Rename](rename) | Changes the device name in Intune. |
+| [Rename](../inventory-and-status/rename-device#bulk-rename-devices) | Changes the device name in Intune. |
 | [Restart](restart) | Restarts a device. |
 | [Retire](retire) | Removes company data and settings from a device, and leaves personal data intact. |
 | [Sync](sync) | Syncs a device with Intune to apply the latest policies and configurations. |
@@ -234,7 +230,7 @@ Select one of the following tabs to learn more about the available bulk device a
 | Bulk action | Description |
 | --- | --- |
 | [Delete](delete) | Removes a device from Intune management, removes any company data, and retires the device. |
-| [Rename](rename) | Changes the device name in Intune. |
+| [Rename](../inventory-and-status/rename-device#bulk-rename-devices) | Changes the device name in Intune. |
 | [Restart](restart) | Restarts a device. |
 | [Retire](retire) | Removes company data and settings from a device, and leaves personal data intact. |
 | [Send custom notification](send-custom-notification) | Sends a custom notification message to a device that can be viewed in the Company Portal app. |
@@ -246,7 +242,7 @@ Select one of the following tabs to learn more about the available bulk device a
 | Bulk action | Description |
 | --- | --- |
 | [Delete](delete) | Removes a device from Intune management, removes any company data, and retires the device. |
-| [Rename device](rename) | Changes the device name in Intune. |
+| [Rename](../inventory-and-status/rename-device#bulk-rename-devices) | Changes the device name in Intune. |
 | [Restart](restart) | Restarts a device. |
 | [Retire](retire) | Removes company data and settings from a device, and leaves personal data intact. |
 | [Sync](sync) | Syncs a device with Intune to apply the latest policies and configurations. |
@@ -257,7 +253,7 @@ Select one of the following tabs to learn more about the available bulk device a
 | --- | --- |
 | [Activate eSIM](update-cellular-data-plan#activate-esims-on-multiple-android-enterprise-devices) | Activates eSIMs on supported corporate-owned Android Enterprise devices. |
 | [Delete](delete) | Removes a device from Intune management, removes any company data, and retires the device. |
-| [Rename](rename) | Changes the device name in Intune. |
+| [Rename](../inventory-and-status/rename-device#bulk-rename-devices) | Changes the device name in Intune. |
 | [Restart](restart) | Restarts a device. |
 | [Wipe](wipe) | Restores a device to its factory settings and removes all data and settings. |
 

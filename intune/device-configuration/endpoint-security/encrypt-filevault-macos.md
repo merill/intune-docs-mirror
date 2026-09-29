@@ -56,7 +56,7 @@ FileVault uses XTS-AES 128-bit encryption as implemented by Apple's macOS. This 
 
 Tip
 
-Intune provides a built-in [encryption report](../../device-management/monitor-encryption) that presents details about the encryption status of devices across all your managed devices. After Intune encrypts a macOS device with FileVault, you can view and manage FileVault recovery keys through the encryption report.
+Intune provides a built-in [encryption report](monitor-encryption) that presents details about the encryption status of devices across all your managed devices. After Intune encrypts a macOS device with FileVault, you can view and manage FileVault recovery keys through the encryption report.
 
 ## FileVault encryption scenarios
 
@@ -291,7 +291,7 @@ FileVault deployment occurs in two distinct phases:
 
 ### View encryption status
 
-To view information about devices that receive FileVault policy, see [Monitor disk encryption](../../device-management/monitor-encryption).
+To view information about devices that receive FileVault policy, see [Monitor disk encryption](monitor-encryption).
 
 Monitor FileVault deployment through multiple Intune interfaces:
 
@@ -389,8 +389,8 @@ Administrators can manually rotate recovery keys:
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431)
 2. Select **Devices** &gt; **All devices**
 3. Select the encrypted device
-4. Under **Monitor**, select **Recovery keys**
-5. Select **Rotate FileVault recovery key**
+4. At the top of the device overview pane, find the row of action icons. Select **Secure** &gt; **Rotate FileVault recovery key**.
+5. Select **Yes** to confirm the action.
 
 Note
 

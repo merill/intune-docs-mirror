@@ -70,39 +70,43 @@ For more information about app installation types, see [How to add an app to Mic
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Choose the **Apps** &gt; **Configuration** &gt; **Create** &gt; **Managed devices**. Note that you can choose between **Managed devices** and **Managed apps**. For more information, see [Apps that support app configuration](overview#apps-that-support-app-configuration).
-3. On the **Basics** page, set the following details:
-
+3. On the **Basics**page, set the following details:
     - **Name** - The name of the profile that appears in the Microsoft Intune admin center.
     - **Description** - The description of the profile that appears in the Microsoft Intune admin center.
     - **Device enrollment type** - This setting is set to **Managed devices**.
 4. Select **iOS/iPadOS** as the **Platform**.
 5. Click **Select app** next to **Targeted app**. The **Associated app** pane is displayed.
-6. On the **Targeted app** pane, choose the managed app to associate with the configuration policy and click **OK**.
-7. Click **Next** to display the **Settings** page.
-8. In the dropdown box, select the **Configuration settings format**. Select one of the following methods to add configuration information:
+
+Note
+
+App configuration policies are only supported for MDM-managed apps and cannot be used to configure DDM apps.
+
+1. On the **Targeted app** pane, choose the managed app to associate with the configuration policy and click **OK**.
+2. Click **Next** to display the **Settings** page.
+3. In the dropdown box, select the **Configuration settings format**. Select one of the following methods to add configuration information:
 
     - **Use configuration designer**
     - **Enter XML data** For details about using the configuration designer, see Use configuration designer. For details about entering XML data, see Enter XML data.
-9. Click **Next** to display the **Scope tags** page.
-10. [Optional] You can configure scope tags for your app configuration policy. For more information about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](../../fundamentals/role-based-access-control/scope-tags).
-11. Click **Next** to display the **Assignments** page.
-12. On the **Assignments** page, select either **Add groups**, **Add all users**, or **Add all devices** to assign the app configuration policy. Once you've selected an assignment group, you can select a [filter](../../fundamentals/filters/overview) to refine the assignment scope when deploying app configuration policies for managed devices.
+4. Click **Next** to display the **Scope tags** page.
+5. [Optional] You can configure scope tags for your app configuration policy. For more information about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](../../fundamentals/role-based-access-control/scope-tags).
+6. Click **Next** to display the **Assignments** page.
+7. On the **Assignments** page, select either **Add groups**, **Add all users**, or **Add all devices** to assign the app configuration policy. Once you've selected an assignment group, you can select a [filter](../../fundamentals/filters/overview) to refine the assignment scope when deploying app configuration policies for managed devices.
 
     ![Screenshot of configuration policy assignments page](media/configure-managed-ios/app-config-policy01.png)
-13. Select **All users** in the dropdown box.
+8. Select **All users** in the dropdown box.
 
     ![Screenshot of Policy assignments - All Users dropdown option](media/configure-managed-ios/app-config-policy02.png)
-14. [Optional] Click **Edit filter** to add a [filter](../../fundamentals/filters/overview) and refine the assignment scope.
+9. [Optional] Click **Edit filter** to add a [filter](../../fundamentals/filters/overview) and refine the assignment scope.
 
     ![Screenshot of Policy assignments - Edit filter](media/configure-managed-ios/app-config-policy02a.png)
-15. Click **Select groups to exclude** to display the related pane.
-16. Choose the groups you want to exclude and then click **Select**.
+10. Click **Select groups to exclude** to display the related pane.
+11. Choose the groups you want to exclude and then click **Select**.
 
     Note
 
     When adding a group, if any other group has already been included for a given assignment type, it's preselected and unchangeable for other include assignment types. Therefore, that group that has been used, can't be used as an excluded group.
-17. Click **Next** to display the **Review + create** page.
-18. Click **Create** to add the app configuration policy to Intune.
+12. Click **Next** to display the **Review + create** page.
+13. Click **Create** to add the app configuration policy to Intune.
 
 ## Use configuration designer
 

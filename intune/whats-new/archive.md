@@ -583,7 +583,7 @@ The following task types are supported:
 
 Intune only shows tasks you have permission to manage. When you select a task, Intune opens the same interface and workflow you'd use if managing the task from its original location. This ensures a consistent experience whether you're working from the admin tasks node or directly within the source capability.
 
-For more information, see [Admin tasks](../device-management/admin-tasks).
+For more information, see [Admin tasks](../governance/admin-tasks).
 
 ## Week of November 10, 2025 (Service release 2511)
 

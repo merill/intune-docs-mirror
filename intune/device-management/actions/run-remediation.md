@@ -72,8 +72,8 @@ Use this action to address common problems such as configuration drift, missing 
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**All devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/allDevices).
 2. From the devices list, select a device.
-3. At the top of the device overview pane, find the row of action icons. Select **Run remediation (preview)**.
-4. In the **Run remediation (preview)** pane, select the Script package you want to run from the list.
+3. At the top of the device overview pane, find the row of action icons. Select **Run remediation**.
+4. In the **Run remediation** pane, select the Script package you want to run from the list.
 5. To run the remediation, select **Run remediation**.
 
 To learn more about remediations in Microsoft Intune—including what they are, along with prerequisites and licensing requirements—see [Use Remediations to detect and fix support issues](../tools/deploy-remediations).

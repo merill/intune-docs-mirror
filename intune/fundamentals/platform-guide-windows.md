@@ -94,7 +94,7 @@ Use Intune endpoint security features to configure device security and to manage
 
 | Task | Detail |
 | --- | --- |
-| [Manage devices with endpoint security features](../device-management/manage-endpoint-security-devices) | Use the endpoint security settings in Intune to effectively manage device security and remediate issues for devices. |
+| [Manage devices with endpoint security features](../device-security/endpoint-security-devices) | Use the endpoint security settings in Intune to effectively manage device security and remediate issues for devices. |
 | [Add endpoint protection settings](../device-configuration/endpoint-security/configure-endpoint-protection) | Configure common endpoint protection security features, such as firewall, BitLocker, and Microsoft Defender. For a description of the settings in this area, see the [endpoint protection settings reference](../device-configuration/endpoint-security/ref-endpoint-protection-settings-windows). |
 | [Configure Microsoft Defender for Endpoint in Intune](../device-security/microsoft-defender/configure-integration) | When you integrate Intune with Microsoft Defender for Endpoint, you not only help prevent security breaches, but you can take advantage of Microsoft Defender for Endpoints Threat & Vulnerability Management (TVM) and use Intune to remediate endpoint weakness identified by TVM. |
 | [Manage BitLocker policy](../device-configuration/endpoint-security/encrypt-bitlocker-windows) | Ensure that devices are encrypted upon enrollment by creating a policy that configures BitLocker on managed devices. |

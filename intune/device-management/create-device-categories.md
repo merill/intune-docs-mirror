@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Categorize devices into groups in Intune - Microsoft Intune | Microsoft Learn
+title: Create and assign device categories in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/create-device-categories
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
@@ -11,8 +11,8 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.collection:
 - M365-identity-device-management
-description: Categorize Intune-managed devices into groups for easier management in the admin center.
-ms.date: 2026-05-19T00:00:00.0000000Z
+description: Create device categories in Microsoft Intune, use them to populate dynamic Microsoft Entra security groups, and assign a category to a device.
+ms.date: 2026-07-05T00:00:00.0000000Z
 ms.topic: how-to
 ms.reviewer: mattcall
 locale: en-us
@@ -33,21 +33,21 @@ monikers: []
 item_type: Content
 source_path: intune/device-management/create-device-categories.md
 cmProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68cb9039-df60-49b0-8ef8-89ad96497f63
 spProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/725b6df3-93e8-472d-834e-e7e0d2953d35
 platformId: 33f7b1c4-1e5e-7e16-a791-5d833417c9b2
 ---
 
-# Categorize devices into groups in Intune - Microsoft Intune | Microsoft Learn
+# Create and assign device categories in Microsoft Intune - Microsoft Intune | Microsoft Learn
 
-Device categories allow you to easily manage and group devices in Microsoft Intune. Create a category, such as *sales* or *accounting*, and Intune will automatically add all devices that fall within that category to the corresponding device group in Intune. To enable categories in your tenant, you must create a category in the Microsoft Intune admin center and set up dynamic Microsoft Entra security groups.
+A **device category** is a label you assign to a device—such as *sales* or *accounting*—to help organize the devices you manage. Device categories are separate from Microsoft Entra security groups, but you can use them together: when you create a dynamic security group based on a category, Intune automatically adds any device assigned that category to the group.
 
-This article describes how to configure and edit device categories.
+This article explains how to create device categories, build dynamic Microsoft Entra security groups from them, and assign a category to a device.
 
 ## Requirements
 

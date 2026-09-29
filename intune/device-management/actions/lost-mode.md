@@ -87,7 +87,7 @@ Chrome Enterprise and the Google Admin console refer to devices in lost mode as 
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**All devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/allDevices).
 2. From the devices list, select a device.
-3. At the top of the device overview pane, find the row of action icons. Select **Lost mode (supervised only)**.
+3. At the top of the device overview pane, find the row of action icons. Select **Locate** &gt; **Lost mode (supervised only)**.
 4. Under **Lost mode**, select **Enable**.
 5. In the **Message to display on lock screen**, type a message to display on the device's lock screen.
 6. Optionally, enter a phone number in the **Phone number to display** box.

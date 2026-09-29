@@ -147,14 +147,11 @@ Migrate existing purchased VPP content and tokens to Apps and Books in Apple Bus
 
         Note
 
-        DDM doesn't yet support available app assignments, setting DDM as the management type will only allow for VPP apps to be assigned as Required or Uninstall.
+        DDM doesn't yet support available app assignments, setting DDM as the management type will only allow for VPP apps to be assigned as Required or Uninstall. Do not re-upload a token with existing available app assignments as these will be lost.
 
-        ```
-            > [!WARNING]
-        ```
+        Warning
 
-> 
-> Changing the country/region updates the app metadata and App Store URL during the next sync with the Apple service for apps created with this token. The app doesn't update if it doesn't exist in the new country/region store.
+        Changing the country/region updates the app metadata and App Store URL during the next sync with the Apple service for apps created with this token. The app doesn't update if it doesn't exist in the new country/region store.
     - **Type of VPP account** - Choose from **Business** or **Education**.
     - **Automatic app updates** - Choose from **Yes** or **No** to enable automatic updates. When enabled, Intune detects the VPP app updates inside the app store and automatically pushes them to the device when the device checks in.
 
@@ -344,3 +341,11 @@ Yes. The Intune admin can oversubscribe an app. For example, if the admin purcha
 Note
 
 When the number of used licenses is greater than or equal to 50% of total available licenses for a specific app, an alert appears under the Enrollment alerts tab. The alert disappears when the number of used licenses is less than 50% of total available licenses for the app.
+
+### Can I upload an existing VPP token to migrate it to DDM?
+
+No. This will cause existing available app assignments to be lost. We recommend creating a new token in Apple Business specifically used for managing apps through DDM.
+
+### What's available in DDM vs. MDM apps?
+
+DDM apps include near real time app status reporting along with new settings for managing automatic app updates, controlling downloads over cellular, among many others. You should continue to use MDM for managing apps assigned as available and for those that rely on app configuration policies, until these workloads are available for DDM apps.

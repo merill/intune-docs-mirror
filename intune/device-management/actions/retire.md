@@ -101,7 +101,7 @@ Before retiring a Microsoft Entra joined device, make sure to back up any critic
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**All devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/allDevices).
 2. From the devices list, select a device.
-3. At the top of the device overview pane, find the row of action icons. Select **Retire**. To confirm, select **Yes**.
+3. At the top of the device overview pane, find the row of action icons. Select **Remove data** &gt; **Retire**. To confirm, select **Yes**.
 
 Note
 

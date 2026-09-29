@@ -105,13 +105,13 @@ These device actions are especially useful in environments where devices are sha
 
 ::: zone pivot="ios"
 
-1. At the top of the device overview pane, locate the row of action icons. Select **Play Lost Mode sound (supervised only)**.
+1. At the top of the device overview pane, locate the row of action icons. Select **Locate** &gt; **Play Lost Mode sound (supervised only)**.
 
 ::: zone-end
 
 ::: zone pivot="android"
 
-1. At the top of the device overview pane, locate the row of action icons. Select **Play lost device sound**.
+1. At the top of the device overview pane, locate the row of action icons. Select **Locate** &gt; **Play lost device sound**.
 
 ::: zone-end
 

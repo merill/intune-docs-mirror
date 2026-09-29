@@ -1,7 +1,7 @@
 ---
 layout: Conceptual
 title: Centrally manage Admin Tasks - Microsoft Intune | Microsoft Learn
-canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/admin-tasks
+canonicalUrl: https://learn.microsoft.com/en-us/intune/governance/admin-tasks
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,9 +16,9 @@ ms.date: 2026-01-26T00:00:00.0000000Z
 ms.topic: article
 ms.reviewer: davidra
 locale: en-us
-document_id: 4bfd1586-1039-16d5-267a-3d0b57b447da
-document_version_independent_id: 4bfd1586-1039-16d5-267a-3d0b57b447da
-original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/device-management/admin-tasks.md
+document_id: 9843ba70-d5e0-7cff-b00d-e668986ec4e1
+document_version_independent_id: 9843ba70-d5e0-7cff-b00d-e668986ec4e1
+original_content_git_url: https://github.com/MicrosoftDocs/memdocs-pr/blob/live/intune/governance/admin-tasks.md
 site_name: Docs
 depot_name: MSDN.memdocs
 page_type: conceptual
@@ -27,11 +27,11 @@ pdf_url_template: https://learn.microsoft.com/pdfstore/en-us/MSDN.memdocs/{branc
 feedback_product_url: ''
 feedback_help_link_type: ''
 feedback_help_link_url: ''
-asset_id: device-management/admin-tasks
+asset_id: governance/admin-tasks
 moniker_range_name: 
 monikers: []
 item_type: Content
-source_path: intune/device-management/admin-tasks.md
+source_path: intune/governance/admin-tasks.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f

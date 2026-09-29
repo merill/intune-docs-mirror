@@ -63,5 +63,5 @@ Note
 
 The rename action on the Company Portal website gives employees and students the chance to rename enrolled devices to something that's easy to recognize. This change only applies to the name in Company Portal, and not to the device name or management name that appears in the Microsoft Intune admin center. If you're an IT administrator and need more information about managing device details in the admin center, see:
 
-- [Rename a device with Microsoft Intune](../../device-management/actions/rename).
+- [Rename a device with Microsoft Intune](../../device-management/inventory-and-status/rename-device).
 - [View device details with Microsoft Intune](../../device-management/inventory-and-status/device-details#hardware-device-details).

@@ -117,7 +117,7 @@ Use the following procedure as guidance for reviewing and managing elevation req
 
 Tip
 
-You can also manage these tasks from the centralized [**Admin tasks**](../device-management/admin-tasks) pane in the Intune admin center.
+You can also manage these tasks from the centralized [**Admin tasks**](../governance/admin-tasks) pane in the Intune admin center.
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and go to **Endpoint security** &gt; **Endpoint Privilege Management** &gt; **Elevation requests** tab.
 2. The elevation requests tab shows **pending requests** and **requests from the last 30 days**. Selecting a row opens that entries elevation request properties, where you can review the request in detail.

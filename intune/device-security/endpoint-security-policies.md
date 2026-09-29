@@ -84,7 +84,7 @@ The following sections provide details on how each capability works and link to 
 
 The *All devices* view in Endpoint security displays all devices from your Microsoft Entra ID that are available in Intune. From this centralized view, you can monitor device compliance status across your organization, drill into specific devices to identify policy violations, and take immediate remediation actions such as restarting devices, initiating malware scans, or rotating encryption keys.
 
-This consolidated device view provides security admins with a single location to assess and remediate security issues across the entire fleet, regardless of platform or enrollment method. For more information, see [Manage devices with endpoint security in Microsoft Intune](../device-management/manage-endpoint-security-devices).
+This consolidated device view provides security admins with a single location to assess and remediate security issues across the entire fleet, regardless of platform or enrollment method. For more information, see [Manage devices with endpoint security in Microsoft Intune](endpoint-security-devices).
 
 ### Security baselines
 

@@ -106,7 +106,7 @@ Use Intune to enforce BitLocker encryption and monitor compliance across all man
 
 - [Create a BitLocker policy for Windows devices in Intune](/en-us/intune/device-configuration/endpoint-security/encrypt-bitlocker-windows#create-and-deploy-policy)
 - [Assign policies in Intune](/en-us/intune/device-configuration/assign-device-profile#assign-a-policy-to-users-or-groups)
-- [Monitor device encryption with Intune](/en-us/intune/device-management/monitor-encryption)
+- [Monitor device encryption with Intune](/en-us/intune/device-configuration/endpoint-security/monitor-encryption)
 
 ### FileVault encryption protects data on macOS devices
 
@@ -120,7 +120,7 @@ Use Intune to enforce FileVault encryption and monitor compliance on all managed
 
 - [Create a FileVault disk encryption policy for macOS in Intune](/en-us/intune/device-configuration/endpoint-security/encrypt-filevault-macos#create-endpoint-security-policy-for-filevault)
 - [Assign policies in Intune](/en-us/intune/device-configuration/assign-device-profile#assign-a-policy-to-users-or-groups)
-- [Monitor device encryption with Intune](/en-us/intune/device-management/monitor-encryption)
+- [Monitor device encryption with Intune](/en-us/intune/device-configuration/endpoint-security/monitor-encryption)
 
 ### Authentication on Windows uses Windows Hello for Business
 

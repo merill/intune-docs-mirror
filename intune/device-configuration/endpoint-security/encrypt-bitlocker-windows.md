@@ -65,7 +65,7 @@ Intune supports two primary BitLocker encryption approaches:
 
 Tip
 
-Intune provides a built-in [encryption report](../../device-management/monitor-encryption) that presents details about the encryption status of devices across all your managed devices. After Intune encrypts a Windows device with BitLocker, you can view and manage BitLocker recovery keys when you view the encryption report.
+Intune provides a built-in [encryption report](monitor-encryption) that presents details about the encryption status of devices across all your managed devices. After Intune encrypts a Windows device with BitLocker, you can view and manage BitLocker recovery keys when you view the encryption report.
 
 ## Prerequisites
 
@@ -316,7 +316,7 @@ The 'Conversion Status' field shows either *Used Space Only Encrypted* or *Fully
 
 ![Screenshot of administrative command prompt showing output of manage-bde with conversion status reflecting used space only encryption.](media/encrypt-bitlocker-windows/docs_bl_fullyencrypted.png)
 
-To view information about devices that receive BitLocker policy, see [Monitor disk encryption](../../device-management/monitor-encryption).
+To view information about devices that receive BitLocker policy, see [Monitor disk encryption](monitor-encryption).
 
 ### Control encryption type with Settings Catalog
 

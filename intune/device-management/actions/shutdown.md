@@ -72,7 +72,7 @@ With the *shut down* action, IT administrators can remotely power off managed de
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**All devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/allDevices).
 2. From the devices list, select a device.
-3. At the top of the device overview pane, find the row of action icons. Select **Shut down** &gt; **Yes**.
+3. At the top of the device overview pane, find the row of action icons. Select **Remote actions** &gt; **Shut down** &gt; **Yes**.
 
 Note
 

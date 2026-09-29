@@ -157,7 +157,7 @@ When you select **Create**, the profile is assigned to the groups you specified.
 
 Note
 
-It can take up to 24 hours for the initial collection of inventory data.
+Inventory data collection repeats multiple times per day for active devices, but it can take up to 24 hours for the initial collection of inventory data, as full sync runs once per day.
 
 ## View collected data
 

@@ -130,7 +130,7 @@ When you require managed apps (for example, by using app-based Conditional Acces
 
 ## Use device actions to protect devices and data
 
-Run immediate [device actions](../device-management/actions/) to respond to security incidents or maintain device security. Unlike policies that maintain ongoing configurations, device actions execute once when invoked. Actions take effect immediately for online devices, or at next check-in for offline devices. [Bulk device actions](../device-management/actions/#bulk-device-actions) can target multiple devices simultaneously.
+Run [device actions](../device-management/actions/) to respond to security incidents or maintain device security. Unlike policies that maintain ongoing configurations, device actions execute once when invoked. Actions take effect immediately for online devices, or at next check-in for offline devices. [Bulk device actions](../device-management/actions/#bulk-device-actions) can target multiple devices simultaneously.
 
 **Common security actions:**
 
@@ -159,7 +159,7 @@ Extend Intune's cloud-based security policies to on-premises and hybrid-managed 
 - **Co-management** - Concurrently manage Windows devices with both Configuration Manager and Intune, with workload sliders to control which service manages specific capabilities.
 - **Tenant attach** - Synchronize Configuration Manager devices into the Microsoft Intune admin center for centralized visibility and management.
 
-Both approaches enable [Intune security policies](../device-management/manage-endpoint-security-devices) on Configuration Manager devices, including endpoint security policies, compliance policies, certificate deployment (SCEP/PKCS), and security baselines. This creates a consistent security posture across cloud and on-premises managed devices.
+Both approaches enable [Intune security policies](endpoint-security-devices) on Configuration Manager devices, including endpoint security policies, compliance policies, certificate deployment (SCEP/PKCS), and security baselines. This creates a consistent security posture across cloud and on-premises managed devices.
 
 ### Mobile Threat Defense
 

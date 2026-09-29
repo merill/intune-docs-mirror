@@ -69,7 +69,7 @@ The *logout current user* device action in Microsoft Intune allows IT administra
 
 1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select [**Devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/overview) &gt; [**All devices**](https://go.microsoft.com/fwlink/?linkid=2109431#view/Microsoft_Intune_DeviceSettings/DevicesMenu/%7E/allDevices).
 2. From the devices list, select a device.
-3. At the top of the device overview pane, find the row of action icons. Select **Logout current user**.
+3. At the top of the device overview pane, find the row of action icons. Select **Remote actions** &gt; **Logout current user**.
 
 ## Reference links
 

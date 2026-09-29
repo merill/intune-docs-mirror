@@ -143,8 +143,8 @@ If Recovery Lock is enabled, you can view the password in the report at **Passwo
 You can use the rotate Recovery Lock passcode device action to reset the Recovery Lock password on demand. This action is helpful if a user forgets their password, or if you want to proactively rotate the password outside of the rotation schedule you set in the policy.
 
 1. In the [Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices** &gt; **All devices** &gt; select the macOS device.
-2. Select **Rotate recovery lock passcode**.
-3. Confirm the action.
+2. Select **Secure** &gt; **Rotate Recovery Lock Passcode**.
+3. Select **Yes** to confirm the action. Intune generates a new Recovery Lock passcode.
 
 To learn more, see [Rotate Recovery Lock passcode device action](../../device-management/actions/rotate-recovery-lock-passcode).
 

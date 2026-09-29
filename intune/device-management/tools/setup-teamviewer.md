@@ -144,7 +144,7 @@ Authorized support personnel can initiate a remote assistance session on a Micro
 When a support technician starts a remote assistance session via Intune and TeamViewer, the connection is established on the device using the access policies, such as the Conditional Access rules, device policies, and access control settings, defined in your TeamViewer organizational settings.
 
 1. In the Intune admin center, go to **Devices** &gt; **All devices**.
-2. Select the device that needs remote assistance, and then choose **New Remote Assistance Session**.
+2. Select the device that needs remote assistance, and then choose **Remote actions** &gt; **Begin a remote assistance session**.
 3. Select **TeamViewer**, and then select **Continue**.
 4. Intune opens a new browser tab and loads the TeamViewer URL with device identifiers. For information about these identifiers, see Data shared with TeamViewer in this article.
 5. From this point on, TeamViewer handles ownership of the experience, including authentication and session management. Complete the steps as prompted.

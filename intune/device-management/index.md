@@ -60,16 +60,17 @@ Perform operational actions on managed devices, run scripts and remediations, vi
 
 ## Get started with device management
 
+### Overview
+
+- [Device management overview](overview)
+
 ### Concept
 
-- [Manage devices with endpoint security](manage-endpoint-security-devices)
-- [Centrally manage admin tasks](admin-tasks)
 - [Manage specialty devices](specialty-devices)
 
 ### How-To Guide
 
-- [Categorize devices into groups](create-device-categories)
-- [View encryption status report details](monitor-encryption)
+- [Create and assign device categories](create-device-categories)
 
 ## Run device actions
 
@@ -115,7 +116,7 @@ Perform operational actions on managed devices, run scripts and remediations, vi
 
 ### How-To Guide
 
-- [Find the primary user of a device](inventory-and-status/find-primary-user)
+- [Change a device's primary user](inventory-and-status/find-primary-user)
 - [View device details](inventory-and-status/device-details)
 - [View ChromeOS device information](inventory-and-status/chrome-enterprise-details)
 
