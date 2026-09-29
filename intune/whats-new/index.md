@@ -10,7 +10,7 @@ manager: laurawi
 author: lenewsad
 ms.author: lanewsad
 description: Find out what's new in Microsoft Intune.
-ms.date: 2026-09-24T00:00:00.0000000Z
+ms.date: 2026-09-29T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1023
@@ -185,18 +185,6 @@ Applies to:
 - Android Enterprise
 
 ### Device management
-
-#### Bulk manage eSIMs on corporate-owned Android Enterprise devices
-
-Microsoft Intune now supports bulk eSIM actions for corporate-owned Android Enterprise devices. From **Devices** &gt; **All devices** &gt; **Bulk device actions**, you can activate eSIMs on up to 100 selected devices running Android 15 or later by using a carrier activation server URL.
-
-When you bulk wipe supported devices, Intune preserves eSIM data plans by default. You can select the option to remove eSIMs when the wipe should also remove the data plans. Personally owned Android Enterprise work profile devices aren't supported.
-
-Applies to:
-
-- Android Enterprise corporate-owned fully managed devices (COBO)
-- Android Enterprise corporate-owned dedicated devices (COSU)
-- Android Enterprise corporate-owned devices with a work profile (COPE)
 
 #### Updated minimum supported version for iOS and iPadOS
 
