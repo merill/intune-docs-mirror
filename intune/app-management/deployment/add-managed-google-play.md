@@ -275,7 +275,7 @@ By default, an Android Enterprise fully managed device doesn't allow employees t
 
 Note
 
-The Microsoft Intune app, Microsoft Authenticator app, and the Company Portal app are installed as required apps on all fully managed and corporate-owned work profile devices during onboarding. Having these apps automatically installed provides Conditional Access support, and Microsoft Intune app users can see and resolve compliance issues.
+The Microsoft Intune app, Microsoft Authenticator app, and the Company Portal app are installed as required apps on all fully managed, dedicated and corporate-owned work profile devices during onboarding. Having these apps automatically installed provides Conditional Access support, and Microsoft Intune app users can see and resolve compliance issues.
 
 ## Update a Managed Google Play app
 

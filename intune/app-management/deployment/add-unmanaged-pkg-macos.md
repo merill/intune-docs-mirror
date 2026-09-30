@@ -179,7 +179,7 @@ The app you have created appears in the apps list where you can assign it to the
 
 ## Troubleshooting
 
-macOS app installation may not be successful due to any of the following reasons provided in the table below. To resolve these errors, follow the remediation steps. If the app remains assigned, failed installations are retried at the next agent check-in.
+macOS app installation may not be successful due to any of the following reasons provided in the table below. To resolve these errors, follow the remediation steps. If the app remains assigned, failed installations are retried at the next agent check-in with up to three time retries.
 
 | Error code | Error message | Remediation steps |
 | --- | --- | --- |

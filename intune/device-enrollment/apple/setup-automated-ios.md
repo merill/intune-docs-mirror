@@ -148,15 +148,7 @@ This article reflects the updated policy creation experience (**Enrollment progr
     Important
 
     We recommend using **Setup Assistant with modern authentication** for your Apple devices for ADE (automated device enrollment) scenarios with user device affinity. Legacy authentication is deprecated and we don't recommend its use.
-13. If you select a token for **Install Company Portal with VPP**, you can lock the device in Single App Mode (specifically, the Company Portal app) right after the Setup Assistant completes. Select **Yes** for **Run Company Portal in Single App Mode until authentication** to set this option. To use the device, the user must first authenticate by signing in to the Company Portal.
-
-    Note
-
-    Multifactor authentication isn't supported on a single device locked in Single App Mode. This limitation exists because the device can't switch to a different app to complete the second factor of authentication. If you want multifactor authentication on a Single App Mode device, the second factor must be on a different device.
-
-    This feature is supported only for iOS/iPadOS 11.3.1 and later.
-
-    ![Screenshot that shows the Run Company Portal in Single App Mode option.](media/setup-automated-ios/single-app-mode.png)
+13. The **Run Company Portal in Single App Mode until authentication** option is no longer supported and will soon be removed. This option must be set to **No**.
 14. If you want devices using this policy to be supervised, select **Yes** in the **Supervised** list.
 
     Supervised devices give you more management options and disabled Activation Lock by default. We recommend that you use ADE as the mechanism for enabling supervised mode, especially if you're deploying large numbers of iOS/iPadOS devices. Apple Shared iPad for Business devices must be supervised.
@@ -173,6 +165,10 @@ This article reflects the updated policy creation experience (**Enrollment progr
     Important
 
     This setting is different from the remove and reset options in the Company Portal app. Regardless of how you configure locked enrollment, the **Remove Device** or **Factory Reset** options in the Company Portal app remain unavailable on devices enrolled through automated device enrollment. Users won't be able to remove the device on the Company Portal website either. For more information about the self-service actions available on enrolled devices, see [Self-service actions](../../app-management/configuration/configure-company-portal#self-service-actions).
+
+    Note
+
+    The **Sync with computers** setting was deprecated by Apple in iOS 13 and is not included in enrollment policies.
 16. If you selected **Enroll without User Affinity** and **Supervised** in the previous steps, you need to decide whether to configure the devices to be [Apple Shared iPad for Business devices](https://support.apple.com/guide/deployment/shared-ipad-overview-dep9a34c2ba2/web). Select **Yes** for **Shared iPad** to enable multiple users to sign in to a single device. Users authenticate by using their Managed Apple IDs and federated authentication accounts or by using a temporary session (like the Guest account). This option requires iOS/iPadOS 13.4 or later. With Shared iPad, all Setup Assistant panes after activation are automatically skipped.
 
     Note
