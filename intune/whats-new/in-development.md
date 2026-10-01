@@ -10,7 +10,7 @@ manager: laurawi
 author: lenewsad
 ms.author: lanewsad
 description: This article describes Microsoft Intune features that are in development.
-ms.date: 2026-09-24T00:00:00.0000000Z
+ms.date: 2026-09-30T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.reviewer: intuner
@@ -35,12 +35,12 @@ item_type: Content
 source_path: intune/whats-new/in-development.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
 platformId: c5eb57bc-c27a-1714-8de9-d23a130c0177
 ---
 
@@ -78,6 +78,22 @@ Applies to:
 
 ## Device configuration
 
+### Apple OS 27 DDM status data in device inventory
+
+Microsoft Intune will add Apple OS 27 declarative device management (DDM) status data to device inventory. You'll be able to review system health information for supported hardware components, content cache details, and MDM state such as enrollment type, awaiting configuration, Return to Service, Shared iPad, and Lockdown Mode. Reported values will depend on the device's supported operating system, hardware, enrollment type, and available DDM capabilities.
+
+Applies to:
+
+- Apple devices running OS 27
+
+### Add support for the MEFERI OEMConfig app on Android Enterprise
+
+Intune will add support for the MEFERI OEMConfig app (`com.meferi.oemconfig`) for Android Enterprise devices. Once onboarded, admins will be able to use Intune's OEMConfig workflow to deploy and manage the device settings that MEFERI exposes through its OEM-provided schema. This update will expand the catalog of supported OEMConfig apps and reduce the need for custom management workarounds when organizations use MEFERI hardware. Admins will continue using the same OEMConfig pattern in Intune by adding the app from Managed Google Play, assigning it to devices, and creating OEMConfig profiles against the supported bundle.
+
+Applies to:
+
+- Android Enterprise
+
 ### Enforce Routes capability in iOS/iPadOS and macOS VPN profiles
 
 Microsoft Intune will support Apple's **[Enforce Routes](https://developer.apple.com/documentation/networkextension/nevpnprotocol/enforceroutes)** feature in iOS/iPadOS and macOS VPN profiles.
@@ -112,6 +128,29 @@ Applies to:
 - macOS 15 and later
 
 ## Device management
+
+### Remove legacy Apple MDM software update workloads from Intune
+
+Intune will remove legacy Apple MDM software update workloads after Apple retires the underlying MDM update commands and payloads. This change will help keep the Intune admin experience, Graph surface, and documentation aligned to what Apple still supports, instead of leaving behind settings that no longer have a valid backend. Organizations that still depend on the older workflows will need to finish moving remaining Apple software update scenarios to declarative device management (DDM). By cleaning up the outdated path, Intune will reduce confusion and make the supported Apple update model clearer for administrators planning future update deployments.
+
+Applies to:
+
+- Apple software updates in Microsoft Intune
+
+### New settings for Administrator protection in endpoint security Account Protection policy
+
+We’re adding two settings to Intune's Endpoint security [Account Protection profile](../device-configuration/endpoint-security/account-protection#account-protection-profiles). These settings enhance device security by requiring user authentication for administrator level actions. This authentication request helps to safeguard devices from unauthorized changes and malware.
+
+The two new settings are already available in the Intune [settings catalog](/en-us/intune/intune-service/configuration/settings-catalog). Selecting the setting name link opens its entry in the LocalPoliciesSecurityOptions CSP documentation:
+
+- [**User Account Control Type Of Admin Approval Mode**](/en-us/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#useraccountcontrol_typeofadminapprovalmode)
+- [**User Account Control Behavior Of The Elevation Prompt For Administrator Protection**](/en-us/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#useraccountcontrol_behavioroftheelevationpromptforadministratorprotection)
+
+To learn more about the Administrator protection scenario, see [Administrator protection on Windows 11](https://techcommunity.microsoft.com/blog/windows-itpro-blog/administrator-protection-on-windows-11/4303482) on the Windows IT Pro Blog.
+
+Applies to:
+
+- Windows 11 (24H2 and 25H2)
 
 ### Updated minimum supported version for macOS
 

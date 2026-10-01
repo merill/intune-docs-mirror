@@ -3567,6 +3567,6 @@
     "https://learn.microsoft.com/en-us/intune/user-help/vpn/microsoft-tunnel-ios": {"etag":"\"9rzRfVq8lu603sMJAa0IzJnlCL0=\"","gitCommitId":"d8cc7e6c007c4993179e5922788f0ed6fdd8a4b6","path":"intune/user-help/vpn/microsoft-tunnel-ios.md","sourcePath":"intune/user-help/vpn/microsoft-tunnel-ios.md","updatedAt":"2026-04-08T22:35:00.0000000Z"},
     "https://learn.microsoft.com/en-us/intune/whats-new/": {"etag":"\"px4Q9DvUfjf3FDSfsD22H6OACDQ=\"","gitCommitId":"5a8d9192056363af239b30811038a8a59a435221","path":"intune/whats-new/index.md","sourcePath":"intune/whats-new/index.md","updatedAt":"2026-09-29T22:34:00.0000000Z"},
     "https://learn.microsoft.com/en-us/intune/whats-new/archive": {"etag":"\"nG/p5dRnl8fiycIm33Q8Wr0rDDo=\"","gitCommitId":"73d3f16e19f4e30a39496fe4bb4ff0be85c4f296","path":"intune/whats-new/archive.md","sourcePath":"intune/whats-new/archive.md","updatedAt":"2026-09-28T17:34:00.0000000Z"},
-    "https://learn.microsoft.com/en-us/intune/whats-new/in-development": {"etag":"\"UEDUk/lAJSuhw5Ut8OWSWGsH3GE=\"","gitCommitId":"25e6e531e232c8cb9ca893eeb360b35947bdca3a","path":"intune/whats-new/in-development.md","sourcePath":"intune/whats-new/in-development.md","updatedAt":"2026-09-25T22:34:00.0000000Z"}
+    "https://learn.microsoft.com/en-us/intune/whats-new/in-development": {"etag":"\"zC8erdAAEKfCG6woxU8Q8xhsMNA=\"","gitCommitId":"3229f733921aca313dbdacbe01897a72db223bec","path":"intune/whats-new/in-development.md","sourcePath":"intune/whats-new/in-development.md","updatedAt":"2026-10-01T07:34:00.0000000Z"}
   }
 }
