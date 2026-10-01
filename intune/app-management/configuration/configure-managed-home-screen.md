@@ -17,7 +17,7 @@ description: Learn how to configure the Microsoft Managed Home Screen app.
 ms.date: 2026-09-23T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1028
+ms.custom: msecd-doc-authoring-1023
 ms.reviewer: abigailstein
 locale: en-us
 document_id: 5f1cbc09-34f3-e954-098e-9b98d740518a
@@ -244,7 +244,7 @@ The automatic relaunch functionality requires granting exact alarm permission (O
 | Offline work time before required sign-in | Integer | 60 | Set the time (in seconds) users can stay offline after the network is detected before they must sign in. This setting only applies when **Configure offline app access** is set to true for at least one application. | ❌ |
 | Configure app access without sign in | bundleArray | See **Enter JSON Data** section of this document | Select which apps are available to users from the sign-in screen before signing in to Managed Home Screen. These apps are available via entry point on the top bar regardless of network status. This setting can only be used if **Enable sign in** is set to true. | ✔️ |
 | Silence apps while Managed Home Screen requires authentication | bool | FALSE | Silence apps whenever MHS is prompting the user for authentication, such as during the sign-in or session PIN screens. Silenced apps can't start activities, show notifications, appear in recent apps, or trigger alerts like toasts, dialogs, or ringing. Apps are automatically unsilenced when the device is unlocked. | ❌ |
-| Exclude these apps from the silence setting | bundleArray | See **Enter JSON Data** section of this document | Specify apps to exclude from silencing while Managed Home Screen requires authentication. These apps can start activities, show notifications, appear in recent apps, or trigger alerts like toasts, dialogs, or ringing while the device is locked. Specify the apps by entering the package name for each app that you want to exclude. <br>**Note:** For MAM-integrated apps that you exclude from silencing, assign an [Intune app protection policy](../protection/create-policy) to both the app and the signed-in user. No specific app protection policy setting is required. If a user opens protected app content while Managed Home Screen requires sign-in or session PIN authentication, the app redirects the user to Managed Home Screen to authenticate. | ❌ |
+| Exclude these apps from the silence setting | bundleArray | See **Enter JSON Data** section of this document | Specify apps to exclude from silencing while Managed Home Screen requires authentication. These apps can start activities, show notifications, appear in recent apps, or trigger alerts like toasts, dialogs, or ringing while the device is locked. Specify the apps by entering the package name for each app that you want to exclude. <br>**Note:** On devices running Android 11 and later, if a user opens protected content in a MAM-integrated app while Managed Home Screen requires sign-in or session PIN authentication, the app redirects the user to Managed Home Screen to authenticate. To use this behavior, exclude the MAM-integrated app from silencing and assign an [Intune app protection policy](../protection/create-policy) to both the app and the signed-in user. No specific app protection policy setting is required. | ❌ |
 
 Note
 
