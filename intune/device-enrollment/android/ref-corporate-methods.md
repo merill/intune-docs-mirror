@@ -13,7 +13,7 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: enrollment
 description: Learn how to enroll Android Enterprise dedicated, fully managed, or corporate-owned work profile devices in Intune.
-ms.date: 2025-12-04T00:00:00.0000000Z
+ms.date: 2026-10-02T00:00:00.0000000Z
 ms.topic: how-to
 ms.reviewer: grwilson
 locale: en-us
@@ -64,7 +64,9 @@ If you have a Microsoft Entra Conditional Access policy defined that uses the *r
 | **Fully managed** (COBO) | ❌ no factory reset protection | ✅ factory reset protection | ❌ no factory reset protection |
 | **Dedicated** (COSU) | ❌ no factory reset protection | ✅ factory reset protection | ❌ no factory reset protection |
 
-For corporate owned devices with a work profile running Android 15, you will need to re-enter the Google account associated with the configuration after any reset done via the Settings app. It's important to plan your reprovisioning workflow (such as applying an Intune wipe or resetting via the Settings app) accordingly so that you can provide the required credentials if needed. For background and guidance, see [Factory reset protection (FRP) enforcement behavior for Android Enterprise](/en-us/troubleshoot/mem/intune/device-configuration/factory-reset-protection-emails-not-enforced).
+For corporate-owned devices with a work profile, a Settings reset doesn't enforce FRP when **Factory reset protection emails** is **Not configured**.
+
+For corporate owned devices with a work profile running Android 15, when **Factory reset protection emails** is configured with a Google account email address, you will need to re-enter the Google account associated with the configuration after a reset done via the Settings app. It's important to plan your reprovisioning workflow (such as applying an Intune wipe or resetting via the Settings app) accordingly so that you can provide the required credentials if needed. For background and guidance, see [Factory reset protection (FRP) enforcement behavior for Android Enterprise](/en-us/troubleshoot/mem/intune/device-configuration/factory-reset-protection-emails-not-enforced).
 
 ## Prerequisites
 

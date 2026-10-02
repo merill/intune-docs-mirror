@@ -13,7 +13,7 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration
 description: On Android Enterprise or Android for Work devices owned by your organization, you can restrict settings on the device using Microsoft Intune. Allow copy and paste, notifications, app permissions, data sharing, password length, sign in failures, use fingerprint to unlock, reuse passwords, and enable bluetooth sharing of work contacts. Configure devices as a dedicated device kiosk to run one app, or multiple apps.
-ms.date: 2026-09-23T00:00:00.0000000Z
+ms.date: 2026-10-02T00:00:00.0000000Z
 ms.topic: reference
 ms.reviewer: cchristenson, arnab
 ai-usage: ai-assisted
@@ -142,9 +142,11 @@ For corporate-owned devices with a work profile, some settings only apply in the
 
     | Enrollment method | Settings &gt; Factory data reset | Settings &gt; Recovery/bootloader | Intune[wipe](../../device-management/actions/wipe) |
     | --- | --- | --- | --- |
-    | **Corporate-owned devices with work profile** (COPE) | ![error-icon](../../media/icons/16/error.svg) no factory reset protection | ![check-icon](../../media/icons/16/check.svg) factory reset protection | ![error-icon](../../media/icons/16/error.svg) no factory reset protection |
+    | **Corporate-owned devices with work profile** (COPE) | ![check-icon](../../media/icons/16/check.svg) factory reset protection | ![check-icon](../../media/icons/16/check.svg) factory reset protection | ![error-icon](../../media/icons/16/error.svg) no factory reset protection |
     | **Fully managed** (COBO) | ![error-icon](../../media/icons/16/error.svg) no factory reset protection | ![check-icon](../../media/icons/16/check.svg) factory reset protection | ![error-icon](../../media/icons/16/error.svg) no factory reset protection |
     | **Dedicate** (COSU) | ![error-icon](../../media/icons/16/error.svg) no factory reset protection | ![check-icon](../../media/icons/16/check.svg) factory reset protection | ![error-icon](../../media/icons/16/error.svg) no factory reset protection |
+
+    For COPE devices, a Settings reset doesn't enforce FRP when **Factory reset protection emails** is **Not configured**.
 
     For background and guidance, see **[Factory reset protection (FRP) enforcement behavior for Android Enterprise](/en-us/troubleshoot/mem/intune/device-configuration/factory-reset-protection-emails-not-enforced)**.
 - **System update**: Choose an option to define how the device handles over-the-air updates. Your options

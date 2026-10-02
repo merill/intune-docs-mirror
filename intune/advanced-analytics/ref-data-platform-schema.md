@@ -437,7 +437,7 @@ On Android Enterprise personally owned devices with a work profile (BYOD), only 
 
 Note
 
-`SimInfo` isn't supported for Android Enterprise personally owned devices with a work profile (BYOD).
+`SimInfo` isn't supported for Android Enterprise personally owned devices with a work profile (BYOD). ICCID isn't supported on Windows.
 
 ## `SystemEnclosure`
 

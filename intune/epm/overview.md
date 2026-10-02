@@ -14,8 +14,9 @@ ms.collection:
 ms.reviewer: mikedano
 ms.subservice: suite
 description: To enhance the security of your organization, set your users to run with standard permissions while Endpoint Privilege Management ensures those users can seamlessly run specified files with elevated rights.
-ms.date: 2025-10-20T00:00:00.0000000Z
+ms.date: 2026-06-23T00:00:00.0000000Z
 ms.topic: how-to
+ai-usage: ai-assisted
 locale: en-us
 document_id: 6b134145-8b5b-c1a2-10e7-901014a46c9f
 document_version_independent_id: 6b134145-8b5b-c1a2-10e7-901014a46c9f
@@ -73,10 +74,11 @@ EPM elevation can be triggered using two methods:
 - Automatically, or;
 - User initiated.
 
-EPM can be configured using two types of policies, which both can be targeted at groups of users or devices:
+EPM can be configured using three types of policies, which all can be targeted at groups of users or devices:
 
-- **Elevation settings policy** - controls the EPM client, reporting level and default elevation capability.
-- **Elevation rules policy** - defines elevation behavior for binaries or scripts based on criteria.
+- **[Elevation settings policy](manage-elevation-settings)** - controls the EPM client, reporting level and default elevation capability.
+- **[Elevation rules policy](create-elevation-rules)** - defines elevation behavior for binaries or scripts based on criteria.
+- **[Elevation system settings policy](manage-system-settings)** - lets standard users change selected Windows system settings that normally require administrator rights. This policy type supports network settings, which include IPv4, IPv6, and DNS server configuration.
 
 To perform the elevation on the device, the EPM service uses a virtual account for most elevation types, which is isolated from the logged on users' account. Neither of these accounts are added to the local administrators group. An exception to use of the virtual account is the *Elevate as current user* elevation type, which is explained in more detail in the following section.
 
