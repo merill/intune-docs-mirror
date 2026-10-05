@@ -86,6 +86,20 @@ Applies to:
 - iOS/iPadOS
 - macOS
 
+#### Remote Help support for GCCH environments
+
+Remote Help is now available in US Government Community Cloud High (GCCH) environments. This expansion extends the same secure, cloud-based remote assistance capabilities currently available in GCC to GCCH tenants.
+
+IT support staff can establish Remote Help sessions with users on enrolled devices to provide real-time troubleshooting. Remote Help uses role-based access controls through Intune, and both helpers and sharers must sign in with their organization's Microsoft Entra ID accounts. DoD environments aren't supported.
+
+For more information, see [Planning for Remote Help](../remote-help/plan).
+
+Applies to:
+
+- Android
+- macOS
+- Windows
+
 ### App management
 
 #### Faster delivery of Win32 apps
