@@ -15,9 +15,10 @@ ms.collection:
 ms.reviewer: aanavath - intune-azure
 ms.subservice: protect
 description: Deploy security baselines that have preset and recommended configurations to the Windows devices you manage with Microsoft Intune.
-ms.date: 2026-06-09T00:00:00.0000000Z
+ms.date: 2026-09-30T00:00:00.0000000Z
 ms.topic: overview
 ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: 876371dc-98dc-8e11-48f3-2c6b7e9414c1
 document_version_independent_id: 876371dc-98dc-8e11-48f3-2c6b7e9414c1
@@ -102,6 +103,7 @@ Microsoft doesn't recommend using preview versions of security baselines in a pr
 The following security baseline instances are available for use with Intune. Use the links to view the settings for recent instances of each baseline.
 
 - **Security Baseline for Windows 10 and later**:
+    - [Version 26H2](ref-windows-mdm-settings?pivots=mdm-26h2)
     - [Version 25H2](ref-windows-mdm-settings?pivots=mdm-25h2)
     - [Version 24H2](ref-windows-mdm-settings?pivots=mdm-24h2)
     - [Version 23H2](ref-windows-mdm-settings?pivots=mdm-23h2)

@@ -10,10 +10,10 @@ manager: laurawi
 author: lenewsad
 ms.author: lanewsad
 description: Find out what's new in Microsoft Intune.
-ms.date: 2026-09-29T00:00:00.0000000Z
+ms.date: 2026-10-05T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1023
+ms.custom: msecd-doc-authoring-1030
 ms.collection:
 - M365-identity-device-management
 locale: en-us
@@ -68,6 +68,28 @@ For new information about Windows Autopilot solutions, see:
 - [Windows Autopilot: What's new](/en-us/autopilot/whats-new)
 
 You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs#notifications).
+
+## Week of October 5, 2026
+
+### Device security
+
+#### Intune security baseline for Windows 11, version 26H2
+
+The Windows security baseline for Windows 11, version 26H2 is now available in Microsoft Intune. This baseline reflects current Microsoft security recommendations and is the latest available Windows security baseline in Intune.
+
+The Windows 11, version 26H2 security baseline includes new settings, updated default values, and revised security guidance. Existing security baseline profiles don't automatically update to the new version.
+
+To use the Windows 11, version 26H2 security baseline, Intune admins can [create a new baseline profile](../device-security/security-baselines/configure-baselines#create-a-profile-for-a-security-baseline) or [update an existing profile to the latest version](../device-security/security-baselines/configure-baselines#update-a-baseline-profile-to-the-latest-version). Review the settings before moving from a previous baseline version, especially if existing profiles include customizations.
+
+The **Configure NetBIOS settings** policy isn't included in this baseline release because it's currently supported only on Windows Insider builds. We plan to add the setting in a future baseline update after it becomes available for supported, in-market Windows versions and through the Intune Settings Catalog. This change will be communicated when available.
+
+For a detailed breakdown of setting changes, see the Windows blog post [Windows 11, version 26H2 security baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/windows-11-version-26h2-security-baseline/4560382).
+
+To view the default configuration of the Intune baseline for Windows 11, version 26H2, see [Windows MDM baseline settings](../device-security/security-baselines/ref-windows-mdm-settings?pivots=mdm-26h2#security-baseline-for-windows-version-26h2).
+
+Applies to:
+
+- Windows 11
 
 ## Week of September 28, 2026 (Service release 2609)
 
@@ -164,6 +186,16 @@ Applies to:
 
 - Android Enterprise
 - Android (AOSP)
+
+#### Windows 11, version 26H2 Settings Catalog update
+
+Microsoft Intune provides day-zero support for validated Windows policy settings introduced with Windows 11, version 26H2 in the Settings Catalog. Admins can use the new and updated settings to manage Windows endpoints with the latest 26H2 capabilities.
+
+For more information, see [Microsoft Intune Settings Catalog updated to support Windows 11, version 26H2](https://techcommunity.microsoft.com/blog/IntuneCustomerSuccess/microsoft-intune-settings-catalog-updated-to-support-windows-11-version-26h2/4560815).
+
+Applies to:
+
+- Windows 11
 
 ### Device enrollment
 
