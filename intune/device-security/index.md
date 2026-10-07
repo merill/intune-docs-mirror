@@ -8,8 +8,8 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
+author: lenewsad
+ms.author: lanewsad
 ms.subservice: protect
 description: Manage device compliance, security baselines, Microsoft Defender integration, VPN tunnels, identity protection, and threat defense with Microsoft Intune.
 ms.topic: landing-page

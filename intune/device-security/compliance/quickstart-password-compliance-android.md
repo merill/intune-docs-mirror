@@ -7,8 +7,8 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
+author: lenewsad
+ms.author: lanewsad
 ms.collection:
 - M365-identity-device-management
 - Android

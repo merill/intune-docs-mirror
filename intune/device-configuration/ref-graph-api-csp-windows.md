@@ -8,7 +8,7 @@ feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
 author: nicholasswhite
-ms.author: nwhite
+ms.author: paoloma
 ms.collection:
 - M365-identity-device-management
 - Windows

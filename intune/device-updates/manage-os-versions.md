@@ -8,7 +8,7 @@ feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
 author: paolomatarazzo
-ms.author: lanewsad
+ms.author: paoloma
 ms.subservice: protect
 description: Learn about the methods for managing device operating system versions supported by Microsoft Intune.
 ms.date: 2025-06-12T00:00:00.0000000Z

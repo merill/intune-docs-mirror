@@ -8,7 +8,7 @@ feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
 author: paolomatarazzo
-ms.author: lanewsad
+ms.author: paoloma
 ms.collection:
 - M365-identity-device-management
 - sub-infrastructure

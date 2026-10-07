@@ -8,7 +8,7 @@ feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
 author: paolomatarazzo
-ms.author: lanewsad
+ms.author: paoloma
 ms.collection:
 - M365-identity-device-management
 description: Centrally manage admin tasks in Microsoft Intune. Use the unified Admin tasks view to organize and act on administrative tasks from Device Offboarding, Endpoint Privilege Management, and more.

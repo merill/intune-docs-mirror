@@ -8,7 +8,7 @@ feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
 author: paolomatarazzo
-ms.author: lanewsad
+ms.author: paoloma
 description: Secure Exchange Online email on iOS devices by using Microsoft Intune compliance policies and Microsoft Entra Conditional Access to require managed devices and the Outlook app.
 ms.date: 2026-04-20T00:00:00.0000000Z
 ms.topic: tutorial

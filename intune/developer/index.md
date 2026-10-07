@@ -8,8 +8,8 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
+author: nicholasswhite
+ms.author: nwhite
 ms.subservice: developer
 description: Access Intune APIs, protect apps with the Intune App SDK, and report on device data with the Intune Data Warehouse.
 ms.topic: landing-page

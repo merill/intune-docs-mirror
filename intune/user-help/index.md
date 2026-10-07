@@ -8,8 +8,8 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
+author: lenewsad
+ms.author: lanewsad
 ms.subservice: end-user
 ms.topic: landing-page
 description: Enroll your device in Intune to gain secure access to work-related email, apps, and Wi-Fi.

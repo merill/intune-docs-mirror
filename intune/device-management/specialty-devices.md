@@ -7,8 +7,8 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
+author: paolomatarazzo
+ms.author: paoloma
 ms.collection:
 - M365-identity-device-management
 description: This article provides information about specialty devices and how can you manage them with Microsoft Intune
