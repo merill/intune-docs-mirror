@@ -189,7 +189,7 @@ In addition to configuring the network requirements listed in the following tabl
 
 | ID | Desc | Category | ER | Addresses | Ports | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 181 | MEM - Remote Help Feature | DefaultRequired | False | `*.support.services.microsoft.com``remoteassistance.support.services.microsoft.com``teams.microsoft.com``remoteassistanceprodacs.communication.azure.com``edge.skype.com``aadcdn.msftauth.net``aadcdn.msauth.net``alcdn.msauth.net``wcpstatic.microsoft.com``*.aria.microsoft.com``browser.pipe.aria.microsoft.com``*.events.data.microsoft.com``v10c.events.data.microsoft.com``*.monitor.azure.com``js.monitor.azure.com``edge.microsoft.com``*.trouter.communication.microsoft.com``*.trouter.teams.microsoft.com``*.trouter.communications.svc.cloud.microsoft``go-amer.trouter.communications.svc.cloud.microsoft`(only for NA, ROW customers)`go-apac.trouter.communications.svc.cloud.microsoft`(only for APAC customers)`go-eu.trouter.communications.svc.cloud.microsoft`(only for EU customers)`api.flightproxy.skype.com``ecs.communication.microsoft.com``remotehelp.microsoft.com``remoteassistanceprodacseu.communication.azure.com`(this endpoint is only for EU customers) | **TCP:** 443 |  |
+| 181 | MEM - Remote Help Feature | DefaultRequired | False | `*.support.services.microsoft.com``remoteassistance.support.services.microsoft.com``teams.microsoft.com``remoteassistanceprodacs.communication.azure.com``edge.skype.com``aadcdn.msftauth.net``aadcdn.msauth.net``alcdn.msauth.net``wcpstatic.microsoft.com``*.aria.microsoft.com``browser.pipe.aria.microsoft.com``*.events.data.microsoft.com``v10c.events.data.microsoft.com``*.monitor.azure.com``js.monitor.azure.com``edge.microsoft.com``*.trouter.communication.microsoft.com``*.trouter.teams.microsoft.com``*.trouter.communications.svc.cloud.microsoft``api.flightproxy.skype.com``ecs.communication.microsoft.com``remotehelp.microsoft.com``remoteassistanceprodacseu.communication.azure.com`(this endpoint is only for EU customers) | **TCP:** 443 |  |
 | 187 | Dependency - Remote Help web pubsub | DefaultRequired | False | `*.webpubsub.azure.com``AMSUA0101-RemoteAssistService-pubsub.webpubsub.azure.com` | **TCP:** 443 |  |
 | 188 | Remote Help Dependency for GCC customers | DefaultRequired | False | `remoteassistanceweb-gcc.usgov.communication.azure.us``gcc.remotehelp.microsoft.com``gcc.relay.remotehelp.microsoft.com``*.gov.teams.microsoft.us` | **TCP:** 443 |  |
 | N/A | Remote Help for Windows unattended access - Remote Sign-in dependencies | DefaultRequired | N/A | See Notes | See Notes | Remote Sign-in requires the [Azure Virtual Desktop session host endpoints](/en-us/azure/virtual-desktop/required-fqdn-endpoint#session-host-virtual-machines). Commercial customers should use the **Azure cloud** endpoints. Government Community Cloud (GCC) customers should use the **Azure for US Government** endpoints. |
@@ -345,9 +345,10 @@ Note
 
 | Region | CDN | Port |
 | --- | --- | --- |
-| North America | `imeswda-afd-primary.manage.microsoft.com``imeswda-afd-secondary.manage.microsoft.com``imeswda-afd-hotfix.manage.microsoft.com``go-amer.trouter.communications.svc.cloud.microsoft` | **TCP:** 443 |
-| Europe | `imeswdb-afd-primary.manage.microsoft.com``imeswdb-afd-secondary.manage.microsoft.com``imeswdb-afd-hotfix.manage.microsoft.com``go-eu.trouter.communications.svc.cloud.microsoft` | **TCP:** 443 |
-| Asia Pacific | `imeswdc-afd-primary.manage.microsoft.com``imeswdc-afd-secondary.manage.microsoft.com``imeswdc-afd-hotfix.manage.microsoft.com``go-apac.trouter.communications.svc.cloud.microsoft` | **TCP:** 443 |
+| All regions | `*.trouter.communications.svc.cloud.microsoft` | **TCP:** 443 |
+| North America | `imeswda-afd-primary.manage.microsoft.com``imeswda-afd-secondary.manage.microsoft.com``imeswda-afd-hotfix.manage.microsoft.com` | **TCP:** 443 |
+| Europe | `imeswdb-afd-primary.manage.microsoft.com``imeswdb-afd-secondary.manage.microsoft.com``imeswdb-afd-hotfix.manage.microsoft.com` | **TCP:** 443 |
+| Asia Pacific | `imeswdc-afd-primary.manage.microsoft.com``imeswdc-afd-secondary.manage.microsoft.com``imeswdc-afd-hotfix.manage.microsoft.com` | **TCP:** 443 |
 
 For diagnostic data used to monitor the health of the client side components:
 
@@ -476,9 +477,6 @@ ekop.intel.com
 enterpriseregistration.windows.net
 fd.api.orgmsg.microsoft.com
 ftpm.amd.com
-go-amer.trouter.communications.svc.cloud.microsoft
-go-apac.trouter.communications.svc.cloud.microsoft
-go-eu.trouter.communications.svc.cloud.microsoft
 go.microsoft.com
 graph.windows.net
 intunemaape1.eus.attest.azure.net
