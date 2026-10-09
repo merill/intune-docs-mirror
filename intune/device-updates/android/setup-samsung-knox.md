@@ -11,7 +11,7 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.subservice: protect
 description: Learn how to integrate Samsung Knox E-FOTA with Microsoft Intune to register Samsung devices, configure firmware updates, and monitor campaigns.
-ms.date: 2026-07-24T00:00:00.0000000Z
+ms.date: 2026-10-02T00:00:00.0000000Z
 ms.topic: how-to
 ms.reviewer: grwilso
 ai-usage: ai-generated
@@ -106,7 +106,7 @@ The Microsoft Intune integration brings Knox E-FOTA capabilities into the admin 
 ![](../../media/icons/16/cloud.svg)**Cloud requirements**
 
 > 
-> Samsung Knox E-FOTA updates are supported in the public cloud.
+> Samsung Knox E-FOTA updates are supported in the public cloud and in U.S. Government Community Cloud (GCC) High.
 
 ## Process overview
 

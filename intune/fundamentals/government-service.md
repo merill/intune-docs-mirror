@@ -13,9 +13,11 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: fundamentals
 description: Learn more about the Intune government service offerings and features. This article is designed to serve as an overview of the Microsoft Intune offering for government community cloud (GCC) High and United States Department of Defense (DoD) environments.
-ms.date: 2026-09-08T00:00:00.0000000Z
+ms.date: 2026-10-02T00:00:00.0000000Z
 ms.topic: concept-article
 ms.reviewer: acabello
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1017
 locale: en-us
 document_id: e6c638a5-4e16-4250-e9fc-b64dd87d7ac3
 document_version_independent_id: e6c638a5-4e16-4250-e9fc-b64dd87d7ac3
@@ -96,7 +98,7 @@ The following features are available and supported in Microsoft GCC High and/or 
 | --- | --- |
 | Log Analytics | You can send Intune log data to Azure Storage, Event Hubs, or Log Analytics.  For more information on this feature, see [Send log data to storage, event hubs, or log analytics from Intune](../governance/integrate-azure-monitor). |
 | Microsoft Defender for Endpoint security settings management | On devices onboarded to Defender but not enrolled in Intune, you can use Intune endpoint security policies to manage Defender security settings. This support extends to the US Government Community Cloud (GCC), US Government Community High (GCC High), and Department of Defense (DoD) environments. For more information on this feature, see [Defender for Endpoint security settings management](../device-security/microsoft-defender/security-settings-management). |
-| Microsoft Intune advanced capabilities | The following Intune advanced capabilities support the GCC High and DoD environments:- [Advanced Analytics](../advanced-analytics/)- [Endpoint Privilege Management](../epm/overview)- [Enterprise Application Management (EAM)](../app-management/deployment/enterprise-app-management)- [Firmware-over-the-air update](../device-updates/android/manage-fota)- [Microsoft Tunnel for Mobile Application Management](../device-security/microsoft-tunnel/mam)- [Specialty devices management](../device-management/specialty-devices)The following Intune advanced capabilities support GCC High environments only and aren't supported in DoD:- [Cloud PKI](../cloud-pki/)- [Remote Help](../remote-help/) |
+| Microsoft Intune advanced capabilities | The following Intune advanced capabilities support GCC High and/or DoD. Review the linked documentation for cloud-specific availability:- [Advanced Analytics](../advanced-analytics/)- [Endpoint Privilege Management](../epm/overview)- [Enterprise Application Management (EAM)](../app-management/deployment/enterprise-app-management)- [Firmware-over-the-air update](../device-updates/android/manage-fota). Samsung Knox E-FOTA integration supports GCC High.- [Microsoft Tunnel for Mobile Application Management](../device-security/microsoft-tunnel/mam)- [Specialty devices management](../device-management/specialty-devices)The following Intune advanced capabilities support GCC High environments only and aren't supported in DoD:- [Cloud PKI](../cloud-pki/)- [Remote Help](../remote-help/) |
 | Mobile Threat Defense (MTD) | Mobile Threat Defense (MTD) connectors for Android and iOS/iPadOS devices with MTD vendors that **also support** the GCC High environment can be used. When you sign in to a GCC High tenant, you see the connectors that are available in these environments. |
 | Platform support | You can use the same operating systems - Android, Android Open Source Project (AOSP), iOS/iPadOS, Linux, macOS, and Windows. - **Android (AOSP)**: There are some device restrictions. For more information, see [Supported operating systems and browsers in Intune - AOSP](ref-supported-platforms#android). - **Linux**: Generally available. |
 | Standard MDM features | You can use app policies, device configuration profiles, compliance policies, and more. |
