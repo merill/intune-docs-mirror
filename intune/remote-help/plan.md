@@ -173,6 +173,7 @@ Remote Help has the following limitations:
 
 - You can't establish a Remote Help session from one tenant to a different tenant.
 - Remote Help might not be available in all markets or localizations.
+- Windows unattended remote sign-in isn't available for tenants in the Switzerland North datacenter region.
 - Remote Help is supported in Government Community Cloud (GCC) and GCC High environments on the following platforms:
     - Windows
     - Windows on ARM64 devices
