@@ -75,6 +75,10 @@ Note
 
 When you work with Microsoft Intune, we recommend that you use either the Microsoft Edge or Google Chrome browser.
 
+Note
+
+Android Management API policies support a maximum of 3,000 targeted apps per device. This limit applies to Android Enterprise corporate-owned fully managed, dedicated, corporate-owned work profile, and personally owned work profile devices that use Android Management API. The limit includes apps and web links that Intune targets to the device. Apps installed on the device but not included in the policy don't count toward the limit. For more information, see Google's [Android Management API policy resource](https://developers.google.com/android/management/reference/rest/v1/enterprises.policies).
+
 ## Managed Google Play app types
 
 There are three types of apps that are available with Managed Google Play:
