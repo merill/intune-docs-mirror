@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn which OS versions Configuration Manager supports for clients and devices.
-ms.date: 2026-09-21T00:00:00.0000000Z
+ms.date: 2026-10-06T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: reference
 ms.collection: tier3
@@ -220,6 +220,10 @@ Configuration Manager has built-in capabilities for managing mobile devices that
 - **Windows 10 Team for Surface Hub**
 
 ## Exchange Server connector
+
+Important
+
+Starting in November 2021, this feature of Configuration Manager is [deprecated](../changes/deprecated/removed-and-deprecated-cmfeatures).
 
 Configuration Manager supports limited management of devices that connect to your Exchange Server, without installing the Configuration Manager client. For more information, see [Manage mobile devices with Configuration Manager and Exchange](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync).
 

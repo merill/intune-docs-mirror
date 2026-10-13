@@ -19,7 +19,7 @@ ms.reviewer:
 description: Learn about the features that Configuration Manager no longer supports.
 ms.subservice: core-infra
 ms.topic: article
-ms.date: 2024-12-04T00:00:00.0000000Z
+ms.date: 2026-10-06T00:00:00.0000000Z
 ms.collection: tier3
 locale: en-us
 document_id: 02d90277-801f-f70c-63e5-2e295c99fe47
@@ -40,11 +40,11 @@ source_path: intune/configmgr/core/plan-design/changes/deprecated/removed-and-de
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/6ab06385-661e-4214-8870-bbe4071c960d
+- https://authoring-docs-microsoft.poolparty.biz/devrel/aa9d0281-4c35-44bb-8c75-a0920bde2014
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://authoring-docs-microsoft.poolparty.biz/devrel/131ba09e-4280-4ae7-8622-1f9f1c0daad1
+- https://authoring-docs-microsoft.poolparty.biz/devrel/c7449412-70b0-48ea-831f-3b132eafb97e
 platformId: 3656e636-9d35-478e-5ce9-d14da45267b2
 ---
 
@@ -63,18 +63,8 @@ The following features are deprecated. You can still use them now, but Microsoft
 | Feature | Deprecation first announced | Planned end of support |
 | --- | --- | --- |
 | **Microsoft Connected Cache (MCC)** integration in Configuration Manager will be deprecated in a future release of Configuration Manager. After deprecation, no further feature development or updates will be provided for Microsoft Connected Cache within Configuration Manager. Customers should begin transitioning to the standalone version of Microsoft Connected Cache to continue receiving ongoing improvements and support. For more information, see [Microsoft Connected Cache](/en-us/windows/deployment/do/waas-microsoft-connected-cache). | June 2026 | TBD |
-| The **MDT Integration with CM and Standalone** is no longer supported with Configuration Manager. Customers should remove MDT TS steps, followed by removing MDT integration, to avoid TS corruption and modification failures. More information on the MDT retirement [here](/en-us/troubleshoot/mem/configmgr/mdt/mdt-retirement). | Dec 2024 | The first release after Oct 10, 2025 |
-| **Office 365 Client Management dashboard add-in support statement**. For more information, see [Office 365 Client Management dashboard](../../../../sum/deploy-use/office-365-dashboard). | April 2024 | The first release after April 1, 2025 |
 | Windows Information Protection | July 2022 | TBD |
-| The site system roles for on-premises MDM and macOS clients: **enrollment proxy point and enrollment point**. | January 2022 | Mar 31, 2024 |
-| The **Microsoft Store for Business and Education**. For more information, see [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](../../../../apps/deploy-use/manage-apps-from-the-windows-store-for-business). | November 2021 | The first release after March 1, 2023 |
-| **Asset intelligence**. For more information, see [Asset intelligence deprecation](../../../clients/manage/asset-intelligence/deprecation). | November 2021 | The first release after November 1, 2022 |
-| **On-premises MDM**. For more information, see [On-premises MDM in Configuration Manager](../../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure). | November 2021 | The first release after November 1, 2022 |
-| Azure Active Directory (Azure AD) Graph API and Azure AD Authentication Library (ADAL), which is used by Configuration Manager for some cloud-attached scenarios. If you use cloud-attached features such as co-management, tenant attach, or Microsoft Entra discovery, starting June 30, 2022, these features may not work correctly in Configuration Manager version 2107 or earlier. Stay current with Configuration Manager to make sure these features continue to work. For more information, see [CMG FAQ](../../../clients/manage/cmg/cloud-management-gateway-faq#do-i-need-to-do-anything-with-the-deprecation-of-the-azure-ad-graph-api-and-azure-ad-authentication-library--adal--). | July 2021 | June 30, 2022 |
-| The BitLocker management implementation for the [recovery service](../../../../protect/deploy-use/bitlocker/recovery-service) has changed. The legacy MBAM-based service is replaced by the messaging processing engine on the management point. | March 2021 | The first release after Mar 2025 |
 | Older style of console extensions that haven't been approved in the **Console Extension** node, will no longer be supported. For more information about new console extensions, see [Manage console extensions](../../../servers/manage/admin-console-extensions). | April 2021 | TBD^Note 1^ |
-| The implementation for sharing content from Azure has changed. Use a content-enabled cloud management gateway. Starting in version 2107, you can't create a traditional cloud distribution point. | February 2019 | The first release after October 5, 2022 |
-| Cloud management gateway and cloud distribution point deployments with Azure Service Manager using a management certificate. For more information, see [Plan for CMG](../../../clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager). | November 2018 | The first release after October 5, 2022 |
 
 ### Note 1: Support removed TBD
 
@@ -86,6 +76,17 @@ The following features are no longer supported. In some cases, they're no longer
 
 | Feature | Deprecation first announced | Support removed |
 | --- | --- | --- |
+| The **MDT Integration with CM and Standalone** is no longer supported with Configuration Manager. Customers should remove MDT TS steps, followed by removing MDT integration, to avoid TS corruption and modification failures. More information on the MDT retirement [here](/en-us/troubleshoot/mem/configmgr/mdt/mdt-retirement). | Dec 2024 | The first release after Oct 10, 2025 |
+| **Office 365 Client Management dashboard add-in support statement**. For more information, see [Office 365 Client Management dashboard](../../../../sum/deploy-use/office-365-dashboard). | April 2024 | The first release after April 1, 2025 |
+| The site system roles for on-premises MDM and macOS clients: **enrollment proxy point and enrollment point**. | January 2022 | Mar 31, 2024 |
+| The **Microsoft Store for Business and Education**. For more information, see [Manage apps from the Microsoft Store for Business and Education with Configuration Manager](../../../../apps/deploy-use/manage-apps-from-the-windows-store-for-business). | November 2021 | The first release after March 1, 2023 |
+| **Asset intelligence**. For more information, see [Asset intelligence deprecation](../../../clients/manage/asset-intelligence/deprecation). | November 2021 | The first release after November 1, 2022 |
+| **On-premises MDM**. For more information, see [On-premises MDM in Configuration Manager](../../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure). | November 2021 | The first release after November 1, 2022 |
+| **Exchange Server connector**. For more information, see [Supported clients and devices: Exchange Server connector](../../configs/supported-operating-systems-for-clients-and-devices#bkmk_ExSrvConOS). | November 2021 | The first release after November 1, 2022 |
+| Azure Active Directory (Azure AD) Graph API and Azure AD Authentication Library (ADAL), which is used by Configuration Manager for some cloud-attached scenarios. If you use cloud-attached features such as co-management, tenant attach, or Microsoft Entra discovery, starting June 30, 2022, these features may not work correctly in Configuration Manager version 2107 or earlier. Stay current with Configuration Manager to make sure these features continue to work. For more information, see [CMG FAQ](../../../clients/manage/cmg/cloud-management-gateway-faq#do-i-need-to-do-anything-with-the-deprecation-of-the-azure-ad-graph-api-and-azure-ad-authentication-library--adal--). | July 2021 | June 30, 2022 |
+| The BitLocker management implementation for the [recovery service](../../../../protect/deploy-use/bitlocker/recovery-service) has changed. The legacy MBAM-based service is replaced by the messaging processing engine on the management point. | March 2021 | The first release after Mar 2025 |
+| The implementation for sharing content from Azure has changed. Use a content-enabled cloud management gateway. Starting in version 2107, you can't create a traditional cloud distribution point. | February 2019 | The first release after October 5, 2022 |
+| Cloud management gateway and cloud distribution point deployments with Azure Service Manager using a management certificate. For more information, see [Plan for CMG](../../../clients/manage/cmg/plan-cloud-management-gateway#azure-resource-manager). | November 2018 | The first release after October 5, 2022 |
 | [System Center Update Publisher (SCUP) and integration with ConfigMgr](../../../../sum/tools/updates-publisher) | October 2023 | Jan 31, 2024 |
 | Sites that allow HTTP client communication. Configure the site for HTTPS or Enhanced HTTP. For more information, see [Enable the site for HTTPS-only or enhanced HTTP](../../../servers/deploy/install/list-of-prerequisite-checks#enable-site-system-roles-for-https-or-enhanced-http). | March 2021 | The first release after April 1, 2024 |
 | Upgrade from any version of System Center 2012 Configuration Manager to current branch. For more information, see [Upgrade to Configuration Manager current branch](../../../servers/deploy/install/upgrade-to-configuration-manager) | April 2022 | Version 2303 |
