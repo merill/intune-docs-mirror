@@ -79,7 +79,7 @@ Intune offers a *device-only subscription* for managing devices that aren't affi
 Assign device licenses based on your estimated usage. Device licenses apply when a device is enrolled through any of the following methods:
 
 - [Windows Autopilot Self-Deploying mode](/en-us/autopilot/self-deploying)
-- [Apple Device Enrollment Program without user affinity](../device-enrollment/apple/setup-automated-ios)
+- [Apple Device Enrollment Program without user affinity or Entra Shared Device Mode](../device-enrollment/apple/setup-automated-ios)
 - [Apple School Manager without user affinity](../device-enrollment/apple/school-manager)
 - [Apple Configurator without user affinity](../device-enrollment/apple/setup-configurator-ios)
 - [Android Enterprise dedicated](../device-enrollment/android/setup-dedicated)
