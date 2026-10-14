@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about the Windows Assessment and Deployment Kit (ADK) versions that are supported for OS deployment with Configuration Manager.
-ms.date: 2026-09-22T00:00:00.0000000Z
+ms.date: 2026-10-13T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -56,18 +56,17 @@ When you deploy operating systems with Configuration Manager, the Windows Assess
     Important
 
     - Windows PE is a separate installer. Make sure to download both the **Windows ADK** and the **Windows PE add-on for the ADK**.
-    - **ADK 10.1.26100.X (May 2024, Dec 2024)** (10.1.26100.X) or newer is required to deploy Windows ARM64 operating systems on Configuration Manager 2403 or newer.
+    - **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** is required to deploy Windows ARM64 operating systems on Configuration Manager 2403 or newer. See the following table for supported ADK versions.
 
 ## Windows ADK versions
 
-The following table lists the versions of the Windows ADK that you can use with different versions of Configuration Manager.
+The following table lists the versions of the Windows ADK that you can use with different versions of Configuration Manager. Numbered references link to the applicable support notes.
 
 | Windows ADK version | ConfigMgr 2509 | ConfigMgr 2603 | ConfigMgr 2609 |
 | --- | --- | --- | --- |
 | **ADK 10.1.28000.1 (Updated Nov 2025)**(10.1.28000.1) | ❌ | ❌ | ❌ |
-| **ADK 10.1.26100.2454 (Updated Dec 2024)**(10.1.26100.X) | ✅ | ✅ | ✅ |
-| **ADK 10.1.26100.1 (May 2024)**(10.1.26100.1) | ✅ | ✅ | ✅ |
-| **ADK 10.1.25398.1 (updated September 2023)**(10.1.25398.1) | ❌ | ❌ | ❌ |
+| **ADK 10.1.26100.x**10.1.26100.1 (May 2024)10.1.26100.2454 (Updated December 2024)10.1.26100.9457 (Current: September 2026) [1] | ✅ | ✅ | ✅ |
+| **ADK 10.1.25398.1 (updated September 2023)**(10.1.25398.1) [2] | ❌ | ❌ | ❌ |
 | **ADK for Windows 11, version 22H2**(10.1.22621.1) | ✅ | ✅ | ✅ |
 | **ADK for Windows 11, version 21H1**(10.1.22000) | ✅ | ✅ | ✅ |
 | **ADK for Windows Server 2022**(10.1.20348) | ✅ | ✅ | ✅ |
@@ -81,14 +80,23 @@ The following table lists the versions of the Windows ADK that you can use with 
 
 ## Support notes
 
-- **ADK 10.1.25398.1 (updated September 2023)** Windows PE boot images aren't supported for use with Configuration Manager due to known issues:
+### Note 1: ADK 10.1.26100.x releases
 
-    - VBScript doesn't work in WinPE.
-    - The **Pre-provision BitLocker** task doesn't work in WinPE.
-    - Devices with UFS storage, such as the Surface Go 4, don't work in WinPE.
+All ADK 10.1.26100.x releases (May 2024, December 2024, and September 2026) ship the same Windows PE binaries, **10.1.26100.1**. Only the Deployment Tools were updated between these releases. Earlier releases are no longer available for download. For the current release, see [Download the ADK 10.1.26100.9457 (September 2026)](https://aka.ms/ConfigMgrADKDownload9457).
 
-        Instead use the **ADK 10.1.26100.X (May 2024, Dec 2024)** (10.1.26100.X) or newer where these issues are resolved.
-- For information on applying the [BlackLotus UEFI bootkit vulnerability](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) security updates to boot images from the ADKs before the **ADK 10.1.26100.1 (May 2024, Dec 2024)** (10.1.26100.1), see [Customize Windows PE boot images](/en-us/windows/deployment/customize-boot-image). Boot images from the **ADK 10.1.26100.1 (May 2024, Dec 2024)** (10.1.26100.1) and newer already have the BlackLotus UEFI bootkit vulnerability security update applied to them. For this reason, it's recommended to use boot images from the **ADK 10.1.26100.1 (May 2024, Dec 2024)** (10.1.26100.X) or newer.
+### Note 2: ADK 10.1.25398.1 Windows PE issues
+
+**ADK 10.1.25398.1 (updated September 2023)** Windows PE boot images aren't supported for use with Configuration Manager due to known issues:
+
+- VBScript doesn't work in WinPE.
+- The **Pre-provision BitLocker** task doesn't work in WinPE.
+- Devices with UFS storage, such as the Surface Go 4, don't work in WinPE.
+
+Instead use **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** where these issues are resolved.
+
+### General guidance
+
+- For information on applying the [BlackLotus UEFI bootkit vulnerability](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) security updates to boot images from ADKs before **ADK 10.1.26100.1 (May 2024)**, see [Customize Windows PE boot images](/en-us/windows/deployment/customize-boot-image). Boot images from **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** and newer already have the BlackLotus UEFI bootkit vulnerability security update applied to them. For this reason, it's recommended to use boot images from **ADK 10.1.26100.x**.
 - Windows Server builds have the same Windows ADK requirement as the associated Windows client version. For example, Windows Server 2016 is the same build version as Windows 10 LTSB 2016.
 
 - The last supported version of 32-bit WinPE is available in the **WinPE add-on for Windows 10, version 2004** (10.1.19041). Versions of the WinPE add-on for the ADK after the **ADK for Windows 10, version 2004** (10.1.19041) no longer support 32-bit versions of Windows PE (WinPE). For more information, see [Download and install the Windows ADK](/en-us/windows-hardware/get-started/adk-install).
