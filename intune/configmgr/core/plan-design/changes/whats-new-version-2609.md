@@ -139,6 +139,10 @@ When you update to version 2609, existing CMG deployments are automatically migr
 
 Important
 
+Before updating to version 2609, check the vCPU quotas and availability of the new VM sizes in each Azure subscription and region where you deploy a CMG. The VM scale set migration uses a new VM family. Ensure that both the **standard Dadv6 Family vCPUs** quota and the **Total Regional vCPUs** quota have enough available quota for the new instances, with additional headroom for temporary instances during upgrade or maintenance. Quota is the number of vCPUs your subscription is allowed to use. Azure must also have enough resources available in the region to deploy the new VM instances.
+
+Important
+
 Upgrade the Configuration Manager console after updating to version 2609. The updated console is required to display the new CMG VM sizes correctly.
 
 | CMG tier | Previous VM size | Previous vCPU | Previous memory | New VM size | New vCPU | New memory |
@@ -148,6 +152,43 @@ Upgrade the Configuration Manager console after updating to version 2609. The up
 | Large | Standard\_A4\_v2 | 4 | 16 GiB | Standard\_D8ads\_v6 | 8 | 32 GiB |
 
 Retirement dates are subject to change. For the current retirement date and other VM series retirement details, see [Retired Azure VM size series](/en-us/azure/virtual-machines/sizes/lifecycle/retired-sizes-list). VM pricing varies by region. For current pricing, see [Azure Virtual Machines pricing](https://azure.microsoft.com/pricing/details/virtual-machines/windows/).
+
+#### Check CMG capacity and vCPU quotas before upgrading
+
+To identify the subscription, region, current VM size, and instance count for each CMG, run the following read-only SQL query against the site database at your top-level site:
+
+```sql
+SELECT Name, Region, SubscriptionId, VmSize, NumberOfInstances
+FROM Azure_Service;
+```
+
+Use the VM size mapping in the preceding table to calculate the required vCPUs for each CMG: multiply the **New vCPU** value by **NumberOfInstances**. Add the requirements for all CMGs in the same subscription and region, account for other workloads that consume these quotas, and allow additional headroom for temporary instances during CMG upgrade or maintenance.
+
+In the Azure portal, check the **standard Dadv6 Family vCPUs** and **Total Regional vCPUs** quotas for each subscription and region identified by the query. Request any necessary increases before upgrading. For instructions, see [Increase regional vCPU quotas - Azure Quotas | Microsoft Learn](/en-us/azure/quotas/regional-quota-requests).
+
+You can also run the following Azure CLI commands from PowerShell to check quota usage and limits. Sign in to Azure CLI first, and replace the placeholders with your subscription ID and Azure region name:
+
+```powershell
+$subscriptionId = '<subscription ID>'
+$region = '<region name>'
+$usage = az vm list-usage --location $region --query "[?name.value=='standardDadv6Family']" --output json --subscription $subscriptionId
+$usage
+
+az vm list-usage --location $region --query "[?name.value=='cores']" --output json --subscription $subscriptionId
+```
+
+If there isn't enough available quota, the CMG migration can fail with a `QuotaExceeded` error in **CloudMgr.log**. For example, the log might include the following details:
+
+```json
+{
+  "details": [
+    {
+      "code": "QuotaExceeded",
+      "message": "Operation could not be completed as it results in exceeding approved Total Regional Cores quota. Additional details - Deployment Model: Resource Manager, Location: <Your location>, Current Limit: 10, Current Usage: 8, Additional Required: 8, (Minimum) New Limit Required: 16."
+    }
+  ]
+}
+```
 
 ## Asset Intelligence
 

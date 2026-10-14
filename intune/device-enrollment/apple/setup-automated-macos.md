@@ -116,7 +116,7 @@ This article reflects the updated policy creation experience (**Enrollment progr
 
     Important
 
-    Do not target Platform SSO (PSSO) configuration profiles that enable PSSO registration during Setup Assistant to userless Automated Device Enrollment (ADE) devices. Doing so can cause unexpected enrollment behavior and results in the device losing expected affinity. See [Configure platform SSO during enrollment](/en-us/configure-platform-sso-during-enrollment)
+    Do not target Platform SSO (PSSO) configuration profiles that enable PSSO registration during Setup Assistant to userless Automated Device Enrollment (ADE) devices. Doing so can cause unexpected enrollment behavior and results in the device losing expected affinity. See [Configure platform SSO during enrollment](/en-us/intune/device-configuration/settings-catalog/configure-platform-sso-during-enrollment)
 
     - **Enroll with User Affinity**: Enroll devices that are associated with an assigned user. Choose this option for work devices that belong to users, and if you want to require users to have the Company Portal app to install apps. Multifactor authentication (MFA) is available with this option. Enrolling with user affinity is also referred to as enrolling with a *user*.
 
