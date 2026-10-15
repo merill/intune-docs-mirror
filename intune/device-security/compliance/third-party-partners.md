@@ -64,24 +64,25 @@ With these tasks complete, the device compliance partner sends device state deta
 
 The following compliance partners are supported as generally available:
 
-- 42Gears SureMDM
+- [42Gears SureMDM](https://docs.42gears.com/suremdm/docs/SureMDM/ConditionalAccessintheSureMDMCon.html)
 - 7P
-- Addigy
-- BlackBerry UEM
-- Citrix Workspace device compliance
-- CLOMO MDM
-- Fleet
+- [Addigy](https://support.addigy.com/hc/en-us/articles/12346305032211)
+- [BlackBerry UEM](https://docs.blackberry.com/en/id-comm-collab/blackberry-workspaces/blackberry-workspaces-plug-in-for-blackberry-uem/4_10/compatibility-matrix/imm1460398825659/ioz1460399956336)
+- [Citrix Endpoint Management integration with Microsoft Endpoint Manager](https://docs.citrix.com/en-us/citrix-endpoint-management/integration-with-mem.html)
+- [CLOMO MDM](https://support.clomo.com/?page_id=61477)
+- [Fleet](https://fleetdm.com/guides/entra-conditional-access-integration)
 - IBM MaaS360
 - Jamf Pro
-- Iru
-- Ivanti Neurons for MDM
+- [Iru](https://docs.iru.com/en/endpoint/integrations/microsoft-device-compliance/getting-started-with-microsoft-device-compliance#getting-started-with-microsoft-device-compliance)
+- [Ivanti Neurons for MDM](https://forums.ivanti.com/s/article/MobileIron-Cloud-Azure-Device-Compliance-for-iOS-and-Android)
 - Ivanti EPMM
-- mobiconnect
+- [mobiconnect](https://help.mobi-connect.net/function/function_category/c0119/?func_os=ios-ipados)
 - Mosyle Fuse
 - Mosyle Onek12
-- Omnissa Workspace ONE UEM
-- Scalefusion
-- SOTI MobiControl
+- [Omnissa Workspace ONE UEM](https://docs.omnissa.com/bundle/WorkspaceONE-UEM-Managing-DevicesVSaaS/page/ConditionalAccessMicrosoftEntraID.html)
+- [Samsung Knox Manage (Compliance)](https://docs.samsungknox.com/admin/knox-manage/new-console/connect-with-identity-providers/configure-knox-manage-as-a-compliance-partner-for-microsoft-intune/)
+- [Scalefusion](https://help.scalefusion.com/docs/microsoft-intune-partner-compliance)
+- [SOTI MobiControl](https://pulse.soti.net/support/soti-mobicontrol/help/?T=console%2Fsystem%2Fmicrosoft_365_integration%2Fadd_mc_to_microsoft_intune_and_compliance_partner_configuration)
 
 Note
 
