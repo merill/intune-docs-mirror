@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: mikedano
 ms.subservice: suite
 description: View guidance on how to create strong file elevation rules with Microsoft Intune Endpoint Privilege Management
-ms.date: 2025-10-20T00:00:00.0000000Z
+ms.date: 2026-10-16T00:00:00.0000000Z
 ms.topic: how-to
 locale: en-us
 document_id: 16cf130c-f8d7-d14b-9e9b-d00efb177a63
@@ -34,9 +34,11 @@ monikers: []
 item_type: Content
 source_path: intune/epm/create-elevation-rules.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: d9779182-f582-ced7-ac16-fd29e32d2269
@@ -188,6 +190,8 @@ Endpoint Privilege Management rules are deployed like any other policy in Micros
 Rules deployed to a device apply to *every user* that uses that device. Rules that are deployed to a *user* apply only to that user on each device that they utilize. When an elevation action occurs, rules deployed to the user are given precedence to rules deployed to a device. This behavior allows you to deploy a set of rules to all users of a device, and a more permissive set of rules to a specific user (such as a support admin). This would allow the support administrator to elevate a broader set of applications when they sign-in to the device.
 
 *Default Elevation behavior* is used only when no rule match can be found. The default elevation behavior only applies when an elevation is triggered with the *Run with elevated access* right-click menu.
+
+Unlike elevation rules assigned to groups that contain users, the default elevation response is a device-scoped client setting configured by the *Windows elevation settings policy* and applies to all users on the device. Assigning this policy to a group that contains users doesn't create a per-user default. To provide different application elevation behavior for particular users, assign elevation rules to groups that contain those users. For more information, see [Policy scope and user assignments](manage-elevation-settings#policy-scope-and-user-assignments).
 
 ## Create elevation rules policy
 

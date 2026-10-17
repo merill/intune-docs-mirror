@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: mikedano
 ms.subservice: suite
 description: Plan your Endpoint Privilege Management deploying by understanding requirements, fundamentals, and security recommendations.
-ms.date: 2026-01-26T00:00:00.0000000Z
+ms.date: 2026-10-16T00:00:00.0000000Z
 ms.topic: how-to
 locale: en-us
 document_id: 09329aeb-dc7c-6d88-9ade-6cdd5ad66e72
@@ -36,11 +36,11 @@ source_path: intune/epm/deployment-planning.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ec6774-09b8-473e-a17e-b17b518bbad7
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e0ffb20c-01c6-407b-a9bd-29111652a1dc
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ade36b61-c646-4bd8-87ee-f3a843461962
-- https://authoring-docs-microsoft.poolparty.biz/devrel/3904bce4-d817-48cf-85fd-b6146fca83b7
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 4c61009c-d834-1911-7163-5095d00803c7
 ---
 
@@ -182,6 +182,8 @@ EPM also supports a reusable settings group to store publisher certificates that
 Except for the following situations, conflicting policies for EPM are handled like any other [policy conflict](../device-configuration/troubleshoot-device-profiles#conflicts).
 
 **Windows elevation settings policy**:
+
+The client settings configured by the *Windows elevation settings policy* are device-scoped, even when the policy is assigned to a group that contains users. Assigning different policies to groups that contain different users doesn't establish separate per-user default elevation responses. For more information, see [Policy scope and user assignments](manage-elevation-settings#policy-scope-and-user-assignments).
 
 When a device receives two separate elevation settings policies with conflicting values, the EPM client reverts to the default client behavior until the conflict is resolved.
 

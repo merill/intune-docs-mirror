@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: mikedano
 ms.subservice: suite
 description: View guidance on how to manage the Endpoint Privilege Management client, including reporting level and default elevation response.
-ms.date: 2025-09-10T00:00:00.0000000Z
+ms.date: 2026-10-16T00:00:00.0000000Z
 ms.topic: how-to
 locale: en-us
 document_id: 1cc9b6fb-3bf5-2d93-60fb-fa5877271488
@@ -42,13 +42,23 @@ platformId: 3a0d2367-ca3e-84b3-1889-a37d9f5679b2
 
 # Managing Elevation Settings for Endpoint Privilege Management - Microsoft Intune | Microsoft Learn
 
-To configure Endpoint Privilege Management (EPM) on devices, deploy *Windows elevation settings policy* to users or devices:
+To configure Endpoint Privilege Management (EPM) on devices, deploy *Windows elevation settings policy* to groups that contain users or devices:
 
 - Enable or disable EPM on a device.
 - Set default rules for elevation requests for any files that don't match an elevation rule.
 - Configure what information EPM reports back to Intune.
 
 When EPM is enabled, the `C:\Program Files\Microsoft EPM Agent` folder is created along with the 'Microsoft EPM Agent Service' service, which is responsible for processing the EPM policies.
+
+## Policy scope and user assignments
+
+The *Windows elevation settings policy* configures the EPM client's settings. These client settings, including the default elevation response, are device-scoped and apply to all users on the device.
+
+You can assign a *Windows elevation settings policy* to groups that contain users or devices. Assigning the policy to a group that contains users doesn't change the scope of its settings or create a separate default elevation response for each user. Once applied, the device-scoped configuration remains effective until another configuration is applied. Signing in as a different user doesn't, by itself, replace that configuration.
+
+Important
+
+Don't assign different *Windows elevation settings policies* to groups that contain users to switch the device's default elevation response between users. Instead, configure a consistent device-wide default and use elevation rules assigned to groups that contain users to define how specific applications can be elevated by those users. For more information, see [Deploying elevation rules](create-elevation-rules#deploying-rules-created-with-endpoint-privilege-management).
 
 ## About Windows elevation settings policy
 
@@ -133,5 +143,5 @@ The *default elevation response* applies to all files that don't match an elevat
 
     When ready, select **Next** to continue.
 4. On the **Scope tags** page, select any desired scope tags to apply, then select **Next**.
-5. For **Assignments**, select the groups that receive the policy. For more information on assigning profiles, see [Assign user and device profiles](../device-configuration/assign-device-profile). Select **Next**.
+5. For **Assignments**, select the groups that receive the policy. For more information on assigning profiles, see [Assign user and device profiles](../device-configuration/assign-device-profile). Assigning this policy to a group that contains users doesn't make its settings user-scoped; see Policy scope and user assignments. Select **Next**.
 6. For **Review + create**, review your settings and then select **Create**. When you select *Create*, your changes are saved, and the profile is assigned. The policy is also shown in the policy list.
