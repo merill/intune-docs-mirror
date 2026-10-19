@@ -80,7 +80,7 @@ The following compliance partners are supported as generally available:
 - Mosyle Fuse
 - Mosyle Onek12
 - [Omnissa Workspace ONE UEM](https://docs.omnissa.com/bundle/WorkspaceONE-UEM-Managing-DevicesVSaaS/page/ConditionalAccessMicrosoftEntraID.html)
-- [Samsung Knox Manage (Compliance)](https://docs.samsungknox.com/admin/knox-manage/new-console/connect-with-identity-providers/configure-knox-manage-as-a-compliance-partner-for-microsoft-intune/)
+- [Samsung Knox Manage](https://docs.samsungknox.com/admin/knox-manage/new-console/connect-with-identity-providers/configure-knox-manage-as-a-compliance-partner-for-microsoft-intune/)
 - [Scalefusion](https://help.scalefusion.com/docs/microsoft-intune-partner-compliance)
 - [SOTI MobiControl](https://pulse.soti.net/support/soti-mobicontrol/help/?T=console%2Fsystem%2Fmicrosoft_365_integration%2Fadd_mc_to_microsoft_intune_and_compliance_partner_configuration)
 

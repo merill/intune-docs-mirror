@@ -15,10 +15,10 @@ ms.collection:
 ms.reviewer: ochukwunyere
 ms.subservice: protect
 description: Review the prerequisites for installation and use of the Microsoft Tunnel Gateway. These include Linux servers, network, and firewall configurations.
-ms.date: 2026-09-03T00:00:00.0000000Z
+ms.date: 2026-10-15T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1026
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: 5cf9145c-61c9-6921-21a5-001469f0a013
 document_version_independent_id: 5cf9145c-61c9-6921-21a5-001469f0a013
@@ -38,8 +38,10 @@ item_type: Content
 source_path: intune/device-security/microsoft-tunnel/prerequisites.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 0d8d91b1-91cc-f723-183a-23d04b7b25bb
 ---
 
@@ -129,6 +131,8 @@ Only the operating systems and container versions that are listed in the followi
     - Podman version 3.0 or 4.0 depending on the version of RHEL.
 
     Microsoft Tunnel requires Docker or Podman on the Linux server to provide support for containers. Containers provide a consistent execution environment, health monitoring and proactive remediation, and a clean upgrade experience.
+
+    Encryption at rest is optional, but we strongly recommend configuring your Docker or Podman environment to encrypt files used by Microsoft Tunnel containers. For information about available options, see the documentation for your Linux distribution and container platform.
 
     For information about installing and configuring Docker or Podman, see:
 
