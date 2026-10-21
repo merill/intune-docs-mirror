@@ -34,13 +34,13 @@ monikers: []
 item_type: Content
 source_path: intune/app-management/ref-protected-apps.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/63959238-cb90-4871-a33d-4a5519097e47
-- https://authoring-docs-microsoft.poolparty.biz/devrel/7ebba99b-05c3-4387-8883-f7bbf6632cb8
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/78d87f42-5582-4a6b-90be-7db2f12b34e6
-- https://authoring-docs-microsoft.poolparty.biz/devrel/006ab567-b18c-4cf1-9a25-c24daa46ede1
 platformId: 038967bb-30f3-e4bb-df36-099adf958a35
 ---
 
@@ -135,15 +135,12 @@ The below apps support the core Intune App Protection Policy settings.
 | Field Service (Dynamics 365) | [iOS](https://apps.apple.com/app/field-service-dynamics-365/id1485579247?ls=1) | ✔ | No settings |
 | Microsoft 365 Admin | [Android](https://play.google.com/store/apps/details?id=com.ms.office365admin) | ✔ | No settings |
 | Microsoft 365 Admin | [iOS](https://apps.apple.com/app/microsoft-365-admin/id761397963) | ✔ | No settings |
-| Microsoft Azure Information Protection Viewer | [iOS](https://apps.apple.com/us/app/rms-sharing/id689516635) | ✔ | No settings |
 | Microsoft Dragon Copilot | [Android](https://play.google.com/store/apps/details?id=com.microsoft.dragoncopilot) | ✔ | No settings |
 | Microsoft Dragon Copilot | [iOS](https://apps.apple.com/app/microsoft-dragon-copilot/id6737987442) | ✔ | No settings |
 | Microsoft Dynamics CRM | [Android](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone) | ✔ | No settings |
 | Microsoft Dynamics CRM | [iOS](https://apps.apple.com/app/microsoft-dynamics-crm/id678800460) | ✔ | No settings |
 | Microsoft PowerApps | [Android](https://play.google.com/store/apps/details?id=com.microsoft.msapps) | ✔ | No settings |
 | Microsoft PowerApps | [iOS](https://apps.apple.com/us/app/powerapps/id1047318566) | ✔ | No settings |
-| Microsoft Power Automate | [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow) | ✔ | No settings |
-| Microsoft Power Automate | [iOS](https://apps.apple.com/us/app/microsoft-flow/id1094928825) | ✔ | No settings |
 | Microsoft Power BI | [Android](https://play.google.com/store/apps/details?id=com.microsoft.powerbim) | ✔ | No settings |
 | Microsoft Power BI | [iOS](https://apps.apple.com/us/app/microsoft-power-bi/id929738808) | ✔ | No settings |
 | Microsoft Skype for Business | [Android](https://play.google.com/store/apps/details?id=com.microsoft.office.lync15) | ✔ | No settings |
@@ -233,7 +230,7 @@ Contact the app vendor for specific details on Intune related support.
 | FleetSafer<br>![Partner app - FleetSafer icon](media/ref-protected-apps/icon-p-fleet.png) | FleetSafer is a risk measurement and mitigation tool that enforces communications policies and monitors safe driving practices. FleetSafer requires a Cogosense enterprise account. FleetSafer uses GPS or a connected cogoB smart device to detect driving movement. When movement is detected, the app automatically disables device access and silences all calls and notifications. Calling, text, social, and email functionality is disabled. Driving behavior is monitored. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.aegismobility.guardian),[App Store link (iOS)](https://apps.apple.com/app/id957483278) |
 | Foxit PDF Editor<br>![Partner app - Foxit PDF Editor icon](media/ref-protected-apps/icon-p-36621352.png) | Foxit PDF Editor lets you view, edit, and annotate PDF files in a Microsoft Intune managed environment. Available for iOS/iPadOS, Android, and supported Chromebooks. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite),[App Store link (iOS)](https://apps.apple.com/us/app/foxit-pdf-editor/id507040546) |
 | Freshservice for Intune<br>![Partner app - Freshservice for Intune icon](media/ref-protected-apps/freshservice.png) | Freshservice for Intune is designed for Freshservice customers with Microsoft Intune enabled. This app offers the freedom to request and manage services seamlessly on the go, including incident management, asset management, user management, service catalog, and task management. The app is designed with productivity at its core, delivering everything users need while ensuring efficiency, collaboration, and customer satisfaction. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.freshservice.helpdesk.intune),[App Store link (iOS)](https://apps.apple.com/in/app/freshservice-for-intune/id6475669802) |
-| Fuze Mobile for Intune<br>![Partner app - Fuze Mobile for Intune icon](media/ref-protected-apps/icon-p-fuze.png) | Fuze Mobile for Intune allows end users to communicate using voice calling, video meetings, contact center, chat messaging, and content sharing. Admins can deploy Fuze Mobile securely and at scale in a BYOD context. Fuze Mobile for Intune requires both a Fuze account and a Microsoft managed environment. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.fuze.fuzeapp),[App Store link (iOS)](https://apps.apple.com/app/fuze-mobile/id1160444971) |
+| Fuze Mobile for Intune<br>![Partner app - Fuze Mobile for Intune icon](media/ref-protected-apps/icon-p-fuze.png) | Fuze Mobile for Intune allows end users to communicate using voice calling, video meetings, contact center, chat messaging, and content sharing. Admins can deploy Fuze Mobile securely and at scale in a BYOD context. Fuze Mobile for Intune requires both a Fuze account and a Microsoft managed environment. | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.fuze.fuzeapp) |
 | Global Relay<br>![Partner app - Global Relay icon](media/ref-protected-apps/icon-p-globalrelay.png) | Put compliance at the heart of your communication with one powerful app. Global Relay is an enterprise unified communication platform purpose-built for financial and other regulated industries to meet collaboration, compliance, privacy, and security requirements.<br>Global Relay supports BYOD and corporate programs. It ensures compliant communication with customers, colleagues, and industry peers through text, voice, WhatsApp, and other preferred channels.<br><br>The Global Relay App is available for mobile, desktop, and web. And, Global Relay is fully integrated with Microsoft Intune SDK to provide MDM/MAM policy control for IT Administrators.<br><br>**NOTE: You must be a Global Relay customer or partner to use this app.** | [Google Play link (Android)](https://play.google.com/store/apps/details?id=com.globalrelay.message.intune),[App Store link (iOS)](https://apps.apple.com/app/global-relay/id576031737) |
 | Goodnotes 6<br>![Partner app - Goodnotes 6 icon](media/ref-protected-apps/icon-p-goodnotes.png) | Goodnotes 6 is a powerful note-taking app designed to provide a seamless and natural handwriting experience on digital paper. This comprehensive solution combines the simplicity of handwriting, the power of digital tools, and advanced AI features to enhance productivity and organization. Whether you're in a meeting, on a call, or brainstorming, Goodnotes keeps your ideas organized and accessible. | [App Store link (iOS)](https://apps.apple.com/us/app/goodnotes-6/id1444383602) |
 | HCSS Field: Time, cost, safety<br>![Partner app - HCSS Field: Time, cost, safety icon](media/ref-protected-apps/icon-p-hccsfield-icon.png) | HCSS Field is a mobile app for heavy civil construction. It's designed to replace paper-based processes with digital solutions. It integrates with the HCSS software suite to streamline field operations, project management, safety, and team communication. | [App Store link (iOS)](https://apps.apple.com/app/hcss-field-time-cost-safety/id720784422) |

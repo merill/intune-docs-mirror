@@ -192,7 +192,7 @@ Admins can choose the types of content their environment displays from the follo
 
 ![Hierarchy settings for allowed content sources for the Community hub](media/8052494-community-hub-content-hierarchy-settings.png)
 
-Since the content is *open-source* style content, admins should always review what is provided before consuming it. The new curation process is intended to vet the material to make sure there aren't obvious quality or compliance issues, but it will be somewhat of a cursory review. All content stored within GitHub and accessed from the Community hub isn’t supported by Microsoft. Microsoft doesn’t validate content collected from or shared by the general community. For more information, see [GitHub Terms of Service](https://help.github.com/terms) and [GitHub Privacy Statement](https://help.github.com/privacy).
+Since the content is *open-source* style content, admins should always review what is provided before consuming it. The new curation process is intended to vet the material to make sure there aren't obvious quality or compliance issues, but it will be somewhat of a cursory review. All content stored within GitHub and accessed from the Community hub isn’t supported by Microsoft. Microsoft doesn’t validate content collected from or shared by the general community. For more information, see [GitHub Terms of Service](https://docs.github.com/terms) and [GitHub Privacy Statement](https://docs.github.com/privacy).
 
 ### Select the content categories to display in Community hub for the environment
 
