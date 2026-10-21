@@ -718,15 +718,16 @@ Applies to:
 
 - Windows
 
-#### Improved on-demand device sync for Windows devices
+#### Improved on-demand device sync for Windows & iOS/iPadOS devices
 
-Microsoft Intune now supports a more comprehensive on-demand sync for Windows devices. When you select the **Sync** device action in the Microsoft Intune admin center, Intune initiates a full synchronization across key workloads, including configuration policies, apps, and scripts, so devices reflect your latest changes faster. This capability is especially useful during troubleshooting, incident response, and high-priority rollouts.
+Microsoft Intune now supports a more comprehensive on-demand sync for Windows and iOS/iPadOS devices. When you select the **Sync** device action in the Microsoft Intune admin center, Intune initiates a full synchronization across key workloads, including configuration policies, apps, and scripts, so devices reflect your latest changes faster. This capability is especially useful during troubleshooting, incident response, and high-priority rollouts.
 
 For more information, see [Device action: sync](../device-management/actions/sync).
 
 Applies to:
 
 - Windows
+- iOS/iPadOS
 
 ### Device security
 

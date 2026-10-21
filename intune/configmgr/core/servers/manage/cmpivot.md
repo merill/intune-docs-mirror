@@ -38,9 +38,11 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/core/servers/manage/cmpivot.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/5cf46315-b33f-4e99-8224-a1592697eff9
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 - https://authoring-docs-microsoft.poolparty.biz/devrel/1e69816a-aaaa-474e-a36f-3ec7790fadc3
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/715d24c3-3683-4219-82c5-1e3c813fb7fc
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 - https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9
 platformId: 9737938a-4384-d8c3-e0c1-e85b491a6d11
@@ -71,7 +73,10 @@ The following components are required to use CMPivot:
     - Connection
     - IPConfig
     - SMBConfig
-- CMPivot and the [Microsoft Edge](../../../apps/deploy-use/deploy-edge) installer are currently signed with the **Microsoft Code Signing PCA 2011** certificate. If you set PowerShell execution policy to **AllSigned**, then you need to make sure that devices trust this signing certificate. You can export the certificate from a computer where you've installed the Configuration Manager console. View the certificate on `"C:\Program Files (x86)\Microsoft Endpoint Manager\AdminConsole\bin\CMPivot.exe"`, and then export the code signing certificate from the certification path. Then import it to the *machine*'s **Trusted Publishers** store on managed devices. You can use the process in the following blog, but make sure to export the *code signing certificate* from the certification path: [Adding a Certificate to Trusted Publishers using Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/adding-a-certificate-to-trusted-publishers-using-intune/ba-p/1974488).
+- CMPivot is currently signed with the **Microsoft Code Signing PCA 2011** certificate. If you set the PowerShell execution policy to **AllSigned**, devices must trust the certificate used to sign the CMPivot PowerShell script.
+
+    - In [the update rollup for Configuration Manager version 2603](../../../hotfix/2603/39169655) or Configuration Manager version 2609 and later, the Configuration Manager client automatically adds the certificate to the *machine*'s **Trusted Publishers** store before the client runs the script. No manual action is required for CMPivot.
+    - For earlier Configuration Manager versions, export the certificate from a computer where the Configuration Manager console is installed. View the certificate on `<AdminConsoleInstallDir>\bin\CMPivot.exe`, where `<AdminConsoleInstallDir>` is the Configuration Manager console installation folder. Export the code signing certificate from the certification path, and then import it to the *machine*'s **Trusted Publishers** store on managed devices. For an example, see [Adding a Certificate to Trusted Publishers using Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/adding-a-certificate-to-trusted-publishers-using-intune/ba-p/1974488). Make sure to export the *code signing certificate* from the certification path.
 
 ## Permissions
 

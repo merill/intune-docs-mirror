@@ -63,6 +63,7 @@ Knowledge Base articles for Microsoft Configuration Manager hotfixes, update rol
 - [KB 38232642 Security update for Configuration Manager](2603/38232642)
 - [KB 38982839 Security update for the SMS Provider and administration service](2603/38982839)
 - [KB 39398030 Security update for scripts, SMS Provider, MPE, and DDR](2603/39398030)
+- [KB 39169655 Update rollup for Microsoft Configuration Manager version 2603](2603/39169655)
 
 ## Configuration Manager 2509
 
