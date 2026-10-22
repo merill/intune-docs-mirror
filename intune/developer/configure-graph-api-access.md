@@ -34,13 +34,13 @@ monikers: []
 item_type: Content
 source_path: intune/developer/configure-graph-api-access.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/5fc61396-d075-4560-aece-fdbda73d243f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/ad9437c1-8cda-4537-ad69-b4b263652e13
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
 platformId: b5d40ced-e7ff-c60d-854c-0a6c5535066e
 ---
 
@@ -491,7 +491,7 @@ namespace IntuneGraphExample
 
 ### Authenticate Microsoft Entra ID using Microsoft Graph PowerShell
 
-PowerShell scripts can use the Microsoft Graph PowerShell module for authentication. To learn more, see [Microsoft Graph PowerShell](/en-us/powershell/microsoftgraph/overview) and the [Intune PowerShell examples](https://github.com/microsoftgraph/powershell-intune-samples).
+PowerShell scripts can use the Microsoft Graph PowerShell module for authentication. To learn more, see [Microsoft Graph PowerShell](/en-us/powershell/microsoftgraph/overview) and the [Intune PowerShell examples](https://github.com/microsoft/mggraph-intune-samples).
 
 ## Support multiple tenants and partners
 

@@ -122,5 +122,5 @@ App settings assignment status is reported through Apple's DDM status channel. R
 
 App settings is defined by Apple as a declarative device management configuration. For the authoritative schema and additional examples, see:
 
-- [`app.settings` configuration](https://github.com/apple/device-management/blob/seed_OS_27_0/declarative/declarations/configurations/app.settings.yaml) in Apple's device management GitHub repository—the source schema the settings catalog surfaces.
+- [`app.settings` configuration](https://github.com/apple/device-management/blob/release/declarative/declarations/configurations/app.settings.yaml) in Apple's device management GitHub repository—the source schema the settings catalog surfaces.
 - [Allow and deny apps and binaries on Apple devices](https://support.apple.com/en-euro/guide/deployment/dep001044b08/1/web/1.0) in Apple's Deployment Guide—background on app launch control, binary execution control, and privacy consent updates.

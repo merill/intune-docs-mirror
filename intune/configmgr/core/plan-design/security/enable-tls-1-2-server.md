@@ -83,8 +83,8 @@ Install the .NET updates so you can enable strong cryptography. Some versions of
 
     For your reference, TLS 1.2 was first introduced into .Net Framework 4.5.1 and 4.5.2 with the following hotfix rollups:
 
-    - For Windows 8.1 and Server 2012 R2: [Hotfix rollup 3099842](https://support.microsoft.com/topic/hotfix-rollup-3099842-for-the-net-framework-4-5-2-and-the-net-framework-4-5-1-on-windows-7b629c7e-bea4-4838-2512-e22e8bad368a)
-    - For Windows Server 2012: [Hotfix rollup 3099844](https://support.microsoft.com/topic/hotfix-rollup-3099844-for-the-net-framework-4-5-2-4-5-1-and-4-5-on-windows-ee48ac0d-79be-28f7-563d-e7bd46040dd3)
+    - For Windows 8.1 and Server 2012 R2: Hotfix rollup 3099842
+    - For Windows Server 2012: Hotfix rollup 3099844
 
 ### Configure for strong cryptography
 

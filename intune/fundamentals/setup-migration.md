@@ -272,7 +272,7 @@ This section shows how to use the Microsoft Graph scripts for a tenant to tenant
 
 Important
 
-- These steps use the [Intune beta Graph samples](https://github.com/microsoftgraph/powershell-intune-samples) on GitHub. The sample scripts make changes to your tenant. They're available as-is, and should be validated using a non-production or "test" tenant account. Be sure the scripts meet your organization security guidelines.
+- These steps use the [Intune beta Graph samples](https://github.com/microsoft/mggraph-intune-samples) on GitHub. The sample scripts make changes to your tenant. They're available as-is, and should be validated using a non-production or "test" tenant account. Be sure the scripts meet your organization security guidelines.
 - The scripts don't export and import every policy, such as certificate profiles. Expect to do more tasks than what's available in these scripts. You will have to recreate some policies.
 - Users must unenroll the device from the old tenant, and then re-enroll in the new tenant.
 
@@ -286,7 +286,7 @@ Support for AzureAD PowerShell ended in March 2025, and is replaced by Microsoft
 
 1. Download the samples, and use Windows PowerShell to export your policies:
 
-    1. Go to [microsoftgraph/powershell-intune-samples](https://github.com/microsoftgraph/powershell-intune-samples), select **Code** &gt; **Download ZIP**. Extract the contents of the `.zip` file.
+    1. Go to [microsoftgraph/powershell-intune-samples](https://github.com/microsoft/mggraph-intune-samples), select **Code** &gt; **Download ZIP**. Extract the contents of the `.zip` file.
     2. Open the Windows PowerShell app as administrator, and change the directory to your folder. For example, enter the following command:
 
         `cd C:\psscripts\powershell-intune-samples-master`

@@ -35,8 +35,10 @@ monikers: []
 item_type: Content
 source_path: intune/app-management/protection/data-protection-framework.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: 0ad3dabf-6402-1813-2939-00e10c35e853
 ---
@@ -77,7 +79,7 @@ The following App Protection Policy settings should be enabled for the applicabl
 
 Microsoft recommends reviewing and categorizing usage scenarios, and then configuring users using the prescriptive guidance for that level. As with any framework, settings within a corresponding level may need to be adjusted based on the needs of the organization as data protection must evaluate the threat environment, risk appetite, and impact to usability.
 
-Administrators can incorporate the below configuration levels within their ring deployment methodology for testing and production use by importing the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoftgraph/powershell-intune-samples).
+Administrators can incorporate the below configuration levels within their ring deployment methodology for testing and production use by importing the sample Intune App Protection Policy Configuration Framework JSON templates with [Intune's PowerShell scripts](https://github.com/microsoft/mggraph-intune-samples).
 
 Note
 
