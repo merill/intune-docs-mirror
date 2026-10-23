@@ -36,11 +36,9 @@ source_path: intune/whats-new/index.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
 platformId: 5e3134c1-cb17-d9b3-ea93-be36e43875d6
 ---
 
@@ -68,6 +66,19 @@ For new information about Windows Autopilot solutions, see:
 - [Windows Autopilot: What's new](/en-us/autopilot/whats-new)
 
 You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs#notifications).
+
+## Week of October 19, 2026
+
+### App management
+
+#### Unlimited licenses for Apple volume purchase program (VPP) apps
+
+You can now assign VPP apps with unlimited licenses from Apple Business and Apple School Manager, making it easier to deploy apps across your organization without managing license quantities.
+
+Applies to:
+
+- iOS/iPadOS
+- macOS
 
 ## Week of October 12, 2026
 
