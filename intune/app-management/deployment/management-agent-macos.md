@@ -61,8 +61,6 @@ The agent is automatically and silently installed on Intune-managed macOS device
 
 On a managed Mac that has the agent installed, open **Company Portal**, select the local device, select **Check status**. This initiates an MDM check-in as well as an agent check-in.
 
-Alternatively, open **Terminal**, run the `sudo killall IntuneMdmAgent` command to terminate the `IntuneMdmAgent` process. The `IntuneMdmAgent` process restarts immediately, which will initiate a check-in with Intune.
-
 Note
 
 The **Sync** action for devices in Microsoft Intune admin center initiates an MDM check-in and does not force an agent check-in.
