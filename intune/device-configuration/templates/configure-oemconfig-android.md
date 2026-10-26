@@ -37,12 +37,8 @@ item_type: Content
 source_path: intune/device-configuration/templates/configure-oemconfig-android.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/80beb97b-18aa-44f8-9420-8f2a4cd448eb
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8c09e0ef-0fde-4b6d-bf1b-b517e4db7f80
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
 platformId: 0bf3e2c8-e196-72e0-3c08-f3d0aafa9189
 ---
 
@@ -262,6 +258,7 @@ Intune supports the following OEMConfig apps:
 | Kyocera | jp.kyocera.enterprisedeviceconfig |  |
 | Lenovo | com.lenovo.oemconfig.rel |  |
 | LG | com.lge.android.oemconfig |  |
+| MEFERI | com.meferi.oemconfig | [MEFERI OEMConfig](https://meferi.com/en/software/omnisoftware-suite/oemconfig/) |
 | Motorola Solutions | com.motorolasolutions.lexoemconfig |  |
 | Motorola Mobility | com.motorola.oemconfig.rel | [Moto OEMConfig Guide](https://motorola-global-portal.custhelp.com/app/answers/prod_answer_detail/a_id/160503) |
 | Urovo | com.urovo.oemconfigs |  |

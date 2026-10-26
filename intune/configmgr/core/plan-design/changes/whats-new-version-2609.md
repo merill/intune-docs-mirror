@@ -38,11 +38,11 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/core/plan-design/changes/whats-new-version-2609.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 - https://authoring-docs-microsoft.poolparty.biz/devrel/cbe4ca68-43ac-4375-aba5-5945a6394c20
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/fc3f72c2-fb6f-4cea-95ee-b444e52254ee
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/ced846cc-6a3c-4c8f-9dfb-3de0e90e2742
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f12cf087-582d-48ac-a085-0c19adf1e391
 platformId: 6874d271-6880-ebd8-df0a-32a42613aa18
 ---
 
@@ -51,6 +51,8 @@ platformId: 6874d271-6880-ebd8-df0a-32a42613aa18
 *Applies to: Configuration Manager (current branch)*
 
 Update 2609 for Configuration Manager current branch is available as an in-console update. Apply this update on sites that run version 2503 or later.
+
+As of October 26, 2026, version 2609 is globally available for all customers to install.
 
 Always review the latest checklist for installing this update. For more information, see [Checklist for installing update 2609](../../servers/manage/checklist-for-installing-update-2609). After you update a site, also review the [Post-update checklist](../../servers/manage/checklist-for-installing-update-2609#post-update-checklist).
 

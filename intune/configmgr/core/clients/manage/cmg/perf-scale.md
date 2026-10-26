@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Plan how the design the cloud management gateway (CMG) for the best performance at the appropriate scale.
-ms.date: 2022-04-08T00:00:00.0000000Z
+ms.date: 2026-10-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -38,13 +38,13 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/core/clients/manage/cmg/perf-scale.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 - https://authoring-docs-microsoft.poolparty.biz/devrel/486161dc-fa28-4625-9b1c-1a21d690bc8d
 - https://authoring-docs-microsoft.poolparty.biz/devrel/2ed91286-6cf7-4b83-810d-75d0ee3b09dd
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1e69816a-aaaa-474e-a36f-3ec7790fadc3
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/5dd28c86-729c-4723-ab5a-57e26fcec2a8
 - https://authoring-docs-microsoft.poolparty.biz/devrel/6735bd7e-4f7b-457d-b58c-29e6f0198677
-- https://authoring-docs-microsoft.poolparty.biz/devrel/ae012320-d2b3-47d8-abdc-898a64d069a9
 platformId: 6cf75e9e-cd2c-143e-2ab2-cf1dfc75f9cb
 ---
 
@@ -76,13 +76,33 @@ Unless otherwise noted, this guidance is the same for all deployment models and 
 
     - **Virtual machine scale-set***(version 2107 and later)*
 
-        - **Lab (B2s)**: 10
-        - **Standard (A2\_v2)**: 6,000
-        - **Large (A4\_v2)**: 10,000
+        Use the table for your Configuration Manager version and installed updates.
+
+        **Version 2609 and later, and version 2603 with the update rollup (KB39169655)**
+
+        | CMG tier | VM size | vCPU | Memory | Simultaneous client connections per VM instance |
+        | --- | --- | --- | --- | --- |
+        | Small | Standard\_D2ads\_v6 | 2 | 8 GiB | 10 |
+        | Medium | Standard\_D4ads\_v6 | 4 | 16 GiB | 6,000 |
+        | Large | Standard\_D8ads\_v6 | 8 | 32 GiB | 10,000 |
+
+        When you update to version 2609 or install the [version 2603 update rollup (KB39169655)](../../../../hotfix/2603/39169655), existing deployments are automatically migrated: Lab to Small, Standard to Medium, and Large to Large. The client connection limits for each tier remain the same.
 
         Important
 
-        The **Lab (B2s)** size VM is only intended for lab testing and small proof-of-concept environments. They aren't intended for production use with the CMG. The B2s VMs are low cost and low performing. The Configuration Manager technical preview branch only supports 10 clients, which is why this size supports that number of clients.
+        Before updating, check that the new VM sizes are available in your Azure region and that both the **standard Dadv6 Family vCPUs** and **Total Regional vCPUs** quotas have enough available quota, including headroom for temporary instances during upgrade or maintenance. For details, see [Check CMG capacity and vCPU quotas before upgrading](../../../plan-design/changes/whats-new-version-2609#check-cmg-capacity-and-vcpu-quotas-before-upgrading). Upgrade the Configuration Manager console after installing the update so that it displays the new VM sizes correctly.
+
+        **Version 2603 without KB39169655 and versions 2107 through 2509**
+
+        | CMG tier | VM size | vCPU | Memory | Simultaneous client connections per VM instance |
+        | --- | --- | --- | --- | --- |
+        | Lab | Standard\_B2s | 2 | 4 GiB | 10 |
+        | Standard | Standard\_A2\_v2 | 2 | 4 GiB | 6,000 |
+        | Large | Standard\_A4\_v2 | 4 | 8 GiB | 10,000 |
+
+        Important
+
+        The **Small** tier (previously **Lab (B2s)**) is only intended for lab testing and small proof-of-concept environments, not production use with the CMG. The Configuration Manager technical preview branch only supports 10 clients, which is why this tier supports that number of clients.
     - **Virtual machine scale set***(version 2010 and 2103 for Cloud Service Provider (CSP) subscriptions)*: 2,000
     - **Cloud service (classic)***(version 2111 and earlier)*: 6,000
 

@@ -17,6 +17,8 @@ ms.date: 2026-02-09T00:00:00.0000000Z
 ms.topic: article
 ms.reviewer: beflamm
 zone_pivot_groups: platforms-apple
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: d9fa5e1e-ce41-47c8-8545-b2d5b8d336d4
 document_version_independent_id: d9fa5e1e-ce41-47c8-8545-b2d5b8d336d4
@@ -36,12 +38,10 @@ item_type: Content
 source_path: intune/device-configuration/templates/ref-vpn-settings-apple.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1dd701e0-441f-4b0a-9806-aa47decc4e35
-- https://authoring-docs-microsoft.poolparty.biz/devrel/3e34b70d-bca0-4369-a01b-71d1edfd427b
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/0a2fc935-5977-4aa6-9f55-0be03bd2acb8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8ca32b3f-fa14-46df-b09a-9c4a591d6396
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: e1cbd36c-26e9-06b1-51b9-a6ce5aee6e10
 ---
 
@@ -223,6 +223,70 @@ Cisco, Citrix, F5, and Palo Alto have announced that their legacy clients don't 
 - **Split tunneling**: **Enable** lets devices decide which connection to use depending on the traffic. For example, a user in a hotel uses the VPN connection to access work files, but use the hotel's standard network for regular web browsing. **Disable** lets all traffic use the VPN tunnel when the VPN connection is active.
 
 ::: zone-end
+
+## VPN tunnel routing
+
+Microsoft Intune supports Apple’s **Enforce Routes** capability in iOS/iPadOS and macOS VPN profiles. This enhancement helps administrators mitigate traffic bypass scenarios (such as de-cloaking risks) by ensuring VPN routing behavior aligns with Apple’s platform semantics.
+
+This feature introduces a simplified configuration experience in the Intune admin center, where routing behavior is defined using **Include all networks** and **Exclude local networks** settings. Intune automatically derives the appropriate **Enforce Routes** configuration based on these selections to ensure consistent and predictable device behavior.
+
+With this update:
+
+- Intune supports Apple’s `enforceRoutes` capability for iOS/iPadOS and macOS VPN configurations.
+- Routing behavior is explicitly modeled using:
+
+    - **Include all networks**
+    - **Exclude local networks**
+- Intune automatically derives the correct `enforceRoutes` value based on the selected combination—removing the need for manual configuration.
+
+This feature helps ensure that VPN routing behavior:
+
+- Prevents unintended traffic leakage outside the VPN tunnel
+- Aligns with Apple’s NetworkExtension routing model
+- Provides consistent enforcement of routing policies across devices
+
+In particular, enabling enforcement when required ensures that traffic does not bypass VPN routing due to local route precedence, which can otherwise lead to exposure of sensitive traffic.
+
+**How routing behavior works**
+
+Apple’s VPN model defines routing behavior using a combination of:
+
+- Full tunnel behavior (**Include all networks**)
+- Local network exceptions (**Exclude local networks**)
+- Route precedence enforcement (**Enforce Routes**)
+
+Intune simplifies this model by automatically deriving `enforceRoutes` when needed.
+
+**Configuration and behavior**
+
+| Include all networks | Exclude local networks | Enforce routes (derived) | Resulting device behavior |
+| --- | --- | --- | --- |
+| Off | Off | Off | Standard VPN routing based on configured routes |
+| On | Off | Ignored | Most device traffic is routed through the VPN tunnel |
+| On | On | Ignored | Most traffic is routed through the VPN, except local network traffic (for example, AirDrop, printers) |
+| Off | On | On (auto-derived) | VPN routing is enforced, and local network traffic is excluded from the tunnel |
+
+**Key behavior notes**
+
+- When **Include all networks** is enabled, iOS routes most traffic through the VPN tunnel. In this scenario, Apple ignores the `enforceRoutes` setting.
+- When **Exclude local networks** is enabled without **Include all networks**, Intune automatically enables **Enforce Routes** to ensure local network exclusions take effect.
+- **Enforce Routes is only applied when required** and isn’t exposed as a standalone setting in the admin experience.
+- These settings apply only to **device-wide VPN (tunnel routing)** configurations and aren’t applicable to **per-app VPN**.
+- Using **split tunneling** together with **VPN tunnel routing** settings is not recommended. When **split tunneling** is enabled, it forces all traffic through the VPN at the system level and may override your configured routes.
+
+**Security considerations**
+
+By enforcing routing precedence when required:
+
+- VPN traffic adheres to the configured routing policy
+- Local device routes can’t override VPN-defined routing unexpectedly
+- The risk of traffic bypass (including de-cloaking scenarios) is reduced
+
+In practice:
+
+- Use **Include all networks** to enforce a full-tunnel VPN configuration.
+- Use **Exclude local networks** only when local network access (such as printers or AirPlay) is required.
+- Avoid relying on explicit route configurations unless required by your VPN provider.
 
 ::: zone pivot="ios-ipados"
 

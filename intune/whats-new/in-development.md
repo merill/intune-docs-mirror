@@ -36,11 +36,9 @@ source_path: intune/whats-new/in-development.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/68e4b2d8-b70c-4019-b49a-d1f8881e2aea
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/67b2ba1a-6f74-4044-a48a-f0f8ad076b8f
 platformId: c5eb57bc-c27a-1714-8de9-d23a130c0177
 ---
 
@@ -77,6 +75,43 @@ Applies to:
 - iOS/iPadOS
 
 ## Device configuration
+
+### Maintenance windows for updates on Windows devices
+
+Microsoft Intune will introduce maintenance windows to help you schedule firmware, driver, and operating system updates on Windows devices. You'll be able to choose supported update operations and configure a start date, start time, duration, and repeat schedule.
+
+You'll create a maintenance windows profile in the Microsoft Intune admin center to define when update activity should take place. Scheduling options will include daily, weekly, and monthly recurrence, so you can align update activity with your organization's planned maintenance periods. This initial release will focus on updates; it won't include maintenance windows for application installations.
+
+Applies to:
+
+- Windows
+
+### Automate tasks with local actions on Android Enterprise devices
+
+Microsoft Intune will introduce local actions for Android Enterprise fully managed and dedicated devices. With local actions, you'll be able to automate tasks directly on a device by configuring actions that run in response to supported events. Events will include device restart, Managed Home Screen sign-in or sign-out, power connection changes, and scheduled times. Actions will include launching an app activity, sending a broadcast intent, signing out of Managed Home Screen, and exiting kiosk mode. You'll be able to pair supported events and actions, with up to five actions for each event.
+
+Applies to:
+
+- Android Enterprise fully managed devices
+- Android Enterprise dedicated devices
+
+### View eSIM profiles and deployment status for Windows devices
+
+Microsoft Intune will add Windows eSIM profile information and deployment status to the Properties Catalog. This visibility will make it easier to identify devices that require follow-up and validate profile deployment across your managed Windows estate.
+
+Applies to:
+
+- Windows
+
+### Support for the KEYENCE OEMConfig app on Android Enterprise
+
+Microsoft Intune will add support for the KEYENCE OEMConfig app (`com.keyence.autoid.oemconfigs`) for Android Enterprise devices. You'll be able to use the app with Intune's OEMConfig workflow to configure the device settings that KEYENCE exposes through its app schema.
+
+The app will be included in Intune's supported OEMConfig apps list. This addition will extend OEM-specific configuration support for organizations that use compatible KEYENCE devices. The settings available to configure will depend on the schema provided by KEYENCE, rather than a new set of Intune-defined settings.
+
+Applies to:
+
+- Android Enterprise
 
 ### Apple OS 27 DDM status data in device inventory
 
@@ -127,6 +162,16 @@ Applies to:
 
 - macOS 15 and later
 
+## Device enrollment
+
+### Just-in-time registration automatically enabled for eligible iOS/iPadOS tenants
+
+Microsoft Intune will automatically enable just-in-time (JIT) registration for eligible iOS/iPadOS tenants with the 2611 release. This change will apply to tenants with Microsoft Authenticator deployed as a required app and an existing device single sign-on (SSO) extension policy that doesn't already include the required JIT registration configuration. Intune will add the required configuration to the existing policy, so no administrator action will be needed. Users will be able to complete device registration from a supported work or school app without an additional Company Portal sign-in.
+
+Applies to:
+
+- iOS/iPadOS
+
 ## Device management
 
 ### Remove legacy Apple MDM software update workloads from Intune
@@ -176,6 +221,22 @@ For existing agents, admins will be able to transition to an agentic identity fr
 
 ## Device security
 
+### Controlled Configuration for Microsoft Defender Antivirus on Windows
+
+Intune will support Controlled Configuration for Microsoft Defender Antivirus settings on Windows. When you enable it, antivirus settings delivered by Intune or Microsoft Defender for Endpoint security settings management will take precedence over conflicting settings from Group Policy, Configuration Manager, and local changes or scripts. You'll be able to protect administrator-defined antivirus settings from being overridden, rather than protecting only secure default values. This will help reduce configuration drift, maintain consistent device states, and simplify troubleshooting by making the cloud-delivered configuration authoritative.
+
+Applies to:
+
+- Windows
+
+### STIG audit baselines for Windows devices in commercial tenants
+
+Intune will support STIG audit baselines for Windows devices in commercial tenants. You'll be able to assess devices against Security Technical Implementation Guide (STIG) recommendations and review per-setting and per-device results to identify configuration gaps and prioritize remediation. The baseline will evaluate supported automated checks without changing device settings, helping you understand where follow-up is needed before making configuration changes. This feature will require Intune Advanced Analytics. Rules that require manual verification will need to be assessed separately; the automated results won't replace those manual checks.
+
+Applies to:
+
+- Windows
+
 ### Configure Quality Update approvals and policies for Quick Machine Recovery (QMR)
 
 Windows Autopatch currently offers limited control over the deployment of quality updates. Today, the *expedite mechanism* focuses on deploying the latest security update and doesn't let admins select specific quality update releases or apply different deployment schedules, which can limit compliance, validation, and operational planning scenarios.
@@ -218,6 +279,16 @@ When this change takes effect, devices that are assigned this policy while manag
 
 ## Monitor and troubleshoot
 
+### Share device diagnostics during Remote Help sessions on Windows
+
+Helpdesk agents will be able to request device diagnostics during an attended Remote Help session on Windows. After the person receiving help consents, the agent will be able to review diagnostic information, such as system details and resource usage, to investigate the issue with less back-and-forth.
+
+The person receiving help will be able to view the shared data and stop sharing during the session. Declining the diagnostic request will leave the Remote Help session available, so assistance can continue without sharing these additional details.
+
+Applies to:
+
+- Windows
+
 ### Remote Help support in GCCH
 
 You'll be able to use Remote Help in US Government Community Cloud High (GCCH) environments. This expansion extends the same secure, cloud-based remote assistance capabilities currently available in GCC to GCCH tenants. IT support staff will be able to establish Remote Help sessions with end users on GCCH-enrolled devices, providing real-time troubleshooting with role-based access controls through Intune. Both helpers and sharers must sign in with their organization's Microsoft Entra ID accounts.
@@ -247,6 +318,18 @@ When this feature reaches general availability, Scoped permissions will become t
 If you haven't enabled Scoped permissions yet, use the **Permissions Assessment Report** at **Tenant administration** &gt; **Roles** &gt; **Settings** to preview how permissions will change before opting in.
 
 For more information, see [Permission behavior across role assignments](../fundamentals/role-based-access-control/scope-tags#permission-behavior-across-role-assignments).
+
+## Tenant administration
+
+### JIT registration reminder during Apple MDM push certificate renewal for iOS and iPadOS
+
+Beginning with the November 2026 release, Intune will display a new acknowledgment when you renew an Apple MDM push certificate in the Microsoft Intune admin center. The acknowledgment will remind you to configure just-in-time (JIT) registration for iOS and iPadOS devices and will appear for all tenants, regardless of their current JIT configuration.
+
+This reminder will help you prepare for web-based enrollment becoming the default for user-owned iOS and iPadOS devices in early 2027. You'll be able to review your enrollment configuration and configure JIT registration to help users complete registration and access protected organizational resources.
+
+Applies to:
+
+- iOS/iPadOS
 
 ## Notices
 

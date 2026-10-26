@@ -39,8 +39,10 @@ item_type: Content
 source_path: intune/configmgr/core/clients/manage/cmg/cost.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: b2300eca-e1da-6725-5a57-3967541dd11a
 ---
 
@@ -81,13 +83,14 @@ When you deploy the CMG as a [virtual machine scale set](plan-cloud-management-g
 
 - In version 2107 and later, you can configure the VM size:
 
-    - Lab ([B2s](/en-us/azure/virtual-machines/sizes-b-series-burstable))
-    - Standard ([A2_v2](/en-us/azure/virtual-machines/av2-series))
-    - Large ([A4_v2](/en-us/azure/virtual-machines/av2-series))
+    - Starting in version 2609 and version 2603 with the [update rollup (KB39169655)](../../../../hotfix/2603/39169655): Small (**Standard\_D2ads\_v6**), Medium (**Standard\_D4ads\_v6**), or Large (**Standard\_D8ads\_v6**).
+    - Earlier versions without this update rollup: Lab ([B2s](/en-us/azure/virtual-machines/sizes-b-series-burstable)), Standard ([A2_v2](/en-us/azure/virtual-machines/av2-series)), or Large ([A4_v2](/en-us/azure/virtual-machines/av2-series)).
+
+    Existing deployments are automatically migrated to the corresponding new VM size when you install either update. Use the new VM sizes when estimating costs for updated deployments. For the size mapping and upgrade requirements, see [Size and scale for CMG](perf-scale#size-and-scale-for-cmg).
 
     Important
 
-    The **Lab (B2s)** size VM is only intended for lab testing and small proof-of-concept environments. It isn't intended for production use with the CMG. The B2s VMs are low cost and low performing.
+    The **Small** tier (previously **Lab (B2s)**) is only intended for lab testing and small proof-of-concept environments. It isn't intended for production use with the CMG.
 
     You can change the VM size after you deploy the CMG. This action updates the Azure service to use a new VM.
 - In version 2103 and earlier, the CMG uses a Standard [A2_v2](/en-us/azure/virtual-machines/av2-series) VM. The VM size isn't configurable. To change the VM size, you need to [Redeploy the service](modify-cloud-management-gateway#redeploy-the-service).
