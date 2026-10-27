@@ -11,7 +11,7 @@ author: paolomatarazzo
 ms.author: paoloma
 ms.subservice: suite
 description: Review the Microsoft Intune data platform schema for device queries and inventory. Discover supported properties and data types to efficiently manage and report on your devices with Intune.
-ms.date: 2026-03-24T00:00:00.0000000Z
+ms.date: 2026-10-26T00:00:00.0000000Z
 ms.topic: reference
 locale: en-us
 document_id: 2e80527c-7c5b-3351-7af9-4b8b94b31013
@@ -55,6 +55,24 @@ For entities that include Android data, the following platforms are supported:
 - Android Enterprise corporate owned work profile (COPE)
 - Android Enterprise personally owned devices with a work profile (BYOD) using Android Management API (AM API)
 
+## `AppleAccessibility`
+
+> 
+> **Description**: Reports accessibility settings on Apple devices.**Supported platforms**: iOS, iPadOS
+
+These properties are available on supervised devices running iOS 16 or later or iPadOS 16 or later.
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `BoldTextEnabled` | bool | Indicates whether bold text is enabled. | iOS, iPadOS |
+| `IncreaseContrastEnabled` | bool | Indicates whether increased display contrast is enabled. | iOS, iPadOS |
+| `ReduceMotionEnabled` | bool | Indicates whether reduced motion is enabled. | iOS, iPadOS |
+| `ReduceTransparencyEnabled` | bool | Indicates whether reduced transparency is enabled. | iOS, iPadOS |
+| `TextSize` | long | The configured accessibility text-size value. Values range from 0 (smallest) to 11 (largest). A value of -1 indicates that the size is unknown or hasn't been explicitly set. | iOS, iPadOS |
+| `TouchAccommodationsEnabled` | bool | Indicates whether Touch Accommodations is enabled. | iOS, iPadOS |
+| `VoiceOverEnabled` | bool | Indicates whether the VoiceOver screen reader is enabled. | iOS, iPadOS |
+| `ZoomEnabled` | bool | Indicates whether accessibility Zoom is enabled. | iOS, iPadOS |
+
 ## `AppleAutoSetupAdminAccounts`
 
 > 
@@ -64,6 +82,66 @@ For entities that include Android data, the following platforms are supported:
 | --- | --- | --- | --- |
 | `AccountGUID` | String | The generated GUID of the administrator account | macOS |
 | `AccountShortName` | String | The short name of the administrator account | macOS |
+
+## `AppleContentCache`
+
+> 
+> **Description**: Reports content caching configuration, storage usage, and service status.**Supported platforms**: macOS
+
+These properties require macOS 27 or later.
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `CacheServerGuid` | string | The unique identifier of the content caching server. | macOS |
+| `CacheStatus` | string | The reported status of the content cache. | macOS |
+| `FreeBytes` | long | The available content cache storage, in bytes. | macOS |
+| `LimitBytes` | long | The storage limit for the content cache, in bytes. | macOS |
+| `MaxCachePressureLastHour` | double | The maximum cache pressure reported during the previous hour. Values range from 0.0 to 1.0; a lower value indicates less pressure. | macOS |
+| `PersonalCacheFreeBytes` | long | The available personal content cache storage, in bytes. | macOS |
+| `PersonalCacheLimitBytes` | long | The storage limit for the personal content cache, in bytes. | macOS |
+| `PersonalCacheUsedBytes` | long | The storage used by the personal content cache, in bytes. | macOS |
+| `ServiceActivated` | bool | Indicates whether the content caching service is activated. | macOS |
+| `ServiceActive` | bool | Indicates whether the content caching service is currently active. | macOS |
+| `ServiceCacheStatus` | string | The cache status reported by the content caching service. | macOS |
+| `ServicePort` | long | The network port used by the content caching service. | macOS |
+| `ServicePublicIpAddress` | string | The public IP address reported by the content caching service. | macOS |
+| `ServiceRegistrationStatus` | long | The registration status code reported by the content caching service. | macOS |
+| `ServiceSendingReports` | bool | Indicates whether the content caching service is sending reports. | macOS |
+| `ServiceStartupStatus` | string | The startup status of the content caching service. | macOS |
+| `ServiceTetheratorStatus` | long | The tethered caching status code reported by the content caching service. | macOS |
+| `ServiceVersion` | string | The version of the content caching service. | macOS |
+| `UsedBytes` | long | The storage used by the content cache, in bytes. | macOS |
+
+## `AppleContentCacheParent`
+
+> 
+> **Description**: Reports information about parent content caches.**Supported platforms**: macOS
+
+These properties require macOS 27 or later.
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `ContentCacheIdentifier` | string | The identifier of the parent content cache. | macOS |
+| `Healthy` | bool | Indicates whether the parent content cache is reported as healthy. | macOS |
+| `IpAddressV4` | string | The IPv4 address of the parent content cache. | macOS |
+| `ParentCacheVersion` | string | The version of the parent content cache. | macOS |
+| `Port` | long | The network port used by the parent content cache. | macOS |
+
+## `AppleContentCachePeer`
+
+> 
+> **Description**: Reports information about peer content caches.**Supported platforms**: macOS
+
+These properties require macOS 27 or later.
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `ContentCacheIdentifier` | string | The identifier of the peer content cache. | macOS |
+| `Friendly` | bool | Indicates whether the peer content cache is willing to respond to requests from this content cache. | macOS |
+| `Healthy` | bool | Indicates whether the peer content cache is able to respond to requests from this content cache. | macOS |
+| `IpAddressV4` | string | The IPv4 address of the peer content cache. | macOS |
+| `PeerCacheVersion` | string | The version of the peer content cache. | macOS |
+| `Port` | long | The network port used by the peer content cache. | macOS |
 
 ## `AppleDeviceStates`
 
@@ -81,6 +159,63 @@ For entities that include Android data, the following platforms are supported:
 | `Supervised` | bool | If true, it's a supervised device. | iOS, iPadOS, macOS |
 | `SupportsiOSAppInstalls` | bool | Are iOS app installs supported on this device | macOS |
 | `SystemIntegrityProtectionEnabled` | bool | System Integrity Protection (SIP) is a security technology on Mac that prevents malicious software from modifying protected resources | macOS |
+
+## `AppleEnhancedLogging`
+
+> 
+> **Description**: Reports enhanced logging status and session information.**Supported platforms**: iOS, iPadOS, macOS
+
+These properties require supervised devices running iOS 27 or later, iPadOS 27 or later, or macOS 27 or later.
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `AppleCareToken` | string | The AppleCare token associated with the enhanced logging session. | iOS, iPadOS, macOS |
+| `EnhancedLoggingStatus` | string | The reported status of enhanced logging. | iOS, iPadOS, macOS |
+| `LastSessionChangeDateTime` | datetime | The date and time of the most recent enhanced logging session change. | iOS, iPadOS, macOS |
+
+## `AppleMdmStatus`
+
+> 
+> **Description**: Reports mobile device management enrollment and configuration status.**Supported platforms**: iOS, iPadOS, macOS
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `AppleEnrollmentType` | string | The device's Apple management enrollment type. | iOS 27 or later, iPadOS 27 or later, macOS 27 or later |
+| `AwaitingConfiguration` | bool | Indicates whether the device is waiting for management configuration to complete. | iOS, iPadOS, macOS |
+| `InReturnToServiceFlow` | bool | Indicates whether the device is in the Return to Service with app preservation workflow. | iOS 27 or later, iPadOS 27 or later |
+| `IsSharedIPad` | bool | Indicates whether the device is configured as Shared iPad. | iPadOS |
+
+## `AppleSecurity`
+
+> 
+> **Description**: Reports security settings on Apple devices.**Supported platforms**: iOS, iPadOS, macOS
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `FileVaultEnabled` | bool | Indicates whether FileVault disk encryption is enabled. | macOS 14 or later |
+| `LockdownModeEnabled` | bool | Indicates whether Lockdown Mode is enabled. | iOS 27 or later, iPadOS 27 or later, macOS 27 or later |
+| `PasscodePresent` | bool | Indicates whether a passcode is set on the device. | iOS 16 or later, iPadOS 16 or later |
+
+Note
+
+`LockdownModeEnabled` requires supervision and isn't available on Shared iPad.
+
+## `AppleSystemHealthStatus`
+
+> 
+> **Description**: Reports the health status of device hardware components.**Supported platforms**: iOS, iPadOS
+
+These properties require supervised devices running iOS 27 or later or iPadOS 27 or later. Only components that are present and reportable on the device return a value.
+
+| Property | Type | Description | Platform |
+| --- | --- | --- | --- |
+| `BasebandHealthStatus` | string | The reported health status of the cellular baseband subsystem. | iOS, iPadOS |
+| `CameraHealthStatus` | string | The reported health status of the camera. | iOS, iPadOS |
+| `DisplayHealthStatus` | string | The reported health status of the display. | iOS, iPadOS |
+| `FaceIdHealthStatus` | string | The reported health status of Face ID. | iOS, iPadOS |
+| `NfcHealthStatus` | string | The reported health status of the near-field communication (NFC) subsystem. | iOS, iPadOS |
+| `TouchIdHealthStatus` | string | The reported health status of Touch ID. | iOS, iPadOS |
+| `UwbHealthStatus` | string | The reported health status of the ultra-wideband (UWB) subsystem. | iOS, iPadOS |
 
 ## `AppleUpdateSettings`
 
@@ -467,7 +602,9 @@ Chassis Types property is currently not supported for Inventory or Device query 
 ## `SystemInfo`
 
 > 
-> **Description**: System information of the device.**Supported platforms**: Android, Windows**Supported for**: single device query on-demand, Device query for multiple devices, Inventory.
+> **Description**: System information of the device.**Supported platforms**: Android, iOS, iPadOS, macOS, Windows**Supported for**: single device query on-demand, Device query for multiple devices, Inventory.
+
+The Apple properties listed in this table aren't supported for device queries.
 
 | Property | Type | Description | Supported platforms |
 | --- | --- | --- | --- |
@@ -479,6 +616,11 @@ Chassis Types property is currently not supported for Inventory or Device query 
 | `HardwareManufacturer` | string (max 256 characters) | Hardware vendor | Android, Windows single device query |
 | `HardwareModel` | string (max 256 characters) | Hardware model | Android, Windows single device query |
 | `HardwareSerialNumber` | string (max 256 characters) | Hardware serial number | Android |
+| `AppleProductName` | string | The Apple product model identifier reported by the device. | iOS, iPadOS, macOS |
+| `AppleSilicon` | bool | Indicates whether the Mac uses Apple silicon. | macOS 12 or later |
+| `AppleSoftwareUpdateDeviceId` | string | The device identifier used to look up applicable Apple software updates. | iOS 15 through 26, iPadOS 15 through 26, macOS 12 through 26 |
+| `DeviceName` | string | The device name reported by the device. | iOS, iPadOS, macOS |
+| `MarketingName` | string | The marketing name of the device model. | iOS 15 or later, iPadOS 15 or later, macOS 13 or later |
 
 ## `Time`
 
