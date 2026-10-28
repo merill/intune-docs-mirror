@@ -37,9 +37,11 @@ monikers: []
 item_type: Content
 source_path: intune/epm/manage-system-settings.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/49ede7b2-2f56-4945-b7e6-22fec420737b
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/103d59ae-20d6-4a29-babb-43fe986b6c52
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: 4ef8a5ae-a078-1f1b-231f-4932ff9672b3
@@ -60,6 +62,10 @@ Some everyday tasks, like changing an IP address or DNS server, require administ
 A common scenario is a user who travels between sites. To connect a device at a new location, the user might need to set a static IP address or DNS server before the device is online. An elevation system settings policy lets the user make that change, even when the device is offline.
 
 For elevation system settings policies to take effect, devices must also have an *elevation settings policy* targeted that enables EPM. For more information, see [Manage elevation settings](manage-elevation-settings).
+
+Note
+
+EPM System settings (Network settings) is rolling out gradually and may not yet be available in your tenant.
 
 ## About elevation system settings policy
 
