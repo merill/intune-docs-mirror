@@ -32,6 +32,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/device-management/deployments/create-deployment.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: b4f17ec7-d159-3c5d-1872-e5b0ec51f653
 ---
 

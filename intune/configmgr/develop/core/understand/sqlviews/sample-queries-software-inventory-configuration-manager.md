@@ -38,9 +38,9 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/core/understand/sqlviews/sample-queries-software-inventory-configuration-manager.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e93f3d5f-c77d-4365-a7fb-c9f2234416c7
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/62e8d07a-cc62-4934-b30b-e168a571e51d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: 765af3b5-3afc-899d-7642-d0315aa26aeb
 ---
 

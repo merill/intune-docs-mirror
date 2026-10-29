@@ -38,9 +38,9 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/core/servers/console/how-to-find-a-configuration-manager-console-node-guid.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/4628cbd9-6f47-4ae1-b371-d34636609eaf
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/be21deb8-8c64-44b0-b71f-2dc56ca7364f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: d1170155-0953-d7b0-763b-3242cdfa6741
 ---
 

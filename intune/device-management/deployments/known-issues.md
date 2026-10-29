@@ -32,6 +32,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/device-management/deployments/known-issues.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: ff6f6544-bcd2-fc43-f143-d7aa967202bf
 ---
 

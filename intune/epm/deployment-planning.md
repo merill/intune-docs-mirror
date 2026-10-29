@@ -34,13 +34,13 @@ monikers: []
 item_type: Content
 source_path: intune/epm/deployment-planning.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/49ede7b2-2f56-4945-b7e6-22fec420737b
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/19ec6774-09b8-473e-a17e-b17b518bbad7
-- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/103d59ae-20d6-4a29-babb-43fe986b6c52
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ade36b61-c646-4bd8-87ee-f3a843461962
-- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 4c61009c-d834-1911-7163-5095d00803c7
 ---
 

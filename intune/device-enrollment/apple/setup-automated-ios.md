@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn how to enroll corporate-owned iOS/iPadOS devices into Microsoft Intune with Apple Automated Device Enrollment (ADE).
-ms.date: 2026-05-18T00:00:00.0000000Z
+ms.date: 2026-10-28T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
 locale: en-us
@@ -35,11 +35,13 @@ monikers: []
 item_type: Content
 source_path: intune/device-enrollment/apple/setup-automated-ios.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: b7b33919-e29f-fcf6-c86f-d73436b0d451
 ---
 
@@ -145,9 +147,11 @@ This article reflects the updated policy creation experience (**Enrollment progr
     - **Company Portal**
     - **Setup Assistant with modern authentication**
 
+    We recommend **Setup Assistant with modern authentication** with [just-in-time (JIT) registration](setup-just-in-time-registration) for iOS/iPadOS ADE with user affinity. With JIT registration, users complete Microsoft Entra registration and compliance checks in an app configured with the Apple SSO extension, without needing to sign in to Company Portal.
+
     Important
 
-    We recommend using **Setup Assistant with modern authentication** for your Apple devices for ADE (automated device enrollment) scenarios with user device affinity. Legacy authentication is deprecated and we don't recommend its use.
+    Intune has ended support for **Setup Assistant (legacy)** authentication for ADE with user affinity with the October 2026 (2610) service release. Existing profiles that use this method are automatically updated to **Setup Assistant with modern authentication**, and the legacy option is no longer available when creating or editing profiles. Already-enrolled devices aren't affected and remain enrolled. Review your profiles and test modern authentication in your environment. For more information, see [Retirement of Setup Assistant (legacy)](ref-automated-authentication-methods#option-4-setup-assistant-legacy).
 13. The **Run Company Portal in Single App Mode until authentication** option is no longer supported and will soon be removed. This option must be set to **No**.
 14. If you want devices using this policy to be supervised, select **Yes** in the **Supervised** list.
 

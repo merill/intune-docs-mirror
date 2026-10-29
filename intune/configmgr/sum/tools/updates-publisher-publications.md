@@ -38,9 +38,9 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/sum/tools/updates-publisher-publications.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/aa9d0281-4c35-44bb-8c75-a0920bde2014
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d56bfe0c-ecd5-4d90-854f-35482bbb1314
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/c7449412-70b0-48ea-831f-3b132eafb97e
+- https://authoring-docs-microsoft.poolparty.biz/devrel/02e99b71-5808-477b-9387-4c6efa24e46b
 platformId: c8766620-e8aa-5f67-cba5-dea5a72da529
 ---
 

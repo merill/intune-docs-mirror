@@ -38,9 +38,9 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/reference/core/servers/configure/sms_distributionpointinfo-server-wmi-class.md
 cmProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/0850fefd-e402-4507-ae98-46cfdfc2e16c
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6ecf98a5-97c7-4249-b209-a9d9e42633a0
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: d410acbc-99c5-0e0e-f0ea-b258691e480e
 ---
 

@@ -33,10 +33,8 @@ item_type: Content
 source_path: intune/solutions/education/tutorial-school-deployment/configure-settings.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: 58599d67-8362-1b6e-8f2e-4392808f7150
 ---
 
@@ -231,11 +229,10 @@ If you require a more complex Windows Update policy, you can create it in Micros
 ::: zone pivot="ios"
 
 # [Intune](#tab/intune)
-It is important to keep iOS devices up to date with the latest security updates. You can create control updates with Intune using three different methods:
+It is important to keep iOS devices up to date with the latest security updates. You can control updates with Intune using these methods:
 
-- **Option 1** - iOS and iPadOS 17.0 and newer devices (recommended) - [Managed software update policy](../../../device-updates/apple/).
-- **Option 2** - iOS and iPadOS 17.0 and older (recommended) - [Software update policy](../../../device-updates/apple/deprecated-mdm-policies-ios).
-- **Option 3** (not recommended) - End users manually install the updates.
+- **Option 1** - [Configure update policies for Apple devices](../../../device-updates/apple/).
+- **Option 2** - End users manually install the updates.
 
 At **Devices** &gt; **Manage devices** &gt; **Configuration** &gt; **Create** &gt; **Settings catalog** &gt; **Restrictions**, you can use the following settings to delay how long after an update is released that users can manually install the updates.
 

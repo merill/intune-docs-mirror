@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: annovich
 ms.subservice: enrollment
 description: Describes the Intune-supported authentication methods you can use with automated device enrollment.
-ms.date: 2025-06-09T00:00:00.0000000Z
+ms.date: 2026-10-28T00:00:00.0000000Z
 ms.topic: how-to
 locale: en-us
 document_id: 7783d6be-1e76-78c8-6203-18ab252d1b26
@@ -34,11 +34,13 @@ monikers: []
 item_type: Content
 source_path: intune/device-enrollment/apple/ref-automated-authentication-methods.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
 platformId: dfe3b50b-75e4-b622-1e5e-c7c1c6cd2397
 ---
 
@@ -51,13 +53,14 @@ This article describes the authentication methods available for iOS/iPadOS devic
 - Intune Company Portal app
 - Setup Assistant with modern authentication
 - Just in Time (JIT) Registration for Setup Assistant with modern authentication
-- Setup Assistant (legacy)
 
-Note
+Important
 
-Setup Assistant (legacy) is deprecated and will be removed soon. We recommend using Setup Assistant with modern authentication.
+Intune has ended support for **Setup Assistant (legacy)** authentication for iOS/iPadOS and macOS automated device enrollment with user affinity with the October 2026 (2610) service release. Existing profiles that use this method are automatically updated to **Setup Assistant with modern authentication**, and the legacy option is no longer available when creating or editing profiles. Already-enrolled devices aren't affected and remain enrolled. For details, see Retirement of Setup Assistant (legacy).
 
 All methods are available for corporate-owned devices with user affinity and purchased through Apple Business or Apple School Manager.
+
+For iOS/iPadOS ADE with user affinity, we recommend **Setup Assistant with modern authentication** with just-in-time (JIT) registration. With this configuration, users complete Microsoft Entra registration and compliance checks in an app configured with the Apple SSO extension, without needing to sign in to Company Portal. JIT registration is configured with Setup Assistant with modern authentication; it isn't a separate authentication method to select in the enrollment policy.
 
 ## Option 1: Intune Company Portal app
 
@@ -86,7 +89,7 @@ This option provides the same security as Intune Company Portal authentication b
 - Automatically install the Company Portal app during enrollment. If your company uses the Volume Purchase Program (VPP), you can automatically install Company Portal app during enrollment without user Apple IDs.
 - Allow users to use the device even when the Company Portal app isn't installed.
 
-Setup Assistant with modern authentication is supported on devices running iOS/iPadOS 13.0 and later. Older iOS/iPadOS devices that are assigned this type of policy will fall back on **Setup Assistant (legacy)** authentication.
+Setup Assistant with modern authentication is supported on devices running iOS/iPadOS 13.0 and later.
 
 ### Automatically install Company Portal app
 
@@ -160,16 +163,16 @@ The following sequence of events describes an example of what a successful authe
 7. The device is registered with Microsoft Entra ID and compliant. You can view the status of the device in the admin center and Microsoft Entra ID. The device user can view the status in Intune Company Portal and use Company Portal for compliance, app inventory, device syncs, and log sharing.
 8. The device user opens Teams and is automatically signed in.
 
-## Option 4: Setup Assistant (legacy)
+## Retirement of Setup Assistant (legacy)
 
-Important
+To improve security and align with modern authentication standards, Intune has ended support for Setup Assistant (legacy) authentication for iOS/iPadOS and macOS automated device enrollment with user affinity with the October 2026 (2610) service release.
 
-The Setup Assistant (legacy) authentication method is deprecated. We recommend using **Setup Assistant with modern authentication** for all Automated Device Enrollment (ADE) scenarios with user device affinity.
+As part of this change:
 
-Use the legacy Setup Assistant if you want users to experience the typical, out-of-box-experience for Apple products. This option installs standard preconfigured settings when the device enrolls in Intune. Use this option for authentication when:
+- Existing ADE enrollment profiles with user affinity that use Setup Assistant (legacy) are automatically updated to **Setup Assistant with modern authentication**.
+- The Setup Assistant (legacy) option is no longer available when creating or editing ADE enrollment profiles.
+- Devices that are already enrolled aren't affected and remain enrolled.
 
-- You want to wipe a device.
-- You don't want modern authentication features such as multifactor authentication.
-- You don't want to register devices in Microsoft Entra ID. Setup Assistant (legacy) authenticates the user with the Apple .p7m token.
+Review your iOS/iPadOS and macOS ADE enrollment profiles in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and test the **Setup Assistant with modern authentication** enrollment experience in your environment. No manual profile update is required for the automatic migration.
 
-If you're using Active Directory Federation Services and you're using Setup Assistant to authenticate, a [WS-Trust 1.3 Username/Mixed endpoint](/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff608241%28v=ws.10%29) is required. For more information, see [Get-AdfsEndpoint](/en-us/powershell/module/adfs/get-adfsendpoint?view=win10-ps&amp;preserve-view=true) in our Windows PowerShell Reference guide.
+For platform-specific setup instructions, see [Set up automated device enrollment for iOS/iPadOS](setup-automated-ios) and [Set up automated device enrollment for macOS](setup-automated-macos).

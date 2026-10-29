@@ -35,12 +35,8 @@ item_type: Content
 source_path: intune/developer/app-sdk/quickstart-integration.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/7696cda6-0510-47f6-8302-71bb5d2e28cf
-- https://authoring-docs-microsoft.poolparty.biz/devrel/f0c462af-0ef9-4821-b36f-ba3d94736e2b
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/69c76c32-967e-4c65-b89a-74cc527db725
-- https://authoring-docs-microsoft.poolparty.biz/devrel/1209ac18-fe8e-4ac6-b056-073f0e2c78ab
 platformId: 036e588e-2101-89b1-f61d-2b4beed33eb2
 ---
 

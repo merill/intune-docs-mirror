@@ -1,15 +1,15 @@
 ---
 layout: FAQ
-title: Windows Autopilot troubleshooting FAQ | Microsoft Learn
+title: Windows Autopilot Troubleshooting FAQ | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/troubleshooting-faq
 summary: >
   <p><strong>Applies to:</strong></p>
 
   <ul>
 
-  <li><a href="/windows/release-health/supported-versions-windows-client#windows-11-supported-versions">Windows 11</a>.</li>
+  <li><a href="/windows/release-health/supported-versions-windows-client#windows-11-supported-versions">Windows 11</a></li>
 
-  <li><a href="/windows/release-health/supported-versions-windows-client#windows-10-supported-versions">Windows 10</a>.</li>
+  <li><a href="/windows/release-health/supported-versions-windows-client#windows-10-supported-versions">Windows 10</a></li>
 
   </ul>
 
@@ -26,8 +26,8 @@ feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/ef1d6d
 feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
-description: Troubleshooting of common Windows Autopilot issues
-ms.date: 2025-04-21T00:00:00.0000000Z
+description: Use this information to understand and troubleshoot some common Windows Autopilot issues that you might encounter.
+ms.date: 2026-10-21T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: faq
@@ -55,18 +55,18 @@ spProducts:
 platformId: 8726e7ef-3eda-f125-7004-264490b77276
 ---
 
-# Windows Autopilot troubleshooting FAQ | Microsoft Learn
+# Windows Autopilot Troubleshooting FAQ | Microsoft Learn
 
 **Applies to:**
 
-- [Windows 11](/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions).
-- [Windows 10](/en-us/windows/release-health/supported-versions-windows-client#windows-10-supported-versions).
+- [Windows 11](/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions)
+- [Windows 10](/en-us/windows/release-health/supported-versions-windows-client#windows-10-supported-versions)
 
 This article provides troubleshooting for common Windows Autopilot issues.
 
 ## Troubleshooting Windows Autopilot overview
 
-### What concepts should be understood when troubleshooting Windows Autopilot?
+### What concepts should you understand when troubleshooting Windows Autopilot?
 
 Windows Autopilot is designed to simplify all parts of the Windows device lifecycle, but there are always situations where issues might arise. When troubleshooting an issue, it's helpful to understand:
 
@@ -82,21 +82,21 @@ Whether performing user-driven or self-deploying device deployments, the trouble
 2. The Windows Autopilot profile is downloaded. When a wired connection is used, or a wireless connection is established, the profile downloads from the Windows Autopilot deployment service as soon as the network connection is in place.
 3. User authentication occurs. During a user-driven deployment, the user enters their Microsoft Entra credentials, which is then validated.
 4. Microsoft Entra join occurs. For user-driven deployments, the device is joined to Microsoft Entra ID using the specified user credentials. For self-deploying scenarios, the device is joined without specifying any user credentials.
-5. Automatic mobile device management (MDM) enrollment occurs. As part of the Microsoft Entra join process, the device enrolls in the MDM service configured in Microsoft Entra ID (for example, Microsoft Intune).
-6. Settings are applied. If the [enrollment status page](enrollment-status) is configured, most settings are applied while the enrollment status page is displayed. If not configured or available, settings will be applied after the user is signed in.
+5. Automatic mobile device management (MDM) enrollment occurs. As part of the Microsoft Entra join process, the device enrolls in the MDM service configured in Microsoft Entra ID, for example, Microsoft Intune.
+6. Settings are applied. If the [enrollment status page](enrollment-status) is configured, most settings are applied while the enrollment status page is displayed. If not configured or available, settings apply after the user is signed in.
 
 ### How are Windows Autopilot device profiles downloaded?
 
-When an Internet-connected Windows device boots up, it attempts to connect to the Windows Autopilot service and download a Windows Autopilot profile. The Windows Autopilot profile is downloaded as soon as possible, and again after each reboot.
+When an Internet-connected Windows device starts, it attempts to connect to the Windows Autopilot service and download a Windows Autopilot profile. The Windows Autopilot profile is downloaded as soon as possible, and again after each restart.
 
 Note
 
-At this stage, it's important that a Windows Autopilot profile exists in the tenant so that a blank profile isn't cached locally on the device. If necessary, a new Windows Autopilot profile can be retrieved by rebooting the device.
+At this stage, it's important that a Windows Autopilot profile exists in the tenant so that a blank profile isn't cached locally on the device. If necessary, a new Windows Autopilot profile can be retrieved by restarting the device.
 
-If a computer needs to be rebooted during the Windows out-of-box experience (OOBE) to retrieve a new Windows Autopilot profile:
+If a computer needs to be restarted during the Windows out-of-box experience (OOBE) to get a new Windows Autopilot profile:
 
-1. Select Shift-F10 to open a command prompt window.
-2. In the command prompt window, enter one of the following two commands:
+1. Select Shift+F10 to open a Command Prompt window.
+2. In the Command Prompt window, enter one of the following commands:
 
     - `shutdown.exe /r /t 0` to **restart** immediately.
     - `shutdown.exe /s /t 0` to **shut down** immediately.
@@ -116,13 +116,13 @@ The key troubleshooting activities to perform are:
 
 ### How can additional detailed troubleshooting information be enabled?
 
-On [Windows 11](/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions), the Windows Autopilot diagnostic page can be opened to view additional detailed troubleshooting information about the Windows Autopilot provisioning process. To enable the Windows Autopilot diagnostics page:
+On [Windows 11](/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions), the Windows Autopilot diagnostic page can be opened to view detailed troubleshooting information about the Windows Autopilot provisioning process. To enable the Windows Autopilot diagnostics page:
 
 1. Go to the [ESP profile](/en-us/intune/intune-service/enrollment/windows-enrollment-status) where the Windows Autopilot diagnostics page needs to be enabled.
 2. Make sure that **Show app and profile configuration progress** is selected to **Yes**.
 3. Make sure that **Turn on log collection and diagnostics page for end users** is selected to **Yes**.
 
-To access any diagnostic information once the diagnostic page is enabled, select the **View Diagnostics** button or enter the keystroke CTRL + SHIFT + D. The diagnostics page is currently supported under the following conditions:
+To access any diagnostic information once the diagnostic page is enabled, select **View Diagnostics** or select CTRL + SHIFT + D. The diagnostics page is currently supported under the following conditions:
 
 - Windows 11.
 - Windows Autopilot user-driven mode.
@@ -198,7 +198,7 @@ Error code **0x80180014** can occur under either of the following scenarios:
     To resolve and fix the issue in this scenario and redeploy the device using Windows Autopilot, follow these steps:
 
     1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-    2. In the **Home** screen, select **Devices** in the left hand pane.
+    2. In the **Home** screen, in the left pane, select **Devices**.
     3. In the **Devices | Overview** screen, under **By platform**, select **Windows**.
     4. In the **Windows | Windows devices** screen, under **Device onboarding**, select **Enrollment**.
     5. In the **Windows | Enrollment** screen, under **Windows Autopilot**, select **Devices**.
@@ -213,7 +213,7 @@ Error code **0x80180014** can occur under either of the following scenarios:
     To resolve and fix the issue in this scenario and redeploy the device using Windows Autopilot, follow these steps:
 
     1. Sign into the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-    2. In the **Home** screen, select **Devices** in the left hand pane.
+    2. In the **Home** screen, in the left pane, select **Devices**.
     3. In the **Devices | Overview** screen, under **By platform**, select **Windows**.
     4. In the **Windows | Windows devices** screen, under **Device onboarding**, select **Enrollment**.
     5. In the **Windows | Enrollment** screen, under **Enrollment options**, select **Device platform restriction**.
@@ -224,12 +224,12 @@ Error code **0x80180014** can occur under either of the following scenarios:
     10. Locate **Windows (MDM)** under the **Type** column.
     11. Make sure that **Windows (MDM)** is set to **Allow** under the **Platform** column.
     12. If **Windows (MDM)** is set to **Block**, change it to **Allow**.
-    13. Select **Review + save**, and then either **Save** if a setting was changed, or **Cancel** if not settings were changed.
+    13. Select **Review + save**, and then either **Save** if a setting was changed, or **Cancel** if no settings were changed.
     14. Repeat the above steps for any additional restrictions that might exist in the **Enrollment restrictions** screen other than **All Users**. Only restrictions for the **Windows** platform need to be verified.
 
     Note
 
-    When multiple restrictions exist, restrictions might exist that only allow certain groups MDM enrollment. Some of the restrictions blocking MDM enrollment might be valid based on what group the restrictions are assigned to. When experiencing this problem, verify that the device isn't a member of one of the groups where there's MDM enrollment is blocked. Alternatively, if applicable change the MDM enrollment setting for that restriction to **Allow**.
+    When multiple restrictions exist, restrictions might exist that only allow certain groups MDM enrollment. Some of the restrictions blocking MDM enrollment might be valid based on what group the restrictions are assigned to. When experiencing this problem, verify that the device isn't a member of one of the groups where there's MDM enrollment is blocked. Alternatively, if applicable, change the MDM enrollment setting for that restriction to **Allow**.
 
 In both of these scenarios, in addition to error **0x80180014** occurring, the Event Tracing for Windows (ETW) logs might also show the following mobile device management (MDM) error:
 
@@ -249,7 +249,7 @@ The "A" characters at the end of the hash are effectively empty data. Each chara
 
 To resolve and fix this issue, the hash needs to be modified. The new value then needs to be tested until PowerShell succeeds in decoding the hash. The result is mostly illegible, which is fine as long as the error **Invalid length for a Base-64 char array or string** isn't displayed.
 
-To test the base64, use the following PowerShell:
+To test the base64, use the following PowerShell command:
 
 ```powershell
 [System.Text.Encoding]::ascii.getstring( [System.Convert]::FromBase64String("DEVICE HASH"))
@@ -261,9 +261,9 @@ As an example:
 [System.Text.Encoding]::ascii.getstring( [System.Convert]::FromBase64String("Q29udG9zbwAAA"))
 ```
 
-This particular example isn't a device hash, but it's a misaligned unpadded Base64 so it's good for testing.
+This example isn't a device hash, but it's a misaligned unpadded Base64 so it's good for testing.
 
-Now for the padding rules. The padding character is "=". The padding character can only be at the end of the hash, and there can only be a maximum of two padding characters. Here's the basic logic.
+Now for the padding rules. The padding character is "=". The padding character can only be at the end of the hash, and there can only be a maximum of two padding characters. Here's the basic logic:
 
 - Does decoding the hash fail?
     - Yes: Are the last two characters "="?
@@ -300,19 +300,19 @@ The message **Fix pending** or **Attention required** might also be displayed in
 
 To resolve and fix this issue, deregister and re-register the device. For more information including how to deregister a device, see the following articles:
 
-- [Deregister a device](registration-overview#deregister-a-device).
-- [Return of key functionality for Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/return-of-key-functionality-for-windows-autopilot-sign-in-and/ba-p/3583130).
-- [Windows Autopilot motherboard replacement scenario guidance](autopilot-motherboard-replacement).
+- [Deregister a device](registration-overview#deregister-a-device)
+- [Return of key functionality for Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/return-of-key-functionality-for-windows-autopilot-sign-in-and/ba-p/3583130)
+- [Windows Autopilot motherboard replacement scenario guidance](autopilot-motherboard-replacement)
 
 ### Why is the join type for a device showing as "Microsoft Entra registered" instead of "Microsoft Entra joined"?
 
-This issue occurs if the device was previously registered in Microsoft Entra ID before it was joined to Microsoft Entra ID. The device possibly registered in Microsoft Entra ID via something like a [Workplace join](/en-us/entra/identity/devices/concept-device-registration). If the Microsoft Entra ID registered device isn't deleted from Microsoft Entra ID before the device is joined to Microsoft Entra ID, then the previous trust type is retained in the record. Joining an existing Microsoft Entra registered device to Microsoft Entra ID results in the Windows Autopilot device showing as **Microsoft Entra registered** instead of **Microsoft Entra joined**.
+This issue occurs if the device was previously registered in Microsoft Entra ID before it was joined to Microsoft Entra ID. The device possibly registered in Microsoft Entra ID by using something like a [Workplace join](/en-us/entra/identity/devices/concept-device-registration). If the Microsoft Entra ID registered device isn't deleted from Microsoft Entra ID before the device is joined to Microsoft Entra ID, then the previous trust type is retained in the record. Joining an existing Microsoft Entra registered device to Microsoft Entra ID results in the Windows Autopilot device showing as **Microsoft Entra registered** instead of **Microsoft Entra joined**.
 
 To resolve and fix this issue, before registering an existing Microsoft Entra ID registered device as a Windows Autopilot device, the following existing device objects for the device should be deleted:
 
-- Microsoft Intune.
-- Microsoft Entra ID.
-- Windows Autopilot.
+- Microsoft Intune
+- Microsoft Entra ID
+- Windows Autopilot
 
 After all device objects are deleted, re-register the device as a Windows Autopilot device and then re-enroll the device. For more information on properly deleting all of the device objects, see [Deregister a device](registration-overview#deregister-a-device).
 
@@ -320,8 +320,8 @@ After all device objects are deleted, re-register the device as a Windows Autopi
 
 To troubleshoot enrollment issues in Microsoft Intune such as the error code **80180018** in the **Something went wrong** error page, see [Troubleshooting Windows device enrollment errors in Intune](/en-us/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-enrollment-errors). Common issues can include:
 
-- Incorrect or missing licenses assigned to the user.
-- Too many devices enrolled for the user.
+- Incorrect or missing licenses assigned to the user
+- Too many devices enrolled for the user
 
 ### Why does Windows Autopilot Reset fail immediately with an error?
 
@@ -408,7 +408,7 @@ If mixing LOB and Win32 apps is required, consider using [Windows Autopilot devi
 
 ### During the ESP of a Windows Autopilot deployment, why does the Microsoft 365 Click-to-Run version of Office fail to install the Teams Machine-Wide Installer, or cause other Win32 app MSI based installs to fail?
 
-The [Teams Machine-Wide Installer](/en-us/microsoftteams/msi-deployment) component of the Microsoft 365 Click-to-Run version of Office includes an MSI installation. ESP doesn't track the Teams Machine-Wide Installer MSI install. Because ESP doesn't track the Teams Machine-Wide Installer MSI install, it can cause a conflict when other Win32 app MSI based installs attempt to install during ESP. MSIs install via **TrustedInstaller** which doesn't allow simultaneous installations. This conflict can cause either the Teams Machine-Wide Installer to fail or other MSI based installs to fail during ESP. For more information, see [Set up the Enrollment Status Page - Device setup: Apps](/en-us/intune/intune-service/enrollment/windows-enrollment-status#device-setup-apps).
+The [Teams Machine-Wide Installer](/en-us/microsoftteams/msi-deployment) component of the Microsoft 365 Click-to-Run version of Office includes an MSI installation. ESP doesn't track the Teams Machine-Wide Installer MSI install. Because ESP doesn't track the Teams Machine-Wide Installer MSI install, it can cause a conflict when other Win32 app MSI based installs attempt to install during ESP. MSIs install by using **TrustedInstaller** which doesn't allow simultaneous installations. This conflict can cause either the Teams Machine-Wide Installer to fail or other MSI based installs to fail during ESP. For more information, see [Set up the Enrollment Status Page - Device setup: Apps](/en-us/intune/intune-service/enrollment/windows-enrollment-status#device-setup-apps).
 
 This issue might be random and might not always occur. The issue occurs due to a timing issue between the **Teams Machine-Wide Installer** MSI install and other Win32 app MSI installs.
 
@@ -451,7 +451,7 @@ For more information, see [Install the Intune Connector for Active Directory on 
 
 This error might occur for several reasons including:
 
-- The domain has more than one domain controller with a replication latency policy. The MSA was created in one of the domain controllers but the search happened against another domain controller. Wait until replication has completed in accordance with your policy or manually sync. Once the replication is complete, then open the connector and choose **Configure MSA**.
+- The domain has more than one domain controller with a replication latency policy. The MSA was created in one of the domain controllers but the search happened against another domain controller. Wait until replication has completed in accordance with your policy or manually sync. After the replication is complete, then open the connector and choose **Configure MSA**.
 - A group policy is configured that doesn't allow services to be started as a non-privileged account. Make sure the MSA account has **Log on as a service** privileges granted. For example, see this instance with Operations Manager to [Enable service logon](/en-us/system-center/scom/enable-service-logon#enable-service-log-on-permission-for-run-as-accounts).
 
 ### Why is the error "Microsoft Edge can't read and write to its data directory" occurring?
@@ -471,7 +471,7 @@ This error might occur for several different type of issues including:
     - [Windows Autopilot requirements - Windows Autopilot Deployment Service](requirements?tabs=networking#windows-autopilot-deployment-service).
     - [Intune core service](/en-us/intune/fundamentals/endpoints#endpoints).
     - [Windows Autopilot dependencies](/en-us/intune/fundamentals/endpoints#windows-autopilot-dependencies).
-- Server is sending network request via TLS 1.0 or 1.1 because PKCS Cryptography is disabled. To resolve the issue, on the server hosting the Intune Connector for Active Directory, delete the registry key value specified in the following command by running the command from an elevated command prompt:
+- Server is sending network request using TLS 1.0 or 1.1 because PKCS Cryptography is disabled. To resolve the issue, on the server hosting the Intune Connector for Active Directory, delete the registry key value specified in the following command by running the command from an elevated command prompt:
 
     `reg.exe delete "HKLM\System\CurrentControlSet\Control\SecurityProviders\SCHANNEL\KeyExchangeAlgorithms\PKCS" /v Enabled /f`
 

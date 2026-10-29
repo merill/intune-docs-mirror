@@ -37,7 +37,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/compliance/about-authoring-configuration-baselines-and-configuration-items.md
-cmProducts: []
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: 79c005b4-543e-3d49-7f97-cefd90732e3a
 ---
 

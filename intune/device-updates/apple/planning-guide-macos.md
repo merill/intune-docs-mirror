@@ -32,11 +32,11 @@ monikers: []
 item_type: Content
 source_path: intune/device-updates/apple/planning-guide-macos.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
 platformId: 04e9e84a-8e9c-42d7-c181-85aff996091e
 ---
 
@@ -55,7 +55,7 @@ This article applies to:
 Tip
 
 - If your devices are personally owned, then go to the [software updates admin guide for personal devices](../byod-planning-guide).
-- Apple has deprecated MDM‑based software update workloads. To align with this change, Microsoft Intune will soon end support for MDM‑based Apple software update policies. Microsoft recommends using declarative device management (DDM) to manage and install Apple software updates. For more information about this transition, see the [Intune Customer Success blog: Move to declarative device management for Apple software updates](https://techcommunity.microsoft.com/blog/intunecustomersuccess/support-tip-move-to-declarative-device-management-for-apple-software-updates/4432177).
+- Apple has deprecated MDM‑based software update workloads and removed the related commands with OS 27. Microsoft recommends using declarative device management (DDM) to manage and install Apple software updates. For more information about this transition, see the [Intune Customer Success blog: Move to declarative device management for Apple software updates](https://techcommunity.microsoft.com/blog/intunecustomersuccess/support-tip-move-to-declarative-device-management-for-apple-software-updates/4432177).
 
 ## Before you begin
 
@@ -97,78 +97,24 @@ Don't use the MDM-based software update policy settings on these devices, as App
 
 The DDM settings are configurable in the [Intune settings catalog](../../device-configuration/settings-catalog/). For more information, go to [Managed software updates with the settings catalog](./).
 
-### ✅ Use MDM on macOS 13 and older
+### ✅ Configure Software Update Settings for user update experience
 
-On macOS versions 13 and older, you can use Apple's MDM settings built-in to Intune. For these devices, you create two policies that work together to manage the update experience. The first policy manages when updates are installed, and the second policy manages how updates are installed.
+The [Intune settings catalog](../../device-configuration/settings-catalog/) includes settings to help manage software updates. Create a policy that:
 
-#### Step 1 - Use a software update policy to manage when updates are installed
-
-In a software update policy, you can manage when critical updates and firmware updates are installed. You can also manage how many times the user can defer an update before it's force installed. Depending on the settings you enter, users aren't prompted and don't need to be using the device when the updates are installed.
-
-For most organizations, Microsoft recommends you configure the settings available in a [software update policy](deprecated-mdm-policies-macos).
-
-1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices &gt; Apple updates &gt; macOS update policies**.
-2. Configure the following settings:
-
-    - **Update policy behavior settings**
-
-        - **Critical updates**: Install later
-        - **Firmware updates**: Install later
-        - **Configuration file updates**: Install later
-        - **All other updates (OS, built-in apps)**: Install later
-            - **Maximum user deferrals**: 5
-            - **Priority**: High
-
-        Note
-
-        - On recent macOS builds, almost all updates show as **Configuration data files** or **All other updates**. The **All other updates** settings are mostly legacy updates for older builds of macOS.
-        - The time specified in these settings is used by the Intune service. The time isn't the local device time. Be aware of time differences when you configure a maintenance window, especially for a global environment.
-    - **Update policy schedule settings**
-
-        - **Schedule type**: Update at next check-in
-
-        You can change the values to your preferred scheduled times. Some of the values might only affect minor updates, and not major updates.
-
-For the specific steps, and more information on these settings & their values, go to [Manage macOS software update policies in Intune](deprecated-mdm-policies-macos).
-
-##### End user experience
-
-With these settings, this policy locks these settings so users can't change them. The policy also:
-
-1. Checks for updates each time the device checks in with the Intune service. If there are updates available, then they're automatically downloaded.
-2. The device finds a time period when the device isn't being used.
-
-    - If the device isn't being used, then the policy tries to automatically install the update.
-    - If the device is being used, then end users can choose to install the update, or defer the installation up to five times. Be sure to encourage your end users to install updates when they're available.
-
-    The following images show the prompts that end users can see when updates are available:
-
-    ![The sample notification prompt for a required update on a macOS Apple device.](media/planning-guide-macos/required-managed-update-sample-notification-macos.png)
-
-    ![The sample notification that an update is available on a macOS Apple device.](media/planning-guide-macos/updates-available-sample-notification-macos.png)
-3. If end users use all the deferrals, then the update is force installed. For a forced installation, a restart doesn't prompt the end user, and could result in data loss.
-
-#### Step 2 - Use a settings catalog policy to manage how updates are installed
-
-The [Intune settings catalog](../../device-configuration/settings-catalog/) includes settings to help manage software updates. In this step, you create a policy that:
-
-- Configures the device to automatically install updates when they're available, including app updates.
+- Configures how users can interact with update behavior on the device, including automatic downloads and app updates.
 - Prevents end users from disabling update checks.
 - Configures the device to check for updates and prompt users regularly.
 
-This settings catalog policy works with Step 1 - Use a software update policy to manage when updates are installed (in this article). It makes sure the devices are checking for updates and prompting users to install them. End users still need to take action to finish the installation.
+Use these settings together with DDM update enforcement in [Configure update policies for Apple devices](./). End users might still need to take action to finish some updates, depending on your configured deadlines and user experience settings.
 
-1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices &gt; Manage devices &gt; Configuration &gt; Settings catalog &gt; Software Update**.
-2. Configure the following settings:
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Devices &gt; Manage devices &gt; Configuration &gt; Settings catalog &gt; Declarative Device Management &gt; Software Update Settings**.
+2. Configure Software Update Settings to control automatic update behavior and user interaction on the device. Common settings include:
 
-    - **Allow Pre Release Installation**: False
     - **Automatic Download**: True
     - **Automatically Install App Updates**: True
-    - **Critical Update Install**: True
-    - **Restrict Software Update Require Admin To Install**: False
-    - **Config Data Install**: True
     - **Automatically Install MacOS Updates**: True
     - **Automatic Check Enabled**: True
+    - **Critical Update Install**: True
 
 For more information on the settings catalog, including how to create a settings catalog policy, go to [Use the settings catalog to configure settings](../../device-configuration/settings-catalog/).
 
@@ -194,6 +140,9 @@ There's also a [sample script and Intune configuration policy](https://github.co
 
 After the update policies are deployed, in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you can use the reporting feature to check the status of the updates.
 
-For each device, you can see its current state of updates (Devices &gt; macOS &gt; Update policies for macOS):
+For each device, you can see update status using Apple software update reporting:
+
+- **Reports** &gt; **Device management** &gt; **Apple updates**
+- **Devices** &gt; **Monitor** &gt; **Apple software update failures**
 
 [![Use the built-in reporting to check the update status of a macOS Apple device in the Microsoft Intune admin center.](media/planning-guide-macos/device-update-category-status.png)](media/planning-guide-macos/device-update-category-status.png#lightbox)

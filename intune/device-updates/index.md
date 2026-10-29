@@ -32,12 +32,12 @@ item_type: Content
 source_path: intune/device-updates/index.yml
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/a3955c7b-f5ee-420d-aff5-d7119738f38b
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/b31948f4-2f38-404b-ac93-c3c8c5b3ae33
 platformId: ff40ccd6-6483-da11-4a58-d272c481ac0b
 ---
 
@@ -101,8 +101,7 @@ Manage operating system and driver updates for Windows, Apple, and Android devic
 
 ### How-To Guide
 
-- [iOS/iPadOS update policies](apple/deprecated-mdm-policies-ios)
-- [macOS update policies](apple/deprecated-mdm-policies-macos)
+- [Configure update policies for Apple devices](apple/)
 - [Apple software update reports](apple/monitor-reports)
 
 ### Concept

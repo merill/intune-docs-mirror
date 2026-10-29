@@ -38,8 +38,10 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/core/servers/console/how-to-bind-configuration-manager-data-to-a-form.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 - https://authoring-docs-microsoft.poolparty.biz/devrel/97159432-14a9-4307-a469-d2f2c75f0e33
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/50565c62-5f6b-4687-be38-323113c72c2e
 platformId: 35d1e414-7954-20d7-859c-ab07d300d2b3
 ---

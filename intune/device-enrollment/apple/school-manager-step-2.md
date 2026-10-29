@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn how to create the enrollment policy in Intune for Apple School Manager enrollment.
-ms.date: 2026-04-29T00:00:00.0000000Z
+ms.date: 2026-10-28T00:00:00.0000000Z
 ms.topic: how-to
 locale: en-us
 document_id: af614a4c-797f-5880-c486-2c349a39c0c1
@@ -34,13 +34,11 @@ monikers: []
 item_type: Content
 source_path: intune/device-enrollment/apple/school-manager-step-2.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/68cb9039-df60-49b0-8ef8-89ad96497f63
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/b1cfdec6-b0c3-4209-818c-736879856e0e
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68cb9039-df60-49b0-8ef8-89ad96497f63
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/725b6df3-93e8-472d-834e-e7e0d2953d35
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/2d0723c1-cf38-4c30-ab3d-5df787b33270
+- https://authoring-docs-microsoft.poolparty.biz/devrel/725b6df3-93e8-472d-834e-e7e0d2953d35
 platformId: be3ecd6a-3178-2dd0-25e1-6e37f2280f8a
 ---
 
@@ -66,19 +64,13 @@ After you get your Apple token, you can create an enrollment policy for school d
 8. Select **Next**.
 9. On the **Configuration settings** tab, configure **User Affinity**. Decide if devices with this policy must enroll with an assigned user or without an assigned user. User affinity isn't supported on tvOS and visionOS devices.
 
-    - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the company portal for services like installing apps. This option also lets users authenticate their devices by using the company portal. If using Active Directory Federation Services (AD FS), user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff608241%28v=ws.10%29). [Learn more](/en-us/powershell/module/adfs/get-adfsendpoint). Apple School Manager's Shared iPad mode requires user enroll without user affinity.
+    - **Enroll with User Affinity** - Choose this option for devices that belong to users and that want to use the company portal for services like installing apps. This option also lets users authenticate their devices by using the company portal. Apple School Manager's Shared iPad mode requires user enroll without user affinity.
     - **Enroll without User Affinity** - Choose this option for devices unaffiliated with a single user, such as a shared device. Use this option for devices that perform tasks without accessing local user data. Apps like the Company Portal app don't work.
-10. If you chose **Enroll with User Affinity**, select how users must authenticate: Company Portal, Setup Assistant (legacy), or Setup Assistant with modern authentication. For more information about authentication methods, see [Authentication methods for automated device enrollment in Intune](ref-automated-authentication-methods).
+10. If you chose **Enroll with User Affinity**, select how users must authenticate: **Setup Assistant with modern authentication** (recommended) or **Company Portal**. For more information about authentication methods, see [Authentication methods for automated device enrollment in Intune](ref-automated-authentication-methods).
 
     Note
 
-    If you want any of the following features, set **Authenticate with Company Portal instead of Apple Setup Assistant** to **Yes**.
-
-    - Use multifactor authentication
-    - Prompt users who need to change their password when they first sign in
-    - Prompt users to reset their expired passwords during enrollment
-
-    These features aren't supported when authenticating with Apple Setup Assistant.
+    Both methods support multifactor authentication and password change or reset prompts during enrollment. We recommend **Setup Assistant with modern authentication** with [just-in-time (JIT) registration](setup-just-in-time-registration) for iOS/iPadOS ADE with user affinity.
 11. Choose if you want locked enrollment for devices using this policy. **Locked enrollment** disables Apple settings that allow the management profile to be removed from the **Settings** menu. After device enrollment, you can't change this setting without wiping the device.
 12. You can let multiple users sign on to enrolled iPads by using a managed Apple ID. To do so, choose **Yes** under **Shared iPad** (this option requires **Enroll without User Affinity** set to **Yes**.) Managed Apple IDs are created in the Apple School Manager portal. Learn more about [shared iPad](../../solutions/education/ref-classroom-settings-ios-shared) and [shared iPad requirements for Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 13. Choose if you want the devices using this policy to be able to **Sync with computers**. **Deny All** means that devices using this policy can't sync with any data on any computer.

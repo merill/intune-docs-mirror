@@ -34,8 +34,10 @@ monikers: []
 item_type: Content
 source_path: intune/epm/manage-elevation-settings.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/49ede7b2-2f56-4945-b7e6-22fec420737b
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/103d59ae-20d6-4a29-babb-43fe986b6c52
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: 3a0d2367-ca3e-84b3-1889-a37d9f5679b2
 ---

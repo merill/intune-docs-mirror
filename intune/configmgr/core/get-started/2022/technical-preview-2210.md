@@ -36,7 +36,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/configmgr/core/get-started/2022/technical-preview-2210.md
-cmProducts: []
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: cb002f68-3ed5-112e-68fb-822820112762
 ---
 

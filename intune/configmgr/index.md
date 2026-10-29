@@ -19,7 +19,7 @@ ms.reviewer:
 - qiani
 ms.topic: hub-page
 ms.subservice: core-infra
-ms.date: 2024-06-10T00:00:00.0000000Z
+ms.date: 2026-10-20T00:00:00.0000000Z
 ms.collection:
 - highpri
 - essentials-navigation
@@ -41,10 +41,8 @@ item_type: Content
 source_path: intune/configmgr/index.yml
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e0ffb20c-01c6-407b-a9bd-29111652a1dc
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
-- https://authoring-docs-microsoft.poolparty.biz/devrel/3904bce4-d817-48cf-85fd-b6146fca83b7
 platformId: f569f8de-5610-e677-c5bc-6eb843f3a9fc
 ---
 
@@ -87,7 +85,7 @@ Get started
 - [Overview of cloud attach](cloud-attach/overview)
 - [Microsoft Intune tenant attach](tenant-attach/)
 - [Endpoint analytics](../endpoint-analytics/)
-- [Overview of cloud management gateway (CMG)](core/clients/manage/cmg/overview)
+- [Overview of cloud management gateway](core/clients/manage/cmg/overview)
 - [Plan for Microsoft Entra ID](core/plan-design/security/plan-for-security#azure-active-directory)
 
 ### Co-management
@@ -112,7 +110,7 @@ Get started
 
 - [Using the console](core/servers/manage/admin-console)
 - [Deploy clients](core/clients/deploy/deploy-clients-to-windows-computers)
-- [Stay current with ConfigMgr and Windows 10](core/understand/configuration-manager-and-windows-as-service)
+- [Configuration Manager and Windows as a service](core/understand/configuration-manager-and-windows-as-service)
 - [See more](core/)
 
 ### App management
@@ -125,7 +123,7 @@ Get started
 
 ### OS deployment
 
-- [Upgrade to Windows 10](osd/deploy-use/upgrade-windows-to-the-latest-version)
+- [Upgrade the Windows operating system](osd/deploy-use/upgrade-windows-to-the-latest-version)
 - [Phased deployments](osd/deploy-use/create-phased-deployment-for-task-sequence)
 - [Task sequence steps](osd/understand/task-sequence-steps)
 - [See more](osd/)
@@ -134,7 +132,7 @@ Get started
 
 - [Plan for software updates](sum/plan-design/plan-for-software-updates)
 - [Deploy software updates](sum/deploy-use/deploy-software-updates)
-- [Optimize Windows 10 updates](sum/deploy-use/optimize-windows-10-update-delivery)
+- [Optimize Windows updates](sum/deploy-use/optimize-windows-10-update-delivery)
 - [Update Microsoft 365](sum/deploy-use/manage-office-365-proplus-updates)
 - [See more](sum/)
 

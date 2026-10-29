@@ -34,13 +34,9 @@ monikers: []
 item_type: Content
 source_path: intune/fundamentals/endpoints.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/e2c04606-9985-4e10-b018-2943639291c7
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/f257d737-c427-4ae9-949f-35f6148166cf
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: 4f9c67f4-21b3-74ab-65b4-b8e344c6077b
 ---
 

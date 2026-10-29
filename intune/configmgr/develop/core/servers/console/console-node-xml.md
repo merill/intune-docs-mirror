@@ -37,7 +37,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/core/servers/console/console-node-xml.md
-cmProducts: []
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: cad5cc94-fd6c-4d28-dd2b-5a8c9e0c01c9
 ---
 

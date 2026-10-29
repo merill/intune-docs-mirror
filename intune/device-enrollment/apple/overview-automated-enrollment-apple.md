@@ -14,7 +14,7 @@ ms.collection:
 ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn about automated device enrollment (ADE) for Apple mobile devices in Microsoft Intune, including supported scenarios, key features, and how to get started.
-ms.date: 2026-04-29T00:00:00.0000000Z
+ms.date: 2026-10-28T00:00:00.0000000Z
 ms.topic: concept-article
 ai-usage: ai-assisted
 locale: en-us
@@ -35,11 +35,11 @@ monikers: []
 item_type: Content
 source_path: intune/device-enrollment/apple/overview-automated-enrollment-apple.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
 platformId: 20c10b5c-92be-80be-8ce7-f296f251f01b
 ---
 
@@ -122,7 +122,7 @@ Before setting up ADE in Intune, make sure you have the following in place acros
 - An active ADE token (.p7m file) linking your Apple Business or Apple School Manager account to Intune. For steps, see [Set up an ADE token](setup-apple-token).
 - New or wiped corporate-owned devices added to Apple Business or Apple School Manager.
 
-Additionally, decide how you want users to authenticate:
+Additionally, decide how you want users to authenticate. For iOS/iPadOS ADE with user affinity, we recommend **Setup Assistant with modern authentication** with [just-in-time (JIT) registration](setup-just-in-time-registration):
 
 - **Setup Assistant with modern authentication** (recommended):
 
@@ -132,13 +132,9 @@ Additionally, decide how you want users to authenticate:
 
     - Also supports modern authentication and multifactor authentication.
     - Still requires users to complete Microsoft Entra registration through the app.
-- **Setup Assistant (Legacy)**:
-
-    - Supports devices running iOS/iPadOS earlier than 13.0.
-    - Not recommended or supported.
 
 Important
 
-We recommend using **Setup Assistant with modern authentication** for all Automated Device Enrollment (ADE) scenarios with user device affinity. Avoid using legacy authentication.
+Intune has ended support for **Setup Assistant (legacy)** authentication for ADE with user affinity with the October 2026 (2610) service release. Existing profiles that use legacy authentication are automatically updated to **Setup Assistant with modern authentication**. Already-enrolled devices aren't affected and remain enrolled. For details, see [Retirement of Setup Assistant (legacy)](ref-automated-authentication-methods#option-4-setup-assistant-legacy).
 
 tvOS and visionOS enrollment happens without user affinity. Authentication selection isn't required for these types of devices. For more information about authentication options, see [Authentication methods for automated device enrollment](ref-automated-authentication-methods).

@@ -37,7 +37,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/configmgr/develop/core/understand/how-to-add-a-configuration-manager-context-qualifier-by-using-managed-code.md
-cmProducts: []
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: e91ec89b-4567-9744-a122-6a23ab46d90a
 ---
 

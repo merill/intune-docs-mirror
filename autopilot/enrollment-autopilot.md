@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Create device groups for Windows Autopilot | Microsoft Learn
+title: Create Device Groups for Windows Autopilot | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/enrollment-autopilot
 author: lenewsad
 ms.author: lanewsad
@@ -15,7 +15,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: Learn how to create device groups for Windows Autopilot.
-ms.date: 2024-09-13T00:00:00.0000000Z
+ms.date: 2026-10-21T00:00:00.0000000Z
 ms.topic: how-to
 ms.collection:
 - M365-modern-desktop
@@ -46,7 +46,7 @@ spProducts:
 platformId: 09e379b7-7827-f6f4-597b-4867197c5089
 ---
 
-# Create device groups for Windows Autopilot | Microsoft Learn
+# Create Device Groups for Windows Autopilot | Microsoft Learn
 
 Note
 
@@ -76,78 +76,82 @@ HoloLens 2 devices require Windows Autopilot self-deploying mode. For more infor
 
         - To create a group that includes all of the Windows Autopilot devices, enter: `(device.devicePhysicalIDs -any (_ -startsWith "[ZTDid]"))`.
         - Intune's group tag field maps to the `OrderID` attribute on Microsoft Entra devices. To create a group that includes all Windows Autopilot devices with a specific group tag (the Microsoft Entra device `OrderID`), enter: `(device.devicePhysicalIds -any (_ -eq "[OrderID]:179887111881"))`.
-        - To create a group that includes all the Windows Autopilot devices with a specific Purchase Order ID, enter: `(device.devicePhysicalIds -any (_ -eq "[PurchaseOrderId]:76222342342"))`**Save** the expressions.
+        - To create a group that includes all the Windows Autopilot devices with a specific Purchase Order ID, enter: `(device.devicePhysicalIds -any (_ -eq "[PurchaseOrderId]:76222342342"))`
+
+        **Save** the expressions.
 3. Select **Create**.
 
-For a detailed tutorial on creating a device group for each of the Windows Autopilot scenarios using Intune, see the following links:
+For a detailed tutorial on creating a device group for each of the Windows Autopilot scenarios using Intune, see the following resources:
 
-- [User-driven Microsoft Entra join: Create a device group](tutorial/user-driven/azure-ad-join-device-group).
-- [User-driven Microsoft Entra hybrid join: Create a device group](tutorial/user-driven/hybrid-azure-ad-join-device-group).
-- [Pre-provision Microsoft Entra join: Create a device group](tutorial/pre-provisioning/azure-ad-join-device-group).
-- [Pre-provision Microsoft Entra hybrid join: Create a device group](tutorial/pre-provisioning/hybrid-azure-ad-join-device-group).
-- [Self-deploying mode: Create a device group](tutorial/self-deploying/self-deploying-device-group).
+- [User-driven Microsoft Entra join: Create a device group](tutorial/user-driven/azure-ad-join-device-group)
+- [User-driven Microsoft Entra hybrid join: Create a device group](tutorial/user-driven/hybrid-azure-ad-join-device-group)
+- [Pre-provision Microsoft Entra join: Create a device group](tutorial/pre-provisioning/azure-ad-join-device-group)
+- [Pre-provision Microsoft Entra hybrid join: Create a device group](tutorial/pre-provisioning/hybrid-azure-ad-join-device-group)
+- [Self-deploying mode: Create a device group](tutorial/self-deploying/self-deploying-device-group)
 
 ## Add devices
 
-The dynamic device group that includes Windows Autopilot devices automatically adds existing Windows Autopilot devices to the device group. To manually add new devices as Windows Autopilot devices using a CSV file so that they become part of the device group, see [Manually register devices with Windows Autopilot](add-devices).
+The dynamic device group that includes Windows Autopilot devices automatically adds existing Windows Autopilot devices to the device group. To manually add new devices as Windows Autopilot devices by using a CSV file so they become part of the device group, see [Manually register devices with Windows Autopilot](add-devices).
 
 ## Assign a user to a specific Windows Autopilot device
 
-A licensed Intune user can be assigned to a specific Windows Autopilot device. For supported OEMs, this assignment will:
+You can assign a licensed Intune user to a specific Windows Autopilot device. For supported manufacturers, this assignment:
 
-- Pre-populate the Microsoft Entra user Principal Name (UPN) under the pre-provisioning landing page and Microsoft Entra sign-in page.
-- Allows setting of a custom greeting name.
+- Prepopulates the Microsoft Entra user Principal Name (UPN) under the pre-provisioning landing page and Microsoft Entra sign-in page.
+- Enables setting a custom greeting name.
 
-For more information including a list of supported OEMs, see [Return of key functionality for Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/return-of-key-functionality-for-windows-autopilot-sign-in-and/ba-p/3583130).
+For more information, including a list of supported manufacturers, see [Return of key functionality for Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/return-of-key-functionality-for-windows-autopilot-sign-in-and/ba-p/3583130).
 
 Note
 
-Assigning a licensed user to a specific Windows Autopilot device only affects pre-populating the UPN and setting of a custom greeting name. It doesn't affect assigned policies and applications that are deployed to the device or to the user. The assigned policies and applications are still deployed regardless of the OEM. For more information, see [Windows Autopilot for pre-provisioned deployment](pre-provision#preparation).
+Assigning a licensed user to a specific Windows Autopilot device only affects prepopulating the UPN and setting a custom greeting name. It doesn't affect assigned policies and applications that are deployed to the device or to the user. The assigned policies and applications are still deployed regardless of the OEM. For more information, see [Windows Autopilot for pre-provisioned deployment](pre-provision#preparation).
 
 Important
 
-Assigning a user to a specific Windows Autopilot device doesn't work if using Active Directory Federation Services (ADFS).
+Assigning a user to a specific Windows Autopilot device doesn't work if you're using Active Directory Federation Services (ADFS).
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. In the **Home** screen, select **Devices** in the left hand pane.
-3. In the **Devices | Overview** screen, under **By platform**, select **Windows**.
-4. In the **Windows | Windows devices** screen, under **Device onboarding**, select **Enrollment**.
-5. In the **Windows | Windows enrollment** screen, under **Windows Autopilot**, select **Devices**.
-6. In the **Windows Autopilot devices** screen, select a device, and then in the toolbar select **Assign user**.
+2. In the **Home** screen, in the left pane, select **Devices**.
+3. In **Devices | Overview**, under **By platform**, select **Windows**.
+4. In **Windows | Windows devices**, under **Device onboarding**, select **Enrollment**.
+5. In **Windows | Windows enrollment**, under **Windows Autopilot**, select **Devices**.
+6. In **Windows Autopilot devices**, select a device, and then in the toolbar select **Assign user**.
 7. Select a Microsoft Entra ID user licensed to use Intune and select **Select**.
-8. In the **User Friendly Name** box, enter a friendly name or just accept the default.
+8. In **User Friendly Name**, enter a friendly name or accept the default.
 9. Select **Save**.
 
-For a detailed tutorial on assigning a user for each of the Windows Autopilot scenarios via Intune, see the following articles:
+For a detailed tutorial on assigning a user for each of the Windows Autopilot scenarios by using Intune, see the following articles:
 
-- [User-driven Microsoft Entra join: Assign Windows Autopilot device to a user](tutorial/user-driven/azure-ad-join-assign-device-to-user).
-- [User-driven Microsoft Entra hybrid join: Assign Windows Autopilot device to a user](tutorial/user-driven/hybrid-azure-ad-join-assign-device-to-user).
-- [Pre-provision Microsoft Entra join: Assign Windows Autopilot device to a user](tutorial/pre-provisioning/azure-ad-join-assign-device-to-user).
-- [Pre-provision Microsoft Entra hybrid join: Assign Windows Autopilot device to a user](tutorial/pre-provisioning/hybrid-azure-ad-join-assign-device-to-user).
+- [User-driven Microsoft Entra join: Assign Windows Autopilot device to a user](tutorial/user-driven/azure-ad-join-assign-device-to-user)
+- [User-driven Microsoft Entra hybrid join: Assign Windows Autopilot device to a user](tutorial/user-driven/hybrid-azure-ad-join-assign-device-to-user)
+- [Pre-provision Microsoft Entra join: Assign Windows Autopilot device to a user](tutorial/pre-provisioning/azure-ad-join-assign-device-to-user)
+- [Pre-provision Microsoft Entra hybrid join: Assign Windows Autopilot device to a user](tutorial/pre-provisioning/hybrid-azure-ad-join-assign-device-to-user)
 
 ## Using Windows Autopilot in other portals
 
-If there isn't interest in mobile device management (MDM), Windows Autopilot can be used in other portals. While using other portals is an option, Microsoft recommends only using Intune to manage Windows Autopilot deployments. When Intune is used with another portal, Intune isn't able to:
+If you're not interested in mobile device management (MDM), you can use Windows Autopilot in other portals. While using other portals is an option, only use Intune to manage Windows Autopilot deployments. When you use Intune with another portal, Intune can't:
 
-- Display changes to profiles created in Intune, but edited in another portal.
-- Synchronize profiles created in another portal.
-- Display changes to profile assignments done in another portal.
-- Synchronize profile assignments done in another portal.
-- Display changes to the device list that were made in another portal.
+- Display changes to profiles that you create in Intune but edit in another portal.
+- Synchronize profiles that you create in another portal.
+- Display changes to profile assignments that you make in another portal.
+- Synchronize profile assignments that you make in another portal.
+- Display changes to the device list that you make in another portal.
 
 ## Windows Autopilot for existing devices
 
-When enrolling Windows devices via [Windows Autopilot for existing devices](tutorial/existing-devices/existing-devices-workflow), a correlator ID can be used to group the Windows devices. The correlator ID is a parameter of the Windows Autopilot configuration file. The [Microsoft Entra device attribute enrollmentProfileName](/en-us/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) is automatically set to equal **OfflineAutopilotprofile-&lt;correlator ID&gt;**. Arbitrary Microsoft Entra dynamic groups can be created when using the correlator ID from the **enrollmentprofileName** attribute.
+When you enroll Windows devices through [Windows Autopilot for existing devices](tutorial/existing-devices/existing-devices-workflow), use a correlator ID to group the Windows devices. The correlator ID is a parameter of the Windows Autopilot configuration file. The [Microsoft Entra device attribute enrollmentProfileName](/en-us/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) automatically sets to **OfflineAutopilotprofile-&lt;correlator ID&gt;**. You can create arbitrary Microsoft Entra dynamic groups when you use the correlator ID from the **enrollmentprofileName** attribute.
 
 Warning
 
-Because the correlator ID isn't pre-listed in Intune, the device might report any correlator ID they want. If the user creates a correlator ID matching a Windows Autopilot or Apple ADE profile name, the device is added to any dynamic Microsoft Entra device group based off the enrollmentProfileName attribute. To avoid this conflict:
+Because the correlator ID isn't prelisted in Intune, the device can report any correlator ID it wants. If you create a correlator ID that matches a Windows Autopilot or Apple ADE profile name, the device is added to any dynamic Microsoft Entra device group based on the enrollmentProfileName attribute. To avoid this conflict:
 
-- Always create dynamic group rules matching against the *entire***enrollmentProfileName** value.
+- Always create dynamic group rules that match against the *entire***enrollmentProfileName** value.
 - Never name Windows Autopilot or Apple ADE profiles beginning with **OfflineAutopilotprofile-**.
 
-If all devices in the groups should automatically register to Windows Autopilot, in any Windows Autopilot profiles assigned to the groups, set the setting **Convert all targeted devices to Autopilot** to **Yes**. All non-Windows Autopilot devices in assigned groups register with the Windows Autopilot deployment service. Allow 48 hours for the registration to be processed. When the device is unenrolled and reset, Windows Autopilot enrolls it again. After a device is registered in this way, disabling this setting or removing the profile assignment won't remove the device from the Windows Autopilot deployment service. The device must be removed by deregistering the device from Windows Autopilot. For more information on how to properly deregister a device, see [Deregister a device](registration-overview#deregister-a-device).
+If you want all devices in the groups to automatically register to Windows Autopilot, set the **Convert all targeted devices to Autopilot** setting to **Yes** in any Windows Autopilot profiles assigned to the groups. All non-Windows Autopilot devices in assigned groups register with the Windows Autopilot deployment service. Allow 48 hours for the registration to be processed.
+
+When you unenroll and reset the device, Windows Autopilot enrolls it again. After you register a device in this way, disabling this setting or removing the profile assignment doesn't remove the device from the Windows Autopilot deployment service. You must remove the device by deregistering the device from Windows Autopilot. For more information about how to properly deregister a device, see [Deregister a device](registration-overview#deregister-a-device).
 
 For a full tutorial on Windows Autopilot for existing devices, see the following article:
 
-- [Step by step tutorial for Windows Autopilot deployment for existing devices in Intune and Configuration Manager](tutorial/existing-devices/existing-devices-workflow).
+- [Step by step tutorial for Windows Autopilot deployment for existing devices in Intune and Configuration Manager](tutorial/existing-devices/existing-devices-workflow)

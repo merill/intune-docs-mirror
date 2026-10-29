@@ -37,8 +37,12 @@ item_type: Content
 source_path: intune/device-configuration/endpoint-security/ref-endpoint-protection-macos.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a3037e20-8a2d-41a9-b8fb-6371107a9f1d
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/87b08e6e-7379-41da-a73a-9b625a249c69
 platformId: 9413c989-030e-109d-2a23-aff214c48ad4
 ---
 

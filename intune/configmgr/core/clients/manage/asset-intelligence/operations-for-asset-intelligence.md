@@ -38,8 +38,10 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 - https://authoring-docs-microsoft.poolparty.biz/devrel/aa9d0281-4c35-44bb-8c75-a0920bde2014
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/c7449412-70b0-48ea-831f-3b132eafb97e
 platformId: b2dfc2b2-2949-fde7-11b2-7ff7e34e6211
 ---

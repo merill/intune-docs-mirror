@@ -38,8 +38,10 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/sum/tools/manage-updates-with-updates-publisher.md
 cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d56bfe0c-ecd5-4d90-854f-35482bbb1314
 - https://authoring-docs-microsoft.poolparty.biz/devrel/aa9d0281-4c35-44bb-8c75-a0920bde2014
 spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/02e99b71-5808-477b-9387-4c6efa24e46b
 - https://authoring-docs-microsoft.poolparty.biz/devrel/c7449412-70b0-48ea-831f-3b132eafb97e
 platformId: e3ff74cd-153c-9e14-a1c9-95fc158cd3bc
 ---

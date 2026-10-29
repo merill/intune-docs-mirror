@@ -35,13 +35,13 @@ monikers: []
 item_type: Content
 source_path: intune/device-enrollment/apple/setup-automated-vision-os.md
 cmProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d01d0bfd-3c23-4b54-82d6-f9d06ad11cbd
+- https://authoring-docs-microsoft.poolparty.biz/devrel/837687b0-8846-4eb2-adb6-2b853e8c70c4
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d7f8710e-fbb0-4d09-b930-11c1b544a877
 spProducts:
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/da7889d8-fed4-4c4c-a52d-b6a3ea4ce02a
+- https://authoring-docs-microsoft.poolparty.biz/devrel/8c797fa2-4419-46e7-a4e3-4c97d0a1f2a0
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/deb137bf-5bfd-48db-9740-aeec6d9667dd
 platformId: 2023bcfd-2d45-aee7-f919-2d32238e639a
 ---
 

@@ -37,7 +37,12 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/configmgr/protect/plan-design/security-and-privacy-for-wifi-vpn-profiles.md
-cmProducts: []
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: cc6fe7dd-7e5f-71c4-753a-abdaca6a56f7
 ---
 

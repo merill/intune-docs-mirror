@@ -36,12 +36,8 @@ item_type: Content
 source_path: intune/device-security/mobile-threat-defense/setup-trend-micro.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d01d0bfd-3c23-4b54-82d6-f9d06ad11cbd
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/da7889d8-fed4-4c4c-a52d-b6a3ea4ce02a
 platformId: 0e8e13f1-3834-f575-e186-acc7b94b199e
 ---
 

@@ -37,7 +37,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/configmgr/core/plan-design/network/configure-firewalls-ports-domains.md
-cmProducts: []
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 platformId: fa0bfc38-a6cf-8a59-6ac6-bf6c57fa2122
 ---
 

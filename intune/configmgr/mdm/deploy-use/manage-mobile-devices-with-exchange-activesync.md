@@ -38,8 +38,10 @@ monikers: []
 item_type: Content
 source_path: intune/configmgr/mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md
 cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 - https://authoring-docs-microsoft.poolparty.biz/devrel/0b654e73-5728-4af3-8c2e-17bfbf4c9f23
 spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/11529658-843a-40bd-b2f8-5eed118be619
 platformId: 491bbc23-f815-0f99-c3f3-6a7c1798d83a
 ---

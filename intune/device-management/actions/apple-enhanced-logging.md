@@ -33,6 +33,10 @@ moniker_range_name:
 monikers: []
 item_type: Content
 source_path: intune/device-management/actions/apple-enhanced-logging.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 platformId: 605fed2a-3256-13c1-f0b3-7842d3e8e8a3
 ---
 
