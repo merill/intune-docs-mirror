@@ -84,8 +84,8 @@ Access endpoint security policies from **Endpoint security** &gt; **Manage** in 
 
 - **Purpose**: Configure and manage antivirus protection settings
 - **Platform support**: Windows, macOS, Linux
-- **Available profiles**: Defender Safe Deployment (Preview), Defender Update controls, Microsoft Defender AI agent runtime protection, Microsoft Defender Antivirus exclusions, Microsoft Defender Antivirus, Windows Security Experience, macOS Endpoint security antivirus
-- **Use case**: Centrally manage Microsoft Defender Antivirus policies and control when Windows devices receive Microsoft Defender updates
+- **Available profiles**: Defender Update controls, Microsoft Defender Antivirus, Microsoft Defender Antivirus exclusions, Windows Security experience, macOS Endpoint security antivirus
+- **Use case**: Centrally manage Microsoft Defender Antivirus policies on Windows devices
 
 **[App Control for Business](manage-app-control)**
 
