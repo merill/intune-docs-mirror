@@ -10,9 +10,10 @@ manager: laurawi
 author: lenewsad
 ms.author: lanewsad
 description: This article describes Microsoft Intune features that are in development.
-ms.date: 2026-10-29T00:00:00.0000000Z
+ms.date: 2026-10-30T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 ms.reviewer: intuner
 ms.collection:
 - M365-identity-device-management
@@ -184,14 +185,6 @@ Applies to:
 ### Controlled Configuration for Microsoft Defender Antivirus on Windows
 
 Intune will support Controlled Configuration for Microsoft Defender Antivirus settings on Windows. When you enable it, antivirus settings delivered by Intune or Microsoft Defender for Endpoint security settings management will take precedence over conflicting settings from Group Policy, Configuration Manager, and local changes or scripts. You'll be able to protect administrator-defined antivirus settings from being overridden, rather than protecting only secure default values. This will help reduce configuration drift, maintain consistent device states, and simplify troubleshooting by making the cloud-delivered configuration authoritative.
-
-Applies to:
-
-- Windows
-
-### STIG audit baselines for Windows devices in commercial tenants
-
-Intune will support STIG audit baselines for Windows devices in commercial tenants. You'll be able to assess devices against Security Technical Implementation Guide (STIG) recommendations and review per-setting and per-device results to identify configuration gaps and prioritize remediation. The baseline will evaluate supported automated checks without changing device settings, helping you understand where follow-up is needed before making configuration changes. This feature will require Intune Advanced Analytics. Rules that require manual verification will need to be assessed separately; the automated results won't replace those manual checks.
 
 Applies to:
 

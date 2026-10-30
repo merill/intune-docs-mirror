@@ -10,7 +10,7 @@ manager: laurawi
 author: lenewsad
 ms.author: lanewsad
 description: Find out what's new in Microsoft Intune.
-ms.date: 2026-10-29T00:00:00.0000000Z
+ms.date: 2026-10-30T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030
@@ -157,6 +157,18 @@ Applies to:
 - Apple devices running OS 27
 
 ### Device security
+
+#### STIG audit baselines for Windows devices in commercial tenants
+
+Microsoft Intune commercial tenants can now audit Windows devices against Security Technical Implementation Guide (STIG) recommendations. Review per-setting and per-device audit results to identify configuration gaps and prioritize remediation. The baseline evaluates supported automated checks without changing device settings.
+
+This feature requires Intune Advanced Analytics. Assess rules that require manual verification separately.
+
+For more information, see [Use STIG audit baselines to assess Windows device compliance](../device-security/security-baselines/stig-audit-baseline).
+
+Applies to:
+
+- Windows
 
 #### Updated Windows support for Administrator protection settings
 
