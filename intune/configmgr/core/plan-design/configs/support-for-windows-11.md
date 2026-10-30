@@ -132,11 +132,11 @@ By default, Windows 11 enables **focus assist** for the first hour after a user 
 
 Software Center notifications are currently suppressed during this time. For more information, see [Turn Focus assist on or off in Windows](https://support.microsoft.com/windows/turn-focus-assist-on-or-off-in-windows-5492a638-b5a3-1ee0-0c4f-5ae044450e09#ID0EBD=Windows_11).
 
-### Pre-provisioning BitLocker during task sequence doesn't own TPM
+### Pre-provision BitLocker during task sequence doesn't own TPM
 
 Applies to: *Windows ADK for Windows 11 (version 10.1.22000)*
 
-When you use a Windows 11-based boot image with an OS deployment task sequence that includes the [Pre-provision BitLocker](../../../osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) step, the step might fail. You'll see errors similar to the following strings in the smsts.log:
+When you use a Windows 11-based boot image with an OS deployment task sequence that includes the [Pre-provision BitLocker](../../../osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) step, the step might fail. You see errors similar to the following strings in the smsts.log:
 
 ```log
 'TakeOwnership' failed (2147942402)
@@ -151,7 +151,7 @@ To work around this issue, add a **Run Command Line** step to the task sequence 
 
 `reg.exe add HKLM\SOFTWARE\Policies\Microsoft\TPM /v OSManagedAuthLevel /t REG_DWORD /d 2 /f`
 
-For more information on this registry key, see [Change the TPM owner password](/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password). This work around is only needed for ADK releases 10.1.22000. Later versions aren't affected.
+For more information about this registry key, see [Change the TPM owner password](/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password). This workaround is only needed for ADK releases 10.1.22000. Later versions aren't affected.
 
 ### Configuration Manager console with Windows Hello for Business authentication
 

@@ -16,8 +16,8 @@ ms.reviewer:
 - payur
 - hugowu
 - qiani
-description: Learn the basics of Microsoft Configuration Manager.
-ms.date: 2024-06-19T00:00:00.0000000Z
+description: Learn the basics of Microsoft Configuration Manager. Use Configuration Manager to help you with the following systems management activities.
+ms.date: 2026-10-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.custom: intro-overview
 ms.topic: overview
@@ -55,7 +55,7 @@ platformId: c6c740bd-833f-9015-90a2-ffab5bfe9073
 
 Configuration Manager is part of the Microsoft Intune family of products.
 
-The Microsoft Intune family of products is an integrated solution for managing all of your devices. Microsoft brings together Configuration Manager and Intune, without a complex migration, and with simplified licensing. Continue to leverage your existing Configuration Manager investments, while taking advantage of the power of the Microsoft cloud at your own pace.
+The Microsoft Intune family of products is an integrated solution for managing all of your devices. Microsoft brings together Configuration Manager and Intune, without a complex migration, and with simplified licensing. Continue to use your existing Configuration Manager investments, while taking advantage of the power of the Microsoft cloud at your own pace.
 
 The following Microsoft management solutions are all now part of the **Microsoft Intune** brand:
 
@@ -98,7 +98,7 @@ Configuration Manager extends and works alongside many Microsoft technologies an
 Configuration Manager also uses:
 
 - Active Directory Domain Services and Microsoft Entra ID for security, service location, configuration, and to discover the users and devices that you want to manage.
-- Microsoft SQL Server as a distributed change management database—and integrates with SQL Server Reporting Services (SSRS) to produce reports to monitor and track management activities.
+- Microsoft SQL Server as a distributed change management database. It integrates with SQL Server Reporting Services (SSRS) to produce reports to monitor and track management activities.
 - Site system roles that extend management functionality and use the web services of Internet Information Services (IIS).
 - Delivery Optimization, Windows Low Extra Delay Background Transport (LEDBAT), Background Intelligent Transfer Service (BITS), BranchCache, and other peer caching technologies to help manage content on your networks and between devices.
 
@@ -108,9 +108,9 @@ To be successful with Configuration Manager in a production environment, thoroug
 
 ### The Configuration Manager console
 
-After you install Configuration Manager, use the Configuration Manager console to configure sites and clients, and to run and monitor management tasks. This console is the main point of administration, and lets you manage multiple sites.
+After you install Configuration Manager, use the Configuration Manager console to configure sites and clients, and to run and monitor management tasks. This console is the main point of administration. It lets you manage multiple sites.
 
-You can install the Configuration Manager console on additional computers, and restrict access and limit what administrative users can see in the console by using Configuration Manager role-based administration.
+You can install the Configuration Manager console on additional computers. Restrict access and limit what administrative users can see in the console by using Configuration Manager role-based administration.
 
 For more information, see [Use the Configuration Manager console](../servers/manage/admin-console).
 

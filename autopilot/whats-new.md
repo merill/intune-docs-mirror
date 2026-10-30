@@ -15,7 +15,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: News and resources about the latest updates and past versions of Windows Autopilot.
-ms.date: 2026-09-14T00:00:00.0000000Z
+ms.date: 2026-10-29T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: whats-new
@@ -37,9 +37,11 @@ item_type: Content
 source_path: autopilot/whats-new.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4b132a0c-342a-42eb-91ff-8159e1ed413d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/f2b71146-ce8e-46a8-9965-8aa8b3aa8235
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
 platformId: ca41399c-7519-f6ae-1691-036df6dfcdca
 ---
@@ -57,6 +59,14 @@ https://learn.microsoft.com/api/search/rss?search=%22News+and+resources+about+th
 This example includes the `&locale=en-us` variable. The `locale` variable is required, but it can be changed to another supported locale. For example, `&locale=es-es`.
 
 For more information on using RSS for notifications, see [How to use the docs](/en-us/intune/use-docs#notifications) in the Intune documentation.
+
+## Block on Enterprise App Management auto-update apps during the Enrollment Status Page
+
+Date added: *October 29, 2026*
+
+You can now select Microsoft Intune Enterprise App Management (EAM) auto-update apps as blocking apps in an Enrollment Status Page (ESP) profile. ESP blocks device setup until the selected apps are installed, helping ensure required apps are available before users access the desktop.
+
+For related information, see [Add an Enterprise App Catalog app to Microsoft Intune](/en-us/intune/app-management/deployment/add-enterprise-catalog-app).
 
 ## Performance and reliability improvements for the Enrollment Status Page
 

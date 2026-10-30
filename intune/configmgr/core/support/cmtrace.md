@@ -16,8 +16,8 @@ ms.reviewer:
 - payur
 - hugowu
 - qiani
-description: Learn about how to use the CMTrace tool to view log files for Configuration Manager.
-ms.date: 2024-12-04T00:00:00.0000000Z
+description: Learn about how to use the CMTrace tool to view log files for Configuration Manager. The tool lets you highlight, filter, and look up errors.
+ms.date: 2026-10-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: how-to
 ms.collection: tier3
@@ -50,16 +50,16 @@ platformId: 83de7b3b-0e0f-4ec2-8e1f-865454b47448
 
 *Applies to: Configuration Manager (current branch)*
 
-CMTrace is one of the [Configuration Manager tools](tools). It allows you to view and monitor log files, including the following types:
+CMTrace is one of the [Configuration Manager tools](tools). You can use it to view and monitor log files, including the following types:
 
 - Log files in Configuration Manager or Client Component Manager (CCM) format
 - Plain ASCII or Unicode text files, such as Windows Installer logs
 
-The tool helps to analyze log files by highlighting, filtering, and error lookup.
+The tool helps you analyze log files by highlighting, filtering, and error lookup.
 
 Note
 
-CMTrace isn't automatically registered with Windows to open the .log file extension. For more information, see File associations.
+CMTrace isn't automatically registered with Windows to open the `.log` file extension. For more information, see File associations.
 
 Configuration Manager version 2107 includes multiple performance improvements to the CMTrace log viewer.
 
@@ -68,11 +68,11 @@ Configuration Manager version 2107 includes multiple performance improvements to
 Configuration Manager automatically installs CMTrace in the following locations:
 
 - The site server's tools directory. For example: `cd.latest\SMSSETUP\Tools\CMTrace.exe`
-- The Management point's installation directory. For example: `C:\SMS_CCM\CMTrace.exe`
+- The management point's installation directory. For example: `C:\SMS_CCM\CMTrace.exe`
 - The client installation directory. For example: `C:\Windows\CCM\CMTrace.exe`
-- OS deployment boot images. For example: `X:\sms\bin\x64\CMTrace.exe`
+- Operating system deployment boot images. For example: `X:\sms\bin\x64\CMTrace.exe`
 
-If you have a copy of CMTrace in another location, consider removing it and using a copy in one of the default paths. If it's in a custom location that meets your business requirements, then make sure you have a process to keep it up to date. If your custom location might be of benefit to other customers, file [product feedback](../understand/product-feedback).
+If you have a copy of CMTrace in another location, consider removing it and using a copy in one of the default paths. If you use a custom location that meets your business requirements, ensure you have a process to keep it up to date. If your custom location might benefit other customers, file [product feedback](../understand/product-feedback).
 
 For more information, see [Direct links to Community hub items](../servers/manage/community-hub#bkmk_deeplink).
 
@@ -87,18 +87,18 @@ You take most actions in CMTrace from the following menus:
 
 ### File menu
 
-The following actions are available in the **File** menu:
+The **File** menu provides the following actions:
 
 - Open
 - Open on Server
 - Print
 - Preferences
 
-The File menu also lists the last eight recent files. Quickly reopen one of these logs by selecting it from the File menu.
+The **File** menu also lists the last eight recent files. Quickly reopen one of these logs by selecting it from the **File** menu.
 
 #### Open
 
-Displays the Open dialog box to browse for a log file.
+Displays the **Open** dialog to browse for a log file.
 
 Filter the view for files of the following types:
 
@@ -113,7 +113,7 @@ The following two options aren't selected by default:
 
 #### Open on Server
 
-Browse the Configuration Manager logs folder on a site system computer with the standard Browse dialog box. You can also browse the network for a remote computer.
+Browse the Configuration Manager logs folder on a site system computer with the standard **Browse** dialog. You can also browse the network for a remote computer.
 
 When you select a remote computer to browse, CMTrace checks for the Configuration Manager share. If it can't find a share with Configuration Manager log files, it displays an error message.
 
@@ -121,7 +121,7 @@ To connect directly to a known computer without browsing, use the Open action. T
 
 #### Print
 
-Display the standard Windows Print dialog box. This action sends the current log file to a printer. It formats the output according to the settings on the Printing tab of CMTrace Preferences.
+Display the standard Windows **Print** dialog. This action sends the current log file to a printer. It formats the output according to the settings on the **Printing** tab of CMTrace Preferences.
 
 #### Preferences
 
@@ -131,11 +131,11 @@ Configure settings for CMTrace. The following options are available:
 
     - **Update Interval**: Controls how often CMTrace checks for changes to log files and loads new lines. By default, this value is 500 milliseconds.
     - **Highlight**: Sets the color that CMTrace uses when highlighting log lines that you choose. By default, this color is basic yellow (Red: 255, Green: 255, Blue: 0).
-    - **Columns**: Configures the columns that are visible in the log view and the order in which they appear. By default, it displays Log Text, Component, Date/Time, and Thread.
+    - **Columns**: Configures the columns that are visible in the log view and the order in which they appear. By default, it displays **Log Text**, **Component**, **Date/Time**, and **Thread**.
 - **Printing** tab
 
     - **Columns**: Configure which columns it uses when printing log files and the order in which they appear. By default, it prints the same columns as it displays.
-    - **Orientation**: Sets the default print orientation when printing log files. Override this setting in the Print dialog box. By default, it uses Portrait orientation.
+    - **Orientation**: Sets the default print orientation when printing log files. Override this setting in the **Print** dialog. By default, it uses Portrait orientation.
 - **Advanced** tab
 
     - **Refresh Interval**: Forces CMTrace to update the log view at a specified interval when loading a large number of lines. By default, this option is disabled with a value of zero.
@@ -146,7 +146,7 @@ Configure settings for CMTrace. The following options are available:
 
 ### Tools menu
 
-The following actions are available in the **Tools** menu:
+The **Tools** menu provides the following actions:
 
 - Find
 - Find Next
@@ -164,18 +164,18 @@ Search the open log file for a specified text string.
 
 #### Find Next
 
-Finds the next matching string, as you previously specified in the Find dialog box.
+Find the next matching string, as you previously specified in the **Find** dialog.
 
 #### Copy to Clipboard
 
-Copies the selected lines as plain text to the Windows clipboard. If you're examining Configuration Manager and CCM log files, it copies the columns in the same order as the view. It separates each column by a tab character. Use this action when copying logs into email messages or other documents.
+Copy the selected lines as plain text to the Windows clipboard. If you're examining Configuration Manager and CCM log files, this action copies the columns in the same order as the view. It separates each column by a tab character. Use this action when copying logs into email messages or other documents.
 
 #### Highlight
 
 Enter a string that CMTrace uses to search the text of each log entry. It then highlights any log text that matches the string you enter.
 
-- The highlight uses the color you specified in Preferences.
-- To turn off highlighting, clearing the string from this field.
+- The highlight uses the color you specify in Preferences.
+- To turn off highlighting, clear the string from this field.
 - If you enter a decimal or hexadecimal number, CMTrace tries to match the value to the Thread column. Use this behavior to highlight the processing of a single thread, without filtering out other threads that might interact with it.
 - To compare strings by case, enable the option for **Case sensitive**.
 
@@ -202,42 +202,42 @@ Suspend or restart log monitoring. The following use cases are some of the possi
 
 #### Show/Hide Details
 
-Show or hide all columns other than the log text. It also expands the log text column to the width of the window. Use this action when you're viewing logs on a computer with low display resolution. It displays more of the log text.
+Show or hide all columns other than the log text. It also expands the log text column to the width of the window. Use this action when you view logs on a computer with low display resolution. It displays more of the log text.
 
 Note
 
-When viewing plain-text files, CMTrace automatically hides details because they're always empty.
+When viewing plaintext files, CMTrace automatically hides details because they're always empty.
 
 #### Show/Hide Info Pane
 
-Show or hide the Info pane. Use this action when you're viewing logs on a computer with low display resolution. It displays more logging details.
+Show or hide the **Info** pane. Use this action when you view logs on a computer with low display resolution. It displays more logging details.
 
 ## Log pane
 
 The log pane is at the top of the CMTrace window. It displays lines from log files.
 
-When you select a line, it's temporarily highlighted using the Windows selection color scheme.
+When you select a line, the Windows selection color scheme temporarily highlights it.
 
-Highlighted lines match the criteria you define with the **Highlight** option in the **Tools** menu. The highlight uses the color that you specify in **Preferences**.
+Highlighted lines match the criteria you define by using the **Highlight** option in the **Tools** menu. The highlight uses the color that you specify in **Preferences**.
 
-CMTrace displays lines with errors using a red background and yellow text color. In CCM-format logs, log entries have an explicit type value that indicates the entry as an error. For other log formats, CMTrace does a case-insensitive search in each entry for any text string matching "error".
+CMTrace displays lines with errors by using a red background and yellow text color. In CCM-format logs, log entries include an explicit type value that indicates the entry as an error. For other log formats, CMTrace does a case-insensitive search in each entry for any text string matching "error".
 
-It displays lines with warnings using a yellow background. In CCM-format logs, log entries have an explicit type value that indicates the entry as a warning. For other log formats, CMTrace does a case-insensitive search in each entry for any text string matching "warn".
+It displays lines with warnings by using a yellow background. In CCM-format logs, log entries include an explicit type value that indicates the entry as a warning. For other log formats, CMTrace does a case-insensitive search in each entry for any text string matching "warn".
 
 ## Info pane
 
-The Info pane is at the bottom of the CMTrace window. It includes the following features:
+The **Info** pane is at the bottom of the CMTrace window. It includes the following features:
 
 - Details about the currently selected log entry
 - A text box that displays the log text
 - It displays carriage returns so that formatted text is easier to read
-- Easier to read long entries that aren't fully visible in the Log pane
+- Easier to read long entries that aren't fully visible in the **Log** pane
 
-Show or hide the Info pane with the **Show/Hide Info Pane** option on the **Tools** menu. If the Info pane takes up more than half of the log window, CMTrace automatically hides it.
+Show or hide the **Info** pane by using the **Show/Hide Info Pane** option on the **Tools** menu. If the **Info** pane takes up more than half of the log window, CMTrace automatically hides it.
 
 ### Progress bar
 
-When you first open a log file, CMTrace replaces the Info pane by a progress bar. This progress indicates how much of the existing file contents it's loaded. The progress reaches 100 percent, CMTrace removes the progress bar, and replaces it with the Info pane. When you load large files, this behavior provides you with an indication of how long the load might take.
+When you first open a log file, CMTrace replaces the Info pane with a progress bar. This progress bar indicates how much of the existing file contents it loaded. When the progress reaches 100 percent, CMTrace removes the progress bar and replaces it with the Info pane. When you load large files, this behavior provides you with an indication of how long the load might take.
 
 ### Status bar
 
@@ -251,7 +251,7 @@ CMTrace supports file associations and drag-and-drop.
 
 ### File associations
 
-CMTrace can associate itself with .log and .lo\_ file name extensions. When the program starts, it checks the registry to determine whether it's already associated with these file name extensions. If CMTrace isn't already associated with any file name extensions, you're prompted to associate the file name extensions with CMTrace. If you select **Do not ask me this again**, CMTrace skips this check whenever it's run on this computer.
+CMTrace can associate itself with .log and .lo\_ file name extensions. When the program starts, it checks the registry to determine whether it's already associated with these file name extensions. If CMTrace isn't already associated with any file name extensions, you're prompted to associate the file name extensions with CMTrace. If you select **Do not ask me this again**, CMTrace skips this check whenever it runs on this computer.
 
 ### Drag-and-drop
 
@@ -263,6 +263,6 @@ CMTrace supports basic drag-and-drop functionality. Drag a log file from Windows
 
 By default, CMTrace saves the last log location that you opened. This behavior is useful on the site server, as it defaults to the logs path every time.
 
-The first time you launch it on a client, it defaults to the current working directory. This location may be the path where you saved CMTrace, or a path like `%userprofile%\Desktop`.
+The first time you launch it on a client, it defaults to the current working directory. This location might be the path where you saved CMTrace, or a path like `%userprofile%\Desktop`.
 
 The **Last Directory** value in the registry key `HKEY_CURRENT_USER\Software\Microsoft\Trace32` controls this default location. If you set this value to `%windir%\CCM\Logs` on your clients, then CMTrace opens files in the client log location the first time you run it.

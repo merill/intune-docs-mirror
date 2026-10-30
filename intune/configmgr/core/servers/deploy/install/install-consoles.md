@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Install console - Configuration Manager | Microsoft Learn
+title: Install Console - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/core/servers/deploy/install/install-consoles
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Install the Configuration Manager console to connect to a central administration site or primary site.
-ms.date: 2024-12-04T00:00:00.0000000Z
+ms.date: 2026-10-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: how-to
 ms.collection: tier3
@@ -46,7 +46,7 @@ spProducts:
 platformId: f9df6b97-84ad-25e8-ef7c-654db7c86c5e
 ---
 
-# Install console - Configuration Manager | Microsoft Learn
+# Install Console - Configuration Manager | Microsoft Learn
 
 *Applies to: Configuration Manager (current branch)*
 
@@ -57,14 +57,14 @@ The Configuration Manager console is always installed on the site server for the
 ## Prerequisites
 
 - [Supported OS versions for Configuration Manager consoles](../../../plan-design/configs/supported-operating-systems-consoles)
-- You have local **Administrator** rights on the target computer for the console.
-- You have **Read** permissions to the location of the console installation files.
+- Local **Administrator** rights on the target computer for the console
+- **Read** permissions to the location of the console installation files
 
 ### .NET version requirements
 
-Starting in version 2403, the console requires Microsoft .NET Framework version 4.8. If you install the console on other devices, make sure to update .NET. If the device doesn't already have it, the console setup doesn't install this prerequisite.
+Starting in version 2403, the console requires Microsoft .NET Framework version 4.8. If you install the console on other devices, ensure you update .NET. If the device doesn't already have it, the console setup doesn't install this prerequisite.
 
-Starting in version 2107, the console requires Microsoft .NET Framework version 4.6.2, but version 4.8 is recommended. If you install the console on other devices, make sure to update .NET. If the device doesn't already have it, the console setup doesn't install this prerequisite.
+Starting in version 2107, the console requires Microsoft .NET Framework version 4.6.2, but version 4.8 is recommended. If you install the console on other devices, ensure you update .NET. If the device doesn't already have it, the console setup doesn't install this prerequisite.
 
 Starting in version 2103, the ConfigurationManager PowerShell module requires Microsoft .NET version 4.7.2 or later.
 
@@ -78,7 +78,7 @@ For more information, see [.NET Framework system requirements](/en-us/dotnet/fra
 
 ## Source paths
 
-Decide which source path to use:
+Choose the source path to use:
 
 - ConsoleSetup folder in the installation path on the site server: `\Tools\ConsoleSetup`
 
@@ -91,9 +91,9 @@ When possible, start the console installer from the **ConsoleSetup** folder rath
 
 Important
 
-Don't install the console using the `CD.Latest` source files. It's an unsupported scenario, and may cause problems with the console installation. For more information, see [The `CD.Latest` folder](../../manage/the-cd.latest-folder#unsupported-scenarios).
+Don't install the console by using the `CD.Latest` source files. It's an unsupported scenario, and it can cause problems with the console installation. For more information, see [The `CD.Latest` folder](../../manage/the-cd.latest-folder#unsupported-scenarios).
 
-If you create a package for installing the console on other computers, make sure the package includes the following files:
+If you create a package for installing the console on other computers, ensure the package includes the following files:
 
 - ConsoleSetup.exe
 - AdminConsole.msi
@@ -106,7 +106,7 @@ If you create a package for installing the console on other computers, make sure
 
     Important
 
-    Always install the console by using **ConsoleSetup.exe**. Although you can install the Configuration Manager console by running AdminConsole.msi, this method doesn't run prerequisites or dependency checks. The installation might not install correctly.
+    Always install the console by using **ConsoleSetup.exe**. Although you can install the Configuration Manager console by running **AdminConsole.msi**, this method doesn't run prerequisites or dependency checks. The installation might not install correctly.
 2. In the wizard, select **Next**.
 3. On the **Site Server** page, enter the fully qualified domain name (FQDN) of the site server to which the Configuration Manager console connects.
 4. On the **Installation Folder** page, enter the installation folder for the Configuration Manager console. The folder path can't include trailing spaces or Unicode characters.
@@ -116,13 +116,13 @@ If you create a package for installing the console on other computers, make sure
 
 Tip
 
-Installing the Configuration Manager console from a command prompt always installs the English version. This behavior happens even if the target computer's OS is set to a different language. To install the Configuration Manager console in a language other than English, use the Setup Wizard.
+Installing the Configuration Manager console from a command prompt always installs the English version. This behavior happens even if the target computer operating system is set to a different language. To install the Configuration Manager console in a language other than English, use the Setup Wizard.
 
 ### ConsoleSetup.exe command-line options
 
 #### `/q`
 
-Installs the Configuration Manager console unattended. The `TargetDir` and `DefaultSiteServerName` options are required when you use this option.
+Installs the Configuration Manager console unattended. You must include the `TargetDir` and `DefaultSiteServerName` options when you use this option.
 
 #### `/uninstall`
 
@@ -130,15 +130,15 @@ Uninstalls the Configuration Manager console. Specify this option first when you
 
 #### `LangPackDir`
 
-Specifies the path to the folder that contains the language files. You can use **Setup Downloader** to download the language files. If you don't use this option, Setup looks for the language folder in the current folder. If the language folder isn't found, Setup continues to install English only. For more information, see [Setup Downloader](setup-downloader).
+Specifies the path to the folder that contains the language files. Use **Setup Downloader** to download the language files. If you don't use this option, Setup looks for the language folder in the current folder. If the language folder isn't found, Setup continues to install English only. For more information, see [Setup Downloader](setup-downloader).
 
 #### `TargetDir`
 
-Specifies the installation folder to install the Configuration Manager console. This option is required when you use the `/q` option.
+Specifies the installation folder to install the Configuration Manager console. You must include this option when you use the `/q` option.
 
 #### `DefaultSiteServerName`
 
-Specifies the FQDN of the site server to which the console connects when it opens. This option is required when you use the `/q` option.
+Specifies the FQDN of the site server to which the console connects when it opens. You must include this option when you use the `/q` option.
 
 ### Examples
 
@@ -156,4 +156,4 @@ Specifies the FQDN of the site server to which the console connects when it open
 
 ## Postinstallation information
 
-The Configuration Manager console requires installation of the built-in WebView2 extension for certain features such as Community hub and dashboards. A notification to install the extension is given to the console user when they open the console. For more information see, the [WebView2 console extension](../../manage/admin-console-extensions#bkmk_notification).
+The Configuration Manager console requires the built-in WebView2 extension for certain features such as Community hub and dashboards. The console user receives a notification to install the extension when they open the console. For more information, see [WebView2 console extension](../../manage/admin-console-extensions#bkmk_notification).

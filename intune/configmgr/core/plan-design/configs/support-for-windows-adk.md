@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about the Windows Assessment and Deployment Kit (ADK) versions that are supported for OS deployment with Configuration Manager.
-ms.date: 2026-10-13T00:00:00.0000000Z
+ms.date: 2026-10-22T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: article
 ms.collection: tier3
@@ -50,7 +50,7 @@ platformId: 988e5ba3-e37e-7fda-ad8a-8b06f24b8509
 
 *Applies to: Configuration Manager (current branch)*
 
-When you deploy operating systems with Configuration Manager, the Windows Assessment and Deployment Kit (ADK) is a required external dependency. For more information, see the following articles:
+When you deploy operating systems with Configuration Manager, you need the Windows Assessment and Deployment Kit (ADK). For more information, see the following articles:
 
 - [Infrastructure requirements for OS deployment](/en-us/mem/configmgr/osd/plan-design/infrastructure-requirements-for-operating-system-deployment#windows-adk)
 - [Download the Windows ADK](/en-us/windows-hardware/get-started/adk-install)
@@ -58,7 +58,7 @@ When you deploy operating systems with Configuration Manager, the Windows Assess
     Important
 
     - Windows PE is a separate installer. Make sure to download both the **Windows ADK** and the **Windows PE add-on for the ADK**.
-    - **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** is required to deploy Windows ARM64 operating systems on Configuration Manager 2403 or newer. See the following table for supported ADK versions.
+    - To deploy Windows ARM64 operating systems on Configuration Manager 2403 or newer, you need **ADK 10.1.26100.x (May 2024, December 2024, September 2026)**. See the following table for supported ADK versions.
 
 ## Windows ADK versions
 
@@ -76,7 +76,7 @@ The following table lists the versions of the Windows ADK that you can use with 
 
 | Key |
 | --- |
-| ✅ = **Supported** This table only shows Windows ADK supportability in relation to the version of Configuration Manager. Microsoft recommends using the Windows ADK that matches the version of Windows you're deploying. Use the latest Windows ADK version when deploying the latest Windows version. The latest Windows ADK version might support deployment of older OS versions, such as Windows 10. For more information on Windows ADK component supportability, see [DISM supported platforms](/en-us/windows-hardware/manufacture/desktop/dism-supported-platforms), [USMT requirements](/en-us/windows/deployment/usmt/usmt-requirements#bkmk-1), and [Choose the right ADK for your scenario](/en-us/windows-hardware/get-started/adk-install#choose-the-right-adk-for-your-scenario). |
+| ✅ = **Supported** This table only shows Windows ADK supportability in relation to the version of Configuration Manager. Microsoft recommends using the Windows ADK that matches the version of Windows you deploy. Use the latest Windows ADK version when you deploy the latest Windows version. The latest Windows ADK version might support deployment of older OS versions, such as Windows 10. For more information on Windows ADK component supportability, see [DISM supported platforms](/en-us/windows-hardware/manufacture/desktop/dism-supported-platforms), [USMT requirements](/en-us/windows/deployment/usmt/usmt-requirements#bkmk-1), and [Choose the right ADK for your scenario](/en-us/windows-hardware/get-started/adk-install#choose-the-right-adk-for-your-scenario). |
 | ![Backwards compatible](media/blue-compat.png) = **Backward compatible** This combination isn't tested but should work. We'll document any known issues or caveats. |
 | ❌ = **Not supported** |
 
@@ -98,7 +98,7 @@ Instead use **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** where
 
 ### General guidance
 
-- For information on applying the [BlackLotus UEFI bootkit vulnerability](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) security updates to boot images from ADKs before **ADK 10.1.26100.1 (May 2024)**, see [Customize Windows PE boot images](/en-us/windows/deployment/customize-boot-image). Boot images from **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** and newer already have the BlackLotus UEFI bootkit vulnerability security update applied to them. For this reason, it's recommended to use boot images from **ADK 10.1.26100.x**.
+- For information on applying the [BlackLotus UEFI bootkit vulnerability](https://support.microsoft.com/topic/kb5025885-how-to-manage-the-windows-boot-manager-revocations-for-secure-boot-changes-associated-with-cve-2023-24932-41a975df-beb2-40c1-99a3-b3ff139f832d) security updates to boot images from ADKs before **ADK 10.1.26100.1 (May 2024)**, see [Customize Windows PE boot images](/en-us/windows/deployment/customize-boot-image). Boot images from **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** and newer already have the BlackLotus UEFI bootkit vulnerability security update applied to them. For this reason, we recommend using boot images from **ADK 10.1.26100.x**.
 - Windows Server builds have the same Windows ADK requirement as the associated Windows client version. For example, Windows Server 2016 is the same build version as Windows 10 LTSB 2016.
 
 - The last supported version of 32-bit WinPE is available in the **WinPE add-on for Windows 10, version 2004** (10.1.19041). Versions of the WinPE add-on for the ADK after the **ADK for Windows 10, version 2004** (10.1.19041) no longer support 32-bit versions of Windows PE (WinPE). For more information, see [Download and install the Windows ADK](/en-us/windows-hardware/get-started/adk-install).
@@ -107,11 +107,11 @@ Instead use **ADK 10.1.26100.x (May 2024, December 2024, September 2026)** where
 
 ## Known issues
 
-### Pre-provisioning BitLocker during task sequence doesn't own TPM
+### Pre-provision BitLocker during task sequence doesn't own TPM
 
 Applies to: *Windows ADK for Windows 11 (version 10.1.22000)*
 
-When you use a Windows 11-based boot image with an OS deployment task sequence that includes the [Pre-provision BitLocker](../../../osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) step, the step might fail. You'll see errors similar to the following strings in the smsts.log:
+When you use a Windows 11-based boot image with an OS deployment task sequence that includes the [Pre-provision BitLocker](../../../osd/understand/task-sequence-steps#BKMK_PreProvisionBitLocker) step, the step might fail. You see errors similar to the following strings in the smsts.log:
 
 ```log
 'TakeOwnership' failed (2147942402)
@@ -126,4 +126,4 @@ To work around this issue, add a **Run Command Line** step to the task sequence 
 
 `reg.exe add HKLM\SOFTWARE\Policies\Microsoft\TPM /v OSManagedAuthLevel /t REG_DWORD /d 2 /f`
 
-For more information on this registry key, see [Change the TPM owner password](/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password). This work around is only needed for ADK releases 10.1.22000. Later versions aren't affected.
+For more information about this registry key, see [Change the TPM owner password](/en-us/windows/security/information-protection/tpm/change-the-tpm-owner-password). This workaround is only needed for ADK releases 10.1.22000. Later versions aren't affected.

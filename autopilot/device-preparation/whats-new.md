@@ -15,7 +15,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: News and resources about the latest updates of Windows Autopilot device preparation.
-ms.date: 2026-09-14T00:00:00.0000000Z
+ms.date: 2026-10-29T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: whats-new
@@ -57,6 +57,14 @@ https://learn.microsoft.com/api/search/rss?search=%22News+and+resources+about+th
 This example includes the `&locale=en-us` variable. The `locale` variable is required, but it can be changed to another supported locale. For example, `&locale=es-es`.
 
 For more information on using RSS for notifications, see [How to use the docs](/en-us/intune/use-docs#notifications) in the Intune documentation.
+
+## Block on Enterprise App Management auto-update apps in Windows Autopilot device preparation policies
+
+Date added: *October 29, 2026*
+
+You can now select Microsoft Intune Enterprise App Management (EAM) auto-update apps in Windows Autopilot device preparation policies to block device setup until the selected apps are installed. This helps ensure required apps are available before users access the desktop.
+
+For related information, see [Add an Enterprise App Catalog app to Microsoft Intune](/en-us/intune/app-management/deployment/add-enterprise-catalog-app).
 
 ## Performance and reliability improvements for Windows Autopilot device preparation
 
