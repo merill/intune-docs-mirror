@@ -16,8 +16,8 @@ ms.reviewer:
 - payur
 - hugowu
 - qiani
-description: Learn about navigating through the Configuration Manager console.
-ms.date: 2024-12-04T00:00:00.0000000Z
+description: Learn about navigating through the Configuration Manager console. The Configuration Manager console is always installed on every site server.
+ms.date: 2026-10-26T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: how-to
 ms.collection: tier3
@@ -55,72 +55,72 @@ Administrators use the Configuration Manager console to manage the Configuration
 
 The Configuration Manager console is always installed on every site server. You can also install it on other computers. For more information, see [Install the Configuration Manager console](../deploy/install/install-consoles).
 
-The simplest method to open the console on a Windows computer is to go to **Start** and start typing `Configuration Manager console`. You may not need to type the entire string for Windows to find the best match.
+The simplest method to open the console on a Windows computer is to go to **Start** and start typing `Configuration Manager console`.
 
 If you browse the Start menu, look for the **Configuration Manager console** icon in the **Microsoft Endpoint Manager** group.
 
-![Microsoft Endpoint Manager start menu icons.](media/microsoft-endpoint-manager-start-menu.png)
+![Screenshot shows Microsoft Endpoint Manager start menu icons.](media/microsoft-endpoint-manager-start-menu.png)
 
 ## Connect to a site server
 
-The console connects to your central administration site server or to your primary site servers. You can't connect a Configuration Manager console to a secondary site. During installation, you specified the fully qualified domain name (FQDN) of the site server to which the console connects.
+The console connects to your central administration site server or to your primary site servers. You can't connect a Configuration Manager console to a secondary site. During installation, you specify the fully qualified domain name (FQDN) of the site server to which the console connects.
 
 To connect to a different site server, use the following steps:
 
 1. Select the arrow at the top of the ribbon, and choose **Connect to a New Site**.
 
-    ![Connect the console to a new site.](media/connect-to-a-new-site.png)
-2. Type in the FQDN of the site server. If you've previous session to site server, select the server from the drop-down list.
+    ![Screenshot shows the option to Connect the console to a new site.](media/connect-to-a-new-site.png)
+2. Enter the FQDN of the site server. If you had a previous session with site server, select the server from the dropdown list.
 
-    ![Site Connection window, enter the FQDN of the site server.](media/site-server-fqdn.png)
+    ![Screenshot shows the Site Connection window, where you enter the FQDN of the site server.](media/site-server-fqdn.png)
 3. Select **Connect**.
 
 Tip
 
-You can specify the minimum authentication level for administrators to access Configuration Manager sites. This feature enforces administrators to sign in to Windows with the required level. For more information, see [Plan for the SMS Provider](../../plan-design/hierarchy/plan-for-the-sms-provider#authentication). 
+You can specify the minimum authentication level for administrators to access Configuration Manager sites. This feature requires administrators to sign in to Windows with the required level. For more information, see [Plan for the SMS Provider](../../plan-design/hierarchy/plan-for-the-sms-provider#authentication). 
 
 ## Navigation
 
-Some areas of the console may not be visible depending on your assigned security role. For more information about roles, see [Fundamentals of role-based administration](../../understand/fundamentals-of-role-based-administration).
+Some areas of the console might not be visible depending on your assigned security role. For more information, see [Fundamentals of role-based administration](../../understand/fundamentals-of-role-based-administration).
 
 ### Workspaces
 
-The Configuration Manager console has four **workspaces**:
+The Configuration Manager console has four *workspaces*:
 
 - **Assets and Compliance**
 - **Software Library**
 - **Monitoring**
 - **Administration**
 
-![Configuration Manager workspaces with context menu.](media/configuration-manager-workspaces.png)
+![Screenshot shows Configuration Manager workspaces with context menu.](media/configuration-manager-workspaces.png)
 
 Reorder workspace buttons by selecting the down arrow and choosing **Navigation Pane Options**. Select an item to **Move Up** or **Move Down**. Select **Reset** to restore the default button order.
 
-![Navigation Pane Options window to reorder workspaces.](media/navigation-pane-options.png)
+![Screenshot shows Navigation Pane Options window to reorder workspaces.](media/navigation-pane-options.png)
 
 Minimize a workspace button by selecting **Show Fewer Buttons**. The last workspace in the list is minimized first. Select a minimized button and choose **Show More Buttons** to restore the button to its original size.
 
-![Minimized workspaces in the Configuration Manager console.](media/workspace-buttons.png)
+![Screenshot shows minimized workspaces in the Configuration Manager console.](media/workspace-buttons.png)
 
 ### Nodes
 
 Workspaces are a collection of **nodes**. One example of a node is the **Software Update Groups** node in the **Software Library** workspace.
 
-Once you are in the node, you can select the arrow to minimize the navigation pane.
+When you're in the node, select the arrow to minimize the navigation pane.
 
-![Example node and highlight minimize arrow.](media/software-update-groups-node.png)
+![Screenshot shows example node and highlight minimize arrow.](media/software-update-groups-node.png)
 
 Use the **navigation bar** to move around the console when you minimize the navigation pane.
 
-![Configuration Manager minimized navigation pane.](media/minimized-navigation-pane.png)
+![Screenshot shows the Configuration Manager minimized navigation pane.](media/minimized-navigation-pane.png)
 
 In the console, nodes are sometimes organized into folders. When you select the folder, it usually displays a **navigation index** or a **dashboard**.
 
-![Configuration Manager software updates navigation index.](media/software-updates-navigation-index.png)
+![Screenshot shows the Configuration Manager software updates navigation index.](media/software-updates-navigation-index.png)
 
 Note
 
-You can use PowerShell to manage console folders with the following cmdlets:
+Use PowerShell to manage console folders with the following cmdlets:
 
 - [Get-CMFolder](/en-us/powershell/module/configurationmanager/get-cmfolder)
 - [New-CMFolder](/en-us/powershell/module/configurationmanager/new-cmfolder)
@@ -129,40 +129,40 @@ You can use PowerShell to manage console folders with the following cmdlets:
 
 ### Ribbon
 
-The ribbon is at the top of the Configuration Manager console. The ribbon can have more than one tab and can be minimized using the arrow on the right. The buttons on the ribbon change based on the node. Most of the buttons in the ribbon are also available on context menus.
+The ribbon is at the top of the Configuration Manager console. The ribbon can have more than one tab and can be minimized by using the arrow on the right. The buttons on the ribbon change based on the node. You can also find most of the buttons in the ribbon on context menus.
 
-![Example ribbon, highlighting multiple tabs and minimize arrow.](media/ribbon.png)
+![Screenshot shows example ribbon, highlighting multiple tabs and minimize arrow.](media/ribbon.png)
 
 ### Details pane
 
-You can get additional information about items by reviewing the details pane. The details pane can have one or more tabs. The tabs vary depending on the node.
+You can get more information about items by reviewing the details pane. The details pane can have one or more tabs. The tabs vary depending on the node.
 
 ![Configuration Manager example details pane.](media/details-pane.png)
 
 ### Columns
 
-You can add, remove, reorder, and resize columns. These actions allow you to display the data you prefer. Available columns vary depending on the node. To add or remove a column from your view, right-click on an existing column heading and select an item. Reorder columns by dragging the column heading where you would like it to be.
+You can add, remove, reorder, and resize columns. These actions help you display the data you prefer. Available columns vary depending on the node. To add or remove a column from your view, right-click an existing column heading and select an item. Reorder columns by dragging the column heading to where you want it.
 
 ![Configuration Managers add column.](media/add-columns.png)
 
-At the bottom of the column context menu, you can sort or group by a column. Additionally, you can sort by a column by selecting its header.
+At the bottom of the column context menu, you can sort or group by a column. You can also sort by a column by selecting its header.
 
-![Configuration Manager group by column.](media/column-group-by.png)
+![Screenshot shows Configuration Manager group by column.](media/column-group-by.png)
 
 ## Reclaim lock for editing objects
 
-If the Configuration Manager console stops responding, you can be locked out of making further changes until the lock expires after 30 minutes. This lock is part of the Configuration Manager SEDO (Serialized Editing of Distributed Objects) system. For more information, see [Configuration Manager SEDO](../../../develop/core/understand/sedo).
+If the Configuration Manager console stops responding, you might be locked out of making further changes until the lock expires after 30 minutes. This lock is part of the Configuration Manager Serialized Editing of Distributed Objects (SEDO) system. For more information, see [Configuration Manager SEDO](../../../develop/core/understand/sedo).
 
-You can clear your lock on any object in the Configuration Manager console. This action only applies to your user account that has the lock, and on the same device from which the site granted the lock. When you attempt to access a locked object, you can now **Discard Changes**, and continue editing the object. These changes would be lost anyway when the lock expired.
+You can clear your lock on any object in the Configuration Manager console. This action only applies to your user account that has the lock, and on the same device from which the site granted the lock. When you attempt to access a locked object, you can now **Discard Changes**, and continue editing the object. These changes are lost when the lock expires.
 
 ## View recently connected consoles
 
-You can view the most recent connections for the Configuration Manager console. The view includes active connections and those connections that recently connected. You'll always see your current console connection in the list and you only see connections from the Configuration Manager console. You won't see PowerShell or other SDK-based connections to the SMS Provider. The site removes instances from the list that are older than 30 days.
+You can view the most recent connections for the Configuration Manager console. The view includes active connections and those connections that recently connected. You always see your current console connection in the list. You only see connections from the Configuration Manager console. You don't see PowerShell or other SDK-based connections to the SMS Provider. The site removes instances from the list that are older than 30 days.
 
 ### Prerequisites to view connected consoles
 
 - Your account needs the **Read** permission on the **SMS\_Site** object.
-- Configure the administration service REST API. For more information, see [What is the administration service?](../../../develop/adminservice/overview).
+- Configure the administration service REST API. For more information, see [What is the administration service?](../../../develop/adminservice/overview)
 
 ### View connected consoles
 
@@ -177,40 +177,39 @@ You can view the most recent connections for the Configuration Manager console. 
     - Last connected time: When the user last *opened* the console
     - An open console in the foreground sends a heartbeat every 10 minutes, which shows in the **Last Console Heartbeat** column.
 
-![View Configuration Manager console connections.](media/console-connections.png)
+![Screenshot shows the Configuration Manager console connections.](media/console-connections.png)
 
-## Start Microsoft Teams Chat from Console Connections
+## Start Microsoft Teams chat from Console Connections
 
-You can message other Configuration Manager administrators from the **Console Connections** node using Microsoft Teams. When you choose to **Start Microsoft Teams Chat** with an administrator, Microsoft Teams is launched and a chat is opened with the user.
+You can message other Configuration Manager administrators from the **Console Connections** node by using Microsoft Teams. When you choose **Start Microsoft Teams Chat** with an administrator, Microsoft Teams launches and opens a chat with the user.
 
 ### Prerequisites
 
-- For starting a chat with an administrator, the account you want to chat with needs to have been discovered with [Microsoft Entra ID or AD User Discovery](../deploy/configure/about-discovery-methods#bkmk_aboutUser).
-- Microsoft Teams installed on the device from which you run the console. note
-- All prerequisites to view connected consoles
+- To start a chat with an administrator, you need to discover the account you want to chat with by using [Microsoft Entra ID or AD User Discovery](../deploy/configure/about-discovery-methods#bkmk_aboutUser).
+- Microsoft Teams installed on the device from which you run the console.
+- All prerequisites to view connected consoles.
 
 ### Start Microsoft Teams Chat
 
 1. Go to **Administration** &gt; **Security** &gt; **Console Connections**.
-2. Right-click on a user's console connection and select **Start Microsoft Teams Chat**.
+2. Right-click a user console connection and select **Start Microsoft Teams Chat**.
+
     - If the User Principal Name isn't found for the selected administrator, **Start Microsoft Teams Chat** is grayed out.
     - An error message, including a download link, appears if Microsoft Teams isn't installed on the device from which you run the console.
-    - If Microsoft Teams is installed on the device from which you run the console, it will open a chat with the user.
+    - If Microsoft Teams is installed on the device from which you run the console, it opens a chat with the user.
 
 ### Known issues
 
-The error message notifying you that Microsoft Teams isn't installed won't be displayed if the following Registry key doesn't exist:
+The error message that notifies you that Microsoft Teams isn't installed doesn't appear if the following Registry key doesn't exist: `Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall`.
 
-Computer\HKEY\_CURRENT\_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
-
-To work around the issue, manually create the Registry key.
+To work around this issue, manually create the Registry key.
 
 ## In-console documentation dashboard
 
 The **Documentation** node in the **Community** workspace includes information about Configuration Manager documentation and support articles. It includes the following sections:
 
 - **Recommended**: a manually curated list of important articles.
-- **Troubleshooting articles**: guided walkthroughs to assist with troubleshooting Configuration Manager components and features.
+- **Troubleshooting articles**: guided walkthroughs to help you troubleshoot Configuration Manager components and features.
 - **New and updated support articles**: articles that are recently new or updated.
 
 ### Troubleshooting connection errors
@@ -223,12 +222,12 @@ The **Documentation** node has no explicit proxy configuration. It uses any OS-d
 
 Starting in version 2203, the Configuration Manager console offers a dark theme. To use the theme, select the arrow from the top left of the ribbon, then choose **Switch console theme**. Select **Switch console theme** again to return to the light theme. As of version 2303, the main screen of the console and delete secondary site wizards adhere to the dark theme.
 
-![Screenshot of the Configuration Manager using the dark theme for the console. The 'Switch console theme' option is displayed in the upper right corner of the image.](media/9070525-console-dark-theme.png)
+![Screenshot of the Configuration Manager using the dark theme for the console. The Switch console theme option is displayed in the upper right corner of the image.](media/9070525-console-dark-theme.png)
 
 ### Known issue
 
-- Console restart is required on doing the theme switch, as the node navigation pane might not properly render when you move to a new workspace.
-- Currently, there are locations in the console that may not display the dark theme correctly. We are continuously working to improve the dark theme.
+- Restart the console when you switch themes. The node navigation pane might not properly render when you move to a new workspace.
+- Currently, there are locations in the console that might not display the dark theme correctly. The product team is continuously working to improve the dark theme.
 
 ## Connect via Windows PowerShell
 
@@ -248,3 +247,10 @@ The Configuration Manager console has the following command-line options:
 | `/sms:IgnoreExtensions` | Disables any Configuration Manager extensions. |
 | `/sms:NoRestore` | The console ignores previous persisted node navigation. |
 | `/server=[ServerName]` | Connect to a CAS or Primary site server by specifying the fully qualified domain name (FQDN) or server name for that site. |
+
+## Related concepts
+
+- [Console notifications](admin-console-notifications)
+- [Console tips](admin-console-tips)
+- [Accessibility features](../../understand/accessibility-features)
+- [Task sequence editor](../../../osd/understand/task-sequence-editor#bkmk_conditions)

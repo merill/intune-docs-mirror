@@ -20,7 +20,7 @@ ms.reviewer:
 description: Microsoft Deployment Toolkit (MDT) provides a unified collection of tools, processes, and guidance for automating desktop and server deployments.
 ms.subservice: mdt
 ms.topic: landing-page
-ms.date: 2021-09-23T00:00:00.0000000Z
+ms.date: 2026-10-26T00:00:00.0000000Z
 ms.collection: openauth
 locale: en-us
 document_id: 08e7960f-ebad-cf6a-0640-79accd3311b9
@@ -52,7 +52,6 @@ Microsoft Deployment Toolkit (MDT) provides a unified collection of tools, proce
 
 ### Download
 
-- [Download MDT](https://aka.ms/mdtdownload)
 - [Release notes](release-notes)
 - [Known issues](known-issues)
 - [FAQ](faq)

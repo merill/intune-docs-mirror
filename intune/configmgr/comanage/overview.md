@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn how to concurrently manage Windows devices by using both Configuration Manager and Microsoft Intune.
-ms.date: 2024-12-04T00:00:00.0000000Z
+ms.date: 2026-10-26T00:00:00.0000000Z
 ms.topic: overview
 ms.subservice: co-management
 ms.collection: tier3
@@ -51,19 +51,21 @@ platformId: 3bd23fba-6664-0231-393f-c685ed3fcabb
 
 # Co-management for Windows devices - Configuration Manager | Microsoft Learn
 
-Co-management is one of the primary ways to attach your existing Configuration Manager deployment to the Microsoft 365 cloud. It helps you unlock more cloud-powered capabilities like Conditional Access.
+In *co-management*, you manage devices with both Configuration Manager and Microsoft Intune. Co-management is one of the primary ways to attach your existing Configuration Manager deployment to the Microsoft 365 cloud. It helps you unlock more cloud-powered capabilities like Conditional Access.
 
 Co-management enables you to concurrently manage Windows devices by using both Configuration Manager and Microsoft Intune. It lets you cloud-attach your existing investment in Configuration Manager by adding new functionality. By using co-management, you have the flexibility to use the technology solution that works best for your organization.
 
 When a Windows device has the Configuration Manager client and is enrolled to Intune, you get the benefits of both services. You control which workloads, if any, you switch the authority from Configuration Manager to Intune. Configuration Manager continues to manage all other workloads, including those workloads that you don't switch to Intune, and all other features of Configuration Manager that co-management doesn't support.
 
-You're also able to pilot a workload with a separate collection of devices. Piloting allows you to test the Intune functionality with a subset of devices before switching a larger group.
+You can also pilot a workload with a separate collection of devices. Piloting allows you to test the Intune functionality with a subset of devices before switching a larger group.
 
-[![Overview diagram of co-management.](media/co-management-overview.svg)](media/co-management-overview.svg#lightbox)
+[![Diagram provides an overview of co-management.](media/co-management-overview.svg)](media/co-management-overview.svg#lightbox)
 
 Note
 
-When you concurrently manage devices with both Configuration Manager and Microsoft Intune, this configuration is called *co-management*. When you manage devices with Configuration Manager and enroll to a third-party MDM service, this configuration is called *coexistence*. Having two management authorities for a single device can be challenging if not properly orchestrated between the two. With co-management, Configuration Manager and Intune balance the workloads to make sure there are no conflicts. This interaction doesn't exist with third-party services, so there are limitations with the management capabilities of coexistence. For more information, see [Third-party MDM coexistence with Configuration Manager](coexistence).
+When you concurrently manage devices with both Configuration Manager and Microsoft Intune, this configuration is called *co-management*. When you manage devices with Configuration Manager and enroll to a third-party MDM service, this configuration is called *coexistence*.
+
+Having two management authorities for a single device can be challenging if not properly orchestrated. With co-management, Configuration Manager and Intune balance the workloads to make sure there are no conflicts. This interaction doesn't exist with third-party services, so there are limitations with the management capabilities of coexistence. For more information, see [Third-party MDM coexistence with Configuration Manager](coexistence).
 
 ## Paths to co-management
 
@@ -76,22 +78,24 @@ For more information on the paths, see [Paths to co-management](quickstart-paths
 
 ## Benefits
 
-When you enroll existing Configuration Manager clients in co-management, you gain the following immediate value:
+When you enroll existing Configuration Manager clients in co-management, you gain the following benefits:
 
 - Conditional Access with device compliance
-- Intune-based remote actions, for example: restart, remote control, or factory reset
+- Intune-based remote actions, such as restart, remote control, or factory reset
 - Centralized visibility of device health
 - Link users, devices, and apps with Microsoft Entra ID
 - Modern provisioning with Windows Autopilot
 - Remote actions
 
-For more information on this immediate value from co-management, see the quickstarts series to [Cloud connect with co-management](quickstarts).
+For more information about these benefits, see the quickstarts series to [Cloud connect with co-management](quickstarts).
 
 Co-management also enables you to orchestrate with Intune for several workloads. For more information, see the Workloads section.
 
 Note
 
-Co-management by itself isn't a solution to manage remotely connected Windows systems. The Configuration Manager client still needs to communicate with its assigned site. To manage remotely connected Windows systems with Configuration Manager, enable a [cloud management gateway (CMG)](../core/clients/manage/cmg/overview). A CMG isn't required for co-management, and co-management isn't required with a CMG, but they can be used together.
+Co-management by itself isn't a solution to manage remotely connected Windows systems. The Configuration Manager client still needs to communicate with its assigned site.
+
+To manage remotely connected Windows systems with Configuration Manager, enable a [cloud management gateway (CMG)](../core/clients/manage/cmg/overview). A CMG isn't required for co-management, and co-management isn't required with a CMG, but they can be used together.
 
 ## Prerequisites
 
@@ -117,7 +121,7 @@ Co-management has these prerequisites in the following areas:
 
     Make sure you assign an Intune license to the account that you use to sign in to your tenant. Otherwise, sign in fails with the error message *An unanticipated error occurred*.
 
-    You may not need to purchase and assign individual Intune or EMS licenses to your users. For more information, see the [Product and licensing FAQ](../core/understand/product-and-licensing-faq#what-changes-with-licensing-for-co-management-in-the-microsoft-intune-family-of-products-).
+    You might not need to purchase and assign individual Intune or EMS licenses to your users. For more information, see the [Product and licensing FAQ](../core/understand/product-and-licensing-faq#what-changes-with-licensing-for-co-management-in-the-microsoft-intune-family-of-products-).
 
 ### Configuration Manager
 
@@ -136,11 +140,13 @@ Enabling co-management itself doesn't require that you onboard your site with Mi
         Note
 
         Devices that are only registered with Microsoft Entra ID aren't supported with co-management. This configuration is sometimes referred to as *workplace joined*. They need to be either joined to Microsoft Entra ID or Microsoft Entra hybrid joined. For more information, see [Handling devices with Microsoft Entra registered state](/en-us/azure/active-directory/devices/hybrid-azuread-join-plan#handling-devices-with-azure-ad-registered-state).
-    - [Microsoft Entra joined](/en-us/azure/active-directory/devices/azureadjoin-plan) only. This type is sometimes referred to as *cloud domain-joined*.)
+    - [Microsoft Entra joined](/en-us/azure/active-directory/devices/azureadjoin-plan) only. This type is sometimes referred to as *cloud domain-joined*.
 
 Tip
 
-As we talk with our customers that are using Microsoft Intune to deploy, manage, and secure their client devices, we often get questions regarding co-managing devices and Microsoft Entra hybrid joined devices. Many customers confuse these two topics. Co-management is a management option, while Microsoft Entra ID is an identity option. For more information, see [Understanding hybrid Microsoft Entra ID and co-management scenarios](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/understanding-hybrid-azure-ad-join-and-co-management/ba-p/2221201). This blog post aims to clarify Microsoft Entra hybrid join and co-management, how they work together, but aren't the same thing.
+As we talk with our customers that are using Microsoft Intune to deploy, manage, and secure their client devices, we often get questions regarding co-managing devices and Microsoft Entra hybrid joined devices. Many customers confuse these two topics.
+
+Co-management is a management option, while Microsoft Entra ID is an identity option. For more information, see [Understanding hybrid Microsoft Entra ID and co-management scenarios](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/understanding-hybrid-azure-ad-join-and-co-management/ba-p/2221201). This blog post aims to clarify Microsoft Entra hybrid join and co-management, how they work together, but aren't the same thing.
 
 ### Intune
 
@@ -166,7 +172,7 @@ For more information about Configuration Manager roles, see [Fundamentals of rol
 
 ## Workloads
 
-You don't have to switch the workloads, or you can do them individually when you're ready. Configuration Manager continues to manage all other workloads, including those workloads that you don't switch to Intune, and all other features of Configuration Manager that co-management doesn't support.
+You don't have to switch all workloads at once. You can switch them individually when you're ready. Configuration Manager continues to manage all other workloads, including those workloads that you don't switch to Intune, and all other features of Configuration Manager that co-management doesn't support.
 
 Co-management supports the following workloads:
 
