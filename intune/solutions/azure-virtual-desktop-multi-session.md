@@ -73,7 +73,7 @@ User configuration support in Microsoft Intune for Windows Enterprise multi-sess
 
 - Configure user scope policies using **Settings catalog** and assign to groups of users. You can use the search bar to search all configurations with scope set to "user".
 - Configure user certificates and assign to users.
-- Configure PowerShell scripts to install in the user context and assign to users.
+- Configure PowerShell scripts to install in the user context.
 
 ## Prerequisites
 
@@ -198,9 +198,7 @@ All Windows apps can be deployed to Windows Enterprise multi-session with the fo
 
 ## Script deployment
 
-Scripts configured to run in the system context and assigned to devices are supported on Windows Enterprise multi-session. This can be configured under Script settings by setting **Run this script using the logged on credentials** to **No**.
-
-Scripts configured to run in the user context and assigned to users are supported on Windows Enterprise multi-session. This can be configured under Script settings by setting **Run this script using the logged on credentials** to **Yes**.
+Scripts must be targeted to devices. Under Script settings, set **Run this script using the logged on credentials** to **No** to run scripts in the system context, or set to **Yes** to run in the user context.
 
 ## Windows Update client policies
 

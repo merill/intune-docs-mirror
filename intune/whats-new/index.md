@@ -10,7 +10,7 @@ manager: laurawi
 author: lenewsad
 ms.author: lanewsad
 description: Find out what's new in Microsoft Intune.
-ms.date: 2026-10-30T00:00:00.0000000Z
+ms.date: 2026-11-02T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030
@@ -199,18 +199,6 @@ For more information, see [Certificate Connector for Microsoft Intune](../fundam
 Applies to:
 
 - Certificate Connector for Microsoft Intune
-
-### Role-based access control
-
-#### Scoped permissions for role-based access control are generally available
-
-Microsoft Intune scoped permissions for role-based access control are now generally available. Permissions from role assignments with different scope tags are applied independently instead of being merged, giving admins the intended access within each scope. Use the **Permissions Assessment Report** before enabling scoped permissions to review how access will change.
-
-For more information, see [Permission behavior across role assignments](../fundamentals/role-based-access-control/scope-tags#permission-behavior-across-role-assignments).
-
-Applies to:
-
-- Microsoft Intune admin center
 
 ### Scripts
 
