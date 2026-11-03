@@ -58,7 +58,7 @@ For information about the Intune management extension for Windows, see [Intune m
 - Scripts set to user context with administrator rights run PowerShell by default under administrator privilege.
 - End users aren't required to sign in to the device to execute PowerShell scripts.
 - The Intune management extension checks after every reboot for any new scripts or changes. After you assign the policy to the Microsoft Entra groups, the PowerShell script runs, and the run results are reported. Once the script executes, it doesn't execute again unless there's a change in the script or policy. If the script fails, the Intune management extension retries the script three times for the next three consecutive Intune management extension check-ins.
-- PowerShell scripts assigned to the device run for every new user that signs in, except on multi-session SKUs where user check-in is disabled.
+- PowerShell scripts assigned to the device run for every new user that signs in.
 - PowerShell scripts are executed before Win32 apps run. In other words, PowerShell scripts execute first. Then, Win32 apps execute.
 - PowerShell scripts time out after 30 minutes.
 

@@ -13,7 +13,7 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Find out what mobile threat defense apps are and how to set one up to meet work or school requirements.
 ms.date: 2025-01-27T00:00:00.0000000Z
-ms.reviewer: aanavath
+ms.reviewer: ilwu
 locale: en-us
 document_id: 15a2c16e-975e-cdee-226f-4f305f67401e
 document_version_independent_id: 2355e80f-0abd-dff8-642d-bc2e982147b9

@@ -498,6 +498,11 @@ When you select a policy, you can view information about the device check-in sta
 - **View report** - View a list of devices that received the policy. You can select a device to drill in and see its per-setting status. You can then select a setting to view more information about it, including other policies that manage that same setting, which could be a source of conflict.
 - **Per setting status** - View the settings that are managed by the policy, and a count of success, errors, or conflicts for each setting.
 
+    [!IMPORTANT]
+
+> 
+> Per-setting reporting is available for most Endpoint Security policies. For Firewall Rules and Attack Surface Reduction (ASR) Rules policies managed through MDM, reporting is limited to policy-level status and doesn't include per-setting reporting statuses. To view per-setting status for Firewall Rules and ASR Rules policies, devices must be enrolled with [Defender for Endpoint security settings management]. (/intune/device-security/microsoft-defender/security-settings-management).
+
 **Defender Portal:**
 
 You can also monitor the Intune policies that are applied from within the [Microsoft Defender portal](https://security.microsoft.com/). Within the portal, go to **Endpoints**, expand *configuration management* and select *Endpoint security policies*. Select a policy to view its status, and then select:
