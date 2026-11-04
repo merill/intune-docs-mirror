@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot for pre-provisioned deployment Microsoft Entra hybrid join - Step 3 of 11 - Increase the computer account limit in the Organizational Unit (OU) | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-computer-account-limit
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 ms.reviewer: madakeva
 manager: laurawi
 ms.service: windows-client

@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Upgrade Devices to Windows 11 Using Feature Updates - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/upgrade-to-windows-11
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: protect
 description: Learn how to upgrade Windows 10 devices to Windows 11 using feature updates in Microsoft Intune.
 ms.date: 2026-01-14T00:00:00.0000000Z

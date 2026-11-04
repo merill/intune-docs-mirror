@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Install work apps from Intune Company Portal app for Windows - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/apps/install-apps-windows
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Sign in to the Company Portal app for Windows to browse and install work or school-related apps on your enrolled device.

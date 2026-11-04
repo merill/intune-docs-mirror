@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Explore Intune data with natural language and take action - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/copilot/explorer
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.update-cycle: 180-days
 description: In Microsoft Intune, use Explorer to query your data in natural language and run built-in queries that match your request. Copilot summarizes the results, and provides recommendations and actions based on the query results. You can also create policies that target users and groups in the query results. Use this feature to explore your Intune data, troubleshoot issues, and create custom reports.
 ms.date: 2025-11-11T00:00:00.0000000Z

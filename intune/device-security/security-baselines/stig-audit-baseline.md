@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Use Security Technical Implementation Guide audit baselines to assess Windows device compliance in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/security-baselines/stig-audit-baseline
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: aanavath
-ms.author: aanavath
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints

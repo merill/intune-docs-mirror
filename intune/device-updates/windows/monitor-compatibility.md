@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Use Compatibility Reports for Windows Updates in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/monitor-compatibility
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: protect
 description: Use compatibility reports for Windows devices in Intune to identify app and driver risks before deploying feature updates or update rings.
 ms.date: 2026-01-14T00:00:00.0000000Z

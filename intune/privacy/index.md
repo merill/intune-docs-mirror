@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Privacy and personal data in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/privacy/
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 description: Learn what personal data is collected and processed in Intune.
 ms.date: 2025-04-07T00:00:00.0000000Z
 ms.topic: overview

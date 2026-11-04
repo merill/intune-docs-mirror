@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Security update status dashboard - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/security-update-status-dashboard
+author: sccmavenger
+ms.author: dannygu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: sccmavenger
-ms.author: dannygu
 ms.subservice: protect
 description: Learn how the Security update status dashboard helps administrators assess update risk, investigate gaps, and prioritize remediation across supported workloads.
 ms.reviewer: paoloma

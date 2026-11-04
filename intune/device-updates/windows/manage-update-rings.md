@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Manage Windows Update Ring Policies - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/manage-update-rings
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: protect
 description: Learn about Windows Update ring policies for Windows devices, how to create and manage them, and improve update deployment.
 ms.date: 2026-01-12T00:00:00.0000000Z

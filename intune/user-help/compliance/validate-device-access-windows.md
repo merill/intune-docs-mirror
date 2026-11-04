@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Check device access in Company Portal for Windows - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/validate-device-access-windows
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Check device access to find out if your device meets requirements, and is able to access work or school resources.

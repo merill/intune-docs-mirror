@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Work From Anywhere Report in Endpoint Analytics - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/endpoint-analytics/work-from-anywhere
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: endpoint-analytics
 description: Discover how the Work from Anywhere report in Microsoft Intune endpoint analytics provides insights into remote productivity, device readiness, and user experience.
 ms.date: 2025-10-09T00:00:00.0000000Z

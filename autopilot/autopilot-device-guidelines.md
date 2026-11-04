@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot device guidelines | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/autopilot-device-guidelines
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 ms.reviewer: madakeva
 manager: laurawi
 ms.service: windows-client

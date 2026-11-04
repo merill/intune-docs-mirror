@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Manage devices with endpoint security in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/endpoint-security-devices
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.subservice: protect
 description: Learn how Security Administrators can use the Endpoint Security node to view devices and manage them in Microsoft Intune.
 ms.date: 2026-08-10T00:00:00.0000000Z

@@ -3,8 +3,8 @@ layout: Landing
 title: Windows Autopilot and Windows Autopilot device preparation documentation | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/
 summary: Windows Autopilot and Windows Autopilot device preparation is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use.
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 ms.reviewer: madakeva
 manager: laurawi
 ms.service: windows-client

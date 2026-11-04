@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Use derived credentials for mobile devices with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/certificates/derived-credentials
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.reviewer: wicale
 ms.subservice: protect
 description: Use a third-party partners derived credential as an authentication method for Intune.

@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Manage AOSP Referenced Apps in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/configuration/manage-referenced-apps-aosp
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: abigail-stein2
-ms.author: abigailstein
 ms.collection:
 - M365-identity-device-management
 - Android

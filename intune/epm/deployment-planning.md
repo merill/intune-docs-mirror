@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Plan and Prepare for Endpoint Privilege Management Deployment - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/epm/deployment-planning
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.collection:
 - M365-identity-device-management
 ms.reviewer: mikedano

@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Configure Google Chrome for Android Devices Using Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-chrome-android
+author: nicholasswhite
+ms.author: nwhite
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
 ms.collection:
 - M365-identity-device-management
 - Android

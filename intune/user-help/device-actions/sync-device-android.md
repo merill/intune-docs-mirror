@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Sync device in Company Portal for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/device-actions/sync-device-android
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Sync a device in the Intune Company Portal app to get the latest updates and policies for work.

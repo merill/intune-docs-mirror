@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enrollment for Microsoft Entra hybrid joined devices - Windows Autopilot | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/windows-autopilot-hybrid
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 ms.reviewer: madakeva
 manager: laurawi
 ms.service: windows-client

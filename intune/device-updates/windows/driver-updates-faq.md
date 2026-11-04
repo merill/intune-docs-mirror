@@ -4,13 +4,13 @@ title: Frequently Asked Questions About Windows Driver Update Policies - Microso
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/driver-updates-faq
 summary: >
   <p>This article addresses frequently asked questions about Windows driver update policies in Microsoft Intune.</p>
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: protect
 description: This article provides answers to some frequently asked questions about Windows Driver Update Policies.
 ms.date: 2026-09-02T00:00:00.0000000Z

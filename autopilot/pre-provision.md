@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot for Pre-provisioned Deployment | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/pre-provision
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 ms.reviewer: madakeva
 manager: laurawi
 ms.service: windows-client

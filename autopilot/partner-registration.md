@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Reseller, distributor, or partner registration of Windows Autopilot devices | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/partner-registration
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 ms.reviewer: madakeva
 manager: laurawi
 ms.service: windows-client

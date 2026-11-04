@@ -2,13 +2,13 @@
 layout: Conceptual
 title: FAQ for Microsoft Copilot in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/copilot/faq
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.update-cycle: 180-days
 description: Get answers to common questions when using Copilot in Microsoft Intune, including accessing Copilot, licensing, and more.
 ms.date: 2026-05-26T00:00:00.0000000Z

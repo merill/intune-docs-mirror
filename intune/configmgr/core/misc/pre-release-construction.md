@@ -2,14 +2,14 @@
 layout: Conceptual
 title: Pre-release content under construction - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/core/misc/pre-release-construction
+author: sccmavenger
+ms.author: dannygu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: None
 ms.service: configuration-manager
 manager: laurawi
 feedback_product_url: ''
-author: sccmavenger
-ms.author: dannygu
 ms.reviewer:
 - umaikhan
 - brianhun

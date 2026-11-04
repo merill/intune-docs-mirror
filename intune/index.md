@@ -3,14 +3,14 @@ layout: Hub
 title: Microsoft Intune documentation - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/
 summary: Explore guides, tutorials, and references for Microsoft Intune.
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
 ms.topic: hub-page
-author: paolomatarazzo
-ms.author: paoloma
 ms.date: 2026-02-06T00:00:00.0000000Z
 ms.custom: intro-hub-or-landing
 locale: en-us

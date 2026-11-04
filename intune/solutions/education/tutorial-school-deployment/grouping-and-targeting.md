@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Plan Education device grouping and targeting - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/grouping-and-targeting
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: scottbreenmsft
-ms.author: scbree
 ms.subservice: education
 description: Plan how you'll group devices and users and target policies and applications.
 ms.date: 2026-05-19T00:00:00.0000000Z

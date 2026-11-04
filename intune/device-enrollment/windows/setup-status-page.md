@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Set up the Enrollment Status Page in the admin center copy - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/setup-status-page
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.collection:
 - M365-identity-device-management
 ms.reviewer: madakeva, davguy

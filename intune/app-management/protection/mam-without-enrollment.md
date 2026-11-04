@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Mobile Application Management (MAM) for unenrolled devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/mam-without-enrollment
+author: nicholasswhite
+ms.author: nwhite
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
 ms.collection:
 - M365-identity-device-management
 ms.subservice: apps

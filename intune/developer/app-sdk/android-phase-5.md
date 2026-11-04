@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Microsoft Intune App SDK for Android Developer Integration and Testing Guide - Multi-Identity - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/app-sdk/android-phase-5
+author: nicholasswhite
+ms.author: nwhite
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
 ms.collection:
 - M365-identity-device-management
 - Android

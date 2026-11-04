@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Create Quiet Time Policies in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/configure-quiet-time
+author: nicholasswhite
+ms.author: nwhite
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
 ms.collection: 
 ms.subservice: apps
 description: Learn how to create quiet time policies for iOS/iPadOS and Android apps.

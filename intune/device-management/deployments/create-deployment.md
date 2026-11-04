@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Create and manage a deployment in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/deployments/create-deployment
+author: paolomatarazzo
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: wicale
 ms.collection:
 - M365-identity-device-management
 description: Create, pause, resume, and cancel ring-based deployments of Intune apps and policies, and understand deleted-group behavior.

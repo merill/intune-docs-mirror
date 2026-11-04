@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Wipe Data Using App Protection Policy Conditional Launch Actions - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/configure-conditional-launch
+author: nicholasswhite
+ms.author: nwhite
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
 ms.collection:
 - M365-identity-device-management
 ms.subservice: apps

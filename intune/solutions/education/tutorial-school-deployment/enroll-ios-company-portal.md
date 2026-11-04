@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Education iOS device enrollment with Company Portal - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/enroll-ios-company-portal
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: scottbreenmsft
-ms.author: scbree
 ms.subservice: education
 description: Learn how to enroll iOS/iPadOS devices using Company Portal.
 ms.date: 2024-05-02T00:00:00.0000000Z

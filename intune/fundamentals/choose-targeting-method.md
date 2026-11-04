@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Choose the right targeting method in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/choose-targeting-method
+author: matt-call
+ms.author: mattcall
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: matt-call
-ms.author: mattcall
 ms.collection:
 - M365-identity-device-management
 ms.subservice: fundamentals

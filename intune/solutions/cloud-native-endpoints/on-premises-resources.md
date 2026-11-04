@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Use on-premises services with cloud-native endpoints - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/cloud-native-endpoints/on-premises-resources
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.reviewer: ahamil, jasandys, wicale
 description: For cloud-native endpoints to access on-premises resources, such as file servers, printers, and web servers, use Windows integrated authentication (WIA) and Microsoft Entra Connect.
 ms.date: 2025-02-20T00:00:00.0000000Z

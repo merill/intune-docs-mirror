@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Software Update Errors and Descriptions - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/ref-agent-error-codes
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: protect
 description: Reference article with a list of the Software Update agent error code in Microsoft Intune, including the symbolic name and error description.
 ms.date: 2026-01-14T00:00:00.0000000Z

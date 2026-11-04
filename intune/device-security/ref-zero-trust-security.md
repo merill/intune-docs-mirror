@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Configure Microsoft Intune for increased security - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/ref-zero-trust-security
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 ms.subservice: protect
 description: Learn how to improve your security posture with Microsoft Intune.
 ms.topic: reference

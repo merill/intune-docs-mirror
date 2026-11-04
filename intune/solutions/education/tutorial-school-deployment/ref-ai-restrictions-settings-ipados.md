@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Common Education iPads Apple Intelligence configuration - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/ref-ai-restrictions-settings-ipados
+author: yegor-a
+ms.author: egorabr
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: yegor-a
-ms.author: egorabr
 ms.subservice: education
 description: Learn about common iPads Apple Intelligence configuration used by Education organizations in Intune.
 ms.date: 2024-10-16T00:00:00.0000000Z

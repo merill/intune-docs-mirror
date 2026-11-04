@@ -2,13 +2,13 @@
 layout: Conceptual
 title: How to Use Microsoft Entra ID to Access Intune APIs in Microsoft Graph - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/configure-graph-api-access
+author: nicholasswhite
+ms.author: nwhite
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: nicholasswhite
-ms.author: nwhite
 ms.subservice: developer
 description: Describes steps needed for apps to use Microsoft Entra ID to access the Intune APIs in Microsoft Graph.
 ms.date: 2025-07-31T00:00:00.0000000Z

@@ -2,13 +2,13 @@
 layout: Conceptual
 title: 'Device Action: Enhanced Log Collection - Microsoft Intune - Microsoft Intune | Microsoft Learn'
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/actions/apple-enhanced-logging
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: beflamm
-ms.author: beflamm
 ms.collection:
 - M365-identity-device-management
 ms.reviewer: beflamm

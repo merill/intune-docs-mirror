@@ -2,13 +2,13 @@
 layout: Conceptual
 title: What's new in previous months in the Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/whats-new/archive
+author: lenewsad
+ms.author: lanewsad
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: lenewsad
-ms.author: lanewsad
 description: Review older announcements from the Intune what's new page
 ms.date: 2026-10-29T00:00:00.0000000Z
 ms.topic: whats-new

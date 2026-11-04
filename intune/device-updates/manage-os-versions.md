@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Manage device operating system versions with Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/manage-os-versions
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 ms.subservice: protect
 description: Learn about the methods for managing device operating system versions supported by Microsoft Intune.
 ms.date: 2025-06-12T00:00:00.0000000Z

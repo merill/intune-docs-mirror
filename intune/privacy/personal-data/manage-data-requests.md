@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Audit, export or delete personal data collected by Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/privacy/personal-data/manage-data-requests
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: paoloma
 description: Learn how to audit, export, or delete personal data that is collected by Intune.
 ms.date: 2025-04-10T00:00:00.0000000Z
 ms.topic: how-to

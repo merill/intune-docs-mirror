@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Management functionalities for Surface devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/manage-surface
+author: paolomatarazzo
+ms.author: paoloma
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: scottbreenmsft
-ms.author: scbree
 ms.subservice: education
 description: Learn about the management capabilities offered to Surface devices, including firmware management and the Surface Management Portal.
 ms.date: 2024-05-02T00:00:00.0000000Z

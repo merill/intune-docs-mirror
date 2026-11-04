@@ -2,13 +2,13 @@
 layout: Conceptual
 title: Permissions, scope tags, and approvals for deployments in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/deployments/rbac-scope-tags
+author: paolomatarazzo
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 manager: laurawi
-author: paolomatarazzo
-ms.author: wicale
 ms.collection:
 - M365-identity-device-management
 description: Learn about RBAC permissions, scope tag behavior, and Multi Admin Approval for deployment plans and deployments in Microsoft Intune.
