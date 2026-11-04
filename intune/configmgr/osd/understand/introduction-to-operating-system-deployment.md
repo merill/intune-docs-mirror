@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Introduction to operating system deployment - Configuration Manager | Microsoft Learn
+title: Introduction to Operating System Deployment - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/osd/understand/introduction-to-operating-system-deployment
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
@@ -17,7 +17,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Understand the concepts before you deploy operating systems in your Configuration Manager environment.
-ms.date: 2016-10-06T00:00:00.0000000Z
+ms.date: 2026-10-27T00:00:00.0000000Z
 ms.subservice: osd
 ms.topic: install-set-up-deploy
 ms.collection: tier3
@@ -46,7 +46,7 @@ spProducts:
 platformId: 2010fbb9-6c8c-4149-924f-3ad9d014e389
 ---
 
-# Introduction to operating system deployment - Configuration Manager | Microsoft Learn
+# Introduction to Operating System Deployment - Configuration Manager | Microsoft Learn
 
 *Applies to: Configuration Manager (current branch)*
 
@@ -54,11 +54,11 @@ You can use Configuration Manager to deploy operating systems in many ways. Use 
 
 ## The operating system deployment process
 
-Configuration Manager provides several methods that you can use to deploy an operating system. There are several actions that you must take regardless of the deployment method that you use:
+Configuration Manager provides several methods that you can use to deploy an operating system. Regardless of the deployment method that you use, take the following actions:
 
-- Identify Windows device drivers that are required to start the boot image or install the operating system image that you have to deploy.
+- Identify Windows device drivers that are required to start the boot image or install the operating system image that you want to deploy.
 - Identify the boot image that you want to use to start the destination computer.
-- Use a task sequence to capture an image of the operating system that you'll deploy. Alternatively, you can use a default operating system image.
+- Use a task sequence to capture an image of the operating system that you want to deploy. Alternatively, use a default operating system image.
 - Distribute the boot image, operating system image, and any related content to a distribution point.
 - Create a task sequence with the steps to deploy the boot image and the operating system image.
 - Deploy the task sequence to a collection of computers.
@@ -66,7 +66,7 @@ Configuration Manager provides several methods that you can use to deploy an ope
 
 ## Operating system deployment scenarios
 
-There are many operating system deployment scenarios in Configuration Manager that you can choose from depending on your environment and the purpose for the operating system installation. For example, you can partition and format an existing computer with a new version of Windows or upgrade Windows to the latest version. To help you determine the deployment method that meets your needs, review [Scenarios to deploy enterprise operating systems](../deploy-use/scenarios-to-deploy-enterprise-operating-systems). You can choose from the following operating system deployment scenarios:
+Configuration Manager offers many operating system deployment scenarios. Choose a scenario based on your environment and the purpose for the operating system installation. For example, you can partition and format an existing computer with a new version of Windows or upgrade Windows to the latest version. To help you determine the deployment method that meets your needs, review [Scenarios to deploy enterprise operating systems](../deploy-use/scenarios-to-deploy-enterprise-operating-systems). You can choose from the following operating system deployment scenarios:
 
 - [Upgrade Windows to the latest version](../deploy-use/upgrade-windows-to-the-latest-version)
 - [Refresh an existing computer with a new version of Windows](../deploy-use/refresh-an-existing-computer-with-a-new-version-of-windows)
@@ -75,12 +75,12 @@ There are many operating system deployment scenarios in Configuration Manager th
 
 ## Methods to deploy operating systems
 
-There are several methods that you can use to deploy operating systems to Configuration Manager client computers.
+You can use several methods to deploy operating systems to Configuration Manager client computers.
 
-- **PXE initiated deployments**: PXE-initiated deployments let client computers request a deployment over the network. In this method of deployment, the operating system image and a Windows PE boot image are sent to a distribution point that is configured to accept PXE boot requests. For more information, see [Use PXE to deploy Windows over the network with Configuration Manager](../deploy-use/use-pxe-to-deploy-windows-over-the-network).
+- **PXE-initiated deployments**: PXE-initiated deployments let client computers request a deployment over the network. In this method of deployment, you send the operating system image and a Windows PE boot image to a distribution point that you configure to accept PXE boot requests. For more information, see [Use PXE to deploy Windows over the network with Configuration Manager](../deploy-use/use-pxe-to-deploy-windows-over-the-network).
 - **Make operating systems available in Software Center**: You can deploy an operating system and make it available in the Software Center. Configuration Manager clients can initiate the operating system installation from Software Center. For more information, see [Replace an existing computer and transfer settings](../deploy-use/replace-an-existing-computer-and-transfer-settings).
-- **Multicast deployments**: Multicast deployments conserve network bandwidth by concurrently sending data to multiple clients instead of sending a copy of the data to each client over a separate connection. In this method of deployment, the operating system image is sent to a distribution point. This in turn deploys the image when client computers request the deployment. For more information, see [Use multicast to deploy Windows over the network](../deploy-use/use-multicast-to-deploy-windows-over-the-network).
-- **Bootable media deployments**: Bootable media deployments let you deploy the operating system when the destination computer starts. When the destination computer starts, it retrieves the task sequence, the operating system image, and any other required content from the network. Because that content isn't included on the media, you can update the content without having to re-create the media. For more information, see [Create bootable media](../deploy-use/create-bootable-media).
+- **Multicast deployments**: Multicast deployments conserve network bandwidth by concurrently sending data to multiple clients instead of sending a copy of the data to each client over a separate connection. In this method of deployment, you send the operating system image to a distribution point. This distribution point deploys the image when client computers request the deployment. For more information, see [Use multicast to deploy Windows over the network](../deploy-use/use-multicast-to-deploy-windows-over-the-network).
+- **Bootable media deployments**: Bootable media deployments let you deploy the operating system when the destination computer starts. When the destination computer starts, it retrieves the task sequence, the operating system image, and any other required content from the network. Because the content isn't included on the media, you can update the content without having to re-create the media. For more information, see [Create bootable media](../deploy-use/create-bootable-media).
 - **Stand-alone media deployments**: Stand-alone media deployments let you deploy operating systems in the following conditions:
 
     - In environments where it isn't practical to copy an operating system image or other large packages over the network.
@@ -93,35 +93,43 @@ There are several methods that you can use to deploy operating systems to Config
 
 ## Boot images
 
-A boot image in Configuration Manager is a Windows PE (WinPE) image that is used during an operating system deployment. Boot images are used to start a computer in WinPE, which is a minimal operating system with limited components and services that prepare the destination computer for Windows installation. Configuration Manager provides two boot images: One to support x86 platforms and one to support x64 platforms. These are considered default boot images. Boot images that you create and add to Configuration Manager are considered custom images. Default boot images can be automatically replaced when you update Configuration Manager. For more information about boot images, see [Manage boot images](../get-started/manage-boot-images).
+A boot image in Configuration Manager is a Windows PE (WinPE) image that is used during an operating system deployment. Boot images are used to start a computer in WinPE, which is a minimal operating system with limited components and services that prepare the destination computer for Windows installation.
+
+Configuration Manager provides two boot images: one to support x86 platforms and one to support x64 platforms. These images are the default boot images. Boot images that you create and add to Configuration Manager are custom images. Configuration Manager can automatically replace default boot images when you update Configuration Manager. For more information, see [Manage boot images](../get-started/manage-boot-images).
 
 ## Operating system images
 
-Operating system images in Configuration Manager are stored in the Windows Imaging (WIM) file format and represent a compressed collection of reference files and folders that are required to successfully install and configure an operating system on a computer. For all operating system deployment scenarios, you must select an operating system image. You can use the default operating system image or build the operating system image from a reference computer that you configure. For more information, see [Manage operating system images](../get-started/manage-operating-system-images).
+Operating system images in Configuration Manager are stored in the Windows Imaging (WIM) file format and represent a compressed collection of reference files and folders that are required to successfully install and configure an operating system on a computer.
+
+For all operating system deployment scenarios, you must select an operating system image. You can use the default operating system image or build the operating system image from a reference computer that you configure. For more information, see [Manage operating system images](../get-started/manage-operating-system-images).
 
 ## Operating system upgrade packages
 
-Operating system upgrade packages are used to upgrade an operating system and are setup-initiated operating system deployments. You import operating system upgrade packages to Configuration Manager from a DVD or mounted ISO file. For more information, see [Manage operating system upgrade packages](../get-started/manage-operating-system-upgrade-packages).
+Use operating system upgrade packages to upgrade an operating system. These packages initiate the operating system deployment through setup. Import operating system upgrade packages to Configuration Manager from a DVD or mounted ISO file. For more information, see [Manage operating system upgrade packages](../get-started/manage-operating-system-upgrade-packages).
 
 ## Media to deploy operating systems
 
-You can create several kinds of media that can be used to deploy operating systems. This includes capture media that is used to capture operating system images and stand-alone, pre-staged, and bootable media that is used to deploy an operating system. By using media, you can deploy operating systems on computers that do not have a network connection or that have a low bandwidth connection to your Configuration Manager site. For more information about how to use media, see [Create task sequence media](../deploy-use/create-task-sequence-media).
+You can create several kinds of media to deploy operating systems. These media include capture media to capture operating system images, and standalone, prestaged, and bootable media to deploy an operating system.
+
+By using media, you can deploy operating systems on computers that don't have a network connection or that have a low bandwidth connection to your Configuration Manager site. For more information about how to use media, see [Create task sequence media](../deploy-use/create-task-sequence-media).
 
 ## Device drivers
 
-You can install device drivers on destination computers without including them in the operating system image that is being deployed. Configuration Manager provides a driver catalog that contains references to all the device drivers that you import into Configuration Manager. The driver catalog is located in the **Software Library** workspace and consists of two nodes: **Drivers** and **Driver Packages**. The **Drivers** node lists all the drivers that you have imported into the driver catalog. You can use this node to discover the details about each imported driver, to change what driver package or boot image a driver belongs to, to enable or disable a driver, and more. For more information, see [Manage drivers](../get-started/manage-drivers).
+You can install device drivers on destination computers without including them in the operating system image that is being deployed. Configuration Manager provides a driver catalog that contains references to all the device drivers that you import into Configuration Manager. The driver catalog is located in the **Software Library** workspace and consists of two nodes: **Drivers** and **Driver Packages**.
+
+The **Drivers** node lists all the drivers that you imported into the driver catalog. Use this node to view details about each imported driver, change the driver package or boot image that a driver belongs to, enable or disable a driver, and more. For more information, see [Manage drivers](../get-started/manage-drivers).
 
 ## Save and restore user state
 
-When you deploy operating systems, you can save the user state from the destination computer, deploy the operating system, and then restore the user state after the operating systems is deployed. This process is typically used when you install the operating system on a Configuration Manager client computer.
+When you deploy operating systems, you can save the user state from the destination computer, deploy the operating system, and then restore the user state after the operating system is deployed. This process is typically used when you install the operating system on a Configuration Manager client computer.
 
 The user state information is captured and restored by using task sequences. When the user state information is captured, the information can be stored in one of the following ways:
 
-- You can store the user state data remotely by configuring a state migration point. The Capture task sequence sends the data to the state migration point. Then, after the operating system is deployed, the Restore task sequence retrieves the data and restores the user state on the destination computer.
-- You can store the user state data locally to a specific location. In this scenario, the Capture task sequence copies the user data to a specific location on the destination computer. Then, after the operating system is deployed, the Restore task sequence retrieves the user data from that location.
-- You can specify hard links that can be used to restore the user data to its original location. In this scenario, the user state data remains on the drive when the old operating system is removed. Then, after the operating system is deployed, the Restore task sequence uses the hard links to restore the user state data to its original location.
+- Store the user state data remotely by configuring a state migration point. The **Capture** task sequence sends the data to the state migration point. After you deploy the operating system, the **Restore** task sequence retrieves the data and restores the user state on the destination computer.
+- Store the user state data locally to a specific location. In this scenario, the **Capture** task sequence copies the user data to a specific location on the destination computer. After you deploy the operating system, the **Restore** task sequence retrieves the user data from that location.
+- Specify hard links to restore the user data to its original location. In this scenario, the user state data remains on the drive when the old operating system is removed. After you deploy the operating system, the **Restore** task sequence uses the hard links to restore the user state data to its original location.
 
-    For more information [Manage user state](../get-started/manage-user-state).
+For more information, see [Manage user state](../get-started/manage-user-state).
 
 ## Deploy to unknown computers
 
@@ -135,11 +143,11 @@ You can deploy an operating system to computers that aren't managed by Configura
 
 ## Associate users with a computer
 
-When you deploy an operating system, you can associate users with the destination computer to support user device affinity actions. When you associate a user with the destination computer, the administrative user can later perform actions on whichever computer is associated with that user, such as deploying an application to the computer of a specific user. However, when you deploy an operating system, you can't deploy the operating system to the computer of a specific user. For more information, see [Associate users with a destination computer](../get-started/associate-users-with-a-destination-computer).
+When you deploy an operating system, you can associate users with the destination computer to support user device affinity actions. When you associate a user with the destination computer, the administrative user can later perform actions on whichever computer is associated with that user, such as deploying an application to the computer of a specific user. When you deploy an operating system, you can't deploy the operating system to the computer of a specific user. For more information, see [Associate users with a destination computer](../get-started/associate-users-with-a-destination-computer).
 
 ## Use task sequences to automate steps
 
-You can create task sequences to perform various tasks within your Configuration Manager environment. The actions of the task sequence are defined in the individual steps of the sequence. When the task sequence is run, the actions of each step are performed at the command-line level without requiring user intervention. You can use task sequences for the following:
+You can create task sequences to perform various tasks in your Configuration Manager environment. Define the actions of the task sequence in the individual steps of the sequence. When the task sequence runs, it performs the actions of each step at the command-line level without requiring user intervention. You can use task sequences for the following tasks:
 
 - [Create a task sequence to install an operating system](../deploy-use/create-a-task-sequence-to-install-an-operating-system)
 - [Create a task sequence for non-operating system deployments](../deploy-use/create-a-task-sequence-for-non-operating-system-deployments)

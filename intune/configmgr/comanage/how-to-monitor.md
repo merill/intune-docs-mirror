@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Monitor co-management - Configuration Manager | Microsoft Learn
+title: Monitor Co-management - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/comanage/how-to-monitor
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
@@ -16,8 +16,8 @@ ms.reviewer:
 - payur
 - hugowu
 - qiani
-description: Use the co-management dashboard to review information about co-managed devices.
-ms.date: 2021-10-05T00:00:00.0000000Z
+description: Monitor co-management in Configuration Manager with the dashboard, deployment policies, and WMI data. Learn how to track enrollment status and fix errors.
+ms.date: 2026-10-27T00:00:00.0000000Z
 ms.subservice: co-management
 ms.topic: how-to
 ms.collection: tier3
@@ -48,11 +48,11 @@ spProducts:
 platformId: cdff63d4-09c7-eb88-3b56-c2e4335420b9
 ---
 
-# Monitor co-management - Configuration Manager | Microsoft Learn
+# Monitor Co-management - Configuration Manager | Microsoft Learn
 
 *Applies to: Configuration Manager (current branch)*
 
-After you enable co-management, monitor co-management devices using the following methods:
+After you enable co-management, monitor co-management devices by using the following methods:
 
 - Co-management dashboard
 - Deployment policies
@@ -60,25 +60,25 @@ After you enable co-management, monitor co-management devices using the followin
 
 ## Co-management dashboard
 
-This dashboard helps you review machines that are co-managed in your environment. The graphs can help identify devices that might need attention.
+This dashboard helps you review machines that are co-managed in your environment. The graphs can help you identify devices that might need attention.
 
 In the Configuration Manager console, go to the **Monitoring** workspace, and select the **Cloud Attach** node.
 
 - For version 2103 and earlier, select the **Co-management** node.
 
-![Screenshot of the co-management dashboard](media/co-management-dashboard.png)
+![Screenshot shows the co-management dashboard in Configuration Manager.](media/co-management-dashboard.png)
 
 ### Client OS distribution
 
 Shows the number of client devices per OS by version. It uses the following groupings:
 
-- Windows 7 & 8.x
+- Windows 7 and 8.x
 - Windows 10 lower than 1709
 - Windows 10 1709 and later
 
 Hover over a graph section to show the percentage of devices in that OS group.
 
-![Client OS distribution tile](media/co-management-dashboard/co-management-os-distribution-graph.png)
+![Screenshot shows the Client OS distribution tile.](media/co-management-dashboard/co-management-os-distribution-graph.png)
 
 ### Co-management status
 
@@ -89,7 +89,7 @@ A funnel chart that shows the number of devices with the following states from t
 - Enrollment initiated
 - Enrolled
 
-![Co-management status (funnel) tile](media/co-management-dashboard/1358980-status-funnel.png)
+![Screenshot shows the Co-management Status (funnel) tile.](media/co-management-dashboard/1358980-status-funnel.png)
 
 ### Co-management enrollment status
 
@@ -101,64 +101,67 @@ Shows the breakdown of device status in the following categories:
 - Failure, Microsoft Entra hybrid joined
 - Failure, Microsoft Entra joined
 - Pending user sign in
-    - To reduce the number of devices in this pending state, a new co-managed device automatically enrolls to the Microsoft Intune service based on its Microsoft Entra ID *device* token. It doesn't need to wait for a user to sign in to the device for auto-enrollment to start. To support this behavior, the device needs to be running Windows 10, version 1803 or later. If the device token fails, it falls back to previous behavior with the user token. Look in the **ComanagementHandler.log** for the following entry: 
+
+    - To reduce the number of devices in this pending state, a new co-managed device automatically enrolls to the Microsoft Intune service based on its Microsoft Entra ID *device* token. It doesn't need to wait for a user to sign in to the device for auto-enrollment to start.
+
+    To support this behavior, the device needs to be running Windows 10, version 1803 or later. If the device token fails, it falls back to previous behavior with the user token. Look in the **ComanagementHandler.log** for the following entry:
 
 > 
 > `Enrolling device with RegisterDeviceWithManagementUsingAADDeviceCredentials`
 
 Select a state in the tile to drill through to a list of devices in that state.
 
-![Co-management enrollment status tile](media/co-management-dashboard/1358980-enrollment-status.png)
+![Screenshot shows the Co-management Enrollment Status tile.](media/co-management-dashboard/1358980-enrollment-status.png)
 
 ### Workload transition
 
-Displays a bar chart with the number of devices that you've transitioned to Microsoft Intune for the available workloads. For more information, see [Workloads able to be transitioned to Intune](workloads).
+Displays a bar chart with the number of devices that you transitioned to Microsoft Intune for the available workloads. For more information, see [Workloads able to be transitioned to Intune](workloads).
 
 Hover over a chart section to show the number of devices transitioned for the workload.
 
-![Workload transition bar graph](media/co-management-dashboard/workload-transition.png)
+![Screenshot shows the Workload transition bar graph.](media/co-management-dashboard/workload-transition.png)
 
 ### Enrollment errors
 
-This table is a list of enrollment errors from devices. These errors can come from the MDM component in Windows, the core Windows OS, or the Configuration Manager client.
+This table lists enrollment errors from devices. These errors can come from the MDM component in Windows, the core Windows OS, or the Configuration Manager client.
 
 There are hundreds of possible errors. The following table lists the most common errors.
 
 | Error | Description |
 | --- | --- |
-| 2147549183 (0x8000FFFF) | MDM enrollment hasn't been configured yet on Microsoft Entra ID, or the enrollment URL isn't expected.[Enable automatic enrollment](../../device-enrollment/windows/enable-automatic-mdm) |
+| 2147549183 (0x8000FFFF) | MDM enrollment isn't configured yet on Microsoft Entra ID, or the enrollment URL isn't expected.[Enable automatic enrollment](../../device-enrollment/windows/enable-automatic-mdm) |
 | 2149056536 (0x80180018)MENROLL\_E\_USERLICENSE | License of user is in bad state blocking enrollment[Assign licenses to users](../../fundamentals/assign-licenses) |
 | 2149056555 (0x8018002B)MENROLL\_E\_MDM\_NOT\_CONFIGURED | When trying to automatically enroll to Intune, but the Microsoft Entra configuration isn't fully applied. This issue should be transient, as the device retries after a short time. |
-| 2149056554 (0x‭8018002A‬) | The user canceled the operationIf MDM enrollment requires multi-factor authentication, and the user hasn't signed in with a supported second factor, Windows displays a toast notification to the user to enroll. If the user doesn't respond to toast notification, this error occurs. This issue should be transient, as Configuration Manager will retry and prompt the user. Users should use multi-factor authentication when they sign in to Windows. Also educate them to expect this behavior, and if prompted, take action. |
+| 2149056554 (0x‭8018002A‬) | The user canceled the operationIf MDM enrollment requires multifactor authentication, and the user doesn't sign in with a supported second factor, Windows displays a toast notification to the user to enroll. If the user doesn't respond to toast notification, this error occurs. This issue should be transient, as Configuration Manager retries and prompts the user. Users should use multifactor authentication when they sign in to Windows. Also educate them to expect this behavior, and if prompted, take action. |
 | 2149056532 (0x80180014)MENROLL\_E\_DEVICENOTSUPPORTED | Mobile device management isn't supported. Check device restrictions. |
 | 2149056533 (0x80180015)MENROLL\_E\_NOTSUPPORTED | Mobile device management isn't supported. Check device restrictions. |
-| 2149056514 (0x80180002)MENROLL\_E\_DEVICE\_AUTHENTICATION\_ERROR | Server failed to authenticate the user There's no Microsoft Entra token for the user. Make sure the user can authenticate to Microsoft Entra ID. |
-| 2147942450 (0x‭80070032‬) | MDM auto-enrollment is only supported on Windows RS3 and above.Make sure the device meets the [minimum requirements](overview#windows) for co-management. |
-| 3400073293 | ADAL user realm account response unknownCheck your Microsoft Entra configuration, and make sure that users can successfully authenticate. |
+| 2149056514 (0x80180002)MENROLL\_E\_DEVICE\_AUTHENTICATION\_ERROR | Server failed to authenticate the user There's no Microsoft Entra token for the user. Ensure the user can authenticate to Microsoft Entra ID. |
+| 2147942450 (0x‭80070032‬) | MDM auto-enrollment is only supported on Windows RS3 and later.Ensure the device meets the [minimum requirements](overview#windows) for co-management. |
+| 3400073293 | ADAL user realm account response unknownCheck your Microsoft Entra configuration, and ensure that users can successfully authenticate. |
 | 3399548929 | Need user sign-inThis issue should be transient. It occurs when the user quickly signs out before the enrollment task happens. |
-| 3400073236 | ADAL security token request failed.Check your Microsoft Entra configuration, and make sure that users can successfully authenticate. |
+| 3400073236 | ADAL security token request failed.Check your Microsoft Entra configuration, and ensure that users can successfully authenticate. |
 | 2149122477 | Generic HTTP issue |
 | 3400073247 | ADAL-integrated Windows authentication is only supported in federated flow[Plan your Microsoft Entra hybrid join implementation](/en-us/azure/active-directory/devices/hybrid-azuread-join-plan) |
-| 3399942148 | The server or proxy wasn't found.This issue should be transient, when the client can't communicate with cloud. If it persists, make sure the client has consistent connectivity to Azure. |
-| 2149056532 | Specific platform or version is not supportedMake sure the device meets the [minimum requirements](overview#windows) for co-management. |
+| 3399942148 | The server or proxy wasn't found.This issue should be transient, when the client can't communicate with cloud. If it persists, ensure the client has consistent connectivity to Azure. |
+| 2149056532 | Specific platform or version isn't supportedEnsure the device meets the [minimum requirements](overview#windows) for co-management. |
 | 2147943568 | Element not foundThis issue should be transient. If it persists, contact Microsoft Support. |
-| 2192179208 | Not enough memory resources are available to process this command.This issue should be transient, it should resolve itself when the client retries. |
-| 3399614467 | ADAL Authorization grant failed for this assertionCheck your Microsoft Entra configuration, and make sure that users can successfully authenticate. |
+| 2192179208 | Not enough memory resources are available to process this command.This issue should be transient, it resolves itself when the client retries. |
+| 3399614467 | ADAL Authorization grant failed for this assertionCheck your Microsoft Entra configuration, and ensure that users can successfully authenticate. |
 | 2149056517 | Generic Failure from management server, such as DB access errorThis issue should be transient. If it persists, contact Microsoft Support. |
 | 2149134055 | Winhttp name not resolvedThe client can't resolve the name of the service. Check the DNS configuration. |
-| 2149134050 | internet timeoutThis issue should be transient, when the client can't communicate with cloud. If it persists, make sure the client has consistent connectivity to Azure. |
+| 2149134050 | internet timeoutThis issue should be transient, when the client can't communicate with cloud. If it persists, ensure the client has consistent connectivity to Azure. |
 
 For more information, see [MDM Registration Error Values](/en-us/windows/desktop/mdmreg/mdm-registration-constants).
 
 ## Deployment policies
 
-Two policies are created in the **Deployments** node of the **Monitoring** workspace. One policy is for the pilot group and one for production. These policies report only the number of devices where Configuration Manager has applied the policy. They don't consider how many devices are enrolled in Intune, which is a requirement before devices can be co-managed.
+Two policies are created in the **Deployments** node of the **Monitoring** workspace. One policy is for the pilot group and one for production. These policies report only the number of devices where Configuration Manager applies the policy. They don't consider how many devices are enrolled in Intune, which is a requirement before devices can be co-managed.
 
 The production policy (CoMgmtSettingsProd) is targeted to the **All Systems** collection. It has an applicability condition that checks the OS type and version. If the client runs a server OS or isn't Windows 10 or later, the policy doesn't apply, and no action is taken.
 
 Tip
 
-For an example collection query for co-managed devices see, [Create queries in Configuration Manager](../core/servers/manage/create-queries#bkmk_comgmt).
+For an example collection query for co-managed devices, see [Create queries in Configuration Manager](../core/servers/manage/create-queries#bkmk_comgmt).
 
 ## WMI device data
 
