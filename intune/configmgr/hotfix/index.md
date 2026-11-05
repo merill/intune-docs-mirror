@@ -20,7 +20,7 @@ ms.reviewer:
 description: Knowledge Base articles for Microsoft Configuration Manager hotfixes, update rollups, and summary articles for new releases.
 ms.subservice: core-infra
 ms.topic: landing-page
-ms.date: 2026-09-10T00:00:00.0000000Z
+ms.date: 2026-11-03T00:00:00.0000000Z
 locale: en-us
 document_id: 44b6e3c1-c0ff-b9ab-b751-be915f43213c
 document_version_independent_id: 78df709e-f702-5cae-1539-89231a720345
@@ -64,6 +64,7 @@ Knowledge Base articles for Microsoft Configuration Manager hotfixes, update rol
 - [KB 38982839 Security update for the SMS Provider and administration service](2603/38982839)
 - [KB 39398030 Security update for scripts, SMS Provider, MPE, and DDR](2603/39398030)
 - [KB 39169655 Update rollup for Microsoft Configuration Manager version 2603](2603/39169655)
+- [KB 40345593 Bulk registration token verification fails after 2603 update rollup](2603/40345593)
 
 ## Configuration Manager 2509
 
