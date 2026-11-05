@@ -15,10 +15,10 @@ ms.collection:
 ms.reviewer: aanavath
 ms.subservice: protect
 description: Learn how to use the Security Technical Implementation Guide security baseline in Microsoft Intune to assess Windows device compliance against Security Technical Implementation Guide recommendations for Department of Defense organizations.
-ms.date: 2026-10-30T00:00:00.0000000Z
+ms.date: 2026-11-04T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1030
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: 93d0390c-d738-9569-a798-af9d6515b8fa
 document_version_independent_id: 93d0390c-d738-9569-a798-af9d6515b8fa
@@ -149,7 +149,7 @@ To create a STIG audit baseline profile, use the following steps:
 
     Note
 
-    The STIG audit baseline audits all settings in the baseline as a single profile. You can't select or modify individual settings. The audit rules and their expected values are defined by DISA in the publicly available [SCAP benchmark files](https://public.cyber.mil/stigs/scap/), not by Intune.
+    The STIG audit baseline audits all settings in the baseline as a single profile. You can't select or modify individual settings. The audit rules and their expected values are defined by DISA in the publicly available [SCAP benchmark files](https://www.cyber.mil/stigs/SCAP/), not by Intune.
 7. On the **Scope tags** tab, optionally add scope tags to control which admins can see this profile.
 8. On the **Assignments** tab, select the device groups that you want to audit against the STIG baseline. You can target all devices or specific groups.
 9. Review your settings on the **Review + create** tab, and then select **Create**.

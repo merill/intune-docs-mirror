@@ -68,6 +68,15 @@ If you use Intune enrollment restrictions to block personal device enrollments, 
 
 To associate devices, complete the following tasks in this step.
 
+Important
+
+If a device is registered as a Windows Autopilot device, whether the Windows Autopilot deployment or the Windows Autopilot device preparation deployment runs depends on the device's association state:
+
+- **The device isn't associated with your tenant.** Windows Autopilot registration takes precedence, and the Windows Autopilot deployment runs instead of the device preparation deployment.
+- **The device is associated with your tenant.** Device association takes precedence, and the Windows Autopilot device preparation deployment runs.
+
+To run device preparation on a registered device without associating it, first remove the device's Windows Autopilot registration. For more information, see [Deregister a device](../../../registration-overview#deregister-a-device).
+
 ## Export device information from OOBE
 
 Note

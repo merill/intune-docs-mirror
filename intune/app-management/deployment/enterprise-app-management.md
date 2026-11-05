@@ -15,7 +15,7 @@ ms.collection:
 ms.reviewer: dguilory
 ms.subservice: suite
 description: Learn about Enterprise App Management and the Enterprise App Catalog in Microsoft Intune.
-ms.date: 2026-06-03T00:00:00.0000000Z
+ms.date: 2026-11-03T00:00:00.0000000Z
 ms.topic: how-to
 locale: en-us
 document_id: 63dcddbd-498d-178a-421c-b36c4cd26f76
@@ -159,10 +159,6 @@ Auto-update app reporting stores only the latest reported state per device. If a
 #### Version changes during device processing
 
 Devices might report that they attempted an auto-update action (enforcement or detection) and return status after that action. If the app version changes while devices are still processing, reporting can show status for devices at different points in the update flow. Not all devices check in after the latest version is released.
-
-#### Not supported as a blocking app in ESP or Autopilot device preparation
-
-You can't add an auto-update Enterprise App Catalog app as a blocking app in the Enrollment Status Page (ESP) or Autopilot device preparation.
 
 #### Conflicts with other app types
 

@@ -158,6 +158,7 @@ In the **Configuration settings** page:
     - [Microsoft Store](/en-us/intune/app-management/deployment/add-microsoft-store) - only Microsoft Store apps that support WinGet are supported.
     - [Microsoft 365](/en-us/intune/app-management/deployment/add-microsoft-365-windows).
     - [Enterprise App Catalog](/en-us/intune/app-management/deployment/add-enterprise-catalog-app).
+    - [Enterprise App Catalog auto-update apps](/en-us/intune/app-management/deployment/enterprise-app-management#auto-update-for-enterprise-app-catalog-apps).
 
     In addition, Windows Autopilot device preparation supports deploying both Win32 and line-of-business (LOB) applications in the same deployment.
 4. Expand the **Scripts** section by selecting it:
@@ -176,15 +177,6 @@ In the **Configuration settings** page:
         3. Once all of the desired PowerShell scripts are selected, select **Save**.
 
     All of the selected PowerShell scripts should display under **Allowed Scripts**.
-
-Important
-
-If a device is registered as a Windows Autopilot device, whether the Windows Autopilot deployment or the Windows Autopilot device preparation deployment runs depends on the device's association state:
-
-- **The device isn't associated with your tenant.** Windows Autopilot registration takes precedence, and the Windows Autopilot deployment runs instead of the device preparation deployment.
-- **The device is associated with your tenant.** Device association takes precedence, and the Windows Autopilot device preparation deployment runs.
-
-To run device preparation on a registered device without associating it, first remove the device's Windows Autopilot registration. For more information, see [Deregister a device](../../../registration-overview#deregister-a-device).
 
 ## Policy priority
 

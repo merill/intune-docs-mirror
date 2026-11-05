@@ -15,7 +15,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: How to - Windows Autopilot device preparation in automatic mode for Windows 365 - Step 4 of 6 - Create a Windows Autopilot device preparation policy.
-ms.date: 2025-06-11T00:00:00.0000000Z
+ms.date: 2026-11-03T00:00:00.0000000Z
 ms.topic: tutorial
 locale: en-us
 document_id: e13bf4ae-776d-1003-07e0-8e5b4c713583
@@ -80,7 +80,7 @@ To create an automatic mode for Windows 365 Windows Autopilot device preparation
 9. In the **Device group** page, select the **Search by group name..** box, and then either select or search for the device group created in [Step 3: Create an assigned device group](automatic-device-group). Once the correct device group is selected, select **Next**.
 10. In the **Configuration settings** page:
 
-    1. The **Apps** section allows selection of up to 10 managed applications reference with the deployment. The applications specified here should be the essential applications that should be installed on the device before the end-user can start using the device. Under the **Apps** section:
+    1. The **Apps** section lets you select up to 25 managed applications to install during deployment. Select the essential applications that must be installed before the end user can use the device. Under the **Apps** section:
 
         1. Select **Add**. The **Select Apps** pane opens.
 
@@ -103,6 +103,8 @@ To create an automatic mode for Windows 365 Windows Autopilot device preparation
         - [Win32](/en-us/intune/app-management/deployment/create-win32-package).
         - [Microsoft Store](/en-us/intune/app-management/deployment/add-microsoft-store) - only Microsoft Store apps that support WinGet are supported.
         - [Microsoft 365](/en-us/intune/app-management/deployment/add-microsoft-365-windows).
+        - [Enterprise App Catalog](/en-us/intune/app-management/deployment/add-enterprise-catalog-app).
+        - [Enterprise App Catalog auto-update apps](/en-us/intune/app-management/deployment/enterprise-app-management#auto-update-for-enterprise-app-catalog-apps).
 
         In addition, Windows Autopilot device preparation supports deploying both Win32 and line-of-business (LOB) applications in the same deployment.
     2. The **Scripts** section allows selection of up to 10 PowerShell scripts to install during the deployment. The PowerShell scripts specified here should be the essential PowerShell scripts that should run on the device before the end-user can start using the device. Under the **Scripts** section:

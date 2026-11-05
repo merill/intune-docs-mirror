@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Windows Autopilot self-deploying mode | Microsoft Learn
+title: Windows Autopilot Self-deploying Mode | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/self-deploying
 author: arob98
 ms.author: angrobe
@@ -14,10 +14,9 @@ feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/ef1d6d
 feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
-description: Self-deploying mode allows a device to be deployed with little to no user interaction. This mode is designed to deploy Windows as a kiosk, digital signage device, or a shared device.
-ms.date: 2024-09-13T00:00:00.0000000Z
-ms.collection:
-- M365-modern-desktop
+description: Self-deploying mode allows you to deploy a device without user interaction. Deploy Windows as a kiosk, digital signage device, or a shared device.
+ms.date: 2026-10-28T00:00:00.0000000Z
+ms.collection: M365-modern-desktop
 ms.topic: how-to
 locale: en-us
 document_id: 437a06dd-58a8-f33f-e6d9-aff9df6d08fc
@@ -44,7 +43,7 @@ spProducts:
 platformId: ec39217f-1a2e-7974-9713-edadf18d10b4
 ---
 
-# Windows Autopilot self-deploying mode | Microsoft Learn
+# Windows Autopilot Self-deploying Mode | Microsoft Learn
 
 Note
 
@@ -54,7 +53,7 @@ Tip
 
 For a guided walkthrough of Windows Autopilot self-deploying mode, see [Step by step tutorial for Windows Autopilot self-deploying mode in Intune](tutorial/self-deploying/self-deploying-workflow).
 
-Windows Autopilot self-deploying mode allows deployment of a device with little to no user interaction. For devices with an Ethernet connection, no user interaction is required. For devices connected via Wi-Fi, the user must only:
+Windows Autopilot self-deploying mode allows deployment of a device with little user interaction. For devices with an Ethernet connection, no user interaction is required. For devices connected by using Wi-Fi, the user must only:
 
 - Select the language, locale, and keyboard.
 - Make a network connection.
@@ -74,20 +73,22 @@ Self-deploying mode allows deployment of a Windows device as a kiosk, digital si
 
 Windows Autopilot now has a kiosk mode that supports Kiosk Browser, Microsoft Store apps, and specific versions of Microsoft Edge.
 
-The [Kiosk Browser](https://www.microsoft.com/p/kiosk-browser/9ngb5s5xg2kp?rtc=1&amp;activetab=pivot:overviewtab) can be used when setting up a kiosk device. This app is built on Microsoft Edge and can be used to create a tailored, MDM-managed browsing experience.
+You can use [Kiosk Browser](https://www.microsoft.com/p/kiosk-browser/9ngb5s5xg2kp?rtc=1&amp;activetab=pivot:overviewtab) to set up a kiosk device. This app is built on Microsoft Edge. Use it to create a tailored, MDM-managed browsing experience.
 
-The device configuration can be automated by combining self-deploying mode with MDM policies. Use the MDM policies to create a local account configured to automatically sign in. For more information, see:
+Automate device configuration by combining self-deploying mode with MDM policies. Use the MDM policies to create a local account configured to automatically sign in. For more information, see:
 
 - [Simplifying kiosk management for IT with Windows 10](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/simplifying-kiosk-management-for-it-with-windows-10/ba-p/187691).
 - [Set up a kiosk or digital sign in Intune or other MDM service](/en-us/windows/configuration/setup-kiosk-digital-signage#set-up-a-kiosk-or-digital-sign-in-intune-or-other-mdm-service).
 
-Optionally, a [device-only subscription](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-intune-announces-device-only-subscription-for-shared/ba-p/280817) service can be used that helps manage devices that aren't affiliated with specific users. The Intune device SKU is licensed per device per month.
+Optionally, you can use a [device-only subscription](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/microsoft-intune-announces-device-only-subscription-for-shared/ba-p/280817) service that helps manage devices that aren't affiliated with specific users. The Intune device SKU is licensed per device per month.
 
 Note
 
-Intune doesn't automatically configure a primary user when using self-deploying mode in Windows Autopilot to provision a Windows device. Some Intune capabilities rely on a primary user being set on a device. These features include user self-service BitLocker recovery key retrieval and using the Company Portal to install software **assigned to users**. Using self-provisioning mode for Windows Autopilot doesn't preclude a licensed user from logging into the device and using features entitled to that user such as Conditional Access. For more information, see [Windows Autopilot scenarios and capabilities](windows-autopilot-scenarios).
+Intune doesn't automatically configure a primary user when using self-deploying mode in Windows Autopilot to provision a Windows device. Some Intune capabilities rely on a primary user being set on a device. These features include user self-service BitLocker recovery key retrieval and using the Company Portal to install software **assigned to users**.
 
-If desired, a primary user can be manually set after device provisioning via the Intune admin center. For more information, see [Change a devices primary user](/en-us/intune/intune-service/remote-actions/find-primary-user#change-a-devices-primary-user).
+Using self-provisioning mode for Windows Autopilot doesn't preclude a licensed user from logging into the device and using features entitled to that user such as Conditional Access. For more information, see [Windows Autopilot scenarios and capabilities](windows-autopilot-scenarios).
+
+If desired, you can set a primary user manually after device provisioning by using the Intune admin center. For more information, see [Change a devices primary user](/en-us/intune/intune-service/remote-actions/find-primary-user#change-a-devices-primary-user).
 
 ## Requirements
 
@@ -95,50 +96,50 @@ Important
 
 A device can't automatically re-enroll through Windows Autopilot after an initial deployment with self-deploying mode. Instead, delete the device record in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). From the Microsoft Intune admin center, select **Devices** &gt; **All devices** &gt; select the devices to delete &gt; **Delete**. For more information, see [Updates to the Windows Autopilot sign-in and deployment experience](https://techcommunity.microsoft.com/t5/intune-customer-success/updates-to-the-windows-autopilot-sign-in-and-deployment/ba-p/2848452).
 
-Self-deploying mode uses a device's Trusted Platform Module (TPM) 2.0 hardware to authenticate the device into an organization's Microsoft Entra tenant. Therefore, devices without TPM 2.0 can't be used with this mode. Devices must also support TPM device attestation. All new Windows devices should meet these requirements. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Windows Autopilot self-Deploying mode and Windows Autopilot pre-provisioning in [Networking requirements](requirements?tabs=networking#windows-autopilot-self-deploying-mode-and-windows-autopilot-pre-provisioning). For Windows Autopilot software requirements, see [Windows Autopilot software requirements](requirements?tabs=software).
+Self-deploying mode uses a device's Trusted Platform Module (TPM) 2.0 hardware to authenticate the device into an organization's Microsoft Entra tenant. Devices without TPM 2.0 can't be used with this mode. Devices must also support TPM device attestation. All new Windows devices should meet these requirements. The TPM attestation process also requires access to a set of HTTPS URLs that are unique for each TPM provider. For more information, see the entry for Windows Autopilot self-Deploying mode and Windows Autopilot pre-provisioning in [Networking requirements](requirements?tabs=networking#windows-autopilot-self-deploying-mode-and-windows-autopilot-pre-provisioning). For Windows Autopilot software requirements, see [Windows Autopilot software requirements](requirements?tabs=software).
 
 Important
 
-If a self-deploying mode deployment is attempted on a device that doesn't have support for TPM 2.0 or on a virtual machine, the process fails when verifying the device with an **0x800705B4** timeout error. This limitation includes Hyper-V virtual TPMs.
+If you attempt a self-deploying mode deployment on a device that doesn't have support for TPM 2.0 or on a virtual machine, the process fails. When verifying the device, a **0x800705B4** timeout error occurs. This limitation includes Hyper-V virtual TPMs.
 
-See [Windows Autopilot known issues](known-issues) and [Troubleshooting Windows Autopilot device import and enrollment](troubleshooting-faq#troubleshooting-windows-autopilot-device-import-and-enrollment) to review other known errors and solutions.
+To review other known errors and solutions, see [Windows Autopilot known issues](known-issues) and [Troubleshooting Windows Autopilot device import and enrollment](troubleshooting-faq#troubleshooting-windows-autopilot-device-import-and-enrollment).
 
-An organization-specific logo and organization name can be displayed during the Windows Autopilot process. To do so, Microsoft Entra Company Branding must be configured with the images and text that need to be displayed. See [Quickstart: Add company branding to your sign-in page in Microsoft Entra ID](/en-us/azure/active-directory/fundamentals/customize-branding) for more details.
+You can display an organization-specific logo and organization name during the Windows Autopilot process. To do so, you must configure Microsoft Entra Company Branding with the images and text that need to be displayed. See [Quickstart: Add company branding to your sign-in page in Microsoft Entra ID](/en-us/azure/active-directory/fundamentals/customize-branding).
 
 ## Step by step
 
-To deploy in self-deploying mode Windows Autopilot, the following preparation steps need to be completed:
+To deploy in self-deploying mode Windows Autopilot, complete the following preparation steps:
 
-1. Create a Windows Autopilot profile for self-deploying mode with the desired settings. In Microsoft Intune, this mode is explicitly chosen when creating the profile. It isn't possible to create a profile in the Microsoft Store for Business or Partner Center for self-deploying mode.
+1. Create a Windows Autopilot profile for self-deploying mode with the settings you want. In Microsoft Intune, this mode is explicitly chosen when creating the profile. It isn't possible to create a profile in the Microsoft Store for Business or Partner Center for self-deploying mode.
 2. If using Intune, create a device group in Microsoft Entra ID and assign the Windows Autopilot profile to that group. Ensure that the profile is assigned to the device before attempting to deploy that device.
 3. Boot the device, connecting it to Wi-Fi if necessary, then wait for the provisioning process to complete.
 
 ## Validation
 
-When using Windows Autopilot to deploy in self-deploying mode, the following end-user experience should be observed:
+When you use Windows Autopilot to deploy in self-deploying mode, the deployment process follows these steps:
 
-- Once the device connects to a network, the Windows Autopilot profile is downloaded.
-- If connected to Ethernet, and the Windows Autopilot profile is configured to skip them, the following pages aren't displayed:
+- The device connects to a network and downloads the Windows Autopilot profile.
+- If the device connects through Ethernet and the Windows Autopilot profile is set to skip them, the deployment process doesn't display the following pages:
 
-    - Language and locale.
-    - Keyboard layout.
+    - Language and locale
+    - Keyboard layout
 
-    Otherwise, manual steps are required:
+    Otherwise, the user needs to complete these steps manually:
 
-    - If multiple languages are preinstalled in Windows, the user must pick a language.
-    - The user must pick a locale and a keyboard layout, and optionally a second keyboard layout.
-- If connected via Ethernet, no network prompt is expected. If no Ethernet connection is available and Wi-Fi is built in, the user needs to connect to a wireless network.
-- Windows checks for critical out-of-box experience (OOBE) updates, and if any are available they're automatically installed, rebooting if necessary.
+    - If Windows has multiple preinstalled languages, the user must select a language.
+    - The user must select a locale and a keyboard layout, and optionally a second keyboard layout.
+- If the device connects through Ethernet, the deployment process doesn't prompt for a network. If no Ethernet connection is available and the device has built-in Wi-Fi, the user needs to connect to a wireless network.
+- Windows checks for critical out-of-box experience (OOBE) updates. If any updates are available, Windows automatically installs them and reboots if necessary.
 - The device joins Microsoft Entra ID.
 - The device enrolls in Intune or other configured MDM services after it joins Microsoft Entra ID.
-- The [enrollment status page](enrollment-status) is displayed.
-- Depending on the device settings deployed, the device will either:
+- The deployment process displays the [enrollment status page](enrollment-status).
+- Depending on the deployed device settings, the device either:
 
-    - Remain at the sign-on screen, where any member of the organization can sign in by specifying their Microsoft Entra credentials.
-    - Automatically sign in as a local account, for devices configured as a kiosk or digital signage.
+    - Remains at the sign-in screen, where any member of the organization can sign in by providing their Microsoft Entra credentials.
+    - Automatically signs in as a local account, for devices configured as a kiosk or digital signage.
 
 Note
 
-Deploying Exchange ActiveSync (EAS) policies using self-deploying mode for kiosk deployments causes autologon functionality to fail.
+Deploying Exchange ActiveSync (EAS) policies by using self-deploying mode for kiosk deployments causes autologon functionality to fail.
 
-In case the observed results don't match these expectations, consult the [Troubleshooting Windows Autopilot overview](troubleshooting-faq#troubleshooting-windows-autopilot-overview) documentation.
+If the results you observe don't match these expectations, see [Troubleshooting Windows Autopilot overview](troubleshooting-faq#troubleshooting-windows-autopilot-overview).

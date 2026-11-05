@@ -15,7 +15,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: Windows Autopilot Reset takes the device back to a business-ready state, allowing the next user to sign in and get productive quickly and easily.
-ms.date: 2025-08-13T00:00:00.0000000Z
+ms.date: 2026-10-28T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: how-to
@@ -44,7 +44,7 @@ platformId: 3fc857fb-18cf-578a-4da1-1988efe09795
 
 # Windows Autopilot Reset | Microsoft Learn
 
-Windows Autopilot Reset takes the device back to a business-ready state, allowing the next user to sign in and get productive quickly and simply. Specifically, Windows Autopilot Reset:
+Windows Autopilot Reset takes the device back to a business-ready state, so the next user can sign in and start working quickly and easily. Specifically, Windows Autopilot Reset:
 
 - Removes personal files, apps, and settings.
 - Reapplies a device's original settings.
@@ -56,15 +56,15 @@ The Windows Autopilot Reset process automatically keeps information from the exi
 
 - Wi-Fi connection details.
 - Provisioning packages previously applied to the device.
-- A provisioning package present on a USB drive when the reset process is started.
+- A provisioning package present on a USB drive when the reset process starts.
 - Microsoft Entra device membership and mobile device management (MDM) enrollment information.
 - Simple Certificate Enrollment Protocol (SCEP) certificates.
 
-Windows Autopilot Reset blocks the user from accessing the desktop until this information is restored, including reapplying any provisioning packages. For devices enrolled in an MDM service, Windows Autopilot Reset also blocks until an MDM sync is completed.
+Windows Autopilot Reset blocks the user from accessing the desktop until it restores this information, including reapplying any provisioning packages. For devices enrolled in an MDM service, Windows Autopilot Reset also blocks until an MDM sync is completed.
 
 Note
 
-Windows Autopilot Reset doesn't support Microsoft Entra hybrid joined devices or Surface Hub devices. For Microsoft Entra hybrid joined devices and Surface Hub devices, a full device wipe is required. When a hybrid device goes through a full device reset, it might take up to 24 hours for it to be ready to be deployed again. The request can be expedited by re-registering the device.
+Windows Autopilot Reset doesn't support Microsoft Entra hybrid joined devices or Surface Hub devices. For Microsoft Entra hybrid joined devices and Surface Hub devices, you need to perform a full device wipe. When a hybrid device goes through a full device reset, it might take up to 24 hours for it to be ready to deploy again. You can expedite the request by re-registering the device.
 
 ## Scenarios
 
@@ -73,7 +73,7 @@ Windows Autopilot Reset supports two scenarios:
 - Local reset started by IT personnel or other administrators from the organization.
 - Remote reset started remotely by IT personnel via an MDM service such as Microsoft Intune.
 
-Additional requirements and configuration details apply with each scenario.
+Each scenario has its own requirements and configuration details.
 
 ## Reset devices with local Windows Autopilot Reset
 
@@ -81,9 +81,9 @@ IT admins can use a local Windows Autopilot Reset to:
 
 - Quickly remove personal files, apps, and settings.
 - Reset Windows devices from the lock screen.
-- Apply original settings and management enrollment (Microsoft Entra ID and device management).
+- Apply original settings and management enrollment, including Microsoft Entra ID and device management.
 
-The device is then ready to use. With a local Windows Autopilot Reset, devices are returned to a fully configured or known IT-approved state.
+The device is then ready to use. By using a local Windows Autopilot Reset, IT admins return devices to a fully configured or known IT-approved state.
 
 To enable local Windows Autopilot Reset in supported versions of Windows:
 
@@ -92,26 +92,25 @@ To enable local Windows Autopilot Reset in supported versions of Windows:
 
 ### Enable local Windows Autopilot Reset
 
-To enable a local Windows Autopilot Reset, the **DisableAutomaticReDeploymentCredentials** policy must be configured. This policy is documented in the [CredentialProviders](/en-us/windows/client-management/mdm/policy-csp-credentialproviders), **CredentialProviders/DisableAutomaticReDeploymentCredentials** configuration service provider (CSP) policy. By default, local Windows Autopilot Reset is disabled. This default ensures that a local Windows Autopilot Reset isn't triggered accidentally.
+To enable a local Windows Autopilot Reset, configure the **DisableAutomaticReDeploymentCredentials** policy. This policy is documented in the [CredentialProviders](/en-us/windows/client-management/mdm/policy-csp-credentialproviders) section, under **CredentialProviders/DisableAutomaticReDeploymentCredentials** configuration service provider (CSP) policy. By default, local Windows Autopilot Reset is disabled. This default ensures that a local Windows Autopilot Reset isn't triggered accidentally.
 
-The policy can be set using one of these methods:
+Use one of these methods to set the policy:
 
-- MDM provider.
+- MDM provider
 
-    - When Intune is used, a new device configuration profile can be created with the following settings:
+    - When you use Intune, create a new device configuration profile with the following settings:
 
         - **Platform** = **Windows 10 and later**.
         - **Profile type** = **Device restrictions**.
         - **Category** = **General**.
         - **Autopilot Reset** = **Allow**. Deploy this setting to all devices where a local reset should be permitted.
-    - If using an MDM provider other than Intune, check the MDM provider's documentation on how to set this policy.
-- Windows Configuration Designer.
+    - If you use an MDM provider other than Intune, check the MDM provider's documentation on how to set this policy.
+- Windows Configuration Designer
 
-[Windows Configuration Designer](/en-us/windows/configuration/provisioning-packages/provisioning-create-package) can be used to set the **Runtime settings &gt; Policies &gt; CredentialProviders &gt; DisableAutomaticReDeploymentCredentials** setting to `0` and then create a provisioning package.
+    Use [Windows Configuration Designer](/en-us/windows/configuration/provisioning-packages/provisioning-create-package) to set the **Runtime settings &gt; Policies &gt; CredentialProviders &gt; DisableAutomaticReDeploymentCredentials** setting to `0` and then create a provisioning package.
+- Set up School PCs app
 
-- Set up School PCs app.
-
-The latest release of the **Set up School PCs** app supports enabling local Windows Autopilot Reset.
+    The latest release of the **Set up School PCs** app supports enabling local Windows Autopilot Reset.
 
 ### Trigger local Windows Autopilot Reset
 
@@ -120,22 +119,22 @@ A local Windows Autopilot Reset is a two-step process:
 1. Trigger the Windows Autopilot Reset.
 2. Authenticate.
 
-Once these two steps are performed, the Windows Autopilot Reset executes. Once the Windows Autopilot Reset is done, the device is again ready for use.
+After you perform these two steps, the Windows Autopilot Reset runs. When the Windows Autopilot Reset finishes, the device is ready to use again.
 
 **To trigger a local Windows Autopilot Reset:**
 
-On the device where the local Windows Autopilot reset is being performed:
+On the device where you want to perform the local Windows Autopilot Reset:
 
-1. If a provisioning package was created, plug in the USB drive that contains the provisioning package.
+1. If you have a provisioning package, plug in the USB drive that contains the provisioning package.
 2. From the Windows device lock screen, enter the keystroke CTRL + WIN + R.
 
-    These keystrokes open up a custom sign-in screen for the local Windows Autopilot Reset. The screen serves two purposes:
+    These keystrokes open a custom sign-in screen for the local Windows Autopilot Reset. The screen serves two purposes:
 
-    1. Confirm/verify that the end user has the right to trigger Local Windows Autopilot Reset.
-    2. Notify the user in case a provisioning package, created using Windows Configuration Designer, is being used as part of the process.
+    - Confirm that the user has the right to trigger local Windows Autopilot Reset.
+    - Notify the user if the process uses a provisioning package created by using Windows Configuration Designer.
 3. To trigger the local Windows Autopilot Reset, sign in to the device with an account that has local admin credentials.
 
-Once the local Windows Autopilot Reset is triggered, the reset process starts. Once provisioning is complete, the device is again ready for use.
+When you trigger the local Windows Autopilot Reset, the reset process starts. When provisioning is complete, the device is ready to use again.
 
 Note
 
@@ -143,19 +142,19 @@ When local Windows Autopilot Reset is used on a device, the device's primary use
 
 ## Reset devices with remote Windows Autopilot Reset
 
-An MDM service such a Microsoft Intune can be used to start the remote Windows Autopilot reset process. Resetting in this way avoids the need for IT staff to visit each machine to start the process.
+You can use an MDM service such as Microsoft Intune to start the remote Windows Autopilot reset process. Resetting in this way avoids the need for IT staff to visit each machine to start the process.
 
-To enable a device for a remote Windows Autopilot Reset, the device must be MDM managed and joined to Microsoft Entra ID. Additionally, for Intune, the Intune Service Administrator role is required for remote Windows Autopilot Reset. For more information, see [Add users and grant administrative permission to Intune](/en-us/intune/fundamentals/tenant-administration/add-users).
+To enable a device for a remote Windows Autopilot Reset, the device must be MDM managed and joined to Microsoft Entra ID. Also, for Intune, the Intune Service Administrator role is required for remote Windows Autopilot Reset. For more information, see [Add users and grant administrative permission to Intune](/en-us/intune/fundamentals/tenant-administration/add-users).
 
 ### Triggering a remote Windows Autopilot Reset
 
-To trigger a remote Windows Autopilot Reset via Intune, follow these steps:
+To trigger a remote Windows Autopilot Reset by using Intune, follow these steps:
 
-1. Navigate to **Devices** tab in the Intune admin center.
+1. In the Intune admin center, go to the **Devices** tab.
 2. In the **All devices** view, select the targeted reset devices and then select **More** to view device actions.
 3. Select **Autopilot Reset** to start the reset task.
 
-Once the reset is complete, the device is again ready for use.
+When the reset is complete, the device is again ready for use.
 
 Note
 
@@ -163,7 +162,7 @@ When remote Windows Autopilot Reset is used on a device, the device's primary us
 
 ## Troubleshooting
 
-Windows Autopilot Reset requires that the [Windows Recovery Environment (WinRE)](/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is correctly configured and enabled on the device. Before the Windows Autopilot Reset is started, it checks if WinRE is configured and enabled. If WinRE isn't configured and enabled, then the Windows Autopilot reset fails immediately on the device and an error such as `Error code: ERROR_NOT_SUPPORTED (0x80070032)` is reported in the logs.
+Windows Autopilot Reset requires that the [Windows Recovery Environment (WinRE)](/en-us/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) is correctly configured and enabled on the device. Before the Windows Autopilot Reset is started, it checks if WinRE is configured and enabled. If WinRE isn't configured and enabled, the Windows Autopilot reset fails immediately on the device and an error such as `Error code: ERROR_NOT_SUPPORTED (0x80070032)` is reported in the logs.
 
 To make sure WinRE is enabled, use the [REAgentC.exe tool](/en-us/windows-hardware/manufacture/desktop/reagentc-command-line-options) to run the following command:
 
