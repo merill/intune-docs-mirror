@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Configure applications with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/configure-apps
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: education
 description: Learn how to configure applications with Microsoft Intune in preparation for device deployment.
 zone_pivot_groups: platforms-windows-ios

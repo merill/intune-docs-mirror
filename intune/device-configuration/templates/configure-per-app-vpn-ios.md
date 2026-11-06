@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Set up per-app VPN for iOS/iPadOS devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-per-app-vpn-ios
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration

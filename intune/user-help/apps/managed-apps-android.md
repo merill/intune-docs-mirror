@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Managed work and school apps for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/apps/managed-apps-android
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn about managed apps and where to get Android apps for work or school.

@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Configure Microsoft Intune for increased tenant security - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/ref-zero-trust-tenant
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: Secure your tenant with Microsoft Intune to support your Zero Trust journey.
 ms.topic: reference

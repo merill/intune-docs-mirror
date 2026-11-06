@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Manage Microsoft 365 (Office) for iOS and Android With Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-microsoft-365-mobile
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS

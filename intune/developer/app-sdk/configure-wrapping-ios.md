@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Wrap iOS Apps With the Intune App Wrapping Tool - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/app-sdk/configure-wrapping-ios
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS

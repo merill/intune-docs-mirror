@@ -8,14 +8,12 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration
 description: Use the Microsoft Intune settings catalog to add, configure, or restrict features on Apple devices. This article lists and describes the settings you can configure.
 ms.topic: reference
 ms.date: 2024-11-13T00:00:00.0000000Z
-ms.reviewer: paoloma
 locale: en-us
 document_id: d7953ef1-5451-944d-b861-3cef4c4529db
 document_version_independent_id: d7953ef1-5451-944d-b861-3cef4c4529db

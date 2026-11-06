@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Configure Windows Driver Update Policies - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/configure-driver-update-policy
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: Learn how to create, approve, deploy, and pause Windows driver updates using Intune policies to keep Windows devices current and stable.
 ms.date: 2026-01-13T00:00:00.0000000Z

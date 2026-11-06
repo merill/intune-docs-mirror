@@ -3,13 +3,12 @@ layout: Landing
 title: App protection - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/
 summary: Protect corporate data on managed and unmanaged devices with app protection policies, conditional launch rules, and data transfer controls.
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: apps
 description: Create and manage app protection policies in Microsoft Intune to safeguard corporate data, control data transfer, and enforce conditional launch rules.
 ms.topic: landing-page

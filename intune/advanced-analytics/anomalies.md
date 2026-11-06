@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Anomalies Report for Proactive Device Issue Detection - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/advanced-analytics/anomalies
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: suite
 description: Use the anomalies report in Advanced Analytics to monitor device health, identify issues early, and prioritize fixes to improve endpoint reliability.
 ms.date: 2026-03-24T00:00:00.0000000Z

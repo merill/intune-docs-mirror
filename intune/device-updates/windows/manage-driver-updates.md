@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Manage Windows Driver Updates - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/manage-driver-updates
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: Learn how to manage Windows driver updates using Intune driver update policies to keep Windows devices current and stable.
 ms.date: 2026-01-14T00:00:00.0000000Z

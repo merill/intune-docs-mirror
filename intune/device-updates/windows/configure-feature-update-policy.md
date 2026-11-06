@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Configure Windows Feature Update Policies - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/configure-feature-update-policy
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: Learn about Windows feature update polies and how to manage them in Microsoft Intune.
 ms.date: 2026-01-14T00:00:00.0000000Z

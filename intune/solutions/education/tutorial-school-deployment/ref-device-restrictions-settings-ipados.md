@@ -8,7 +8,6 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: education
 description: Learn about common iPads restrictions configuration used by Education organizations in Intune.
 ms.date: 2024-10-16T00:00:00.0000000Z

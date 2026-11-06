@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Avoid policy conflicts - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/policy-conflicts
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: education
 description: Learn how to avoid policy conflicts when creating and deploying new policies.
 ms.date: 2024-07-11T00:00:00.0000000Z

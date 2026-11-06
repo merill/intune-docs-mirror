@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Report a problem in Company Portal for macOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/diagnostics/collect-errors-macos
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Report an enrollment or app problem in the Intune Company Portal app for Mac devices.

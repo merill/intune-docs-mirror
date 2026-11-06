@@ -2,13 +2,12 @@
 layout: Conceptual
 title: What's new in version 2609 - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/changes/whats-new-version-2609
-author: sccmavenger
-ms.author: dannygu
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: configuration-manager
-manager: laurawi
 feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
 ms.reviewer:
 - umaikhan
@@ -17,7 +16,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Get details about changes and new capabilities introduced in version 2609 of Configuration Manager current branch.
-ms.date: 2026-09-18T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: whats-new
 ms.collection: tier3
@@ -122,6 +121,12 @@ Configuration Manager updates Microsoft Visual C++ Redistributable to version 14
 ### Shared key access automatically disabled for CMG storage
 
 Shared key access is automatically disabled for cloud management gateway (CMG) storage, even if you haven't previously selected the option to disable it in the console.
+
+Important
+
+Before updating a site that has a CMG, verify that the CMG server application's service principal has the required Azure role-assignment permissions at the CMG resource group, and that **Microsoft.Maintenance** is registered in the subscription. Existing CMGs that previously used shared-key access also need these prerequisites. Missing permissions or provider registration can cause the CMG deployment update to fail.
+
+For the required permissions and verification steps, see [Configure Azure RBAC permissions for the server app](../../clients/manage/cmg/configure-azure-ad#configure-azure-rbac-permissions-for-the-server-app) and [Configure Azure resource providers](../../clients/manage/cmg/configure-azure-ad#configure-azure-resource-providers).
 
 ### CMG virtual machine scale set image uses Windows Server 2022
 

@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Introduction to the tutorial for deploying and managing devices in a school - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: education
 description: Introduction to deployment and management of devices in education environments.
 ms.date: 2024-05-02T00:00:00.0000000Z

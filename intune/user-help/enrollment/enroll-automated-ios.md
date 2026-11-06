@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Set up your iOS/iPadOS device at work or school - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-automated-ios
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to enroll a company or school-owned iOS/iPadOS device in Microsoft Intune so that you can access Wi-Fi, files, and apps for work.

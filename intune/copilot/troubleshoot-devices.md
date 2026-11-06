@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Copilot in Intune shows device information and helps troubleshoot - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/copilot/troubleshoot-devices
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.update-cycle: 180-days
 description: Microsoft Security Copilot in Intune can help you get information about your devices, compare devices, and get error information. Use this information to help you manage and troubleshoot device issues.
 ms.date: 2026-05-26T00:00:00.0000000Z

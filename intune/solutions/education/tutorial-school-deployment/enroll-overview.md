@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Device enrollment overview - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/enroll-overview
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: education
 description: Learn about the different options to enroll Windows devices in Microsoft Intune.
 ms.date: 2024-05-02T00:00:00.0000000Z

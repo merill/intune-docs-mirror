@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Reports for Windows Driver Update Policies reports - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/windows/monitor-driver-updates
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: Learn how to use Intune reports to monitor Windows driver updates for devices assigned to Windows Driver update policies.
 ms.date: 2026-01-12T00:00:00.0000000Z

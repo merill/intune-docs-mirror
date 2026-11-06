@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Enroll a Linux device in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-linux
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Enroll a work provided Linux device in Microsoft Intune to get secure access to work or school resources in Microsoft Edge.

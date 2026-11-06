@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Migrate to a new iPhone for work - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/migrate-work-account-ios
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to transfer your work access from an old iPhone to a new iPhone.

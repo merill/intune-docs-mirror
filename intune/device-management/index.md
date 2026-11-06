@@ -3,13 +3,12 @@ layout: Landing
 title: Device management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/
 summary: Perform operational actions on managed devices, run scripts and remediations, view device inventory, and generate reports in Microsoft Intune.
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 description: Run remote actions, manage scripts and remediations, view device inventory, and export reports in Microsoft Intune.
 ms.topic: landing-page
 ms.date: 2026-05-04T00:00:00.0000000Z

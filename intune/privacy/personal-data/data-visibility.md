@@ -2,13 +2,12 @@
 layout: Conceptual
 title: View and correct personal data collected by Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/privacy/personal-data/data-visibility
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 description: Learn how to view and correct personal data that's been collected by Intune.
 ms.date: 2022-04-08T00:00:00.0000000Z
 ms.topic: overview

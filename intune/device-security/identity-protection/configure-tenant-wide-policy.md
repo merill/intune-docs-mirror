@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Configure a tenant-wide Windows Hello for Business policy with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/identity-protection/configure-tenant-wide-policy
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: Apply policy for Windows Hello for Business on devices at the time they enroll with Microsoft Intune
 ms.date: 2024-07-23T00:00:00.0000000Z

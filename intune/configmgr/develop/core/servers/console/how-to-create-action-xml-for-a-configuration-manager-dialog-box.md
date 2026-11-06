@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Create Action XML for a Dialog Box - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/core/servers/console/how-to-create-action-xml-for-a-configuration-manager-dialog-box
-author: sccmavenger
-ms.author: dannygu
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: configuration-manager
-manager: laurawi
 feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
 ms.reviewer:
 - umaikhan

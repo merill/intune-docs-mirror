@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Windows Hello for Business settings in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/identity-protection/ref-settings
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: protect
 description: View details for Windows Hello for Business settings you configure in an Intune identity protection profile for device groups in Intune.
 ms.date: 2024-07-09T00:00:00.0000000Z

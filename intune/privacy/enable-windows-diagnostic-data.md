@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Enable Windows diagnostic data and license verification - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/privacy/enable-windows-diagnostic-data
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 description: Learn how to enable Intune tenant settings to use Windows diagnostic data and verify Windows licenses required for dependent features.
 ms.date: 2026-02-24T00:00:00.0000000Z
 ms.topic: how-to

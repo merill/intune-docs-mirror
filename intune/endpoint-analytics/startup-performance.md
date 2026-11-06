@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Startup Performance Report in Endpoint Analytics - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/endpoint-analytics/startup-performance
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: endpoint-analytics
 description: Learn how startup performance in Microsoft Intune endpoint analytics helps analyze boot times, identify issues, and optimize device performance.
 ms.date: 2025-12-03T00:00:00.0000000Z

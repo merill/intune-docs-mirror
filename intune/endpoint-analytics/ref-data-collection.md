@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Endpoint Analytics Data Collection - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/endpoint-analytics/ref-data-collection
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: endpoint-analytics
 description: Understand endpoint analytics data collection in Microsoft Intune, including data flow, privacy, and how to stop gathering device data.
 ms.date: 2025-10-09T00:00:00.0000000Z

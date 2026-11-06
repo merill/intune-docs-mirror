@@ -6,13 +6,12 @@ summary: >
   <p><em>Applies to: Configuration Manager (current branch)</em></p>
 
   <p>These frequently asked questions (FAQ) about Configuration Manager on Microsoft Azure can help you understand when to use it and how to configure it.</p>
-author: sccmavenger
-ms.author: dannygu
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: configuration-manager
-manager: laurawi
 feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
 ms.reviewer:
 - umaikhan

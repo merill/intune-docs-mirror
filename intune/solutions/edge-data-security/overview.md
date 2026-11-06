@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Secure Your Corporate Data in Intune with Microsoft Edge for Business - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/edge-data-security/overview
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - FocusArea_Apps_AppManagement
 ms.reviewer: samarti

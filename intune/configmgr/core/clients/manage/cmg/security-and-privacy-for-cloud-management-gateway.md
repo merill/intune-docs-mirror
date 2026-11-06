@@ -2,13 +2,12 @@
 layout: Conceptual
 title: CMG security and privacy - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/core/clients/manage/cmg/security-and-privacy-for-cloud-management-gateway
-author: sccmavenger
-ms.author: dannygu
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: configuration-manager
-manager: laurawi
 feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/4669adfc-ee1b-ec11-b6e7-0022481f8472
 ms.reviewer:
 - umaikhan
@@ -17,7 +16,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about guidance and recommendations for security and privacy with the cloud management gateway.
-ms.date: 2022-04-08T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.topic: article
 ms.subservice: core-infra
 ms.collection: tier3
@@ -40,11 +39,11 @@ source_path: intune/configmgr/core/clients/manage/cmg/security-and-privacy-for-c
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
 - https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/1433a524-c01f-4b87-beab-670c040dea4f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
 - https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/312f1f05-a431-4193-8a4d-e6245d5966de
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 1ec4a922-41ab-9251-a7c0-0d73ec3b3494
 ---
 
@@ -77,7 +76,7 @@ The CMG connection point uses the following methods:
 - Reports connection status to show service health status in the console.
 - Reports traffic per endpoint every five minutes.
 
-Configuration Manager rotates the storage account key for the CMG. This process happens automatically every 180 days.
+For CMG deployments that use shared-key storage access on versions earlier than 2609, Configuration Manager rotates the storage account key automatically every 180 days. Starting in version 2609, shared-key access is automatically disabled for CMG storage, including existing deployments that previously used it. CMG storage operations use Microsoft Entra authentication instead. For the required Azure permissions and provider registration, see [Configure Microsoft Entra ID for CMG](configure-azure-ad#configure-azure-rbac-permissions-for-the-server-app).
 
 ### Security mechanisms and protections
 
@@ -87,7 +86,13 @@ The CMG resources in Azure are part of the Azure platform as a service (PaaS). T
 
 The service principals are authenticated by the server app registration in Microsoft Entra ID. This app is also known as the *web app*. You create this app registration automatically when you create the CMG, or manually by an Azure administrator in advance. For more information, see [Manually register Microsoft Entra apps for the CMG](manually-register-azure-ad-apps).
 
-The secret keys for the Azure apps are encrypted and stored in the Configuration Manager site database. As part of the setup process, the server app has **Read Directory Data** permission to the Microsoft Graph API. It also has the contributor role on the resource group that hosts the CMG. Each time the app needs to access resources like Microsoft Graph, it gets an access token from Azure, which it uses to access the cloud resource.
+The secret keys for the Azure apps are encrypted and stored in the Configuration Manager site database. As part of the setup process, the server app has **Read Directory Data** permission to the Microsoft Graph API. Its service principal also needs **Contributor** or equivalent resource-management permissions on the resource group that hosts the CMG. Each time the app needs to access resources like Microsoft Graph, it gets an access token from Azure, which it uses to access the cloud resource.
+
+For Microsoft Entra-authenticated storage, the server application also needs permission to manage the required **Storage Blob Data Contributor** and **Storage Table Data Contributor** role assignments. Contributor alone doesn't grant permission to create role assignments. Use a **Role Based Access Control Administrator** assignment constrained to those two storage data roles at the CMG resource group, or equivalent approved permissions. Verify inherited access and any conditions before adding a new assignment. For details, see [Configure Azure RBAC permissions for the server app](configure-azure-ad#configure-azure-rbac-permissions-for-the-server-app).
+
+The administrator who grants these permissions needs the appropriate Azure RBAC privileges at the target scope. Registering **Microsoft.Maintenance** separately requires provider-registration permission at the subscription scope. These operator permissions aren't the same as the runtime permissions granted to the CMG application. For details, see [Configure Azure resource providers](configure-azure-ad#configure-azure-resource-providers).
+
+Disabling shared-key access to the storage account doesn't remove the server application's client-secret requirement. Storage account keys and Microsoft Entra application secrets are different credentials.
 
 Microsoft Entra ID can automatically rotate the secret key for these apps, or you can do it manually. When the secret key changes, you need to [renew the secret key](../../../servers/deploy/configure/azure-services-wizard#bkmk_renew) in Configuration Manager.
 

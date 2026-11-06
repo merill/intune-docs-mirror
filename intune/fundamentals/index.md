@@ -3,13 +3,12 @@ layout: Landing
 title: Fundamentals - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/
 summary: Learn about Microsoft Intune architecture, licensing, setup, and shared infrastructure that supports all Intune workloads.
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: fundamentals
 description: Get started with Microsoft Intune — architecture, licensing, tenant setup, RBAC, certificates, filters, and platform support.
 ms.topic: landing-page

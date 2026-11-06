@@ -3,13 +3,12 @@ layout: Landing
 title: Application management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/
 summary: Deploy, configure, and monitor applications across your managed devices with Microsoft Intune.
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: apps
 description: Deploy, configure, and monitor applications across managed devices with Microsoft Intune app management.
 ms.topic: landing-page

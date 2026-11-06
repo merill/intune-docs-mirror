@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Data collection in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/privacy/data-handling/data-collection
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 description: Learn about personal data collected in Intune.
 ms.date: 2025-06-25T00:00:00.0000000Z
 ms.topic: concept-article

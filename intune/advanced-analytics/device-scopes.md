@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Device Scopes - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/advanced-analytics/device-scopes
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: suite
 description: Learn how to use device scopes in Microsoft Intune with scope tags for custom device reporting and targeted insights.
 ms.date: 2026-03-24T00:00:00.0000000Z

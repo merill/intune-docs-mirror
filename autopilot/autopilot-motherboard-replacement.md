@@ -5,7 +5,6 @@ canonicalUrl: https://learn.microsoft.com/en-us/autopilot/autopilot-motherboard-
 author: TimShererWithAquent
 ms.author: v-tishe
 ms.reviewer: v-tishe
-manager: laurawi
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

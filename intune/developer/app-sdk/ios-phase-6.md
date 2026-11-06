@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Microsoft Intune App SDK for iOS Developer Guide - App Protection CA Support (Optional) - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/app-sdk/ios-phase-6
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS

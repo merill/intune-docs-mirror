@@ -5,7 +5,6 @@ canonicalUrl: https://learn.microsoft.com/en-us/autopilot/autopilot-hybrid-conne
 author: arob98
 ms.author: angrobe
 ms.reviewer: madakeva
-manager: laurawi
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

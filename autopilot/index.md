@@ -6,7 +6,6 @@ summary: Windows Autopilot and Windows Autopilot device preparation is a collect
 author: arob98
 ms.author: angrobe
 ms.reviewer: madakeva
-manager: laurawi
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

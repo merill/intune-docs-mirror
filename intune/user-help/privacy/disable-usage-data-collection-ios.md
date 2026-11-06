@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Share Company Portal usage data with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/privacy/disable-usage-data-collection-ios
-author: lenewsad
-ms.author: lanewsad
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to turn off Microsoft data collection in Intune Company Portal for iOS to prevent usage and diagnostic data from automatically being shared with Intune.

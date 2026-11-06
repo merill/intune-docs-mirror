@@ -3,13 +3,12 @@ layout: Landing
 title: Monitor and troubleshoot - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/monitor-troubleshoot
 summary: Monitor device health and compliance, query device data with Advanced Analytics, and get support when issues arise.
-author: paolomatarazzo
-ms.author: paoloma
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 description: Monitor, analyze, and troubleshoot Microsoft Intune deployments with Endpoint Analytics, Advanced Analytics, Remote Help, and reports.
 ms.topic: landing-page
 ms.date: 2026-04-27T00:00:00.0000000Z

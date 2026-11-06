@@ -2,13 +2,12 @@
 layout: Conceptual
 title: Step 3. Integrate Mobile Threat Defense for App Protection Policy - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/edge-data-security/threat-defense-step-3
-author: nicholasswhite
-ms.author: nwhite
+author: arob98
+ms.author: angrobe
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-manager: laurawi
 ms.collection:
 - FocusArea_Apps_AppManagement
 ms.reviewer: samarti
