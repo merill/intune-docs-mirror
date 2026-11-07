@@ -77,7 +77,8 @@ Use one of the following procedures to clean an existing server:
 #### Clean an existing server for site server recovery only
 
 1. Delete SMS registry keys: `HKLM\Software\Microsoft\SMS`
-2. Delete any registry entries starting with `SMS` from `HKLM\System\CurrentControlSet\Services`. For example:
+2. Delete only registry entries that belong to Configuration Manager from `HKLM\System\CurrentControlSet\Services`. For example:
+
     - SMS\_DISCOVERY\_DATA\_MANAGER
     - SMS\_EXECUTIVE
     - SMS\_INBOX\_MONITOR
@@ -93,8 +94,10 @@ Use one of the following procedures to clean an existing server:
     - SMS\_STATE\_SYSTEM
     - SMS\_STATUS\_MANAGER
     - SMS\_WSUS\_SYNC\_MANAGER
-    - SMSvcHost 3.0.0.0
-    - SMSvcHost 4.0.0.0
+
+    Important
+
+    Don't delete the `SMSvcHost 3.0.0.0` or `SMSvcHost 4.0.0.0` registry entries. These entries belong to .NET Framework, not Configuration Manager.
 3. Uninstall the Configuration Manager console
 4. Restart the server
 5. Confirm that all of the above registry keys are deleted.
