@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot self-deploying mode - Step 4 of 6 - Create a device group | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/self-deploying/self-deploying-device-group
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

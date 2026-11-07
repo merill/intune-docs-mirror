@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Console extension registration through community hub - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/core/servers/console/console-extension-register
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

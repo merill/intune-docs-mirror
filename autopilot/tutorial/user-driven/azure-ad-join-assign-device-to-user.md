@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra join - Step 7 of 8 - Assign Windows Autopilot device to a user | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/azure-ad-join-assign-device-to-user
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

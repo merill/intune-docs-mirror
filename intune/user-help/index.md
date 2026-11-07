@@ -3,8 +3,8 @@ layout: Landing
 title: User help - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/
 summary: Intune helps secure your device so that you can access work and school-related email, apps, and Wi-Fi from anywhere. Learn how to set up your device with Intune and use the Intune Company Portal and Microsoft Intune apps.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

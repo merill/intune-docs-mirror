@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add a Windows Driver to a Boot Image Package - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/osd/how-to-add-a-windows-driver-to-a-configuration-manager-boot-image-package
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure Universal Print Policy Using Settings Catalog - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/settings-catalog/configure-universal-print
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

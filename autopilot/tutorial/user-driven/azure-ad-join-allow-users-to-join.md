@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra join - Step 2 of 8 - Allow users to join devices to Microsoft Entra ID | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/azure-ad-join-allow-users-to-join
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Specify the Supported Platforms for a Driver - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/osd/how-to-specify-the-supported-platforms-for-a-driver
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

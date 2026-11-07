@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra hybrid join - Step 6 of 10 - Configure and assign the Enrollment Status Page (ESP) | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/hybrid-azure-ad-join-esp
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

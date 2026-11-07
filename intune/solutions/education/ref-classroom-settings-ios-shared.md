@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Intune shared device settings for the iOS/iPadOS Classroom app - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/ref-classroom-settings-ios-shared
-author: arob98
-ms.author: angrobe
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

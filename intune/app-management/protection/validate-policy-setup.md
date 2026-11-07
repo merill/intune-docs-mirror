@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Validate Your App Protection Policy Setup - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/validate-policy-setup
-author: arob98
-ms.author: angrobe
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

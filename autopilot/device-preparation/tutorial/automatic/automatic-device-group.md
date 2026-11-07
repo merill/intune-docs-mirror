@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot device preparation in automatic mode for Windows 365 - Step 2 of 6 - Create an assigned device group | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/tutorial/automatic/automatic-device-group
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

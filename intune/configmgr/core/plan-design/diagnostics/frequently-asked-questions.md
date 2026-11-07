@@ -6,8 +6,8 @@ summary: >
   <p><em>Applies to: Configuration Manager (current branch)</em></p>
 
   <p>This article provides answers to frequently asked questions about diagnostic and usage data in Configuration Manager.</p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

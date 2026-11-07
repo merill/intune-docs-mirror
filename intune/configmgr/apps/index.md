@@ -3,8 +3,8 @@ layout: Landing
 title: App management documentation - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/apps/
 summary: Use Configuration Manager to manage and deploy applications, scripts, and packages. Automate the deployments, or let users install apps from Software Center.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

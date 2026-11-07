@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Understand App Protection Policy Delivery and Timing - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/policy-delivery-timing
-author: arob98
-ms.author: angrobe
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

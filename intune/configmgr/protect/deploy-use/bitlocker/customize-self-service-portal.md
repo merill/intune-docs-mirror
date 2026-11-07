@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Customize the self-service portal - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/protect/deploy-use/bitlocker/customize-self-service-portal
-author: arob98
-ms.author: angrobe
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

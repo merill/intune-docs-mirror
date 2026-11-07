@@ -3,8 +3,8 @@ layout: Landing
 title: Device management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/
 summary: Perform operational actions on managed devices, run scripts and remediations, view device inventory, and generate reports in Microsoft Intune.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

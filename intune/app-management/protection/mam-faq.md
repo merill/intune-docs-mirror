@@ -4,8 +4,8 @@ title: Frequently asked questions about MAM and app protection - Microsoft Intun
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/mam-faq
 summary: >
   <p>This article provides answers to some frequently asked questions on Intune mobile application management (MAM) and Intune app protection.</p>
-author: arob98
-ms.author: angrobe
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

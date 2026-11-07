@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use Microsoft Tunnel VPN with Android devices that don't enroll with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/mam-android
-author: arob98
-ms.author: angrobe
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

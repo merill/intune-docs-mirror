@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use Microsoft Tunnel VPN gateway with Conditional Access policies - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/conditional-access
-author: arob98
-ms.author: angrobe
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

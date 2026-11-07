@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows 8.1 compliance settings in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-windows-8-1-settings
-author: arob98
-ms.author: angrobe
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

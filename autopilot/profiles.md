@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure Windows Autopilot Profiles | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/profiles
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

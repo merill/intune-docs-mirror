@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure Microsoft Cloud PKI root and issuing CA for Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/cloud-pki/configure-ca
-author: arob98
-ms.author: angrobe
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

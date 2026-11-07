@@ -3,8 +3,8 @@ layout: Landing
 title: Co-management documentation - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/comanage/
 summary: Co-management enables you to concurrently manage Windows 10 or later devices by using both Configuration Manager and Microsoft Intune.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

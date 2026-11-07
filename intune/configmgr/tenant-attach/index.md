@@ -3,8 +3,8 @@ layout: Landing
 title: Tenant attach documentation - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/tenant-attach/
 summary: Upload your Configuration Manager devices to the cloud service and take actions on them.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

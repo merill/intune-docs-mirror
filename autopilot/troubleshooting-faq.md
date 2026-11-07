@@ -14,8 +14,8 @@ summary: >
   </ul>
 
   <p>This article provides troubleshooting for common Windows Autopilot issues.</p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

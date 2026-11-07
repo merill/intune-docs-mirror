@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Microsoft Tunnel for MAM iOS SDK Developer Guide - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/app-sdk/tunnel-mam-ios
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

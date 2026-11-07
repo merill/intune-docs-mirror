@@ -2,8 +2,8 @@
 layout: Conceptual
 title: CheckLockRequests Method - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/reference/misc/checklockrequests-method-in-class-sms_objectlock
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

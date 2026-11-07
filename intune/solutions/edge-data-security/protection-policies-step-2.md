@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Step 2. Create App Protection Policies for Microsoft Edge for Business - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/edge-data-security/protection-policies-step-2
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

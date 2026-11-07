@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Mobile device client prerequisites - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/core/clients/deploy/prerequisites-for-deploying-clients-to-mobile-devices
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

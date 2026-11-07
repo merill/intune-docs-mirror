@@ -2,8 +2,8 @@
 layout: Conceptual
 title: How to Create an Application with the Script Deployment Type - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/apps/how-to-create-an-application-with-the-script-deployment-type
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

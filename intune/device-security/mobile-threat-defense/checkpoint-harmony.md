@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Check Point Harmony Mobile Mobile Threat Defense Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/mobile-threat-defense/checkpoint-harmony
-author: arob98
-ms.author: angrobe
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

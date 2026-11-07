@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Tutorial - Set up cloud-native Windows endpoints with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/cloud-native-endpoints/tutorial-cloud-native-setup
-author: arob98
-ms.author: angrobe
+author: jasonsandys-microsoft
+ms.author: jasandys
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

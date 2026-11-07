@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Microsoft Intune App SDK for iOS Developer Guide - Web-View Features - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/app-sdk/ios-phase-7
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

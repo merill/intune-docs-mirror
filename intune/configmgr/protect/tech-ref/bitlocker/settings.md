@@ -2,8 +2,8 @@
 layout: Conceptual
 title: BitLocker settings reference - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/protect/tech-ref/bitlocker/settings
-author: arob98
-ms.author: angrobe
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

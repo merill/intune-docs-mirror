@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create a Password Compliance Policy for Android Enterprise - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/compliance/quickstart-password-compliance-android
-author: arob98
-ms.author: angrobe
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

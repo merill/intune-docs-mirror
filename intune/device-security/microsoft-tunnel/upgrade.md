@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Upgrade the Microsoft Tunnel Gateway server software - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/upgrade
-author: arob98
-ms.author: angrobe
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

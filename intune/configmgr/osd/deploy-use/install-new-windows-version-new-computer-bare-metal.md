@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Install Windows on a new computer - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/osd/deploy-use/install-new-windows-version-new-computer-bare-metal
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

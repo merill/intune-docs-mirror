@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Optional diagnostic data that is collected by Intune client apps - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/privacy/data-handling/optional-diagnostic-data
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

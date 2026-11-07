@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra join - Step 3 of 8 - Register devices as Windows Autopilot devices | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/azure-ad-join-register-device
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

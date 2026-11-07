@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create configuration items for Windows 10 or later - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/compliance/deploy-use/create-configuration-items-for-windows-10-devices-managed-with-the-client
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

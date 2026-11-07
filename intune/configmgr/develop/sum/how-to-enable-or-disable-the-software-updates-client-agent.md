@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enable or Disable the Software Updates Client Agent - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/sum/how-to-enable-or-disable-the-software-updates-client-agent
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

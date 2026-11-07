@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Learn about using Microsoft Tunnel with Mobile Application Management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/mam
-author: arob98
-ms.author: angrobe
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

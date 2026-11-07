@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Convert BIOS to UEFI - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

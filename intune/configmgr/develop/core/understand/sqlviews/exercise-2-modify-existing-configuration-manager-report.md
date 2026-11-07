@@ -2,8 +2,8 @@
 layout: Conceptual
 title: 'Exercise 2: Modify an existing report - Configuration Manager | Microsoft Learn'
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/core/understand/sqlviews/exercise-2-modify-existing-configuration-manager-report
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

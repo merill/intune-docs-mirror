@@ -3,8 +3,8 @@ layout: Landing
 title: Developer resources - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/developer/
 summary: Use APIs, SDKs, and the Data Warehouse to extend and integrate with Microsoft Intune programmatically.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

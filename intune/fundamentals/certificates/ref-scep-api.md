@@ -2,8 +2,8 @@
 layout: Conceptual
 title: APIs to onboard third party certificate authorities - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/certificates/ref-scep-api
-author: arob98
-ms.author: angrobe
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use Multi Admin Approval with the Microsoft Graph API - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/multi-admin-approval-graph-api
-author: arob98
-ms.author: angrobe
+author: shmokash
+ms.author: shmokash
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

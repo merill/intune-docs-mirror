@@ -3,8 +3,8 @@ layout: Landing
 title: Device security - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/
 summary: Protect organizational data and devices by managing compliance, security baselines, endpoint protection, identity, and network access with Microsoft Intune.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

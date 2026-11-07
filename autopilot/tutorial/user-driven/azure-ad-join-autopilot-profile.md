@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra join - Step 6 of 8 - Create and assign a user-driven Microsoft Entra join Windows Autopilot profile | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/azure-ad-join-autopilot-profile
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

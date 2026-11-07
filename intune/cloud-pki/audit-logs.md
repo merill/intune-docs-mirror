@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Audit logs for Microsoft Intune cloud PKI - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/cloud-pki/audit-logs
-author: arob98
-ms.author: angrobe
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

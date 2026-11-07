@@ -56,8 +56,8 @@ summary: >
   <li><a href="#why-do-some-crashes-or-anomalies-sometimes-not-appear-in-the-anomalies-report--even-when-the-devices-are-correctly-licensed-and-enrolled">Why do some crashes or anomalies sometimes not appear in the anomalies report, even when the devices are correctly licensed and enrolled?</a></li>
 
   </ul>
-author: arob98
-ms.author: angrobe
+author: dagerrit
+ms.author: dagerrit
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

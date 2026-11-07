@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Assign a role to an Intune administrator - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/assign-role
-author: arob98
-ms.author: angrobe
+author: shmokash
+ms.author: shmokash
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

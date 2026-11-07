@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot deployment for existing devices in Intune and Configuration Manager - Step 7 of 10 - Deploy a Windows Autopilot task sequence to collection in Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/existing-devices/deploy-autopilot-task-sequence
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

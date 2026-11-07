@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Jamf Managed Device Compliance with Microsoft Entra ID - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/compliance/jamf-entra-id
-author: arob98
-ms.author: angrobe
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

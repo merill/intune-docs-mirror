@@ -3,8 +3,8 @@ layout: Landing
 title: Device updates - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/
 summary: Manage operating system and driver updates for Windows, Apple, and Android devices using update policies, rings, and expedited deployments.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

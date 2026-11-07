@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use standalone media to deploy Windows - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/osd/deploy-use/use-stand-alone-media-to-deploy-windows-without-using-the-network
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

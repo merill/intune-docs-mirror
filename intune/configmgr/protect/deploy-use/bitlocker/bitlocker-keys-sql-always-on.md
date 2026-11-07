@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Using SQL Always On when BitLocker recovery data is encrypted in the database - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/protect/deploy-use/bitlocker/bitlocker-keys-sql-always-on
-author: arob98
-ms.author: angrobe
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

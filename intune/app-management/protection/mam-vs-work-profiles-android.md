@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Mobile Application Management (MAM) and Android Enterprise Personally-Owned Work Profiles in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/protection/mam-vs-work-profiles-android
-author: arob98
-ms.author: angrobe
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use EPM support approvals for file elevation requests with Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/epm/manage-support-approvals
-author: arob98
-ms.author: angrobe
+author: MikeDano
+ms.author: mikedano
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

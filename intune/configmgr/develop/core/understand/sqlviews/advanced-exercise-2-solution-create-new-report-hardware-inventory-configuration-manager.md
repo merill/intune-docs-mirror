@@ -2,8 +2,8 @@
 layout: Conceptual
 title: "'Advanced exercise 2 solution: Create a new report for hardware inventory' - Configuration Manager | Microsoft Learn"
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/core/understand/sqlviews/advanced-exercise-2-solution-create-new-report-hardware-inventory-configuration-manager
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

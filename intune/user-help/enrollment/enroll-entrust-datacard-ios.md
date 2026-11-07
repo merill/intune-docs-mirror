@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll iOS or iPadOS device with Intune Company Portal and Entrust - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-entrust-datacard-ios
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot self-deploying mode - Step 3 of 6 - Register devices as Windows Autopilot devices | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/self-deploying/self-deploying-register-device
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

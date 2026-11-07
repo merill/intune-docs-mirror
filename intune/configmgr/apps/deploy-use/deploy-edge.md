@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Deploy and update Microsoft Edge, version 77 and later - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/deploy-edge
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

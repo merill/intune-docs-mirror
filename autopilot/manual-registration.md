@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manual registration of devices for Windows Autopilot | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/manual-registration
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

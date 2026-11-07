@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Step 7. Troubleshoot Microsoft Edge for Business Data Security - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/edge-data-security/troubleshoot-step-7
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

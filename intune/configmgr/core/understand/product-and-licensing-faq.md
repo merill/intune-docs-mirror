@@ -6,8 +6,8 @@ summary: >
   <p><em>Applies to: Configuration Manager (current branch) &amp; System Center Configuration Manager (long-term servicing branch)</em></p>
 
   <p>This FAQ addresses common licensing questions about Configuration Manager current branch and the long-term servicing branch (LTSB) versions, available through Microsoft Volume Licensing programs. This article is for informational purposes. It doesn't supersede or replace any documentation covering Configuration Manager licensing. For more information, see the <a href="https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&amp;DocumentTypeId=53">Product Terms</a>. The Product Terms describe the use terms for all Microsoft products in Volume Licensing.</p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

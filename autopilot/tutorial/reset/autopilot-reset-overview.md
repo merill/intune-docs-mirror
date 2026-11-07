@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Overview for Windows Autopilot Reset in Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/reset/autopilot-reset-overview
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

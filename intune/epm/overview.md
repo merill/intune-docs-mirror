@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Learn about using Endpoint Privilege Management with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/epm/overview
-author: arob98
-ms.author: angrobe
+author: MikeDano
+ms.author: mikedano
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

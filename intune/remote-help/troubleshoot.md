@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Troubleshoot and monitor Remote Help for Microsoft Intune. - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/remote-help/troubleshoot
-author: arob98
-ms.author: angrobe
+author: kara-wang
+ms.author: karawang
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

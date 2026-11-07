@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Using Remote Help on Windows to Assist Authenticated Users - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/remote-help/start-session
-author: arob98
-ms.author: angrobe
+author: kara-wang
+ms.author: karawang
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

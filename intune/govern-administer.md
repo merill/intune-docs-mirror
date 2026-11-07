@@ -3,8 +3,8 @@ layout: Landing
 title: Govern and administer - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/govern-administer
 summary: Control access with role-based permissions, audit tenant activity, and manage data privacy and compliance for your Intune environment.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

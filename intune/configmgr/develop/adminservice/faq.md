@@ -4,8 +4,8 @@ title: Admin service FAQ - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/adminservice/faq
 summary: >
   <p><em>Applies to: Configuration Manager (current branch, technical preview branch, long-term servicing branch)</em></p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

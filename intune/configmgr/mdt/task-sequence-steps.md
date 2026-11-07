@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Toolkit reference - Microsoft Deployment Toolkit (MDT) Task Sequence Steps - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/mdt/task-sequence-steps
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

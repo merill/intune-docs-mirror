@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Bring your own certificate authority with Cloud PKI - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/cloud-pki/configure-byoca
-author: arob98
-ms.author: angrobe
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

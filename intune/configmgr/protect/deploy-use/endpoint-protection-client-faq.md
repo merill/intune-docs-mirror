@@ -6,8 +6,8 @@ summary: >
   <p><em>Applies to: Configuration Manager (current branch)</em></p>
 
   <p>This FAQ is for computer users whose IT administrator has deployed Windows Defender or Endpoint Protection to their managed computer. The content here might not apply to other antimalware software. Microsoft System Center Endpoint Protection manages Windows Defender on Windows 10 or later. It can also deploy and manage the Endpoint Protection client to computers before Windows 10. While Windows Defender is described in this article, its information also applies to Endpoint Protection.</p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Tenant attach - Create and deploy Antivirus policies from the admin center - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/tenant-attach/deploy-antivirus-policy
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

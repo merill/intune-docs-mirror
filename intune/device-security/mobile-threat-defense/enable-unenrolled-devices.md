@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enable the Mobile Threat Defense connector for unenrolled devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/mobile-threat-defense/enable-unenrolled-devices
-author: arob98
-ms.author: angrobe
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

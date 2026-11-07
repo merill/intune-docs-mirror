@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Review the type of data that Microsoft Intune Endpoint Privilege Management collects - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/epm/ref-data-collection
-author: arob98
-ms.author: angrobe
+author: MikeDano
+ms.author: mikedano
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set permissions to Managed Home Screen using Android Enterprise OEMConfig - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-managed-home-screen-permissions-android
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

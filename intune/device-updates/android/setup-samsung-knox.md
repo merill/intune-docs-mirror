@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Integrate Samsung Knox E-FOTA with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/android/setup-samsung-knox
-author: arob98
-ms.author: angrobe
+author: CharlotteChristenson-MSFT
+ms.author: cchristenson
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

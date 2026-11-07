@@ -3,8 +3,8 @@ layout: Landing
 title: Security documentation - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/security/
 summary: Configuration Manager is secure by default. Learn more about how to configure and use features to help keep your environment secure.
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

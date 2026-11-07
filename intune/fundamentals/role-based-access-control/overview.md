@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Role-based access control (RBAC) with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/role-based-access-control/overview
-author: arob98
-ms.author: angrobe
+author: shmokash
+ms.author: shmokash
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

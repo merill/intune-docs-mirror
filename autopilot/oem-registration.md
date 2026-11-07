@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot OEM registration process | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/oem-registration
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot

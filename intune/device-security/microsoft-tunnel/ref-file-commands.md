@@ -2,8 +2,8 @@
 layout: Conceptual
 title: File and command reference for Microsoft Tunnel Gateway, a VPN solution for Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/microsoft-tunnel/ref-file-commands
-author: arob98
-ms.author: angrobe
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

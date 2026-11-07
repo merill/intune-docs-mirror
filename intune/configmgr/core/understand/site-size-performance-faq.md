@@ -6,8 +6,8 @@ summary: >
   <p><em>Applies to: Configuration Manager (current branch)</em></p>
 
   <p>This document addresses frequently asked questions about Configuration Manager site sizing guidance and common performance issues.</p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

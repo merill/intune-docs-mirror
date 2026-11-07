@@ -6,8 +6,8 @@ summary: >
   <p><em>Applies to: Configuration Manager (current branch)</em></p>
 
   <p>This article answers your frequently asked questions about the cloud management gateway (CMG). For more information, see <a href="overview">Overview of CMG</a>.</p>
-author: arob98
-ms.author: angrobe
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
