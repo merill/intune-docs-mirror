@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Tutorial&#58; Enable co-management for existing clients - Configuration Manager | Microsoft Learn
+title: 'Tutorial: Enable Co-management for Existing Clients - Configuration Manager | Microsoft Learn'
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/comanage/tutorial-co-manage-clients
 author: iceorbital
 ms.author: acabello
@@ -16,7 +16,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Configure co-management with Microsoft Intune when you already manage Windows devices with Configuration Manager.
-ms.date: 2024-10-18T00:00:00.0000000Z
+ms.date: 2026-10-29T00:00:00.0000000Z
 ms.subservice: co-management
 ms.topic: tutorial
 ms.collection: tier3
@@ -48,9 +48,9 @@ spProducts:
 platformId: 14a75310-15db-ee2a-445b-e8157be56a10
 ---
 
-# Tutorial&#58; Enable co-management for existing clients - Configuration Manager | Microsoft Learn
+# Tutorial: Enable Co-management for Existing Clients - Configuration Manager | Microsoft Learn
 
-With co-management, you can keep your well-established processes for using Configuration Manager to manage PCs in your organization. At the same time, you're investing in the cloud through use of Intune for security and modern provisioning.
+By using co-management, you can keep your well-established processes for using Configuration Manager to manage PCs in your organization. At the same time, you're investing in the cloud through use of Intune for security and modern provisioning.
 
 In this tutorial, you set up co-management of your Windows devices that are already enrolled in Configuration Manager. This tutorial begins with the premise that you already use Configuration Manager to manage your Windows devices.
 
@@ -58,10 +58,10 @@ Use this tutorial when:
 
 - You have an on-premises Active Directory that you can connect to Microsoft Entra ID in a hybrid Microsoft Entra configuration.
 
-    If you can't deploy a hybrid Microsoft Entra ID that joins your on-premises AD with Microsoft Entra ID, we recommend following our companion tutorial, [Enable co-management for new internet-based Windows devices](tutorial-co-manage-new-devices).
+    If you can't deploy a hybrid Microsoft Entra ID that joins your on-premises AD with Microsoft Entra ID, follow our companion tutorial, [Enable co-management for new internet-based Windows devices](tutorial-co-manage-new-devices).
 - You have existing Configuration Manager clients that you want to cloud-attach.
 
-**In this tutorial you will:**
+**In this tutorial you:**
 
 - Review prerequisites for Azure and your on-premises environment
 - Set up hybrid Microsoft Entra ID
@@ -81,7 +81,7 @@ Use this tutorial when:
 
     An Enterprise Mobility + Security (EMS) subscription includes both Microsoft Entra ID P1 or P2 and Microsoft Intune. EMS subscription ([free trial](https://go.microsoft.com/fwlink/?linkid=845167)).
 
-If not already present in your environment, during this tutorial you'll configure [Microsoft Entra Connect](/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation) between your on-premises Active Directory and your Microsoft Entra tenant.
+If not already present in your environment, during this tutorial you configure [Microsoft Entra Connect](/en-us/azure/active-directory/hybrid/how-to-connect-install-select-installation) between your on-premises Active Directory and your Microsoft Entra tenant.
 
 Note
 
@@ -90,7 +90,7 @@ Devices that are only registered with Microsoft Entra ID aren't supported with c
 ### On-premises infrastructure
 
 - A [supported version](../core/servers/manage/updates#supported-versions) of Configuration Manager current branch
-- The mobile device management (MDM) authority must be set to Intune.
+- The mobile device management (MDM) authority set to Intune
 
 ### Permissions
 
@@ -100,7 +100,7 @@ Throughout this tutorial, use the following permissions to complete tasks:
 - An account that's a *full administrator* for *all* scopes in Configuration Manager
 - An account that's a *Global Administrator* in Microsoft Entra ID
 
-    - Make sure you've assigned an Intune license to the account that you use to sign in to your tenant. Otherwise, sign in fails with the error message *An unanticipated error occurred*.
+    - Ensure you assign an Intune license to the account that you use to sign in to your tenant. Otherwise, sign-in fails with the error message *An unanticipated error occurred*.
 
     Important
 
@@ -112,7 +112,7 @@ When you set up a hybrid Microsoft Entra ID, you're really setting up integratio
 
 Important
 
-This tutorial details a bare-bones process to set up hybrid Microsoft Entra ID for a managed domain. We recommend you be familiar with the process and not rely on this tutorial as your guide to understanding and deploying hybrid Microsoft Entra ID.
+This tutorial shows a bare-bones process to set up hybrid Microsoft Entra ID for a managed domain. Be familiar with the process and don't rely on this tutorial as your guide to understanding and deploying hybrid Microsoft Entra ID.
 
 For more information about hybrid Microsoft Entra ID, start with the following articles in the Microsoft Entra documentation:
 
@@ -127,7 +127,7 @@ Hybrid Microsoft Entra ID requires configuration of Microsoft Entra Connect to k
 
 Beginning with version 1.1.819.0, Microsoft Entra Connect provides you with a wizard to configure Microsoft Entra hybrid join. Use of that wizard simplifies the configuration process.
 
-To configure Microsoft Entra Connect, you need credentials of a Global Administrator for Microsoft Entra ID. The following procedure should not be considered authoritative for set up of Microsoft Entra Connect but is provided here to help streamline configuration of co-management between Intune and Configuration Manager. For the authoritative content on this and related procedures for set up of Microsoft Entra ID, see [Configure Microsoft Entra hybrid join for managed domains](/en-us/azure/active-directory/devices/hybrid-azuread-join-managed-domains) in the Microsoft Entra documentation.
+To configure Microsoft Entra Connect, you need credentials of a Global Administrator for Microsoft Entra ID. The following procedure shouldn't be considered authoritative for set up of Microsoft Entra Connect but is provided here to help streamline configuration of co-management between Intune and Configuration Manager. For the authoritative content on this and related procedures for set up of Microsoft Entra ID, see [Configure Microsoft Entra hybrid join for managed domains](/en-us/azure/active-directory/devices/hybrid-azuread-join-managed-domains) in the Microsoft Entra documentation.
 
 #### Configure a Microsoft Entra hybrid join using Microsoft Entra Connect
 
@@ -153,18 +153,18 @@ To configure Microsoft Entra Connect, you need credentials of a Global Administr
 
 If you experience issues with completing Microsoft Entra hybrid join for domain joined Windows devices, see [Troubleshooting Microsoft Entra hybrid join for Windows current devices](/en-us/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current).
 
-## Configure Client Settings to direct clients to register with Microsoft Entra ID
+## Configure client settings to direct clients to register with Microsoft Entra ID
 
-Use Client Settings to configure Configuration Manager clients to automatically register with Microsoft Entra ID.
+Use client settings to configure Configuration Manager clients to automatically register with Microsoft Entra ID.
 
 1. Open the **Configuration Manager console** &gt; **Administration** &gt; **Overview** &gt; **Client Settings**, and then edit the **Default Client Settings**.
 2. Select **Cloud Services**.
-3. On the **Default Settings** page, set **Automatically register new Windows 10 domain joined devices with Microsoft Entra ID** to = **Yes**.
+3. On the **Default Settings** page, set **Automatically register new Windows 10 domain joined devices with Microsoft Entra ID** to **Yes**.
 4. Select **OK** to save this configuration.
 
 ## Configure auto-enrollment of devices to Intune
 
-Next, we'll set up auto-enrollment of devices with Intune. With automatic enrollment, devices you manage with Configuration Manager automatically enroll with Intune.
+Next, set up auto-enrollment of devices with Intune. With automatic enrollment, devices you manage with Configuration Manager automatically enroll with Intune.
 
 Automatic enrollment also lets users enroll their Windows devices to Intune. Devices enroll when a user adds their work account to their personally owned device, or when a corporate-owned device is joined to Microsoft Entra ID.
 
@@ -185,20 +185,22 @@ Automatic enrollment also lets users enroll their Windows devices to Intune. Dev
 
     Note
 
-    Some tenants may not have these options to configure.
+    Some tenants might not have these options to configure.
 
     **Microsoft Intune** is how you configure the MDM app for Microsoft Entra ID. **Microsoft Intune Enrollment** is a specific Microsoft Entra app that's created when you apply multi-factor authentication policies for iOS and Android enrollment. For more information, see [Require multi-factor authentication for Intune device enrollments](../../device-enrollment/configure-multifactor-authentication).
 5. For MDM user scope, select **All**, and then **Save**.
 
 ## Enable co-management in Configuration Manager
 
-With hybrid Microsoft Entra set-up and Configuration Manager client configurations in place, you're ready to flip the switch and enable co-management of your Windows devices. The phrase **Pilot group** is used throughout the co-management feature and configuration dialogs. A *pilot group* is a collection containing a subset of your Configuration Manager devices. Use a *pilot group* for your initial testing, adding devices as needed, until you're ready to move the workloads for all Configuration Manager devices. There isn't a time limit on how long a *pilot group* can be used for workloads. A *pilot group* can be used indefinitely if you don't wish to move the workload to all Configuration Manager devices.
+With hybrid Microsoft Entra set up and Configuration Manager client configurations in place, you're ready to turn on co-management for your Windows devices.
 
-When you enable co-management, you'll assign a collection as a *Pilot group*. This is a group that contains a small number of clients to test your co-management configurations. We recommend you create a suitable collection before you start the procedure. Then you can select that collection without exiting the procedure to do so. You may need multiple collections since you can assign a different *Pilot group* for each workload.
+A *pilot group* is a collection that contains a subset of your Configuration Manager devices. The term pilot group is used throughout the co-management feature and configuration dialogs. Use a pilot group for your initial testing, adding devices as needed, until you're ready to move the workloads for all Configuration Manager devices. There's no time limit on how long you can use a pilot group for workloads. If you don't want to move the workload to all Configuration Manager devices, you can use a pilot group indefinitely.
+
+When you enable co-management, you assign a collection as a pilot group. This group contains a small number of clients to test your co-management configurations. Create a suitable collection before you start the procedure. Then you can select that collection without exiting the procedure to create one. You might need multiple collections because you can assign a different pilot group for each workload.
 
 Note
 
-Since devices are enrolled in the Microsoft Intune service based on its Microsoft Entra device token, and not a user token, only the default [Intune enrollment restriction](../../device-enrollment/restrictions) will apply to the enrollment.
+Because devices enroll in the Microsoft Intune service based on their Microsoft Entra device token, and not a user token, only the default [Intune enrollment restriction](../../device-enrollment/restrictions) apply to the enrollment.
 
 ### Enable co-management for versions 2111 and later
 
@@ -210,7 +212,7 @@ With the new wizard, you don't move workloads at the same time that you enable c
 
 ### Enable co-management for versions 2107 and earlier
 
-When you're enabling co-management, you can use the Azure public cloud, Azure Government cloud, or Azure China 21Vianet cloud (added in version 2006). To enable co-management, follow these instructions:
+When you enable co-management, you can use the Azure public cloud, Azure Government cloud, or Azure China 21Vianet cloud (added in version 2006). To enable co-management, follow these instructions:
 
 1. In the Configuration Manager console, go to the **Administration** workspace, expand **Cloud Services**, and select the **Cloud Attach** node. Select **Configure Cloud Attach** on the ribbon to open the Cloud Attach Configuration Wizard.
 
@@ -247,7 +249,7 @@ When you're enabling co-management, you can use the Azure public cloud, Azure Go
     A new co-managed device is now automatically enrolled in the Microsoft Intune service based on its Microsoft Entra device token. It doesn't need to wait for a user to sign in to the device for automatic enrollment to start. This change helps to reduce the number of devices with the enrollment status **Pending user sign in**. To support this behavior, the device needs to be running [supported Windows versions](../../fundamentals/ref-supported-platforms). For more information, see [Co-management enrollment status](how-to-monitor#co-management-enrollment-status).
 
     If you already have devices enrolled in co-management, new devices are now enrolled immediately after they meet the [prerequisites](overview#prerequisites).
-5. For internet-based devices that are already enrolled in Intune, copy and save the command on the **Enablement** page. You'll use this command to install the Configuration Manager client as an app in Intune for internet-based devices. If you don't save this command now, you can review the co-management configuration at any time to get this command.
+5. For internet-based devices that are already enrolled in Intune, copy and save the command on the **Enablement** page. Use this command to install the Configuration Manager client as an app in Intune for internet-based devices. If you don't save this command now, you can review the co-management configuration at any time to get this command.
 
     Tip
 
@@ -256,7 +258,7 @@ When you're enabling co-management, you can use the Azure public cloud, Azure Go
 
     If you only want to enable co-management, you don't need to switch workloads now. You can switch workloads later. For more information, see [How to switch workloads](how-to-switch-workloads).
 
-    - **Pilot Intune**: Switches the associated workload only for the devices in the pilot collections that you'll specify on the **Staging** page. Each workload can have a different pilot collection.
+    - **Pilot Intune**: Switches the associated workload only for the devices in the pilot collections that you specify on the **Staging** page. Each workload can have a different pilot collection.
     - **Intune**: Switches the associated workload for all co-managed Windows devices.
 
     Important

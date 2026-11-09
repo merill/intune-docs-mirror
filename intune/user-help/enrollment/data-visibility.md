@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: What info can your organization see when you enroll your device? - Microsoft Intune | Microsoft Learn
+title: What Info Can Your Organization See When You Enroll Your Device? - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/data-visibility
 author: iceorbital
 ms.author: acabello
@@ -10,8 +10,8 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.subservice: end-user
 ms.topic: end-user-help
-description: Describes the information on your enrolled device that's visible to your organization.
-ms.date: 2025-01-27T00:00:00.0000000Z
+description: Microsoft Intune enrollment shares only specific device information with your organization. Review what IT admins can and can't access on personal and work devices.
+ms.date: 2026-10-30T00:00:00.0000000Z
 ms.reviewer: esmich
 locale: en-us
 document_id: 9342c904-df3b-12c4-7341-c0272e715388
@@ -39,7 +39,7 @@ spProducts:
 platformId: 9250b7b8-0071-e55c-fd61-93ee8d49fd91
 ---
 
-# What info can your organization see when you enroll your device? - Microsoft Intune | Microsoft Learn
+# What Info Can Your Organization See When You Enroll Your Device? - Microsoft Intune | Microsoft Learn
 
 **Applies to**:
 
@@ -51,8 +51,8 @@ platformId: 9250b7b8-0071-e55c-fd61-93ee8d49fd91
 
 Your organization can't see your personal information when you enroll a device in Microsoft Intune. Enrolling your device makes certain information such as device model and serial number visible to IT administrators and support people with administrator access.
 
-- **Support person**: This is the person or department at your organization that you're supposed to contact if you're having problems with your device. They provide technical support for device setup, enrollment, and access.
-- **IT administrator**: *IT admin* for short, this person or team of people configures the Microsoft Intune device management and enrollment settings for your organization. Some IT admins also provide technical support.
+- **Support person**: The person or department at your organization that you contact if you have problems with your device. They provide technical support for device setup, enrollment, and access.
+- **IT administrator** (*IT admin* for short): This person or team of people configures the Microsoft Intune device management and enrollment settings for your organization. Some IT admins also provide technical support.
 
 This article describes everything your organization can and can't access on an enrolled device, and explains why certain data is made visible. To view the ownership type for an enrolled device, sign in to the Intune Company Portal app or website and go to **Device Details**.
 
@@ -121,7 +121,7 @@ An IT admin can grant permission to apps in the work profile, both manually and 
 
 ### Network information
 
-Some information about network connections for Android devices may be available to your organization. For example, if your organization requires devices to remain within a certain building, your device would identify the network where it's connected.
+Your organization might have access to some information about network connections for Android devices. For example, if your organization requires devices to remain within a certain building, your device identifies the network where it's connected.
 
 ### Additional device details
 

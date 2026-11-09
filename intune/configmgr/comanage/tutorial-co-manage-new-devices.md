@@ -363,7 +363,7 @@ With the new wizard, you don't move workloads at the same time that you enable c
 
 ### Enable co-management for versions 2107 and earlier
 
-When you're enabling co-management, you can use the Azure public cloud, Azure Government cloud, or Azure China 21Vianet cloud (added in version 2006). To enable co-management, follow these instructions:
+When you enable co-management, you can use the Azure public cloud, Azure Government cloud, or Azure China 21Vianet cloud (added in version 2006). To enable co-management, follow these instructions:
 
 1. In the Configuration Manager console, go to the **Administration** workspace, expand **Cloud Services**, and select the **Cloud Attach** node. Select **Configure Cloud Attach** on the ribbon to open the Cloud Attach Configuration Wizard.
 
@@ -400,7 +400,7 @@ When you're enabling co-management, you can use the Azure public cloud, Azure Go
     A new co-managed device is now automatically enrolled in the Microsoft Intune service based on its Microsoft Entra device token. It doesn't need to wait for a user to sign in to the device for automatic enrollment to start. This change helps to reduce the number of devices with the enrollment status **Pending user sign in**. To support this behavior, the device needs to be running [supported Windows versions](../../fundamentals/ref-supported-platforms). For more information, see [Co-management enrollment status](how-to-monitor#co-management-enrollment-status).
 
     If you already have devices enrolled in co-management, new devices are now enrolled immediately after they meet the [prerequisites](overview#prerequisites).
-5. For internet-based devices that are already enrolled in Intune, copy and save the command on the **Enablement** page. You'll use this command to install the Configuration Manager client as an app in Intune for internet-based devices. If you don't save this command now, you can review the co-management configuration at any time to get this command.
+5. For internet-based devices that are already enrolled in Intune, copy and save the command on the **Enablement** page. Use this command to install the Configuration Manager client as an app in Intune for internet-based devices. If you don't save this command now, you can review the co-management configuration at any time to get this command.
 
     Tip
 
@@ -409,7 +409,7 @@ When you're enabling co-management, you can use the Azure public cloud, Azure Go
 
     If you only want to enable co-management, you don't need to switch workloads now. You can switch workloads later. For more information, see [How to switch workloads](how-to-switch-workloads).
 
-    - **Pilot Intune**: Switches the associated workload only for the devices in the pilot collections that you'll specify on the **Staging** page. Each workload can have a different pilot collection.
+    - **Pilot Intune**: Switches the associated workload only for the devices in the pilot collections that you specify on the **Staging** page. Each workload can have a different pilot collection.
     - **Intune**: Switches the associated workload for all co-managed Windows devices.
 
     Important

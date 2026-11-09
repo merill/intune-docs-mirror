@@ -14,7 +14,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: How to - Windows Autopilot device preparation user-driven Microsoft Entra join - Step 3 of 7 - Create an assigned device group.
-ms.date: 2026-08-07T00:00:00.0000000Z
+ms.date: 2026-10-23T00:00:00.0000000Z
 ms.topic: tutorial
 locale: en-us
 document_id: 79f4db1a-561e-265c-d2fe-23e5473e33fc
@@ -58,7 +58,7 @@ Windows Autopilot device preparation user-driven Microsoft Entra join steps:
 - Step 7, option 1: [Add Windows corporate identifier to device](entra-join-corporate-identifier)
 - Step 7, option 2: [Associate devices](entra-join-device-association)
 
-For an overview of the Windows Autopilot device preparation user-driven Microsoft Entra join workflow, see [Windows Autopilot device preparation user-driven Microsoft Entra join overview](entra-join-workflow#workflow).
+For an overview, see [Windows Autopilot device preparation user-driven Microsoft Entra join overview](entra-join-workflow#workflow).
 
 Note
 
@@ -68,10 +68,10 @@ The device group created in this step is specific to Windows Autopilot device pr
 
 Device groups are a collection of devices organized into a Microsoft Entra group. Normally device groups can be either assigned or dynamic:
 
-- **Assigned groups** - Devices are manually added to the group and are static. Windows Autopilot device preparation only uses assigned groups.
-- **Dynamic groups** - Devices are automatically added to the group based on rules. Windows Autopilot device preparation doesn't use dynamic groups.
+- **Assigned groups**. Devices are manually added to the group and are static. Windows Autopilot device preparation only uses assigned groups.
+- **Dynamic groups**. Devices are automatically added to the group based on rules. Windows Autopilot device preparation doesn't use dynamic groups.
 
-Windows Autopilot device preparation uses an **assigned device group** as part of the Windows Autopilot device preparation policy. The device group specified in the Windows Autopilot device preparation policy needs to be an **assigned device group**. The the Windows Autopilot device preparation process then adds devices automatically to this assigned device group during the Windows Autopilot device preparation deployment.
+Windows Autopilot device preparation uses an *assigned device group* as part of the Windows Autopilot device preparation policy. The device group specified in the Windows Autopilot device preparation policy needs to be an *assigned device group*. The the Windows Autopilot device preparation process then adds devices automatically to this assigned device group during the Windows Autopilot device preparation deployment.
 
 Important
 
@@ -79,17 +79,19 @@ The device group specified in the Windows Autopilot device preparation policy ne
 
 Tip
 
-Although the same assigned device group can be used for multiple Windows Autopilot device preparation policies, Microsoft recommends creating a separate assigned device group for each Windows Autopilot device preparation policy. For example, a different assigned device group for a user-driven scenario vs. an automatic scenario. This allows for easier management of the Windows Autopilot device preparation policies and the devices or Cloud PCs that are assigned to them.
+Although the same assigned device group can be used for multiple Windows Autopilot device preparation policies, Microsoft recommends creating a separate assigned device group for each Windows Autopilot device preparation policy.
+
+For example, a different assigned device group for a user-driven scenario compared to an automatic scenario. This approach allows for easier management of the Windows Autopilot device preparation policies and the devices or Cloud PCs that are assigned to them.
 
 To create an assigned security device group for use with Windows Autopilot device preparation, follow these steps:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. In the **Home** screen, select **Groups** in the left hand pane.
-3. In the **Groups | All groups** screen, make sure **All groups** is selected, and then select **New group**.
-4. In the **New Group** screen that opens:
+2. In the **Home** screen, in the left pane, select **Groups**.
+3. In **Groups | All groups**, make sure **All groups** is selected, and then select **New group**.
+4. In the **New Group** screen:
 
     1. For **Group type**, select **Security**.
-    2. For **Group name**, enter a name for the device group, such as **Windows Autopilot device preparation device group**.
+    2. For **Group name**, enter a name for the device group, such as *Windows Autopilot device preparation device group*.
     3. For **Group description**, enter a description for the device group.
     4. For **Microsoft Entra roles can be assigned to the group**, select **No**.
     5. For **Membership type**, select **Assigned**.
@@ -100,9 +102,9 @@ To create an assigned security device group for use with Windows Autopilot devic
 
             Note
 
-            - In some tenants, the service principal might have the name of **Intune Autopilot ConfidentialClient** instead of **Intune Provisioning Client**. As long as the AppID of the service principal is **f1346770-5b25-470b-88bd-d5744ab7952c**, it's the correct service principal.
+            - In some tenants, the service principal might have the name **Intune Autopilot ConfidentialClient** instead of **Intune Provisioning Client**. As long as the AppID of the service principal is **f1346770-5b25-470b-88bd-d5744ab7952c**, it's the correct service principal.
             - If the **Intune Provisioning Client** or **Intune Autopilot ConfidentialClient** service principal with AppId of **f1346770-5b25-470b-88bd-d5744ab7952c** isn't available either in the list of objects or when searching, see Adding the Intune Provisioning Client service principal.
-        2. Once **Intune Provisioning Client** is selected as the owner, select **Select**.
+        2. After you select **Intune Provisioning Client** as the owner, select **Select**.
     8. Select **Create** to finish creating the assigned device group.
 
     Important
@@ -111,9 +113,9 @@ To create an assigned security device group for use with Windows Autopilot devic
 
 ### Adding the Intune Provisioning Client service principal
 
-If the **Intune Provisioning Client** service principal with AppId **f1346770-5b25-470b-88bd-d5744ab7952c** isn't available when selecting the owner of the device group, then follow these steps to add the service principal:
+If the **Intune Provisioning Client** service principal with AppId **f1346770-5b25-470b-88bd-d5744ab7952c** isn't available when selecting the owner of the device group, follow these steps to add the service principal:
 
-1. On a device where Microsoft Intune or Microsoft Entra ID is normally administered, open an elevated **Windows PowerShell** command prompt.
+1. On a device where you normally administer Microsoft Intune or Microsoft Entra ID, open an elevated **Windows PowerShell** command prompt.
 2. In the **Windows PowerShell** command prompt window:
 
     1. Install the **Microsoft.Graph.Authentication** module by entering the following command:
@@ -122,7 +124,7 @@ If the **Intune Provisioning Client** service principal with AppId **f1346770-5b
         Install-Module Microsoft.Graph.Authentication
         ```
 
-        If prompted to do so:
+        If prompted, do the following:
 
         - Agree to install **NuGet** by entering **Y** or **Yes**, or selecting the **Yes** button.
         - Agree to install from the **PSGallery** untrusted repository by entering **Y** or **Yes**, or selecting the **Yes** button.
@@ -134,19 +136,19 @@ If the **Intune Provisioning Client** service principal with AppId **f1346770-5b
         Install-Module Microsoft.Graph.Applications
         ```
 
-        If prompted to do so, agree to install from the **PSGallery** untrusted repository by entering **Y** or **Yes**, or selecting the **Yes** button.
+        If prompted, agree to install from the **PSGallery** untrusted repository by entering **Y** or **Yes**, or selecting the **Yes** button.
 
         For more information, see [Microsoft.Graph.Applications](/en-us/powershell/module/microsoft.graph.applications/) and [Set-PSRepository -InstallationPolicy](/en-us/powershell/module/powershellget/set-psrepository#-installationpolicy).
-    3. Once the **Microsoft.Graph.Authentication** and **Microsoft.Graph.Applications** modules are installed, connect to Microsoft Entra ID by entering the following command:
+    3. After the **Microsoft.Graph.Authentication** and **Microsoft.Graph.Applications** modules are installed, connect to Microsoft Entra ID by entering the following command:
 
         ```powershell
         Connect-MgGraph -Scopes "Application.ReadWrite.All"
         ```
 
         For more information, see [Connect-MgGraph](/en-us/powershell/module/microsoft.graph.authentication/connect-mggraph).
-    4. If not already authenticated to Microsoft Entra ID, the **Sign in to your account** window appears. Enter the credentials of a Microsoft Entra ID administrator that has permissions to add service principals.
-    5. If the **Permissions requested** window appears, select the **Consent on behalf of your organization** checkbox, and then select the **Accept** button.
-    6. Once authenticated to Microsoft Entra ID and proper permissions are granted, add the **Intune Provisioning Client** service principal by entering the following command:
+    4. If you're not already authenticated to Microsoft Entra ID, the **Sign in to your account** window appears. Enter the credentials of a Microsoft Entra ID administrator that has permissions to add service principals.
+    5. If the **Permissions requested** window appears, select **Consent on behalf of your organization**, and then select **Accept**.
+    6. After you authenticate to Microsoft Entra ID and proper permissions are granted, add the **Intune Provisioning Client** service principal by entering the following command:
 
         ```powershell
         New-MgServicePrincipal -AppID f1346770-5b25-470b-88bd-d5744ab7952c
@@ -166,10 +168,10 @@ If the **Intune Provisioning Client** service principal with AppId **f1346770-5b
             ```
         - The following error message is displayed if one of the following conditions is true:
 
-            - The account used to sign in with the `Connect-MgGraph` command doesn't have permissions to add a service principal to the tenant.
+            - The account you used to sign in by using the `Connect-MgGraph` command doesn't have permissions to add a service principal to the tenant.
             - The `-Scopes "Application.ReadWrite.All"` argument isn't added to the `Connect-MgGraph` command.
-            - The **Permissions requested** window isn't accepted.
-            - The **Consent on behalf of your organization** checkbox isn't selected in the **Permissions requested** window.
+            - You didn't accept the **Permissions requested** window.
+            - You didn't select **Consent on behalf of your organization** in the **Permissions requested** window.
 
             ```powershell
             New-MgServicePrincipal : Insufficient privileges to complete the operation.

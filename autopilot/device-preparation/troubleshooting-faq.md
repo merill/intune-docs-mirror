@@ -1,13 +1,13 @@
 ---
 layout: FAQ
-title: Windows Autopilot device preparation troubleshooting FAQ | Microsoft Learn
+title: Windows Autopilot Device Preparation Troubleshooting FAQ | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/troubleshooting-faq
 summary: >
   <p><strong>Applies to:</strong></p>
 
   <ul>
 
-  <li><a href="/windows/release-health/supported-versions-windows-client#windows-11-supported-versions">Windows 11</a>.</li>
+  <li><a href="/windows/release-health/supported-versions-windows-client#windows-11-supported-versions">Windows 11</a></li>
 
   </ul>
 
@@ -23,8 +23,8 @@ feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/ef1d6d
 feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
-description: Troubleshooting of common Windows Autopilot device preparation issues
-ms.date: 2026-08-28T00:00:00.0000000Z
+description: Use this information to understand and troubleshoot some common Windows Autopilot device preparation issues that you might encounter.
+ms.date: 2026-10-23T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: faq
@@ -50,11 +50,11 @@ spProducts:
 platformId: af4bbec9-fc0a-321f-fe16-ec4897d08d9a
 ---
 
-# Windows Autopilot device preparation troubleshooting FAQ | Microsoft Learn
+# Windows Autopilot Device Preparation Troubleshooting FAQ | Microsoft Learn
 
 **Applies to:**
 
-- [Windows 11](/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions).
+- [Windows 11](/en-us/windows/release-health/supported-versions-windows-client#windows-11-supported-versions)
 
 This article provides troubleshooting for common Windows Autopilot device preparation issues.
 
@@ -70,36 +70,36 @@ This issue can occur when the USB drive is formatted as FAT32 or contains both F
 
 - Verify that **Intune Provisioning Client** is set as the owner for the device group specified in the Windows Autopilot device preparation policy. For more information, [Create an assigned device group](tutorial/user-driven/entra-join-device-group#create-an-assigned-device-group).
 - Verify that the correct device group is specified in the Windows Autopilot device preparation policy. For more information, see [Create a Windows Autopilot device preparation policy](tutorial/user-driven/entra-join-autopilot-policy#create-user-driven-microsoft-entra-join-windows-autopilot-device-preparation-policy) and [Create an assigned device group](tutorial/user-driven/entra-join-device-group).
-- Verify that **Microsoft Entra roles can be assigned to the group** setting in the device group is set to **No**. For more information, see [Create an assigned device group](tutorial/user-driven/entra-join-device-group#create-an-assigned-device-group).
+- Verify that **Microsoft Entra roles can be assigned to the group** setting in the device group is **No**. For more information, see [Create an assigned device group](tutorial/user-driven/entra-join-device-group#create-an-assigned-device-group).
 - Verify that the admin creating the Windows Autopilot device preparation policy has the **Enrollment time device membership assignment** RBAC permission. For more information, see [Required RBAC permissions](requirements?tabs=rbac#required-rbac-permissions).
 
 ## Priority column in the list of device preparation policies is grayed out.
 
-Device preparation policies in automatic mode don't honor priority as they're assigned directly within the Cloud PC provisioning policy.
+Device preparation policies in automatic mode don't honor priority because they're assigned directly in the Cloud PC provisioning policy.
 
 ## Windows Autopilot device preparation experience never launches during the out-of-box experience (OOBE).
 
-- Verify that the minimum version of Windows is being used as documented in [Software requirements](requirements?tabs=software#software-requirements). This requirement includes that the minimum required update is installed before starting the device for the first time:
+- Verify that you're using the minimum version of Windows. See [Software requirements](requirements?tabs=software#software-requirements). This requirement includes that the minimum required update is installed before starting the device for the first time:
 
-    - Verify with OEMs that devices shipped from the OEM have the minimum required update installed.
+    - Verify with manufacturers that devices shipped from them have the minimum required update installed.
     - If installing Windows from installation media, verify that the media has the minimum required update installed. Updated Windows installation media with the latest cumulative update already installed is available in the [Microsoft Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home#/subscriptions/vlnew).
-- Windows Autopilot device preparation doesn't use the Enrollment Status Page (ESP). Since Windows Autopilot device preparation doesn't use the ESP, the ESP shouldn't display during a Windows Autopilot device preparation deployment. If the ESP displays during the deployment, then the device isn't running a Windows Autopilot device preparation deployment. Instead, the device might be:
+- Windows Autopilot device preparation doesn't use the Enrollment Status Page (ESP). Since Windows Autopilot device preparation doesn't use the ESP, the ESP shouldn't display during a Windows Autopilot device preparation deployment. If the ESP displays during the deployment, the device isn't running a Windows Autopilot device preparation deployment. Instead, the device might be:
 
     - A Windows Autopilot registered device.
     - A Windows Autopilot profile is assigned to the device.
 
     Verify that the device isn't registered as a Windows Autopilot device and that a Windows Autopilot profile isn't assigned to the device. Windows Autopilot profiles take precedence over Windows Autopilot device preparation policies.
 
-    If a device needs to be removed as a Windows Autopilot device, see [Deregister a device](../registration-overview#deregister-a-device).
+    If you need to remove a device as a Windows Autopilot device, see [Deregister a device](../registration-overview#deregister-a-device).
 - Verify that the user signing into the device during OOBE is a member of the user group specified in the Windows Autopilot device preparation policy. For more information, see [Create a Windows Autopilot device preparation policy](tutorial/user-driven/entra-join-autopilot-policy#create-user-driven-microsoft-entra-join-windows-autopilot-device-preparation-policy) and [Create a user group](tutorial/user-driven/entra-join-user-group).
 - Verify that a device group is selected in the Windows Autopilot device preparation policy. A Windows Autopilot device preparation policy can be created without selecting a device group. For more information, see [Create a Windows Autopilot device preparation policy](tutorial/user-driven/entra-join-autopilot-policy#create-user-driven-microsoft-entra-join-windows-autopilot-device-preparation-policy) and [Create an assigned device group](tutorial/user-driven/entra-join-device-group).
-- If using corporate identifiers in Intune, make sure that a corporate identifier is added for the device. For more information, see [Add Windows corporate identifiers](/en-us/intune/intune-service/enrollment/corporate-identifiers-add#add-windows-corporate-identifiers).
+- If you use corporate identifiers in Intune, make sure that a corporate identifier is added for the device. For more information, see [Add Windows corporate identifiers](/en-us/intune/intune-service/enrollment/corporate-identifiers-add#add-windows-corporate-identifiers).
 - Verify that Windows automatic Intune enrollment is configured.
 - Verify that users are allowed to join device to Microsoft Entra ID.
 
 ## Applications or PowerShell scripts aren't getting installed.
 
-- If the applications or PowerShell scripts are showing **Skipped** in the details of the Windows Autopilot device preparation deployment report, verify that they're assigned to the device group specified in the Windows Autopilot device preparation policy. For more information, see [Windows Autopilot device preparation policy configuration settings](tutorial/user-driven/entra-join-autopilot-policy#configuration-settings) and [Create an assigned device group](tutorial/user-driven/entra-join-device-group).
+- If the applications or PowerShell scripts display as **Skipped** in the details of the Windows Autopilot device preparation deployment report, verify that they're assigned to the device group specified in the Windows Autopilot device preparation policy. For more information, see [Windows Autopilot device preparation policy configuration settings](tutorial/user-driven/entra-join-autopilot-policy#configuration-settings) and [Create an assigned device group](tutorial/user-driven/entra-join-device-group).
 - Verify that the application or PowerShell script is configured to install in the **System** context. During OOBE, applications are installed and PowerShell scripts run when no user is signed in. For this reason, they must be configured to install in the **System** context.
 
 ## Device security group isn't saving in Windows Autopilot device preparation policy.
@@ -120,4 +120,4 @@ To fix the issue, add the **Intune Provisioning Client** service principal with 
 
 ## Multiple Windows Autopilot device preparation policies exist and the device is getting the wrong policy.
 
-If multiple Windows Autopilot device preparation policies are deployed to a user, the policy with the highest priority gets priority. Policy priorities are displayed at the **Home** &gt; **Enroll devices | Windows enrollment** &gt; **Device preparation policies** screen. The policy with the highest priority is higher in the list and has the smallest number under the **Priority** column. To change a policy's priority, move it in the list by dragging the policy within the list.
+If multiple Windows Autopilot device preparation policies are deployed to a user, the policy with the highest priority gets priority. Policy priorities are displayed at the **Home** &gt; **Enroll devices | Windows enrollment** &gt; **Device preparation policies** screen. The policy with the highest priority is higher in the list and has the smallest number under the **Priority** column. To change a policy's priority, move it in the list by dragging the policy in the list.

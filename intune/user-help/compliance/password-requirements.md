@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Add or change device passcode on work or school device - Microsoft Intune | Microsoft Learn
+title: Add or Change Device Passcode on Work or School Device - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/password-requirements
 author: iceorbital
 ms.author: acabello
@@ -11,7 +11,7 @@ ms.service: microsoft-intune
 ms.subservice: end-user
 ms.topic: end-user-help
 description: This article describes how to resolve device sign-in requirements, with resources for Windows, Android, macOS, and iOS/iPadOS.
-ms.date: 2024-11-09T00:00:00.0000000Z
+ms.date: 2026-10-30T00:00:00.0000000Z
 ms.reviewer: anuragjain
 locale: en-us
 document_id: 1144812b-a92c-53ae-2926-07b2248beaf2
@@ -41,7 +41,7 @@ spProducts:
 platformId: 5d4f5212-c742-3735-f2dd-62c373e4d53a
 ---
 
-# Add or change device passcode on work or school device - Microsoft Intune | Microsoft Learn
+# Add or Change Device Passcode on Work or School Device - Microsoft Intune | Microsoft Learn
 
 **Applies to**:
 
@@ -50,11 +50,11 @@ platformId: 5d4f5212-c742-3735-f2dd-62c373e4d53a
 - iOS/iPadOS
 - macOS
 
-When you enroll your device for work or school use, you might need to adjust the lock screen and startup settings you use to unlock your device so that they align with your organization's password and biometric requirements. Password and biometric requirements are put in place to prevent unauthorized individuals from gaining access to the work or school data on your device. Until you choose a more secure authentication method for your device's lock screen, you might be blocked from accessing your organization's network.
+When you enroll your device for work or school use, you might need to adjust the lock screen and startup settings you use to unlock your device so that they align with your organization's password and biometric requirements. Password and biometric requirements prevent unauthorized individuals from gaining access to the work or school data on your device. Until you choose a more secure authentication method for your device's lock screen, you might be blocked from accessing your organization's network.
 
 ## List of Company Portal messages
 
-For a list of all passcode-related messages in Company Portal, see [Device password messages in Company Portal](ref-password-messages). Company Portal sends you one message per password requirement. For example, if your passcode is too short and too simple, you receive one message about the length and one message about the complexity. Your workplace chooses the password and biometric requirements for your device. If the Company Portal messages appear too vague, contact your IT support person directly for the exact password and biometric requirements for your device.
+For a list of all passcode-related messages, see [Device password messages in Company Portal](ref-password-messages). Company Portal sends you one message per password requirement. For example, if your passcode is too short and too simple, you receive one message about the length and one message about the complexity. Your workplace chooses the password and biometric requirements for your device. If the Company Portal messages appear too vague, contact your IT support person directly for the exact password and biometric requirements for your device.
 
 ## Change password and biometrics
 

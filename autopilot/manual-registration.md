@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Manual registration of devices for Windows Autopilot | Microsoft Learn
+title: Manual Registration of Devices for Windows Autopilot | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/manual-registration
 author: iceorbital
 ms.author: acabello
@@ -13,8 +13,8 @@ feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/ef1d6d
 feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
-description: Manual registration overview.
-ms.date: 2025-03-27T00:00:00.0000000Z
+description: Manual registration for Windows Autopilot lets you add VMs, legacy devices, and non-partner hardware. Learn when to register manually and which platform to use.
+ms.date: 2026-10-30T00:00:00.0000000Z
 ms.topic: how-to
 ms.collection:
 - M365-modern-desktop
@@ -44,36 +44,36 @@ spProducts:
 platformId: ea01639a-c5be-424f-59e7-899b90998775
 ---
 
-# Manual registration of devices for Windows Autopilot | Microsoft Learn
+# Manual Registration of Devices for Windows Autopilot | Microsoft Learn
 
-Ideally, the OEM, reseller, or distributor from which the device was purchased performs the registration of a device with Windows Autopilot. However it's also possible to register devices manually. A device might need to be registered manually if:
+Ideally, the manufacturer, reseller, or distributor from which you purchased the device registers the device with Windows Autopilot. You can also register devices manually. You might need to manually register a device if:
 
-- The device was obtained from a non-participant device manufacturer or reseller.
+- You obtained the device from a nonparticipant device manufacturer or reseller.
 - The device is a virtual machine (VM).
 - The device doesn't otherwise qualify for automatic registration, such as an existing legacy device.
 
-The following diagram shows how manual registration and OEM registration might be used to deploy both new and existing devices with Windows Autopilot.
+The following diagram shows how manual registration and manufacturer registration might be used to deploy both new and existing devices with Windows Autopilot.
 
-![Screenshot that shows Windows Autopilot device registration process.](images/image2.png)
+![Diagram that shows Windows Autopilot device registration process.](images/image2.png)
 
 For a list of participant device manufacturers and device resellers, see [Windows Autopilot device manufacturers and resellers](https://www.microsoft.com/microsoft-365/windows/windows-autopilot).
 
-To [manually register a device](add-devices), a device's hardware hash first has to be captured. Once this process is completed, the resulting hardware hash can be uploaded to the Windows Autopilot service. Because this process requires booting the device into Windows to obtain the hardware hash, manual registration is intended primarily for testing and evaluation scenarios.
+To [manually register a device](add-devices), you need to capture a device's hardware hash. After you complete this process, you can upload the resulting hardware hash to the Windows Autopilot service. Because this process requires booting the device into Windows to obtain the hardware hash, manual registration is primarily intended for testing and evaluation scenarios.
 
 Note
 
-Customers can only register devices with a hardware hash. Other methods (PKID, tuple) are available through OEMs or CSP partners as described in the previous sections.
+Customers can only register devices with a hardware hash. Other methods (PKID, tuple) are available through manufacturers or CSP partners. See [Windows Autopilot registration overview](registration-overview).
 
 ## Platforms for device registration
 
 After the hardware hashes are captured from existing devices, they can be uploaded in any of the following ways:
 
-- [Microsoft Intune](add-devices) - Intune is the preferred mechanism for all customers.
+- [Microsoft Intune](add-devices). Intune is the preferred mechanism for all customers.
 
     - The [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) is used for Intune device enrollment.
-- Partner Center - Partner Center is used by CSP partners to register devices on behalf of customers.
+- Partner Center. Partner Center is used by CSP partners to register devices on behalf of customers.
 - Microsoft 365 Business & Office 365 Admin - Microsoft 365 Business & Office 365 Admin is typically used by small and medium businesses (SMBs) who manage their devices using Microsoft 365 Business.
-- Microsoft Store for Business - Since Microsoft Store for Business is deprecated, use another method instead.
+- Microsoft Store for Business. Since Microsoft Store for Business is deprecated, use another method instead.
 
 Important
 
@@ -92,21 +92,21 @@ A summary of each platform's capabilities is provided in the following table:
 - **^1^** Microsoft recommended platform to use.
 - **^2^** Intune license required.
 - **^3^** Feature capabilities are limited.
-- **^4^** Device profile assignment will be retired from Microsoft Store for Business in the coming months.
+- **^4^** Device profile assignment to be retired from Microsoft Store for Business.
 
 For more information about device IDs, see the following articles:
 
-- [Device identification](registration-overview#device-identification).
-- [Windows Autopilot device guidelines](autopilot-device-guidelines).
-- [Add devices to a customer account](/en-us/partner-center/autopilot).
+- [Device identification](registration-overview#device-identification)
+- [Windows Autopilot device guidelines](autopilot-device-guidelines)
+- [Add devices to a customer account](/en-us/partner-center/autopilot)
 
 ## Manually register devices with Windows Autopilot
 
-For a how to guide on how to register devices with Windows Autopilot, see one of the following links:
+For a guide on how to register devices with Windows Autopilot, see one of the following articles:
 
-- [Manually register devices with Windows Autopilot](add-devices).
-- [User-driven Microsoft Entra join: Register devices as Windows Autopilot devices](tutorial/user-driven/azure-ad-join-register-device).
-- [User-driven Microsoft Entra hybrid join: Register devices as Windows Autopilot devices](tutorial/user-driven/hybrid-azure-ad-join-register-device).
-- [Pre-provision Microsoft Entra join: Register devices as Windows Autopilot devices](tutorial/pre-provisioning/azure-ad-join-register-device).
-- [Pre-provision Microsoft Entra hybrid join: Register devices as Windows Autopilot devices](tutorial/pre-provisioning/hybrid-azure-ad-join-register-device).
-- [Self-deploying mode: Register devices as Windows Autopilot devices](tutorial/self-deploying/self-deploying-register-device).
+- [Manually register devices with Windows Autopilot](add-devices)
+- [User-driven Microsoft Entra join: Register devices as Windows Autopilot devices](tutorial/user-driven/azure-ad-join-register-device)
+- [User-driven Microsoft Entra hybrid join: Register devices as Windows Autopilot devices](tutorial/user-driven/hybrid-azure-ad-join-register-device)
+- [Pre-provision Microsoft Entra join: Register devices as Windows Autopilot devices](tutorial/pre-provisioning/azure-ad-join-register-device)
+- [Pre-provision Microsoft Entra hybrid join: Register devices as Windows Autopilot devices](tutorial/pre-provisioning/hybrid-azure-ad-join-register-device)
+- [Self-deploying mode: Register devices as Windows Autopilot devices](tutorial/self-deploying/self-deploying-register-device)

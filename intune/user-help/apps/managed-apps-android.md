@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Managed work and school apps for Android - Microsoft Intune | Microsoft Learn
+title: Managed Work and School Apps for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/apps/managed-apps-android
 author: iceorbital
 ms.author: acabello
@@ -10,8 +10,8 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.subservice: end-user
 ms.topic: end-user-help
-description: Learn about managed apps and where to get Android apps for work or school.
-ms.date: 2025-01-27T00:00:00.0000000Z
+description: Get managed work and school apps for Android through Google Play or Company Portal. Learn how app protection policies safeguard your organization's data.
+ms.date: 2026-10-30T00:00:00.0000000Z
 ms.reviewer: esmich
 locale: en-us
 document_id: 7de3e51f-1f77-d105-3e67-3c56d2d9927b
@@ -39,13 +39,13 @@ spProducts:
 platformId: 0398b5dc-a62d-2bd5-25b7-2a3f00c5371f
 ---
 
-# Managed work and school apps for Android - Microsoft Intune | Microsoft Learn
+# Managed Work and School Apps for Android - Microsoft Intune | Microsoft Learn
 
 Note
 
-Managed apps are not currently supported on AOSP devices.
+Managed apps aren't currently supported on AOSP devices.
 
-Intune-managed apps (*managed* apps for short) are work-approved apps managed by your organization and configured to prevent intentional or unintentional data loss. When signed in to a managed app with your work or school account, you might encounter your organization's requirements and restrictions for access. This article provides an overview of Intune-managed apps, how to get the ones you need for work or school, and their restrictions and requirements.
+Intune-managed apps (*managed* apps for short) are work-approved apps your organization manages. Your organization configures them to prevent intentional or unintentional data loss. When you sign in to a managed app with your work or school account, you might encounter your organization's requirements and restrictions for access. This article provides an overview of Intune-managed apps, how to get the ones you need for work or school, and their restrictions and requirements.
 
 ## How do I know I have a managed app?
 
@@ -58,22 +58,22 @@ On a device with a work profile, a work app is marked with a briefcase badge. Fo
 Managed apps enforce your organization's app and data-protection policies, which might restrict or require:
 
 - Access to specific websites
-- Access to internal company websites using Microsoft Edge and the Microsoft Entra ID proxy
+- Access to internal company websites by using Microsoft Edge and the Microsoft Entra ID proxy
 - Minimum app and OS version
 - Ability to share and transfer data between apps
 - How and where you save work files
 - Copy and paste functionality
 - PIN access
-- How you sign in, using workplace credentials
+- How you sign in, by using workplace credentials
 - Ability to back up data to the cloud
 - Ability to take screenshots
 - Data encryption requirements
 
-These policies prevent sensitive work information from being shared or leaked outside of your org. Restrictions and requirements are only enforced when using an app for work or school, such as when:
+These policies prevent sensitive work information from being shared or leaked outside of your organization. Restrictions and requirements are only enforced when you use an app for work or school, such as when:
 
-- You're signed in to an app with your work account.
+- You sign in to an app by using your work account.
 - You try to access work files in OneDrive, Teams, or SharePoint.
-- You're using apps in the work profile area on your device.
+- You use apps in the work profile area on your device.
 
 ## How do I install work or school apps?
 
@@ -94,7 +94,7 @@ You can only associate one work or school account with the managed apps on your 
 
 ### Available apps
 
-*Available* apps aren't necessarily required for you to install, but are appropriate apps to use for work or school. You can view all available apps in the Company Portal app. Apps are made available based on device type. For example, if you're using the Company Portal app on your Android device, you'll have access to Android apps, but not iOS apps.
+*Available* apps aren't necessarily required for you to install, but are appropriate apps to use for work or school. You can view all available apps in the Company Portal app. Apps are made available based on device type. For example, if you're using the Company Portal app on your Android device, you have access to Android apps, but not iOS apps.
 
 ### Request an app for work or school
 

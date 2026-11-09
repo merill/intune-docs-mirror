@@ -13,8 +13,8 @@ feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/ef1d6d
 feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
-description: Overview of Windows Autopilot device registration.
-ms.date: 2025-03-25T00:00:00.0000000Z
+description: Before you deploy a device using Windows Autopilot, learn about the requirements to register it with the service.
+ms.date: 2026-10-23T00:00:00.0000000Z
 ms.topic: how-to
 ms.collection:
 - M365-modern-desktop
@@ -46,23 +46,23 @@ platformId: 63e18905-6c75-fbf4-d4ff-bc9cff9bde9e
 
 # Windows Autopilot registration overview | Microsoft Learn
 
-Before a device is deployed using Windows Autopilot, the device must be registered with the Windows Autopilot deployment service.
+Before you deploy a device by using Windows Autopilot, register the device with the Windows Autopilot deployment service.
 
 Successful registration requires that two processes are complete:
 
-1. The device's unique hardware identity (known as a hardware hash) is captured and uploaded to the Windows Autopilot service.
+1. The device's unique hardware identity, known as a *hardware hash*, is captured and uploaded to the Windows Autopilot service.
 2. The device is associated to an Azure tenant ID.
 
-Ideally, the OEM, reseller, or distributor performs both of these processes from which the devices were purchased. An OEM or other device provider uses the [registration authorization](registration-auth) process to perform device registration on behalf of the organization.
+Ideally, the manufacturer, reseller, or distributor from which you purchased the devices performs both of these processes. A manufacturer or other device provider uses the [registration authorization](registration-auth) process to perform device registration on behalf of the organization.
 
-Registration can also be performed within the organization by collecting the hardware identity from new or existing devices and [uploading it manually](manual-registration). If devices meet certain requirements, they can also be configured for [automatic registration](automatic-registration) with Windows Autopilot. For more information about the ways in which devices can be registered with Windows Autopilot, see the following overview articles:
+You can also perform registration within the organization by collecting the hardware identity from new or existing devices and [uploading it manually](manual-registration). If devices meet certain requirements, you can also configure them for [automatic registration](automatic-registration) with Windows Autopilot. For more information about the ways in which devices can be registered with Windows Autopilot, see the following overview articles:
 
 - [OEM registration](oem-registration)
 - [Reseller, distributor, or partner registration](partner-registration)
 - [Automatic registration](automatic-registration)
 - [Manual registration](manual-registration)
 
-When a Windows Autopilot device is registered, it automatically creates a Microsoft Entra object. The Windows Autopilot deployment process needs this object to identify the device before the user signs in. If the object is deleted, the device can fail to enroll through Windows Autopilot.
+When you register a Windows Autopilot device, it automatically creates a Microsoft Entra object. The Windows Autopilot deployment process needs this object to identify the device before the user signs in. If you delete the object, the device can fail to enroll through Windows Autopilot.
 
 Important
 
@@ -75,106 +75,106 @@ These options are intended for users to join personally owned devices to their o
 
 If a device is already one of these two types of devices, to register is as a Windows Autopilot device, first remove it from Microsoft Intune and Microsoft Entra ID. For more information, see [Why is the join type for a device showing as "Microsoft Entra registered" instead of "Microsoft Entra joined"?](troubleshooting-faq#why-is-the-join-type-for-a-device-showing-as--microsoft-entra-registered--instead-of--microsoft-entra-joined--) and [Deregister a device](registration-overview#deregister-a-device).
 
-If a profile isn't assigned to a Windows Autopilot device, it receives the default Windows Autopilot profile. If a device shouldn't go through Windows Autopilot, remove the Windows Autopilot registration.
+If you don't assign a profile to a Windows Autopilot device, it receives the default Windows Autopilot profile. If a device shouldn't go through Windows Autopilot, remove the Windows Autopilot registration.
 
 ## Terms
 
-The following terms are used to refer to various steps in the registration process:
+The following terms refer to various steps in the registration process:
 
-| **Term** | **Definition** |
+| Term | Definition |
 | --- | --- |
 | **Device registration** | Device registration happens when a device's hardware hash is associated with the Windows Autopilot service. This process can be automated for new enterprise devices manufactured by OEMs that are Windows Autopilot partners. |
-| **Add devices** | Adding a device is the process of registering a device with the Windows Autopilot service (if it isn't already registered) **and associating it to a tenant ID**. |
-| **Import devices** | Importing devices is the process of uploading a comma-separated-values (CSV) file that contains device information in order to manually add devices. The device information includes information such the model and serial number. |
+| **Add devices** | Adding a device is the process of registering a device with the Windows Autopilot service, if it isn't already registered, **and associating it to a tenant ID**. |
+| **Import devices** | Importing devices is the process of uploading a comma-separated-values (CSV) file that contains device information to manually add devices. The device information includes details such as the model and serial number. |
 | **Enroll devices** | Enrolling a device is the process of adding devices to Intune. |
 
 ## Device identification
 
-To identify a device with Windows Autopilot, the device's unique hardware hash must be captured and uploaded to the service. As previously mentioned, this step is ideally done by the hardware vendor (OEM, reseller, or distributor) automatically associating the device with an organization. It's also possible to do identify a device with a [harvesting process](add-devices) that collects the device's hardware hash from within a running Windows installation.
+To identify a device with Windows Autopilot, capture the device's unique hardware hash and upload it to the service. The hardware vendor (OEM, reseller, or distributor) typically handles this step and automatically associates the device with an organization. You can also identify a device by using a [harvesting process](add-devices) that collects the device's hardware hash from within a running Windows installation.
 
 The hardware hash contains details about the device, such as:
 
-- Manufacturer.
-- Model.
-- Device serial number.
-- Hard drive serial number.
-- Details about when the ID was generated.
-- Many other attributes that can be used to uniquely identify the device.
+- Manufacturer
+- Model
+- Device serial number
+- Hard drive serial number
+- Details about when the ID was generated
+- Many other attributes that uniquely identify the device
 
-The hardware hash changes each time it's generated because it includes details about when it was generated. When the Windows Autopilot deployment service attempts to match a device, it considers changes like that. It also considers large changes such as a new hard drive, and is still able to match successfully. But large changes to the hardware, such as a motherboard replacement, wouldn't match, so a new hash would need to be generated and uploaded.
+The hardware hash changes each time you generate it because it includes details about when it was generated. When the Windows Autopilot deployment service attempts to match a device, it considers changes like that. It also considers large changes such as a new hard drive, and is still able to match successfully. But large changes to the hardware, such as a motherboard replacement, don't match, so you need to generate and upload a new hash.
 
 For more information about device IDs, see the following articles:
 
-- [Windows Autopilot device guidelines](autopilot-device-guidelines).
-- [Add devices to a customer account](/en-us/partner-center/autopilot).
+- [Windows Autopilot device guidelines](autopilot-device-guidelines)
+- [Add devices to a customer account](/en-us/partner-center/autopilot)
 
 ## Windows Autopilot devices
 
-Devices that are registered with the Windows Autopilot service are displayed in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) under **Devices** &gt; **Enrollment** &gt; **Windows** &gt; **Windows Autopilot** &gt; **Devices**:
+You can view devices that are registered with the Windows Autopilot service in the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431). Go to **Devices** &gt; **Enrollment** &gt; **Windows** &gt; **Windows Autopilot** &gt; **Devices**:
 
 Note
 
-Devices that are listed in Intune under **Devices** &gt; **Windows** &gt; **Windows devices** aren't the same as Windows Autopilot devices **Devices** &gt; **Enrollment** &gt; **Windows** &gt; **Windows Autopilot** &gt; **Devices**. Windows Autopilot devices are added to the list of **Windows devices** when both of the following are complete:
+Devices that are listed in Intune under **Devices** &gt; **Windows** &gt; **Windows devices** aren't the same as Windows Autopilot devices under **Devices** &gt; **Enrollment** &gt; **Windows** &gt; **Windows Autopilot** &gt; **Devices**. Windows Autopilot devices are added to the list of **Windows devices** when both of the following conditions are true:
 
 - The Windows Autopilot registration process is successful.
-- A [licensed](requirements?tabs=licensing) user has signed in on the device.
+- A [licensed](requirements?tabs=licensing) user signs in on the device.
 
 ## Deregister a device
 
-Whenever a device permanently leaves an organization, the device should always be deregistered from Windows Autopilot. For example, the device leaves the organization for repair or because the device is at the end of its life cycle.
+Whenever a device permanently leaves an organization, you should deregister it from Windows Autopilot. For example, the device leaves the organization for repair or because the device is at the end of its life cycle.
 
-Below we describe the steps an admin would go through to deregister a device from Intune and Windows Autopilot.
+The following steps describe how an administrator deregisters a device from Intune and Windows Autopilot.
 
 ### Delete from Intune
 
-Before a device is deregistered from Windows Autopilot, it first has to be deleted from Intune. To delete a Windows Autopilot device from Intune:
+Before you deregister a device from Windows Autopilot, delete it from Intune. To delete a Windows Autopilot device from Intune:
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. In the **Home** screen, select **Devices** in the left pane.
+2. In the **Home** screen, in the left pane, select **Devices**.
 3. In the **Devices | Overview** screen, under **By platform**, select **Windows**.
-4. Under **Device name**, find the device that needs to be deleted and then select the device. If necessary, use the **Search** box.
-5. In the properties screen for the device, make a note of the serial number listed under **Serial number**.
-6. After making a note of the serial number of the device, select **Delete** in the toolbar at the top of the page.
-7. A warning dialog box appears to confirm the deletion of the device from Intune. Select **Yes** to confirm deleting the device.
+4. Under **Device name**, find the device that you want to delete and then select the device. If necessary, search for it.
+5. In the properties screen for the device, note the serial number listed under **Serial number**.
+6. After making a note of the serial number, in the toolbar at the top of the page, select **Delete**.
+7. When the warning dialog appears, confirm the deletion of the device from Intune. Select **Yes** to confirm deleting the device.
 
 ### Deregister from Windows Autopilot using Intune
 
-Once the device is deleted from Intune, it can then be deregistered from Windows Autopilot. This process includes required cleanup steps in Intune and Microsoft Entra ID to prevent orphaned or unrecoverable devices. To deregister a device from Windows Autopilot:
+After you delete the device from Intune, you can deregister it from Windows Autopilot. This process includes required cleanup steps in Intune and Microsoft Entra ID to prevent orphaned or unrecoverable devices. To deregister a device from Windows Autopilot:
 
-1. Make sure the device is deleted from Intune as described in the Delete from Intune section.
+1. Ensure the device is deleted from Intune as described in the Delete from Intune section.
 2. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-3. In the **Home** screen, select **Devices** in the left hand pane.
+3. In the **Home** screen, in the left pane, select **Devices**.
 4. In the **Devices | Overview** screen, under **By platform**, select **Windows**.
 5. In the **Windows | Windows devices** screen, under **Device onboarding**, select **Enrollment**.
 6. In the **Windows | Windows enrollment** screen, under **Windows Autopilot**, select **Devices**.
-7. In the **Windows Autopilot devices** screen that opens, under **Serial number**, find the device that needs to be deregistered by its serial number as determined in the Delete from Intune section. If necessary, use the **Search by serial number** box.
+7. In the **Windows Autopilot devices** screen, under **Serial number**, find the device that you want to deregister by its serial number as determined in the Delete from Intune section. If necessary, use **Search by serial number**.
 8. Select the device by selecting the checkbox next to the device.
-9. Select the extended menu icon (`…`) on the far right end of the line containing the device. A menu appears with the option **Unassign user**.
+9. Select the extended menu icon (`…`) on the far right end of the line that contains the device. A menu appears with the option **Unassign user**.
 
-    - If the **Unassign user** option is available and not greyed out, then select it. A warning dialog box appears confirming to unassign the user from the device. Select **OK** to confirm unassigning the device from the user.
-    - If the **Unassign user** option isn't available and greyed out, then move on to the next step.
-10. With the device still selected, select **Delete** in the toolbar at the top of the page.
-11. A warning dialog box appears to confirm the deletion of the device from Windows Autopilot. Select **Yes** to confirm deleting the device.
-12. The deregistration process might take some time. The process can be accelerated by selecting the **Sync** button in the toolbar at the top of the page.
+    - If the **Unassign user** option is available, select it. A warning appears confirming to unassign the user from the device. Select **OK** to confirm unassigning the device from the user.
+    - If the **Unassign user** option isn't available, move on to the next step.
+10. With the device still selected, in the toolbar at the top of the page, select **Delete**.
+11. A warning appears to confirm the deletion of the device from Windows Autopilot. Select **Yes** to confirm deleting the device.
+12. The deregistration process might take some time. To accelerate the process, in the toolbar at the top of the page, select **Sync**.
 13. Every few minutes select **Refresh** in the toolbar at the top of the page until the device is no longer present.
 
 Important
 
-- For Microsoft Entra joined devices, no additional steps are required after deregistering the device from Windows Autopilot using Intune. Avoid manually deleting the device from Microsoft Entra ID, as this can cause unexpected issues.
+- For Microsoft Entra joined devices, no additional steps are required after you deregister the device from Windows Autopilot by using Intune. Avoid manually deleting the device from Microsoft Entra ID, because this approach can cause unexpected issues.
 - For Microsoft Entra hybrid joined devices, delete the computer object from the on‑premises Active Directory Domain Services (AD DS) environment to prevent it from being resynced to Microsoft Entra ID. After this step, no additional actions are required in Intune or Windows Autopilot. Avoid manually deleting the device from Microsoft Entra ID.
 
-For information about what to expect in Microsoft Entra ID after deregistration, see What happens to the Microsoft Entra device object after deregistration?
+For more information, see What happens to the Microsoft Entra device object after deregistration?
 
 This process ensures that related records in Windows Autopilot, Intune, and Microsoft Entra ID are handled correctly. Skipping steps or removing records out of order can result in orphaned records or unrecoverable devices. If a device goes into an unrecoverable state, contact the appropriate [Microsoft support alias](autopilot-support) for assistance.
 
 ### What happens to the Microsoft Entra device object after deregistration?
 
-Deregistering a device from Windows Autopilot removes the device’s registration from the Windows Autopilot deployment service. However, this action doesn’t always remove the corresponding Microsoft Entra device object.
+Deregistering a device from Windows Autopilot removes the device's registration from the Windows Autopilot deployment service. This action doesn't always remove the corresponding Microsoft Entra device object.
 
-What happens in Microsoft Entra ID depends on the device’s join and enrollment state:
+What happens in Microsoft Entra ID depends on the device's join and enrollment state:
 
-- **Devices that aren’t currently enrolled in MDM:** Removing the Windows Autopilot registration can also result in the associated Microsoft Entra device object being removed.
-- **Devices that are or were enrolled in MDM:** Removing the Windows Autopilot registration doesn’t automatically delete the Microsoft Entra device object. In this case, the device can remain in Microsoft Entra ID even though it’s no longer registered with Windows Autopilot.
+- **Devices that aren't currently enrolled in MDM:** Removing the Windows Autopilot registration can also result in the associated Microsoft Entra device object being removed.
+- **Devices that are or were enrolled in MDM:** Removing the Windows Autopilot registration doesn't automatically delete the Microsoft Entra device object. In this case, the device can remain in Microsoft Entra ID even though it's no longer registered with Windows Autopilot.
 
 Because this behavior varies, avoid manually deleting the device from Microsoft Entra ID unless a specific scenario requires it. The Windows Autopilot deployment process relies on the Microsoft Entra device object, and deleting it can cause enrollment failures.
 
@@ -183,28 +183,28 @@ Because this behavior varies, avoid manually deleting the device from Microsoft 
 The device can be deregistered from Windows Autopilot in [Microsoft 365 admin center](https://admin.microsoft.com/) if using the Microsoft 365 admin center instead of Intune. To deregister a Windows Autopilot device from the Microsoft 365 admin center:
 
 1. Sign in to to the [Microsoft 365 admin center](https://admin.microsoft.com/).
-2. Navigate to **Devices** &gt; **Autopilot**.
-3. Select the device to be deregistered and then select **Delete device**.
+2. Go to **Devices** &gt; **Autopilot**.
+3. Select the device to deregister and then select **Delete device**.
 
 ### Deregister from Windows Autopilot in Microsoft Partner Center (MPC)
 
 To deregister a Windows Autopilot device from the Microsoft Partner Center (MPC), a Cloud Solution Partner (CSP) would:
 
 1. Sign in to the Microsoft Partner Center (MPC).
-2. Navigate to **Customer** &gt; **Devices**.
+2. Go to **Customer** &gt; **Devices**.
 3. Select the device to be deregistered and then select **Delete device**.
 
-    ![Screenshot of delete device](images/devices.png)
+    ![Screenshot shows the Devices page where you can delete the device.](images/devices.png)
 
-Partners deregistering a device from Windows Autopilot in Microsoft Partner Center (MPC) only deregisters the device from Windows Autopilot. It doesn't perform any of the following actions:
+When partners deregister a device from Windows Autopilot in Microsoft Partner Center (MPC), they only deregister the device from Windows Autopilot. This action doesn't perform any of the following actions:
 
 - Unenroll the device from the mobile device management (MDM) solution, such as Intune.
 - Disjoin the device from Microsoft Entra ID.
 
-For these reasons, the OEM or CSP should work with the customer IT administrators to have the device fully removed by following the steps in the Deregister a device section.
+For these reasons, the manufacturer or CSP should work with the customer IT administrators to fully remove the device by following the steps in the Deregister a device section.
 
-An OEM or CSP with integrated OEM Direct APIs can also deregister a device with the **AutopilotDeviceRegistration** API. Make sure the **TenantID** and **TenantDomain** fields are left blank.
+An OEM or CSP with integrated OEM Direct APIs can also deregister a device by using the **AutopilotDeviceRegistration** API. Ensure the **TenantID** and **TenantDomain** fields are left blank.
 
 Note
 
-If an admin registered a device via another portal other than the Microsoft Partner Center (MPC) such as Intune or the [Microsoft 365 admin center](https://admin.microsoft.com/), the device doesn't show up in Microsoft Partner Center (MPC). For a partner to register a device in the Microsoft Partner Center (MPC), the devices first needs to be deregistered using the steps outlined in the Deregister a device section.
+If an admin registered a device by using another portal other than the Microsoft Partner Center (MPC) such as Intune or the [Microsoft 365 admin center](https://admin.microsoft.com/), the device doesn't show up in Microsoft Partner Center (MPC). For a partner to register a device in the Microsoft Partner Center (MPC), the devices first needs to be deregistered by using the steps outlined in the Deregister a device section.
