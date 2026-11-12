@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Domain join profile settings for Windows devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-domain-join-windows
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Create a domain join device configuration profile for Microsoft Entra hybrid joined devices. Use this profile to deploy on-premises Active Directory domain information to devices provisioned with Windows Autopilot and Microsoft Intune.
 ms.date: 2025-10-22T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mikedano
 locale: en-us
 document_id: d7ba9ac5-11a9-085a-ae04-886bb4054a2d
 document_version_independent_id: d7ba9ac5-11a9-085a-ae04-886bb4054a2d

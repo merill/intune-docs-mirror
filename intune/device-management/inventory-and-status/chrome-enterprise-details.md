@@ -2,8 +2,8 @@
 layout: Conceptual
 title: View ChromeOS device information - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/inventory-and-status/chrome-enterprise-details
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -13,7 +13,6 @@ ms.collection:
 description: View ChromeOS devices and details synced with the Chrome Enterprise connector in the Microsoft Intune admin center.
 ms.date: 2023-11-06T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: shsivak
 locale: en-us
 document_id: 526c3dc5-a9f1-837c-cc9d-7c23553585ae
 document_version_independent_id: 526c3dc5-a9f1-837c-cc9d-7c23553585ae

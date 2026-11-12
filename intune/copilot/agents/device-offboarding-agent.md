@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Get Started with the Device Offboarding Agent - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/copilot/agents/device-offboarding-agent
-author: iceorbital
-ms.author: acabello
+author: matt-call
+ms.author: mattcall
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 description: Learn about the Device Offboarding Agent in Microsoft Intune, its prerequisites, how it works, and how to configure it.
 ms.date: 2025-10-15T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: rishitasarin
 locale: en-us
 document_id: bbaaf7a7-604b-398a-41f6-bd66a212804f
 document_version_independent_id: bbaaf7a7-604b-398a-41f6-bd66a212804f

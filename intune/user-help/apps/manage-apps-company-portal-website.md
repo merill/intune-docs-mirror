@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manage apps from Intune Company Portal website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/apps/manage-apps-company-portal-website
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Manage and view available and installed apps
 ms.date: 2025-03-05T00:00:00.0000000Z
-ms.reviewer: 
 locale: en-us
 document_id: 8e8d0cbb-84ca-94d3-1c4e-27384a89dc9d
 document_version_independent_id: 8e8d0cbb-84ca-94d3-1c4e-27384a89dc9d

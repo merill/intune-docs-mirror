@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Retrieve iOS app logs - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/diagnostics/collect-app-logs-ios
-author: iceorbital
-ms.author: acabello
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to retrieve Intune Company Portal app logs off your device for troubleshooting purposes.
 ms.date: 2025-03-05T00:00:00.0000000Z
-ms.reviewer: annovich
 locale: en-us
 document_id: 031ee845-6884-f9d6-9bfa-7a0dbb430f05
 document_version_independent_id: 031ee845-6884-f9d6-9bfa-7a0dbb430f05

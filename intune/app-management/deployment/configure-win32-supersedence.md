@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Win32
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to create supersedence relationships between Win32 apps in Microsoft Intune to update or replace existing apps with newer versions.
 ms.date: 2026-04-06T00:00:00.0000000Z

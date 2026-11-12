@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Download definitions from MMPC - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/protect/deploy-use/endpoint-definitions-protection-center
-author: iceorbital
-ms.author: acabello
+author: MikeDano
+ms.author: mikedano
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -81,7 +81,7 @@ The following compliance partners are supported as generally available:
 
 Note
 
-Microsoft Intune is currently revamping our device compliance partner process, which will be available for prospective partners in 2026 Q3.
+For instructions on how to apply to be a Microsoft Intune Mobile Device Management Compliance partner, please visit our [partner page](/en-us/intune/device-security/compliance/become-mobile-device-management-compliance-provider?branch=main).
 
 ## Self-service onboarding for compliance partners
 

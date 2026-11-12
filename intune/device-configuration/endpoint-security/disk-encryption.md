@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Microsoft Intune endpoint security disk encryption policy - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/disk-encryption
-author: iceorbital
-ms.author: acabello
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

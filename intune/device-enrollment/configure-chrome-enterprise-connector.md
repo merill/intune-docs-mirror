@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure ChromeOS connector for Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/configure-chrome-enterprise-connector
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Learn how to connect the Google Admin Console to Microsoft Intune so that you can view and take action on enrolled ChromeOS devices.
 ms.date: 2022-10-26T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: shsivak
 locale: en-us
 document_id: f2543475-67e6-6a2a-bcc5-0e739b4bbd29
 document_version_independent_id: f2543475-67e6-6a2a-bcc5-0e739b4bbd29

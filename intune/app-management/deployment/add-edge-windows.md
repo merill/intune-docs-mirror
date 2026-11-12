@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - Windows
-ms.reviewer: arnab
 ms.subservice: apps
 description: Learn about adding Microsoft Edge for Windows to Microsoft Intune.
 ms.date: 2025-10-02T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: arnab
 ms.custom: 
 locale: en-us
 document_id: dca372dd-e827-cf3e-64dc-da1ad2ddb8c3

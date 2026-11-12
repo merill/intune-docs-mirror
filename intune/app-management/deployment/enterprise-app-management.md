@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_EAC
-ms.reviewer: dguilory
 ms.subservice: suite
 description: Learn about Enterprise App Management and the Enterprise App Catalog in Microsoft Intune.
 ms.date: 2026-11-03T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: dguilory
 locale: en-us
 document_id: 63dcddbd-498d-178a-421c-b36c4cd26f76
 document_version_independent_id: 63dcddbd-498d-178a-421c-b36c4cd26f76

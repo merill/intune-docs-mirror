@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Remove device from Company Portal website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/device-actions/remove-device-company-portal-website
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Sign in to the Intune Company Portal website to unregister a personal device from work or school.
 ms.date: 2024-11-08T00:00:00.0000000Z
-ms.reviewer: jieyan
 locale: en-us
 document_id: 7898ed59-c0a3-44b0-95b9-0ac85f66c60f
 document_version_independent_id: 7898ed59-c0a3-44b0-95b9-0ac85f66c60f

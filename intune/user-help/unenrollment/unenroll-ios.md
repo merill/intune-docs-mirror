@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Remove your iOS device from Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/unenrollment/unenroll-ios
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to remove an iOS device from Intune and how to delete stored data.
 ms.date: 2025-02-18T00:00:00.0000000Z
-ms.reviewer: andycerat
 locale: en-us
 document_id: de7015db-d547-9c56-fbcd-9d99b8e6186c
 document_version_independent_id: 8a31fdf7-e4b4-5688-d467-e63546938dfd

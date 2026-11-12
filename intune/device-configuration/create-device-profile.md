@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure device configuration profiles in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/create-device-profile
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,7 +16,6 @@ description: Add or configure a device configuration profile in Microsoft Intune
 ms.date: 2025-09-15T00:00:00.0000000Z
 ms.update-cycle: 180-days
 ms.topic: how-to
-ms.reviewer: 
 locale: en-us
 document_id: df3dbd37-b8d8-b10c-2582-d38d0457a62f
 document_version_independent_id: df3dbd37-b8d8-b10c-2582-d38d0457a62f

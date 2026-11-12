@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Company Portal device setting requirements for Windows - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/update-settings-windows
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn more about Intune Company Portal device setting requirements for Windows OS.
 ms.date: 2024-08-05T00:00:00.0000000Z
-ms.reviewer: madakeva
 locale: en-us
 document_id: ad076d60-97cf-f39c-ee2f-6b09f51e73aa
 document_version_independent_id: ad076d60-97cf-f39c-ee2f-6b09f51e73aa

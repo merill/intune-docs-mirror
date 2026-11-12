@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Check device status in Microsoft Intune app for Linux - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/validate-status-linux
-author: iceorbital
-ms.author: acabello
+author: arnabbiswas
+ms.author: arnab
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Verify work access and resolve compliance issues in the Intune app for Linux.
 ms.date: 2024-10-08T00:00:00.0000000Z
-ms.reviewer: arnab
 locale: en-us
 document_id: 3078137f-e578-3bc6-ea6f-2f1d9c119e45
 document_version_independent_id: 3078137f-e578-3bc6-ea6f-2f1d9c119e45

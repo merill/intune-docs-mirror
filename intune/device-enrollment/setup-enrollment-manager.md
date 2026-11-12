@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll devices using a device enrollment manager account - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/setup-enrollment-manager
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Use the device enrollment manager account to enroll devices in Intune.
 ms.date: 2025-06-18T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: 
 locale: en-us
 document_id: ea838bda-5684-3588-5680-e60d24eeb92e
 document_version_independent_id: ea838bda-5684-3588-5680-e60d24eeb92e

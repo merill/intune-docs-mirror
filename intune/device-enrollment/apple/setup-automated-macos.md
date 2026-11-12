@@ -10,11 +10,11 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: beflamm
 ms.subservice: enrollment
 description: Learn how to enroll corporate-owned Macs into Microsoft Intune with Apple Automated Device Enrollment (ADE).
 ms.date: 2026-10-28T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: beflamm
 ai-usage: ai-assisted
 locale: en-us
 document_id: a1e99ec9-652d-0ee7-7861-9d3730980e2f

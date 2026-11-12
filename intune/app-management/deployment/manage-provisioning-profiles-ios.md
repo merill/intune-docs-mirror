@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Intune gives you the tools to proactively assign a new provisioning profile to devices that have apps that are nearing expiry.
 ms.date: 2025-01-06T00:00:00.0000000Z

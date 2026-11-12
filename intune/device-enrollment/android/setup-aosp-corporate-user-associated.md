@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up Android (AOSP) device management in Intune for corporate-owned user-associated devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/setup-aosp-corporate-user-associated
-author: iceorbital
-ms.author: acabello
+author: mihughesms
+ms.author: mihughes
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Set up Intune for corporate-owned user-associated devices built on the Android Open Source Project (AOSP) platform.
 ms.date: 2025-05-15T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: jieyan
 locale: en-us
 document_id: c88ebe15-57bd-dc2e-1cee-355adfb5e278
 document_version_independent_id: c88ebe15-57bd-dc2e-1cee-355adfb5e278

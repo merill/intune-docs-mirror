@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - Windows
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Add and assign the Windows Company Portal app to Intune managed devices.
 ms.date: 2025-01-06T00:00:00.0000000Z

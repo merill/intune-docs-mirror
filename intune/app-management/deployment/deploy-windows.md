@@ -12,11 +12,11 @@ ms.collection:
 - M365-identity-device-management
 - Windows
 - FocusArea_Apps_Deploy
-ms.reviewer: priyar
 ms.subservice: apps
 description: Learn about Windows app deployment scenarios available with Microsoft Intune.
 ms.date: 2025-10-02T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: priyar
 locale: en-us
 document_id: 7691b0f1-3d33-ccbb-8ff9-3f5ba3030a6a
 document_version_independent_id: 7691b0f1-3d33-ccbb-8ff9-3f5ba3030a6a

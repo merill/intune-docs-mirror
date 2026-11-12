@@ -2,8 +2,8 @@
 layout: Conceptual
 title: How to Use Intune in Environments Without Google Mobile Services - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/manage-without-gms
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: apps
 description: Learn how to use Intune in environments without Google Mobile Services.
 ms.date: 2024-10-28T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: priyar
 locale: en-us
 document_id: a6c09a43-d0e8-ba2d-bb4e-695dc47e42aa
 document_version_independent_id: a6c09a43-d0e8-ba2d-bb4e-695dc47e42aa

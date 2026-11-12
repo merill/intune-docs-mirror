@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Enable Windows Backup for Organizations - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/enable-backup-restore
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: maholdaa
 ms.subservice: enrollment
 description: Enable Windows backup and restore in Intune for employees or students.
 ms.date: 2025-11-21T00:00:00.0000000Z

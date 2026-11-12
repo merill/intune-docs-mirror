@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add custom settings for Windows devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-custom-settings-windows
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add or create a custom profile to use the OMA-URI settings for devices running Windows 10/11 client in Microsoft Intune. Use a custom profile to add custom settings.
 ms.date: 2024-06-25T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mikedano
 locale: en-us
 document_id: b74820e8-3063-8ef3-64d9-baca2a374fb6
 document_version_independent_id: b74820e8-3063-8ef3-64d9-baca2a374fb6

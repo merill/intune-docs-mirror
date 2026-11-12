@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Deploy
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to assign an Intune app to groups of users or devices using Microsoft Intune.
 ms.date: 2026-08-06T00:00:00.0000000Z

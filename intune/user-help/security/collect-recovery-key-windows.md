@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Get BitLocker recovery key for enrolled device - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/security/collect-recovery-key-windows
-author: iceorbital
-ms.author: acabello
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

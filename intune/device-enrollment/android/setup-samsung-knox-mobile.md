@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Automatically enroll devices with Samsung Knox Mobile Enrollment - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/setup-samsung-knox-mobile
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Learn how to enroll Android devices in Microsoft Intune with the Knox Mobile Enrollment tool.
 ms.date: 2023-12-01T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: abigailstein
 locale: en-us
 document_id: 62ac626b-4450-3b64-5b99-665796b66838
 document_version_independent_id: 62ac626b-4450-3b64-5b99-665796b66838

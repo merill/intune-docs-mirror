@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Get the Intune Company Portal App - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Intune Company Portal is available for Android, iOS, macOS, and Windows. Learn where to install the app and how to sign in to access your work resources.
 ms.date: 2026-11-03T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: f0cd5875-7172-2544-24d6-495aff701d2d
 document_version_independent_id: 7c59e41f-8802-ed50-83e5-4cb21ddf593a

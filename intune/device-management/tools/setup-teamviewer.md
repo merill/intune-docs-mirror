@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use the latest TeamViewer integration in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/tools/setup-teamviewer
-author: iceorbital
-ms.author: acabello
+author: kara-wang
+ms.author: karawang
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -3,8 +3,8 @@ layout: Landing
 title: Device enrollment - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/
 summary: Enroll devices in Microsoft Intune so they can receive the policies and profiles you configure. Learn about enrollment methods for each platform and how to configure enrollment settings.
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

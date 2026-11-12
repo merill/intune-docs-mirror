@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Step 1. Create Microsoft Entra Conditional Access with Microsoft Edge for Business - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/edge-data-security/conditional-access-step-1
-author: iceorbital
-ms.author: acabello
+author: CharlotteChristenson-MSFT
+ms.author: cchristenson
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - FocusArea_Apps_AppManagement
-ms.reviewer: samarti
 ms.subservice: apps
 description: Step 1. Create Microsoft Entra Conditional Access with Microsoft Edge for Business.
 ms.date: 2026-01-23T00:00:00.0000000Z

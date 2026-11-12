@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Win32
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to manage Win32 apps with Microsoft Intune. This article provides an overview of the Intune Win32 app delivery and management capabilities.
 ms.date: 2026-02-06T00:00:00.0000000Z

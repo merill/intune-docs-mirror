@@ -13,12 +13,12 @@ ms.collection:
 - macOS
 - FocusArea_Apps_LOB
 - FocusArea_Apps_MacOS
-ms.reviewer: arnab
 ms.subservice: apps
 description: Add a macOS DMG app to Microsoft Intune.
 ms.date: 2026-04-14T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
+ms.reviewer: arnab
 locale: en-us
 document_id: 160bcc67-5b7b-a4be-d600-1833d601b576
 document_version_independent_id: 160bcc67-5b7b-a4be-d600-1833d601b576

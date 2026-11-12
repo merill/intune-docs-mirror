@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Remove your Windows device from Intune management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/unenrollment/unenroll-windows
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Disconnect your work or school account from device running Windows.
 ms.date: 2024-04-30T00:00:00.0000000Z
-ms.reviewer: jieyang
 locale: en-us
 document_id: e8186a91-73b1-1276-9710-70ee92a491e5
 document_version_independent_id: b8210dcf-6694-e920-1ea7-9761ad02f810

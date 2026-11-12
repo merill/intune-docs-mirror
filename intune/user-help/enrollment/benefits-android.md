@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Overview of device enrollment for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/benefits-android
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn about device enrollment for Android devices, including the benefits and why workplaces and schools require it.
 ms.date: 2025-09-03T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: e64be501-f98c-57ee-4a0f-9480b7da5e55
 document_version_independent_id: e64be501-f98c-57ee-4a0f-9480b7da5e55

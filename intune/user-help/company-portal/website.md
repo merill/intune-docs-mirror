@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Using the Intune Company Portal website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/website
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes the Company Portal website and the actions you can take on your enrolled personal devices.
 ms.date: 2024-05-21T00:00:00.0000000Z
-ms.reviewer: aanavath
 locale: en-us
 document_id: bbd56a12-74cb-f8a7-47aa-90950a71cb63
 document_version_independent_id: bbd56a12-74cb-f8a7-47aa-90950a71cb63

@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Windows device enrollment guide for Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/guide
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: maholdaa
 ms.subservice: enrollment
 description: Enroll Windows devices using Automatic enrollment, Windows Autopilot, group policy, and co-management enrollment options in Microsoft Intune. Decide which enrollment method to use, and get an overview of the administrator and end user tasks to enroll devices.
 ms.date: 2024-02-28T00:00:00.0000000Z

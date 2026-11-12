@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Install Intune Company Portal app in People's Republic of China - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/install-android-china
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Lists the app stores where you can install Company Portal in the People's Republic of China.
 ms.date: 2024-07-01T00:00:00.0000000Z
-ms.reviewer: jeyang
 locale: en-us
 document_id: 4c4af3e4-a75b-c325-f61b-d893b9d28500
 document_version_independent_id: 4c4af3e4-a75b-c325-f61b-d893b9d28500

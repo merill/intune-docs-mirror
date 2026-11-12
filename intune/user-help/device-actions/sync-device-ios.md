@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Check compliance status in Intune Company Portal - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/device-actions/sync-device-ios
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Initiate a manual device check-in in Company Portal to update your device settings status and regain access to your work or school resources.
 ms.date: 2025-02-18T00:00:00.0000000Z
-ms.reviewer: kakyker
 locale: en-us
 document_id: 6df8894e-624a-45d6-b239-a27ce1638034
 document_version_independent_id: 6df8894e-624a-45d6-b239-a27ce1638034

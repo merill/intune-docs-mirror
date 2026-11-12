@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Overview of Apple User Enrollment in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/user-enrollment-methods-ios
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: rishitasarin
 ms.subservice: enrollment
 description: Utilize Apple User Enrollment to enroll and manage user-owned iOS/iPadOS devices in Microsoft Intune.
 ms.date: 2024-08-19T00:00:00.0000000Z

@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: mattcall
 ms.subservice: remote-actions
 zone_pivot_group_filename: device-management/actions/zone-pivot-groups.json
 description: Learn how to retire device using Microsoft Intune.

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Require multifactor authentication for Intune device enrollment - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/configure-multifactor-authentication
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ description: How to require multifactor authentication in Microsoft Entra ID for
 ms.date: 2024-12-11T00:00:00.0000000Z
 ms.topic: how-to
 ROBOTS: 
-ms.reviewer: damionw
 locale: en-us
 document_id: 51403232-1a28-ef6e-0616-9586493d0d81
 document_version_independent_id: 51403232-1a28-ef6e-0616-9586493d0d81

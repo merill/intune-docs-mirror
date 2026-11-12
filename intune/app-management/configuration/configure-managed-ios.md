@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add App Configuration Policies for Managed iOS/iPadOS Devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-managed-ios
-author: iceorbital
-ms.author: acabello
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ ms.subservice: apps
 description: Learn how to use app configuration policies to provide configuration data to an iOS/iPadOS app when it's run.
 ms.date: 2024-11-20T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: bryanke
 locale: en-us
 document_id: 58a20d92-e639-08ec-e9bc-acb126913eb1
 document_version_independent_id: 58a20d92-e639-08ec-e9bc-acb126913eb1

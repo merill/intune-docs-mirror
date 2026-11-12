@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Linux device compliance settings in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/compliance/ref-linux-settings
-author: ilwu-microsoft
-ms.author: ilwu
+author: arnabbiswas
+ms.author: arnab
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -18,7 +18,6 @@ ms.subservice: protect
 description: View the device compliance settings for Linux that you can manage with Microsoft Intune compliance policies.
 ms.date: 2025-08-15T00:00:00.0000000Z
 ms.topic: concept-article
-ms.reviewer: arnab
 locale: en-us
 document_id: eb6544dc-645d-4b0c-525d-46b2ce9dde2d
 document_version_independent_id: eb6544dc-645d-4b0c-525d-46b2ce9dde2d

@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Add
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to add apps to Microsoft Intune so you can assign apps to users and devices. Intune supports a wide range of app types.
 ms.date: 2026-04-23T00:00:00.0000000Z

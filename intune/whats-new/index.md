@@ -70,6 +70,16 @@ You can use RSS to be notified when this page is updated. For more information, 
 
 ### App management
 
+#### Newly available protected apps for Intune
+
+The following protected apps are now available for Microsoft Intune:
+
+- eScription One by DeliverHealth
+- Prisma Browser for Intune by Palo Alto Networks, Inc.
+- Elevate UC for Intune by Serverdata.net, Inc.
+
+For more information about protected apps, see [Microsoft Intune protected apps](/en-us/intune/app-management/ref-protected-apps).
+
 #### Manage referenced apps on AOSP devices
 
 Microsoft Intune now supports AOSP referenced app type that lets you identify an app by package name instead of uploading an APK on AOSP devices. You can assign Required or Uninstall intent to OEM, preloaded, or externally deployed apps that already exist on supported AOSP devices. Required makes an existing app unhidden, while Uninstall hides it. You'll also be able to target referenced apps with JSON-based app configuration policies; Configuration designer and Connected Apps won't be supported. This capability will help organizations manage device-resident apps without adding a new app distribution path.

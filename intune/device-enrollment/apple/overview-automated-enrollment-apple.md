@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn about automated device enrollment (ADE) for Apple mobile devices in Microsoft Intune, including supported scenarios, key features, and how to get started.
 ms.date: 2026-10-28T00:00:00.0000000Z

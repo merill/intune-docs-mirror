@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Questions with policies and profiles in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/troubleshoot-device-profiles
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,7 +16,6 @@ description: Common questions, answers, and scenarios with device policies and p
 ms.date: 2026-05-19T00:00:00.0000000Z
 ms.update-cycle: 180-days
 ms.topic: troubleshooting
-ms.reviewer: 
 locale: en-us
 document_id: d87cf273-c29b-1b78-e406-7e5007e8d2ca
 document_version_independent_id: d87cf273-c29b-1b78-e406-7e5007e8d2ca

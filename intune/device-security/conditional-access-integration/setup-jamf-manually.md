@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - conditional-access
 - sub-device-compliance
-ms.reviewer: ilwu
 ms.subservice: protect
 description: Manually configure Jamf Pro integration with Intune when you can't use the Jamf Cloud Connector.
 ms.date: 2023-09-20T00:00:00.0000000Z

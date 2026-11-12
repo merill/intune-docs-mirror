@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn about authentication methods for Apple automated device enrollment in Intune include Company Portal and Setup Assistant.
 ms.date: 2026-11-02T00:00:00.0000000Z

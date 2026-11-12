@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add or Change Device Passcode on Work or School Device - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/password-requirements
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: This article describes how to resolve device sign-in requirements, with resources for Windows, Android, macOS, and iOS/iPadOS.
 ms.date: 2026-10-30T00:00:00.0000000Z
-ms.reviewer: anuragjain
 locale: en-us
 document_id: 1144812b-a92c-53ae-2926-07b2248beaf2
 document_version_independent_id: 1144812b-a92c-53ae-2926-07b2248beaf2

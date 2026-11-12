@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use the Microsoft Tunnel app for iOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/vpn/microsoft-tunnel-ios
-author: iceorbital
-ms.author: acabello
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to connect over VPN using Microsoft Tunnel for iOS.
 ms.date: 2023-11-14T00:00:00.0000000Z
-ms.reviewer: shthilla
 locale: en-us
 document_id: b88843d8-8fd8-2b42-81ae-f234a9a57caf
 document_version_independent_id: b88843d8-8fd8-2b42-81ae-f234a9a57caf

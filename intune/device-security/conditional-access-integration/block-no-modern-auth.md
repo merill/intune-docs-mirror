@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-device-compliance
-ms.reviewer: beflamm
 ms.subservice: protect
 description: Learn about applications and modern authentication (MSAL) using Microsoft Intune.
 ms.date: 2024-03-28T00:00:00.0000000Z
 ms.topic: article
+ms.reviewer: beflamm
 locale: en-us
 document_id: 40f57625-acdd-8750-9496-9dae360d8dd1
 document_version_independent_id: 40f57625-acdd-8750-9496-9dae360d8dd1

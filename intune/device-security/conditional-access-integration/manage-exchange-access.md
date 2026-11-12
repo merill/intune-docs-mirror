@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manage access to Exchange without device management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/conditional-access-integration/manage-exchange-access
-author: iceorbital
-ms.author: acabello
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-device-compliance
-ms.reviewer: demerson
 ms.subservice: protect
 description: Use Microsoft Intune to give employees access to their Microsoft 365 Exchange Online email without setting up a device management system.
 ms.date: 2024-11-07T00:00:00.0000000Z

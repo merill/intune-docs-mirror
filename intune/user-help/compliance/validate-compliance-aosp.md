@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Check compliance in Microsoft Intune app for AOSP - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/validate-compliance-aosp
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Use the Intune app to confirm that the settings on your device meet your organization's requirements.
 ms.date: 2024-11-07T00:00:00.0000000Z
-ms.reviewer: abigailstein
 locale: en-us
 document_id: e5314bde-1191-dc59-10ef-8a3d5d494067
 document_version_independent_id: e5314bde-1191-dc59-10ef-8a3d5d494067

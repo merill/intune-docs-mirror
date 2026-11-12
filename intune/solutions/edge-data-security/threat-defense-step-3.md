@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - FocusArea_Apps_AppManagement
-ms.reviewer: samarti
 ms.subservice: apps
 description: Step 3. Integrate Mobile Threat Defense signals with Microsoft Edge for Business app protection policies in Microsoft Intune.
 ms.date: 2026-04-30T00:00:00.0000000Z
@@ -36,11 +35,11 @@ source_path: intune/solutions/edge-data-security/threat-defense-step-3.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
 - https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
-- https://authoring-docs-microsoft.poolparty.biz/devrel/8e3fdb08-a059-4277-98f6-c0e21e940707
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/691e3042-55ad-4ce1-b5e9-649b1cc47b5c
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
 - https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
-- https://authoring-docs-microsoft.poolparty.biz/devrel/88291526-9c74-4f87-878c-de0a82134421
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b7d11190-096c-4ddb-87db-63764f603aac
 platformId: f9f175b0-a5b2-9ec1-9896-43b4703d1ea4
 ---
 

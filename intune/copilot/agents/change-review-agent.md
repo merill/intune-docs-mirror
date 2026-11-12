@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Change Review Agent Overview - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/copilot/agents/change-review-agent
-author: iceorbital
-ms.author: acabello
+author: MikeDano
+ms.author: mikedano
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 description: Learn about the Change Review Agent in Microsoft Intune, its prerequisites, and how it works.
 ms.date: 2025-11-10T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: zinebtakafi
 locale: en-us
 document_id: 86de7e48-c37f-8b26-7525-f48534f721d4
 document_version_independent_id: 86de7e48-c37f-8b26-7525-f48534f721d4

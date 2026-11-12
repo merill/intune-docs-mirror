@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Set up Account Driven Apple User Enrollment - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/setup-account-driven-user
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: rishitasarin
 ms.subservice: enrollment
 description: Set up account driven Apple User Enrollment for personal devices enrolling in Microsoft Intune. A user initiates enrollment by signing in to their work account.
 ms.date: 2026-10-27T00:00:00.0000000Z

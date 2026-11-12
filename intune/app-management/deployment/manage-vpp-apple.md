@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS
 - macOS
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to sync apps you bought in volume through Apple Business Manager with Microsoft Intune. Then manage and track these apps on iOS/iPadOS and macOS devices.
 ms.date: 2026-10-26T00:00:00.0000000Z

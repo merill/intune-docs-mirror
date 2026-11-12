@@ -2,15 +2,14 @@
 layout: Conceptual
 title: 'Device Action: New Remote Assistance Session - Microsoft Intune | Microsoft Learn'
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/actions/remote-assist
-author: iceorbital
-ms.author: acabello
+author: kara-wang
+ms.author: karawang
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: mattcall
 ms.subservice: remote-actions
 description: Learn how to use the new remote assistance session action in Intune to offer support to your users.
 ms.date: 2025-10-27T00:00:00.0000000Z

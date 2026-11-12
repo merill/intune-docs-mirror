@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add Microsoft 365 Apps to Windows Devices Using Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-microsoft-365-windows
-author: iceorbital
-ms.author: acabello
+author: hafarz
+ms.author: hafarz
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - Windows
 - FocusArea_Apps_Add
-ms.reviewer: craigma
 ms.subservice: apps
 description: Learn how you can use Microsoft Intune to install Microsoft 365 apps on Windows devices.
 ms.date: 2026-04-23T00:00:00.0000000Z

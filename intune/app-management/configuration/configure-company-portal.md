@@ -2,8 +2,8 @@
 layout: Conceptual
 title: How to Configure the Intune Company Portal Apps, Company Portal Website, and Intune App - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-company-portal
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,7 +16,6 @@ description: Learn how you can configure the Intune Company Portal apps, Company
 ms.date: 2025-10-02T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.reviewer: abstarr
 locale: en-us
 document_id: 2705bf6b-0c95-df31-1523-805e8a8029f0
 document_version_independent_id: 2705bf6b-0c95-df31-1523-805e8a8029f0

@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: Deploy and enroll macOS devices in Microsoft Intune using direct enrollment with Apple Configurator.
 ms.date: 2024-04-03T00:00:00.0000000Z

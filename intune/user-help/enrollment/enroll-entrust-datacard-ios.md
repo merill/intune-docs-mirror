@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll iOS or iPadOS Device with Intune Company Portal and Entrust - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-entrust-datacard-ios
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Set up an Entrust derived credential on your iPhone or iPad with Intune Company Portal. Learn how to use your smart card to access work resources on mobile.
 ms.date: 2026-11-03T00:00:00.0000000Z
-ms.reviewer: tisilver
 locale: en-us
 document_id: baee2c72-7083-3cb1-1419-f69bb3326dc5
 document_version_independent_id: baee2c72-7083-3cb1-1419-f69bb3326dc5

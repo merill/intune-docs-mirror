@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn how to set up Apple automated device enrollment for iOS/iPadOS devices in shared device mode, a feature of Microsoft Entra.
 ms.date: 2023-11-15T00:00:00.0000000Z

@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: Learn about backup and restore scenarios for iOS/iPadOS devices.
 ms.date: 2024-08-28T00:00:00.0000000Z

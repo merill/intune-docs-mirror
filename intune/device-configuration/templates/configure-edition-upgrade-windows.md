@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Upgrade Windows editions or switch S mode using Intune policy - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-edition-upgrade-windows
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Use Microsoft Intune to upgrade Windows 10/11 client devices to a different edition, or switch S mode. Administrators can use a device configuration profile to upgrade Windows client Professional to Windows client Enterprise, and switch out of S mode. See the supported upgrade paths for Windows 10/11 Pro, N Edition, Education, Cloud, Enterprise, Core, and Holographic.
 ms.date: 2024-04-22T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mikedano
 locale: en-us
 document_id: 061c0c4e-2618-a4d6-8fd0-69e652e54050
 document_version_independent_id: 061c0c4e-2618-a4d6-8fd0-69e652e54050

@@ -10,11 +10,11 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: beflamm
 ms.subservice: remote-actions
 description: Triggering and cancelling enhanced logging on Apple devices
 ms.topic: how-to
 ms.date: 2026-08-20T00:00:00.0000000Z
+ms.reviewer: beflamm
 locale: en-us
 document_id: 68b2a969-e499-2e8e-926f-a1d46d325eaf
 document_version_independent_id: 68b2a969-e499-2e8e-926f-a1d46d325eaf

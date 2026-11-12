@@ -2,8 +2,8 @@
 layout: Conceptual
 title: eSIM configuration of a download server - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-esim-download-server
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Learn about configuration of an eSIM Download Server from Microsoft Intune.
 ms.date: 2024-06-25T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: hejimenez
 locale: en-us
 document_id: 8219acca-485d-0dc3-dd7e-9fdc9a109687
 document_version_independent_id: 8219acca-485d-0dc3-dd7e-9fdc9a109687

@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Introduces how app versions are used in Intune when an app is added or updated.
 ms.date: 2024-11-18T00:00:00.0000000Z

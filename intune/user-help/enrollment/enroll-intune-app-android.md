@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll corporate device with Microsoft Intune app - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-intune-app-android
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to enroll a corporate Android device in Intune
 ms.date: 2024-11-07T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: 948f89c7-1431-2a39-63aa-d3875fcb4277
 document_version_independent_id: 948f89c7-1431-2a39-63aa-d3875fcb4277

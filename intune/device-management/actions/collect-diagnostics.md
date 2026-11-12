@@ -10,12 +10,12 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: jlynn
 ms.subservice: remote-actions
 zone_pivot_group_filename: device-management/actions/zone-pivot-groups.json
 description: Learn how to collect diagnostics with Microsoft Intune.
 ms.date: 2025-10-27T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: jlynn
 zone_pivot_groups: d4b2a9c3-d659-4922-8403-9b50d065fc07
 locale: en-us
 document_id: 35adda04-cb96-e42b-6292-76ea881b6e01

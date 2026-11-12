@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll Windows devices in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-windows
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Set up your Windows device in Intune Company Portal to get remote access to work or school.
 ms.date: 2025-10-14T00:00:00.0000000Z
-ms.reviewer: madekeva
 locale: en-us
 document_id: d0befe65-64a5-0740-943c-94659227aa43
 document_version_independent_id: dc8d4d82-5503-1e60-11c3-a6dce251a771

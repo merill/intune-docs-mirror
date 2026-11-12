@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Redo Workplace Join for Android Enterprise devices in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/redo-workplace-join-android
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Learn how to redo Workplace Join (re-WPJ) on an Android Enterprise device that's already enrolled in Intune but needs Azure AD registration completed.
 ms.date: 2026-06-18T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: grwilso
 locale: en-us
 document_id: d8cca1a3-7963-c647-d0de-c74fd050e78f
 document_version_independent_id: d8cca1a3-7963-c647-d0de-c74fd050e78f

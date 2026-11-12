@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add, Configure, and Protect Apps with Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/deploy-protect-apps-step-2
-author: iceorbital
-ms.author: acabello
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Add, configure, and protect apps with Intune.
 ms.date: 2024-04-16T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: demerson
 locale: en-us
 document_id: 7bb8aa4f-7231-3bb5-5a55-598cd0991bd9
 document_version_independent_id: 7bb8aa4f-7231-3bb5-5a55-598cd0991bd9

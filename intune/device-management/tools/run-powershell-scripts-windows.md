@@ -14,8 +14,10 @@ ms.collection:
 - FocusArea_Apps_Win32
 ms.subservice: apps
 description: Create and run PowerShell scripts, assign the script policy to Microsoft Entra groups, and use reports to monitor the scripts. See the steps to delete scripts you add on Windows devices in Microsoft Intune. Read common issues and resolutions.
-ms.date: 2025-10-02T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1031
 locale: en-us
 document_id: 54177408-b59e-dd06-1f20-6c337bcfd8da
 document_version_independent_id: 54177408-b59e-dd06-1f20-6c337bcfd8da
@@ -58,7 +60,11 @@ For information about the Intune management extension for Windows, see [Intune m
 - End users aren't required to sign in to the device to execute PowerShell scripts.
 - The Intune management extension checks after every reboot for any new scripts or changes. After you assign the policy to the Microsoft Entra groups, the PowerShell script runs, and the run results are reported. Once the script executes, it doesn't execute again unless there's a change in the script or policy. If the script fails, the Intune management extension retries the script three times for the next three consecutive Intune management extension check-ins.
 - PowerShell scripts assigned to the device run for every new user that signs in.
-- PowerShell scripts are executed before Win32 apps run. In other words, PowerShell scripts execute first. Then, Win32 apps execute.
+- At startup, the Intune management extension processes PowerShell scripts first, then starts Win32 app processing in the same startup flow. This ordering doesn't guarantee that a PowerShell script completes before any Win32 app processing begins. Other triggers, such as device check-ins or notifications, can initiate app processing independently.
+
+    If a Win32 app requires a script or another prerequisite to complete before installation, include that prerequisite as part of the Win32 app deployment. Don't rely on the startup processing order to enforce this dependency.
+
+    For behavior during the Windows Autopilot Enrollment Status Page (ESP), see [PowerShell script execution during ESP](../../device-enrollment/windows/setup-status-page#powershell-script-execution-during-esp).
 - PowerShell scripts time out after 30 minutes.
 
 Important

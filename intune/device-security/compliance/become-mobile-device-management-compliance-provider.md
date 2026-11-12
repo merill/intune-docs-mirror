@@ -71,11 +71,13 @@ Microsoft uses the submitted information to validate that:
 
 To protect your organization and customers, do not include detailed implementation information, source code, API payloads, security internals, proprietary design details, or other information not reasonably necessary for Microsoft's evaluation.
 
-If Microsoft accepts your application, an API agreement is sent to the business or legal contact identified by your organization for review and signature. After your organization signs and returns the agreement, Microsoft provides the technical documentation required to begin developing the integration.
+Microsoft reviews partner applications in the order they are received. Review timelines may vary based on application volume and team capacity. Applicants should generally allow several weeks for an initial response. Once an application has been reviewed, Microsoft will contact the business or technical contacts listed in the application with follow-up questions or information outlining next steps. Please note that submission of an application does not guarantee approval to integrate, inclusion in a public listing, or production availability. Microsoft may also request additional information during the review process.
 
 Partners are responsible for implementing the integration based on the provided documentation. Microsoft does not guarantee dedicated onboarding assistance, implementation guidance, or engineering support during development.
 
 Submission of an application does not guarantee API documentation access, approval to integrate, public listing, or production availability. Microsoft might request additional information as part of the review process.
+
+Microsoft may change the structure, organization, or presentation of its documentation at any time. Participation in the program does not guarantee that Microsoft will feature, promote, or otherwise provide marketing visibility for a partner or its solution.
 
 Note
 

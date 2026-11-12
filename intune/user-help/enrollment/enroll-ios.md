@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up personal device for work - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-ios
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to enroll and register a personal iPhone or iPad for work or school using Intune Company Portal.
 ms.date: 2025-03-13T00:00:00.0000000Z
-ms.reviewer: rishitasarin
 locale: en-us
 document_id: 99a6423f-d6c8-0300-4155-0c42198d558c
 document_version_independent_id: 99a6423f-d6c8-0300-4155-0c42198d558c

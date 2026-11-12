@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manage Outlook for iOS and Android With Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/configuration/configure-outlook
-author: iceorbital
-ms.author: acabello
+author: c-demello
+ms.author: cdemello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ ms.subservice: apps
 description: Use Intune app protection and configuration policies with Outlook for iOS and Android to ensure team collaboration experiences are always accessed with safeguards in place.
 ms.date: 2025-06-12T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: beflamm
 locale: en-us
 document_id: 95a77a7c-d56e-89d3-1df9-c1e8ddb16844
 document_version_independent_id: 95a77a7c-d56e-89d3-1df9-c1e8ddb16844

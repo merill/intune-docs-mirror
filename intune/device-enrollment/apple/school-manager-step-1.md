@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: Get the Apple token needed to set up Apple School Manager and Microsoft Intune for corporate-owned devices.
 ms.date: 2025-01-07T00:00:00.0000000Z

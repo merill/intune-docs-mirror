@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Company Portal device setting requirements for iOS/iPadOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/device-settings-ios
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn more about Intune Company Portal device setting requirements for iOS/iPadOS devices.
 ms.date: 2025-08-18T00:00:00.0000000Z
-ms.reviewer: rishitasarin
 locale: en-us
 document_id: b7a9bed9-939c-c0dd-2fd5-662034d505bf
 document_version_independent_id: b7a9bed9-939c-c0dd-2fd5-662034d505bf

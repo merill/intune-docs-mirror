@@ -13,7 +13,6 @@ ms.collection:
 - Windows
 - FocusArea_Apps_Win32
 - FocusArea_Apps_LOB
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to add a Windows line-of-business (LOB) app using Microsoft Intune.
 ms.date: 2026-04-14T00:00:00.0000000Z

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Intune Company Portal device password messages - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/ref-password-messages
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: This article lists the Company Portal device password messages for devices running Windows, Android, macOS, and iOS/iPadOS, with information about how to resolve them.
 ms.date: 2024-10-08T00:00:00.0000000Z
-ms.reviewer: anuragjain
 locale: en-us
 document_id: 1efcd21e-729a-26c5-5155-c68a3217f855
 document_version_independent_id: 1efcd21e-729a-26c5-5155-c68a3217f855

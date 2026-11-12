@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Company Portal device setting requirements for Mac - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/update-settings-macos
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn more about Intune Company Portal device setting requirements for Macs.
 ms.date: 2024-03-04T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: 7572d7b7-5b58-c4e3-ac0e-be3eeef64fd6
 document_version_independent_id: 7572d7b7-5b58-c4e3-ac0e-be3eeef64fd6

@@ -10,11 +10,11 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: beflamm
 ms.subservice: enrollment
 description: Learn about automated device enrollment (ADE) for Mac computers in Microsoft Intune, including supported scenarios, key features, and how to get started.
 ms.date: 2026-04-15T00:00:00.0000000Z
 ms.topic: concept-article
+ms.reviewer: beflamm
 ai-usage: ai-assisted
 locale: en-us
 document_id: 9cd77cc6-1cc1-4596-1c56-fe921d6357ff

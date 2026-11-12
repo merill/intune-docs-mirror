@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manage Intune Company Portal preferences for macOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/manage-preferences-macos
-author: iceorbital
-ms.author: acabello
+author: rishitasarin-ms
+ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Choose your preferences for single sign-on and in-app data collection in Company Portal for macOS.
 ms.date: 2024-10-08T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: a49566cd-4503-e1a3-1c82-597eee39f942
 document_version_independent_id: a49566cd-4503-e1a3-1c82-597eee39f942

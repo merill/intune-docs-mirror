@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Turn off battery optimization in Company Portal app for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/diagnostics/disable-battery-optimization-android
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Turn off battery optimization in the Company Portal app for Android.
 ms.date: 2024-11-08T00:00:00.0000000Z
-ms.reviewer: abstarr
 locale: en-us
 document_id: 2aeda718-2da7-9271-78ba-2f179d19dedc
 document_version_independent_id: 2aeda718-2da7-9271-78ba-2f179d19dedc

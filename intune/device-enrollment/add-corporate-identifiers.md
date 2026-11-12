@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add corporate identifiers to Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/add-corporate-identifiers
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Add corporate identifiers (enrollment method, IMEI, and serial numbers) to Microsoft Intune.
 ms.date: 2025-04-11T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: maholdaa
 locale: en-us
 document_id: 0e76864b-4dc2-e74c-fa87-ce5ec4522fba
 document_version_independent_id: 0e76864b-4dc2-e74c-fa87-ce5ec4522fba

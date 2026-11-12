@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Store
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn about adding Microsoft Store (legacy) apps to Intune.
 ms.date: 2024-04-17T00:00:00.0000000Z

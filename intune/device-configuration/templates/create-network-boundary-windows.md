@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create a Windows Network Boundary profile in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/create-network-boundary-windows
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add a Windows Network Boundary policy to Windows devices using Microsoft Intune. Add trusted sites, trusted domains, IPv4 and IPv6 ranges, and proxy servers to a device configuration policy. Microsoft Defender Application Guard in Microsoft Edge trusts sites in this boundary.
 ms.date: 2025-02-19T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mikedano
 locale: en-us
 document_id: 511a5ed9-ebbc-6c27-f356-3111fde378f8
 document_version_independent_id: 511a5ed9-ebbc-6c27-f356-3111fde378f8

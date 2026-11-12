@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure logging settings for AOSP - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/diagnostics/collect-logs-aosp
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to adjust app logging levels in the Microsoft Intune app.
 ms.date: 2024-10-08T00:00:00.0000000Z
-ms.reviewer: 
 locale: en-us
 document_id: de1a9434-42c9-41e6-d635-96102753b754
 document_version_independent_id: de1a9434-42c9-41e6-d635-96102753b754

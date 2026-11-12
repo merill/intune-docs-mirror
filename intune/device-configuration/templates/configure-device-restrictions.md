@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Restrict devices features using policy in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-device-restrictions
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add a device configuration profile to restrict features on Android device administrator, Android Enterprise, AOSP, macOS, iOS, iPadOS, and Windows 10/11 client devices in Microsoft Intune.
 ms.date: 2025-10-14T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mikedano
 locale: en-us
 document_id: befeca58-7c49-0917-5a08-7bb3359166e6
 document_version_independent_id: befeca58-7c49-0917-5a08-7bb3359166e6

@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Windows enrollment attestation - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/attestation
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: maholdaa
 ms.subservice: enrollment
 description: Find out how the Device attestation status report can help you and learn to use the Attest device action to ensure your devices are secure and reliable.
 ms.date: 2025-02-14T00:00:00.0000000Z

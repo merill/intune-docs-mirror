@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Connect Intune account to managed Google Play account - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/connect-managed-google-play
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Learn how to connect your Intune account to your Managed Google Play account.
 ms.date: 2025-11-11T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: grwilson
 locale: en-us
 document_id: 24fdd33e-4a66-6fb8-10ea-26fbeb94a00b
 document_version_independent_id: 24fdd33e-4a66-6fb8-10ea-26fbeb94a00b

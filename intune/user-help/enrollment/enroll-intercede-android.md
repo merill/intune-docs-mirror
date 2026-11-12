@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll Android device with Intune Company Portal and Intercede - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-intercede-android
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Enroll an Android device and set up derived credential authentication with Intercede.
 ms.date: 2026-09-09T00:00:00.0000000Z
-ms.reviewer: jieyan
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1023
 ms.collection:

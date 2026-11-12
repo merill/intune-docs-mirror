@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - macOS
-ms.reviewer: arnab
 ms.subservice: apps
 description: Learn how you can use Microsoft Intune to install Microsoft 365 apps on macOS devices.
 ms.date: 2025-10-02T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: arnab
 locale: en-us
 document_id: 20f5fa6f-9f78-892f-be28-7c94d97f0ffc
 document_version_independent_id: 20f5fa6f-9f78-892f-be28-7c94d97f0ffc

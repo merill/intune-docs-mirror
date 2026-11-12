@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Reset device from Intune Company Portal for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/device-actions/reset-device-android
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to factory reset a used, lost, or stolen device in Company Portal for Android.
 ms.date: 2024-07-01T00:00:00.0000000Z
-ms.reviewer: arnab
 locale: en-us
 document_id: 1f30627c-cd06-ba01-87eb-b9fd24d8e479
 document_version_independent_id: 086224b4-624e-996d-8110-19df58a1728e

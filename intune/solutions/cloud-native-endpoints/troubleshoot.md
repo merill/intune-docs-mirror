@@ -8,7 +8,6 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-ms.reviewer: ahamil, jasandys, wicale
 description: Learn more about the known and resolutions when using cloud-native endpoints. Use user-based authentication; don't use machine authentication. Existing group policy objects might not apply.
 ms.date: 2024-05-30T00:00:00.0000000Z
 ms.topic: troubleshooting

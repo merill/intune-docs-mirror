@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Android Management API for personally owned work profiles - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/android-management-api-overview
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Learn about the transition to Android Management API for personally owned work profile devices, including web-based enrollment, migration steps, and what IT admins need to know.
 ms.date: 2026-06-18T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: priyar, grwilso
 locale: en-us
 document_id: 2a808184-d67e-6343-07bb-ecef5f3de4ac
 document_version_independent_id: 2a808184-d67e-6343-07bb-ecef5f3de4ac

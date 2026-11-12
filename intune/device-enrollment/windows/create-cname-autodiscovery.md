@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Enable autodiscovery of Intune enrollment server - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/create-cname-autodiscovery
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: maholdaa
 ms.subservice: enrollment
 description: Simplify enrollment for users by enabling automatic discovery of the Intune enrollment server.
 ms.date: 2025-11-21T00:00:00.0000000Z

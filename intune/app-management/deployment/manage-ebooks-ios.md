@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to sync books you purchased in volume from the iOS store with Intune. You can then manage and track usage.
 ms.date: 2025-07-31T00:00:00.0000000Z

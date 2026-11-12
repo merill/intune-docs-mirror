@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Check compliance on your Android device - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/validate-compliance-android
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: During a check-in, Company Portal confirms that the settings on your device meet your organization's policy requirements.
 ms.date: 2025-01-27T00:00:00.0000000Z
-ms.reviewer: abigailstein
 locale: en-us
 document_id: 5718fc97-5298-171a-5008-e48db81af2bc
 document_version_independent_id: 5718fc97-5298-171a-5008-e48db81af2bc

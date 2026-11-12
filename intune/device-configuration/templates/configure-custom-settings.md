@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use custom device settings in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-custom-settings
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add or create a profile to use custom settings for Windows 10/11 client, Android device administrator, Android Enterprise, macOS, and iOS/iPadOS devices using Microsoft Intune.
 ms.date: 2026-02-05T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mikedano
 locale: en-us
 document_id: 095999e0-014c-cf8c-474f-b80b503aef40
 document_version_independent_id: 095999e0-014c-cf8c-474f-b80b503aef40

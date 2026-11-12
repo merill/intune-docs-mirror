@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll Android device with Intune Company Portal - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-company-portal-android
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to set up an Android device for work or school with the Company Portal app.
 ms.date: 2025-09-30T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: 60b4eb41-d66a-b1c3-b417-4946643ba3d6
 document_version_independent_id: 6f6e2af0-eb71-16e8-62d0-d86c73a56332

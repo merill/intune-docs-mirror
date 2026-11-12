@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set permissions to Managed Home Screen using Android Enterprise OEMConfig - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-managed-home-screen-permissions-android
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add the Samsung Knox Service Plugin, Zebra OEMConfig Powered by MX, Legacy Zebra OEMConfig, and Honeywell UEMConnect apps to Intune, and use the app schemas to configure permissions for the Managed Home Screen (MHS) app on Android Enterprise devices.
 ms.date: 2026-03-03T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: abigailstein
 locale: en-us
 document_id: eeb420e1-dabf-737c-c24e-1686095d35d1
 document_version_independent_id: eeb420e1-dabf-737c-c24e-1686095d35d1

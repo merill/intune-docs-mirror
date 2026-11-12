@@ -8,7 +8,6 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-ms.reviewer: ahamil, jasandys, wicale
 description: For cloud-native endpoints to access on-premises resources, such as file servers, printers, and web servers, use Windows integrated authentication (WIA) and Microsoft Entra Connect.
 ms.date: 2025-02-20T00:00:00.0000000Z
 ms.topic: how-to

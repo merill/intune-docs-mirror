@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Enroll a Windows device - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/quickstart-first-device
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: maholdaa
 ms.subservice: enrollment
 description: Learn how to enroll a Windows device into Microsoft Intune. Follow this step-by-step evaluation guide to test device enrollment and verify it in the Intune admin center.
 services: microsoft-intune

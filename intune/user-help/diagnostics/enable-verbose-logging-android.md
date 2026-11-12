@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Turn on verbose logging in Company Portal app - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/diagnostics/enable-verbose-logging-android
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Turn on verbose logging in the Intune Company Portal app for Android to improve troubleshooting on your Android device.
 ms.date: 2024-11-08T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: 07d89758-f314-30f7-1e30-ba752d7e45c0
 document_version_independent_id: 07d89758-f314-30f7-1e30-ba752d7e45c0

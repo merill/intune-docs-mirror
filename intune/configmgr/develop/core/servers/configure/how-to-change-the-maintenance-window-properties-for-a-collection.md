@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Change Maintenance Window Properties for a Collection - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/develop/core/servers/configure/how-to-change-the-maintenance-window-properties-for-a-collection
-author: iceorbital
-ms.author: acabello
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

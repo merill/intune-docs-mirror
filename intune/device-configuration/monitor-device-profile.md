@@ -2,8 +2,8 @@
 layout: Conceptual
 title: See device configuration policies with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/monitor-device-profile
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,7 +16,6 @@ description: See and manage the device configuration policy details in Microsoft
 ms.date: 2026-04-16T00:00:00.0000000Z
 ms.update-cycle: 180-days
 ms.topic: how-to
-ms.reviewer: laarrizz
 locale: en-us
 document_id: 5b723a63-202b-391f-cfb3-f24849816c81
 document_version_independent_id: 5b723a63-202b-391f-cfb3-f24849816c81

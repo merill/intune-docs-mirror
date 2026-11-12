@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS
 - FocusArea_Apps_LOB
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn about how to add an iOS/iPadOS line-of-business (LOB) app to Microsoft Intune.
 ms.date: 2026-04-14T00:00:00.0000000Z

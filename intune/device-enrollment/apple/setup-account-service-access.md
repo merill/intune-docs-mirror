@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - highpri
-ms.reviewer: beflamm
 ms.subservice: enrollment
 description: Use Apple access management settings to control how Apple accounts are used on organization‑owned devices managed by Microsoft Intune.
 ms.date: 2026-06-01T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: beflamm
 locale: en-us
 document_id: 8a5a8a00-06cf-51e0-3d27-baecac577bce
 document_version_independent_id: 8a5a8a00-06cf-51e0-3d27-baecac577bce

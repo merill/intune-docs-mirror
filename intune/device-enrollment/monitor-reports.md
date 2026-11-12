@@ -2,8 +2,8 @@
 layout: Conceptual
 title: View enrollment reports - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/monitor-reports
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Monitor and troubleshoot issues with enrollment restrictions and enrollment status page assignments.
 ms.date: 2025-10-20T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: maholdaa
 locale: en-us
 document_id: dbcaa17f-f70e-92f2-78f1-9697e4fe6d0e
 document_version_independent_id: dbcaa17f-f70e-92f2-78f1-9697e4fe6d0e

@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Add
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how you can use Intune to make it easier to install built-in apps mobile devices.
 ms.date: 2024-11-21T00:00:00.0000000Z

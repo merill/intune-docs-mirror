@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Deployment guide for Linux device management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/platform-guide-linux
-author: iceorbital
-ms.author: acabello
+author: arnabbiswas
+ms.author: arnab
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Use our platform deployment guide to set up Linux device management in Microsoft Intune.
 ms.date: 2024-11-04T00:00:00.0000000Z
 ms.topic: install-set-up-deploy
-ms.reviewer: 
 locale: en-us
 document_id: 648dc729-75ea-5bf1-863e-13e68682042b
 document_version_independent_id: 648dc729-75ea-5bf1-863e-13e68682042b

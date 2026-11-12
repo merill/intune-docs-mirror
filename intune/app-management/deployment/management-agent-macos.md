@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - macOS
-ms.reviewer: arnab
 ms.subservice: apps
 description: Learn about the Microsoft Intune management agent for macOS.
 ms.date: 2024-07-12T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: arnab
 locale: en-us
 document_id: 45077568-779f-a677-700e-17541253e18e
 document_version_independent_id: 45077568-779f-a677-700e-17541253e18e

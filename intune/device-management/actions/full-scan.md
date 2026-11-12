@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: mattcall
 ms.subservice: remote-actions
 description: Learn how to initiate on demand Microsoft Defender full scan with Microsoft Intune.
 ms.date: 2025-10-27T00:00:00.0000000Z

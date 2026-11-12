@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - iOS/iPadOS
 - FocusArea_Apps_Store
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn about adding iOS store apps to Microsoft Intune. You can assign apps using this method if the apps are free of charge in the App Store.
 ms.date: 2025-01-06T00:00:00.0000000Z

@@ -8,11 +8,11 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-ms.reviewer: rogerso
 description: Step-by-step tutorial to set up a cloud-native Windows endpoint - Microsoft Entra joined, Intune enrolled, secured, and deployed with Windows Autopilot.
 ms.keywords: cloud native Windows, cloud-native Windows endpoint, Intune cloud native, Windows Autopilot cloud native, cloud native endpoint setup
 ms.date: 2026-05-19T00:00:00.0000000Z
 ms.topic: tutorial
+ms.reviewer: rogerso
 ms.collection:
 - M365-identity-device-management
 - highpri

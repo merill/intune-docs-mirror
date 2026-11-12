@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Check status in Microsoft Intune app for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/validate-compliance-intune-app-android
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Start a status check to confirm that a device meets requirements for access, or to resolve access issues after you've made required changes.
 ms.date: 2025-01-27T00:00:00.0000000Z
-ms.reviewer: shthilla
 locale: en-us
 document_id: a72d3cf2-07fd-4c25-d116-a44c9a61cdf5
 document_version_independent_id: a72d3cf2-07fd-4c25-d116-a44c9a61cdf5

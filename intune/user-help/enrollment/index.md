@@ -2,8 +2,8 @@
 layout: Conceptual
 title: What is device enrollment - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn what it means to enroll your device with the Company Portal and Microsoft Intune app.
 ms.date: 2025-01-27T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: bbc5d727-5148-b0f8-ce71-5106fc021126
 document_version_independent_id: 2329e747-6727-983e-bf7a-9001ab747c03

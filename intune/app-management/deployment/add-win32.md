@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Win32
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to add, assign, and manage Win32 apps with Microsoft Intune.
 ms.date: 2026-04-14T00:00:00.0000000Z

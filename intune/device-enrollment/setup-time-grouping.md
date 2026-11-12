@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up enrollment time grouping - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/setup-time-grouping
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Overview and setup of the enrollment time grouping feature in Microsoft Intune.
 ms.date: 2026-06-24T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: 
 locale: en-us
 document_id: cac8f722-3289-c844-8eb6-d7eedc357ff9
 document_version_independent_id: cac8f722-3289-c844-8eb6-d7eedc357ff9

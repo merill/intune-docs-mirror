@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use the Microsoft Tunnel client app for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/vpn/microsoft-tunnel-android
-author: iceorbital
-ms.author: acabello
+author: OluchiC
+ms.author: ochukwunyere
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -13,7 +13,6 @@ ms.topic: end-user-help
 description: Learn how to connect over VPN using Microsoft Tunnel for Android.
 ms.date: 2026-05-26T00:00:00.0000000Z
 ai-usage: ai-assisted
-ms.reviewer: shthilla
 locale: en-us
 document_id: 274a2caf-a923-8c60-725e-6c79353b23a6
 document_version_independent_id: 274a2caf-a923-8c60-725e-6c79353b23a6

@@ -3,8 +3,8 @@ layout: Landing
 title: Device configuration - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/
 summary: Configure device settings and features in Microsoft Intune. Use the settings catalog, templates, single sign-on, endpoint security profiles, and certificates to manage your device fleet.
-author: iceorbital
-ms.author: acabello
+author: MayurJadhav1802
+ms.author: mayurjadhav
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

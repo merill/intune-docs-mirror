@@ -8,7 +8,6 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-ms.reviewer: ahamil, jasandys, wicale
 description: Learn more about cloud-native endpoints and what they are. See a list of benefits, and the effect on end users and IT administrators. Cloud-native endpoints help with remote workers and hybrid workers, and use Microsoft Intune to manage devices.
 ms.date: 2026-05-28T00:00:00.0000000Z
 ms.topic: overview

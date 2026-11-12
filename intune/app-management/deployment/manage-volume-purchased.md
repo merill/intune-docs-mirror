@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn about how you can use Microsoft Intune to manage and monitor your use of volume-purchased apps and books from stores."
 ms.date: 2024-05-16T00:00:00.0000000Z

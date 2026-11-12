@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up device-based Conditional Access policies with Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-security/conditional-access-integration/device-based-policies
-author: iceorbital
-ms.author: acabello
+author: ilwu-microsoft
+ms.author: ilwu
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - conditional-access
 - sub-device-compliance
-ms.reviewer: ilwu
 ms.subservice: protect
 description: Configure a device-based Conditional Access policy that uses device compliance status from Intune device compliance policies.
 ms.date: 2023-09-18T00:00:00.0000000Z

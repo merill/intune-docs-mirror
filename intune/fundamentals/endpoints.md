@@ -58,7 +58,7 @@ Note
 The information in this section also applies to the [Microsoft Intune Certificate Connector](certificates/connector/prerequisites). The connector has the same network requirements as managed devices.
 
 - The endpoints in this article allow access to the ports identified in the following tables.
-- For some tasks, Intune requires unauthenticated proxy server access to manage.microsoft.com, \*.azureedge.net, and graph.microsoft.com.
+- For some tasks, Intune requires unauthenticated proxy server access to manage.microsoft.com, and graph.microsoft.com.
 
     Note
 

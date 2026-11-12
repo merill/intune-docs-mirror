@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add custom settings to Linux devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-custom-settings-linux
-author: iceorbital
-ms.author: acabello
+author: arnabbiswas
+ms.author: arnab
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add Bash scripts to create a custom Linux profile in Microsoft Intune. Use the script to create, use, and control custom settings and features on Linux devices. This custom profile can then be assigned or distributed to Linux devices in your organization to create a baseline or standard.
 ms.date: 2025-01-09T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: arnab
 locale: en-us
 document_id: 913c3c0d-a01b-c4b9-7c98-2a8e03e8b2ce
 document_version_independent_id: 913c3c0d-a01b-c4b9-7c98-2a8e03e8b2ce

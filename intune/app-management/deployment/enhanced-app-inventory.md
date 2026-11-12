@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Use app inventory in Microsoft Intune to collect detailed application data from Windows devices with faster refresh cycles and richer metadata than Discovered apps.
 ms.date: 2026-04-15T00:00:00.0000000Z

@@ -2,15 +2,14 @@
 layout: Conceptual
 title: 'Device Action: BitLocker Key Rotation - Microsoft Intune | Microsoft Learn'
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/actions/rotate-bitlocker-keys
-author: iceorbital
-ms.author: acabello
+author: aanavath
+ms.author: aanavath
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: mattcall
 ms.subservice: remote-actions
 description: Learn how to rotate the BitLocker recovery key with Microsoft Intune.
 ms.date: 2025-10-27T00:00:00.0000000Z

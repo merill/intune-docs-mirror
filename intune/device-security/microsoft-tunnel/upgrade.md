@@ -14,9 +14,9 @@ ms.collection:
 ms.reviewer: ochukwunyere
 ms.subservice: protect
 description: Understand how Microsoft Tunnel Gateway upgrades to new versions of the tunnel software for Microsoft Intune.
-ms.date: 2026-10-30T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.topic: how-to
-ms.custom: msecd-doc-authoring-1030
+ms.custom: msecd-doc-authoring-1032
 ai-usage: ai-assisted
 locale: en-us
 document_id: 0c11d6eb-282a-9313-0aae-12cd76adac5a
@@ -158,6 +158,21 @@ After an update releases, it rolls out to tenants over the following days. This 
 Important
 
 Container releases take place in stages. If you notice that your container images aren't the most recent, please be assured that they will be updated and delivered within the following week.
+
+### November 10, 2026
+
+Version Number: 20261026
+
+Image hash values:
+
+- **agentImageDigest**: sha256:92ea2b8510f086f1f01adcecdc6b03ee97f0c6855ab49c0b626836f51aa307d3
+- **serverImageDigest**: sha256:c9f4ddff45b987dc111024a7594b40201af1e36d8ea749d0d555f7b599daa4c5
+
+Changes in this release:
+
+- Upgraded the Tunnel agent to .NET 10.
+- Refreshed Azure Linux 3.0 base images, system dependencies, and VPN server components.
+- Improved diagnostic operations.
 
 ### November 2, 2026
 

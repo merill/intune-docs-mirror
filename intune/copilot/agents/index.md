@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Security Copilot Agents in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/copilot/agents/
-author: iceorbital
-ms.author: acabello
+author: MikeDano
+ms.author: mikedano
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 description: Discover how Microsoft Security Copilot enhances Microsoft Intune through AI-powered security agents. Learn about available agents and explore their capabilities.
 ms.date: 2025-11-10T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: 
 locale: en-us
 document_id: 175bb9ca-a8dc-88b0-7329-5229a81d0d7e
 document_version_independent_id: 175bb9ca-a8dc-88b0-7329-5229a81d0d7e

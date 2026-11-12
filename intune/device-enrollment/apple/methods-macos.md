@@ -10,11 +10,11 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: beflamm
 ms.subservice: enrollment
 description: Set up enrollment for macOS devices in Intune.
 ms.date: 2024-05-15T00:00:00.0000000Z
 ms.topic: overview
+ms.reviewer: beflamm
 locale: en-us
 document_id: 43ebecc6-a20d-eaf5-0725-db6da447688f
 document_version_independent_id: 43ebecc6-a20d-eaf5-0725-db6da447688f

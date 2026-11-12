@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn about adding Microsoft Store apps to Microsoft Intune.
 ms.date: 2026-06-25T00:00:00.0000000Z

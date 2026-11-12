@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Education device erollment with standard out-of-box experience (OOBE) and Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/enroll-entra-join
-author: nicolezhao-msftdocs
-ms.author: nicolezhao
+author: maholdaa
+ms.author: maholdaa
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

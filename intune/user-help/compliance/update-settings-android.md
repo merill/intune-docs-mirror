@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Company Portal Device Setting Requirements for Android - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/compliance/update-settings-android
-author: iceorbital
-ms.author: acabello
+author: abigail-stein2
+ms.author: abigailstein
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to resolve Intune Company Portal device setting issues on Android, from screen lock and OS updates to rooted device alerts, and regain work access.
 ms.date: 2026-11-03T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: 8ba021b3-0310-d330-e892-6233a86f96e1
 document_version_independent_id: 8ba021b3-0310-d330-e892-6233a86f96e1

@@ -16,7 +16,7 @@ ms.reviewer:
 - hugowu
 - qiani
 description: Learn about urgent issues that aren't yet fixed in the product or covered in a Microsoft Support knowledge base article.
-ms.date: 2026-09-22T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.subservice: core-infra
 ms.topic: release-notes
 ms.collection: tier3
@@ -38,10 +38,10 @@ item_type: Content
 source_path: intune/configmgr/core/servers/deploy/install/release-notes.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/4c50f262-d533-4ba4-9d4a-08899ec3a3d1
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/6a8c83be-f1de-4e90-bde0-bd097999a60c
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
 platformId: 6d4ce334-3afa-92d0-7981-3abf49ff1bb0
 ---
 
@@ -65,91 +65,107 @@ Tip
 
 You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../../../../../fundamentals/use-docs#notifications).
 
-## Client management
-
-### Clients aren't able download content from CMG when branch cache is enabled
-
-*Applies to: version 2403*
-
-After Branch Cache is enabled on primary sites, clients are unable to download apps and packages from the cloud management gateway (CMG). They typically manage to download only 20-30% of the content before the process gets stuck. In some cases, after downloading certain blocks of packages from the CMG, clients look for Branch Cache to retrieve the remaining content. However, none of the clients are able to download the complete content from the CMG, which prevents others from using Branch Cache to access it. The **CTM.log** on the client includes entries similar to the following:
-
-```log
-(CTM.log - CTMJob({63B4C4CE-2DC4-4062-93C7-E5019B3B6CE1}): CCTMJob::Start - State=DownloadingContentFromPeers)
-CTM.log _- CTMJob({D21758B0-D895-474E-9695-1023A25A1770}): CCTMJob::_PerformDownloadWithOutBranchCache - Download failure using branchcache, fallback to regular download
-```
-
-To work around this issue, disable branch cache.
-
-Note
-
-Clients are able to download content from the on-premises distribution point when Branch Cache is enabled.
-
-## Endpoint Protection
-
-### Security configurations removed from Intune
-
-*Applies to: version 2309 with KB25858444 and later*
-
-Microsoft Defender security configurations are no longer managed with Microsoft Intune after updating to Configuration Manager version 2403, or installing the [Update Rollup for 2309](../../../../hotfix/2309/25858444).
-
-The symptom is seen as a drop in the Microsoft Security Score values when viewed in Intune. This issue happens because security policy configuration data is incorrectly removed from clients after Configuration Manager clients are upgraded.
-
-An updated version of the Microsoft Security Client Policy Configuration Tool, ConfigSecurityPolicy.exe, is available to resolve the Endpoint Protection policy issue described in this note.
-
-The updated tool, version 4.18.24040.4, is distributed with the April 2024 monthly Microsoft Defender platform update. At the time of this writing, the platform update is in the process of global distribution, and should be broadly available in all regions by May 17, 2024. Once the platform update is installed on affected clients, Endpoint Protection policies are reapplied from Intune within 8 hours. The "Manage Endpoint Protection client on client computers" setting in Configuration Manager can be changed back to "Yes" as required.
-
-#### Additional references
-
-- [Monthly platform and engine versions](/en-us/defender-endpoint/microsoft-defender-antivirus-updates#monthly-platform-and-engine-versions)
-- [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/topic/microsoft-defender-update-for-windows-operating-system-installation-images-1c89630b-61ff-00a1-04e2-2d1f3865450d).
-- [Sync devices to get the latest policies and actions with Intune](../../../../../device-management/actions/sync)
-
 ## Set up and upgrade
 
-### ODBC driver check
+### ODBC driver version 18.7.1.1 can block site configuration before updating to 2609
 
-*Applies to: version 2503 and later*
+*Applies to: upgrades to version 2609*
 
-During site installation, the prerequisite checker looks for the minimum required version of the Microsoft ODBC driver. If the correct driver isn't detected the following message is recorded:
+Microsoft ODBC Driver for SQL Server version [18.7.1.1](/en-us/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#187) has a known issue with Configuration Manager version 2603 and earlier that can block site configuration.
+
+To avoid this issue, don't install ODBC driver version 18.7.1.1 before updating Configuration Manager. Use ODBC driver version [18.6.2.1](/en-us/sql/connect/odbc/windows/release-notes-odbc-sql-server-windows#186), the validated version shipped with Configuration Manager 2609, for the update. Complete the Configuration Manager update to version 2609 before you install ODBC driver version 18.7.1.1.
+
+For more information, see [ODBC driver for SQL Server](list-of-prerequisite-checks#odbc-driver-for-sql-server).
+
+### Configuration Manager performance counters are missing on Windows Server 2025
+
+*Applies to: primary site servers and management points running Windows Server 2025*
+
+On Windows Server 2025, Configuration Manager performance counter registration can fail, leaving the counters unavailable in Performance Monitor. This issue can occur after a clean installation of Windows Server 2025 or an in-place upgrade from Windows Server 2022.
+
+**Perfsetup.log** records errors similar to the following:
 
 ```text
-[Failed]: Install the Microsoft ODBC driver 18 for SQL setup from https://go.microsoft.com/fwlink/?linkid=2220989.
+Error: InstallSMSObjectAndCounterKeySettingsIntoRegistry() could not get the "HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\SMS_SOFTWARE_INVENTORY_PROCESSOR\Performance" registry key; error = 6 (0x6).
 ```
 
-The link provided installs an older version of the ODBC driver; the correct link to use is: https://go.microsoft.com/fwlink/?linkid=2299909
+Perfsetup can also exit with code `1000`. The affected component name in the registry path can vary.
 
-### Version 2107 update fails to download
+To resolve this issue, install the [update rollup for Configuration Manager version 2603 (KB39169655)](../../../../hotfix/2603/39169655) or update to Configuration Manager version 2609, which also includes this fix.
 
-*Applies to: version 2107 and later*
+## Client authentication and registration
 
-The update for Configuration Manager version 2107 is available to download, but it fails to download. The **dmpdownloader.log** on the service connection point has entries similar to the following:
+### Microsoft Entra token validation fails when the management point can't access the internet
 
-```log
-Download large file with BITs
-WARNING: EasySetupDownloadSinglePackage Failed with exception: The remote name could not be resolved: 'configmgrbits.azureedge.net'
-WARNING: Retry in the next polling cycle
+*Applies to: version 2603 and later*
+
+Starting in version 2603, the management point uses Microsoft Identity Service Essentials (MISE) for Microsoft Entra token validation and requires internet access. This requirement affects sites configured to support Microsoft Entra joined users and devices when clients authenticate using Microsoft Entra tokens, typically through a cloud management gateway (CMG). Environments that only use on-premises Active Directory authentication without Microsoft Entra integration aren't affected.
+
+If the management point can't reach the required endpoints, **CCM\_STS\_ManagedBase.log** on the management point records a `MiseAuthenticationTicketProviderException` with an underlying network error, for example:
+
+```text
+Microsoft.Identity.ServiceEssentials.Exceptions.MiseAuthenticationTicketProviderException: MISE12034: AuthenticationTicketProvider Name:AuthenticationTicketProvider
+System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
 ```
 
-This failure happens because the service connection point can't communicate with the required internet endpoint, `configmgrbits.azureedge.net`. Confirm that the site system that hosts the service connection point role can communicate with this internet endpoint. It was already required, but its use is expanded in version 2107. The site system can't download version 2107 or later unless your network allows traffic to this URL.
+Important
 
-For more information, see [internet access requirements](../../../plan-design/network/internet-endpoints#service-connection-point) for the service connection point.
+The `MISE12034` exception can also occur for other reasons. Before applying this resolution, verify that the underlying exception indicates a network connectivity problem, such as a `SocketException`, `HttpRequestException`, or connection timeout.
 
-## OS deployment
+To resolve this issue, allow the management point server to access the following Microsoft Entra authentication endpoints through the proxy and firewall in the Local System context:
 
-### PXE Responder isn't installed correctly after upgrading to 2403 in untrusted domain
+- `https://login.microsoftonline.com`
+- `https://sts.windows.net`
 
-*Applies to: version 2403*
+If the management point uses a proxy, configure it in the Local System context. In version 2603, the proxy set in the site system properties and a WinHTTP-only proxy (`netsh winhttp set proxy`) aren't used for this validation path.
 
-After upgrading to 2403, site servers serving as a PXE responder might see failures due to incorrect configuration of the registry keys. We can observe the below failures in **distmgr.log** indicating that the registry keys weren't configured correctly.
+For configuration steps and the full list of required endpoints, see [Management point proxy configuration](../../../plan-design/network/proxy-server-support#management-point) and [Management point internet access requirements](../../../plan-design/network/internet-endpoints#management-point).
 
-```log
-Failed to get OS platform for server DP2.CONTOSO2.COM.Either a permissions issue or the server is not supported OS SMS_DISTRIBUTION_MANAGER
-CDistributionManager::SetDpRegistry failed; 0x80070005 SMS_DISTRIBUTION_MANAGER
+### Bulk registration token verification fails after installing the version 2603 update rollup
+
+*Applies to: version 2603 with update rollup KB39169655 installed*
+
+After you install the [update rollup for Configuration Manager version 2603 (KB39169655)](../../../../hotfix/2603/39169655), bulk registration token verification fails on the management point for devices that aren't Microsoft Entra joined and connect through a cloud management gateway (CMG). Affected devices can't complete bulk registration through the CMG to obtain their individual Configuration Manager-issued client authentication tokens. Other CMG communication scenarios for these devices may also be affected.
+
+This issue doesn't affect devices that use Microsoft Entra authentication or version 2603 sites that haven't installed KB39169655.
+
+On the management point, errors similar to the following are recorded in `<MP_InstallDir>\Logs\CCM_STS.log`:
+
+```text
+ProcessRequest - Start
+Incoming request URL: https://<management-point>/CCM_STS
+Validated PreAuth SelfProve token. UniqueId: <client-id>. ClientKey: <public-key>
+ProcessRequest - Exception: System.IO.FileLoadException:
+Could not load file or assembly
+'mpisapiclr, Version=5.0.9146.1045, Culture=neutral,
+PublicKeyToken=31bf3856ad364e35' or one of its dependencies.
+The located assembly's manifest definition does not match the assembly reference.
+(Exception from HRESULT: 0x80131040)
 ```
 
-This happened due to currently unexplained failures in platform architecture identification that were introduced during the addition of support for arm64 machines to serve as remote distribution points.
+To resolve this issue, install [KB40345593](../../../../hotfix/2603/40345593), which is available in **Updates and Servicing** after you install KB39169655. This update requires a [site reset](../../manage/modify-your-infrastructure#bkmk_reset) after installation, but doesn't require a computer restart.
+
+## Collection management
+
+### Collections based on Active Directory group membership lose members after upgrading to version 2609
+
+*Applies to: version 2609*
+
+After you upgrade to Configuration Manager version 2609, a full [Microsoft Entra user group discovery](../configure/about-discovery-methods#bkmk_azuregroupdisco) cycle might remove Active Directory user-group relationships from the Configuration Manager database. User collections with query-based membership rules that depend on Active Directory group membership might lose some or all members after collection evaluation. Deployments targeted to these collections might no longer reach the intended users.
+
+To prevent further occurrences, disable [Microsoft Entra user group discovery](../configure/configure-discovery-methods#bkmk_azuregroupdisco). Disabling discovery doesn't restore user-group relationships that have already been removed.
 
 ## Software updates
+
+### Devices continue scanning Windows Update after moving the update workload back to Configuration Manager
+
+*Applies to: version 2503 with update rollup KB32851084 and KB36495448 installed, version 2509 with KB36495448 installed, and later releases that inherit this behavior*
+
+After you move the **Windows Update policies** co-management workload from Intune back to Configuration Manager, devices might continue scanning Windows Update or Microsoft Update instead of WSUS, even after a machine policy cycle completes.
+
+Starting with [KB36495448](../../../../hotfix/2509/36495448), the Configuration Manager client no longer sets or removes Windows Update scan source policies. Moving the workload slider doesn't automatically remove the Windows Update client policy state previously configured by Intune. This state can persist on the device after the Intune policy assignment is removed.
+
+To address this issue, review the effective scan source for each update category and explicitly manage scan source policies through Group Policy or Intune. As a best practice, remove or reassign the device's Intune Windows Update client policy assignment before moving the workload back. For the cleanup procedure and alternative policy configuration, see [Moving the workload back to Configuration Manager](../../../../sum/deploy-use/integrate-windows-update-client-policies#moving-the-workload-back-to-configuration-manager).
 
 ### Reset default value of superseding age in months for software updates
 
@@ -157,99 +173,16 @@ This happened due to currently unexplained failures in platform architecture ide
 
 Removing SUP role in Admin Console doesn't reset the superseding age property in WMI. As a result, while reconfiguring the role, the previously configured value is shown in the configuration window. This property needs to be reset to default value on role removal. For more information, see [supersedence rules for installing a software update point.](../../../../sum/get-started/install-a-software-update-point)
 
-### Security roles are missing for phased deployments
+## Cloud services
 
-The **OS Deployment Manager** built-in security role has permissions to [phased deployments](../../../../osd/deploy-use/create-phased-deployment-for-task-sequence). The following roles are missing these permissions:
+### CMG update to version 2609 fails when Azure permissions or resource provider registration are missing
 
-- **Application Administrator**
-- **Application Deployment Manager**
-- **Software Update Manager**
+*Applies to: version 2609 updates with an existing cloud management gateway*
 
-The **App Author** role can appear to have some permissions to phased deployments, but can't create deployments.
+Starting in version 2609, Configuration Manager automatically disables shared-key access for cloud management gateway (CMG) storage. Existing CMGs that previously used shared-key access also require Azure role-assignment permissions and resource provider registration for this transition. A successful deployment on an earlier version doesn't confirm that these prerequisites are met.
 
-A user with one these roles can start the Create Phased Deployment wizard, and can see phased deployments for an application or software update. They can't complete the wizard, or make any changes to an existing deployment.
+If the CMG server application's service principal can't create the required storage role assignments, the CMG deployment update can fail. **CloudMgr.log** can report HTTP `403`, `DeploymentFailed`, and a denied `Microsoft.Authorization/roleAssignments/write` action. Missing **Microsoft.Maintenance** resource provider registration can also cause the deployment update to fail.
 
-To work around this issue, create a custom security role. Copy an existing security role, and add the following permissions on the **Phased Deployment** object class:
+Before updating, verify the CMG server application's effective permissions at each CMG resource group. The **Contributor** role alone doesn't grant storage role-assignment permissions, and the signed-in administrator's permissions don't establish that the CMG application has access. Use the constrained role-assignment configuration described in [Configure Azure RBAC permissions for the server app](../../../clients/manage/cmg/configure-azure-ad#configure-azure-rbac-permissions-for-the-server-app), rather than granting unrestricted administrator permissions.
 
-- Create
-- Delete
-- Modify
-- Read
-
-For more information, see [Create custom security roles](../configure/configure-role-based-administration#create-custom-security-roles)
-
-## Configuration Manager console
-
-### Intune RBAC for tenant attached devices
-
-*Applies to: version 2207*
-
-***[Updated]***: There's a checkbox for a role-based access control (RBAC) setting in the [cloud attach configuration wizard](../../../../cloud-attach/enable) in the console. By default, Configuration Manager RBAC is enforced along with Intune RBAC when you're uploading your Configuration Manager devices to the cloud service. This checkbox is selected by default.
-
-You can now configure Intune role-based access control (RBAC) when interacting with [tenant attached devices](../../../../tenant-attach/client-details?toc=/mem/configmgr/cloud-attach/toc.json&amp;bc=/mem/configmgr/cloud-attach/breadcrumb/toc.json) from the Microsoft Intune admin center. For more information, see [Intune role-based access control for tenant-attached clients](../../../../cloud-attach/use-intune-rbac).
-
-### Unable to open console because extension installation loops
-
-*Applies to: version 2111*
-
-In certain circumstances, you're unable to open the console due to an extension installation loop. This issue occurs when two or more versions of a single extension were marked as [required for installation](../../manage/admin-console-extensions#require-installation-of-a-console-extension). This issue occurs for extensions imported through the wizard, from a PowerShell script, or through Community hub. If you use the **Make optional** setting before importing a new version of the extension, this issue doesn't occur.
-
-When you encounter this issue, it initially appears as a normal console extension installation. After the extension finishes installing, you select **Close** to restart the Configuration Manager console. When the console restarts, you're prompted to install the console extension again. The extension installation continues to loop and the Configuration Manager console doesn't fully open.
-
-To both prevent and work around this issue, run the following SQL script on your CAS database and all of your primary site databases:
-
-```sql
-ALTER VIEW vSMS_ConsoleExtensionMetadata
-AS
-    WITH m AS(
-       SELECT *,
-           RN = ROW_NUMBER()OVER(PARTITION BY ID ORDER BY Version DESC)
-       FROM ConsoleExtensionMetadata
-    )
-    SELECT
-        m.ID,
-        m.Name,
-        m.Description,
-        m.Author,
-        m.Version,
-        m.IsEnabled,
-        m.IsApproved,
-        m.CreatedTime,
-        m.CreatedBy,
-        m.UpdateTime,
-        m.IsTombstoned,
-        m.IsRequired,
-        m.IsSigned,
-        m.IsUnsignedAllowed,
-        CASE m.IsRequired
-            WHEN 0 THEN ''
-            ELSE
-            (
-                SELECT top(1) author FROM ConsoleExtensionRevisionHistory h
-                WHERE m.ID=h.ExtensionId AND m.Version=h.Version AND h.Changes & 1=1
-                ORDER BY h.RevisionTime DESC
-            )
-        END AS RequiredBy,
-        m.IsSetupDefined
-    FROM m
-    WHERE RN = 1
-GO
-```
-
-## Boundaries and Boundary groups
-
-### Clients not belonging to any boundary group can fail to download due to SQL issue
-
-*Applies to: version 2303, 2309 RTM*
-
-Consider ConfigMgr hierarchy with a remote MP and CMG and you deploy an app to a device collection. The Clients can't download app, and reflect the following SQL permissions issue in **MP\_Location.log**.
-
-```log
-   The SELECT permission was denied on the object 'vSMS_DefaultBoundaryGroup', database 'CM_xxx', schema 'dbo'.
-```
-
-To work around the issue run the following SQL script on the SQL database on the primary sites where the MP reports.
-
-```sql
-    GRANT SELECT ON vSMS_DefaultBoundaryGroup To smsdbrole_MP
-```
+Also verify that **Microsoft.Maintenance** is registered in every Azure subscription that hosts a CMG. Registration in a staging subscription doesn't register the provider in a different production subscription. For instructions, see [Configure Azure resource providers](../../../clients/manage/cmg/configure-azure-ad#configure-azure-resource-providers).

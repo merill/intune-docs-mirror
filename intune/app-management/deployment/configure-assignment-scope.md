@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how you can use Microsoft Intune to include and exclude app assignments.
 ms.date: 2025-10-29T00:00:00.0000000Z

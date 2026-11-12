@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: annovich
 ms.subservice: enrollment
 description: In this tutorial, you set up Apple corporate device enrollment features with Intune to enroll iOS/iPadOS devices purchased through Apple Business.
 ms.date: 2026-10-28T00:00:00.0000000Z

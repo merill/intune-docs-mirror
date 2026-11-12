@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: mattcall
 ms.subservice: remote-actions
 description: Microsoft Intune remove passcode action helps you unlock devices remotely when users forget their passcodes. Discover how to use this feature.
 ms.date: 2026-04-21T00:00:00.0000000Z

@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Add
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how to add and assign apps to user groups in Microsoft Intune. Ensure your workforce has access to the apps they need.
 ms.date: 2026-01-20T00:00:00.0000000Z

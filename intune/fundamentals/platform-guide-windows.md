@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Deployment guide for Windows device management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/platform-guide-windows
-author: iceorbital
-ms.author: acabello
+author: jasonsandys-microsoft
+ms.author: jasandys
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Use our platform deployment guide to set up Windows device management in Microsoft Intune.
 ms.date: 2024-08-21T00:00:00.0000000Z
 ms.topic: install-set-up-deploy
-ms.reviewer: acabello
 locale: en-us
 document_id: e0b38ddd-615d-d410-22e9-6052692103b3
 document_version_independent_id: e0b38ddd-615d-d410-22e9-6052692103b3

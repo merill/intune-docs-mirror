@@ -8,7 +8,6 @@ breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
-ms.reviewer: ahamil, jasandys, wicale
 description: To support hybrid and remote workers, convert or migrate your workloads to support cloud-native endpoints. This planning guide focuses on deploying apps and updates with Intune, moving from Group Policy Objects, and using Windows Autopilot.
 ms.date: 2025-01-08T00:00:00.0000000Z
 ms.topic: how-to

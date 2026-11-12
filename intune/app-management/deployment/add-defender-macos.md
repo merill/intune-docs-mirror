@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - macOS
-ms.reviewer: arnab
 ms.subservice: apps
 description: Learn about adding Microsoft Defender for Endpoint to macOS devices using Microsoft Intune.
 ms.date: 2024-04-17T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: arnab
 locale: en-us
 document_id: 109fca48-73f3-16b7-ac4d-212618099d00
 document_version_independent_id: 109fca48-73f3-16b7-ac4d-212618099d00

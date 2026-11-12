@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - Windows
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn how your workforce can manually add the Windows Company Portal app to their PC from the Microsoft Store.
 ms.date: 2026-01-06T00:00:00.0000000Z

@@ -2,15 +2,14 @@
 layout: Conceptual
 title: Get an Apple MDM Push certificate for Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/create-mdm-push-certificate
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: beflamm
 ms.subservice: enrollment
 description: Get an Apple MDM Push certificate to manage iOS/iPadOS devices with Intune.
 ms.date: 2025-05-12T00:00:00.0000000Z

@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - FocusArea_Apps_Win32
-ms.reviewer: bryanke
 ms.subservice: apps
 description: Learn about the most common methods to troubleshoot Win32 app issues with Microsoft Intune.
 ms.date: 2025-10-02T00:00:00.0000000Z

@@ -10,7 +10,6 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
-ms.reviewer: maholdaa
 ms.subservice: enrollment
 description: Enable Intune automatic enrollment of Windows devices that join or register with your Microsoft Entra ID.
 services: microsoft-intune

@@ -11,11 +11,11 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - macOS
-ms.reviewer: arnab
 ms.subservice: apps
 description: Add the macOS Company Portal app.
 ms.date: 2026-04-14T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: arnab
 ai-usage: ai-assisted
 locale: en-us
 document_id: 61a152c3-06f8-d92c-e35f-b95dc11f6909

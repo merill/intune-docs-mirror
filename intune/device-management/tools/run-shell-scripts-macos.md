@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Use Shell Scripts on macOS Devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/tools/run-shell-scripts-macos
-author: iceorbital
-ms.author: acabello
+author: arnabbiswas
+ms.author: arnab
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ ms.subservice: apps
 description: Deploy shell scripts to macOS devices with Microsoft Intune. Configure run frequency, retries, and user context, then monitor results.
 ms.date: 2026-11-02T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: arnab
 locale: en-us
 document_id: 663c3193-e2f8-a905-5acd-340538e37f51
 document_version_independent_id: 663c3193-e2f8-a905-5acd-340538e37f51

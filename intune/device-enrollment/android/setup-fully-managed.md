@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up enrollment for Android Enterprise fully managed devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/setup-fully-managed
-author: iceorbital
-ms.author: acabello
+author: AnyaNovicheva1
+ms.author: annovich
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Set up enrollment in Intune for devices using the Android Enterprise fully managed device management solution.
 ms.date: 2026-05-19T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: grwilso
 locale: en-us
 document_id: 9843a9f2-99f9-cefd-0901-93330a4f25f1
 document_version_independent_id: 9843a9f2-99f9-cefd-0901-93330a4f25f1
