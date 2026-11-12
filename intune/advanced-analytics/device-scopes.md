@@ -69,7 +69,7 @@ Additional prerequisites for custom device scopes:
 > 
 > Note
 > 
-> After custom device scopes are created, other users with access to endpoint analytics can use them. Only the user who created the custom device scopes or a Global Administrator can delete the custom device scopes.
+> After custom device scopes are created, other users with access to endpoint analytics can use them. Only the user who created the custom device scopes or a user with Global Administrator or Intune Administrator Entra roles can delete the custom device scopes.
 
 ## Create and manage custom device scopes
 
