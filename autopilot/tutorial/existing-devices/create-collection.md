@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot deployment for existing devices in Intune and Configuration Manager - Step 6 of 10 - Create collection in Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/existing-devices/create-collection
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

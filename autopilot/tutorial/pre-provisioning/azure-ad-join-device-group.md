@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot for pre-provisioned deployment Microsoft Entra join - Step 4 of 9 - Create a device group | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/azure-ad-join-device-group
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

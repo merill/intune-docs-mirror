@@ -2,8 +2,8 @@
 layout: Conceptual
 title: 'Device Action: Autopilot Reset - Microsoft Intune | Microsoft Learn'
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/actions/autopilot-reset
-author: iceorbital
-ms.author: acabello
+author: madakeva
+ms.author: madakeva
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

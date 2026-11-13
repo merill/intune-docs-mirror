@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - ContentEnagagementFY24
 - sub-secure-endpoints
-ms.reviewer: aanavath - intune-azure
 ms.subservice: protect
 description: Deploy security baselines that establish a default and recommended security postures on Windows devices you manage with Microsoft Intune.
 ms.date: 2025-06-02T00:00:00.0000000Z

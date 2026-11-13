@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Simulate application deployments - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/apps/deploy-use/simulate-application-deployments
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

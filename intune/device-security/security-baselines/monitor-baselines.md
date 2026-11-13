@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints
-ms.reviewer: aanavath
 ms.subservice: protect
 description: Monitor device and per-setting results of security baselines you deploy with Microsoft Intune, and identify conflicts for devices.
 ms.date: 2024-08-22T00:00:00.0000000Z

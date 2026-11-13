@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Certificates overview - Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/configmgr/core/plan-design/security/certificates-overview
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

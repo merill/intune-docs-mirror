@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Using Azure Virtual Desktop multi-session with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/azure-virtual-desktop-multi-session
-author: iceorbital
-ms.author: acabello
+author: madakeva
+ms.author: madakeva
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 description: Guidelines for using Azure Virtual Desktop multi-session with Microsoft Intune
 ms.date: 2025-02-13T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: madakeva
 ms.collection:
 - M365-identity-device-management
 locale: en-us

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Back up and restore iOS/iPadOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/backup-restore-ios
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

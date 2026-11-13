@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Guided Update Supersedence for Enterprise App Management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/update-enterprise-supersedence
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ ms.subservice: apps
 description: Learn how to update an Enterprise App Catalog app using supersedence with Microsoft Intune.
 ms.date: 2025-11-06T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: nicolezhao
 ms.custom: 
 locale: en-us
 document_id: 34d8a83f-8e3b-3f0f-d911-a5b6275915d9

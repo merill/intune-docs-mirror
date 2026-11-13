@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up enrollment for macOS devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/methods-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Set up enrollment for macOS devices in Intune.
 ms.date: 2024-05-15T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: beflamm
 locale: en-us
 document_id: 43ebecc6-a20d-eaf5-0725-db6da447688f
 document_version_independent_id: 43ebecc6-a20d-eaf5-0725-db6da447688f

@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Overview for Windows Autopilot for pre-provisioned deployment Microsoft Entra join in Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/azure-ad-join-workflow
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra hybrid join - Step 5 of 10 - Create a device group | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/hybrid-azure-ad-join-device-group
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Requirements for Windows Autopilot device association | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/device-association/requirements
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems
@@ -13,8 +12,8 @@ feedback_product_url: https://feedbackportal.microsoft.com/feedback/forum/ef1d6d
 feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
-description: Software, networking, licensing, and RBAC requirements for Windows Autopilot device association.
-ms.date: 2026-08-25T00:00:00.0000000Z
+description: Software, hardware, networking, licensing, and RBAC requirements for Windows Autopilot device association.
+ms.date: 2026-10-01T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: article
@@ -45,9 +44,10 @@ platformId: 53ceb5ed-3bd4-c8a2-7ebc-5f0bf88555f6
 
 # Requirements for Windows Autopilot device association | Microsoft Learn
 
-The list of requirements for Windows Autopilot device association is organized into four categories:
+The list of requirements for Windows Autopilot device association is organized into five categories:
 
 - **Software** - OS requirements.
+- **Hardware** - Physical device and Trusted Platform Module (TPM) requirements.
 - **Networking** - Networking requirements.
 - **Licensing** - Licensing requirements.
 - **RBAC** - RBAC permissions required for Windows Autopilot device association.
@@ -56,10 +56,6 @@ Select the appropriate tab to see the relevant requirements:
 
 # [Software](#tab/software)
 ### Software requirements
-
-Important
-
-Device association requires a **physical device**. Virtual machines aren't supported.
 
 #### Windows 11
 
@@ -75,9 +71,23 @@ The following editions are supported:
 - Windows 11 Education.
 - [Windows 11 Enterprise LTSC](/en-us/windows/whats-new/ltsc/overview).
 
+# [Hardware](#tab/hardware)
+### Hardware requirements
+
+Important
+
+Device association requires a **physical device**. Virtual machines aren't supported.
+
 #### Trusted Platform Module (TPM)
 
-Device association requires a **physical device**—virtual machines aren't supported. Each device must have **TPM 2.0**, enabled and in a good state. The TPM shouldn't be in **Reduced Functionality Mode**. TPM attestation is enforced during association: device association uses the TPM to attest the device's identity before enrollment.
+TPM attestation is enforced during association: device association uses the TPM to attest the device's identity before enrollment.
+
+TPM requirements:
+
+- Each device must have TPM 2.0, enabled and in a good state.
+- The TPM shouldn't be in Reduced Functionality Mode.
+- TPM must be [FIPS 186-3](https://csrc.nist.gov/publications/fips) or newer compliant.
+- TPM must support [TLS 1.3](https://www.rfc-editor.org/rfc/rfc9846#section-4.3.3).
 
 # [Networking](#tab/networking)
 ### Networking requirements

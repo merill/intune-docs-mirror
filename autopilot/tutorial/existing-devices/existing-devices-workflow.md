@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Overview for Windows Autopilot deployment for existing devices in Intune and Configuration Manager | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/existing-devices/existing-devices-workflow
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

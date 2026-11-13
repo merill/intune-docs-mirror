@@ -2,8 +2,8 @@
 layout: Conceptual
 title: iOS/iPadOS direct enrollment - Apple Configurator-Setup Assistant - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/setup-configurator-ios
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

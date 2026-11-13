@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manually Add the Windows Company Portal App - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-company-portal-windows
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: View Software Update Reports for Apple Devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/apple/monitor-reports
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: protect
 description: Track Apple device update status in real time with Intune's declarative software update reporting. Learn how Microsoft Intune surfaces update changes directly from managed Apple devices.
 ms.date: 2025-10-14T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: beflamm
 locale: en-us
 document_id: cd9d85c7-d752-2ad3-2761-cb660ba181d3
 document_version_independent_id: cd9d85c7-d752-2ad3-2761-cb660ba181d3

@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - certificates
 - sub-certificates
-ms.reviewer: wicale
 ms.subservice: fundamentals
 description: In Microsoft Intune, you can add a vendor or third-party certificate authority (CA) to issue certificates to mobile devices using the SCEP protocol. In this overview, a Microsoft Entra application gives Microsoft Intune permissions to validate certificates. Then, use the application ID, authentication key, and tenant ID of the Microsoft Entra application in the setup of your SCEP server to issue certificates.
 ms.date: 2024-10-15T00:00:00.0000000Z

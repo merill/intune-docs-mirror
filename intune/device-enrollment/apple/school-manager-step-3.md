@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Apple School Manager - sync and distribute devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/school-manager-step-3
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

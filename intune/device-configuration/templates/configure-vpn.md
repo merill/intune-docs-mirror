@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add VPN settings to devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-vpn
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: On Android device administrator, Android Enterprise, iOS, iPadOS, macOS, and Windows devices, use built-in settings to create virtual private network (VPN) connections in Microsoft Intune.
 ms.date: 2026-06-18T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: wicale
 locale: en-us
 document_id: cd2cd958-2bb3-89c3-8798-973ea99e3c2a
 document_version_independent_id: cd2cd958-2bb3-89c3-8798-973ea99e3c2a

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create an Email Device Profile for iOS/iPadOS Devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/quickstart-email-profile
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Learn how to create an email device profile in Microsoft Intune for iOS/iPadOS devices. Configure email settings to help users securely access organization email.
 ms.date: 2026-01-20T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: beflamm
 locale: en-us
 document_id: 97eedd8b-aa6e-3089-5c06-8ca6e103af0c
 document_version_independent_id: 97eedd8b-aa6e-3089-5c06-8ca6e103af0c

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Get help and support in Intune Company Portal for Windows - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/support-windows
-author: iceorbital
-ms.author: acabello
+author: madakeva
+ms.author: madakeva
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Access help and support options in the Intune Company Portal app for Windows.
 ms.date: 2024-10-16T00:00:00.0000000Z
-ms.reviewer: 
 locale: en-us
 document_id: 84127b69-0458-7961-1677-bb32f7647d7f
 document_version_independent_id: 2d79fa63-8a86-f811-edca-f88d3280f2b9

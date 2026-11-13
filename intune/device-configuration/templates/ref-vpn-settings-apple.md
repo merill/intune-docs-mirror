@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure VPN settings for Apple devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/ref-vpn-settings-apple
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add or create a VPN configuration profile on iOS/iPadOS and macOS devices using virtual private network (VPN) configuration settings in Microsoft Intune. Configure the connection details, authentication methods, split tunneling, custom VPN settings with the identifier, key and value pairs, per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains, proxy settings to include a configuration script, IP or FQDN address, and TCP port.
 ms.date: 2026-02-09T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: beflamm
 zone_pivot_groups: platforms-apple
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030

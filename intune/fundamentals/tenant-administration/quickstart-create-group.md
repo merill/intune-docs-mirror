@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create a Group to Manage Users - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/tenant-administration/quickstart-create-group
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Learn how to create a group in Microsoft Intune and add users to the groups. Use groups to manage user access to company resources and assign policies.
 ms.date: 2026-01-14T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mattcall
 locale: en-us
 document_id: c3910098-f5af-a611-8d64-94f3bbb1b407
 document_version_independent_id: c3910098-f5af-a611-8d64-94f3bbb1b407

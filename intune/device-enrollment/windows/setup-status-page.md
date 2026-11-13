@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up the Enrollment Status Page in the admin center copy - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/windows/setup-status-page
-author: iceorbital
-ms.author: acabello
+author: madakeva
+ms.author: madakeva
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Set up a greeting page for users signing in and enrolling Windows devices copy.
 ms.date: 2026-11-10T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: madakeva, davguy
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1031
 locale: en-us

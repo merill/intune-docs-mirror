@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure 802.1x wired network settings for Apple and Windows devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-wired-networks
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Create or add a wired network device configuration profile or policy using the IEEE 802.1X standard for macOS, iOS/iPadOS, Windows 10, and Windows 11 devices and computers. See the different settings, add certificates, choose an EAP type, and select an authentication method in Microsoft Intune.
 ms.date: 2026-06-04T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: wicale
 locale: en-us
 document_id: 1328144c-3da8-ebbd-c6a4-2098adf41742
 document_version_independent_id: 1328144c-3da8-ebbd-c6a4-2098adf41742

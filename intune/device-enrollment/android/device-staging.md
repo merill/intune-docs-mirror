@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Device staging overview - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/android/device-staging
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: An overview of device staging, Android Enterprise token types, and token management in Microsoft Intune.
 ms.date: 2025-06-04T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: grwilson
 locale: en-us
 document_id: 542a69b9-d79b-973f-1ef9-4d71a9a858a5
 document_version_independent_id: 542a69b9-d79b-973f-1ef9-4d71a9a858a5

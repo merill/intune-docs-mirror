@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: A detailed list of the policy map between Basic Mobility and Security configurations and Intune.
 ms.date: 2025-12-03T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: dagerrit
 locale: en-us
 document_id: f9c72a53-45d3-52ef-1d4e-e6d5f3f36344
 document_version_independent_id: f9c72a53-45d3-52ef-1d4e-e6d5f3f36344

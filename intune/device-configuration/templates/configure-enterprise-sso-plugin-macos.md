@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure macOS Enterprise SSO app extension with MDMs - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-enterprise-sso-plugin-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Learn more about the Microsoft Enterprise single sign-on (SSO) app extension plug-in. Add or create an macOS device profile using the SSO app extension in Microsoft Intune, Jamf Pro, and other MDM solution providers.
 ms.date: 2024-05-01T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: miepping, tbc, alessanc
 locale: en-us
 document_id: 8cbcb14f-e598-254b-24ae-1b95786d56d3
 document_version_independent_id: 8cbcb14f-e598-254b-24ae-1b95786d56d3

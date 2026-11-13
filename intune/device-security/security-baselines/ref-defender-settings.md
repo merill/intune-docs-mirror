@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints
-ms.reviewer: aanavath
 ms.subservice: protect
 description: View the settings in the Microsoft Intune security baseline for Microsoft Defender for Endpoint and each settings default value.
 ms.date: 2026-05-13T00:00:00.0000000Z

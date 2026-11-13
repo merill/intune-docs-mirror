@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Set up a macOS ADE token in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/setup-macos-token
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Create, renew, and delete Apple enrollment program tokens for macOS automated device enrollment in Microsoft Intune.
 ms.date: 2026-04-15T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: beflamm
 ai-usage: ai-assisted
 locale: en-us
 document_id: bd9eef5a-f40b-005b-1d40-7b0a1cf7f89b

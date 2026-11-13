@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Deployment guide to manage iOS/iPadOS devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/platform-guide-ios-ipados
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: A guide to managing iOS/iPadOS devices in Microsoft Intune.
 ms.date: 2024-07-22T00:00:00.0000000Z
 ms.topic: install-set-up-deploy
-ms.reviewer: beflamm
 locale: en-us
 document_id: 9807f7d7-7514-50c5-895a-3152e8801d45
 document_version_independent_id: 9807f7d7-7514-50c5-895a-3152e8801d45

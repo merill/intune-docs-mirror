@@ -12,9 +12,8 @@ summary: >
   </ul>
 
   <p>This article provides troubleshooting for common Windows Autopilot device preparation issues.</p>
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

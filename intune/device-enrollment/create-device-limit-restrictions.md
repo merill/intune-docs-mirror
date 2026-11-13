@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Restrict the number of devices allowed to enroll in Microsoft Intune.
 ms.date: 2025-05-15T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: maholdaa
 locale: en-us
 document_id: 716b3981-92db-3764-db08-93ab3f2d5ea4
 document_version_independent_id: 716b3981-92db-3764-db08-93ab3f2d5ea4

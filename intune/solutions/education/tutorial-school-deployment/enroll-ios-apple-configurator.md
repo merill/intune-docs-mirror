@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Education device enrollment with Apple Configurator and Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/enroll-ios-apple-configurator
-author: nicolezhao-msftdocs
-ms.author: nicolezhao
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

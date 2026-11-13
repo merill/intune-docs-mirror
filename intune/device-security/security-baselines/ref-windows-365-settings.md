@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints
-ms.reviewer: aanavath
 ms.subservice: protect
 description: View a list of the settings in the Microsoft Intune security baseline for Windows 365 Cloud PC. This list includes the default values for settings as found in the default configuration of the baseline.
 ms.date: 2024-09-10T00:00:00.0000000Z

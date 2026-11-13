@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add Microsoft Edge to macOS Devices Using Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-edge-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,7 +16,6 @@ ms.subservice: apps
 description: Learn about adding Microsoft Edge to macOS devices using Microsoft Intune.
 ms.date: 2025-10-02T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: arnab
 locale: en-us
 document_id: 9696d130-030c-0cc1-9b3e-6782b81a2341
 document_version_independent_id: 9696d130-030c-0cc1-9b3e-6782b81a2341

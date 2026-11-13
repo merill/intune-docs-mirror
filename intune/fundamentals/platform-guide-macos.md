@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Deployment guide to manage macOS devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/platform-guide-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Learn the recommended processes to manage macOS devices in Microsoft Intune.
 ms.date: 2025-07-31T00:00:00.0000000Z
 ms.topic: install-set-up-deploy
-ms.reviewer: beflamm
 locale: en-us
 document_id: 7cf9b8e9-2e2b-123e-4531-6b6bf6fcc722
 document_version_independent_id: 7cf9b8e9-2e2b-123e-4531-6b6bf6fcc722

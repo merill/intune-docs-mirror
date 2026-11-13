@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - certificates
 - sub-certificates
-ms.reviewer: wicale
 ms.subservice: fundamentals
 description: Learn about Microsoft Intune's support for Simple Certificate Enrollment Protocol (SCEP), Public Key Cryptography Standards (PKCS) certificates.
 ms.date: 2024-10-04T00:00:00.0000000Z

@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot Enrollment Status Page | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/enrollment-status
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

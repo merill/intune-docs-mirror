@@ -14,7 +14,6 @@ ms.subservice: apps
 description: In this tutorial you will configure Slack to use Intune for EMM and app configuration.
 ms.date: 2024-06-07T00:00:00.0000000Z
 ms.topic: tutorial
-ms.reviewer: bryanke
 locale: en-us
 document_id: b871b110-addc-0ee2-d01b-9b171d735869
 document_version_independent_id: b871b110-addc-0ee2-d01b-9b171d735869

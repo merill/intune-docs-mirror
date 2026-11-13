@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Store a recovery key in Intune through the Company Portal website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/security/import-recovery-key-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Upload and store your device recovery key from the Company Portal website.
 ms.date: 2024-11-18T00:00:00.0000000Z
-ms.reviewer: annochiva
 locale: en-us
 document_id: d800e99f-05e3-b0d0-9aff-7d9b0df6bbc1
 document_version_independent_id: d800e99f-05e3-b0d0-9aff-7d9b0df6bbc1

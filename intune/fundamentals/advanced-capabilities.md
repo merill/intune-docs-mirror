@@ -13,7 +13,6 @@ ms.subservice: suite
 description: Microsoft Intune advanced capabilities deliver advanced endpoint management and security. Learn what they are, which licenses include them, and how to get them.
 ms.date: 2026-05-20T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: aanavath
 locale: en-us
 document_id: acddbebe-044e-184e-cbcc-00ca3aaf5ad3
 document_version_independent_id: acddbebe-044e-184e-cbcc-00ca3aaf5ad3

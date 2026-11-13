@@ -15,7 +15,6 @@ ms.subservice: fundamentals
 description: Reference architecture for a Microsoft Intune deployment, including cloud and on-premises components and Microsoft and third-party integrations.
 ms.date: 2026-05-12T00:00:00.0000000Z
 ms.topic: concept-article
-ms.reviewer: davidra
 locale: en-us
 document_id: ec3d8a8e-31d9-e524-948d-df4ecd6d2de3
 document_version_independent_id: ec3d8a8e-31d9-e524-948d-df4ecd6d2de3

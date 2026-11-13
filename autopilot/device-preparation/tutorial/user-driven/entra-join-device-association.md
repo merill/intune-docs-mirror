@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot device preparation user-driven Microsoft Entra join - Step 7 - Associate devices | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/tutorial/user-driven/entra-join-device-association
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Rename your device on the Company Portal website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/device-actions/update-device-name-company-portal-website
-author: iceorbital
-ms.author: acabello
+author: madakeva
+ms.author: madakeva
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Learn how to rename your work or school device on the Company Portal website.
 ms.date: 2024-11-09T00:00:00.0000000Z
-ms.reviewer: jieyang
 locale: en-us
 document_id: 3bed1dfe-0a5d-f689-beed-58d11f0fe8c7
 document_version_independent_id: 3bed1dfe-0a5d-f689-beed-58d11f0fe8c7

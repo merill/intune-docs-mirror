@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Common Education device restrictions configuration - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/ref-device-restrictions-settings-windows
-author: yegor-a
-ms.author: egorabr
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

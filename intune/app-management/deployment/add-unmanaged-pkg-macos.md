@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add an Unmanaged macOS PKG App to Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-unmanaged-pkg-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -17,7 +17,6 @@ description: Learn about how to add an unmanaged macOS PKG app to Microsoft Intu
 ms.date: 2026-04-14T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.reviewer: arnab
 locale: en-us
 document_id: 59ea9146-fb5f-6efc-7efb-33c8a446bb45
 document_version_independent_id: 59ea9146-fb5f-6efc-7efb-33c8a446bb45

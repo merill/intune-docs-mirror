@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot user-driven Microsoft Entra hybrid join - Step 8 of 10 - Assign Windows Autopilot device to a user | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/user-driven/hybrid-azure-ad-join-assign-device-to-user
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

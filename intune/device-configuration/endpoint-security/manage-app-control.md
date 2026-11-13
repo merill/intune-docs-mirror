@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Manage approved apps for Windows devices with App Control for Business policy and Managed Installers in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/endpoint-security/manage-app-control
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Use App Control for Business policies and a managed installer to manage which apps are approved to run on Windows devices that you manage with Microsoft Intune.
 ms.date: 2025-09-17T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: nicolezhao
 locale: en-us
 document_id: c3d1007a-a6ae-795b-9276-0f25825cb7e2
 document_version_independent_id: c3d1007a-a6ae-795b-9276-0f25825cb7e2

@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 description: Learn how to view and correct personal data that's been collected by Intune.
 ms.date: 2022-04-08T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: angerobe
 ms.collection:
 - M365-identity-device-management
 - privacy

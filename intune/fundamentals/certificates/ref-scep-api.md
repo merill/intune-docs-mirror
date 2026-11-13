@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - certificates
 - sub-certificates
-ms.reviewer: wicale
 ms.subservice: fundamentals
 description: Add or integrate the SCEP GitHub solution for third party certificate authorities (CA) to issue SCEP certificates to devices in Microsoft Intune. This solution includes Java and C# APIs that validate, send success and failure notifications to Intune, and use SSL socket factory when communicating with Intune. Also view an overview of the steps to test your SCEP CA configuration.
 ms.date: 2025-07-03T00:00:00.0000000Z

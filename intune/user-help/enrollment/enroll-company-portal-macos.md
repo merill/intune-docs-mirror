@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll your Mac with Intune Company Portal - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-company-portal-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Enroll your personal Mac for work using the Company Portal app.
 ms.date: 2025-07-29T00:00:00.0000000Z
-ms.reviewer: 
 locale: en-us
 document_id: 6e3dcfc9-6a6f-0b05-b6ff-94c14d578fe6
 document_version_independent_id: 6e3dcfc9-6a6f-0b05-b6ff-94c14d578fe6

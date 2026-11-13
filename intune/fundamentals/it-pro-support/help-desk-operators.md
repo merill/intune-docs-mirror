@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Help desk staff use the troubleshooting pane to solve users' technical problems.
 ms.date: 2024-06-14T00:00:00.0000000Z
 ms.topic: troubleshooting
-ms.reviewer: jlynn
 locale: en-us
 document_id: c654c29d-c564-689b-2cbc-420a86546820
 document_version_independent_id: c654c29d-c564-689b-2cbc-420a86546820

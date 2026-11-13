@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Deployment guide to set up, onboard, or move to Intune. These steps include moving from partner MDM providers, using co-management, moving from on-premises group policy, and moving from Office 365 device management.
 ms.date: 2025-12-15T00:00:00.0000000Z
 ms.topic: upgrade-and-migration-article
-ms.reviewer: jamiesil
 locale: en-us
 document_id: 1743f9e9-34a2-450f-9d8a-8b057127ba95
 document_version_independent_id: 5c96a0dc-0091-ab11-00d0-35c95d82cd57

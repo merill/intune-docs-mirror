@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot device preparation known issues | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/known-issues
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

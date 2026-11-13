@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Unenroll device in Company Portal for macOS app - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/unenrollment/unenroll-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to unenroll a device in the Company Portal for macOS app.
 ms.date: 2024-10-08T00:00:00.0000000Z
-ms.reviewer: elocholi
 locale: en-us
 document_id: 29ad4c13-6299-b4e6-e864-ef526b9f629f
 document_version_independent_id: 29ad4c13-6299-b4e6-e864-ef526b9f629f

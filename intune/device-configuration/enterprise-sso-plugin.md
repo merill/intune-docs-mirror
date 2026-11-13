@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Single sign-on (SSO) for iOS/iPadOS and macOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/enterprise-sso-plugin
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Overview of Microsoft Enterprise SSO plug-in in Microsoft Intune, Jamf Pro, and other MDM solution providers. The Enterprise SSO plug-in is available on iOS/iPadOS and macOS devices.
 ms.date: 2026-02-10T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: beflamm, arnab
 zone_pivot_groups: apple-enterprise-sso
 locale: en-us
 document_id: 4e498da8-73ee-856f-deaa-87bfb5b81f72

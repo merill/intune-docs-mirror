@@ -13,7 +13,6 @@ ms.collection:
 description: This article provides information about specialty devices and how can you manage them with Microsoft Intune
 ms.date: 2026-05-12T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: priyar
 ms.subservice: suite
 locale: en-us
 document_id: bf9adb21-94a1-495f-73c9-6c4fb3781980

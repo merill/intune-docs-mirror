@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints
-ms.reviewer: aanavath
 ms.subservice: protect
 description: Review the default settings in each Microsoft Intune Windows security baseline version and compare recommended configurations for managed devices.
 ms.date: 2026-09-30T00:00:00.0000000Z

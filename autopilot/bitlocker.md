@@ -4,7 +4,6 @@ title: Setting the BitLocker encryption algorithm for Windows Autopilot devices 
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/bitlocker
 author: aanavath
 ms.author: aanavath
-ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

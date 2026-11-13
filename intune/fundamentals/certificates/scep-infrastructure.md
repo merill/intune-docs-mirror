@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - certificates
 - sub-certificates
-ms.reviewer: wicale
 ms.subservice: fundamentals
 description: To use Simple Certificate Enrollment Protocol (SCEP) with Microsoft Intune, configure your on-premises AD domain, create a certification authority, and set up the NDES server to support use of the Certificate Connector.
 ms.date: 2023-06-26T00:00:00.0000000Z

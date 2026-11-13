@@ -4,7 +4,6 @@ title: Windows Autopilot customer consent | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/registration-auth
 author: iceorbital
 ms.author: acabello
-ms.reviewer: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

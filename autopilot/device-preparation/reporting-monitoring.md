@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot device preparation reporting and monitoring | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/reporting-monitoring
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

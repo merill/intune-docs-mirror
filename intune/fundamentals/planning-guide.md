@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Plan, design, implement, adopt, and move to Microsoft Intune. Get guidance and advice to determine goals, use-case scenarios and requirements, and create rollout and communication plans, support, testing, and validation plans.
 ms.date: 2026-05-28T00:00:00.0000000Z
 ms.topic: upgrade-and-migration-article
-ms.reviewer: davguy
 locale: en-us
 document_id: be85a977-5f68-8336-b1f9-87f6ab44c31c
 document_version_independent_id: 0264b998-409d-69bc-86ab-a494a39f6a4e

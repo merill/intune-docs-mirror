@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll your organization-provided macOS device in management - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-corporate-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to enroll an macOS device in Intune that was purchased and provided by your organization.
 ms.date: 2018-08-29T00:00:00.0000000Z
-ms.reviewer: 
 locale: en-us
 document_id: 258f78c0-9fd4-9125-65ca-e02266f5d666
 document_version_independent_id: 258f78c0-9fd4-9125-65ca-e02266f5d666

@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Integrate an MDM provider with Windows Autopilot device association | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/device-association/mdm-provider-integration
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

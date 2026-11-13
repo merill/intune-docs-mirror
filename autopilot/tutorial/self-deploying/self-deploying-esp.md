@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot self-deploying mode - Step 5 of 6 - Configure and assign the Enrollment Status Page (ESP) | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/self-deploying/self-deploying-esp
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

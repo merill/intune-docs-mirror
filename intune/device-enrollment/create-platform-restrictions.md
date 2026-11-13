@@ -14,7 +14,6 @@ ms.subservice: enrollment
 description: Restrict personally owned devices, and specific device platforms and OS versions from enrolling in Intune.
 ms.date: 2024-07-01T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: maholdaa
 locale: en-us
 document_id: 5e1fba37-a3e1-181c-66a4-42d811517c3a
 document_version_independent_id: 5e1fba37-a3e1-181c-66a4-42d811517c3a

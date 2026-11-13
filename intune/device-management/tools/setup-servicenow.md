@@ -14,7 +14,6 @@ ms.subservice: suite
 description: ServiceNow integration enables help desk staff, who are licensed to use Remote Help, to use ServiceNow to view incidents and details of the tech issue that an employee is facing from the Troubleshooting pane. This article also describes how to configure ServiceNow integration with Microsoft Intune.
 ms.date: 2025-02-27T00:00:00.0000000Z
 ms.topic: troubleshooting
-ms.reviewer: Dave Randall
 locale: en-us
 document_id: 1db80b8a-17ee-62f3-cf43-b9000ce33609
 document_version_independent_id: 1db80b8a-17ee-62f3-cf43-b9000ce33609

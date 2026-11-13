@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints
-ms.reviewer: aanavath - intune-azure
 ms.subservice: protect
 description: Deploy security baselines that have preset and recommended configurations to the Windows devices you manage with Microsoft Intune.
 ms.date: 2026-09-30T00:00:00.0000000Z

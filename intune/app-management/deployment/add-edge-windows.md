@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add Microsoft Edge for Windows to Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-edge-windows
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ ms.subservice: apps
 description: Learn about adding Microsoft Edge for Windows to Microsoft Intune.
 ms.date: 2025-10-02T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: arnab
 ms.custom: 
 locale: en-us
 document_id: dca372dd-e827-cf3e-64dc-da1ad2ddb8c3

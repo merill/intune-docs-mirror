@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Common Education OneDrive Known Folder Move configuration - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/solutions/education/tutorial-school-deployment/ref-onedrive-knownfoldermove-settings-windows
-author: yegor-a
-ms.author: egorabr
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

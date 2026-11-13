@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Learn how to add and managing Microsoft Entra user accounts from within Microsoft Intune.
 ms.date: 2025-03-04T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mattcall
 locale: en-us
 document_id: 619d82e8-1491-f643-857f-f30af95fafa9
 document_version_independent_id: 619d82e8-1491-f643-857f-f30af95fafa9

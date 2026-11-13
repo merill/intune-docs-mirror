@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Get Mac recovery key from Intune Company Portal website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/security/collect-recovery-key-company-portal-website
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Get the recovery key for your work or school device on the Company portal website.
 ms.date: 2024-11-08T00:00:00.0000000Z
-ms.reviewer: 
 locale: en-us
 document_id: 82cb864f-0b32-babd-e619-14368ebb6ef2
 document_version_independent_id: 82cb864f-0b32-babd-e619-14368ebb6ef2

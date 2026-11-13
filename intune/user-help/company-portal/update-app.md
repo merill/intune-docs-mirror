@@ -2,8 +2,8 @@
 layout: Conceptual
 title: How to update the Company Portal app - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/update-app
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Get the latest version of the Company Portal app on Android, iOS, macOS, and Windows devices.
 ms.date: 2026-03-04T00:00:00.0000000Z
-ms.reviewer: priyar
 locale: en-us
 document_id: 94ecc884-4090-2805-d04d-2d1a739df71c
 document_version_independent_id: 94ecc884-4090-2805-d04d-2d1a739df71c

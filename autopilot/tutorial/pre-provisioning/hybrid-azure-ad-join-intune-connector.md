@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot for pre-provisioned deployment Microsoft Entra hybrid join - Step 2 of 11 - Install the Intune Connector for Active Directory | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-intune-connector
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

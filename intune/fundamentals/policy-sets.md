@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Use policy sets to group collections of management objects in Microsoft Intune.
 ms.date: 2024-04-10T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: DaGerrit
 locale: en-us
 document_id: 2f6a9513-12ac-8fa6-571d-2f2db92660bc
 document_version_independent_id: 2f6a9513-12ac-8fa6-571d-2f2db92660bc

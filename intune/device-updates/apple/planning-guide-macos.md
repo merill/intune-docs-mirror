@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Admin guide and checklist for macOS software updates - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-updates/apple/planning-guide-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: protect
 description: Guidance and advice for administrators that create and manage software updates for macOS devices using Microsoft Intune. Use this article to help manage software updates on your organization-owned devices, including how to create policies, manage updates, and review update status.
 ms.date: 2025-07-23T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: beflamm, ahamil, rogerso
 locale: en-us
 document_id: 9c25218d-07ea-5009-7d7b-e15a0a14f59d
 document_version_independent_id: 9c25218d-07ea-5009-7d7b-e15a0a14f59d

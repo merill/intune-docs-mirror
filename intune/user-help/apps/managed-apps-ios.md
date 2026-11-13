@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Get Work or School Apps for iOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/apps/managed-apps-ios
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Get work or school apps on your iPhone or iPad. Find out how to install managed apps, identify protected apps, and request new ones through Company Portal.
 ms.date: 2026-11-03T00:00:00.0000000Z
-ms.reviewer: amanh
 locale: en-us
 document_id: 1768a877-7806-dadf-4f05-7e88926a1491
 document_version_independent_id: 1768a877-7806-dadf-4f05-7e88926a1491

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Issue DigiCert PKCS certificates with Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/certificates/digicert-pkcs
-author: wicale
-ms.author: wicale
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - certificates
 - sub-certificates
-ms.reviewer: wicale
 ms.subservice: fundamentals
 description: Install and configure the Certificate Connector for Microsoft Intune to issue PKCS certificates from DigiCert PKI Platform to Intune-managed devices.
 ms.date: 2024-10-09T00:00:00.0000000Z

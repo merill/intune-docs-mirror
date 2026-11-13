@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot self-deploying mode - Step 1 of 5 - Set up Windows automatic Intune enrollment | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/self-deploying/self-deploying-automatic-enrollment
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

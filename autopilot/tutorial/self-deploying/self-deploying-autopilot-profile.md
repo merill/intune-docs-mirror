@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot self-deploying mode - Step 5 of 5 - Create and assign self-deploying mode Windows Autopilot profile | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/self-deploying/self-deploying-autopilot-profile
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

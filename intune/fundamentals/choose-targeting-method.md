@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Choose the right targeting method in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/choose-targeting-method
-author: matt-call
-ms.author: mattcall
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Learn when to use assignment filters, dynamic groups, static groups, virtual groups, and enrollment time grouping for device and user targeting in Microsoft Intune.
 ms.date: 2026-06-30T00:00:00.0000000Z
 ms.topic: concept-article
-ms.reviewer: mattcall
 locale: en-us
 document_id: b40fdb43-0258-271f-d841-066b15e914d8
 document_version_independent_id: b40fdb43-0258-271f-d841-066b15e914d8

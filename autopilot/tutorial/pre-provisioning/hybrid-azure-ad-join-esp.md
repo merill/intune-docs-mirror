@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot for pre-provisioned deployment Microsoft Entra hybrid join - Step 6 of 11 - Configure and assign the Enrollment Status Page (ESP) | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-esp
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

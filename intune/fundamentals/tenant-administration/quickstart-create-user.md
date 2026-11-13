@@ -15,7 +15,6 @@ description: Learn how to create a user in Microsoft Intune and assign an Intune
 services: microsoft-intune
 ms.topic: how-to
 ms.date: 2026-01-20T00:00:00.0000000Z
-ms.reviewer: jlynn
 locale: en-us
 document_id: a5046119-bb2b-5ac5-09a4-3c200cd569ad
 document_version_independent_id: a5046119-bb2b-5ac5-09a4-3c200cd569ad

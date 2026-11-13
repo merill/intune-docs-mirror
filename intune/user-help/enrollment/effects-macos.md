@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Installing the Company Portal app for macOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/effects-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: What happens if you install the Company Portal app and enroll your macOS device in Intune.
 ms.date: 2024-11-09T00:00:00.0000000Z
-ms.reviewer: esmich
 locale: en-us
 document_id: 2c620aab-2078-04c4-07a0-c21e8c81b8cc
 document_version_independent_id: 2c620aab-2078-04c4-07a0-c21e8c81b8cc

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add groups to organize users and devices for Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/tenant-administration/add-groups
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Create Microsoft Entra groups to organize users and devices for use with Microsoft Intune.
 ms.date: 2026-05-19T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mattcall
 locale: en-us
 document_id: 44c0b8bc-bf4c-1eec-79a2-6fecab79a984
 document_version_independent_id: 44c0b8bc-bf4c-1eec-79a2-6fecab79a984

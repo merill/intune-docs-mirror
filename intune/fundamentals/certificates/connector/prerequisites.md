@@ -12,7 +12,6 @@ ms.collection:
 - M365-identity-device-management
 - certificates
 - sub-certificates
-ms.reviewer: wicale
 ms.subservice: fundamentals
 description: Review the software and network prerequisites for use of the Certificate Connector for Microsoft Intune.
 ms.date: 2024-10-09T00:00:00.0000000Z

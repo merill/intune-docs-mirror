@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure Wi-Fi Settings for Apple Devices in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/ref-wifi-settings-apple
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Add or create a Wi-Fi configuration profile on iOS/iPadOS and macOS devices using Wi-Fi configuration settings in Microsoft Intune. Configure the connection details, authentication methods, SSIDs, security types, and proxy settings.
 ms.date: 2026-06-23T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: wicale
 zone_pivot_groups: platforms-apple
 locale: en-us
 document_id: 10a8caac-af1c-9c42-7e81-1eb9545db339

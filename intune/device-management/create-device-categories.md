@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create and assign device categories in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-management/create-device-categories
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -13,7 +13,6 @@ ms.collection:
 description: Create device categories in Microsoft Intune, use them to populate dynamic Microsoft Entra security groups, and assign a category to a device.
 ms.date: 2026-07-05T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: mattcall
 locale: en-us
 document_id: cbc26d2f-193a-7668-e6da-6500555c678d
 document_version_independent_id: cbc26d2f-193a-7668-e6da-6500555c678d

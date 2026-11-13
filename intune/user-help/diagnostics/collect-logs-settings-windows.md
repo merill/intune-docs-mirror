@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Export Windows management log diagnostics to share with your support person for troubleshooting an enrolled device.
 ms.date: 2025-02-20T00:00:00.0000000Z
-ms.reviewer: priyar
 locale: en-us
 document_id: a1d5f842-ed01-7d19-8f2d-cb8628844aaf
 document_version_independent_id: a1d5f842-ed01-7d19-8f2d-cb8628844aaf

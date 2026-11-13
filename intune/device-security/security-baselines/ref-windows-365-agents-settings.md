@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 - sub-secure-endpoints
-ms.reviewer: aanavath
 ms.subservice: protect
 description: View the settings and default values in the Microsoft Intune Windows 365 for Agents security baseline for Cloud PCs that run agentic workloads.
 ms.date: 2026-08-13T00:00:00.0000000Z

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Overview of Apple Automated Device Enrollment for iOS/iPadOS in Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/overview-automated-enrollment-apple
-author: iceorbital
-ms.author: acabello
+author: beflamm
+ms.author: beflamm
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

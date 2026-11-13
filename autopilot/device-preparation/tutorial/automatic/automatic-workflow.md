@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Overview for Windows Autopilot device preparation in automatic mode for Windows 365 in Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/device-preparation/tutorial/automatic/automatic-workflow
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Report problems in Company Portal app for Windows - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/diagnostics/collect-logs-company-portal-windows
-author: iceorbital
-ms.author: acabello
+author: madakeva
+ms.author: madakeva
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -12,7 +12,6 @@ ms.subservice: end-user
 ms.topic: end-user-help
 description: Share app diagnostics with your support person to diagnose a problem with the Company Portal app for Windows.
 ms.date: 2025-12-02T00:00:00.0000000Z
-ms.reviewer: scottduf
 locale: en-us
 document_id: 3b41d899-4acd-19e9-760f-d7a7446d13fc
 document_version_independent_id: 3b41d899-4acd-19e9-760f-d7a7446d13fc

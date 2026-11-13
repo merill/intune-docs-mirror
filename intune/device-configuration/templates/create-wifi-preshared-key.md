@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Create Wi-Fi profile with preshared key in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/create-wifi-preshared-key
-author: iceorbital
-ms.author: acabello
+author: wicale
+ms.author: wicale
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,6 @@ ms.subservice: configuration
 description: Use a custom profile to create a Wi-Fi profile with a preshared key (PSK), and get sample XML code for Android, Android Enterprise, Windows, and EAP-based Wi-Fi profiles in Microsoft Intune.
 ms.date: 2025-05-28T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: abalwan
 locale: en-us
 document_id: 4fee7eeb-78d1-ec78-e114-ebd0ca0453ec
 document_version_independent_id: 4fee7eeb-78d1-ec78-e114-ebd0ca0453ec

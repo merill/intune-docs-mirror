@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Learn more about the frequency of the Microsoft Intune service updates, the release cadence, and how to check your tenant release version.
 ms.date: 2025-04-10T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: acabello
 locale: en-us
 document_id: 1573f093-f9da-6b1b-5847-c61e0b3d997b
 document_version_independent_id: 1573f093-f9da-6b1b-5847-c61e0b3d997b

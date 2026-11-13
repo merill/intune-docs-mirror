@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot for pre-provisioned deployment Microsoft Entra hybrid join - Step 10 of 11 - User flow | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/tutorial/pre-provisioning/hybrid-azure-ad-join-user-flow
-author: iceorbital
-ms.author: acabello
-ms.reviewer: madakeva
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems

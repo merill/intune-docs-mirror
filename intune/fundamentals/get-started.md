@@ -15,7 +15,6 @@ ms.subservice: fundamentals
 description: See an overview of the steps to start using Intune. Plan your move and deployment of Intune, determine your licensing needs and any platform requirements, use compliance and Conditional Access, deploy apps, create device configuration profiles, and enroll your devices to be managed. Get more information on mobile application management for BYOD or personal devices.
 ms.date: 2025-02-19T00:00:00.0000000Z
 ms.topic: overview
-ms.reviewer: 
 locale: en-us
 document_id: 59abb248-66d1-4892-48f4-2373a2e9bb56
 document_version_independent_id: 59abb248-66d1-4892-48f4-2373a2e9bb56

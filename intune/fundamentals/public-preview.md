@@ -14,7 +14,6 @@ ms.subservice: fundamentals
 description: Learn about public preview features in Microsoft Intune, and see an example. See a list of limitations, restrictions, and more in the Microsoft Intune admin center.
 ms.date: 2025-02-20T00:00:00.0000000Z
 ms.topic: concept-article
-ms.reviewer: scottduf
 locale: en-us
 document_id: 9c92bc2a-201e-ecf0-e654-c17e21ad74df
 document_version_independent_id: 9c92bc2a-201e-ecf0-e654-c17e21ad74df

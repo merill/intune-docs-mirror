@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add an Enterprise App Catalog App to Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-enterprise-catalog-app
-author: iceorbital
-ms.author: acabello
+author: nicolezhao-msftdocs
+ms.author: nicolezhao
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -16,7 +16,6 @@ description: Learn how to add an Enterprise App Catalog app to Microsoft Intune.
 ms.date: 2026-06-03T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.reviewer: dguilory
 locale: en-us
 document_id: 470c56b1-1e64-7cc6-c6b4-320144067c77
 document_version_independent_id: 470c56b1-1e64-7cc6-c6b4-320144067c77

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Understanding Microsoft Intune Management Agent for macOS - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/management-agent-macos
-author: iceorbital
-ms.author: acabello
+author: iye-ms
+ms.author: iye
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -15,7 +15,6 @@ ms.subservice: apps
 description: Learn about the Microsoft Intune management agent for macOS.
 ms.date: 2024-07-12T00:00:00.0000000Z
 ms.topic: how-to
-ms.reviewer: arnab
 locale: en-us
 document_id: 45077568-779f-a677-700e-17541253e18e
 document_version_independent_id: 45077568-779f-a677-700e-17541253e18e

@@ -11,7 +11,6 @@ ms.service: microsoft-intune
 description: Guidelines for using Azure Virtual Desktop single-session with Microsoft Intune.
 ms.date: 2025-10-14T00:00:00.0000000Z
 ms.topic: article
-ms.reviewer: madakeva
 ms.collection:
 - M365-identity-device-management
 locale: en-us

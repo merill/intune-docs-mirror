@@ -2,9 +2,8 @@
 layout: Conceptual
 title: Windows Autopilot Motherboard Replacement | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/autopilot-motherboard-replacement
-author: TimShererWithAquent
-ms.author: v-tishe
-ms.reviewer: v-tishe
+author: madakeva
+ms.author: madakeva
 ms.service: windows-client
 ms.subservice: autopilot
 ms.suite: ems
@@ -15,6 +14,7 @@ permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: Understand how Windows Autopilot deployments function when the motherboard is replaced on a device and other servicing scenarios.
 ms.date: 2026-10-28T00:00:00.0000000Z
+ms.reviewer: v-tishe
 ms.collection: M365-modern-desktop
 ms.topic: how-to
 locale: en-us
