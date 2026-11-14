@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Set up personal device for work - Microsoft Intune | Microsoft Learn
+title: Set up Personal Device for Work - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-ios
 author: rishitasarin-ms
 ms.author: rishitasarin
@@ -11,7 +11,7 @@ ms.service: microsoft-intune
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes how to enroll and register a personal iPhone or iPad for work or school using Intune Company Portal.
-ms.date: 2025-03-13T00:00:00.0000000Z
+ms.date: 2026-10-03T00:00:00.0000000Z
 locale: en-us
 document_id: 99a6423f-d6c8-0300-4155-0c42198d558c
 document_version_independent_id: 99a6423f-d6c8-0300-4155-0c42198d558c
@@ -40,9 +40,11 @@ spProducts:
 platformId: b7b222df-29a4-b5fd-ba85-2ddb1275fc53
 ---
 
-# Set up personal device for work - Microsoft Intune | Microsoft Learn
+# Set up Personal Device for Work - Microsoft Intune | Microsoft Learn
 
-**Applies to iOS/iPadOS** Enroll and register your iPhone or iPad for work or school to access apps, Wi-Fi, and other resources. This article describes how to enroll your personal device using the following enrollment options:
+**Applies to iOS/iPadOS**
+
+Enroll and register your iPhone or iPad for work or school to access apps, Wi-Fi, and other resources. This article describes how to enroll your personal device by using the following enrollment options:
 
 - Account driven user enrollment
 - Device enrollment with Microsoft Intune Company Portal app
@@ -67,11 +69,11 @@ Initiate enrollment in the Settings app by signing in with your work or school a
 - iOS/iPadOS version 15 or later
 - Stable Wi-Fi connection
 
-If this method is unavailable on your device, enroll your device with the Company Portal app or via web enrollment.
+If this method is unavailable on your device, enroll your device with the Company Portal app or by using web enrollment.
 
 1. Open the Settings app on your device.
 2. Go to **General** &gt; **VPN & Device Management**.
-3. Tap the option to sign in with your work or school account. Sign in with your work or school account, or with the Apple ID provided to you by your organization.
+3. Tap the option to sign in. Sign in with your work or school account, or with the Apple ID provided to you by your organization.
 4. Sign in to iCloud. Enter the password for the username that appears onscreen. Then select **Continue**.
 5. Tap **Allow Remote Management**.
 6. Wait a few minutes while your device is configured and the configuration profile is installed.
@@ -82,7 +84,9 @@ If this method is unavailable on your device, enroll your device with the Compan
 
 ## Device enrollment with Company Portal app
 
-Initiate enrollment in the Intune Company Portal app. The Company Portal app is used to enroll and manage your device, install work apps, and get IT support. The app supports devices running iOS 14.0 and later. Maintain a Wi-Fi connection until all steps are complete. Pausing for more than a few minutes during device enrollment might cause the Company Portal app to close or end setup. If this happens, reopen the app and try again.
+Initiate enrollment in the Intune Company Portal app. Use the Company Portal app to enroll and manage your device, install work apps, and get IT support. The app supports devices running iOS 14.0 and later.
+
+Maintain a Wi-Fi connection until all steps are complete. Pausing for more than a few minutes during device enrollment might cause the Company Portal app to close or end setup. If this condition occurs, reopen the app and try again.
 
 For this process, you need:
 
@@ -92,13 +96,13 @@ For this process, you need:
 - [Intune Company Portal app](https://apps.apple.com/us/app/intune-company-portal/id719171358)(opens the Apple App Store)
 - Latest version of the Microsoft Authenticator app
 
-1. Open the Company Portal app, and sign in to the Company Portal app with your work or school account. Example: jojordan@contoso.com
+1. Open the Company Portal app, and sign in to the Company Portal app with your work or school account. Example: jojordan@contoso.com.
 2. On the **How to set up your device** screen, review the enrollment steps and information about what your organization can see and do on an enrolled device. Then select **Get started**.
 3. The Safari web browser opens the Intune Company Portal website. When prompted to, select **Allow** to download the Intune configuration profile for your device.
 4. A pop-up appears when installation is complete. Select **Close**.
 5. Open the Settings app on your device and go to **Profile Downloaded**.
 
-    - If this option isn't available, go to **General** &gt; **VPN & Device Management**.
+    If this option isn't available, go to **General** &gt; **VPN & Device Management**.
 6. Tap **Management Profile**. Then tap **Install**.
 7. You might need to reenter your passcode. Then tap **Install** again.
 8. When prompted to, read the remote management warning. Tap **Install** again to continue. Then tap **Trust**.
@@ -107,7 +111,7 @@ For this process, you need:
 11. Wait a few minutes while your device receives apps and policies from your organization.
 
     - After enrollment, you might receive prompts from your organization to install required apps. Tap **Install** on the app prompts to install the apps.
-    - If you already installed Microsoft Authenticator on your device, you're prompted to allow Microsoft to take management of the Microsoft Authenticator app. Tap **Manage** to allow.
+    - If you already installed Microsoft Authenticator on your device, it prompts you to allow Microsoft to take management of the Microsoft Authenticator app. Tap **Manage** to allow.
     - Your organization might require a mobile threat defense app on your device, which monitors your work apps for threats and viruses. Tap **Install** to proceed with installation. If the app is a requirement and you skip installation, you might not be allowed to access work resources.
 12. Go to a work app like Microsoft Teams or Microsoft Outlook and sign in with your work or school account to confirm that you have access.
 
@@ -123,27 +127,27 @@ Initiate enrollment on the Intune Company Portal website. For this process, you 
 - Stable Wi-Fi connection
 
 1. Open Safari and go to https://portal.manage.microsoft.com/enrollment/webenrollment/ios. Sign in with your work or school account.
-2. When prompted to, download the configuration profile. Wait in Safari while Company Portal downloads the profile.
+2. When prompted, download the configuration profile. Wait in Safari while Company Portal downloads the profile.
 3. Open the Settings app on your device and go to **General** &gt; **VPN & Device Management** to view and install the new configuration profile.
 
     1. Select **Profile Downloaded**.
     2. Select **Install** and follow the onscreen instructions to install the profile.
-4. Wait until Microsoft Authenticator is installed on the device before signing in to a work or school app. The device won't be ready for work use until Authenticator is on the device, which can take a few minutes. To verify that Authenticator installed, open your device settings and go to **Profile** &gt; **Management Profile** &gt; **Single Sign On Extension**. Authenticator should be listed as the SSO extension.
+4. Wait until Microsoft Authenticator is installed on the device before signing in to a work or school app. The device isn't ready for work use until Authenticator is on the device, which can take a few minutes. To verify that Authenticator installed, open your device settings and go to **Profile** &gt; **Management Profile** &gt; **Single Sign On Extension**. Authenticator should be listed as the SSO extension.
 5. Sign in to a work app, such as Microsoft Teams, with your work account.
-6. Wait while the app identifies required setting updates. For example, you may be required to update your device's operating system before you can use the app. Check the app you're signed in to for pending action items. When you're done making changes, recheck the device settings.
+6. Wait while the app identifies required setting updates. For example, you might be required to update your device's operating system before you can use the app. Check the app you're signed in to for pending action items. When you're done making changes, recheck the device settings.
 
 ## Determine based on user choice
 
 1. Open the Company Portal app on your personal device and sign in with your work or school account.
 2. On the **Set up access** screen, select **Begin.**
 
-    ![Example screenshot of Company Portal, &quot;Set up access&quot; screen.](media/enroll-ios/ios-enrollment-checklist-1909.png)
+    ![Screenshot of Company Portal, Set up access screen.](media/enroll-ios/ios-enrollment-checklist-1909.png)
 3. Select your device and enrollment type. Tap **I own this device** since you're using a personal device that you brought from home. Then continue to the next step. If you're enrolling a company-provided device, tap **My company owns this device**, and then go to [Device enrollment with Company Portal](enroll-ios#device-enrollment-with-company-portal-app) to finish setup.
 
-    ![Example screenshot of Company Portal, &quot;Select device and enrollment type&quot; screen, device type options.](media/enroll-ios/ios-device-type-1909.png)
-4. Choose how to protect the data on your device once it's enrolled.
+    ![Screenshot of Company Portal, Select device and enrollment type screen, device type options.](media/enroll-ios/ios-device-type-1909.png)
+4. Choose how to protect the data on your device after it's enrolled.
 
-    ![Example screenshot of Company Portal, &quot;Select device and enrollment type&quot; screen, enrollment type options.](media/enroll-ios/ios-enrollment-type-1909.png)
+    ![Screenshot of Company Portal, Select device and enrollment type screen, enrollment type options.](media/enroll-ios/ios-enrollment-type-1909.png)
 
     Your options:
 
@@ -152,4 +156,4 @@ Initiate enrollment on the Intune Company Portal website. For this process, you 
 
 ## IT administrator support
 
-If you're an IT administrator and run in to problems while enrolling devices, see [Troubleshooting iOS device enrollment problems in Microsoft Intune](/en-us/troubleshoot/mem/intune/device-enrollment/troubleshoot-ios-enrollment-errors). This article lists common errors, their causes, and steps to resolve them.
+If you're an IT administrator and run into problems while enrolling devices, see [Troubleshooting iOS device enrollment problems in Microsoft Intune](/en-us/troubleshoot/mem/intune/device-enrollment/troubleshoot-ios-enrollment-errors). This article lists common errors, their causes, and steps to resolve them.

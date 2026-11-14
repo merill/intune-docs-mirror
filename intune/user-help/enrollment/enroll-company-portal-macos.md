@@ -10,8 +10,8 @@ feedback_system: Standard
 ms.service: microsoft-intune
 ms.subservice: end-user
 ms.topic: end-user-help
-description: Enroll your personal Mac for work using the Company Portal app.
-ms.date: 2025-07-29T00:00:00.0000000Z
+description: Enroll your personal Mac for work using Intune Company Portal. Learn how to install the app, add the management profile, and meet your organization's requirements.
+ms.date: 2026-10-03T00:00:00.0000000Z
 locale: en-us
 document_id: 6e3dcfc9-6a6f-0b05-b6ff-94c14d578fe6
 document_version_independent_id: 6e3dcfc9-6a6f-0b05-b6ff-94c14d578fe6
@@ -44,17 +44,19 @@ Set up secure, remote access to work emails, files, and apps on your personal Ma
 
 ## What to expect from the Company Portal app
 
-During initial setup, the Company Portal app requires you to sign in and authenticate with your work account. Company Portal then informs you of any device settings you need to change to meet your organization's requirements. For example, your organization could require you to make your device PIN longer or require you to update your operating system. After you enroll your device, Company Portal helps you maintain the secure work access. The app notifies you of new policies and requirements and gives you the chance to adjust your settings so that you can continue to work uninterrupted.
+During initial setup, the Company Portal app requires you to sign in and authenticate with your work account. Company Portal then informs you of any device settings you need to change to meet your organization's requirements. For example, your organization could require you to make your device PIN longer or require you to update your operating system.
+
+After you enroll your device, Company Portal helps you maintain the secure work access. The app notifies you of new policies and requirements and gives you the chance to adjust your settings so that you can continue to work uninterrupted.
 
 For more information about the Company Portal app for macOS, see [What happens when I install the Company Portal app and enroll my device?](effects-macos)
 
 ## Before you begin
 
-Your device must be running macOS 11 or later.
+Your device must run macOS 11 or later.
 
 Note
 
-During installation and enrollment, you might be prompted to allow Company Portal to use confidential information that's stored in your keychain. These prompts are part of Apple security. When you get the prompt, type in your login keychain password and select **Always Allow**. If you press **Enter** or **Return** on your keyboard, the prompt will select **Allow**, which means you may continue to receive prompts.
+During installation and enrollment, you might be prompted to allow Company Portal to use confidential information that's stored in your keychain. These prompts are part of Apple security. When you get the prompt, type in your login keychain password and select **Always Allow**. If you press **Enter** or **Return** on your keyboard, the prompt selects **Allow**, which means you might continue to receive prompts.
 
 ## Install Company Portal app
 
@@ -86,7 +88,7 @@ Microsoft AutoUpdate might open after enrollment and update your Microsoft softw
     4. Enter your device password to allow the profile to enroll your device. Then select **Enroll**.
 6. Wait while the management profile installs and then enrolls your device.
 7. Return to the Company Portal app and verify that there's a green checkmark next to **Install management profile**.
-8. Your organization may require changes to the device settings. In Company Portal, select the device. Under **Status**, review the list of required changes. Select **Learn more** to read more about the requirements.
+8. Your organization might require changes to the device settings. In Company Portal, select the device. Under **Status**, review the list of required changes. Select **Learn more** to read more about the requirements.
 
     Tip
 
@@ -98,7 +100,7 @@ Your device is ready to use for work or school. Sign in to the Company Portal ap
 
 ## Enrollment profile details
 
-You can view and finish installing the enrollment profile on your device in the Apple system settings app. Before you install the enrollment profile, make sure it contains the following information:
+You can view and finish installing the enrollment profile on your device in the Apple system settings app. Before you install the enrollment profile, ensure it contains the following information:
 
 - **Verification status**: **Verified**
 - **Description**: **Install this profile to get access to your company apps**.
@@ -109,10 +111,10 @@ You can view and finish installing the enrollment profile on your device in the 
 
 ## Troubleshooting and feedback
 
-Contact your IT support person to troubleshoot problems with enrollment or the Company Portal app. If necessary, you can share your app logs with your support person via the Company Portal app.
+Contact your IT support person to troubleshoot problems with enrollment or the Company Portal app. If necessary, you can share your app logs with your support person by using the Company Portal app.
 
 1. In the Company Portal app, open the **Help** menu.
-2. Select **Send diagnostic report**. Wait while Company Portal app logs are sent to Microsoft support and Intune Company Portal developers. This information is used to assist with troubleshooting should your support person need more help.
+2. Select **Send diagnostic report**. Wait while Company Portal app logs are sent to Microsoft support and Intune Company Portal developers. This information assists with troubleshooting should your support person need more help.
 3. Copy your incident ID for future reference.
 4. Select **Email Logs** to report the problem to your support person. Type in what you experienced in the body of the email. To find your support person's email address, go to the Company Portal app and select **Support**.
 
@@ -120,4 +122,4 @@ To share your feedback and suggestions with Intune Company Portal app developers
 
 ## Updating the Company Portal app
 
-Updating the Company Portal app is done the same way as any other Office app, through Microsoft AutoUpdate for macOS. For more information, see [Update Office for Mac automatically](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
+Update the Company Portal app the same way as any other Office app, through Microsoft AutoUpdate for macOS. For more information, see [Update Office for Mac automatically](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).
