@@ -1,8 +1,8 @@
 ---
 layout: Conceptual
-title: Using the Intune Company Portal website - Microsoft Intune | Microsoft Learn
+title: Using the Intune Company Portal Website - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/company-portal/website
-author: rishitasarin-ms
+author: iceorbital
 ms.author: rishitasarin
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
@@ -11,7 +11,7 @@ ms.service: microsoft-intune
 ms.subservice: end-user
 ms.topic: end-user-help
 description: Describes the Company Portal website and the actions you can take on your enrolled personal devices.
-ms.date: 2024-05-21T00:00:00.0000000Z
+ms.date: 2026-11-05T00:00:00.0000000Z
 locale: en-us
 document_id: bbd56a12-74cb-f8a7-47aa-90950a71cb63
 document_version_independent_id: bbd56a12-74cb-f8a7-47aa-90950a71cb63
@@ -38,11 +38,11 @@ spProducts:
 platformId: b2c68910-4499-272e-fa00-7d508956061f
 ---
 
-# Using the Intune Company Portal website - Microsoft Intune | Microsoft Learn
+# Using the Intune Company Portal Website - Microsoft Intune | Microsoft Learn
 
-Use the Intune Company Portal website to remotely manage your work apps and enrolled personal devices. To access the Company Portal website, go to [https://portal.manage.microsoft.com/](https://go.microsoft.com/fwlink/?linkid=2010980) on any device (it doesn't have to be an enrolled device) and sign in with your work or school account.
+Use the Intune Company Portal website to remotely manage your work apps and enrolled personal devices. To access the Company Portal website, see [https://portal.manage.microsoft.com/](https://go.microsoft.com/fwlink/?linkid=2010980) on any device and sign in with your work or school account. The device doesn't have to be enrolled.
 
-Once you're signed in, you can see your enrolled devices and:
+After you sign in, you can see your enrolled devices and do the following tasks:
 
 - [Check status](../compliance/validate-status-company-portal-website): Initiate a status check to verify or regain access to your organization's resources.
 - [View and manage work apps](../apps/manage-apps-company-portal-website): Search and filter through available work apps, including required and already-installed apps.
@@ -55,4 +55,4 @@ Once you're signed in, you can see your enrolled devices and:
 - [Reset a device password](../device-actions/reset-passcode-company-portal-website): Reset a forgotten password.
 - [Reset device to factory settings](../device-actions/reset-device-company-portal-website): Restore a used, lost, or stolen personal device to its out-of-box state.
 
-Some actions aren't available on all operating systems and device types. The reset device password action, for example, won't work on an Android device that has a work profile.
+Some actions aren't available on all operating systems and device types. The reset device password action, for example, doesn't work on an Android device that has a work profile.
