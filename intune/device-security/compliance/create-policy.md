@@ -154,6 +154,7 @@ For more information about using custom compliance settings, including supported
     1. On the *Compliance settings* page, expand **Custom Compliance** and set *Custom compliance* to **Require**.
     2. For *Select your discovery script*, select **Click to select**, and then enter the name of a script that you previously added to the Microsoft Intune admin center. This script must be uploaded before you begin to create the policy. Choose **Select** to continue to the next step.
     3. For *Upload and validate the JSON file with your custom compliance settings*, select the folder icon, and then find and add the JSON file for Windows that you want to use with this policy. For assistance with the JSON, see [Create a JSON for custom compliance settings](create-custom-json).
+    4. For *Custom compliance evaluation frequency*, select how frequently you want the custom compliance settings to be evaluated on the device.
 
     **For Linux and macOS**:
 
