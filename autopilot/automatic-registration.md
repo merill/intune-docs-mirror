@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Automatic Registration of Existing Devices | Microsoft Learn
+title: Automatic Registration of Existing Devices with Windows Autopilot | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/autopilot/automatic-registration
 author: madakeva
 ms.author: madakeva
@@ -43,7 +43,9 @@ spProducts:
 platformId: 7f28d1aa-c61e-c7e2-ac73-0de1aaaa386e
 ---
 
-# Automatic Registration of Existing Devices | Microsoft Learn
+# Automatic Registration of Existing Devices with Windows Autopilot | Microsoft Learn
+
+You can automatically register existing devices with Windows Autopilot through Intune or another MDM service.
 
 ## Requirements
 

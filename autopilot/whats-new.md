@@ -13,7 +13,7 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: News and resources about the latest updates and past versions of Windows Autopilot.
-ms.date: 2026-10-29T00:00:00.0000000Z
+ms.date: 2026-11-13T00:00:00.0000000Z
 ms.collection:
 - M365-modern-desktop
 ms.topic: whats-new
@@ -201,7 +201,9 @@ Starting in 2310, we're making an update to the self-deployment and pre-provisio
 
 Date added: *August 23, 2023*
 
-Microsoft Intune is changing how BitLocker resets occur for reused Windows Autopilot devices in the September (2309) service release. Previously, users could access the BitLocker recovery key via BitLocker self-service when reusing devices that were configured through Windows Autopilot. However, after the change, users will need to contact their IT admin to request a restore or to access the BitLocker recovery key. IT admins will continue to have full access to recovery keys both before and after this change.
+Microsoft Intune is changing how BitLocker resets occur for reused Windows Autopilot devices in the September (2309) service release. Previously, users could access the BitLocker recovery key via BitLocker self-service when reusing devices that were configured through Windows Autopilot. However, after the change, users will need to contact their IT admin to request a restore or to access the BitLocker recovery key.
+
+IT admins who aren't owners of these devices continue to have access to recovery keys both before and after this change. IT admins who own an affected device are subject to the same BitLocker self-service restriction, even if they have administrative permissions. These admins need to contact an IT admin who isn't an owner of that device to retrieve its recovery key.
 
 ### User impact
 
