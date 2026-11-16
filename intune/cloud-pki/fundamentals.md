@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Microsoft Intune cloud PKI fundamentals - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/cloud-pki/fundamentals
-author: wicale
-ms.author: wicale
+author: sdeines-msft
+ms.author: sdeines
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

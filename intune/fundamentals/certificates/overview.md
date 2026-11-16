@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Types of certificate that are supported by Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/certificates/overview
-author: wicale
-ms.author: wicale
+author: sdeines-msft
+ms.author: sdeines
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

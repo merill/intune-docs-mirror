@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Configure 802.1x wired network settings for Apple and Windows devices in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/templates/configure-wired-networks
-author: wicale
-ms.author: wicale
+author: sdeines-msft
+ms.author: sdeines
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

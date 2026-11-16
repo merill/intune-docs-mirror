@@ -9,7 +9,7 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 description: Review older announcements from the Intune what's new page
-ms.date: 2026-10-29T00:00:00.0000000Z
+ms.date: 2026-11-15T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ROBOTS: NOINDEX,NOFOLLOW
@@ -36,6 +36,41 @@ platformId: 4a3dfd35-700c-4478-8762-2ca32a49fee1
 ---
 
 # What's new in previous months in the Microsoft Intune - Microsoft Intune | Microsoft Learn
+
+## Week of May 11, 2026
+
+### Device enrollment
+
+#### Complete Platform SSO registration during macOS Automated Device Enrollment
+
+On macOS devices enrolled with Automated Device Enrollment (ADE), you can run Platform SSO during device registration. Before you enroll, you:
+
+1. Create an Intune [settings catalog policy](../device-configuration/settings-catalog/) and configure the **Enable Registration During Setup** setting.
+2. Deploy the Company Portal (5.2604.0 and newer) as a line-of-business app.
+3. Configure the Automated Device Enrollment policy to use Setup Assistant with modern authentication and enable await final configuration.
+
+When this feature is enabled, users have access to Microsoft Entra ID resources immediately when they arrive at desktop.
+
+To learn more, see [Configure Platform Single Sign-On (PSSO) during Automated Device Enrollment for macOS devices](../device-configuration/settings-catalog/configure-platform-sso-during-enrollment).
+
+Applies to:
+
+- macOS 26 and newer
+- Company Portal 5.2604.0 and newer
+
+## Week of May 4, 2026
+
+### Monitor and troubleshoot
+
+#### Enhanced app inventory with faster data updates
+
+Intune enhanced app inventory brings faster, more detailed visibility into the apps in your environment to support identification of outdated or risky software. Improved data freshness and richer app metadata provide clearer insight into installed applications, while new controls let you specify which devices are included in inventory collection.
+
+This feature is initially available for Windows, with additional platforms to follow.
+
+Applies to:
+
+- Windows 10/11
 
 ## Week of April 27, 2026 (Service release 2604)
 

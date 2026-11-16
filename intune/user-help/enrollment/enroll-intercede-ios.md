@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Enroll iOS or iPadOS device with Intune Company Portal and Intercede - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/user-help/enrollment/enroll-intercede-ios
-author: wicale
-ms.author: wicale
+author: sdeines-msft
+ms.author: sdeines
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard

@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Network endpoints for Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/fundamentals/endpoints
-author: iceorbital
-ms.author: acabello
+author: sdeines-msft
+ms.author: sdeines
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -14,7 +14,7 @@ ms.subservice: fundamentals
 description: Review endpoints for Intune. This page lists IP addresses and port settings needed for proxy settings in your Intune deployments.
 ms.date: 2026-08-21T00:00:00.0000000Z
 ms.topic: reference
-ms.reviewer: angrobe
+ms.reviewer: acabello
 locale: en-us
 document_id: 7892580a-742b-ca19-0498-687d8a3de67d
 document_version_independent_id: 7892580a-742b-ca19-0498-687d8a3de67d

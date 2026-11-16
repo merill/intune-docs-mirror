@@ -9,7 +9,7 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 description: Find out what's new in Microsoft Intune.
-ms.date: 2026-11-02T00:00:00.0000000Z
+ms.date: 2026-11-15T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030
@@ -65,6 +65,175 @@ For new information about Windows Autopilot solutions, see:
 - [Windows Autopilot: What's new](/en-us/autopilot/whats-new)
 
 You can use RSS to be notified when this page is updated. For more information, see [How to use the docs](../fundamentals/use-docs#notifications).
+
+## Week of November 16, 2026 (Service release 2611)
+
+### App management
+
+#### Newly available protected apps for Intune
+
+The following protected apps are now available for Microsoft Intune:
+
+- EnGlobe Mobile by Corporatek Inc. (iOS)
+- Everbridge 360 by Everbridge, Inc. (iOS, Android)
+- Hypergate Files for Intune by Hypergate (Android)
+- Newcode by Newcode.ai (iOS)
+- Ramp by Ramp Business Corporation (iOS)
+- Reliaquest GreyMatter by Reliaquest (iOS, Android)
+- Rogo AI by Rogo Technologies, Inc. (iOS)
+- Rogo AI (Intune Wrapped) by Rogo Technologies, Inc. (iOS)
+- ShareCRM by FORSHARE PTE. LTD. (iOS, Android)
+- Zoho Mail - Intune by Zoho Corporation (iOS, Android)
+
+For more information about protected apps, see [Microsoft Intune protected apps](/en-us/intune/app-management/ref-protected-apps).
+
+### Device configuration
+
+#### Automate tasks with local actions on Android Enterprise devices
+
+Microsoft Intune now supports local actions for Android Enterprise fully managed and dedicated devices. You can automate tasks in response to device restarts, Managed Home Screen sign-in or sign-out, power connection changes, and scheduled times. Configure up to five actions for each event, such as launching an app activity, sending a broadcast intent, or signing out of Managed Home Screen.
+
+Applies to:
+
+- Android Enterprise fully managed devices
+- Android Enterprise dedicated devices
+
+#### New settings for macOS in the settings catalog
+
+Microsoft Intune now includes new settings for macOS in the settings catalog. You can manage Exchange Web Services (EWS) retirement alerts, configure Microsoft Edge browsing and Copilot experiences, and control AI agent runtime protection with Microsoft Defender for Endpoint. These additions help you tailor device configurations to your organization.
+
+**Declarative Device Management** &gt; **Account** &gt; **Account Settings** (macOS 27.2 and later):
+
+- **Allow EWS Retirement Alerts**
+
+**Microsoft Edge**:
+
+- **Enable clipboard suggestions in the address bar**
+- **Allow browsing with Copilot**
+- **Allow socket pool size randomization for proxies**
+- **Use KDC policy to delegate credentials**
+- **Allow Back/Forward Cache for WebSockets**
+- **Enforce Edge guest mode**
+- **Browsing with Copilot allowed URLs**
+- **Browsing with Copilot blocked URLs**
+- **Configure Discover/Work feed tab visibility**
+- **Enable Copilot address bar suggestions**
+- **Allow Cowork to take actions on your behalf**
+- **Enable the Copilot new tab page**
+- **Enable opaque origins for data URLs in Web Workers**
+- **Set default download directory**
+- **Enable service-based extraction for Reading Mode**
+- **Allow sites to make network requests to the local device**
+- **Force foreground priority for specific URLs**
+- **Enable saving passkeys to the password manager**
+- **Background automatic relaunch when all browser windows are closed**
+- **Enable strict MIME type checking for worker scripts**
+- **Allow Local Fonts permission on specified sites**
+- **Enable extended lifetime for SharedWorkers**
+- **Block sites from making requests to local network endpoints**
+- **Show a warning before quitting**
+- **Enable editing profile in settings**
+- **Allow specified sites to access file URLs in the PDF Viewer**
+- **Force foreground priority for all tabs**
+- **Block Local Fonts permission on specified sites**
+- **Set default Copilot new tab feed to Work or Discover**
+- **Override IP address space mappings**
+- **Default Local Fonts permission**
+- **Allow idle detection on specified sites**
+- **Allow sites to make requests to local network endpoints**
+- **Set IPv6 route-probe address for PAC scripts**
+- **Control Microsoft Edge Safe Hosting Extension**
+- **Make storage quota APIs return static values**
+- **Enable standardized browser zoom behavior**
+- **Set IPv4 route-probe address for PAC scripts**
+- **Enable user web app installation from the browser**
+- **Allow M365 authentication popups in work profiles**
+- **Enable Edge sign-in using non-Microsoft accounts**
+- **Default idle detection permission**
+- **Control availability of XSLT**
+- **Allow Local Network Access in subframes without explicit delegation**
+- **Block idle detection on specified sites**
+- **Block sites from making network requests to the local device**
+
+**Microsoft Defender**:
+
+- **AI Agent Network Inspection**
+- **AI Agent Protection**
+
+Applies to:
+
+- macOS
+
+#### Group exclusions and built-in group targeting for PowerShell scripts on Windows
+
+Microsoft Intune now supports group exclusions and the built-in **All Users** and **All Devices** groups for PowerShell script assignments on Windows. You can target scripts broadly, then exclude selected groups to keep the assignment focused on the users or devices that need it. This brings script assignments in line with other Intune workloads and gives you more control over deployment scope.
+
+For more information, see [Use PowerShell scripts on Windows devices in Intune](../device-management/tools/run-powershell-scripts-windows).
+
+Applies to:
+
+- Windows
+
+### Device enrollment
+
+#### Require Google Workspace authentication on Android Enterprise devices
+
+Microsoft Intune supports requiring users to authenticate with a managed Google Account from your organization's Google Workspace domain on supported Android Enterprise devices. This gives users access to the Google apps and services assigned to their organizational account. The policy doesn't change the Microsoft Entra account associated with the Intune-managed device.
+
+This capability was previously available for corporate-owned, fully managed devices and corporate-owned devices with a work profile. It now also supports personally owned devices with a work profile managed through the Android Management API.
+
+Configure **Require users to authenticate with a Google Workspace account** in an Android Enterprise settings catalog policy and set it to **True**. You can assign the policy before enrollment or to devices that are already enrolled. Your organization must have a managed Google domain, a verified Google Workspace domain, and managed Google Accounts for the targeted users.
+
+For more information, see [Require Google Workspace authentication on Android Enterprise devices with Microsoft Intune](https://techcommunity.microsoft.com/blog/intunecustomersuccess/require-google-workspace-authentication-on-android-enterprise-devices-with-micro/4565954).
+
+Applies to:
+
+- Android Enterprise corporate-owned, fully managed devices
+- Android Enterprise corporate-owned devices with a work profile
+- Android Enterprise personally owned devices with a work profile managed through the Android Management API
+
+#### Increase Intune management agent check-ins on macOS
+
+Microsoft Intune now increases check-in frequency for the Intune management agent on newly enrolled macOS devices. During onboarding, the agent checks every three minutes for 15 minutes and then every 15 minutes for two hours. This helps apps, scripts, and related assignments reach devices sooner without admin or user action.
+
+After enrollment, the regular Intune management agent check-in cadence changes from about eight hours to one hour. Service-controlled hourly check-ins help deliver newly assigned apps, scripts, and dynamic-group updates sooner, without admin or user action.
+
+For more information, see [Common questions, answers, and scenarios with policies and profiles in Microsoft Intune](../device-configuration/troubleshoot-device-profiles#policy-refresh-intervals).
+
+Applies to:
+
+- macOS
+
+### Device management
+
+#### Maintenance windows for operating system and driver updates on Windows
+
+Microsoft Intune now supports maintenance windows for operating system and driver updates on Windows devices. You can choose which update operations run during a window and configure its start date, time, duration, and repeat schedule. To create a profile, go to **Devices** &gt; **Manage devices** &gt; **Maintenance windows** &gt; **Create profile**. These controls help you schedule update activity during planned maintenance periods.
+
+For more information, see [Policy CSP - Update](/en-us/windows/client-management/mdm/policy-csp-update).
+
+Applies to:
+
+- Windows
+
+#### Configure evaluation frequency for custom compliance scripts on Windows and macOS
+
+Microsoft Intune now supports configurable evaluation intervals for custom compliance scripts on managed Windows and macOS devices. You can choose intervals of 15 minutes, 30 minutes, or one to eight hours to match your compliance and operational requirements. This flexibility helps you balance compliance responsiveness with device resource use.
+
+Applies to:
+
+- Windows
+- macOS
+
+### Device security
+
+#### Get more remediation guidance in Windows Autopatch reports
+
+Windows Autopatch now provides additional reporting data, remediation guidance, and guardrails for configuration issues. Administrators can use the expanded information to understand configurations that need attention and determine an appropriate next step.
+
+Applies to:
+
+- Windows
 
 ## Week of October 26, 2026 (Service release 2610)
 
@@ -1784,41 +1953,6 @@ To learn more, see:
 #### Guidance for device-reported values in compliance reports
 
 We updated documentation to clarify how to interpret device-reported values in compliance reports. Some compliance reports include a **Setting** column with values reported directly by the device, providing additional context for noncompliance in scenarios such as custom compliance and Android app configuration reporting. This update adds guidance on treating these values as informational only and highlights security considerations for reviewing device-reported data. For more information, see [Device-reported values in compliance reports](../device-security/compliance/monitor-policy#device-reported-values-in-compliance-reports).
-
-## Week of May 11, 2026
-
-### Device enrollment
-
-#### Complete Platform SSO registration during macOS Automated Device Enrollment
-
-On macOS devices enrolled with Automated Device Enrollment (ADE), you can run Platform SSO during device registration. Before you enroll, you:
-
-1. Create an Intune [settings catalog policy](../device-configuration/settings-catalog/) and configure the **Enable Registration During Setup** setting.
-2. Deploy the Company Portal (5.2604.0 and newer) as a line-of-business app.
-3. Configure the Automated Device Enrollment policy to use Setup Assistant with modern authentication and enable await final configuration.
-
-When this feature is enabled, users have access to Microsoft Entra ID resources immediately when they arrive at desktop.
-
-To learn more, see [Configure Platform Single Sign-On (PSSO) during Automated Device Enrollment for macOS devices](../device-configuration/settings-catalog/configure-platform-sso-during-enrollment).
-
-Applies to:
-
-- macOS 26 and newer
-- Company Portal 5.2604.0 and newer
-
-## Week of May 4, 2026
-
-### Monitor and troubleshoot
-
-#### Enhanced app inventory with faster data updates
-
-Intune enhanced app inventory brings faster, more detailed visibility into the apps in your environment to support identification of outdated or risky software. Improved data freshness and richer app metadata provide clearer insight into installed applications, while new controls let you specify which devices are included in inventory collection.
-
-This feature is initially available for Windows, with additional platforms to follow.
-
-Applies to:
-
-- Windows 10/11
 
 For previous months, see the [What's new archive](archive).
 

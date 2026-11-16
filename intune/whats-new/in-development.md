@@ -9,7 +9,7 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 description: This article describes Microsoft Intune features that are in development.
-ms.date: 2026-10-30T00:00:00.0000000Z
+ms.date: 2026-11-15T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030
@@ -75,25 +75,6 @@ Applies to:
 - iOS/iPadOS
 
 ## Device configuration
-
-### Maintenance windows for updates on Windows devices
-
-Microsoft Intune will introduce maintenance windows to help you schedule firmware, driver, and operating system updates on Windows devices. You'll be able to choose supported update operations and configure a start date, start time, duration, and repeat schedule.
-
-You'll create a maintenance windows profile in the Microsoft Intune admin center to define when update activity should take place. Scheduling options will include daily, weekly, and monthly recurrence, so you can align update activity with your organization's planned maintenance periods. This initial release will focus on updates; it won't include maintenance windows for application installations.
-
-Applies to:
-
-- Windows
-
-### Automate tasks with local actions on Android Enterprise devices
-
-Microsoft Intune will introduce local actions for Android Enterprise fully managed and dedicated devices. With local actions, you'll be able to automate tasks directly on a device by configuring actions that run in response to supported events. Events will include device restart, Managed Home Screen sign-in or sign-out, power connection changes, and scheduled times. Actions will include launching an app activity, sending a broadcast intent, signing out of Managed Home Screen, and exiting kiosk mode. You'll be able to pair supported events and actions, with up to five actions for each event.
-
-Applies to:
-
-- Android Enterprise fully managed devices
-- Android Enterprise dedicated devices
 
 ### View eSIM profiles and deployment status for Windows devices
 
@@ -239,16 +220,6 @@ The person receiving help will be able to view the shared data and stop sharing 
 
 Applies to:
 
-- Windows
-
-### Remote Help support in GCCH
-
-You'll be able to use Remote Help in US Government Community Cloud High (GCCH) environments. This expansion extends the same secure, cloud-based remote assistance capabilities currently available in GCC to GCCH tenants. IT support staff will be able to establish Remote Help sessions with end users on GCCH-enrolled devices, providing real-time troubleshooting with role-based access controls through Intune. Both helpers and sharers must sign in with their organization's Microsoft Entra ID accounts.
-
-Applies to:
-
-- Android
-- macOS
 - Windows
 
 ## Tenant administration
