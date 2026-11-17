@@ -283,7 +283,7 @@ You can use the following device properties in your managed device filter rules:
     Note
 
     For Apple devices, the `OSversion` property doesn't include Apple's Security Patch Version (SPV) information. The SPV is the letter after the version number, like `14.1.2a`. When creating assignment filters for Apple devices, don't include the SPV in the `OSversion` rule syntax.
-- **`operatingSystemSKU` (Operating System SKU)**: Create a filter rule based on the device's Windows client OS SKU. Enter the full string value (using `-eq`, `-ne`, `-in`, `-notIn` operators), or partial value (using `-startswith`, `-contains`, `-notcontains` operators).
+- **`operatingSystemSKU` (Operating System SKU)**: Create a filter rule based on the device's Windows OS SKU. Enter the full string value (using `-eq`, `-ne`, `-in`, `-notIn` operators), or partial value (using `-startswith`, `-contains`, `-notcontains` operators).
 
     Examples:
 
@@ -324,7 +324,12 @@ You can use the following device properties in your managed device filter rules:
     | **ProfessionalWorkstation** | Windows 10/11 Professional for workstation (161) |
     | **ProfessionalN** | Windows 10/11 Professional for workstation N (162) |
     | **ProfessionalSingleLanguage** | Windows 10/11 Professional Single Language (138) |
+    | **ServerDatacenter** | Windows Server Datacenter (8) |
+    | **ServerDatacenterEval** | Windows Server Datacenter (evaluation installation) (80) |
     | **ServerRdsh** | Windows 10/11 Enterprise multi-session (175) |
+    | **ServerStandard** | Windows Server Standard (7) |
+    | **ServerStandardEval** | Windows Server Standard (evaluation installation) (79) |
+    | **ServerTurbine** | Windows Server Datacenter: Azure Edition (407) |
 
     This property applies to:
 

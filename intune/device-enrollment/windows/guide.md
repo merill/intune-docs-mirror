@@ -12,8 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: enrollment
 description: Enroll Windows devices using Automatic enrollment, Windows Autopilot, group policy, and co-management enrollment options in Microsoft Intune.
-ms.date: 2026-11-04T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: article
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: 2bc22a09-1d2a-702e-2593-8939524d88a7
 document_version_independent_id: 2bc22a09-1d2a-702e-2593-8939524d88a7
@@ -45,6 +47,8 @@ platformId: a2e262d4-4f37-6798-11c4-f28db1591c36
 # Windows Device Enrollment Guide for Microsoft Intune - Microsoft Intune | Microsoft Learn
 
 You can enroll both personal and organization-owned devices in Intune. After enrollment, devices receive the policies and profiles you create.
+
+For nonproduction evaluation on eligible Windows Server Insider Preview devices, use [Get started with Windows Server management (Insider preview)](../../solutions/end-to-end-guides/windows-server-endpoints-get-started). Windows client enrollment options aren't automatically applicable to Windows Server.
 
 You have the following options for enrolling Windows devices:
 
@@ -81,7 +85,7 @@ You can use this enrollment option to:
 
 | Feature | Use this enrollment option when |
 | --- | --- |
-| You use Windows client. | ✅  Configuration Manager supports Windows Server. |
+| You use Windows client. | ✅  Configuration Manager supports released Windows Server versions. For eligible Insider Preview devices, see [Windows Server enrollment guidance](../../solutions/end-to-end-guides/windows-server-endpoints-get-started#phase-2---enroll-a-test-server). |
 | You have Microsoft Entra ID P1 or P2 | ✅ |
 | You use Conditional Access (CA) on devices enrolled using [bulk enrollment](create-bulk-package) with a provisioning package. | ✅ On Windows, CA is available for Windows devices enrolled using bulk enrollment. |
 | You have remote workers. | ✅ |

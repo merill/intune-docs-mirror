@@ -13,10 +13,11 @@ ms.collection:
 - sub-secure-endpoints
 ms.subservice: protect
 description: Deploy security baselines that have preset and recommended configurations to the Windows devices you manage with Microsoft Intune.
-ms.date: 2026-09-30T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: overview
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1030
+ms.custom: msecd-doc-authoring-1032
+ms.reviewer: aanavath - intune-azure
 locale: en-us
 document_id: 876371dc-98dc-8e11-48f3-2c6b7e9414c1
 document_version_independent_id: 876371dc-98dc-8e11-48f3-2c6b7e9414c1
@@ -60,7 +61,9 @@ This feature applies to:
 
 ## Intune security baseline overview
 
-Each security baseline is a group of preconfigured Windows settings that help you apply and enforce granular security settings that the relevant security teams recommend. You can also customize each baseline you deploy to enforce only those settings and values you require. When you create a security baseline profile in Intune, you're creating a template that consists of multiple *device configuration* profiles.
+Each configuration baseline is a group of preconfigured Windows settings that help you apply and enforce granular security settings that the relevant security teams recommend. You can also customize each configuration baseline you deploy to enforce only those settings and values you require. When you create a configuration baseline profile in Intune, you're creating a template that consists of multiple *device configuration* profiles.
+
+Intune also offers audit-only baselines, including Center for Internet Security (CIS) auditing in public preview. Audit-only profiles assess device configurations without changing settings. For prerequisites, profile creation, and reporting, see the [CIS auditing guide (preview)](cis-audit-baseline) or [Security Technical Implementation Guide (STIG) auditing guide](stig-audit-baseline).
 
 The settings in each baseline are device configuration settings like those found in various Intune policies. Each setting in a baseline works with the configuration service provider for the relevant product that is present on a managed windows device.
 
@@ -96,7 +99,7 @@ Microsoft doesn't recommend using preview versions of security baselines in a pr
 
 ## Available security baselines
 
-The following security baseline instances are available for use with Intune. Use the links to view the settings for recent instances of each baseline.
+The following security baseline instances are available for use with Intune. Use the links to view settings or audit guidance for each baseline.
 
 - **Security Baseline for Windows 10 and later**:
     - [Version 26H2](ref-windows-mdm-settings?pivots=mdm-26h2)
@@ -157,8 +160,13 @@ The following security baseline instances are available for use with Intune. Use
     Note
 
     The STIG audit baseline is available only for [US Government Community Cloud High (GCC High)](../../fundamentals/government-service) tenants and requires [Advanced Analytics](../../advanced-analytics/) licensing.
+- **CIS Audit Baseline (preview)**:
 
-When a new version for a profile becomes available, settings in profiles based on the older versions become read-only. You can continue to use those older profiles. You can also edit the profile names, description, and assignments, but they don't support a change to their settings configuration and you can't create new profiles based on the older versions.
+    - [CIS Microsoft Intune for Windows 11 Benchmark (Audit Only) - Version 5.0.0](cis-audit-baseline)
+
+    The Center for Internet Security (CIS) audit baseline assesses Windows 11 device configurations without changing them. The public preview requires [Intune Advanced Analytics](../../advanced-analytics/). For profile creation, results, and export steps, see [Audit Windows devices against CIS benchmarks](cis-audit-baseline).
+
+When a new version for a configuration profile becomes available, settings in profiles based on the older versions become read-only. You can continue to use those older profiles. You can also edit the profile names, description, and assignments, but they don't support a change to their settings configuration and you can't create new profiles based on the older versions.
 
 When you're ready to use the more recent baseline version, you can create new profiles or update your existing profiles to the new version. See [Update a baseline profile to the latest version](configure-baselines#update-a-baseline-to-the-latest-version) in the *Manage security baseline profiles* article.
 
@@ -203,6 +211,8 @@ The same Microsoft security team chose and organized the settings for each basel
 ### Are the Intune security baselines CIS or NIST compliant?
 
 Strictly speaking, no. The Microsoft security team consults organizations, such as CIS, to compile its recommendations. However, there isn't a one-to-one mapping between "CIS-compliant" and Microsoft baselines.
+
+To assess device configurations against the supported CIS benchmark instead of deploying a Microsoft-recommended configuration baseline, use the [CIS audit baseline (preview)](cis-audit-baseline). Auditing identifies configuration gaps; it doesn't configure settings or certify compliance.
 
 ### What certifications do Microsoft's security baselines have?
 

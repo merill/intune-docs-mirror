@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Add and Assign Win32 Apps to Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/app-management/deployment/add-win32
-author: nicolezhao-msftdocs
-ms.author: nicolezhao
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -13,9 +13,10 @@ ms.collection:
 - FocusArea_Apps_Win32
 ms.subservice: apps
 description: Learn how to add, assign, and manage Win32 apps with Microsoft Intune.
-ms.date: 2026-04-14T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: df82e623-8adf-225e-7831-ff450d306d2c
 document_version_independent_id: df82e623-8adf-225e-7831-ff450d306d2c
@@ -56,7 +57,7 @@ For information about Enterprise App Catalog apps, see [Add an Enterprise App Ca
 
 To use Win32 app management, be sure you meet the following criteria:
 
-- Use a [supported Windows version](../../fundamentals/ref-supported-platforms) (Enterprise, Pro, and Education versions).
+- Use a [supported Windows version](../../fundamentals/ref-supported-platforms) (Enterprise, Pro, and Education versions), or an eligible Windows Server Insider Preview device for nonproduction evaluation. For Server-specific requirements and limitations, see [Get started with Windows Server management (Insider preview)](../../solutions/end-to-end-guides/windows-server-endpoints-get-started).
 - Devices must be joined or registered to Microsoft Entra ID and be auto-enrolled. The Intune management extension supports devices that are Microsoft Entra joined, Microsoft Entra registered, hybrid domain joined, or group policy enrolled. For Intune management extension prerequisites and version requirements, see [Intune Management Extension for Windows](../../device-management/tools/management-extension-windows#prerequisites). 
     Note
 

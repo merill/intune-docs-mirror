@@ -12,10 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: suite
 description: With the Remote Help app, provide remote assistance to authenticated users who also run the Remote Help app.
-ms.date: 2026-08-13T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1023
+ms.custom: msecd-doc-authoring-1032
 ms.reviewer: karawang
 locale: en-us
 document_id: a6e6fd3a-a10b-9cb7-bc63-6ec1e28ec718
@@ -78,6 +78,7 @@ The Remote Help app supports the following capabilities in general across the su
 - **Remote launch**: Allows helpers to launch Remote Help on the helper and sharer's device from Intune by sending a notification to the sharer's device.
 
     ![A screenshot of the sharer's computer showing the prompt to start a Remote Help session using the Remote Launch feature.](media/index/remote-help-windows-remote-launch.png)
+- **Diagnostic data reports for attended sessions**: Helpers can request a point-in-time report of the sharer's Windows device diagnostic data to guide troubleshooting. The sharer can allow or decline the request, view the same report as the helper, and stop sharing at any time. Helpers can refresh the report while sharing is allowed. For instructions and the data categories included, see [Use diagnostic data reports on Windows](start-session#use-diagnostic-data-reports-in-attended-windows-sessions).
 - **Unattended control: Remote sign-in**: Allows an authorized helper to sign in to a corporate Windows device with their own credentials and troubleshoot without requiring an end user to be present or signed in. Unlike attended control, which displays an active user's session, unattended remote sign-in creates a separate authenticated Windows session governed by user authentication, Intune role-based access control (RBAC), and auditing. This capability is initiated from the Microsoft Intune admin center and applies only to physical, corporate-owned, Intune-managed Windows devices.
 
     [![Screenshot of the Remote Help control session type dialog with unattended control selected.](media/index/remote-help-unattended-windows.png)](media/index/remote-help-unattended-windows.png#lightbox)

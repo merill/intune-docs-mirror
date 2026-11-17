@@ -2,8 +2,8 @@
 layout: Conceptual
 title: Overview of enrollment restrictions - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/restrictions
-author: AnyaNovicheva1
-ms.author: annovich
+author: iceorbital
+ms.author: acabello
 breadcrumb_path: /intune/breadcrumb/toc.json
 uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
@@ -13,8 +13,11 @@ ms.collection:
 - ContentEnagagementFY23
 ms.subservice: enrollment
 description: Learn about the enrollment restrictions available in Microsoft Intune.
-ms.date: 2025-12-04T00:00:00.0000000Z
+ms.date: 2026-11-09T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: maholdaa
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: 4363dbd8-50da-f10b-0589-b88002b65de7
 document_version_independent_id: 4363dbd8-50da-f10b-0589-b88002b65de7
@@ -195,6 +198,23 @@ Intune also blocks personal devices using these enrollment methods:
 Important
 
 Devices joined by Workplace Join could be blocked from enrolling if they were ever previously Microsoft Entra joined to the tenant. To avoid being blocked, deregister and remove the device's associated object in Microsoft Entra ID before attempting to join the device by Workplace Join.
+
+## Blocking server devices
+
+Note
+
+Only [Windows Server Insider preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver) can be enrolled in Microsoft Intune. Server enrollment is not supported in production Intune environments.
+
+This is prerelease software. Windows Server Insider Preview builds may be substantially modified before they are commercially released. These builds are for testing purposes only, and not for production use. Microsoft is not obligated to provide any support services for this preview software.
+
+By default, server devices are blocked from enrolling in Intune. Intune blocks enrolling server devices by checking the operating system SKU.
+
+If you allow server devices but block personally owned devices, [Automatic MDM enrollment](windows/enable-automatic-mdm#enable-windows-automatic-enrollment) with [Add Work Account from Windows Server Settings](/en-us/azure/active-directory/user-help/user-help-register-device-on-network) is blocked.
+
+To allow server enrollment, allow server devices in the enrollment restrictions profile and use one of the following options:
+
+- Also allow personally owned devices in the enrollment restrictions profile, and use an assignment filter rule based on the `deviceOwnership` property to block personally owned Windows devices.
+- Configure corporate identifiers for the servers before enrollment. For more information, see [Supported corporate identifiers](add-corporate-identifiers#supported-corporate-identifiers).
 
 ## Limitations
 

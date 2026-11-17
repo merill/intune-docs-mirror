@@ -12,7 +12,9 @@ ms.service: microsoft-intune
 ms.subservice: protect
 description: Manage device compliance, security baselines, Microsoft Defender integration, VPN tunnels, identity protection, and threat defense with Microsoft Intune.
 ms.topic: landing-page
-ms.date: 2026-05-04T00:00:00.0000000Z
+ms.date: 2026-11-10T00:00:00.0000000Z
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: ade2f31c-535b-fc00-d7d6-1a175b0079f1
 document_version_independent_id: ade2f31c-535b-fc00-d7d6-1a175b0079f1
@@ -83,6 +85,7 @@ Protect organizational data and devices by managing compliance, security baselin
 ### How-To Guide
 
 - [Configure security baseline policies](security-baselines/configure-baselines)
+- [Audit Windows devices against CIS benchmarks (preview)](security-baselines/cis-audit-baseline)
 
 ### Reference
 

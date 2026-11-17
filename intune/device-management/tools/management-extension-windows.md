@@ -14,9 +14,11 @@ ms.collection:
 - FocusArea_Apps_Win32
 ms.subservice: apps
 description: Understand Microsoft Intune management extension for Windows.
-ms.date: 2026-09-24T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: how-to
 ms.reviewer: bryanke
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: 3a8259eb-b8f1-1e3d-4468-9b398e41f55f
 document_version_independent_id: 3a8259eb-b8f1-1e3d-4468-9b398e41f55f
@@ -54,6 +56,9 @@ For details about PowerShell scripts, see [Use PowerShell scripts on Windows dev
 This feature applies to:
 
 - [Supported Windows versions](../../fundamentals/ref-supported-platforms) (excluding Windows Home and Windows devices running in S mode).
+- Eligible Windows Server Insider Preview devices for Win32 app deployment in nonproduction environments. See [Get started with Windows Server management (Insider preview)](../../solutions/end-to-end-guides/windows-server-endpoints-get-started) for requirements and limitations.
+
+For Windows Server, follow the enrollment and Win32 app guidance in the preview guide. Don't assume that every Windows client enrollment method or feature that uses the Intune management extension is included in the Server preview.
 
 Note
 

@@ -13,8 +13,10 @@ ms.collection:
 - sub-secure-endpoints
 ms.subservice: protect
 description: Monitor device and per-setting results of security baselines you deploy with Microsoft Intune, and identify conflicts for devices.
-ms.date: 2024-08-22T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: 2c394422-1f00-efa0-ea58-f6c8afaa4c78
 document_version_independent_id: 2c394422-1f00-efa0-ea58-f6c8afaa4c78
@@ -52,6 +54,8 @@ Intune provides several options to monitor security baselines. You can:
 You can also view the [Device configuration report](../../device-management/reports/overview#device-configuration-operational) to see which device configuration based policies apply to individual devices, which include security baselines.
 
 For more information about the feature, see [Security baselines in Intune](overview).
+
+This article covers configuration baseline reports. Audit-only profiles use **Audit report** instead of standard configuration reports. See [Center for Internet Security (CIS) audit results (preview)](cis-audit-baseline#review-cis-audit-results) or [Security Technical Implementation Guide (STIG) audit results](stig-audit-baseline#review-stig-audit-results) for audit-report procedures.
 
 Note
 

@@ -12,8 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: fundamentals
 description: Use our platform deployment guide to set up Windows device management in Microsoft Intune.
-ms.date: 2024-08-21T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: install-set-up-deploy
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: e0b38ddd-615d-d410-22e9-6052692103b3
 document_version_independent_id: e0b38ddd-615d-d410-22e9-6052692103b3
@@ -47,6 +49,8 @@ platformId: 4f2aaa04-fa50-5c84-686c-bc5a23b7e66c
 This guide describes how to protect and manage Windows apps and endpoints using Microsoft Intune, and includes our setup recommendations and resources from prerequisites to enrollment.
 
 For each section in this guide, review the associated tasks. Some tasks are required and some, like setting up Microsoft Entra Conditional Access, are optional. Select the provided links in each section to go to our recommended help docs on Microsoft Learn, where you can find more detailed information and how-to instructions.
+
+For nonproduction evaluation on eligible Windows Server Insider Preview devices, use [Get started with Windows Server management (Insider preview)](../solutions/end-to-end-guides/windows-server-endpoints-get-started). Windows client workflows aren't automatically applicable to Windows Server.
 
 ## Step 1: Prerequisites
 

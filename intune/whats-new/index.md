@@ -9,7 +9,7 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 description: Find out what's new in Microsoft Intune.
-ms.date: 2026-11-15T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030
@@ -68,7 +68,33 @@ You can use RSS to be notified when this page is updated. For more information, 
 
 ## Week of November 16, 2026 (Service release 2611)
 
+### Microsoft Intune Suite
+
+#### Share device diagnostics during Remote Help sessions on Windows
+
+Microsoft Intune Remote Help now supports sharing device diagnostics during attended Windows sessions. After the Sharer (end user) consents, helpdesk agents can review system details and resource usage to troubleshoot faster. End users can view the shared data and stop sharing at any time. Declining the request doesn't end the Remote Help session, so assistance can continue without sharing diagnostics. This feature is rolling out.
+
+For more information, see [Use diagnostic data reports in attended Windows sessions](../remote-help/start-session#use-diagnostic-data-reports-in-attended-windows-sessions).
+
+Applies to:
+
+- Windows
+
 ### App management
+
+#### Keep work files in OneDrive for Business with Edge for Business on Windows
+
+Microsoft Intune now supports controlling where Microsoft Edge for Business saves downloaded work files on Windows. In your Windows app protection policy, set **Send org data to** to **Selected apps** and select OneDrive for Business as the allowed destination. Downloads from the Edge work profile go to OneDrive for Business instead of the local disk. This capability requires Microsoft Edge version 158 or later.
+
+The new setting is:
+
+- **Allowed data destinations**: Select **OneDrive for Business** to allow work-file downloads to OneDrive for Business.
+
+For more information, see [Data transfer app protection policy settings for Windows](../app-management/protection/ref-settings-windows#data-transfer).
+
+Applies to:
+
+- Windows
 
 #### Newly available protected apps for Intune
 
@@ -88,6 +114,31 @@ The following protected apps are now available for Microsoft Intune:
 For more information about protected apps, see [Microsoft Intune protected apps](/en-us/intune/app-management/ref-protected-apps).
 
 ### Device configuration
+
+#### New and updated settings for Windows in the settings catalog
+
+Microsoft Intune now includes updated Microsoft Edge and Google Chrome administrative templates and new Cloud PC device reset settings in the Windows settings catalog. You can configure these policies in a Windows settings catalog profile.
+
+The Microsoft Edge template refresh includes these new settings:
+
+- Microsoft Edge 154: `AutofillSettings`
+- Microsoft Edge 156: **Control Remix availability** (`RemixAvailability`), available for devices and users
+- Microsoft Edge 157: `AllHttpAuthSchemesAllowedForProxies`
+- Microsoft Edge 157: `BlueprintGWAAvailability`
+- Microsoft Edge 157: `CloudManagementEnrollmentToken`
+
+Microsoft Edge 155 updates existing policy text without adding settings. The Google Chrome templates are updated to version 153.0.8010.53.
+
+The **CloudPCDevice** policy area includes two device-scoped reset settings:
+
+- `AllowAuthenticatedUserReset` controls refresh or full reset for authenticated users.
+- `AllowAnyUserReset` controls refresh or full reset without requiring authentication.
+
+For more information, see [Microsoft Edge policies](/en-us/deployedge/microsoft-edge-policies), [Create a policy using settings catalog](../device-configuration/settings-catalog/), and [CloudPCDevice Policy CSP](/en-us/windows/client-management/mdm/policy-csp-cloudpcdevice).
+
+Applies to:
+
+- Windows, subject to each setting's supported device and OS applicability
 
 #### Automate tasks with local actions on Android Enterprise devices
 
@@ -225,7 +276,58 @@ Applies to:
 - Windows
 - macOS
 
+#### Manage Windows Server devices with Microsoft Intune (Insider preview)
+
+Important
+
+Windows Server management in Microsoft Intune is for testing and evaluation in nonproduction environments only. Microsoft doesn't support production use of Windows Server management in Intune.
+
+Microsoft Intune now includes management for eligible [Windows Server Insider preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver). Use familiar Intune workflows to manage Windows Server devices alongside Windows devices.
+
+Note
+
+Only [Windows Server Insider preview builds](/en-us/windows-insider/business/server-get-started) can be enrolled in Microsoft Intune. Server enrollment is not supported in production Intune environments.
+
+Windows Server management in Intune and the Windows Insider Program are available through opt-in. Follow the linked registration and download instructions, then register and sign in before downloading a build.
+
+This is prerelease software. Windows Server Insider Preview builds may be substantially modified before they are commercially released. These builds are for testing purposes only, and not for production use. Microsoft is not obligated to provide any support services for this preview software.
+
+This preview includes persistent physical servers and virtual machines (VMs) running Desktop Experience, including persistent single-session hosts. Server Core, multisession, ephemeral, and nonpersistent hosts aren't included.
+
+Before enabling server enrollment, review existing Windows policy and app assignments. Use dedicated server pilot groups and assignment filters to separate servers from Windows devices.
+
+Server enrollment is blocked by default. To opt in, allow server devices in your enrollment restrictions profile. For details, see [Blocking server devices](../device-enrollment/restrictions#blocking-server-devices).
+
+On enrolled pilot servers, you can:
+
+- Apply supported device configuration and endpoint security policies, including settings catalog policies, custom configuration profiles, and administrative templates.
+- Evaluate supported compliance policies and use device compliance with Microsoft Entra Conditional Access.
+- Deploy and monitor Win32 apps.
+- Configure supported Windows Update ring settings.
+- View device inventory and policy, app, and compliance status.
+- Use supported remote device actions, such as sync, restart, BitLocker key rotation, and diagnostic collection.
+
+Azure and Azure Arc aren't required to manage Windows Server devices in Intune. Azure Arc provides complementary Azure governance, monitoring, automation, and hybrid or multicloud services.
+
+To learn more about Windows Server management in Intune, see [Get started with Windows Server management in Intune](https://aka.ms/IntuneServerGuide).
+
+**Help shape what's next:** Tell us what works, what's missing, and which server-management scenarios matter most to you. Submit the [Intune Server Management preview feedback form](https://forms.cloud.microsoft/r/ax1xF5ccUC) or visit the [Windows Server Insiders community](https://techcommunity.microsoft.com/category/windows-server/discussions/windowsserverinsiders). For preview issues, use these feedback channels instead of contacting Microsoft support.
+
+Applies to:
+
+- Windows Server
+
 ### Device security
+
+#### CIS benchmark auditing for Windows 11 devices (public preview)
+
+Microsoft Intune now supports auditing Windows 11 devices against the Center for Internet Security (CIS) Microsoft Intune for Windows 11 Benchmark in public preview. You can create and assign an audit profile, review per-setting results, and export findings to identify configuration gaps. This audit-only capability doesn't configure settings or remediate findings and requires Microsoft Intune Advanced Analytics.
+
+For more information, see [Audit Windows devices against CIS benchmarks](../device-security/security-baselines/cis-audit-baseline).
+
+Applies to:
+
+- Windows 11
 
 #### Get more remediation guidance in Windows Autopatch reports
 

@@ -9,7 +9,7 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 description: This article describes Microsoft Intune features that are in development.
-ms.date: 2026-11-15T00:00:00.0000000Z
+ms.date: 2026-11-17T00:00:00.0000000Z
 ms.topic: whats-new
 ai-usage: ai-assisted
 ms.custom: msecd-doc-authoring-1030
@@ -209,18 +209,6 @@ Applies to the following when you use the *Windows* platform:
 - Windows 11
 
 When this change takes effect, devices that are assigned this policy while managed by Defender for Endpoint but not enrolled with Intune, will now apply the settings from the policy. Check your policy to make sure only the devices you intend to receive this policy will get it.
-
-## Monitor and troubleshoot
-
-### Share device diagnostics during Remote Help sessions on Windows
-
-Helpdesk agents will be able to request device diagnostics during an attended Remote Help session on Windows. After the person receiving help consents, the agent will be able to review diagnostic information, such as system details and resource usage, to investigate the issue with less back-and-forth.
-
-The person receiving help will be able to view the shared data and stop sharing during the session. Declining the diagnostic request will leave the Remote Help session available, so assistance can continue without sharing these additional details.
-
-Applies to:
-
-- Windows
 
 ## Tenant administration
 

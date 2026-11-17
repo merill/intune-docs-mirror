@@ -12,9 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration
 description: Configure and deploy policies and use reports for devices you manage with endpoint security antivirus policy in Microsoft Intune.
-ms.date: 2026-07-17T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: reference
 ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 ms.reviewer: mattcall
 locale: en-us
 document_id: 802135a3-40ef-8746-e6b2-e500acc2f9d5
@@ -60,6 +61,7 @@ Applies to:
 - macOS
 - Windows
 - Windows Server *(through the [Microsoft Defender for Endpoint Security settings management](../../device-security/microsoft-defender/security-settings-management) scenario)*
+- Eligible Windows Server Insider Preview devices enrolled in Intune, for nonproduction evaluation only. See [Get started with Windows Server management (Insider preview)](../../solutions/end-to-end-guides/windows-server-endpoints-get-started) for requirements, supported profiles, and limitations.
 
 Important
 
@@ -76,6 +78,9 @@ On October 14, 2025, [Windows 10 reached end of support](/en-us/lifecycle/announ
 - **Windows**
 
     - No additional prerequisites are required.
+- **Windows Server Insider Preview**
+
+    - Follow the [Windows Server preview prerequisites and configuration guidance](../../solutions/end-to-end-guides/windows-server-endpoints-get-started#prerequisites). Native Intune management is limited to eligible Insider Preview devices for nonproduction evaluation.
 
 **Support for Microsoft Configuration Manager clients**:
 
@@ -130,7 +135,7 @@ Profiles for *Antivirus* policy that support tamper protection for [devices mana
 
     On April 5, 2022, the *Windows 10 and later* platform was replaced by the *Windows* platform.
 
-    The *Windows* platform supports devices communicating with Intune through Microsoft Intune or Microsoft Defender for Endpoint. These profiles also add support for the Windows Server platform which isn't supported through Microsoft Intune natively.
+    The *Windows* platform supports devices communicating with Intune through Microsoft Intune or Microsoft Defender for Endpoint. For Windows Server, native Intune management is limited to eligible Insider Preview devices for nonproduction evaluation. See [Windows Server preview configuration](../../solutions/end-to-end-guides/windows-server-endpoints-get-started#phase-5---apply-device-configuration) for supported profiles and limitations.
 
     Profiles for this new platform use the settings format as found in the Settings Catalog. Each new profile template for this new platform includes the same settings as the older profile template it replaces. With this change you can no longer create new versions of the old profiles. Your existing instances of the old profile remain available to use and edit.
 
@@ -254,7 +259,7 @@ The following profiles are supported for devices you manage with Intune:
 
     On April 5, 2022, the *Windows 10 and later* platform was replaced by the *Windows* platform.
 
-    The *Windows* platform supports devices communicating with Intune through Microsoft Intune or Microsoft Defender for Endpoint. These profiles also add support for the Windows Server platform which isn't supported through Microsoft Intune natively.
+    The *Windows* platform supports devices communicating with Intune through Microsoft Intune or Microsoft Defender for Endpoint. For Windows Server, native Intune management is limited to eligible Insider Preview devices for nonproduction evaluation. See [Windows Server preview configuration](../../solutions/end-to-end-guides/windows-server-endpoints-get-started#phase-5---apply-device-configuration) for supported profiles and limitations.
 
     Profiles for this new platform use the settings format as found in the Settings Catalog. Each new profile template for this new platform includes the same settings as the older profile template it replaces. With this change you can no longer create new versions of the old profiles. Your existing instances of the old profile remain available to use and edit.
 

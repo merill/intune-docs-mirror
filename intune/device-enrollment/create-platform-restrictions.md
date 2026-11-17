@@ -12,8 +12,11 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: enrollment
 description: Restrict personally owned devices, and specific device platforms and OS versions from enrolling in Intune.
-ms.date: 2024-07-01T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: how-to
+ms.reviewer: maholdaa
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 locale: en-us
 document_id: 5e1fba37-a3e1-181c-66a4-42d811517c3a
 document_version_independent_id: 5e1fba37-a3e1-181c-66a4-42d811517c3a
@@ -87,6 +90,25 @@ Since Intune supports two Android platforms, it's important to understand how OS
 Important
 
 Android device administrator (DA) management is deprecated and no longer available for devices with access to Google Mobile Services (GMS). If you currently use DA management, we recommend switching to another Android management option. Support and help documentation remain available for some Android 15 and earlier devices without GMS. For more information, see [Ending support for Android device administrator on GMS devices](https://techcommunity.microsoft.com/t5/intune-customer-success/microsoft-intune-ending-support-for-android-device-administrator/ba-p/3915443).
+
+## Best practice - Windows Server platform restrictions
+
+Note
+
+Only [Windows Server Insider preview builds](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver) can be enrolled in Microsoft Intune. Server enrollment is not supported in production Intune environments.
+
+This is prerelease software. Windows Server Insider Preview builds may be substantially modified before they are commercially released. These builds are for testing purposes only, and not for production use. Microsoft is not obligated to provide any support services for this preview software.
+
+Servers are blocked from enrollment by default. [Automatic MDM enrollment](windows/enable-automatic-mdm#enable-windows-automatic-enrollment) through [Add Work Account from Windows Server Settings](/en-us/azure/active-directory/user-help/user-help-register-device-on-network) requires both **server devices** and **personally owned devices** to be allowed.
+
+**Allow servers and personally owned Windows devices:** Allow both settings in the enrollment restrictions profile.
+
+**Allow servers but block personally owned Windows devices:** Allow server devices, then choose one option:
+
+- Block personally owned devices and configure corporate identifiers for the servers before enrollment. See [Supported corporate identifiers](add-corporate-identifiers#supported-corporate-identifiers).
+- Allow personally owned devices and use an assignment filter based on `deviceOwnership` to block personally owned Windows devices from enrolling.
+
+For more information, see [Blocking server devices](restrictions#blocking-server-devices).
 
 ## Create a device platform restriction
 

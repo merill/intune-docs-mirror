@@ -137,6 +137,17 @@ Ubuntu Desktop already has a GNOME graphical desktop environment installed.
 - Windows Holographic for Business
 
     For more information about managing devices running Windows Holographic for Business, see [Windows Holographic for Business support](../solutions/windows-holographic).
+- Windows Server vNext Insider Preview build 29621.1000 or later (nonproduction testing only).
+
+    For enrollment requirements and preview limitations, see [Get started with Windows Server management (Insider preview)](../solutions/end-to-end-guides/windows-server-endpoints-get-started#prerequisites).
+
+    Note
+
+    You can download Windows Server vNext builds from [Windows Server Insider Preview downloads](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewserver).
+
+    This is prerelease software, intended for testing only and not for production use.
+
+    Windows Server Insider Preview builds may be substantially modified before they are commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here. Some product features and functionality may require additional hardware or software. These builds are for testing purposes only. Microsoft is not obligated to provide any support services for this preview software.
 
 Note
 

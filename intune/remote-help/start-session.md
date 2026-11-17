@@ -12,10 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: suite
 description: Use the Remote Help app to provide remote assistance to authenticated users who also run the Remote Help app, and to troubleshoot for frontline workers (FLW).
-ms.date: 2026-08-13T00:00:00.0000000Z
+ms.date: 2026-11-11T00:00:00.0000000Z
 ms.topic: how-to
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1023
+ms.custom: msecd-doc-authoring-1032
 ms.reviewer: Karawang
 locale: en-us
 document_id: aadb0567-1aff-7de3-f80d-e7b659594ea3
@@ -80,6 +80,11 @@ If your organization allows unattended control, a support request can appear on 
 
     During a Remote Help session, when a helper has the elevation permission, the helper can perform elevated actions on the sharer's device. When the sharer ends the Remote Help session, a dialog box warns them that if they continue, they're logged off. If the helper ends the session, the sharer isn't logged off.
 - The helper can request to move from screen sharing to full control if the session started with screen sharing only. You can choose to **Allow full control** or to **Decline the request**.
+- During an attended Windows session, the helper can optionally request your device's diagnostic data to help troubleshoot the issue:
+
+    1. Review the request for permission to view and possibly store your device diagnostic data. Select **Allow** or **Decline**.
+    2. If you allow sharing, select **View Shared Data** on your Remote Help toolbar to open the diagnostic panel. You see the same report as the helper.
+    3. To stop sharing diagnostic data at any time, turn sharing off. Remote Help notifies the helper, who can't refresh the report while sharing is off. If you turn sharing back on, the helper can refresh the report.
 
 **When the issues are resolved or you're ready to end the session:**
 
@@ -162,6 +167,10 @@ To provide help, you must reach out to the user who needs assistance. You can re
 
 An attended support session requires an end user to participate and grant access to the helper. Attended sessions support view-only access, full control, and optional UAC elevation.
 
+Note
+
+Diagnostic data reports for attended Windows sessions are rolling out.
+
 As a helper, after receiving a request from a user who wants assistance by using the Remote Help app:
 
 1. Launch a session on the remote device from within the Microsoft Intune admin center:
@@ -189,7 +198,33 @@ As a helper, after receiving a request from a user who wants assistance by using
     Note
 
     When the `EnableSecureCredentialPrompting` policy is enabled, it blocks the elevation process during Remote Help sessions. To allow elevation, disable this policy. For more information, see [Enable secure credential prompting](/en-us/windows/client-management/mdm/policy-csp-admx-credui#enablesecurecredentialprompting).
-7. After the issues are resolved, or at any time during the session, both the sharer and helper can end the session. To end the session, select **Leave** in the upper right corner of the Remote Help app. If a helper performs elevated actions on a user's device and the sharer ends the session, at the end of the session the sharer is automatically signed out.
+7. Request a diagnostic data report to help troubleshoot the sharer's device:
+
+    1. Select the diagnostic data collection icon on the Remote Help toolbar.
+    2. The sharer reviews the request for permission to view and possibly store their device diagnostic data, and selects **Allow** or **Decline**. If the sharer declines, Remote Help notifies you.
+    3. If the sharer allows sharing, review the report's collapsible sections. The report includes **Refresh**, **Copy**, and **Collapse All** options. For the information in each section, see Diagnostic data categories.
+    4. After a troubleshooting change, select **Refresh** to collect a current snapshot and compare the device state. If the sharer turns sharing off, Remote Help notifies you and you can't refresh the report. You can refresh again if the sharer turns sharing back on.
+8. After the issues are resolved, or at any time during the session, both the sharer and helper can end the session. To end the session, select **Leave** in the upper right corner of the Remote Help app. If a helper performs elevated actions on a user's device and the sharer ends the session, at the end of the session the sharer is automatically signed out.
+
+##### Diagnostic data categories
+
+The diagnostic data report is a point-in-time snapshot. CPU, memory, and network metrics reflect device activity when the data was collected. A missing field means the device didn't report that value; it doesn't mean healthy, false, or zero.
+
+The report includes the following categories when the device reports the values:
+
+| Category | Example data |
+| --- | --- |
+| Device overview | OS edition, build, and architecture; device model and manufacturer; whether the device is a virtual machine; display language and system locale; kiosk mode. |
+| Hardware | Processor, cores, and logical processors; installed memory; disk capacity; neural processing unit (NPU), when reported. |
+| Network | Maximum speed, link speed, and current send and receive rates. |
+| GPU | Graphics adapter, GPU usage, and dedicated, shared, and available GPU memory. |
+| Performance | Processor time, memory usage, page file, disk activity, network usage, and uptime. |
+| Battery | Whether a battery is present, charge level and status, battery health, and design versus full charge capacity. |
+| Security | Antivirus product, whether it's active, and its definition status; firewall status for domain, private, and public networks; TLS inspection detection. |
+| Updates | Windows Update channel, target release version, last check and install dates, counts of pending and failed updates, last restart time, and whether a restart is pending. |
+| Storage | For each disk: model, bus and media type, capacity, free space, percentage used, drive letters, whether it's a boot or system disk, and health status. |
+| Network interfaces | For each network adapter: type, description, status, speed, whether DHCP is enabled, and whether the adapter is virtual. |
+| Devices | Name and status of cameras, audio devices, displays, printers, keyboards, mice, Bluetooth devices, and network adapters. |
 
 #### Unattended support
 
@@ -260,7 +295,8 @@ If the device that you're trying to help isn't enrolled in Microsoft Intune, fol
 3. The sharer opens Remote Help, signs in with their organizational account, enters the security code, and selects **Submit**.
 4. Verify the sharer's identity by reviewing their information, including their full name, job title, company, profile picture, and verified domain.
 5. Request view-only access or full control. The sharer can allow or decline the request.
-6. When troubleshooting is complete, either participant can select **Leave** to end the session.
+6. During the attended session, select the diagnostic data collection icon on the Remote Help toolbar. The sharer can **Allow** or **Decline** the request. If allowed, review the report and select **Refresh** after troubleshooting changes while sharing remains allowed. For the report contents, see [Diagnostic data categories](start-session?tabs=windowsintune#diagnostic-data-categories).
+7. When troubleshooting is complete, either participant can select **Leave** to end the session.
 
 #### Provide help in Azure Virtual Desktop desktop and RemoteApp sessions
 
