@@ -12,8 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration
 description: Use the settings catalog in Microsoft Intune to configure common features. You can create a Universal Print policy, configure Microsoft Edge and Google Chrome web browsers, and use built in settings instead of plist files for macOS devices.
-ms.date: 2026-03-24T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 ms.reviewer: laarrizz, mayurjadhav, beflamm
 locale: en-us
 document_id: 4f9678a1-2c1c-9d84-8ab6-3200fb131d3e
@@ -53,6 +55,7 @@ For more information on the settings catalog, and what it is, go to [Use the set
 
 This feature applies to:
 
+- Android Enterprise
 - iOS/iPadOS
 - macOS
 - Windows
@@ -71,6 +74,18 @@ These web browser settings are built in, and can be configured & deployed to you
 Previously, to configure Google Chrome settings on Windows devices, you created a custom OMA-URI device configuration policy.
 
 For a sample Microsoft Edge scenario, see [Create a Microsoft Edge policy](configure-edge).
+
+## Require Google Workspace authentication on Android devices
+
+This feature applies to:
+
+- Android Enterprise corporate-owned fully managed devices
+- Android Enterprise corporate-owned devices with a work profile
+- Android Enterprise personally owned devices with a work profile (using a device configuration template)
+
+For corporate-owned devices, use the settings catalog to require users to authenticate with a managed Google Account from your organization's Google Workspace domain. For personally owned devices with a work profile, use a device configuration template.
+
+For prerequisites and steps, see [Require Google Workspace authentication on Android Enterprise devices](require-google-workspace-authentication-android).
 
 ## Manage AI features on Android devices
 

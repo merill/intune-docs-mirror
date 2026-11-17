@@ -12,8 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: enrollment
 description: Learn how to connect your Intune account to your Managed Google Play account.
-ms.date: 2025-11-11T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: 24fdd33e-4a66-6fb8-10ea-26fbeb94a00b
 document_version_independent_id: 24fdd33e-4a66-6fb8-10ea-26fbeb94a00b
@@ -33,10 +35,8 @@ item_type: Content
 source_path: intune/device-enrollment/android/connect-managed-google-play.md
 cmProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/57eae307-c3a1-4cac-b645-1a899934bac8
 spProducts:
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
-- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ee561821-1ac7-45a8-9409-6ba5eb7a5b97
 platformId: 2321825b-479a-a132-b490-8172b6e81a34
 ---
 
@@ -115,7 +115,9 @@ To choose a scope tag for your managed Google Play apps, go to **Tenant administ
 
 ## Upgrade to a managed Google domain
 
-If you onboarded to Microsoft Intune with a Gmail account, you can optionally upgrade your Microsoft Entra account to a managed Google domain in the Intune admin center. During this process, you link your Microsoft Entra account to Google. That way you can manage the connection between Google and Intune with your Microsoft Entra account, rather than a Gmail account.
+If you onboarded to Microsoft Intune with a Gmail account, you can optionally upgrade your Managed Google Play enterprise to a managed Google domain enterprise in the Intune admin center. During this process, you link your Microsoft Intune tenant to a Google Workspace domain.
+
+The administrator performing the upgrade must have the **Super Admin** role in Google Workspace during the upgrade. For information about this role, see [Prebuilt administrator roles](https://knowledge.workspace.google.com/admin/users/prebuilt-administrator-roles).
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) with an Intune Administrator account.
 2. Go to **Devices** &gt; **Enrollment**.
@@ -134,6 +136,15 @@ If you onboarded to Microsoft Intune with a Gmail account, you can optionally up
     Note
 
     After a successful upgrade, the **Upgrade** button appears grayed out because no more upgrades are available. If the button appears grayed out and you haven't upgraded, check your RBAC permissions.
+
+### Prepare for Google Workspace authentication on devices
+
+The enterprise upgrade and device-user authentication are separate tasks. To require Google Workspace authentication on supported Android Enterprise devices, also prepare the following:
+
+- A [verified Google Workspace domain](https://knowledge.workspace.google.com/admin/domains/verify-your-domain-for-google-workspace).
+- Managed Google Accounts for users in the enterprise's Google Workspace domain. If needed, create accounts by following the **Domain verified** instructions in [Add an account for a new user](https://knowledge.workspace.google.com/admin/users/add-an-account-for-a-new-user).
+
+Then [configure Google Workspace authentication](../../device-configuration/settings-catalog/require-google-workspace-authentication-android) with a settings catalog policy for supported corporate-owned devices. For personally owned devices with a work profile, use a device configuration template. The policy doesn't change the Microsoft Entra account associated with the managed device.
 
 ## Disconnect your Android Enterprise administrative account
 

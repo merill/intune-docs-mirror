@@ -12,10 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration
 description: Review Android settings available in the Microsoft Intune settings catalog, including supported enrollment types, values, defaults, and requirements.
-ms.date: 2026-08-20T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: reference
 ai-usage: ai-assisted
-ms.custom: msecd-doc-authoring-1023
+ms.custom: msecd-doc-authoring-1032
 ms.reviewer: cchristenson
 locale: en-us
 document_id: 91b0371f-b57d-a7e0-9ad5-bd34bef62821
@@ -658,6 +658,20 @@ Note
 
 #### Users and Accounts
 
+- **Require users to authenticate with a Google Workspace account**: Set to **True** to require users to authenticate with a managed Google Account from your organization's Google Workspace domain. After authentication, the managed Google Account replaces the device's managed Google Play account. The Microsoft Entra account associated with the device doesn't change.
+
+    Applies to:
+
+    - Android Enterprise corporate-owned devices with a work profile (COPE)
+    - Android Enterprise corporate owned fully managed (COBO)
+
+    For personally owned devices with a work profile, you must use a device configuration template to require Google Workspace authentication.
+
+    Dedicated devices aren't supported. The enterprise must use a managed Google domain enterprise, with a verified Google Workspace domain and managed Google Accounts for the users.
+
+    Until the user completes authentication, the setting reports **Error**, and the Gmail app, if present, is disabled. This setting's noncompliance doesn't change the device's overall compliance state.
+
+    For prerequisites, configuration steps, and the user experience, see [Require Google Workspace authentication on Android Enterprise devices](require-google-workspace-authentication-android).
 - **Block account changes**: If **True**, prevents users from updating or changing accounts when in kiosk mode. If **False**, Intune doesn't change or update this setting. By default, the OS might allow users to update user accounts on the device.
 
     Applies to:

@@ -13,9 +13,11 @@ ms.collection:
 - msec-ai-copilot
 ms.subservice: configuration
 description: See and manage the device configuration policy details in Microsoft Intune. Look at a graphical chart of the number of devices assigned to a policy, and see which devices have policies assigned or deployed. Can also troubleshoot policies that have conflict settings.
-ms.date: 2026-04-16T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.update-cycle: 180-days
 ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: 5b723a63-202b-391f-cfb3-f24849816c81
 document_version_independent_id: 5b723a63-202b-391f-cfb3-f24849816c81
@@ -95,6 +97,10 @@ After you create your device configuration policy, Intune provides reporting dat
     - **Conflict**: Two settings are applied to the same device, and Intune can't sort out the conflict. An administrator should review.
     - **Pending**: The device hasn't checked in with Intune to receive the policy yet.
     - **Not applicable**: The device can't receive the policy. For example, the policy updates a setting specific to iOS 11.1, but the device is using iOS 10.
+
+    Note
+
+    The Android Enterprise setting **Require users to authenticate with a Google Workspace account** reports **Error** until the user completes authentication. This setting's noncompliance doesn't change the device's overall compliance state. Before troubleshooting a deployment failure, check whether the user has completed the prompt. For more information, see [Require Google Workspace authentication on Android Enterprise devices](settings-catalog/require-google-workspace-authentication-android).
 3. Select **Device assignment status**:
 
     ![Screenshot that shows the device assignment status report in Microsoft Intune and Intune admin center.](media/monitor-device-profile/device-assignment-status.png)

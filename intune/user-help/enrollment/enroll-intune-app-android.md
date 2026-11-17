@@ -9,9 +9,11 @@ uhfHeaderId: MSDocsHeader-Intune
 feedback_system: Standard
 ms.service: microsoft-intune
 ms.subservice: end-user
-ms.topic: end-user-help
+ms.topic: how-to
 description: Describes how to enroll a corporate Android device in Intune
-ms.date: 2024-11-07T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: 948f89c7-1431-2a39-63aa-d3875fcb4277
 document_version_independent_id: 948f89c7-1431-2a39-63aa-d3875fcb4277
@@ -99,3 +101,12 @@ Enter your company-provided token.
 4. Select **Enter code**.
 5. On the **Scan or enter code** screen, type in the code that your organization gave you. Then select **Next**.
 6. Return to Enroll device step 4 to continue setup.
+
+## Sign in with your Google Workspace account
+
+Your organization might also require Google Workspace authentication on a corporate-owned fully managed device, a corporate-owned device with a work profile, or a personally owned device with a work profile. This is separate from the Microsoft work or school account sign-in during enrollment.
+
+1. Open the **Sign in with your work account** prompt on your device.
+2. Add your managed Google Account from your organization's Google Workspace domain, and complete authentication.
+
+Until you complete authentication, the Gmail app, if installed, is disabled. If you don't know which Google Workspace account to use, contact your IT support person.

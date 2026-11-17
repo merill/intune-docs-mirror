@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Set up enrollment for macOS devices - Microsoft Intune | Microsoft Learn
+title: Set up Enrollment for macOS Devices - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-enrollment/apple/methods-macos
 author: iye-ms
 ms.author: iye
@@ -11,8 +11,8 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 ms.subservice: enrollment
-description: Set up enrollment for macOS devices in Intune.
-ms.date: 2024-05-15T00:00:00.0000000Z
+description: Set up macOS enrollment in Intune for personal and company-owned Macs. Explore BYOD, automated enrollment, DEM, and direct enrollment methods.
+ms.date: 2026-11-05T00:00:00.0000000Z
 ms.topic: overview
 locale: en-us
 document_id: 43ebecc6-a20d-eaf5-0725-db6da447688f
@@ -38,7 +38,7 @@ spProducts:
 platformId: 5ef27313-83ad-2ad0-9b04-0e89a2cd7593
 ---
 
-# Set up enrollment for macOS devices - Microsoft Intune | Microsoft Learn
+# Set up Enrollment for macOS Devices - Microsoft Intune | Microsoft Learn
 
 Microsoft Intune supports enrollment on personal and company-owned Macs. This article describes the methods and features you can use to enroll personal devices, company-owned devices, and virtual machines (VM).
 
@@ -63,15 +63,15 @@ After you enable enrollment, use one of the supported methods described in this 
 Intune supports *bring-your-own-device*, or *BYOD*, which lets people enroll their personal devices themselves. To finish setting up enrollment for BYOD scenarios, tell your licensed users to use one of these options to enroll devices:
 
 - Sign in to [Company Portal website](https://portal.manage.microsoft.com) and follow on-screen instructions to add device.
-- Install Company Portal app for Mac at https://aka.ms/EnrollMyMac and follow-on screen instructions to add device.
+- Install Company Portal app for Mac at https://aka.ms/EnrollMyMac and follow on-screen instructions to add device.
 
 ### Company-owned macOS devices
 
 Intune supports the following enrollment methods for company-owned macOS devices. Select a hyperlinked method to open its setup steps.
 
-- [Apple Automated Device Enrollment](setup-automated-macos): Use this method to automate the enrollment experience on devices purchased through Apple Business or Apple School Manager. Automated device enrollment deploys the enrollment policy over-the-air, so you don't need to have physical access to devices.
-- [Device enrollment manager (DEM)](../setup-enrollment-manager): Use this method for large-scale deployments and when there are multiple people in your organization who can help with enrollment setup. Someone with device enrollment manager (DEM) permissions can enroll up to 1,000 devices with a single Microsoft Entra account. This method uses the Company Portal app or Microsoft Intune app to enroll devices. You can't use a DEM account to enroll devices via Automated Device Enrollment.
-- [Direct enrollment](setup-direct-macos): Direct enrollment enrolls devices with no user affinity, so this method is best for devices that aren't associated with a single user. This method requires you to have physical access to the Macs you're enrolling.
+- [Apple Automated Device Enrollment](setup-automated-macos): Use this method to automate the enrollment experience on devices purchased through Apple Business or Apple School Manager. Automated device enrollment deploys the enrollment policy over the air, so you don't need to have physical access to devices.
+- [Device enrollment manager (DEM)](../setup-enrollment-manager): Use this method for large-scale deployments and when there are multiple people in your organization who can help with enrollment setup. Someone with device enrollment manager (DEM) permissions can enroll up to 1,000 devices with a single Microsoft Entra account. This method uses the Company Portal app or Microsoft Intune app to enroll devices. You can't use a DEM account to enroll devices by using Automated Device Enrollment.
+- [Direct enrollment](setup-direct-macos): Direct enrollment enrolls devices with no user affinity. This method is best for devices that aren't associated with a single user. This method requires you to have physical access to the Macs you enroll.
 
 ## Bootstrap tokens
 
@@ -80,20 +80,20 @@ Intune supports the use of bootstrap tokens on enrolled Macs running macOS 10.15
 - User-initiated software updates
 - Kernel extension installation on Apple silicon
 
-You can utilize bootstrap tokens on supervised Macs, and Macs enrolled via macOS automated device enrollment.
+You can use bootstrap tokens on supervised Macs, and Macs enrolled by using macOS automated device enrollment.
 
 ### Get bootstrap token
 
 The bootstrap token is automatically generated when:
 
 - A newly enrolled Mac checks in with Intune and
-- A secure token-enabled user (typically an Intune administrator) signs in to the Mac with their cleartext password
+- A secure token-enabled user, typically an Intune administrator, signs in to the Mac with their cleartext password
 
 The token is then automatically escrowed to Microsoft Intune. You can use a command line tool to manually view, generate, and escrow a bootstrap token on supported macOS devices, if needed. For more information about commands, see [Use secure token, bootstrap token, and volume ownership in deployments](https://support.apple.com/guide/deployment/use-secure-and-bootstrap-tokens-dep24dbdcf9e/1/web/1.0) on Apple Support.
 
 ### Monitor bootstrap escrow status
 
-You can monitor the escrow status for any enrolled Mac in the admin center. The *Bootstrap token escrowed* hardware property reports whether or not the bootstrap token has been escrowed in Intune. Intune reports **Yes** when the token has been successfully escrowed and **No** when the token has not been escrowed.
+You can monitor the escrow status for any enrolled Mac in the admin center. The *Bootstrap token escrowed* hardware property reports whether the bootstrap token is escrowed in Intune. Intune reports **Yes** when the token is successfully escrowed and **No** when the token isn't escrowed.
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Devices** &gt; **By platform** &gt; **macOS**.
@@ -105,13 +105,13 @@ You can monitor the escrow status for any enrolled Mac in the admin center. The 
 
 Important
 
-Kernel extensions are no longer recommended for macOS. Apple recommends using system extensions where possible. For more details, see [Apple Platform Security guide - Securely extending the kernel in macOS](https://support.apple.com/guide/security/securely-extending-the-kernel-sec8e454101b/web) on Apple Support.
+Kernel extensions aren't recommended for macOS. Apple recommends using system extensions where possible. For more details, see [Apple Platform Security guide - Securely extending the kernel in macOS](https://support.apple.com/guide/security/securely-extending-the-kernel-sec8e454101b/web) on Apple Support.
 
-A bootstrap token can be used to approve the installation of both kernel extensions and software updates on a Mac with Apple silicon.
+A bootstrap token can approve the installation of both kernel extensions and software updates on a Mac with Apple silicon.
 
-User-initiated software updates can be carried out with a bootstrap token on Macs that are running macOS, version 11.1, and enrolled via automated device enrollment. To authorize user-initiated software updates on a device that isn't enrolled via automated device enrollment, you must restart the Mac in recovery mode and downgrade its security settings. You can also utilize the bootstrap token for software updates on Macs running macOS 11.2 and later, with the only requirement being that the device needs to be supervised.
+User-initiated software updates can use a bootstrap token on Macs that run macOS, version 11.1, and enroll by using automated device enrollment. To authorize user-initiated software updates on a device that doesn't enroll by using automated device enrollment, you must restart the Mac in recovery mode and downgrade its security settings. You can also use the bootstrap token for software updates on Macs running macOS 11.2 and later, with the only requirement being that the device needs to be supervised.
 
-Kernel extension management is automatically available on Macs running macOS 11 or later and enrolled via automated device enrollment. To authorize the remote management of kernel extensions on a device that isn't enrolled via automated device enrollment, you must restart the Mac in recovery mode and downgrade its security settings. For more information, see [Change security settings on the startup disk of a Mac with Apple silicon](https://support.apple.com/guide/mac-help/change-security-settings-startup-disk-a-mac-mchl768f7291/mac) on Apple Support.
+Kernel extension management is automatically available on Macs that run macOS 11 or later and enroll by using automated device enrollment. To authorize the remote management of kernel extensions on a device that doesn't enroll by using automated device enrollment, you must restart the Mac in recovery mode and downgrade its security settings. For more information, see [Change security settings on the startup disk of a Mac with Apple silicon](https://support.apple.com/guide/mac-help/change-security-settings-startup-disk-a-mac-mchl768f7291/mac) on Apple Support.
 
 ## Block macOS enrollment
 
@@ -135,37 +135,37 @@ Intune needs to know the VM's hardware model and serial number to recognize and 
 
 Modify the VM's configuration settings to add or change a VM serial number and hardware model identifier. Enter any string of alphanumeric characters for the serial number. For hardware model, we recommend using the model of the device that's running the VM. To find your Mac's hardware model, select the Apple menu and go to **About This Mac** &gt; **System Report** &gt; **Model Identifier**.
 
-For more information, see the following topics in the Parallels knowledge base:
+For more information, see the following articles in the Parallels knowledge base:
 
 - [How to enroll a macOS VM in Parallels Desktop using Intune](https://kb.parallels.com/en/124564)
 - [How to find and change the serial number](https://kb.parallels.com/123455)
 
 ### VMware Fusion
 
-Add the following lines to your .vmx file to set the VM's hardware model and serial number. The values shown in this sample are examples.
+Add the following lines to your `.vmx` file to set the VM's hardware model and serial number. The values shown in this sample are examples.
 
 ```md
 serialNumber = "ABC123456789"
 hw.model = "MacBookAir10,1"
 ```
 
-Enter any string of alphanumeric characters for the serial number. For hardware model, we recommend using the model of the device that's running the VM. To find your Mac's hardware model, select the Apple menu and go to **About This Mac** &gt; **System Report** &gt; **Model Identifier**.
+Enter any string of alphanumeric characters for the serial number. For hardware model, we recommend using the model of the device that runs the VM. To find your Mac's hardware model, select the Apple menu and go to **About This Mac** &gt; **System Report** &gt; **Model Identifier**.
 
 VMware Fusion is only supported on Intel Macs. See the VMware customer connect website for more information about [editing the .vmx file for your VMware Fusion VM](https://kb.vmware.com/s/article/1014782).
 
 ### Apple Silicon
 
-No changes are required for VMs running on Apple Silicon hardware. Parallels Desktop is supported on Macs with Apple Silicon, so if you set up a VM this way, you don't need to modify the hardware model ID or serial number.
+No changes are required for VMs that run on Apple Silicon hardware. Parallels Desktop is supported on Macs with Apple Silicon. If you set up a VM this way, you don't need to modify the hardware model ID or serial number.
 
 ## User-approved enrollment
 
 All Mac enrollments in Intune are considered user-approved. User-approved enrollment lets you manage macOS devices that aren't part of Apple School Manager or Apple Business. It provides the same level of control as supervised macOS devices enrolled using Automated Device Enrollment or Apple Configurator.
 
-Intune automatically turns on supervision for user-approved devices running macOS 11 and later. It also does this for enrolled devices that later update to macOS 11 or later.
+Intune automatically turns on supervision for user-approved devices running macOS 11 and later. It also turns on supervision for enrolled devices that later update to macOS 11 or later.
 
 Note
 
-Intune announced support for user approved enrollment in June 2020. BYOD enrollments that occurred before that time may not be user-approved. For more information about Apple devices becoming user approved, see [User approved MDM enrollment](https://support.apple.com/HT208019) on the Apple Support website.
+Intune announced support for user-approved enrollment in June 2020. BYOD enrollments that occurred before that time might not be user-approved. For more information about Apple devices becoming user-approved, see [User approved MDM enrollment](https://support.apple.com/HT208019) on the Apple Support website.
 
 ### User experience
 
@@ -182,7 +182,8 @@ The device user signs in to the Company Portal app to initiate enrollment. Compa
 
 Use Apple Migration Assistant to back up and restore a macOS device. You can use the tool to back up a Mac and restore its app data on a new device. It's important to know:
 
-- The management profile on the original Mac is not backed up. The device is sent a new management profile as the new Mac re-enrolls. This happens on Macs that go through Apple automated device enrollment and Macs that don't go through automated device enrollment.
-- Company Portal app credentials might be restored on the new Mac after it goes through Migration Assistant and enrolls. If this happens, we recommend that you or the device user completes the following steps to clear app data:
+- The management profile on the original Mac isn't backed up. The device gets a new management profile as the new Mac re-enrolls. This process happens on Macs that go through Apple automated device enrollment and Macs that don't go through automated device enrollment.
+- Company Portal app credentials might be restored on the new Mac after it goes through Migration Assistant and enrolls. If this restoration happens, we recommend that you or the device user complete the following steps to clear app data:
+
     1. Sign out of the Company Portal app.
     2. Sign in to the app or Company Portal website.

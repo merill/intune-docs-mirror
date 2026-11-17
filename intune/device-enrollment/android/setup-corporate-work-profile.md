@@ -12,8 +12,10 @@ ms.collection:
 - M365-identity-device-management
 ms.subservice: enrollment
 description: Set up Android Enterprise work profile for corporate-owned devices enrolling in Microsoft Intune.
-ms.date: 2025-05-08T00:00:00.0000000Z
+ms.date: 2026-11-12T00:00:00.0000000Z
 ms.topic: how-to
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1032
 locale: en-us
 document_id: bd2618da-6075-cfa6-50d1-a247a4dde62d
 document_version_independent_id: bd2618da-6075-cfa6-50d1-a247a4dde62d
@@ -85,6 +87,8 @@ To set up Android Enterprise corporate-owned work profile device management, fol
 3. Create an enrollment profile.
 4. Create a device group.
 5. Enroll the corporate-owned work profile devices.
+
+Optionally, [require Google Workspace authentication](../../device-configuration/settings-catalog/require-google-workspace-authentication-android) with a settings catalog policy. You can assign the policy before enrollment or to devices that are already enrolled. The authentication prompt appears after enrollment or after an enrolled device receives the policy. The policy doesn't change the Microsoft Entra account associated with the device.
 
 ### Create an enrollment profile
 

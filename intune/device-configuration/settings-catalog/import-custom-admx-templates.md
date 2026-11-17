@@ -1,6 +1,6 @@
 ---
 layout: Conceptual
-title: Import custom and third-party partner ADMX templates in Microsoft Intune - Microsoft Intune | Microsoft Learn
+title: Import Custom and Third-party Partner ADMX Templates in Microsoft Intune - Microsoft Intune | Microsoft Learn
 canonicalUrl: https://learn.microsoft.com/en-us/intune/device-configuration/settings-catalog/import-custom-admx-templates
 author: iceorbital
 ms.author: acabello
@@ -11,8 +11,8 @@ ms.service: microsoft-intune
 ms.collection:
 - M365-identity-device-management
 ms.subservice: configuration
-description: You can add, upload, or import custom and third-party partner ADMX and ADML files in Microsoft Intune. When they're imported, create a device configuration profile and assign the profile to your Windows 10/11 client devices.
-ms.date: 2025-09-04T00:00:00.0000000Z
+description: You can add, upload, or import custom and third-party partner ADMX and ADML files in Microsoft Intune.
+ms.date: 2026-11-10T00:00:00.0000000Z
 ms.topic: how-to
 ms.reviewer: mikedano, kabalu
 locale: en-us
@@ -41,9 +41,9 @@ spProducts:
 platformId: 50532c73-2281-c08d-8232-168b65e5398c
 ---
 
-# Import custom and third-party partner ADMX templates in Microsoft Intune - Microsoft Intune | Microsoft Learn
+# Import Custom and Third-party Partner ADMX Templates in Microsoft Intune - Microsoft Intune | Microsoft Learn
 
-You can import custom and third-party/partner ADMX and ADML templates into the Intune admin center. Once imported, you can create a device configuration policy using these settings, and then assign the policy to your managed devices.
+You can import custom and partner ADMX and ADML templates into the Intune admin center. After you import them, you can create a device configuration policy that uses these settings, and then assign the policy to your managed devices.
 
 This feature applies to:
 
@@ -53,7 +53,7 @@ This article shows you how to import custom ADMX and ADML files in the Intune ad
 
 Tip
 
-The settings catalog has many settings natively built-in to Intune, including Google Chrome. For more information, go to:
+The settings catalog has many settings built in to Intune, including Google Chrome. For more information, see:
 
 - [Use the settings catalog to configure settings](./)
 - [Common tasks you can complete using the Settings Catalog](common-tasks)
@@ -62,26 +62,26 @@ The settings catalog has many settings natively built-in to Intune, including Go
 
 - Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431) with an account that has the **[Policy and Profile Manager](../../fundamentals/role-based-access-control/ref-built-in-roles#policy-and-profile-manager)** built-in role. For more information on the built-in roles, go to [Role-based access control for Microsoft Intune](../../fundamentals/role-based-access-control/overview).
 
-    To modify or update an ADMX policy with the **Not Configured** setting, RBAC administrators need the **Device configurations &gt; Delete** permission. The built-in **Policy and Profile Manager** role has this permission.
+    To modify or update an ADMX policy by using the **Not Configured** setting, RBAC administrators need the **Device configurations** &gt; **Delete** permission. The built-in **Policy and Profile Manager** role has this permission.
 - This feature is in [public preview](../../fundamentals/public-preview).
 - There are some limits:
 
-    - A maximum of 20 ADMX files can be uploaded. Each file must be 1 MB or smaller.
-    - For each ADMX file, only one ADML file can be uploaded.
+    - You can upload up to 20 ADMX files. Each file must be 1 MB or smaller.
+    - For each ADMX file, you can upload only one ADML file.
     - Each ADMX file supports one language.
     - Only `en-us` ADML files are supported.
 - Some ADMX files have dependency prerequisites. Import any dependency ADMX files first. If you upload an ADMX file without the dependency, an error message lists the missing namespace.
 
     For example, to import Mozilla Firefox ADMX and ADML files, you:
 
-    1. Import the `mozilla.admx` and `mozilla.adml` files. Make sure the status shows **Available**.
+    1. Import the `mozilla.admx` and `mozilla.adml` files. Ensure the status shows **Available**.
     2. Import the `firefox.admx` and `firefox.adml` files.
 
-    If you upload `firefox.admx` before `mozilla.adml`, then the import fails.
+    If you upload `firefox.admx` before `mozilla.adml`, the import fails.
 
     To see if your ADMX has a dependency, open the ADMX file in a text editor, go to the `policyNamespaces` node, and look for `using prefix`. Any dependencies are listed.
 
-    In the following example, the`kerberos.admx` file requires the `Windows.admx` file:
+    In the following example, the `kerberos.admx` file requires the `Windows.admx` file:
 
     ```xml
     <policyNamespaces>
@@ -90,20 +90,20 @@ The settings catalog has many settings natively built-in to Intune, including Go
       </policyNamespaces>
     ```
 
-    To remove a dependency prerequisite, delete the associated ADMX file first. Then, delete the dependency prerequisite. In our Mozilla Firefox example, delete `firefox.admx` and then delete `mozilla.admx`.
-- Some files might require `Windows.admx` as a prerequisite. This file must be uploaded first. In a future release (no ETA), this namespace will be automatically included and eventually not be required.
+    To remove a dependency prerequisite, delete the associated ADMX file first. Then, delete the dependency prerequisite. In the Mozilla Firefox example, delete `firefox.admx` and then delete `mozilla.admx`.
+- Some files might require `Windows.admx` as a prerequisite. You must upload this file first. In a future release (no ETA), this namespace will be automatically included and eventually not be required.
 
-    If `Windows.admx` is required and not uploaded, then you can get the following error message:
+    If `Windows.admx` is required and not uploaded, you might receive the following error message:
 
     `ADMX file referenced not found NamespaceMissing:Microsoft.Policies.Windows. Please upload it first.`
 - Currently, the combo box setting type isn't supported. ADMX files with the combo box setting type fail to import. All other setting types are supported.
-- Not all areas of the registry can be set using custom ADMX. For more information on the registry locations that can be used, go to [Win32 and Desktop Bridge app ADMX policy Ingestion Overview](/en-us/windows/client-management/win32-and-centennial-app-policy-configuration#overview).
-- ADMX settings that are built into Windows (located in the `C:\Windows\PolicyDefinitions` folder) are enabled through configuration service providers (CSPs).
+- You can't set all areas of the registry by using custom ADMX. For more information about the registry locations you can use, see [Win32 and Desktop Bridge app ADMX policy Ingestion Overview](/en-us/windows/client-management/win32-and-centennial-app-policy-configuration#overview).
+- ADMX settings that are built into Windows and located in the `C:\Windows\PolicyDefinitions` folder are enabled through configuration service providers (CSPs).
 
     - Don't import these built-in settings if your intent is to configure them. Instead, use the [settings catalog](./) or a [custom profile](../templates/configure-custom-settings).
     - Do import these built-in settings if they're a required parent namespace of another file.
 
-    For a list of the ADMX backed CSP settings, go to [ADMX-backed policies in Policy CSP](/en-us/windows/client-management/mdm/policies-in-policy-csp-admx-backed).
+    For a list of the ADMX backed CSP settings, see [ADMX-backed policies in Policy CSP](/en-us/windows/client-management/mdm/policies-in-policy-csp-admx-backed).
 
 ## Download the ADMX templates
 
@@ -118,18 +118,18 @@ Download the ADMX templates you want to import. Save these files to an easily ac
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** &gt; **Manage devices** &gt; **Configuration** &gt; **Import ADMX** tab &gt; **Import**:
 
-    ![Screenshot that shows how to add or import custom ADMX and ADML. Go to Devices &gt; Configuration profiles &gt; Import ADMX in the Microsoft Intune admin center.](media/import-custom-admx-templates/import-admx.png)
+    ![Screenshot that shows how to add or import custom ADMX and ADML by going to Devices &gt; Configuration profiles &gt; Import ADMX in the Microsoft Intune admin center.](media/import-custom-admx-templates/import-admx.png)
 
     Or, you can also import from **Devices** &gt; **By platform** &gt; **Windows** &gt; **Manage devices** &gt; **Configuration** &gt; **Import ADMX** tab.
 3. Upload your files:
 
     - **ADMX file**: Select the ADMX file you want to upload.
-    - **ADML file for the default language**: Select the ADML file you want to upload. Remember, you can add only one language file for each ADMX file you upload. For any other limitations, go to What you need to know (in this article).
+    - **ADML file for the default language**: Select the ADML file you want to upload. You can add only one language file for each ADMX file you upload. For other limitations, see What you need to know (in this article).
     - **Specify the language of the ADML file**: Shows the ADML language of the file you uploaded.
 4. Select **Next**.
 5. In **Review + Create**, review your changes. Select **Create** to import the files.
 
-When the import completes, your ADMX templates are shown in the list. You can also:
+When the import finishes, your ADMX templates appear in the list. You can also:
 
 - Select **Refresh** to see the updated state.
 - See the upload **Status**.
@@ -157,32 +157,32 @@ When the import completes, your ADMX templates are shown in the list. You can al
 8. In **Scope tags** (optional), assign a tag to filter the profile to specific IT groups, such as `US-NC IT Team` or `JohnGlenn_ITDepartment`. For more information about scope tags, see [Use role-based access control (RBAC) and scope tags for distributed IT](../../fundamentals/role-based-access-control/scope-tags).
 
     Select **Next**.
-9. In **Assignments**, select the user or groups that will receive your profile. For more information on assigning profiles, see [Assign user and device profiles in Intune](../assign-device-profile).
+9. In **Assignments**, select the user or groups to receive your profile. For more information on assigning profiles, see [Assign user and device profiles in Intune](../assign-device-profile).
 
-    If the profile is assigned to user groups, then configured ADMX settings apply to any device that the user enrolls, and signs in to. If the profile is assigned to device groups, then configured ADMX settings apply to any user that signs into that device. This assignment happens if the ADMX setting is a computer configuration (`HKEY_LOCAL_MACHINE`), or a user configuration (`HKEY_CURRENT_USER`). With some settings, a computer setting assigned to a user can also affect the experience of other users on that device.
+    If you assign the profile to user groups, the configured ADMX settings apply to any device that the user enrolls and signs in to. If you assign the profile to device groups, the configured ADMX settings apply to any user that signs in to that device. This assignment happens if the ADMX setting is a computer configuration (`HKEY_LOCAL_MACHINE`), or a user configuration (`HKEY_CURRENT_USER`). With some settings, a computer setting assigned to a user can also affect the experience of other users on that device.
 
     For more information, see [User groups vs. device groups when assigning policies](../assign-device-profile#user-groups-vs-device-groups).
 
     Select **Next**.
-10. In **Review + create**, review your settings. When you select **Create**, your changes are saved, and the profile is assigned. The policy is also shown in the profiles list.
+10. In **Review + create**, review your settings. When you select **Create**, you save your changes and assign the profile. The policy also appears in the profiles list.
 
 ## Replace existing ADMX files
 
-If you upload an ADMX file with settings that are already imported, then the upload fails.
+If you upload an ADMX file with settings that you already imported, the upload fails.
 
-For example, if you upload a different version of an ADMX file that has the same settings as the original ADMX file, then the upload fails with a namespace error.
+For example, if you upload a different version of an ADMX file that has the same settings as the original ADMX file, the upload fails with a namespace error.
 
-To update existing ADMX files that are imported, you have the following options:
+To update existing ADMX files that you imported, use the following options:
 
 - **Option 1: Replace the existing ADMX file**
 
-    To replace an existing ADMX file with the same settings, you can use the following steps:
+    To replace an existing ADMX file with the same settings, use the following steps:
 
-    1. Delete any profiles using the existing ADMX settings.
+    1. Delete any profiles that use the existing ADMX settings.
     2. Delete the original ADMX file you imported.
     3. Import the new ADMX and ADML files.
 - **Option 2: Create a new ADMX file**
 
-    1. Create another version of the ADMX file with a different namespace than the original ADMX file. We recommend you add a version number in the namespace so the names are different.
+    1. Create another version of the ADMX file with a different namespace than the original ADMX file. Add a version number in the namespace so the names are different.
     2. Add the new and different settings to this ADMX file.
     3. Import the new ADMX and ADML files.
