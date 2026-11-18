@@ -75,7 +75,7 @@ You can also use Intune to deploy Defender for Endpoint to Android devices that 
 
 To add the Defender for Endpoint app to your Managed Google Play store and make it available in Intune:
 
-1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** (1) and then select the Android tile to open the **Android apps** page (2). Select **Create** (3) and for App type, select **Managed Google Play app** (4), and then select **Select**.
+1. In the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431), go to **Apps** (1) and then select the Android tile to open the **Android apps** page (2). Select **Create** (3). In the **Select app type** pane, select **Android** for **Platform**, **Store app** for **Category**, and **Managed Google Play app** for **App type** (4), and then select **Select**.
 
     [![Screenshot that shows where in the Microsoft Intune admin center portal to create a Managed Google Play app.](media/deploy-android/managed-google-play-app.png)](media/deploy-android/managed-google-play-app.png#lightbox)
 

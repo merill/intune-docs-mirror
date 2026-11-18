@@ -61,7 +61,7 @@ To add a built-in app to your available apps in Microsoft Intune, do the followi
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Apps** &gt; **All Apps** &gt; **Create**.
-3. In the **Select app type** pane, under the available **Other** types, select **Built-In app**.
+3. For Android apps, in the **Select app type** pane, select **Android** for **Platform**, **Built-in app** for **Category**, and **Built-in app** for **App type**. For iOS/iPadOS apps, in the **Select app type** pane, under the available **Other** types, select **Built-In app**.
 4. Click **Select**. The **Add app** steps are displayed.
 5. In the **Select Built-in apps** page, click **Select app** to select the apps that you want to include.
 6. Select the built-in apps that you want to include.

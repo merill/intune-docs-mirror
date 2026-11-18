@@ -36,12 +36,12 @@ item_type: Content
 source_path: intune/app-management/protection/ref-settings-windows.md
 cmProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/bcbcbad5-4208-4783-8035-8481272c98b8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/a72e95ff-4b4f-4cc1-90c6-7dcba67ff05f
+- https://authoring-docs-microsoft.poolparty.biz/devrel/fcc3cd4a-59ea-47a2-9cc1-784142a5a25d
 spProducts:
 - https://authoring-docs-microsoft.poolparty.biz/devrel/43b2e5aa-8a6d-4de2-a252-692232e5edc8
-- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 - https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/24dc3ccd-591a-4415-a1fe-8759afafcb12
+- https://authoring-docs-microsoft.poolparty.biz/devrel/d7a55faf-a992-4e27-aa3a-eadc9830e778
 platformId: 8afd8e7e-1534-dabb-8886-3b2d43982c0a
 ---
 
@@ -49,12 +49,23 @@ platformId: 8afd8e7e-1534-dabb-8886-3b2d43982c0a
 
 This article describes app protection policy (APP) settings for Windows. The policy settings that are described can be [configured](create-policy) for an app protection policy on the **Settings** pane in the Intune admin center when you create a new policy.
 
-You can enable protected MAM access to org data via Microsoft Edge on personal Windows devices. This capability is known as [Windows MAM](enable-mam-windows) and provides functionality using Intune Application Configuration Policies (ACP), Intune app protection policies, Windows Security Center client threat defense, and Application Protection Conditional Access. For more information about Windows MAM, see [Data protection for Windows MAM](enable-mam-windows), [Create an MTD app protection policy for Windows](../../device-security/mobile-threat-defense/create-app-protection-policy#to-create-an-mtd-app-protection-policy-for-windows), and [Configure Microsoft Edge for Windows with Intune](../configuration/configure-edge-windows).
+You can enable protected MAM access to org data via Microsoft Edge and Windows App on personal Windows devices. This capability is known as [Windows MAM](enable-mam-windows) and provides functionality using Intune app protection policies, Windows Security Center client threat defense, and Application Protection Conditional Access. For Microsoft Edge, Windows MAM also supports Intune Application Configuration Policies (ACP). For more information about Windows MAM, see [Data protection for Windows MAM](enable-mam-windows), [Create an MTD app protection policy for Windows](../../device-security/mobile-threat-defense/create-app-protection-policy#to-create-an-mtd-app-protection-policy-for-windows), and [Configure Microsoft Edge for Windows with Intune](../configuration/configure-edge-windows).
+
+Important
+
+Support for Windows App in Windows MAM app protection policy is currently in preview. Preview features aren't meant for production use and might have limited support. For more information about the Windows App on Windows public preview, including configuration requirements and supported scenarios, see [Require local client device security compliance](/en-us/windows-app/require-device-security-compliance-intune).
 
 There are two categories of app protection policy settings for Windows:
 
 - [Data protection](ref-settings-windows#data-protection)
 - [Health Checks](ref-settings-windows#health-checks)
+
+## Supported apps
+
+Windows MAM app protection policy settings for Windows support the following apps:
+
+- Microsoft Edge
+- Windows App (preview)
 
 Important
 
@@ -70,11 +81,11 @@ The **Data protection** settings affect the org data and context. As the admin, 
 
 | Setting | How to use | Default value |
 | --- | --- | --- |
-| **Receive data from** | Select one of the following options to specify the sources org users can receive data from:<br>- **All sources**: Org users can open data from any account, document, location, or application into the org context.<br>- **No sources**: Org users can't open data from external accounts, documents, locations, or applications into the org context. **NOTE**: For Microsoft Edge, **No sources** controls file upload behavior either via drag and drop or the file open dialog. Local file viewing and sharing files between sites/tabs is blocked.<br>- **Selected apps**: Org users can open data only from allowed data sources into the org context. | **All sources** |
+| **Receive data from** | Select one of the following options to specify the sources org users can receive data from:<br>- **All sources**: Org users can open data from any account, document, location, or application into the org context.<br>- **No sources**: Org users can't open data from external accounts, documents, locations, or applications into the org context. **NOTE**: For Microsoft Edge, **No sources** controls file upload behavior either via drag and drop or the file open dialog. Local file viewing and sharing files between sites/tabs is blocked. For Windows App, **No sources** controls drive and storage redirection. If either **Receive data from** or **Send org data to** is configured to **No sources**, then drive and storage redirection is blocked.<br>- **Selected apps**: Org users can open data only from allowed data sources into the org context. | **All sources** |
 | **Allowed data sources** | Select one of the following options to specify the sources org users can receive data from:<br>- **No sources**: Org users can't open data from external accounts, documents, locations, or applications into the org context.<br>- **OneDrive for Business**: Org users can open data only from OneDrive for Business into the org context. Support for this setting will be introduced in a Microsoft Edge update to be released in the first quarter of calendar year 2027. Users will need that version or a later version for this setting to apply. This page will be updated with the specific version number when it becomes available. | **No sources** |
-| **Send org data to** | Select one of the following options to specify the destinations org users can send data to:<br>- **All destinations**: Org users can send org data to any account, document, location, or application.<br>- **No destinations**: Org users can't send org data to external accounts, documents, locations, or applications from the org context. **NOTE**: For Microsoft Edge, **No destinations** blocks file download. This means sharing files between sites/tabs are blocked.<br>- **Selected apps**: Org users can send org data to allowed data destinations from the org context. | **All destinations** |
+| **Send org data to** | Select one of the following options to specify the destinations org users can send data to:<br>- **All destinations**: Org users can send org data to any account, document, location, or application.<br>- **No destinations**: Org users can't send org data to external accounts, documents, locations, or applications from the org context. **NOTE**: For Microsoft Edge, **No destinations** blocks file download. This means sharing files between sites/tabs are blocked. For Windows App, **No sources** controls drive and storage redirection. If either **Receive data from** or **Send org data to** is configured to **No sources**, then drive and storage redirection is blocked.<br>- **Selected apps**: Org users can send org data to allowed data destinations from the org context. | **All destinations** |
 | **Allowed data destinations** | Select one of the following options to specify where org users can send org data:<br>- **No destinations**: Org users can't send org data to external accounts, documents, locations, or applications from the org context. For Microsoft Edge, **No destinations** blocks file downloads and file sharing between sites or tabs.<br>- **OneDrive for Business**: Org users can send org data to OneDrive for Business from the org context. This setting requires Microsoft Edge version 158 or later. | **No destinations** |
-| **Allow cut, copy, and paste for** | Select one of the following options to specify the sources and destinations org users can cut or copy or paste org data:<br>- **Any destination and any source**: Org users can paste data from and cut/copy data to any account, document, location, or application.<br>- **No destination or source**: Org users can't cut, copy, or paste data to or from external accounts, documents, locations or applications from or into the org context. **NOTE**: For Microsoft Edge, **No destination or source** blocks cut, copy, and paste behavior within the web content only. Cut, copy, and paste are disabled from all web content, but not application controls, including the address bar.<br>- **Org data destinations and any source**: Org users can paste data from any account, document, location or application and cut/copy data to other org documents, locations or applications.<br>- **Org data destinations and org data sources**: Org users can cut or copy org data within the org context to other org documents, locations or applications. Org users can paste data within the org context into other org documents, locations or applications. | **Any destination and any source** |
+| **Allow cut, copy, and paste for** | Select one of the following options to specify the sources and destinations org users can cut or copy or paste org data:<br>- **Any destination and any source**: Org users can paste data from and cut/copy data to any account, document, location, or application.<br>- **No destination or source**: Org users can't cut, copy, or paste data to or from external accounts, documents, locations or applications from or into the org context. **NOTE**: For Microsoft Edge, **No destination or source** blocks cut, copy, and paste behavior within the web content only. Cut, copy, and paste are disabled from all web content, but not application controls, including the address bar.<br>- **Org data destinations and any source**: Org users can paste data from any account, document, location or application and cut/copy data to other org documents, locations or applications. **NOTE**: This setting is currently supported by Microsoft Edge only. Windows App does not support this setting.<br>- **Org data destinations and org data sources**: Org users can cut or copy org data within the org context to other org documents, locations or applications. Org users can paste data within the org context into other org documents, locations or applications. **NOTE**: This setting is currently supported by Microsoft Edge only. Windows App does not support this setting. | **Any destination and any source** |
 
 ### Functionality
 

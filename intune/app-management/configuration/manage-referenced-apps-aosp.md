@@ -64,8 +64,8 @@ Select the AOSP referenced app type to open the app creation steps. You don't ne
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Apps** &gt; **All apps** &gt; **Create**.
 3. For **Platform**, select **Android**.
-4. For **Category**, select **Referenced apps**.
-5. Select **AOSP referenced app**, and then select **Create**.
+4. For **Category**, select **Referenced app**.
+5. For **App type**, select **AOSP referenced app**, and then select **Select**.
 
 ## Set app information
 

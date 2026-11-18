@@ -53,7 +53,7 @@ You can use an Intune app configuration policy to configure Google Chrome for An
 ## Add the Google Chrome app to Intune
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
-2. Select **Apps** &gt; **All Apps** &gt; **Create** then add the **Managed Google Play** app.
+2. Select **Apps** &gt; **All Apps** &gt; **Create**. In the **Select app type** pane, select **Android** for **Platform**, **Store app** for **Category**, and **Managed Google Play app** for **App type**, then select **Select**.
 3. Go to Managed Google Play, search with **Google Chrome** and approve.
 
     ![Search and approve Google Chrome](media/configure-chrome-android/search.png)

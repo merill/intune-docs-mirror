@@ -51,7 +51,7 @@ You can enable an Android Enterprise system app in Intune using the following st
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Apps** &gt; **All Apps** &gt; **Create**.
-3. In the **Select app type** pane, under the available **Other** types, select **Android Enterprise system app**.
+3. In the **Select app type** pane, select **Android** for **Platform**, **Referenced app** for **Category**, and **Android Enterprise system app** for **App type**.
 4. Click **Select**. The **Add app** steps are displayed. In the **App information**page, add the app details:
     - **App Name**: Enter the name of the app.
     - **Publisher**: Enter the name of the publisher of the app.
@@ -88,7 +88,7 @@ You can disable an Android Enterprise system app in Intune using the following s
 
 1. Sign in to the [Microsoft Intune admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Apps** &gt; **Android** &gt; **Create**.
-3. In **Select app type**, select **Other** &gt; **Android Enterprise system app**.
+3. In the **Select app type** pane, select **Android** for **Platform**, **Referenced app** for **Category**, and **Android Enterprise system app** for **App type**.
 4. Click **Select**. In **App information**, add the app details:
 
     - **App Name**: Enter the name of the app.
