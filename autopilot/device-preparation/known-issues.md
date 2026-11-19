@@ -13,7 +13,9 @@ feedback_system: Standard
 permissioned-type: public
 uhfHeaderId: MSDocsHeader-Windows
 description: Information regarding known issues that might occur during a Windows Autopilot device preparation deployment.
-ms.date: 2026-09-14T00:00:00.0000000Z
+ms.date: 2026-11-18T00:00:00.0000000Z
+ai-usage: ai-assisted
+ms.custom: msecd-doc-authoring-1030
 ms.collection:
 - M365-modern-desktop
 ms.topic: troubleshooting
@@ -63,6 +65,16 @@ This example includes the `&locale=en-us` variable. The `locale` variable is req
 For more information on using RSS for notifications, see [How to use the docs](/en-us/intune/use-docs#notifications) in the Intune documentation.
 
 ## Known issues
+
+### OOBE experience settings for associated devices may not apply immediately after a reset
+
+Date added: *November 18, 2026*
+
+This issue affects associated devices after a reset. When the device reboots into the out-of-box experience (OOBE), users might advance through setup before organizational settings are downloaded and applied. For example, users might see OOBE pages that their organization configured to skip. The device might not be renamed as configured.
+
+The device needs to complete Trusted Platform Module (TPM) attestation and local device association before it can retrieve the correct organizational policy. Retrieving the policy can take about a minute. During this time, settings that customize OOBE pages or rename the device might not yet be applied.
+
+This issue will be resolved in a future OS release.
 
 ### Device preparation deployments on Windows 365 devices time out after 60 minutes
 
