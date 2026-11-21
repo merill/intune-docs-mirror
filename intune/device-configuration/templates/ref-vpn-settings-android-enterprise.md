@@ -115,6 +115,10 @@ The available settings depend on the VPN client you choose. Some settings are on
 
 - **Add**: Select managed apps from the list. When users start the apps you add, traffic automatically routes through the VPN connection.
 
+Note
+
+Android line-of-business (LOB) apps deployed directly through Intune aren't supported for per-app VPN.
+
 For more information, see [Use a VPN and per-app VPN policy on Android Enterprise devices](../../app-management/configuration/configure-vpn-android).
 
 ### Always-on VPN (fully managed, dedicated, and corporate-owned work profile)
@@ -169,6 +173,10 @@ The available settings depend on the VPN client you choose. Some settings are on
 ### Per-app VPN (personally owned work profile)
 
 - **Add**: Select managed apps from the list. When users start the apps you add, traffic automatically routes through the VPN connection.
+
+Note
+
+Android line-of-business (LOB) apps deployed directly through Intune aren't supported for per-app VPN.
 
 For more information, see [Use a VPN and per-app VPN policy on Android Enterprise devices](../../app-management/configuration/configure-vpn-android).
 

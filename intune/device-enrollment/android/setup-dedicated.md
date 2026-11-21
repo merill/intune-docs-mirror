@@ -50,6 +50,12 @@ Devices intended for dedicated use can be enrolled in Microsoft Intune in two wa
 
 This article describes how to set up and configure Microsoft Intune to enroll dedicated devices. For more information about Android Enterprise management solutions, see [Get started with Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&amp;ref_topic=6151012)(opens Android Enterprise Help Center).
 
+## You should know
+
+Devices enrolled into Intune as AE dedicated with Shared Device Mode are automatically set up with Microsoft Authenticator and Company Portal. These devices are enrolled into Intune without a user account and aren't associated with a specific user.
+
+Devices are configured in [Microsoft Entra shared device mode](/en-us/azure/active-directory/develop/msal-shared-devices) during enrollment. Devices enable single sign-on (SSO) between users across [participating apps](/en-us/azure/active-directory/develop/msal-android-shared-devices#microsoft-applications-that-support-shared-device-mode). By installing Company Portal, users can also leverage SSO when signing out of [apps that are integrated with the Intune SDK](../../app-management/ref-protected-apps), even apps that don't yet participate with shared device mode.
+
 ## Device requirements
 
 ![](../../media/icons/16/cloud.svg)**Cloud requirements**
