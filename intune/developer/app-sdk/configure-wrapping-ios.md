@@ -377,7 +377,7 @@ Before wrapping your app, you can grant *[entitlements](https://developer.apple.
 
     a. Sign in to the Apple Developer Member Center.
 
-    b. Create a provisioning profile for your app. For instructions, see [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
+    b. Create a provisioning profile for your app. For instructions, see [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://techcommunity.microsoft.com/blog/microsoft-security-blog/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/248929).
 
     c. In your provisioning profile, enable the same entitlements that you have in your app. You need to supply the same IDs (the `AppIdentifierPrefix` values) that you specified during the development of your app.
 
