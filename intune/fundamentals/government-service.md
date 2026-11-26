@@ -101,7 +101,7 @@ The following features are available and supported in Microsoft GCC High and/or 
 
 ## Intune features planned for GCC High and DoD
 
-The following features are currently not available and aren't supported in GCC High and DoD clouds. Planning is started to support these features for GCC High and DoD environments. If ETAs are available, then they're listed.
+The following features are currently not available and aren't supported in GCC High and DoD clouds. This list is not comprehensive and is provided as directional guidance into key planned investments. Plans, target dates, and capabilities are subject to change. As features become generally available, or are cancelled or postponed, information will be removed from this list.
 
 | Feature | Feature documentation |
 | --- | --- |
